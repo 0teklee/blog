@@ -3,6 +3,11 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../styles/global-styles";
 import { theme } from "../styles/theme";
+import smoothscroll from "smoothscroll-polyfill";
+
+if (typeof window !== "undefined") {
+  smoothscroll.polyfill();
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

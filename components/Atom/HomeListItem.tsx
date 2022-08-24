@@ -1,9 +1,14 @@
 import Image from "next/image";
+import Router from "next/router";
 import React from "react";
 import styled from "styled-components";
+import dayJs from "libs/utils/dayJs";
 
 const HomeListItem = ({ posts }) => {
   let imageId = 0;
+
+  const router = Router;
+
   const handlePresetImage = (): void => {
     if (imageId === 6) {
       imageId = 0;
@@ -11,14 +16,11 @@ const HomeListItem = ({ posts }) => {
     imageId = imageId + 1;
   };
 
-  const dayJs = (date: string): string => {
-    return date.slice(0, 10).replaceAll("-", ".");
-  };
   return (
     <>
       {posts && posts.length === 0 ? (
-        <__NoDataWrapper>
-          <__NoData>No Posts Yet</__NoData>
+        <__NoDataWrapper key="noItemWrapper">
+          <__NoData key="noData">No Posts Yet</__NoData>
         </__NoDataWrapper>
       ) : (
         posts
@@ -26,28 +28,34 @@ const HomeListItem = ({ posts }) => {
           .map((item) => {
             handlePresetImage();
             return (
-              <>
-                <__BlogItemWrapper key={item.id}>
+              <__Container key={`container_${item.id}`}>
+                <__BlogItemWrapper
+                  key={item.id}
+                  onClick={() => router.push(`/blog/${item.id}`)}
+                >
                   <__BlogBackDrop
+                    key={`img_${item.id}`}
                     src={item.img || `/asset/preset-pic-${imageId}.jpg`}
                     alt="teklog-recent-post"
                     layout="fill"
                   />
-                  <__BlogItemBox>
-                    <__BlogTitle>{item.title}</__BlogTitle>
-                    <__BlogContent>
+                  <__BlogItemBox key={`itemBox_${item.id}`}>
+                    <__BlogTitle key={`itemTitle_${item.id}`}>
+                      {item.title}
+                    </__BlogTitle>
+                    <__BlogContent key={`itemContent_${item.id}`}>
                       {item.content.replace(/<[^>]*>/g, ` `)}
                     </__BlogContent>
                   </__BlogItemBox>
-                  <__BlogItemFooter>
+                  <__BlogItemFooter key={`itemFooter_${item.id}`}>
                     <p>{dayJs(item.createdAt)}</p>
                     <p>{`n°${item.id}`}</p>
                   </__BlogItemFooter>
-                  <__BlogCopyRight>
+                  <__BlogCopyRight key={`copyright_${item.id}`}>
                     <p>ⓒ All Rights Reserved by teklee </p>
                   </__BlogCopyRight>
                 </__BlogItemWrapper>
-              </>
+              </__Container>
             );
           })
       )}
@@ -56,6 +64,10 @@ const HomeListItem = ({ posts }) => {
 };
 
 export default HomeListItem;
+
+const __Container = styled.div`
+  width: 100%;
+`;
 
 const __Wrapper = styled.div`
   display: flex;

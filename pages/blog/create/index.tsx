@@ -1,7 +1,7 @@
 import Router from "next/router";
 import { useState } from "react";
 import styled from "styled-components";
-import handlePostBlog from "../../libs/post/postBlog";
+import handlePostBlog from "../../../libs/post/postBlog";
 import dynamic from "next/dynamic";
 
 import "react-quill/dist/quill.snow.css";

@@ -1,6 +1,5 @@
 import HomeListItem from "components/Atom/HomeListItem";
-import HomeAboutMe from "components/Module/home/HomeAboutMe";
-import Link from "next/link";
+import HomeAboutMe from "components/pages/Home/HomeAboutMe";
 import Router from "next/router";
 import styled from "styled-components";
 

@@ -50,9 +50,7 @@ const HomeAboutMe = () => {
               {"\n"}
               YOU CAN CHECK MY ARTWORKS FROM{" "}
               <a href="">
-                <u>
-                  <strong>HERE</strong>
-                </u>
+                <u>HERE</u>
               </a>
               .
             </div>
@@ -61,7 +59,7 @@ const HomeAboutMe = () => {
               FOR MORE INFORMATION, {"\n"}
               PLEASE VISIT{" "}
               <u>
-                <Link href="/info">MY INFO PAGE</Link>
+                <Link href="/info">INFO PAGE</Link>
               </u>
               .
             </div>
@@ -83,9 +81,7 @@ const HomeAboutMe = () => {
               {"\n"}
               제가 찍은 사진들은{" "}
               <a href="">
-                <u>
-                  <strong>여기에서 </strong>
-                </u>
+                <u>여기에서</u>
               </a>{" "}
               확인이 가능합니다 .
             </p>
@@ -94,7 +90,7 @@ const HomeAboutMe = () => {
               FOR MORE INFORMATION, {"\n"}
               PLEASE VISIT{" "}
               <u>
-                <Link href="/info">MY INFO PAGE</Link>
+                <Link href="/info">INFO PAGE</Link>
               </u>
               .
             </p>
@@ -110,7 +106,7 @@ export default HomeAboutMe;
 const __AboutWrapper = styled.div`
   width: 100%;
   padding: 3rem 5rem 7.5rem 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: 720px) {
     padding-top: 6rem;

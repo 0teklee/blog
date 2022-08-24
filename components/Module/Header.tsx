@@ -1,5 +1,6 @@
 import Router from "next/router";
 import styled from "styled-components";
+import { theme } from "styles/theme";
 
 const headerItems = [
   { id: 0, item: "info", path: "/info" },
@@ -8,7 +9,7 @@ const headerItems = [
   { id: 3, item: "blog", path: "/blog" },
 ];
 
-export const Header = () => {
+const Header = () => {
   const router = Router;
 
   return (
@@ -69,16 +70,14 @@ const __Button = styled.button<{ btnItem: string }>`
 
   &:hover {
     filter: invert(1);
-    color: #f98406;
+    color: #2d10b0;
     transition: 1.5s;
     font-weight: 900;
   }
 `;
 
 const __Flex = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  ${theme.displayFlex("center", "space-between")};
   & > button:nth-of-type(2) {
     flex-grow: 1;
     text-align: center;
@@ -101,3 +100,5 @@ const __InnerFlex = styled.div`
     }
   }
 `;
+
+export default Header;
