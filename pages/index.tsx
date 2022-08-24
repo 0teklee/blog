@@ -1,7 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import HomeTemplate from "components/Template/Home/HomeTemplate";
 import React, { useState } from "react";
-import getBlogPosts from "./api/getBlogPosts";
+import getMainPosts from "./api/getMainPosts";
+import getBlogPosts from "./api/getMainPosts";
 
 const Home = (props) => {
   const { posts } = props;
@@ -11,7 +12,7 @@ const Home = (props) => {
 export default Home;
 
 export async function getServerSideProps({ req, res }) {
-  const posts = await getBlogPosts();
+  const posts = await getMainPosts();
 
   return {
     props: { posts },

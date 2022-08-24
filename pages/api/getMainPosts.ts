@@ -1,8 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
-
-const getBlogPosts = async () => {
+const getMainPosts = async () => {
   const prisma = new PrismaClient();
   const postsDB = await prisma.post.findMany({
     orderBy: { createdAt: "desc" },
@@ -18,4 +16,4 @@ const getBlogPosts = async () => {
   return posts;
 };
 
-export default getBlogPosts;
+export default getMainPosts;

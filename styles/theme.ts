@@ -12,7 +12,7 @@ export const sizes = {
 
 export const theme: DefaultTheme = {
   colors: {
-    sign: "#5382eb",
+    sign: "#2d10b0",
     lightSign: "#6f94e9",
     grey: "#7e7e7e",
     midGrey: "#c6c6c6",

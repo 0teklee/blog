@@ -6,7 +6,7 @@ const headerItems = [
   { id: 0, item: "info", path: "/info" },
   { id: 1, item: "teklog", path: "/" },
   { id: 2, item: "archive", path: "/archive" },
-  { id: 3, item: "blog", path: "/blog" },
+  { id: 3, item: "blog", path: "/blog?page=1" },
 ];
 
 const Header = () => {

@@ -92,8 +92,6 @@ const __BlogBackDrop = styled(Image)`
 
   width: 100%;
   height: 100%;
-  background-size: 100%;
-  background-blend-mode: overlay;
   transition: 0.5s;
 
   z-index: 0;

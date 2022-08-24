@@ -13,7 +13,7 @@ const HomeContent = ({ posts }) => {
         <__Intro>LEE TEK WOO</__Intro>
         <__Intro>Tech Blog</__Intro>
       </__IntroWrapper>
-      <__MoreButton onClick={() => router.push("blog")}>
+      <__MoreButton onClick={() => router.push("blog?page=1")}>
         MORE POSTS
       </__MoreButton>
       <_ContentWrapper>

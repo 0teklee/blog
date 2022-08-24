@@ -12,10 +12,8 @@ const QuillWrapper = dynamic(() => import("react-quill"), {
 });
 
 const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
-  const [prev, next] = nav;
-  console.log(prev);
+  const [next, prev] = nav;
   const router = Router;
-
   return (
     <Layout>
       <__Wrapper>
@@ -33,17 +31,8 @@ const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
             theme="bubble"
           />
         </__ContentWrapper>
+        <__GoBack onClick={() => router.back()}>← go back to list</__GoBack>
         <__NavWrapper>
-          {prev && (
-            <__NavItem
-              key="prev"
-              onClick={() => router.push(`/blog/${prev.id}`)}
-            >
-              <p>prev</p>
-              <p>{prev.title}</p>
-              <p>{dayJs(prev.createdAt)}</p>
-            </__NavItem>
-          )}
           {next && (
             <__NavItem
               key="next"
@@ -52,6 +41,16 @@ const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
               <p>next</p>
               <p>{next.title}</p>
               <p>{dayJs(next.createdAt)}</p>
+            </__NavItem>
+          )}
+          {prev && (
+            <__NavItem
+              key="prev"
+              onClick={() => router.push(`/blog/${prev.id}`)}
+            >
+              <p>prev</p>
+              <p>{prev.title}</p>
+              <p>{dayJs(prev.createdAt)}</p>
             </__NavItem>
           )}
         </__NavWrapper>
@@ -105,6 +104,21 @@ const __ContentWrapper = styled.div`
     video {
       width: 100%;
     }
+  }
+`;
+
+const __GoBack = styled.button`
+  all: unset;
+  cursor: pointer;
+  margin: 3rem 0;
+
+  font-family: "proxima-nova";
+  font-weight: 300;
+
+  &:hover {
+    color: #fff;
+    background: ${theme.colors.sign};
+    transition: 0.5s;
   }
 `;
 
