@@ -7,60 +7,34 @@ interface IData {
     createdAt: string;
     title: string;
     content: string;
+    category: string;
   };
   nav: { id: number; createdAt: string; title: string }[];
-
-  // category: string;
 }
 
 const getBlogDetail = async (query: string | string[]): Promise<IData> => {
   const prisma = new PrismaClient();
-  let queryId = Number(query);
 
-  const idPrevSearcher = (query: number): number => {
-    if (query <= 1) {
-      return 1;
-    }
-    // for (let i = queryId; i > 0; i--) {
-    //   queryId = queryId - 1;
-    // }
-    console.log("queryID", query);
-    return query - idPrevSearcher(query - 1);
-  };
-
-  const postsDB = await prisma.post.findUnique({
-    where: {
-      id: Number(query),
-    },
+  const postsDB = await prisma.post.findMany({
+    take: 3,
+    cursor: { id: Number(query) - 1 },
     select: {
       id: true,
-      createdAt: true,
       title: true,
       content: true,
-      // category: true
+      createdAt: true,
+      category: true,
     },
   });
-  // const postPrevNextDB = await prisma.post.findMany({
-  //   where: {
-  //     OR: [{ id: Number(query) + 1 }, { id: Number(query) - 1 }],
-  //   },
-  //   select: {
-  //     id: true,
-  //     createdAt: true,
-  //     title: true,
-  //   },
-  // });
 
-  const testPrisma = await prisma.post.findMany({
-    orderBy: { id: "desc" },
-  });
-  const postPrevNextDB = [
-    testPrisma[testPrisma.findIndex((item) => item.id === Number(query)) - 1],
-    testPrisma[testPrisma.findIndex((item) => item.id === Number(query)) + 1],
-  ];
+  const postDetail = JSON.parse(
+    JSON.stringify(postsDB.find((item) => item.id === Number(query)))
+  );
 
-  const postDetail = JSON.parse(JSON.stringify(postsDB));
-  const postPrevNext = JSON.parse(JSON.stringify(postPrevNextDB));
+  const postPrevNext = JSON.parse(
+    JSON.stringify(postsDB.filter((item) => item.id !== Number(query)))
+  );
+
   return { detail: postDetail, nav: postPrevNext };
 };
 
