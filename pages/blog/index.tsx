@@ -1,15 +1,13 @@
+import MetaTag from "components/MetaTag";
 import BlogListPageTemplage from "components/Template/Blog/BlogListPageTemplage";
-import { lstatSync } from "fs";
-import fetcher from "libs/utils/fetcher";
 import getBlogList from "pages/api/getBlogList";
-import { useState } from "react";
-import useSWR from "swr";
 
 const index = ({ list }) => {
   return (
-    <div>
+    <>
+      <MetaTag title="teklog - blog" url="www.teklog.com/blog" description="" />
       <BlogListPageTemplage posts={list} />
-    </div>
+    </>
   );
 };
 

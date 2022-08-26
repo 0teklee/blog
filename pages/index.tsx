@@ -1,12 +1,20 @@
-import { PrismaClient } from "@prisma/client";
+import MetaTag from "components/MetaTag";
 import HomeTemplate from "components/Template/Home/HomeTemplate";
 import React, { useState } from "react";
 import getMainPosts from "./api/getMainPosts";
-import getBlogPosts from "./api/getMainPosts";
 
 const Home = (props) => {
   const { posts } = props;
-  return <HomeTemplate posts={posts} />;
+  return (
+    <>
+      <MetaTag
+        title="teklog"
+        url="www.teklog.com"
+        description="TedLee's Tech Blog"
+      />
+      <HomeTemplate posts={posts} />
+    </>
+  );
 };
 
 export default Home;
