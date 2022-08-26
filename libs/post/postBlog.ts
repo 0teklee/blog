@@ -1,4 +1,9 @@
-const handlePostBlog = (url: string, title: string, content: string) => {
+const handlePostBlog = (
+  url: string,
+  title: string,
+  content: string,
+  category = ".etc"
+) => {
   if (!title && !content) {
     alert("Please Insert Title & Content");
     return;
@@ -9,6 +14,7 @@ const handlePostBlog = (url: string, title: string, content: string) => {
     body: JSON.stringify({
       title: title,
       content: content,
+      category: category,
     }),
   });
 };
