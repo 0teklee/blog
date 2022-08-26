@@ -31,7 +31,7 @@ const Footer = () => {
         <__Button onClick={handleContact}>contact</__Button>
         <__Button onClick={handleTop}>top</__Button>
         <__Button>
-          <Link href="https://www.naver.com">cv</Link>
+          <Link href="https://www.naver.com">resume</Link>
         </__Button>
       </__Flex>
     </__Wrapper>
@@ -39,8 +39,8 @@ const Footer = () => {
 };
 
 const __Wrapper = styled.div`
-  /* position: fixed; */
-  bottom: 0;
+  position: sticky;
+  top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
 

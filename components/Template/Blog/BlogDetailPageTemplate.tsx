@@ -12,7 +12,7 @@ const QuillWrapper = dynamic(() => import("react-quill"), {
 });
 
 const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
-  const [next, prev] = nav;
+  const [prev, next] = nav;
   const router = Router;
   return (
     <Layout>
@@ -31,7 +31,9 @@ const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
             theme="bubble"
           />
         </__ContentWrapper>
-        <__GoBack onClick={() => router.back()}>← go back to list</__GoBack>
+        <__GoBack onClick={() => router.push("/blog?page=1")}>
+          ← go back to list
+        </__GoBack>
         <__NavWrapper>
           {next && (
             <__NavItem
@@ -48,7 +50,7 @@ const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
               key="prev"
               onClick={() => router.push(`/blog/${prev.id}`)}
             >
-              <p>prev</p>
+              <p>{id < prev.id ? "next" : "prev"}</p>
               <p>{prev.title}</p>
               <p>{dayJs(prev.createdAt)}</p>
             </__NavItem>
@@ -103,6 +105,12 @@ const __ContentWrapper = styled.div`
 
     video {
       width: 100%;
+    }
+
+    @media only screen and (${theme.devices.laptop}) {
+      img {
+        padding: 0 10rem;
+      }
     }
   }
 `;

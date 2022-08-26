@@ -1,4 +1,4 @@
-import BlogListItem from "components/Atom/BlogListitem";
+import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -55,7 +55,12 @@ const BlogListPageTemplage = ({ posts }) => {
 export default BlogListPageTemplage;
 
 const __Title = styled.h1`
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @media only screen and (${theme.devices.laptop}) {
+    margin-bottom: 7rem;
+  }
 `;
 
 const __ListWrapper = styled.div`
