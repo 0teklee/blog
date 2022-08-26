@@ -1,25 +1,24 @@
 import dayJs from "libs/utils/dayJs";
-import Image from "next/image";
 import Router from "next/router";
-import getBlogList from "pages/api/getBlogList";
 import styled from "styled-components";
 import { theme } from "styles/theme";
-import useSWR from "swr";
 
 const BlogListItem = ({ id, content, createdAt, title }) => {
   const router = Router;
 
+  /* 블로그 포스트 이미지 미리보기*/
   const contentReg = content.match(/<img [^>]*src="[^"]*"[^>]*>/gm);
-
   const contentImg =
-    contentReg && contentReg.map((x) => x.replace(/.*src="([^"]*)".*/, "$1"));
+    contentReg &&
+    contentReg.map((x) => x.replace(/.*src="([^"]*)".*/, "$1"))[0];
 
+  /*블로그 내용 미리보기 */
   const contentReplace = content.replace(/<[^>]*>/g, ` `);
 
   return (
     <__Container key={id} onClick={() => router.push(`/blog/${id}`)}>
       <__Wrapper>
-        <__HeaderImg />
+        <__HeaderImg headerImg={contentImg} />
         <__Contents>
           <h2>{title}</h2>
           <p>{dayJs(createdAt)}</p>
@@ -52,7 +51,7 @@ const __Wrapper = styled.div`
   cursor: pointer;
 `;
 
-const __HeaderImg = styled.div`
+const __HeaderImg = styled.div<{ headerImg: string }>`
   flex: 1;
   max-width: 10rem;
   min-width: 10rem;
@@ -63,7 +62,10 @@ const __HeaderImg = styled.div`
 
   margin-right: 2rem;
 
-  background-image: url("/asset/preset-pic-1.jpg");
+  background: ${(props) =>
+    props.headerImg
+      ? `url("${props.headerImg}")`
+      : `url("https://res.cloudinary.com/dolziw8fv/image/upload/v1661426716/t8ujgu0fjx5lf0vxzj7a.jpg")`};
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
