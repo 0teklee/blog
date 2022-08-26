@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Router from "next/router";
-import React from "react";
 import styled from "styled-components";
 import dayJs from "libs/utils/dayJs";
+import presetImgs from "libs/utils/presetImg";
 
 const HomeListItem = ({ posts }) => {
-  let imageId = 0;
-
   const router = Router;
+  let imageId = 0;
 
   const handlePresetImage = (): void => {
     if (imageId === 6) {
@@ -35,9 +34,12 @@ const HomeListItem = ({ posts }) => {
                 >
                   <__BlogBackDrop
                     key={`img_${item.id}`}
-                    src={item.img || `/asset/preset-pic-${imageId}.jpg`}
+                    src={presetImgs[imageId]}
                     alt="teklog-recent-post"
                     layout="fill"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="/asset/lazy-loading.jpg"
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
                     <__BlogTitle key={`itemTitle_${item.id}`}>
@@ -144,6 +146,10 @@ const __BlogItemBox = styled.div`
   color: transparent;
 
   z-index: 1;
+  @media (min-width: 720px) and (max-width: 900px) {
+    font-size: 1.2rem;
+    padding: 0;
+  }
 `;
 
 const __BlogTitle = styled.div`
@@ -163,7 +169,7 @@ const __BlogTitle = styled.div`
   transition: 0.2s;
 
   @media (min-width: 720px) and (max-width: 900px) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -176,7 +182,7 @@ const __BlogContent = styled.div`
   -webkit-box-orient: vertical;
   word-wrap: break-all;
   line-height: 1.6rem;
-  height: 3.2rem;
+  max-height: 3.2rem;
   overflow: hidden;
 
   font-size: 1.2rem;
@@ -184,7 +190,7 @@ const __BlogContent = styled.div`
   font-family: "tenon", "IBM Plex Sans KR", sans-serif;
 
   @media only screen and (min-width: 720px) and (max-width: 900px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 
