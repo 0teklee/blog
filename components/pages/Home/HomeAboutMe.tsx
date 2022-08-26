@@ -104,17 +104,19 @@ const HomeAboutMe = () => {
 export default HomeAboutMe;
 
 const __AboutWrapper = styled.div`
+  overflow: hidden;
   width: 100%;
-  padding: 3rem 5rem 7.5rem 3rem;
+  padding: 3rem 5rem 3.5rem 3rem;
   margin-bottom: 1.5rem;
 
   @media (min-width: 720px) {
-    padding-top: 6rem;
+    padding-top: 1rem;
+    margin-top: 9rem;
   }
 `;
 
 const __AboutTitle = styled.h1`
-  margin-top: 10rem;
+  margin-top: 2rem;
   transition: 1s;
   font-family: "IBM Plex Sans KR";
   white-space: pre-wrap;

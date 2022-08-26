@@ -2,6 +2,7 @@ import HomeListItem from "components/Atom/HomeListItem";
 import HomeAboutMe from "components/pages/Home/HomeAboutMe";
 import Router from "next/router";
 import styled from "styled-components";
+import { theme } from "styles/theme";
 
 const HomeContent = ({ posts }) => {
   const router = Router;
@@ -13,9 +14,13 @@ const HomeContent = ({ posts }) => {
         <__Intro>LEE TEK WOO</__Intro>
         <__Intro>Tech Blog</__Intro>
       </__IntroWrapper>
-      <__MoreButton onClick={() => router.push("blog?page=1")}>
-        MORE POSTS
-      </__MoreButton>
+      <__NavBtnWrapper>
+        <__RecentPosts>Recent Posts</__RecentPosts>
+        <__MoreButton onClick={() => router.push("blog?page=1")}>
+          more posts
+        </__MoreButton>
+      </__NavBtnWrapper>
+
       <_ContentWrapper>
         <__ContentBox>
           <HomeListItem posts={posts} />
@@ -50,25 +55,34 @@ const __Intro = styled.h1`
   }
 `;
 
+const __NavBtnWrapper = styled.div`
+  ${theme.displayFlex("center", "space-between")};
+  padding: 0 3rem;
+
+  @media only screen and (min-width: 720px) {
+    margin-bottom: 3rem;
+  }
+`;
+
+const __RecentPosts = styled.h2`
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+`;
+
 const __MoreButton = styled.button`
   all: unset;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
 
   font-family: "Tenon", sans-serif;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1rem;
   transition: 20s;
 
   cursor: pointer;
-  &::after {
-    content: "   →";
-  }
-
   &:hover {
     transform: translate(100vw, 0);
     &::after {
-      content: "   → → ";
+      content: "   → ";
     }
   }
 `;
@@ -80,7 +94,7 @@ const __ContentBox = styled.div`
   grid-template-columns: repeat(3, minmax(3rem, 100rem));
   grid-template-rows: minmax(3rem, auto);
   justify-content: center;
-  padding: 5rem 3rem;
+  padding: 3rem;
 
   gap: 8%;
 
