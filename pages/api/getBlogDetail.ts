@@ -16,8 +16,8 @@ const getBlogDetail = async (query: string | string[]): Promise<IData> => {
   const prisma = new PrismaClient();
 
   const postsDB = await prisma.post.findMany({
-    take: 3,
-    cursor: { id: Number(query) - 1 },
+    take: Number(query) !== 1 ? 3 : 2,
+    cursor: { id: Number(query) !== 1 ? Number(query) - 1 : 1 },
     select: {
       id: true,
       title: true,
