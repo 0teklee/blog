@@ -1,11 +1,9 @@
-import { PrismaClient } from "@prisma/client";
 import MetaTag from "components/MetaTag";
 import BlogDetailPageTemplate from "components/Template/Blog/BlogDetailPageTemplate";
-import Router from "next/router";
 import getBlogDetail from "pages/api/getBlogDetail";
 
-const detail = ({ detail, nav }) => {
-  const { content, createdAt, id, title } = detail;
+const Detail = ({ detail, nav }) => {
+  const { content, createdAt, id, title, categories, tags } = detail;
   return (
     <>
       <MetaTag
@@ -18,18 +16,29 @@ const detail = ({ detail, nav }) => {
         createdAt={createdAt}
         id={id}
         title={title}
+        category={categories.name}
+        tags={tags.map((item) => item.tag)}
         nav={nav}
       />
     </>
   );
 };
 
-export default detail;
+export default Detail;
 
-export async function getServerSideProps({ params }) {
+// TODO Static Props로 변경
+export const getServerSideProps = async ({ params }) => {
   const post = await getBlogDetail(params.id);
+  if (!post) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
 
   return {
     props: post,
   };
-}
+};
