@@ -1,7 +1,7 @@
 import Layout from "components/Atom/Layout";
 import dayJs from "libs/utils/dayJs";
 import styled from "styled-components";
-import { theme } from "styles/theme";
+import { sizes, theme } from "styles/theme";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.bubble.css";
 import Router from "next/router";
@@ -11,19 +11,35 @@ const QuillWrapper = dynamic(() => import("react-quill"), {
   loading: () => <p>Loading....</p>,
 });
 
-const BlogDetailPageTemplate = ({ content, createdAt, id, title, nav }) => {
+const BlogDetailPageTemplate = ({
+  content,
+  createdAt,
+  id,
+  title,
+  category,
+  tags,
+  nav,
+}) => {
   const [prev, next] = nav;
   const router = Router;
   return (
-    <Layout>
+    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding>
       <__Wrapper>
-        <__Title>
-          {title}
+        <__HeaderWrapper>
+          <__Title>{title}</__Title>
           <__DateId>
             <p>{dayJs(createdAt)}</p>
             <p>{`n°${id}`}</p>
           </__DateId>
-        </__Title>
+          <__TagCategoryWrpper>
+            <p>category : {category}</p>
+            <__TagWrapper>
+              {tags?.map((tag) => (
+                <span>#{tag}</span>
+              ))}
+            </__TagWrapper>
+          </__TagCategoryWrpper>
+        </__HeaderWrapper>
         <__ContentWrapper>
           <QuillWrapper
             value={content || "no contents :("}
@@ -65,29 +81,58 @@ export default BlogDetailPageTemplate;
 
 const __Wrapper = styled.div`
   ${theme.displayFlex("center", "center", "column")}
+  @media only screen and (min-width: ${sizes.laptop}) {
+    padding: 8rem 10rem 5rem 10rem;
+  }
+`;
+
+const __HeaderWrapper = styled.div`
+  width: 100%;
 `;
 
 const __Title = styled.h1`
-  min-width: 28rem;
-  max-width: 80%;
   width: 100%;
+  margin-bottom: 1rem;
+
   font-family: "IBM Plex Sans KR";
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+
+  word-break: break-all;
+  ${theme.titleEllipsis("wrap")}
 `;
 
 const __DateId = styled.div`
   ${theme.displayFlex("center", "space-between")}
   width: 100%;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 0 0;
 
   font-size: 1rem;
   font-weight: 600;
 `;
 
+const __TagCategoryWrpper = styled.div`
+  ${theme.displayFlex("center", "space-between")}
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: ${theme.colors.grey};
+`;
+
+const __TagWrapper = styled.div`
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+
+  word-break: break-all;
+  span {
+    margin-right: 1rem;
+    font-weight: 400;
+  }
+`;
+
 const __ContentWrapper = styled.div`
-  min-width: 28rem;
-  max-width: 80%;
   width: 100%;
   min-height: 50vh;
 
@@ -109,7 +154,7 @@ const __ContentWrapper = styled.div`
 
     @media only screen and (${theme.devices.laptop}) {
       img {
-        padding: 0 10rem;
+        padding: 0 8rem;
       }
     }
   }
@@ -132,8 +177,6 @@ const __GoBack = styled.button`
 
 const __NavWrapper = styled.div`
   width: 100%;
-  min-width: 28rem;
-  max-width: 80%;
 `;
 
 const __NavItem = styled.div`
