@@ -6,8 +6,8 @@ const nextConfig = {
     domains: ["res.cloudinary.com"],
   },
   env: {
-    CLOUD_NAME: "dolziw8fv",
-    GA_TRACKING_ID: "G-6R2HEL045P",
+    CLOUD_NAME: process.env.CLOUD_NAME,
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
 };
 
