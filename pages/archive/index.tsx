@@ -16,7 +16,7 @@ const index = ({ list }: { list: IProps[] }) => {
       <MetaTag
         title="Archive - Teklog"
         description="Teklog 아카이브"
-        url="https://www.teklog.con/archive"
+        url="https://www.teklog.site/archive"
       />
       <ArchiveTemplate posts={list} />
     </>

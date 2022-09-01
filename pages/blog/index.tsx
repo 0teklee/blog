@@ -15,7 +15,11 @@ const index = ({
 }) => {
   return (
     <>
-      <MetaTag title="teklog - blog" url="www.teklog.com/blog" description="" />
+      <MetaTag
+        title="teklog - blog"
+        url="www.teklog.site/blog"
+        description=""
+      />
       <BlogListPageTemplage posts={list} categories={categories} />
     </>
   );

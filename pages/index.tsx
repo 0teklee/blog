@@ -11,7 +11,7 @@ const Home = (props: { posts: IBlogMainItem[] }) => {
     <>
       <MetaTag
         title="teklog"
-        url="www.teklog.com"
+        url="www.teklog.site"
         description="Tekwoo Lee's Tech Blog - 프론트엔드 개발자 이택우의 기술블로그 "
       />
       <HomeTemplate posts={posts} />

@@ -22,7 +22,7 @@ const index = (props: IProps) => {
         <MetaTag
           title="teklog"
           description="teklog - loading"
-          url={`www.teklog.com/blog`}
+          url={`www.teklog.site/blog`}
         />
         <Loading />
       </>
@@ -38,7 +38,7 @@ const index = (props: IProps) => {
       <MetaTag
         title={title}
         description={content}
-        url={`www.teklog.com/blog/${id}`}
+        url={`www.teklog.com/site/${id}`}
       />
       <BlogDetailPageTemplate
         content={content}

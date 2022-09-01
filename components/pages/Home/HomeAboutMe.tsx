@@ -77,15 +77,16 @@ const HomeAboutMe = () => {
               아름다움을 전달하고자 합니다.
             </p>
             <br />
-            <p>
+            <span>
               취미로는 사진 찍는 것과 여행하는 것을 좋아합니다.
               {"\n"}
               제가 찍은 사진들은{" "}
-              <a href="/gallery">
-                <u>여기에서</u>
-              </a>{" "}
-              확인이 가능합니다 .
-            </p>
+            </span>
+            <Link href="/gallery">
+              <u>여기에서</u>
+            </Link>{" "}
+            <span>확인이 가능합니다 .</span>
+            <br />
             <br />
             <p>
               FOR MORE INFORMATION, {"\n"}
@@ -154,7 +155,7 @@ const __AboutContent = styled.div<{ isUnmount: boolean }>`
   line-height: 1.4;
   white-space: pre-wrap;
 
-  font-family: "proxima-nova", "IBM Plex Sans KR", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 
