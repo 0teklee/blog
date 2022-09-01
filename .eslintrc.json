@@ -46,16 +46,7 @@
         "namedComponents": "arrow-function"
       }
     ],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
+    "import/extensions": ["off"],
     "no-undef": "off",
     "no-underscore-dangle": 0,
     "react/jsx-pascal-case": 0,
