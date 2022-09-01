@@ -1,14 +1,16 @@
 import HomeListItem from "components/Atom/HomeListItem";
+import Layout from "components/Atom/Layout";
 import HomeAboutMe from "components/pages/Home/HomeAboutMe";
 import Router from "next/router";
 import styled from "styled-components";
 import { theme } from "styles/theme";
+import { IBlogMainItem } from "types/IBlogItem";
 
-const HomeContent = ({ posts }) => {
+const HomeContent = ({ posts }: { posts: IBlogMainItem[] }) => {
   const router = Router;
 
   return (
-    <__MainWrapper>
+    <>
       <__IntroWrapper>
         <__Intro>front-end dev. </__Intro>
         <__Intro>LEE TEK WOO</__Intro>
@@ -20,30 +22,27 @@ const HomeContent = ({ posts }) => {
           more posts
         </__MoreButton>
       </__NavBtnWrapper>
-
       <_ContentWrapper>
         <__ContentBox>
           <HomeListItem posts={posts} />
         </__ContentBox>
       </_ContentWrapper>
       <HomeAboutMe />
-    </__MainWrapper>
+    </>
   );
 };
 
 export default HomeContent;
 
-const __MainWrapper = styled.main``;
-
 const __IntroWrapper = styled.section`
   width: 100%;
-  padding: 8rem 5rem 7.5rem 3rem;
+  margin-bottom: 8rem;
 `;
 
 const __Intro = styled.h1`
   transition: 1s;
   animation: intro 1s;
-  font-family: "IBM Plex Sans KR";
+  font-family: "IBM Plex Sans KR", sans-serif;
 
   @keyframes intro {
     0% {
@@ -57,9 +56,9 @@ const __Intro = styled.h1`
 
 const __NavBtnWrapper = styled.div`
   ${theme.displayFlex("center", "space-between")};
-  padding: 0 3rem;
+  margin-bottom: 9rem;
 
-  @media only screen and (min-width: 720px) {
+  @media only screen and (max-width: 720px) {
     margin-bottom: 3rem;
   }
 `;
@@ -94,7 +93,6 @@ const __ContentBox = styled.div`
   grid-template-columns: repeat(3, minmax(3rem, 100rem));
   grid-template-rows: minmax(3rem, auto);
   justify-content: center;
-  padding: 3rem;
 
   gap: 8%;
 
