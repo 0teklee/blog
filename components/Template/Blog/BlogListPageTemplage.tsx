@@ -18,6 +18,14 @@ const BlogListPageTemplage = ({
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
 
+  /* Branch to page query*/
+  if (!router.query.page) {
+    router.push({
+      pathname: "/blog",
+      query: { page: page },
+    });
+  }
+
   const handlePrev = () => {
     if (page === 1) return;
     setPage((prev) => prev - 1);
@@ -36,6 +44,7 @@ const BlogListPageTemplage = ({
       });
     }
   }, [page]);
+
   return (
     <Layout padding="8rem 0rem 1rem 0rem" mobilePadding="3rem 0.8rem">
       <__Container>

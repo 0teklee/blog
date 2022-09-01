@@ -6,7 +6,7 @@ import { IBlogGetCategorySideBar } from "types/IBlogItem";
 
 const BlogSideBar = ({
   categories,
-  padding = "0 2rem",
+  padding = "2rem",
 }: {
   categories: IBlogGetCategorySideBar[];
   padding?: string;
@@ -110,7 +110,7 @@ export default BlogSideBar;
 const __Wrapper = styled.aside<{ padding?: string }>`
   position: fixed;
   top: 100px;
-  left: 0;
+  left: 1rem;
 
   margin-left: 1rem;
   background: #fff;
@@ -122,7 +122,7 @@ const __Wrapper = styled.aside<{ padding?: string }>`
 
     width: 100%;
     margin-left: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     padding: ${(props) => props.padding};
 

@@ -18,7 +18,7 @@ const index = ({
       <MetaTag
         title="teklog - blog"
         url="https://www.teklog.site/blog"
-        description=""
+        description="Teklog - Blog List page"
       />
       <BlogListPageTemplage posts={list} categories={categories} />
     </>
