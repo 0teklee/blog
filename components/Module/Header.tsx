@@ -2,11 +2,14 @@ import Router from "next/router";
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
-const headerItems = [
+const headerLeftItems = [
   { id: 0, item: "info", path: "/info" },
   { id: 1, item: "gallery", path: "/gallery" },
-  { id: 3, item: "archive", path: "/archive" },
-  { id: 4, item: "blog", path: "/blog?page=1" },
+];
+
+const headerRightItems = [
+  { id: 0, item: "archive", path: "/archive" },
+  { id: 1, item: "blog", path: "/blog" },
 ];
 
 const Header = () => {
@@ -16,23 +19,19 @@ const Header = () => {
     <__Wrapper>
       <__Flex>
         <__InnerFlexLeft>
-          {headerItems
-            .filter((item) => item.item !== ("archive" || "teklog" || "blog"))
-            .map((item) => (
-              <__Button key={item.id} onClick={() => router.push(item.path)}>
-                {item.item}
-              </__Button>
-            ))}
+          {headerLeftItems.map((item) => (
+            <__Button key={item.id} onClick={() => router.push(item.path)}>
+              {item.item}
+            </__Button>
+          ))}
         </__InnerFlexLeft>
         <__MainButton onClick={() => router.push("/")}>teklog</__MainButton>
         <__InnerFlexRight>
-          {headerItems
-            .filter((item) => item.item !== "info" && item.item !== "teklog")
-            .map((item) => (
-              <__Button key={item.id} onClick={() => router.push(item.path)}>
-                {item.item}
-              </__Button>
-            ))}
+          {headerRightItems.map((item) => (
+            <__Button key={item.id} onClick={() => router.push(item.path)}>
+              {item.item}
+            </__Button>
+          ))}
         </__InnerFlexRight>
       </__Flex>
     </__Wrapper>
@@ -43,7 +42,7 @@ const __Wrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 2rem;
 
   background-clip: text;
   -webkit-background-clip: text;
@@ -58,7 +57,7 @@ const __Button = styled.button`
   all: unset;
   cursor: pointer;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Cormorant", "IBM Plex Sans KR", -apple-system, sans-serif,
     Helvetica, serif;
   font-weight: 700;
@@ -77,7 +76,7 @@ const __MainButton = styled(__Button)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 4rem;
 `;
 
 const __Flex = styled.div`
@@ -89,9 +88,6 @@ const __Flex = styled.div`
 `;
 
 const __InnerFlexRight = styled.div`
-  position: absolute;
-  right: 2rem;
-
   ${theme.displayFlex("center", "space-around")}
 
   & button:nth-of-type(2) {
@@ -101,14 +97,39 @@ const __InnerFlexRight = styled.div`
     }
   }
   @media only screen and (max-width: 500px) {
-    & button:first-child {
+    button {
+      font-family: "IBM Plex Sans KR";
+      font-weight: 400;
+    }
+
+    button:nth-child(1) {
       display: none;
+    }
+
+    button:nth-of-type(2) {
+      position: relative;
+      top: 0.5rem;
+      right: -1rem;
+      font-size: 1.2rem;
+      &::before {
+        content: "";
+        margin-left: 0;
+      }
     }
   }
 `;
 
 const __InnerFlexLeft = styled(__InnerFlexRight)`
-  left: 2rem;
+  @media only screen and (max-width: 500px) {
+    & button:nth-of-type(2) {
+      left: -1rem;
+      font-size: 1.2rem;
+      &::before {
+        content: "";
+        margin-left: 0;
+      }
+    }
+  }
 `;
 
 export default Header;

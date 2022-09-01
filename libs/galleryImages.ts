@@ -49,6 +49,13 @@ const galleryImagesV1 = [
     height: "1024px",
   },
   {
+    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050042/gallery-v1--31_ud9i4l.jpg",
+    title: "",
+    createdAt: "2018",
+    width: "800px",
+    height: "800px",
+  },
+  {
     url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--41_efzhkx.jpg",
     title: "",
     createdAt: "2018",
@@ -87,6 +94,13 @@ const galleryImagesV1 = [
     url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--52_qrvivh.jpg",
     title: "",
     createdAt: "2021",
+    width: "680px",
+    height: "1024px",
+  },
+  {
+    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050056/preset-pic-8_lwrnoh.jpg",
+    title: "",
+    createdAt: "2018",
     width: "680px",
     height: "1024px",
   },
