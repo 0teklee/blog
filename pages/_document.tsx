@@ -42,6 +42,11 @@ export default class _document extends Document {
       <Html lang="en">
         <Head>
           <link
+            rel="shortcut icon"
+            href="/asset/favicon.ico"
+            type="image/x-icon"
+          />
+          <link
             rel="canonical"
             href="https://www.teklog.site"
             key="canonical"
