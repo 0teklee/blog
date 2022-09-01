@@ -44,7 +44,7 @@ const Header = () => {
   );
 };
 
-const __Wrapper = styled.div`
+const __Wrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,7 +64,7 @@ const __Button = styled.button<{ btnItem: string }>`
   cursor: pointer;
 
   font-size: ${(props) => (props.btnItem !== "teklog" ? "1.2rem" : "3rem")};
-  font-family: "Cormorant";
+  font-family: "Cormorant", serif;
   font-weight: 700;
   color: #000;
 
@@ -89,14 +89,17 @@ const __InnerFlex = styled.div`
   position: absolute;
   right: 2rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  ${theme.displayFlex("center", "space-around")}
 
   & button:nth-of-type(2) {
     &::before {
       content: "";
       margin-left: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    & button:first-child {
+      display: none;
     }
   }
 `;

@@ -7,17 +7,23 @@ interface IProps {
   children: ReactNode | ReactNode[];
   padding?: string;
   margin?: string;
+  mobilePadding?: string;
 }
 
 const Layout = ({
   children,
   padding = "8rem 4rem 5rem 4rem",
   margin,
+  mobilePadding,
 }: IProps) => {
   return (
     <__Container>
       <Header />
-      <__Wrapper padding={padding} margin={margin}>
+      <__Wrapper
+        padding={padding}
+        margin={margin}
+        mobilePadding={mobilePadding}
+      >
         {children}
       </__Wrapper>
       <Footer />
@@ -33,7 +39,14 @@ const __Container = styled.div`
   color: #000;
 `;
 
-const __Wrapper = styled.main<{ padding?: string; margin?: string }>`
+const __Wrapper = styled.main<{
+  padding?: string;
+  margin?: string;
+  mobilePadding?: string;
+}>`
   padding: ${(props) => props.padding};
   margin: ${(props) => (props.margin ? props.margin : "0")};
+  @media only screen and (max-width: 500px) {
+    padding: ${(props) => (props.mobilePadding ? props.mobilePadding : null)};
+  }
 `;

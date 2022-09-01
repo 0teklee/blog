@@ -29,16 +29,16 @@ const Footer = () => {
     <__Wrapper>
       <__Flex>
         <__Button onClick={handleContact}>contact</__Button>
-        <__Button onClick={handleTop}>top</__Button>
+        <__Top onClick={handleTop}>top</__Top>
         <__Button>
-          <Link href="https://www.naver.com">resume</Link>
+          <Link href="https://www.0teklee.github.io/resume">cv</Link>
         </__Button>
       </__Flex>
     </__Wrapper>
   );
 };
 
-const __Wrapper = styled.div`
+const __Wrapper = styled.footer`
   position: sticky;
   top: 0;
   width: 100%;
@@ -57,7 +57,7 @@ const __Button = styled.button`
   all: unset;
   cursor: pointer;
 
-  font-family: "proxima-nova";
+  font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   color: #000;
 
@@ -69,14 +69,16 @@ const __Button = styled.button`
   }
 `;
 
-const __Flex = styled.div`
-  ${theme.displayFlex("center", "space-between")};
+const __Top = styled(__Button)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 
-  & > button:nth-of-type(2) {
-    flex-grow: 1;
-    text-align: center;
-    margin-right: 2rem;
-  }
+const __Flex = styled.div`
+  position: relative;
+  ${theme.displayFlex("center", "space-between")};
 `;
 
 export default Footer;
