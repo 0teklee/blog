@@ -1,7 +1,6 @@
 import Router from "next/router";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import handlePostBlog from "libs/post/handlePostBlog";
 import ImageUpload from "libs/utils/cloudinaryPost";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
@@ -9,7 +8,11 @@ import { toolbarOptions, formats } from "libs/utils/quillFormat";
 import { unstable_getServerSession } from "next-auth";
 import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
+import getBlogEditPost from "pages/api/getBlogEditPost";
+import handlePutBlog from "libs/post/handlePutBlog";
+import { IBlogGetEditItem } from "types/IBlogItem";
 import { theme } from "styles/theme";
+import handleDeleteBlogPost from "libs/post/handleDeleteBlogPost";
 
 const QuillWrapper = dynamic(
   async () => {
@@ -22,13 +25,19 @@ const QuillWrapper = dynamic(
   { ssr: false }
 );
 
-const Create = () => {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [category, setCategory] = useState("");
-  const [tags, setTags] = useState<string[]>([]);
+const Edit = ({ post }: { post: IBlogGetEditItem }) => {
+  const {
+    title: propTitle,
+    content: propContent,
+    categories: propCategory,
+    tags: propTags,
+    id,
+  } = post;
+  const [title, setTitle] = useState(propTitle);
+  const [content, setContent] = useState(propContent);
+  const [category, setCategory] = useState(propCategory.name);
+  const [tags, setTags] = useState<string[]>(propTags.map((item) => item.tag));
   const quillRef = useRef(null);
-
   const router = Router;
 
   const handleSubmit = () => {
@@ -42,7 +51,7 @@ const Create = () => {
       return;
     }
 
-    handlePostBlog(`/api/postBlog`, title, content, category, tags);
+    handlePutBlog(`/api/putBlogPost`, title, content, category, id, tags);
     router.push("/");
   };
 
@@ -50,6 +59,13 @@ const Create = () => {
     e.preventDefault();
   };
 
+  const handleDelete = () => {
+    if (confirm("정말 삭제하시겠습니까?")) {
+      handleDeleteBlogPost(`/api/deleteBlogPost/${router.query.id}`);
+      router.push("/blog");
+    }
+    return;
+  };
   // Custom Image Upload Handler
   const handleImage = () => {
     const editor = quillRef.current.getEditor();
@@ -89,17 +105,19 @@ const Create = () => {
 
   return (
     <__Wrapper>
-      <__Header>Writing..</__Header>
+      <__Header>Editing..</__Header>
       <form onSubmit={handleForm}>
         <__Title
           placeholder="제목"
           type="text"
           onChange={(e) => setTitle(e.target.value)}
+          value={title}
         />
         <__Category
           placeholder="카테고리"
           type="text"
           onChange={(e) => setCategory(e.target.value)}
+          value={category}
         />
         <__TagInput
           placeholder="tags"
@@ -143,24 +161,33 @@ const Create = () => {
           formats={formats}
           modules={modules}
           onChange={(e) => setContent(e)}
+          value={content}
         />
-        <__Submit type="submit" onClick={handleSubmit}>
-          Submit
-        </__Submit>
+        <__SubmitDeleteWrapper>
+          <__Submit type="submit" onClick={handleSubmit}>
+            Submit
+          </__Submit>
+          <__Delete type="button" onClick={handleDelete}>
+            Delete
+          </__Delete>
+        </__SubmitDeleteWrapper>
       </form>
     </__Wrapper>
   );
 };
 
-export default Create;
+export default Edit;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const session = await unstable_getServerSession(
-    context.req,
-    context.res,
-    authOptions
-  );
-  if (!session) {
+export const getServerSideProps: GetServerSideProps = async ({
+  req,
+  res,
+  params,
+}) => {
+  const { id } = params;
+  const getEditPost = await getBlogEditPost(id);
+
+  const session = await unstable_getServerSession(req, res, authOptions);
+  if (!session || !getEditPost) {
     return {
       redirect: {
         destination: "/",
@@ -172,6 +199,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       session,
+      post: getEditPost,
     },
   };
 };
@@ -199,11 +227,12 @@ const __Title = styled.input`
 
 const __Category = styled.input`
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   border: none;
   font-size: 1.5rem;
   font-weight: 600;
 `;
+
 const __TagWrapper = styled.div`
   ${theme.displayFlex("center", "start")}
   flex-wrap: wrap;
@@ -229,6 +258,10 @@ const __TagItem = styled.p`
   }
 `;
 
+const __SubmitDeleteWrapper = styled.div`
+  ${theme.displayFlex("center", "center")}
+`;
+
 const __Submit = styled.button`
   width: 100%;
   margin: 0 auto;
@@ -246,5 +279,20 @@ const __Submit = styled.button`
     filter: invert(1);
     background: linear-gradient(45deg, #2e14c5, tomato);
     transition: 1s;
+  }
+`;
+
+const __Delete = styled(__Submit)`
+  margin-left: 1rem;
+  border: 3px solid #000;
+  border-radius: 10px;
+  color: #000;
+
+  &:hover {
+    filter: unset;
+    background: #c50b0b;
+    color: #fff;
+    border-color: #fff;
+    transition: 0.5s;
   }
 `;
