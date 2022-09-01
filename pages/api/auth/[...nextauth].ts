@@ -8,9 +8,12 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
-  secret: process.env.LOGIN_TOKEN,
+  secret: process.env.NEXT_PUBLIC_SECRET,
   session: {
     strategy: "jwt",
+  },
+  jwt: {
+    secret: process.env.LOGIN_TOKEN,
   },
   callbacks: {
     async jwt({ token, account }) {
