@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
   smoothscroll.polyfill();
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <SessionProvider session={pageProps.session}>
       <ThemeProvider theme={theme}>
@@ -19,6 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </ThemeProvider>
     </SessionProvider>
   );
-}
+};
 
 export default MyApp;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import { theme } from "styles/theme";
 
-const login = () => {
+const index = () => {
   const { data: session, status } = useSession();
   const loading = status === "loading";
 
@@ -44,7 +44,7 @@ const login = () => {
   );
 };
 
-export default login;
+export default index;
 
 const __LoginWrapper = styled.div`
   ${theme.displayFlex("center", "center", "column")}

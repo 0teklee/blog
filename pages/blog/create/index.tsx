@@ -22,7 +22,7 @@ const QuillWrapper = dynamic(
   { ssr: false }
 );
 
-const Create = () => {
+const index = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("");
@@ -152,7 +152,7 @@ const Create = () => {
   );
 };
 
-export default Create;
+export default index;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await unstable_getServerSession(

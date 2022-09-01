@@ -2,7 +2,6 @@ import MetaTag from "components/MetaTag";
 import BlogListPageTemplage from "components/Template/Blog/BlogListPageTemplage";
 import getBlogCategoryList from "pages/api/getBlogCategoryList";
 import getBlogCategoryPost from "pages/api/getBlogCategoryPost";
-import getBlogDetailId from "pages/api/getBlogDetailId";
 import getBlogList from "pages/api/getBlogList";
 import getBlogTagPost from "pages/api/getBlogTagPost";
 import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";

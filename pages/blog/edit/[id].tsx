@@ -25,7 +25,7 @@ const QuillWrapper = dynamic(
   { ssr: false }
 );
 
-const Edit = ({ post }: { post: IBlogGetEditItem }) => {
+const index = ({ post }: { post: IBlogGetEditItem }) => {
   const {
     title: propTitle,
     content: propContent,
@@ -176,7 +176,7 @@ const Edit = ({ post }: { post: IBlogGetEditItem }) => {
   );
 };
 
-export default Edit;
+export default index;
 
 export const getServerSideProps: GetServerSideProps = async ({
   req,

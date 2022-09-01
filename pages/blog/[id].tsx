@@ -13,7 +13,7 @@ interface IProps {
   categoryList: IBlogGetCategorySideBar[];
 }
 
-const Detail = (props: IProps) => {
+const index = (props: IProps) => {
   /* Wrong Paths Branch*/
   const router = useRouter();
   if (router.isFallback) {
@@ -54,7 +54,7 @@ const Detail = (props: IProps) => {
   );
 };
 
-export default Detail;
+export default index;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const postsId = await getBlogDetailId();
