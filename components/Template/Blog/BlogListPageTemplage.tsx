@@ -6,14 +6,14 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
-import { IBlogGetCategory, IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";
 
 const BlogListPageTemplage = ({
   posts,
   categories,
 }: {
   posts?: IBlogGetListItem[];
-  categories: IBlogGetCategory[];
+  categories: IBlogGetCategorySideBar[];
 }) => {
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
