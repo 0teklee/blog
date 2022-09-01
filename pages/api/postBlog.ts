@@ -1,20 +1,38 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "libs/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
-
-const client = new PrismaClient();
+import { stringify } from "querystring";
+import { IBlogItemPost } from "types/IBlogItem";
 
 const postBlog = async (req: NextApiRequest, res: NextApiResponse) => {
-  const data = req.body;
+  const data: IBlogItemPost = req.body;
+  const { tag: tagIn, category, ...rest } = data;
+
+  const tagsReqData = tagIn.map((item: string) => {
+    return {
+      where: { tag: item },
+      create: { tag: item },
+    };
+  });
+
   try {
-    const result = await client.post.create({
+    const result = await prisma.post.create({
       data: {
-        ...data,
+        ...rest,
+        tags: {
+          connectOrCreate: tagsReqData,
+        },
+        categories: {
+          connectOrCreate: {
+            where: { name: category },
+            create: { name: category },
+          },
+        },
       },
     });
     res.status(200).json(result);
   } catch (err) {
-    console.log(err);
-    res.status(403).json({ err: "Error occurred" });
+    // console.log(err);
+    res.status(403).json({ err: err.message });
   }
 };
 
