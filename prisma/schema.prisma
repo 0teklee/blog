@@ -1,11 +1,13 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
 }
 
 model Post {
@@ -13,5 +15,20 @@ model Post {
   title  String
   content String @db.VarChar(16000)
   createdAt DateTime @default(now())
-  category String @db.VarChar(20)
+  post_id Int 
+  categories Category @relation(fields: [post_id], references: [id])
+  tags Tag[] 
+}
+
+model Category {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(20)
+  posts Post[] 
+}
+
+model Tag {
+  id Int @id @default(autoincrement())
+  tag String @db.VarChar(20) @unique
+  posts Post[]
+  
 }
