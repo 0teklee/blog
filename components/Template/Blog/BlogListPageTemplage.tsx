@@ -1,17 +1,26 @@
 import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
+import BlogSideBar from "components/Module/BlogSideBar";
+import { createKey } from "next/dist/shared/lib/router/router";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { theme } from "styles/theme";
+import { sizes, theme } from "styles/theme";
+import { IBlogGetCategory, IBlogGetListItem } from "types/IBlogItem";
 
-const BlogListPageTemplage = ({ posts }) => {
+const BlogListPageTemplage = ({
+  posts,
+  categories,
+}: {
+  posts?: IBlogGetListItem[];
+  categories: IBlogGetCategory[];
+}) => {
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
 
   const handlePrev = () => {
     if (page === 1) return;
-    setPage(page - 1);
+    setPage((prev) => prev - 1);
   };
 
   const handleNext = () => {
@@ -20,51 +29,86 @@ const BlogListPageTemplage = ({ posts }) => {
   };
 
   useEffect(() => {
-    router.push({
-      pathname: "/blog",
-      query: { page: page },
-    });
+    if (router.query.page) {
+      router.push({
+        pathname: "/blog",
+        query: { page: page },
+      });
+    }
   }, [page]);
-
   return (
-    <Layout padding="8rem 2rem 1rem 2rem">
-      <__Title>Blog</__Title>
-      <__ListWrapper>
-        {posts?.map((item) => (
-          <BlogListItem
-            content={item.content}
-            title={item.title}
-            id={item.id}
-            createdAt={item.createdAt}
-            key={item.id}
-          />
-        ))}
-        <__PaginationWrapper>
-          {page !== 1 && (
-            <__PaginationBtn onClick={handlePrev}>prev</__PaginationBtn>
-          )}
-          {posts.length === 5 && (
-            <__PaginationBtn onClick={handleNext}>next</__PaginationBtn>
-          )}
-        </__PaginationWrapper>
-      </__ListWrapper>
+    <Layout padding="8rem 0rem 1rem 0rem">
+      <__Container>
+        <BlogSideBar categories={categories} />
+        <__Title>
+          {router.query.page ? "Blog" : null}
+          {router.query.category ? posts[0].categories.name : null}
+          {router.query.tag ? `#${posts[0].tags[0].tag}` : null}
+        </__Title>
+        <__ListWrapper>
+          {!posts && <__NoPost>No Posts Yet</__NoPost>}
+          {posts &&
+            posts.map((item, i) => (
+              <BlogListItem
+                content={item.content}
+                title={item.title}
+                id={item.id}
+                createdAt={item.createdAt}
+                key={`BlogListItem_${i}`}
+                categories={item.categories}
+                tags={item.tags}
+              />
+            ))}
+          <__PaginationWrapper>
+            {router.query.page && page !== 1 && (
+              <__PaginationBtn onClick={handlePrev}>prev</__PaginationBtn>
+            )}
+            {router.query.page && posts.length >= 5 && (
+              <__PaginationBtn onClick={handleNext}>next</__PaginationBtn>
+            )}
+          </__PaginationWrapper>
+        </__ListWrapper>
+      </__Container>
     </Layout>
   );
 };
 
 export default BlogListPageTemplage;
 
+const __Container = styled.div`
+  position: relative;
+`;
+
 const __Title = styled.h1`
   text-align: center;
   margin-bottom: 4rem;
+  ${theme.titleEllipsis("wrap")}
 
   @media only screen and (${theme.devices.laptop}) {
     margin-bottom: 7rem;
   }
 `;
 
+const __NoPost = styled(__Title)``;
+
 const __ListWrapper = styled.div`
   width: 100%;
+
+  @media only screen and (max-width: 650px) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: ${sizes.laptop}) {
+    padding: 0 8rem;
+  }
+
+  @media only screen and (${theme.devices.laptop}) {
+    padding: 0 15rem;
+  }
+
+  @media only screen and (${theme.devices.laptopL}) {
+    padding: 0 22rem;
+  }
 `;
 
 const __PaginationWrapper = styled.div`
@@ -73,7 +117,6 @@ const __PaginationWrapper = styled.div`
   margin-bottom: 3rem;
   background: #fff;
   @media only screen and (max-width: 720px) {
-    max-width: 720px;
   }
 `;
 

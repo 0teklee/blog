@@ -48,8 +48,9 @@ const MetaTag = ({
       <Script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        defer
       />
-      <Script id="google-analytics">
+      <Script id="google-analytics" defer>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
