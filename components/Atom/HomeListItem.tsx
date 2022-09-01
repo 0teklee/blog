@@ -3,8 +3,9 @@ import Router from "next/router";
 import styled from "styled-components";
 import dayJs from "libs/utils/dayJs";
 import presetImgs from "libs/utils/presetImg";
+import { IBlogMainItem } from "types/IBlogItem";
 
-const HomeListItem = ({ posts }) => {
+const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   const router = Router;
   let imageId = 0;
 
@@ -14,7 +15,6 @@ const HomeListItem = ({ posts }) => {
     }
     imageId = imageId + 1;
   };
-
   return (
     <>
       {posts && posts.length === 0 ? (
@@ -30,16 +30,18 @@ const HomeListItem = ({ posts }) => {
               <__Container key={`container_${item.id}`}>
                 <__BlogItemWrapper
                   key={item.id}
-                  onClick={() => router.push(`/blog/${item.id}`)}
+                  onClick={() => {
+                    router.push(`/blog/${item.id}`);
+                  }}
                 >
                   <__BlogBackDrop
                     key={`img_${item.id}`}
                     src={presetImgs[imageId]}
                     alt="teklog-recent-post"
                     layout="fill"
-                    loading="lazy"
-                    placeholder="blur"
-                    blurDataURL="/asset/lazy-loading.jpg"
+                    // loading="lazy"
+                    // placeholder="blur"
+                    // blurDataURL="/asset/lazy-loading.jpg"
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
                     <__BlogTitle key={`itemTitle_${item.id}`}>
@@ -162,7 +164,7 @@ const __BlogTitle = styled.div`
   white-space: nowrap;
   text-align: center;
 
-  font-family: "Tenon", "IBM Plex Sans KR", "Spoqa Han Sans Neo", sans-serif;
+  font-family: "Tenon", "IBM Plex Sans KR", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 
@@ -187,7 +189,7 @@ const __BlogContent = styled.div`
 
   font-size: 1.2rem;
   font-weight: 300;
-  font-family: "tenon", "IBM Plex Sans KR", sans-serif;
+  font-family: "Tenon", "IBM Plex Sans KR", sans-serif;
 
   @media only screen and (min-width: 720px) and (max-width: 900px) {
     font-size: 0.8rem;
@@ -205,7 +207,7 @@ const __BlogItemFooter = styled.div`
 
   color: #000;
   font-size: 0.7rem;
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
 
   position: absolute;
@@ -218,7 +220,7 @@ const __BlogCopyRight = styled.div`
   bottom: -1rem;
   color: #000;
   font-size: 0.6rem;
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
 
   @media only screen and (min-width: 720px) and (max-width: 1100px) {

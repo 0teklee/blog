@@ -5,6 +5,23 @@ import { sizes, theme } from "styles/theme";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.bubble.css";
 import Router from "next/router";
+import BlogSideBar from "components/Module/BlogSideBar";
+import { IBlogGetCategorySideBar } from "types/IBlogItem";
+
+interface IProps {
+  content: string;
+  createdAt: string;
+  id: number;
+  title: string;
+  category: string;
+  tags: string[];
+  categories: IBlogGetCategorySideBar[];
+  nav: {
+    id: number;
+    createdAt: string;
+    title: string;
+  }[];
+}
 
 const QuillWrapper = dynamic(() => import("react-quill"), {
   ssr: false,
@@ -19,12 +36,14 @@ const BlogDetailPageTemplate = ({
   category,
   tags,
   nav,
-}) => {
+  categories,
+}: IProps) => {
   const [prev, next] = nav;
   const router = Router;
   return (
-    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding>
+    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="1rem">
       <__Wrapper>
+        <BlogSideBar categories={categories} padding="0" />
         <__HeaderWrapper>
           <__Title>{title}</__Title>
           <__DateId>
@@ -34,8 +53,13 @@ const BlogDetailPageTemplate = ({
           <__TagCategoryWrpper>
             <p>category : {category}</p>
             <__TagWrapper>
-              {tags?.map((tag) => (
-                <span>#{tag}</span>
+              {tags?.map((tag, i) => (
+                <button
+                  key={`${tag}_btn_${i}`}
+                  onClick={() => router.push(`/blog?tag=${tag}`)}
+                >
+                  <span key={`${tag}_${i}`}>#{tag}</span>
+                </button>
               ))}
             </__TagWrapper>
           </__TagCategoryWrpper>
@@ -94,11 +118,10 @@ const __Title = styled.h1`
   width: 100%;
   margin-bottom: 1rem;
 
-  font-family: "IBM Plex Sans KR";
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-size: 2.5rem;
 
   word-break: break-all;
-  ${theme.titleEllipsis("wrap")}
 `;
 
 const __DateId = styled.div`
@@ -126,9 +149,20 @@ const __TagWrapper = styled.div`
   margin-top: 1rem;
 
   word-break: break-all;
-  span {
-    margin-right: 1rem;
-    font-weight: 400;
+  button {
+    span {
+      margin-right: 1rem;
+      padding: 0 0.2rem;
+
+      border-radius: 20px;
+
+      font-weight: 400;
+      &:hover {
+        background: #0000003e;
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
   }
 `;
 
@@ -138,8 +172,9 @@ const __ContentWrapper = styled.div`
 
   .ql-editor {
     font-size: 1.3rem;
+    padding: 0;
     p {
-      font-family: "IBM Plex Sans KR";
+      font-family: "IBM Plex Sans KR", sans-serif;
       line-height: 1.4;
       font-weight: 400;
     }
@@ -165,7 +200,7 @@ const __GoBack = styled.button`
   cursor: pointer;
   margin: 3rem 0;
 
-  font-family: "proxima-nova";
+  font-family: "proxima-nova", sans-serif;
   font-weight: 300;
 
   &:hover {
@@ -187,7 +222,7 @@ const __NavItem = styled.div`
   margin-bottom: 0.7rem;
   padding: 0 1rem;
 
-  font-family: "IBM Plex Sans KR";
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-size: 1rem;
   cursor: pointer;
 
@@ -204,9 +239,21 @@ const __NavItem = styled.div`
     transform: translate(-50%, -50%);
     max-width: 50%;
     ${theme.titleEllipsis("nowrap")}
+
+    @media only screen and (max-width: 500px) {
+      font-size: 0.8rem;
+      max-width: 30%;
+    }
   }
 
   p:last-child {
     font-size: 0.9rem;
+  }
+
+  p:nth-child(2) ~ p:last-child {
+    @media only screen and (max-width: 500px) {
+      font-size: 0.8rem;
+      max-width: 30%;
+    }
   }
 `;
