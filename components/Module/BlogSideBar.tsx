@@ -141,9 +141,7 @@ const __Wrapper = styled.aside<{ padding?: string }>`
     }
   }
   @media only screen and (max-width: 500px) {
-    top: 45px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    top: 1.5rem;
   }
 `;
 

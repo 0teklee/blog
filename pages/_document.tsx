@@ -7,7 +7,6 @@ import Document, {
   DocumentInitialProps,
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import { GA_TRACKING_ID } from "libs/gtag";
 export default class _document extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -58,7 +57,7 @@ export default class _document extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=IBM+Plex+Sans+KR:wght@100;600&family=Roboto:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=IBM+Plex+Sans+KR:wght@100;400;600&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://use.typekit.net/hmd1htb.css" />

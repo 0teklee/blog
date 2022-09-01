@@ -15,33 +15,25 @@ const Header = () => {
   return (
     <__Wrapper>
       <__Flex>
-        <__InnerFlex>
+        <__InnerFlexLeft>
           {headerItems
             .filter((item) => item.item !== ("archive" || "teklog" || "blog"))
             .map((item) => (
-              <__Button
-                key={item.id}
-                btnItem={item.item}
-                onClick={() => router.push(item.path)}
-              >
+              <__Button key={item.id} onClick={() => router.push(item.path)}>
                 {item.item}
               </__Button>
             ))}
-        </__InnerFlex>
-        <__Button onClick={() => router.push("/")}>teklog</__Button>
-        <__InnerFlex>
+        </__InnerFlexLeft>
+        <__MainButton onClick={() => router.push("/")}>teklog</__MainButton>
+        <__InnerFlexRight>
           {headerItems
             .filter((item) => item.item !== "info" && item.item !== "teklog")
             .map((item) => (
-              <__Button
-                key={item.id}
-                btnItem={item.item}
-                onClick={() => router.push(item.path)}
-              >
+              <__Button key={item.id} onClick={() => router.push(item.path)}>
                 {item.item}
               </__Button>
             ))}
-        </__InnerFlex>
+        </__InnerFlexRight>
       </__Flex>
     </__Wrapper>
   );
@@ -62,11 +54,11 @@ const __Wrapper = styled.header`
   z-index: 10;
 `;
 
-const __Button = styled.button<{ btnItem?: string }>`
+const __Button = styled.button`
   all: unset;
   cursor: pointer;
 
-  font-size: ${(props) => (props.btnItem !== "teklog" ? "2rem" : "3rem")};
+  font-size: 2rem;
   font-family: "Cormorant", "IBM Plex Sans KR", -apple-system, sans-serif,
     Helvetica, serif;
   font-weight: 700;
@@ -80,16 +72,23 @@ const __Button = styled.button<{ btnItem?: string }>`
   }
 `;
 
+const __MainButton = styled(__Button)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+`;
+
 const __Flex = styled.div`
+  position: relative;
   ${theme.displayFlex("center", "space-between")};
   & > button:nth-of-type(2) {
-    flex-grow: 1;
-    text-align: center;
     margin-right: 2rem;
   }
 `;
 
-const __InnerFlex = styled.div`
+const __InnerFlexRight = styled.div`
   position: absolute;
   right: 2rem;
 
@@ -106,6 +105,10 @@ const __InnerFlex = styled.div`
       display: none;
     }
   }
+`;
+
+const __InnerFlexLeft = styled(__InnerFlexRight)`
+  left: 2rem;
 `;
 
 export default Header;
