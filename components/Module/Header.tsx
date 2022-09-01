@@ -9,7 +9,7 @@ const headerLeftItems = [
 
 const headerRightItems = [
   { id: 0, item: "archive", path: "/archive" },
-  { id: 1, item: "blog", path: "/blog" },
+  { id: 1, item: "blog", path: "/blog?page=1" },
 ];
 
 const Header = () => {
