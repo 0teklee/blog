@@ -44,7 +44,8 @@
       2,
       {
         "namedComponents": "arrow-function"
-      }
+      },
+      { "prettier/prettier": "error" }
     ],
     "import/extensions": [
       "error",
