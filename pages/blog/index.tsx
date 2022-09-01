@@ -5,14 +5,14 @@ import getBlogCategoryPost from "pages/api/getBlogCategoryPost";
 import getBlogDetailId from "pages/api/getBlogDetailId";
 import getBlogList from "pages/api/getBlogList";
 import getBlogTagPost from "pages/api/getBlogTagPost";
-import { IBlogGetCategory, IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";
 
 const index = ({
   list,
   categories,
 }: {
   list: IBlogGetListItem[];
-  categories: IBlogGetCategory[];
+  categories: IBlogGetCategorySideBar[];
 }) => {
   return (
     <>
