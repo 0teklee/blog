@@ -28,5 +28,5 @@ export default Loading;
 
 const __Flex = styled.div`
   ${theme.displayFlex("center", "center", "column")}
-  font-family: "proxima-nova", sans-serif;
+  font-family: "proxima-nova", "Roboto", sans-serif;
 `;

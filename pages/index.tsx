@@ -1,5 +1,6 @@
 import MetaTag from "components/MetaTag";
 import HomeTemplate from "components/Template/Home/HomeTemplate";
+import { GetServerSideProps } from "next";
 import { IBlogMainItem } from "types/IBlogItem";
 
 import getMainPosts from "./api/getMainPosts";
@@ -21,10 +22,10 @@ const Home = (props: { posts: IBlogMainItem[] }) => {
 
 export default Home;
 
-export async function getServerSideProps({ req, res }) {
+export const getServerSideProps: GetServerSideProps = async () => {
   const posts = await getMainPosts();
 
   return {
     props: { posts },
   };
-}
+};

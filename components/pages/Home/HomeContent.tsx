@@ -36,13 +36,15 @@ export default HomeContent;
 
 const __IntroWrapper = styled.section`
   width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 `;
 
 const __Intro = styled.h1`
   transition: 1s;
   animation: intro 1s;
   font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 
   @keyframes intro {
     0% {
@@ -72,7 +74,7 @@ const __RecentPosts = styled.h2`
 const __MoreButton = styled.button`
   all: unset;
 
-  font-family: "Tenon", sans-serif;
+  font-family: "Tenon", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   transition: 20s;

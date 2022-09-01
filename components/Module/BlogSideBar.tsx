@@ -156,7 +156,7 @@ const __Title = styled.h4`
   padding: 1rem 1rem 1rem 0;
   font-size: 1.2rem;
   font-weight: 400;
-  font-family: "proxima-nova-condensed", sans-serif;
+  font-family: "proxima-nova-condensed", "Roboto", sans-serif;
 `;
 
 const __ToggleButton = styled.button<{ visible: boolean }>`

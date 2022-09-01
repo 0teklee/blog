@@ -41,7 +41,7 @@ const BlogDetailPageTemplate = ({
   const [prev, next] = nav;
   const router = Router;
   return (
-    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="1rem">
+    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
       <__Wrapper>
         <BlogSideBar categories={categories} padding="0" />
         <__HeaderWrapper>
@@ -200,7 +200,7 @@ const __GoBack = styled.button`
   cursor: pointer;
   margin: 3rem 0;
 
-  font-family: "proxima-nova", sans-serif;
+  font-family: "proxima-nova", "Roboto", sans-serif;
   font-weight: 300;
 
   &:hover {

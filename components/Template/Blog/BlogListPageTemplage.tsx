@@ -37,7 +37,7 @@ const BlogListPageTemplage = ({
     }
   }, [page]);
   return (
-    <Layout padding="8rem 0rem 1rem 0rem">
+    <Layout padding="8rem 0rem 1rem 0rem" mobilePadding="3rem 1rem">
       <__Container>
         <BlogSideBar categories={categories} />
         <__Title>

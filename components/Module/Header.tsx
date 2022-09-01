@@ -4,9 +4,9 @@ import { theme } from "styles/theme";
 
 const headerItems = [
   { id: 0, item: "info", path: "/info" },
-  { id: 1, item: "teklog", path: "/" },
-  { id: 2, item: "archive", path: "/archive" },
-  { id: 3, item: "blog", path: "/blog?page=1" },
+  { id: 1, item: "gallery", path: "/gallery" },
+  { id: 3, item: "archive", path: "/archive" },
+  { id: 4, item: "blog", path: "/blog?page=1" },
 ];
 
 const Header = () => {
@@ -15,17 +15,20 @@ const Header = () => {
   return (
     <__Wrapper>
       <__Flex>
-        {headerItems
-          .filter((item) => item.item !== "archive" && item.item !== "blog")
-          .map((item) => (
-            <__Button
-              key={item.id}
-              btnItem={item.item}
-              onClick={() => router.push(item.path)}
-            >
-              {item.item}
-            </__Button>
-          ))}
+        <__InnerFlex>
+          {headerItems
+            .filter((item) => item.item !== ("archive" || "teklog" || "blog"))
+            .map((item) => (
+              <__Button
+                key={item.id}
+                btnItem={item.item}
+                onClick={() => router.push(item.path)}
+              >
+                {item.item}
+              </__Button>
+            ))}
+        </__InnerFlex>
+        <__Button onClick={() => router.push("/")}>teklog</__Button>
         <__InnerFlex>
           {headerItems
             .filter((item) => item.item !== "info" && item.item !== "teklog")
@@ -59,12 +62,13 @@ const __Wrapper = styled.header`
   z-index: 10;
 `;
 
-const __Button = styled.button<{ btnItem: string }>`
+const __Button = styled.button<{ btnItem?: string }>`
   all: unset;
   cursor: pointer;
 
-  font-size: ${(props) => (props.btnItem !== "teklog" ? "1.2rem" : "3rem")};
-  font-family: "Cormorant", serif;
+  font-size: ${(props) => (props.btnItem !== "teklog" ? "2rem" : "3rem")};
+  font-family: "Cormorant", "IBM Plex Sans KR", -apple-system, sans-serif,
+    Helvetica, serif;
   font-weight: 700;
   color: #000;
 

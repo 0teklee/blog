@@ -58,7 +58,7 @@ export default class _document extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=IBM+Plex+Sans+KR:wght@100;400;600&family=Noto+Serif:wght@400;700&family=Syne:wght@400;500;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=IBM+Plex+Sans+KR:wght@100;600&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://use.typekit.net/hmd1htb.css" />

@@ -139,7 +139,7 @@ const __AboutLangBtn = styled.button<{ selected: boolean }>`
 
   margin-top: 1.2rem;
 
-  font-family: "Tenon", sans-serif;
+  font-family: "Tenon", "Roboto", sans-serif;
   font-weight: ${(props) => (props.selected ? 600 : 400)};
 
   cursor: pointer;
@@ -166,7 +166,7 @@ const __AboutContent = styled.div<{ isUnmount: boolean }>`
     background: #2d10b0;
     color: #fff;
     transition: 0.5s;
-    font-family: "proxima-condensed", sans-serif;
+    font-family: "proxima-condensed", "Roboto", sans-serif;
     font-weight: 800;
   }
 

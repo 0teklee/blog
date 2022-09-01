@@ -42,7 +42,7 @@ const __Wrapper = styled.footer`
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 2rem;
 
   background-clip: text;
   -webkit-background-clip: text;
@@ -57,7 +57,7 @@ const __Button = styled.button`
   all: unset;
   cursor: pointer;
 
-  font-family: "proxima-nova", sans-serif;
+  font-family: "proxima-nova", "Roboto", sans-serif;
   font-weight: 400;
   color: #000;
 
