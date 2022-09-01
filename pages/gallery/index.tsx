@@ -6,7 +6,7 @@ const index = () => {
     <>
       <MetaTag
         title="teklog - gallery"
-        url="www.teklog.site/gallery"
+        url="https://www.teklog.site/gallery"
         description="teklog - image gallery"
       />
       <GalleryTemplate />
