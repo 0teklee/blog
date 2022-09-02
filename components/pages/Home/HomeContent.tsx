@@ -1,5 +1,4 @@
 import HomeListItem from "components/Atom/HomeListItem";
-import Layout from "components/Atom/Layout";
 import HomeAboutMe from "components/pages/Home/HomeAboutMe";
 import Router from "next/router";
 import styled from "styled-components";
@@ -37,14 +36,7 @@ export default HomeContent;
 const __IntroWrapper = styled.section`
   width: 100%;
   margin-bottom: 5rem;
-`;
-
-const __Intro = styled.h1`
-  transition: 1s;
   animation: intro 1s;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
 
   @keyframes intro {
     0% {
@@ -54,6 +46,12 @@ const __Intro = styled.h1`
       opacity: 100%;
     }
   }
+`;
+
+const __Intro = styled.h1`
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
 `;
 
 const __NavBtnWrapper = styled.div`

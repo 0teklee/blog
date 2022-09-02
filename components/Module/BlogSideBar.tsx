@@ -118,6 +118,7 @@ const __Wrapper = styled.aside<{ padding?: string }>`
   @media only screen and (max-width: ${sizes.laptop}) {
     position: relative;
     top: unset;
+    left: 0;
     bottom: 10px;
 
     width: 100%;
@@ -142,11 +143,12 @@ const __Wrapper = styled.aside<{ padding?: string }>`
   }
   @media only screen and (max-width: 500px) {
     top: 1.5rem;
+    /* padding: 1.5rem 0; */
   }
 `;
 
 const __TitleWrapper = styled.div`
-  ${theme.displayFlex("center", "space-between")}
+  ${theme.displayFlex("center", "space-between")};
   min-width: 13.3rem;
 `;
 

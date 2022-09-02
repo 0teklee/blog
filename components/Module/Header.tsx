@@ -1,4 +1,5 @@
 import Router from "next/router";
+import { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
@@ -12,11 +13,23 @@ const headerRightItems = [
   { id: 1, item: "blog", path: "/blog?page=1" },
 ];
 
-const Header = () => {
+const Header = ({
+  mode,
+  setMode,
+}: {
+  mode: boolean;
+  setMode: Dispatch<SetStateAction<boolean>>;
+}) => {
   const router = Router;
 
   return (
     <__Wrapper>
+      <__Modebutton
+        about="night/day mode"
+        onClick={() => setMode((prev) => !prev)}
+      >
+        {mode ? "☽" : "☼"}
+      </__Modebutton>
       <__Flex>
         <__InnerFlexLeft>
           {headerLeftItems.map((item) => (
@@ -71,6 +84,15 @@ const __Button = styled.button`
   }
 `;
 
+const __Modebutton = styled(__Button)`
+  position: fixed;
+  left: 50%;
+  top: 5rem;
+  transform: translate(-50%);
+
+  font-size: 1.2rem;
+`;
+
 const __MainButton = styled(__Button)`
   position: absolute;
   top: 50%;
@@ -96,7 +118,7 @@ const __InnerFlexRight = styled.div`
       margin-left: 1.5rem;
     }
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 750px) {
     button {
       font-family: "IBM Plex Sans KR";
       font-weight: 400;
@@ -109,7 +131,7 @@ const __InnerFlexRight = styled.div`
     button:nth-of-type(2) {
       position: relative;
       top: 0.5rem;
-      right: -1rem;
+      right: 0rem;
       font-size: 1.2rem;
       &::before {
         content: "";
@@ -117,10 +139,17 @@ const __InnerFlexRight = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0.5rem 0;
+    button {
+      display: none;
+    }
+  }
 `;
 
 const __InnerFlexLeft = styled(__InnerFlexRight)`
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     & button:nth-of-type(2) {
       left: -1rem;
       font-size: 1.2rem;

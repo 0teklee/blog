@@ -1,7 +1,6 @@
 import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
 import BlogSideBar from "components/Module/BlogSideBar";
-import { createKey } from "next/dist/shared/lib/router/router";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
@@ -46,9 +45,9 @@ const BlogListPageTemplage = ({
   }, [page]);
 
   return (
-    <Layout padding="8rem 0rem 1rem 0rem" mobilePadding="3rem 0.8rem">
+    <Layout padding="8rem 0rem 5rem 0rem" mobilePadding="2rem 1rem">
       <__Container>
-        <BlogSideBar categories={categories} />
+        <BlogSideBar categories={categories} padding="3rem 1rem 2rem 1rem" />
         <__Title>
           {router.query.page ? "Blog" : null}
           {router.query.category ? posts[0].categories.name : null}
@@ -104,7 +103,7 @@ const __ListWrapper = styled.div`
   width: 100%;
 
   @media only screen and (max-width: 650px) {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   @media only screen and (min-width: 650px) and (max-width: ${sizes.laptop}) {

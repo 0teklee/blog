@@ -43,7 +43,7 @@ const BlogDetailPageTemplate = ({
   return (
     <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
       <__Wrapper>
-        <BlogSideBar categories={categories} padding="0" />
+        <BlogSideBar categories={categories} padding="1.5rem 0" />
         <__HeaderWrapper>
           <__Title>{title}</__Title>
           <__DateId>
