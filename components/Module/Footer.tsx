@@ -31,7 +31,7 @@ const Footer = () => {
         <__Button onClick={handleContact}>contact</__Button>
         <__Top onClick={handleTop}>top</__Top>
         <__Button>
-          <Link href="https://www.0teklee.github.io/resume">cv</Link>
+          <Link href="https://leetekwoo-resume.vercel.app/">cv</Link>
         </__Button>
       </__Flex>
     </__Wrapper>
