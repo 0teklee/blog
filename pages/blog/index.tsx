@@ -1,5 +1,6 @@
 import MetaTag from "components/MetaTag";
 import BlogListPageTemplage from "components/Template/Blog/BlogListPageTemplage";
+import { GetServerSideProps } from "next";
 import getBlogCategoryList from "pages/api/getBlogCategoryList";
 import getBlogCategoryPost from "pages/api/getBlogCategoryPost";
 import getBlogList from "pages/api/getBlogList";
@@ -27,7 +28,7 @@ const index = ({
 
 export default index;
 
-export const getServerSideProps = async ({
+export const getServerSideProps: GetServerSideProps = async ({
   query,
 }: {
   query: { page?: string; category?: string; tag?: string };
@@ -46,6 +47,14 @@ export const getServerSideProps = async ({
     const tagPosts = await getBlogTagPost(tag);
     return {
       props: { list: tagPosts[0].posts, categories },
+    };
+  }
+
+  /* Branch If page query or any query doesn't exist*/
+  if (!page) {
+    const posts = await getBlogList("1");
+    return {
+      props: { list: posts, categories },
     };
   }
 

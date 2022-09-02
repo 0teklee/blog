@@ -17,14 +17,6 @@ const BlogListPageTemplage = ({
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
 
-  /* Branch to page query*/
-  if (!router.query.page) {
-    router.push({
-      pathname: "/blog",
-      query: { page: page },
-    });
-  }
-
   const handlePrev = () => {
     if (page === 1) return;
     setPage((prev) => prev - 1);
