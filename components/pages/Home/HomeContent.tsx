@@ -75,11 +75,20 @@ const __MoreButton = styled.button`
   font-family: "Tenon", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  transition: 20s;
 
   cursor: pointer;
   &:hover {
-    transform: translate(100vw, 0);
+    position: relative;
+    animation: left 10s;
+    @keyframes left {
+      0% {
+        right: 0;
+      }
+      100% {
+        right: -20rem;
+      }
+    }
+
     &::after {
       content: "   → ";
     }

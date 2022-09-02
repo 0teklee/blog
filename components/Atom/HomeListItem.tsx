@@ -39,9 +39,6 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
                     src={presetImgs[imageId]}
                     alt="teklog-recent-post"
                     layout="fill"
-                    // loading="lazy"
-                    // placeholder="blur"
-                    // blurDataURL="/asset/lazy-loading.jpg"
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
                     <__BlogTitle key={`itemTitle_${item.id}`}>
