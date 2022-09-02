@@ -78,7 +78,7 @@ const __MoreButton = styled.button`
 
   cursor: pointer;
   &:hover {
-    position: relative;
+    position: fixed;
     animation: left 10s;
     @keyframes left {
       0% {
