@@ -106,7 +106,7 @@ export default BlogDetailPageTemplate;
 const __Wrapper = styled.div`
   ${theme.displayFlex("center", "center", "column")}
   @media only screen and (min-width: ${sizes.laptop}) {
-    padding: 8rem 10rem 5rem 10rem;
+    padding: 8rem 12rem 5rem 12rem;
   }
 `;
 

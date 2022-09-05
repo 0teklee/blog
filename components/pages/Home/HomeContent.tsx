@@ -139,7 +139,7 @@ const __ContentBox = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;
