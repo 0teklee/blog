@@ -4,6 +4,7 @@ import styled from "styled-components";
 import dayJs from "libs/utils/dayJs";
 import presetImgs from "libs/utils/presetImg";
 import { IBlogMainItem } from "types/IBlogItem";
+import Head from "next/head";
 
 const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   const router = Router;
@@ -17,6 +18,13 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   };
   return (
     <>
+      <Head>
+        <link
+          rel="preload"
+          href={presetImgs && presetImgs[imageId]}
+          as="image"
+        />
+      </Head>
       {posts && posts.length === 0 ? (
         <__NoDataWrapper key="noItemWrapper">
           <__NoData key="noData">No Posts Yet</__NoData>
@@ -39,6 +47,7 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
                     src={presetImgs[imageId]}
                     alt="teklog-recent-post"
                     layout="fill"
+                    priority
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
                     <__BlogTitle key={`itemTitle_${item.id}`}>
@@ -104,6 +113,8 @@ const __BlogItemWrapper = styled(__Wrapper)`
 
   max-width: 100rem;
   min-width: 10rem;
+  width: 270px;
+  height: 368px;
 
   padding: 70% 50%;
   cursor: pointer;

@@ -215,7 +215,7 @@ const __Header = styled.h1`
   margin: 4rem 0;
   text-align: center;
   font-size: 5rem;
-  font-family: "proxima-nova-condensed-bold", "Roboto", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "Roboto", sans-serif;
 `;
 const __Title = styled.input`
   width: 100%;

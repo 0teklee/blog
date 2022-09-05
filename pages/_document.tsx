@@ -6,6 +6,7 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
+import Script from "next/script";
 import { ServerStyleSheet } from "styled-components";
 export default class _document extends Document {
   static async getInitialProps(
@@ -49,16 +50,6 @@ export default class _document extends Document {
             rel="canonical"
             href="https://www.teklog.site"
             key="canonical"
-          />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=IBM+Plex+Sans+KR:wght@100;400;600&family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet"
           />
           <link rel="preconnect" href="https://use.typekit.net/hmd1htb.css" />
         </Head>

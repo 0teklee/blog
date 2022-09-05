@@ -55,6 +55,7 @@ const __Intro = styled.h1`
 `;
 
 const __NavBtnWrapper = styled.div`
+  position: relative;
   ${theme.displayFlex("center", "space-between")};
   margin-bottom: 9rem;
 
@@ -76,11 +77,13 @@ const __MoreButton = styled.button`
   font-weight: 300;
   font-size: 1rem;
 
+  position: absolute;
+  right: 0;
+
   cursor: pointer;
   &:hover {
-    position: fixed;
-    animation: left 10s;
-    @keyframes left {
+    animation: toRight 10s;
+    @keyframes toRight {
       0% {
         right: 0;
       }

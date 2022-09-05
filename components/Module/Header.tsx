@@ -13,21 +13,12 @@ const headerRightItems = [
   { id: 1, item: "blog", path: "/blog?page=1" },
 ];
 
-const Header = ({
-  mode,
-  setMode,
-}: {
-  mode: boolean;
-  setMode: Dispatch<SetStateAction<boolean>>;
-}) => {
+const Header = ({ mode, setMode }: { mode: string; setMode: () => void }) => {
   const router = Router;
 
   return (
     <__Wrapper>
-      <__Modebutton
-        about="night/day mode"
-        onClick={() => setMode((prev) => !prev)}
-      >
+      <__Modebutton about="night/day_mode" onClick={() => setMode()}>
         {mode ? "☽" : "☼"}
       </__Modebutton>
       <__Flex>
@@ -73,14 +64,13 @@ const __Button = styled.button`
   font-size: 1.5rem;
   font-family: "Cormorant", "IBM Plex Sans KR", -apple-system, sans-serif,
     Helvetica, serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
 
   &:hover {
     filter: invert(1);
     color: #2d10b0;
     transition: 1.5s;
-    font-weight: 900;
   }
 `;
 

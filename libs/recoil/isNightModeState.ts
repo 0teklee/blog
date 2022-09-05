@@ -2,7 +2,7 @@ import { atom } from "recoil";
 
 const isNightModeState = atom({
   key: "isNightModeState",
-  default: false,
+  default: "",
 });
 
 export default isNightModeState;

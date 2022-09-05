@@ -1,6 +1,7 @@
 import { getContentImg, setCategoryPresetImg } from "libs/utils/contentImg";
 import dayJs from "libs/utils/dayJs";
 import htmlReplace from "libs/utils/htmlReplace";
+import Head from "next/head";
 import Router from "next/router";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
@@ -20,35 +21,44 @@ const BlogListItem = ({
   const contentReplace = htmlReplace(content);
 
   return (
-    <__Container
-      key={`${id}_container`}
-      onClick={() => router.push(`/blog/${id}`)}
-    >
-      <__Wrapper key={`${id}_wrapper`}>
-        <__HeaderImg
-          headerImg={
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          }
-          key={`${id}_img`}
+    <>
+      <Head>
+        <link
+          rel="preload"
+          href={getContentImg(content) || setCategoryPresetImg(categories.name)}
+          as="image"
         />
-        <__ContentsWrapper key={`${id}_`}>
-          <__ContentTitle key={`${id}_title`}>{title}</__ContentTitle>
-          <__CategoryDateWrapper key={`${id}_categoryDate`}>
-            <__CategoryWrapper key={`${id}_categoryInner`}>
-              <p>category : </p>
-              <p>{categories.name}</p>
-            </__CategoryWrapper>
-            <p>{dayJs(createdAt)}</p>
-          </__CategoryDateWrapper>
-          <p>{contentReplace}</p>
-          <__TagWrapper key={`${id}_tag`}>
-            {tags?.map((tag, i) => (
-              <span key={`${tag}_${i}`}>#{tag.tag}</span>
-            ))}
-          </__TagWrapper>
-        </__ContentsWrapper>
-      </__Wrapper>
-    </__Container>
+      </Head>
+      <__Container
+        key={`${id}_container`}
+        onClick={() => router.push(`/blog/${id}`)}
+      >
+        <__Wrapper key={`${id}_wrapper`}>
+          <__HeaderImg
+            headerImg={
+              getContentImg(content) || setCategoryPresetImg(categories.name)
+            }
+            key={`${id}_img`}
+          />
+          <__ContentsWrapper key={`${id}_`}>
+            <__ContentTitle key={`${id}_title`}>{title}</__ContentTitle>
+            <__CategoryDateWrapper key={`${id}_categoryDate`}>
+              <__CategoryWrapper key={`${id}_categoryInner`}>
+                <p>category : </p>
+                <p>{categories.name}</p>
+              </__CategoryWrapper>
+              <p>{dayJs(createdAt)}</p>
+            </__CategoryDateWrapper>
+            <p>{contentReplace}</p>
+            <__TagWrapper key={`${id}_tag`}>
+              {tags?.map((tag, i) => (
+                <span key={`${tag}_${i}`}>#{tag.tag}</span>
+              ))}
+            </__TagWrapper>
+          </__ContentsWrapper>
+        </__Wrapper>
+      </__Container>
+    </>
   );
 };
 
@@ -134,7 +144,7 @@ const __ContentTitle = styled.h2`
   line-height: 1.6rem;
   max-height: 3.5rem;
   overflow: hidden;
-
+  font-family: "IBM Plex Sans KR", sans-serif;
   @media only screen and (max-width: 500px) {
     font-size: 1.3rem;
   }

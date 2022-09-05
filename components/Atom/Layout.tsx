@@ -18,10 +18,10 @@ const Layout = ({
   margin,
   mobilePadding,
 }: IProps) => {
-  const isNightMode = useRecoilValue(isNightModeState);
+  const isNightMode = useRecoilValue<string>(isNightModeState);
   const setIsNightModeRecoil = useSetRecoilState(isNightModeState);
   const setIsNightMode = () => {
-    setIsNightModeRecoil((prev) => !prev);
+    setIsNightModeRecoil((prev) => (!prev ? "mode" : ""));
   };
 
   return (
@@ -41,7 +41,7 @@ const Layout = ({
 
 export default Layout;
 
-const __Container = styled.div<{ mode: boolean }>`
+const __Container = styled.div<{ mode: string }>`
   width: 100%;
 
   ${(props) =>

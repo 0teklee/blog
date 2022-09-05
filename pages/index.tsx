@@ -22,7 +22,11 @@ const Home = (props: { posts: IBlogMainItem[] }) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
   const posts = await getMainPosts();
 
   return {

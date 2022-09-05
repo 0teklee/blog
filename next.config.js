@@ -9,6 +9,7 @@ const nextConfig = {
     CLOUD_NAME: process.env.CLOUD_NAME,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
+  compress: true,
 };
 
 module.exports = nextConfig;

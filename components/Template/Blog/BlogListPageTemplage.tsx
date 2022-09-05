@@ -80,8 +80,10 @@ const __Container = styled.div`
 `;
 
 const __Title = styled.h1`
-  text-align: center;
   margin-bottom: 4rem;
+
+  font-family: "IBM Plex Sans KR", sans-serif;
+  text-align: center;
   ${theme.titleEllipsis("wrap")}
 
   @media only screen and (${theme.devices.laptop}) {
