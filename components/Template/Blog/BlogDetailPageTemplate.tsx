@@ -43,7 +43,11 @@ const BlogDetailPageTemplate = ({
   return (
     <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
       <__Wrapper>
-        <BlogSideBar categories={categories} padding="1.5rem 0" />
+        <BlogSideBar
+          categories={categories}
+          padding="1.5rem 0"
+          mobilePadding="3rem 0"
+        />
         <__HeaderWrapper>
           <__Title>{title}</__Title>
           <__DateId>
@@ -122,6 +126,10 @@ const __Title = styled.h1`
   font-size: 2.5rem;
 
   word-break: break-all;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const __DateId = styled.div`
@@ -191,6 +199,11 @@ const __ContentWrapper = styled.div`
       img {
         padding: 0 8rem;
       }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .ql-editor {
+      font-size: 1rem;
     }
   }
 `;

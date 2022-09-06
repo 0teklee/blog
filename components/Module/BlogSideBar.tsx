@@ -7,9 +7,11 @@ import { IBlogGetCategorySideBar } from "types/IBlogItem";
 const BlogSideBar = ({
   categories,
   padding = "2rem",
+  mobilePadding,
 }: {
   categories: IBlogGetCategorySideBar[];
   padding?: string;
+  mobilePadding?: string;
 }) => {
   const router = Router;
 
@@ -37,7 +39,7 @@ const BlogSideBar = ({
   };
 
   return (
-    <__Wrapper padding={padding}>
+    <__Wrapper padding={padding} mobilePadding={mobilePadding}>
       <__TitleWrapper>
         <__Title>categories </__Title>
         <__ToggleButton onClick={handleMainToggle} visible={mainToggle}>
@@ -107,7 +109,7 @@ const BlogSideBar = ({
 
 export default BlogSideBar;
 
-const __Wrapper = styled.aside<{ padding?: string }>`
+const __Wrapper = styled.aside<{ padding?: string; mobilePadding?: string }>`
   position: fixed;
   top: 100px;
   left: 1rem;
@@ -143,7 +145,7 @@ const __Wrapper = styled.aside<{ padding?: string }>`
   }
   @media only screen and (max-width: 500px) {
     top: 1.5rem;
-    /* padding: 1.5rem 0; */
+    padding: ${(props) => (props.mobilePadding ? props.mobilePadding : null)};
   }
 `;
 

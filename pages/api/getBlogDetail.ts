@@ -8,7 +8,6 @@ const getBlogDetail = async (
   const query = Number(params);
   const idList = await getBlogDetailId();
   const firstId = idList[0].id;
-  // if (query === idList[1].id)
   try {
     const postsDB = await prisma.post.findMany({
       take: Number(query) !== firstId ? 3 : 2,
