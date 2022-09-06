@@ -52,9 +52,11 @@ export const getServerSideProps: GetServerSideProps = async ({
 
   /* Branch If page query or any query doesn't exist*/
   if (!page) {
-    const posts = await getBlogList("1");
     return {
-      props: { list: posts, categories },
+      redirect: {
+        destination: "/blog?page=1",
+        permanent: false,
+      },
     };
   }
 

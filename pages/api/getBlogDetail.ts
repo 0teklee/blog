@@ -8,6 +8,7 @@ const getBlogDetail = async (
   const query = Number(params);
   const idList = await getBlogDetailId();
   const firstId = idList[0].id;
+
   try {
     const postsDB = await prisma.post.findMany({
       take: Number(query) !== firstId ? 3 : 2,
@@ -31,6 +32,7 @@ const getBlogDetail = async (
         },
       },
     });
+
     const postDetail: IBlogGetDetail["detail"] = JSON.parse(
       JSON.stringify(postsDB.find((item) => item.id === Number(query)))
     );
