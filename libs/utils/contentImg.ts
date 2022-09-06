@@ -19,7 +19,9 @@ const setCategoryPresetImg = (category: string): string | undefined => {
   if (category === "TypeScript") {
     return "https://res.cloudinary.com/dolziw8fv/image/upload/v1661840879/typescript_preset_ioudd0.png";
   }
-
+  if (category === "JavaScript") {
+    return "https://res.cloudinary.com/dolziw8fv/image/upload/v1662480649/javascript_preset_f07j3f.png";
+  }
   if (category === ".etc") {
     return "https://res.cloudinary.com/dolziw8fv/image/upload/v1661838134/component_pji40f.png";
   }

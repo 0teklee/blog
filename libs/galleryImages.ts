@@ -21,7 +21,7 @@ const galleryImagesV1 = [
     height: "1024px",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975834/gallery/v1/gallery-v1--28_mnp2lg.jpg",
+    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662479712/gallery/v1/gallery-v1--58_pafn9u.jpg",
     title: "",
     createdAt: "2022",
     width: "680px",

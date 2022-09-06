@@ -179,8 +179,8 @@ const __ContentWrapper = styled.div`
   min-height: 50vh;
 
   .ql-editor {
-    font-size: 1.3rem;
-    padding: 0;
+    font-size: 1.1rem;
+    padding: 1rem;
     p {
       font-family: "IBM Plex Sans KR", sans-serif;
       line-height: 1.4;
@@ -193,6 +193,13 @@ const __ContentWrapper = styled.div`
 
     video {
       width: 100%;
+    }
+    a:hover {
+      color: ${theme.colors.sign};
+    }
+    pre {
+      margin: 1rem;
+      padding: 1.5rem;
     }
 
     @media only screen and (${theme.devices.laptop}) {
