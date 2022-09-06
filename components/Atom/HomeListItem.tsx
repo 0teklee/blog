@@ -8,7 +8,7 @@ import Head from "next/head";
 
 const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   const router = Router;
-  let imageId = 0;
+  let imageId = -1;
 
   const handlePresetImage = (): void => {
     if (imageId === 6) {
@@ -19,11 +19,7 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   return (
     <>
       <Head>
-        <link
-          rel="preload"
-          href={presetImgs && presetImgs[imageId]}
-          as="image"
-        />
+        <link rel="preload" href={presetImgs[imageId]?.url} as="image" />
       </Head>
       {posts && posts.length === 0 ? (
         <__NoDataWrapper key="noItemWrapper">
@@ -41,12 +37,17 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
                   onClick={() => {
                     router.push(`/blog/${item.id}`);
                   }}
+                  height={presetImgs[imageId]?.height}
                 >
                   <__BlogBackDrop
                     key={`img_${item.id}`}
-                    src={presetImgs[imageId]}
+                    src={presetImgs[imageId]?.url}
                     alt="teklog-recent-post"
                     layout="fill"
+                    objectFit="contain"
+                    sizes="(min-width: 75em) 33vw,
+                    (min-width: 48em) 50vw,
+                    100vw"
                     priority
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
@@ -107,14 +108,14 @@ const __BlogBackDrop = styled(Image)`
   z-index: 0;
 `;
 
-const __BlogItemWrapper = styled(__Wrapper)`
+const __BlogItemWrapper = styled(__Wrapper)<{ height: string }>`
   flex-direction: column;
   justify-content: center;
 
   max-width: 100rem;
   min-width: 10rem;
   width: 270px;
-  height: 368px;
+  height: ${(props) => props.height};
 
   padding: 70% 50%;
   cursor: pointer;
