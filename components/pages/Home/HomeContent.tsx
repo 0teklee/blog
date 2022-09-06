@@ -82,13 +82,13 @@ const __MoreButton = styled.button`
 
   cursor: pointer;
   &:hover {
-    animation: toRight 10s;
-    @keyframes toRight {
+    animation: colorChange 1s;
+    @keyframes colorChange {
       0% {
-        right: 0;
+        color: #000;
       }
       100% {
-        right: -20rem;
+        color: ${theme.colors.sign};
       }
     }
 
@@ -108,7 +108,7 @@ const __ContentBox = styled.div`
 
   gap: 8%;
 
-  @media (min-width: 720px) {
+  @media (min-width: 900px) {
     & > div:first-child {
       position: relative;
       bottom: 3rem;

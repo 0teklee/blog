@@ -16,7 +16,7 @@ const Loading = () => {
           height="200px"
         />
         <h4>
-          If it takes longer than a minute... you are trying to access wrong
+          If it takes more than a minute... you are trying to access wrong
           URL...
         </h4>
       </__Flex>

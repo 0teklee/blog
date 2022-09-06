@@ -16,7 +16,8 @@ interface IProps {
 const index = (props: IProps) => {
   /* Wrong Paths Branch*/
   const router = useRouter();
-  if (router.isFallback) {
+  if (!props.post) {
+    setTimeout(() => router.push("/blog"), 60000);
     return (
       <>
         <MetaTag
@@ -32,13 +33,12 @@ const index = (props: IProps) => {
   const { post, categoryList } = props;
   const { detail, nav } = post;
   const { content, createdAt, id, title, categories, tags } = detail;
-
   return (
     <>
       <MetaTag
-        title={title}
+        title={`${title} - Teklog`}
         description={content}
-        url={`https://www.teklog.com/site/blog`}
+        url={`https://www.teklog.com/site/blog/${id}`}
       />
       <BlogDetailPageTemplate
         content={content}
@@ -68,15 +68,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getBlogDetail(params.id);
   const categoryList = await getBlogCategoryList();
-
-  if (!post) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
+  // if (!post) {
+  //   return {
+  //     redirect: {
+  //       destination: "/",
+  //       permanent: false,
+  //     },
+  //   };
+  // }
 
   return {
     props: { post, categoryList },
