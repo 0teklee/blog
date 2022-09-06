@@ -29,10 +29,13 @@ const index = ({
 export default index;
 
 export const getServerSideProps: GetServerSideProps = async ({
+  res,
   query,
-}: {
-  query: { page?: string; category?: string; tag?: string };
 }) => {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
   const { page, category, tag } = query;
   const categories = await getBlogCategoryList();
 

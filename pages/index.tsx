@@ -25,7 +25,7 @@ export default Home;
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   res.setHeader(
     "Cache-Control",
-    "public, s-maxage=100000, stale-while-revalidate=59"
+    "public, s-maxage=10, stale-while-revalidate=59"
   );
   const posts = await getMainPosts();
 

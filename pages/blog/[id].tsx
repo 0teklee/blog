@@ -68,14 +68,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getBlogDetail(params.id);
   const categoryList = await getBlogCategoryList();
-  // if (!post) {
-  //   return {
-  //     redirect: {
-  //       destination: "/",
-  //       permanent: false,
-  //     },
-  //   };
-  // }
 
   return {
     props: { post, categoryList },
