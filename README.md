@@ -110,7 +110,7 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 
 #### 모바일 반응형
 
-![RESPONSIVE](https://res.cloudinary.com/dolziw8fv/image/upload/v1662446830/teklog_readme/teklog_mobile_akww8s.gif)
+![RESPONSIVE](https://res.cloudinary.com/dolziw8fv/image/upload/v1662453542/teklog_readme/teklog_mobile_qvant3.gif)
 
 #### 잘못된 경로 접근 혹은 페이지 로딩 시 FALLBACK 페이지
 
