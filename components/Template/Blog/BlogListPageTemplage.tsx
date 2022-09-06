@@ -64,7 +64,7 @@ const BlogListPageTemplage = ({
               />
             ))}
           <__PaginationWrapper>
-            {router.query.page && page !== 1 && (
+            {router.query.page && Number(router.query.page) !== 1 && (
               <__PaginationBtn onClick={handlePrev}>prev</__PaginationBtn>
             )}
             {router.query.page && posts.length >= 5 && (
