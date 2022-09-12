@@ -2,7 +2,7 @@ const presetImgs = [
   {
     id: 1,
     url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661494736/preset-pic-1_g6hjdr.jpg",
-    height: "368px",
+    height: "372.5px",
   },
   {
     id: 2,
