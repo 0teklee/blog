@@ -48,7 +48,8 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
                     sizes="(min-width: 75em) 33vw,
                     (min-width: 48em) 50vw,
                     100vw"
-                    priority
+                    // priority
+                    loading="lazy"
                   />
                   <__BlogItemBox key={`itemBox_${item.id}`}>
                     <__BlogTitle key={`itemTitle_${item.id}`}>
