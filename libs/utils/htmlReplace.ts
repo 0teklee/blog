@@ -7,6 +7,7 @@ const htmlReplace = (content) => {
         .replace(/(<([^>]+)>)/gi, "")
         .replace(/&nbsp;/gi, "")
         .replace(/&gt;/gi, "")
+        .replace(/&lt;/gi, "")
         .replace(/&amp;/gi, "")
         .replace(/\n/g, "")
         .trim();

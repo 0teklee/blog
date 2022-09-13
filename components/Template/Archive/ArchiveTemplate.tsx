@@ -138,12 +138,6 @@ const __PostItem = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-
-    h4 {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
   }
 
   &:hover ${__PostItemBackground} {

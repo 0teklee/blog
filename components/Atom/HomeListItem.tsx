@@ -5,6 +5,7 @@ import dayJs from "libs/utils/dayJs";
 import presetImgs from "libs/utils/presetImg";
 import { IBlogMainItem } from "types/IBlogItem";
 import Head from "next/head";
+import htmlReplace from "libs/utils/htmlReplace";
 
 const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
   const router = Router;
@@ -56,7 +57,7 @@ const HomeListItem = ({ posts }: { posts: IBlogMainItem[] }) => {
                       {item.title}
                     </__BlogTitle>
                     <__BlogContent key={`itemContent_${item.id}`}>
-                      {item.content.replace(/<[^>]*>/g, ` `)}
+                      {htmlReplace(item.content)}
                     </__BlogContent>
                   </__BlogItemBox>
                   <__BlogItemFooter key={`itemFooter_${item.id}`}>

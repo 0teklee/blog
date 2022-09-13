@@ -202,6 +202,15 @@ const __ContentWrapper = styled.div`
       padding: 1.5rem;
     }
 
+    ol,
+    ul {
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
     @media only screen and (${theme.devices.laptop}) {
       img {
         padding: 0 8rem;
@@ -213,6 +222,11 @@ const __ContentWrapper = styled.div`
       font-size: 1rem;
       h1 {
         font-size: 1.2rem;
+      }
+
+      ol,
+      ul {
+        padding-left: 0rem;
       }
     }
   }
