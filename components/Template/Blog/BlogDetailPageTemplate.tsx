@@ -228,6 +228,13 @@ const __ContentWrapper = styled.div`
       ul {
         padding-left: 0rem;
       }
+      pre {
+        position: relative;
+        left: -2rem;
+        width: 100vw;
+        margin: 1rem 0;
+        font-size: 0.8rem;
+      }
     }
   }
 `;
