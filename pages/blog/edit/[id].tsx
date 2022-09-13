@@ -11,7 +11,7 @@ import { GetServerSideProps } from "next";
 import getBlogEditPost from "pages/api/getBlogEditPost";
 import handlePutBlog from "libs/post/handlePutBlog";
 import { IBlogGetEditItem } from "types/IBlogItem";
-import { theme } from "styles/theme";
+import { sizes, theme } from "styles/theme";
 import handleDeleteBlogPost from "libs/post/handleDeleteBlogPost";
 
 const QuillWrapper = dynamic(
@@ -147,22 +147,24 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
               </div>
             ))}
         </__TagWrapper>
-        <QuillWrapper
-          //@ts-ignore
-          forwardedRef={quillRef}
-          theme="snow"
-          style={{
-            minWidth: "40rem",
-            minHeight: "30rem",
-            blockSize: 400,
-            marginBottom: 100,
-            fontSize: "32%",
-          }}
-          formats={formats}
-          modules={modules}
-          onChange={(e) => setContent(e)}
-          value={content}
-        />
+        <__ContentWrapper>
+          <QuillWrapper
+            //@ts-ignore
+            forwardedRef={quillRef}
+            theme="snow"
+            style={{
+              minWidth: "40rem",
+              minHeight: "30rem",
+              blockSize: 400,
+              marginBottom: 100,
+              fontSize: "32%",
+            }}
+            formats={formats}
+            modules={modules}
+            onChange={(e) => setContent(e)}
+            value={content}
+          />
+        </__ContentWrapper>
         <__SubmitDeleteWrapper>
           <__Submit type="submit" onClick={handleSubmit}>
             Submit
@@ -209,7 +211,11 @@ const __Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 17rem;
+
+  @media only screen and (max-width: ${sizes.laptop}) {
+    padding: 0 8rem;
+  }
 `;
 const __Header = styled.h1`
   margin: 4rem 0;
@@ -255,6 +261,50 @@ const __TagItem = styled.p`
   &:hover {
     background: #8080803e;
     border-radius: 30px;
+  }
+`;
+
+const __ContentWrapper = styled.div`
+  width: 100%;
+  min-height: 50vh;
+
+  .ql-editor {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 1rem;
+    p {
+      font-family: "IBM Plex Sans KR", sans-serif;
+      font-weight: 400;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+    }
+    a:hover {
+      color: ${theme.colors.sign};
+    }
+    pre {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+
+    @media only screen and (${theme.devices.laptop}) {
+      img {
+        padding: 0 8rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .ql-editor {
+      font-size: 1rem;
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
   }
 `;
 

@@ -129,21 +129,23 @@ const index = () => {
               </div>
             ))}
         </__TagWrapper>
-        <QuillWrapper
-          //@ts-ignore
-          forwardedRef={quillRef}
-          theme="snow"
-          style={{
-            minWidth: "40rem",
-            minHeight: "30rem",
-            blockSize: 400,
-            marginBottom: 100,
-            fontSize: "32%",
-          }}
-          formats={formats}
-          modules={modules}
-          onChange={(e) => setContent(e)}
-        />
+        <__ContentWrapper>
+          <QuillWrapper
+            //@ts-ignore
+            forwardedRef={quillRef}
+            theme="snow"
+            style={{
+              minWidth: "40rem",
+              minHeight: "30rem",
+              blockSize: 400,
+              marginBottom: 100,
+              fontSize: "32%",
+            }}
+            formats={formats}
+            modules={modules}
+            onChange={(e) => setContent(e)}
+          />
+        </__ContentWrapper>
         <__Submit type="submit" onClick={handleSubmit}>
           Submit
         </__Submit>
@@ -226,6 +228,50 @@ const __TagItem = styled.p`
   &:hover {
     background: #8080803e;
     border-radius: 30px;
+  }
+`;
+
+const __ContentWrapper = styled.div`
+  width: 100%;
+  min-height: 50vh;
+
+  .ql-editor {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 1rem;
+    p {
+      font-family: "IBM Plex Sans KR", sans-serif;
+      font-weight: 400;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+    }
+    a:hover {
+      color: ${theme.colors.sign};
+    }
+    pre {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+
+    @media only screen and (${theme.devices.laptop}) {
+      img {
+        padding: 0 8rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .ql-editor {
+      font-size: 1rem;
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
   }
 `;
 

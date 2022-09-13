@@ -180,10 +180,10 @@ const __ContentWrapper = styled.div`
 
   .ql-editor {
     font-size: 1.1rem;
+    line-height: 1.8;
     padding: 1rem;
     p {
       font-family: "IBM Plex Sans KR", sans-serif;
-      line-height: 1.4;
       font-weight: 400;
     }
 
