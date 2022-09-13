@@ -18,7 +18,7 @@ const InfoTemplate = () => {
         <__Section>
           <__MainLogo>
             <Image
-              src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661963643/bfb2651194bf749bc45221a83bb3648c_exkwpz.png"
+              src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
               width="300px"
               height="300px"
               alt="Teklog-Info"
