@@ -22,7 +22,6 @@ const MetaTag = ({
         <title>{title}</title>
         <meta charSet="UTF-8" />
         <meta name="application-name" content="teklog" />
-        <link rel="canonical" href={url} />
         <meta
           name="description"
           content={`${htmlReplace(description)?.substr(0, 150)}`}
