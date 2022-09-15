@@ -41,10 +41,10 @@ const InfoTemplate = () => {
         <__Section>
           <__SunbTitle title="CV" customStyle={subTitleStyle} />
           <__CVWrapper>
-            <Link href="https://www.github.com/0teklee">
+            <Link href="https://0teklee.github.io/resume">
               <__LinkVal>프론트 개발자 이택우 이력서 보러가기 </__LinkVal>
             </Link>
-            <Link href="https://www.github.com/0teklee">
+            <Link href="https://0teklee.github.io/resume">
               <__LinkVal>Link to LEE TEKWOO'S CV (KR) </__LinkVal>
             </Link>
           </__CVWrapper>
