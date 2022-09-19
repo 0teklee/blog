@@ -46,7 +46,7 @@ const BlogDetailPageTemplate = ({
     .replaceAll("<img", `<Image layout="fill" alt="img"`)
     .replaceAll("</img>", "/>");
   const imgSrcReplaceReg = new RegExp(
-    "/src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g"
+    /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
   );
   const imgSrcArr = updatedContent
     .match(imgSrcReplaceReg)
