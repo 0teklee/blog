@@ -48,16 +48,19 @@ const BlogDetailPageTemplate = ({
   const imgSrcReplaceReg = new RegExp(
     /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
   );
-  const imgSrcArr = updatedContent
-    .match(imgSrcReplaceReg)
-    .map((src) => src.slice(4, -1));
+  const isImage = updatedContent.match(imgSrcReplaceReg);
+  console.log(isImage);
+  const imgSrcArr =
+    isImage &&
+    updatedContent.match(imgSrcReplaceReg).map((src) => src.slice(4, -1));
 
   return (
     <>
       <Head>
-        {imgSrcArr.map((src) => (
-          <link key={src} rel="preload" as="image" href={src} />
-        ))}
+        {isImage &&
+          imgSrcArr.map((src) => (
+            <link key={src} rel="preload" as="image" href={src} />
+          ))}
       </Head>
       <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
         <__Wrapper>
