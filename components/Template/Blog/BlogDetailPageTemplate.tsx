@@ -7,6 +7,8 @@ import "react-quill/dist/quill.bubble.css";
 import Router from "next/router";
 import BlogSideBar from "components/Module/BlogSideBar";
 import { IBlogGetCategorySideBar } from "types/IBlogItem";
+import Image from "next/image";
+import Head from "next/head";
 
 interface IProps {
   content: string;
@@ -40,68 +42,83 @@ const BlogDetailPageTemplate = ({
 }: IProps) => {
   const [prev, next] = nav;
   const router = Router;
+  const updatedContent = content
+    .replaceAll("<img", `<Image layout="fill" alt="img"`)
+    .replaceAll("</img>", "/>");
+  const imgSrcReplaceReg = /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g;
+  const imgSrcArr = updatedContent
+    .match(imgSrcReplaceReg)
+    .map((src) => src.slice(4, -1));
   return (
-    <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
-      <__Wrapper>
-        <BlogSideBar
-          categories={categories}
-          padding="1.5rem 0"
-          mobilePadding="3rem 0"
-        />
-        <__HeaderWrapper>
-          <__Title>{title}</__Title>
-          <__DateId>
-            <p>{dayJs(createdAt)}</p>
-            <p>{`n°${id}`}</p>
-          </__DateId>
-          <__TagCategoryWrpper>
-            <p>category : {category}</p>
-            <__TagWrapper>
-              {tags?.map((tag, i) => (
-                <button
-                  key={`${tag}_btn_${i}`}
-                  onClick={() => router.push(`/blog?tag=${tag}`)}
-                >
-                  <span key={`${tag}_${i}`}>#{tag}</span>
-                </button>
-              ))}
-            </__TagWrapper>
-          </__TagCategoryWrpper>
-        </__HeaderWrapper>
-        <__ContentWrapper>
-          <QuillWrapper
-            value={content || "no contents :("}
-            readOnly
-            theme="bubble"
+    <>
+      <Head>
+        {imgSrcArr.map((src) => (
+          <link key={src} rel="preload" as="image" href={src} />
+        ))}
+      </Head>
+      <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
+        <__Wrapper>
+          <BlogSideBar
+            categories={categories}
+            padding="1.5rem 0"
+            mobilePadding="3rem 0"
           />
-        </__ContentWrapper>
-        <__GoBack onClick={() => router.push("/blog?page=1")}>
-          ← go back to list
-        </__GoBack>
-        <__NavWrapper>
-          {next && (
-            <__NavItem
-              key="next"
-              onClick={() => router.push(`/blog/${next.id}`)}
-            >
-              <p>next</p>
-              <p>{next.title}</p>
-              <p>{dayJs(next.createdAt)}</p>
-            </__NavItem>
-          )}
-          {prev && (
-            <__NavItem
-              key="prev"
-              onClick={() => router.push(`/blog/${prev.id}`)}
-            >
-              <p>{id < prev.id ? "next" : "prev"}</p>
-              <p>{prev.title}</p>
-              <p>{dayJs(prev.createdAt)}</p>
-            </__NavItem>
-          )}
-        </__NavWrapper>
-      </__Wrapper>
-    </Layout>
+          <__HeaderWrapper>
+            <__Title>{title}</__Title>
+            <__DateId>
+              <p>{dayJs(createdAt)}</p>
+              <p>{`n°${id}`}</p>
+            </__DateId>
+            <__TagCategoryWrpper>
+              <p>category : {category}</p>
+              <__TagWrapper>
+                {tags?.map((tag, i) => (
+                  <button
+                    key={`${tag}_btn_${i}`}
+                    onClick={() => router.push(`/blog?tag=${tag}`)}
+                  >
+                    <span key={`${tag}_${i}`}>#{tag}</span>
+                  </button>
+                ))}
+              </__TagWrapper>
+            </__TagCategoryWrpper>
+          </__HeaderWrapper>
+          <__ContentWrapper>
+            <QuillWrapper
+              value={updatedContent || "no contents :("}
+              readOnly
+              theme="bubble"
+              modules={{ toolbar: false }}
+            />
+          </__ContentWrapper>
+          <__GoBack onClick={() => router.push("/blog?page=1")}>
+            ← go back to list
+          </__GoBack>
+          <__NavWrapper>
+            {next && (
+              <__NavItem
+                key="next"
+                onClick={() => router.push(`/blog/${next.id}`)}
+              >
+                <p>next</p>
+                <p>{next.title}</p>
+                <p>{dayJs(next.createdAt)}</p>
+              </__NavItem>
+            )}
+            {prev && (
+              <__NavItem
+                key="prev"
+                onClick={() => router.push(`/blog/${prev.id}`)}
+              >
+                <p>{id < prev.id ? "next" : "prev"}</p>
+                <p>{prev.title}</p>
+                <p>{dayJs(prev.createdAt)}</p>
+              </__NavItem>
+            )}
+          </__NavWrapper>
+        </__Wrapper>
+      </Layout>
+    </>
   );
 };
 
