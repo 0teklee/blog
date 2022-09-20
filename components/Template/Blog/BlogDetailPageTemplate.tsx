@@ -2,13 +2,13 @@ import Layout from "components/Atom/Layout";
 import dayJs from "libs/utils/dayJs";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
-import dynamic from "next/dynamic";
-import "react-quill/dist/quill.bubble.css";
 import Router from "next/router";
 import BlogSideBar from "components/Module/BlogSideBar";
 import { IBlogGetCategorySideBar } from "types/IBlogItem";
 import Image from "next/image";
 import Head from "next/head";
+import { useRef } from "react";
+import htmlParser from "libs/utils/htmlParser";
 
 interface IProps {
   content: string;
@@ -25,11 +25,6 @@ interface IProps {
   }[];
 }
 
-const QuillWrapper = dynamic(() => import("react-quill"), {
-  ssr: false,
-  loading: () => <p>Loading....</p>,
-});
-
 const BlogDetailPageTemplate = ({
   content,
   createdAt,
@@ -42,24 +37,42 @@ const BlogDetailPageTemplate = ({
 }: IProps) => {
   const [prev, next] = nav;
   const router = Router;
+  const qlRef = useRef(null);
   const updatedContent = content
-    .replaceAll("<img", `<Image layout="fill" alt="img"`)
+    .replaceAll(
+      "<img",
+      `<Image layout="fill" alt="img" width= "100%" height="100%"
+    `
+    )
+    .replaceAll("http://res.cloudinary.com", "https://res.cloudinary.com")
     .replaceAll("</img>", "/>");
   const imgSrcReplaceReg = new RegExp(
     /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
   );
   const isImage = updatedContent.match(imgSrcReplaceReg);
-  console.log(isImage);
   const imgSrcArr =
     isImage &&
-    updatedContent.match(imgSrcReplaceReg).map((src) => src.slice(4, -1));
+    updatedContent
+      .match(imgSrcReplaceReg)
+      .filter((src) => src.includes("https://res.cloudinary.com"))
+      .map((src) => src.slice(4, -1));
 
   return (
     <>
       <Head>
         {isImage &&
           imgSrcArr.map((src) => (
-            <link key={src} rel="preload" as="image" href={src} />
+            <link
+              key={src}
+              rel="preload"
+              as="image"
+              href={src}
+              imageSrcSet={`${src} 1200w,
+               ${src}?w=200 200w,
+               ${src}?w=400 400w,
+               ${src}?w=800 800w,
+               ${src}?w=1024 1024w`}
+            />
           ))}
       </Head>
       <Layout padding="8rem 5rem 4rem 5rem" mobilePadding="3rem 1rem">
@@ -90,12 +103,7 @@ const BlogDetailPageTemplate = ({
             </__TagCategoryWrpper>
           </__HeaderWrapper>
           <__ContentWrapper>
-            <QuillWrapper
-              value={updatedContent || "no contents :("}
-              readOnly
-              theme="bubble"
-              modules={{ toolbar: false }}
-            />
+            {updatedContent ? htmlParser(updatedContent) : <p>Loading...</p>}
           </__ContentWrapper>
           <__GoBack onClick={() => router.push("/blog?page=1")}>
             ← go back to list
@@ -201,63 +209,64 @@ const __ContentWrapper = styled.div`
   width: 100%;
   min-height: 50vh;
 
-  .ql-editor {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    padding: 1rem;
-    p {
-      font-family: "IBM Plex Sans KR", sans-serif;
-      font-weight: 400;
-    }
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 1rem;
+  p {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+  }
 
+  img {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+  }
+  a:hover {
+    color: ${theme.colors.sign};
+  }
+  pre {
+    margin: 1rem;
+    padding: 1.5rem;
+    color: #fff;
+    background: #43454a;
+    white-space: pre-wrap;
+  }
+
+  ol,
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (${theme.devices.laptop}) {
     img {
-      width: 100%;
+      padding: 0 8rem;
     }
+  }
 
-    video {
-      width: 100%;
-    }
-    a:hover {
-      color: ${theme.colors.sign};
-    }
-    pre {
-      margin: 1rem;
-      padding: 1.5rem;
+  @media only screen and (max-width: 500px) {
+    font-size: 1rem;
+    h1 {
+      font-size: 1.2rem;
     }
 
     ol,
     ul {
-      padding-left: 1rem;
+      padding-left: 0rem;
     }
-
-    li {
-      margin-bottom: 1rem;
-    }
-
-    @media only screen and (${theme.devices.laptop}) {
-      img {
-        padding: 0 8rem;
-      }
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    .ql-editor {
-      font-size: 1rem;
-      h1 {
-        font-size: 1.2rem;
-      }
-
-      ol,
-      ul {
-        padding-left: 0rem;
-      }
-      pre {
-        position: relative;
-        left: -2rem;
-        width: 100vw;
-        margin: 1rem 0;
-        font-size: 0.8rem;
-      }
+    pre {
+      position: relative;
+      left: -2rem;
+      width: 100vw;
+      margin: 1rem 0;
+      white-space: pre-wrap;
+      font-size: 0.8rem;
     }
   }
 `;
@@ -308,7 +317,7 @@ const __NavItem = styled.div`
     ${theme.titleEllipsis("nowrap")}
 
     @media only screen and (max-width: 500px) {
-      font-size: 0.8rem;
+      font-size: 0.8em;
       max-width: 30%;
     }
   }

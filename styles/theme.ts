@@ -14,7 +14,7 @@ export const theme: DefaultTheme = {
   colors: {
     sign: "#2d10b0",
     lightSign: "#6f94e9",
-    grey: "#7e7e7e",
+    grey: "#2c2c2c",
     midGrey: "#c6c6c6",
     lightGrey: "#d9e0e9",
     black: "#2b2b2b",
