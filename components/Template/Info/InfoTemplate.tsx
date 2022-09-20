@@ -68,16 +68,19 @@ const InfoTemplate = () => {
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661927799/2560px-TypeScript_Logo__Blue_.svg_ed2qef.png"
                   width="150px"
                   height="40px"
+                  alt="TypeScript"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926939/React-icon.svg_qpdlfw.png"
                   width="70px"
                   height="60px"
+                  alt="React"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661927798/800px-Nextjs-logo.svg_ozmxzw.png"
                   width="130px"
                   height="80px"
+                  alt="NextJs"
                 />
               </__SpecLogoWrapper>
             </__FrontSpecWrapper>
@@ -88,11 +91,13 @@ const InfoTemplate = () => {
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926895/prismalogo-freelogovectors.net__czjyfd.png"
                   width="130px"
                   height="40px"
+                  alt="prisma"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926895/planetscale_owler_20210106_213213_original_h0rsjf.png"
                   width="250px"
                   height="40px"
+                  alt="planetscale"
                 />
               </__SpecLogoWrapper>
             </__BackSpecWrapper>
@@ -103,6 +108,7 @@ const InfoTemplate = () => {
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661931739/Cloudinary_logo.svg_hsgzv7.png"
                   width="260px"
                   height="50px"
+                  alt="Cloudinary"
                 />
               </__SpecLogoWrapper>
               <__PhotoCaptionWrapper>

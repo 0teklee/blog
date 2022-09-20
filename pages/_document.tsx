@@ -45,6 +45,12 @@ export default class _document extends Document {
             href="/asset/favicon.ico"
             type="image/x-icon"
           />
+          <link rel="apple-touch-icon-precomposed" href="favicon.ico" />
+          <link
+            rel="shortcut icon"
+            href="/asset/favicon.ico"
+            type="image/x-icon"
+          />
           <link
             rel="canonical"
             href="https://www.teklog.site"

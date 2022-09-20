@@ -41,7 +41,7 @@ const BlogDetailPageTemplate = ({
   const updatedContent = content
     .replaceAll(
       "<img",
-      `<Image layout="fill" alt="img" width= "100%" height="100%"
+      `<img alt="img" width= "100%" height="100%"
     `
     )
     .replaceAll("http://res.cloudinary.com", "https://res.cloudinary.com")
@@ -56,7 +56,7 @@ const BlogDetailPageTemplate = ({
       .match(imgSrcReplaceReg)
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1));
-
+  console.log(imgSrcArr);
   return (
     <>
       <Head>
