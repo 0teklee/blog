@@ -37,7 +37,6 @@ const BlogDetailPageTemplate = ({
 }: IProps) => {
   const [prev, next] = nav;
   const router = Router;
-  const qlRef = useRef(null);
   const updatedContent = content
     .replaceAll(
       "<img",
@@ -56,7 +55,6 @@ const BlogDetailPageTemplate = ({
       .match(imgSrcReplaceReg)
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1));
-  console.log(imgSrcArr);
   return (
     <>
       <Head>

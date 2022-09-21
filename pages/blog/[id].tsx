@@ -62,7 +62,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     params: { id: post.id.toString() },
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: "blocking" };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
@@ -71,5 +71,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: { post, categoryList },
+    revalidate: 3,
   };
 };
