@@ -33,12 +33,25 @@ const index = (props: IProps) => {
   const { post, categoryList } = props;
   const { detail, nav } = post;
   const { content, createdAt, id, title, categories, tags } = detail;
+
+  const imgSrcReplaceReg = new RegExp(
+    /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
+  );
+  const isImage = content.match(imgSrcReplaceReg);
+  const imgSrc =
+    isImage &&
+    content
+      .match(imgSrcReplaceReg)
+      .filter((src) => src.includes("res.cloudinary.com"))
+      .map((src) => src.slice(4, -1))[0]
+      .replace("http", "https");
   return (
     <>
       <MetaTag
         title={`${title} - Teklog`}
         description={content}
         url={`https://www.teklog.com/site/blog/${id}`}
+        img={imgSrc || undefined}
       />
       <BlogDetailPageTemplate
         content={content}

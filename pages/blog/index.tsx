@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps = async ({
 }) => {
   res.setHeader(
     "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
+    "public, s-maxage=10, stale-while-revalidate=3000"
   );
   const { page, category, tag } = query;
   const categories = await getBlogCategoryList();

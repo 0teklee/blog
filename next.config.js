@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ["res.cloudinary.com"],
+    minimumCacheTTL: 300000,
   },
   env: {
     CLOUD_NAME: process.env.CLOUD_NAME,
