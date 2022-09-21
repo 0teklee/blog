@@ -253,7 +253,7 @@ const __ContentWrapper = styled.div`
 
     ol,
     ul {
-      padding-left: 0rem;
+      padding-left: 1.8rem;
     }
     pre {
       position: relative;
