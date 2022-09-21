@@ -27,6 +27,21 @@ const BlogListItem = ({
           rel="preload"
           href={getContentImg(content) || setCategoryPresetImg(categories.name)}
           as="image"
+          imageSrcSet={`${
+            getContentImg(content) || setCategoryPresetImg(categories.name)
+          } 1200w,
+          ${
+            getContentImg(content) || setCategoryPresetImg(categories.name)
+          }?w=200 200w,
+          ${
+            getContentImg(content) || setCategoryPresetImg(categories.name)
+          }?w=400 400w,
+          ${
+            getContentImg(content) || setCategoryPresetImg(categories.name)
+          }?w=800 800w,
+          ${
+            getContentImg(content) || setCategoryPresetImg(categories.name)
+          }?w=1024 1024w`}
         />
       </Head>
       <__Container
