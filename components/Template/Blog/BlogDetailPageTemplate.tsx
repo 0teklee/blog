@@ -5,10 +5,9 @@ import { sizes, theme } from "styles/theme";
 import Router from "next/router";
 import BlogSideBar from "components/Module/BlogSideBar";
 import { IBlogGetCategorySideBar } from "types/IBlogItem";
-import Image from "next/image";
 import Head from "next/head";
-import { useRef } from "react";
 import htmlParser from "libs/utils/htmlParser";
+import { imgSrcReplaceReg } from "libs/utils/regExp";
 
 interface IProps {
   content: string;
@@ -45,9 +44,7 @@ const BlogDetailPageTemplate = ({
     )
     .replaceAll("http://res.cloudinary.com", "https://res.cloudinary.com")
     .replaceAll("</img>", "/>");
-  const imgSrcReplaceReg = new RegExp(
-    /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
-  );
+
   const isImage = updatedContent.match(imgSrcReplaceReg);
   const imgSrcArr =
     isImage &&

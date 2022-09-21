@@ -1,6 +1,7 @@
 import MetaTag from "components/MetaTag";
 import BlogDetailPageTemplate from "components/Template/Blog/BlogDetailPageTemplate";
 import Loading from "components/Template/Loading";
+import { imgSrcReplaceReg } from "libs/utils/regExp";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import getBlogCategoryList from "pages/api/getBlogCategoryList";
@@ -34,25 +35,25 @@ const index = (props: IProps) => {
   const { detail, nav } = post;
   const { content, createdAt, id, title, categories, tags } = detail;
 
-  const imgSrcReplaceReg = new RegExp(
-    /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
-  );
-  const isImage = content
-    .match(imgSrcReplaceReg)[0]
-    .includes("res.cloudinary.com");
+  const isImage =
+    content &&
+    content.match(imgSrcReplaceReg) &&
+    content.match(imgSrcReplaceReg).some((item) => item.includes("cloudinary"));
+
   const imgSrc =
     isImage &&
     content
       .match(imgSrcReplaceReg)
       .map((src) => src.slice(4, -1))[0]
       .replace("http", "https");
+  console.log(imgSrc);
   return (
     <>
       <MetaTag
         title={`${title} - Teklog`}
         description={content}
         url={`https://www.teklog.com/site/blog/${id}`}
-        img={imgSrc || undefined}
+        img={imgSrc}
       />
       <BlogDetailPageTemplate
         content={content}
