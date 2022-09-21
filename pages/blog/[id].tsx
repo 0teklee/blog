@@ -37,12 +37,13 @@ const index = (props: IProps) => {
   const imgSrcReplaceReg = new RegExp(
     /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g
   );
-  const isImage = content.match(imgSrcReplaceReg);
+  const isImage = content
+    .match(imgSrcReplaceReg)[0]
+    .includes("res.cloudinary.com");
   const imgSrc =
     isImage &&
     content
       .match(imgSrcReplaceReg)
-      .filter((src) => src.includes("res.cloudinary.com"))
       .map((src) => src.slice(4, -1))[0]
       .replace("http", "https");
   return (
