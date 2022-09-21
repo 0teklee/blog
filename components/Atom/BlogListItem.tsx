@@ -63,6 +63,7 @@ const BlogListItem = ({
               sizes="(max-width: 720px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
+              priority
             />
           </__HeaderImgWrapper>
           <__ContentsWrapper key={`${id}_`}>

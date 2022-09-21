@@ -36,6 +36,7 @@ const MetaTag = ({
         <meta property="og:image" content={img} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
+        <meta name="twitter:image" content={img} />
         <meta
           name="twitter:description"
           content={`${htmlReplace(description)?.substr(0, 150)}`}
