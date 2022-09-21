@@ -1,8 +1,10 @@
 import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
 import BlogSideBar from "components/Module/BlogSideBar";
+import isNightModeState from "libs/recoil/isNightModeState";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
 import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";
@@ -16,7 +18,7 @@ const BlogListPageTemplage = ({
 }) => {
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
-
+  const isNightMode = useRecoilValue(isNightModeState);
   const handlePrev = () => {
     if (page === 1) return;
     setPage((prev) => prev - 1);
@@ -49,7 +51,7 @@ const BlogListPageTemplage = ({
           {router.query.category ? posts[0].categories.name : null}
           {router.query.tag ? `#${posts[0].tags[0].tag}` : null}
         </__Title>
-        <__ListWrapper>
+        <__ListWrapper isNight={isNightMode}>
           {!posts && <__NoPost>No Posts Yet</__NoPost>}
           {posts &&
             posts.map((item, i) => (
@@ -63,12 +65,16 @@ const BlogListPageTemplage = ({
                 tags={item.tags}
               />
             ))}
-          <__PaginationWrapper>
+          <__PaginationWrapper isNight={isNightMode}>
             {router.query.page && Number(router.query.page) !== 1 && (
-              <__PaginationBtn onClick={handlePrev}>prev</__PaginationBtn>
+              <__PaginationBtn isNight={isNightMode} onClick={handlePrev}>
+                prev
+              </__PaginationBtn>
             )}
-            {router.query.page && posts.length >= 5 && (
-              <__PaginationBtn onClick={handleNext}>next</__PaginationBtn>
+            {posts && posts[posts.length - 1].id !== 1 && (
+              <__PaginationBtn isNight={isNightMode} onClick={handleNext}>
+                next
+              </__PaginationBtn>
             )}
           </__PaginationWrapper>
         </__ListWrapper>
@@ -97,8 +103,17 @@ const __Title = styled.h1`
 
 const __NoPost = styled(__Title)``;
 
-const __ListWrapper = styled.div`
+const __ListWrapper = styled.div<{ isNight?: string }>`
   width: 100%;
+  section h2:hover {
+    ${(props) =>
+      props.isNight
+        ? `
+            color: #d2ef4f;
+            transition: 0.5s;
+        `
+        : null}
+  }
 
   @media only screen and (max-width: 650px) {
     padding: 0 1rem;
@@ -117,20 +132,20 @@ const __ListWrapper = styled.div`
   }
 `;
 
-const __PaginationWrapper = styled.div`
+const __PaginationWrapper = styled.div<{ isNight?: string }>`
   ${theme.displayFlex("center", "center")};
   margin-top: 5rem;
   margin-bottom: 3rem;
-  background: #fff;
-  @media only screen and (max-width: 720px) {
-  }
+  background: ${(props) => (props.isNight ? "#22252b" : "#fff")};
+  color: ${(props) => (props.isNight ? "#fff" : "#000")};
 `;
 
-const __PaginationBtn = styled.button`
+const __PaginationBtn = styled.button<{ isNight?: string }>`
   margin: 0 2rem;
   font-size: 0.8rem;
   &:hover {
-    color: ${theme.colors.sign};
+    color: ${(props) => (props.isNight ? "#d2ef4f" : theme.colors.sign)};
+
     text-decoration: underline;
   }
 `;

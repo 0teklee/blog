@@ -112,11 +112,6 @@ const __HeaderImgWrapper = styled.div`
   max-height: 200px;
   margin-right: 3rem;
   overflow: hidden;
-`;
-
-const __HeaderImg = styled(Image)`
-  width: 100%;
-  height: 100%;
   @media only screen and (max-width: 720px) {
     display: none;
   }
@@ -124,6 +119,11 @@ const __HeaderImg = styled(Image)`
     display: none;
     min-width: 0;
   }
+`;
+
+const __HeaderImg = styled(Image)`
+  width: 100%;
+  height: 100%;
 `;
 
 const __ContentsWrapper = styled.div`
@@ -152,17 +152,8 @@ const __ContentsWrapper = styled.div`
 `;
 
 const __ContentTitle = styled.h2`
-  display: -webkit-box;
-  margin-bottom: 0.5rem;
-  padding-bottom: 1rem;
-
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   word-break: break-all;
-  line-height: 1.6rem;
-  max-height: 3.5rem;
-  overflow: hidden;
-  font-family: "IBM Plex Sans KR", sans-serif;
+  font-family: "IBM Plex Sans KR", "Roboto", sans-serif;
   @media only screen and (max-width: 500px) {
     font-size: 1.3rem;
   }
