@@ -4,7 +4,9 @@ const getContentImg = (content): string | undefined => {
   const contentReg = content.match(/<img [^>]*src="[^"]*"[^>]*>/gm);
   const contentImg =
     contentReg &&
-    contentReg.map((x) => x.replace(/.*src="([^"]*)".*/, "$1"))[0];
+    contentReg
+      .map((x) => x.replace(/.*src="([^"]*)".*/, "$1"))[0]
+      .replace("http", "https");
   return contentImg;
 };
 

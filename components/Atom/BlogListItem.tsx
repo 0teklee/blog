@@ -2,6 +2,7 @@ import { getContentImg, setCategoryPresetImg } from "libs/utils/contentImg";
 import dayJs from "libs/utils/dayJs";
 import htmlReplace from "libs/utils/htmlReplace";
 import Head from "next/head";
+import Image from "next/image";
 import Router from "next/router";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
@@ -19,7 +20,6 @@ const BlogListItem = ({
 
   /*블로그 내용 미리보기 */
   const contentReplace = htmlReplace(content);
-
   return (
     <>
       <Head>
@@ -34,12 +34,22 @@ const BlogListItem = ({
         onClick={() => router.push(`/blog/${id}`)}
       >
         <__Wrapper key={`${id}_wrapper`}>
-          <__HeaderImg
-            headerImg={
-              getContentImg(content) || setCategoryPresetImg(categories.name)
-            }
-            key={`${id}_img`}
-          />
+          <__HeaderImgWrapper>
+            <__HeaderImg
+              src={
+                getContentImg(content) || setCategoryPresetImg(categories.name)
+              }
+              key={`${id}_img`}
+              width="200px"
+              height="200px"
+              layout="responsive"
+              objectFit="cover"
+              alt={title}
+              sizes="(max-width: 720px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            />
+          </__HeaderImgWrapper>
           <__ContentsWrapper key={`${id}_`}>
             <__ContentTitle key={`${id}_title`}>{title}</__ContentTitle>
             <__CategoryDateWrapper key={`${id}_categoryDate`}>
@@ -80,25 +90,17 @@ const __Wrapper = styled.div`
   cursor: pointer;
 `;
 
-const __HeaderImg = styled.div<{ headerImg: string }>`
+const __HeaderImgWrapper = styled.div`
   flex: 1;
-  max-width: 12rem;
-  min-width: 12rem;
-  min-height: 12rem;
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 3rem;
+  overflow: hidden;
+`;
 
+const __HeaderImg = styled(Image)`
   width: 100%;
   height: 100%;
-
-  margin-right: 2rem;
-
-  background: ${(props) =>
-    props.headerImg
-      ? `url("${props.headerImg}")`
-      : `url("https://res.cloudinary.com/dolziw8fv/image/upload/v1661842335/preset-pic-blog-list_wzzr7i.jpg")`};
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-
   @media only screen and (max-width: 720px) {
     display: none;
   }
