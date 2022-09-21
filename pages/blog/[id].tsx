@@ -1,6 +1,7 @@
 import MetaTag from "components/MetaTag";
 import BlogDetailPageTemplate from "components/Template/Blog/BlogDetailPageTemplate";
 import Loading from "components/Template/Loading";
+import { setCategoryPresetImg } from "libs/utils/contentImg";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
@@ -52,7 +53,7 @@ const index = (props: IProps) => {
         title={`${title} - Teklog`}
         description={content}
         url={`https://www.teklog.com/site/blog/${id}`}
-        img={imgSrc}
+        img={imgSrc || setCategoryPresetImg(categories.name)}
       />
       <BlogDetailPageTemplate
         content={content}
