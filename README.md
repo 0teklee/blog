@@ -83,11 +83,11 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 
 ##### List Page Inspection
 
-![LIGHTHOUSE](https://res.cloudinary.com/dolziw8fv/image/upload/v1663814732/teklog_readme/performance_blog_list_new_akpqmf.jpg)
+![LIGHTHOUSE](https://res.cloudinary.com/dolziw8fv/image/upload/v1663753894/performance_blog_list_jsko1f.jpg)
 
 ##### Detail Page Inspection
 
-![LIGHTHOUSE](https://res.cloudinary.com/dolziw8fv/image/upload/v1663753895/performance_detail_xzaqpf.jpg)
+![LIGHTHOUSE](https://res.cloudinary.com/dolziw8fv/image/upload/v1663753894/performance_blog_list_jsko1f.jpg)
 
 #### 메인 페이지
 
