@@ -1,26 +1,45 @@
 import GalleryItem from "components/Atom/GalleryItem";
 import Layout from "components/Atom/Layout";
 import Title from "components/Atom/Title";
+import GallerySidebar from "components/Module/GallerySidebar";
 import { galleryImagesV1 } from "libs/galleryImages";
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
-const GalleryTemplate = () => {
+const GalleryTemplate = ({ list, categories, query }) => {
+  console.log("Gtemplate list", list);
   return (
     <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 1rem 3rem 1rem">
-      <Title title="Gallery" customStyle={{ marginBottom: "2rem" }} />
+      <Title
+        title="Gallery"
+        customStyle={{
+          textAlign: "center",
+          marginBottom: "2rem",
+        }}
+      />
+      <GallerySidebar categories={categories} />
       <_ContentWrapper>
         <__ContentBox>
-          {galleryImagesV1.map((img, i) => (
-            <GalleryItem
-              url={img.url}
-              title={img.title}
-              createdAt={img.createdAt}
-              key={`${img.title}_key_${i}`}
-              width={img.width}
-              height={img.height}
-            />
-          ))}
+          {query !== "~2022"
+            ? list?.map((item, i) => (
+                <GalleryItem
+                  id={item.id}
+                  url={item.imgUrl}
+                  title={item.title}
+                  createdAt={item.createdAt}
+                  key={`${item.title}_key_${i}`}
+                />
+              ))
+            : galleryImagesV1.map((img, i) => (
+                <GalleryItem
+                  url={img.url}
+                  title={img.title}
+                  createdAt={img.createdAt}
+                  key={`${img.title}_key_${i}`}
+                  width={img.width}
+                  height={img.height}
+                />
+              ))}
         </__ContentBox>
       </_ContentWrapper>
     </Layout>
@@ -30,16 +49,16 @@ const GalleryTemplate = () => {
 export default GalleryTemplate;
 
 const _ContentWrapper = styled.section`
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 12rem;
 `;
 
 const __ContentBox = styled.div`
-  ${theme.displayFlex("center", "center")}
-  flex-wrap: wrap;
-  gap: 2%;
-
+  ${theme.displayFlex("center", "stretch")}
+  flex-wrap: nowrap;
+  overflow-x: scroll;
   width: 100%;
   margin-top: 2rem;
+  gap: 5%;
 
   @media (max-width: 720px) {
     display: flex;
