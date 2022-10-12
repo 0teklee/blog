@@ -51,7 +51,7 @@ const BlogDetailPageTemplate = ({
     updatedContent
       .match(imgSrcReplaceReg)
       .filter((src) => src.includes("https://res.cloudinary.com"))
-      .map((src) => src.slice(4, -1));
+      .map((src) => src.slice(4, -1).replaceAll(`"`, ""));
   return (
     <>
       <Head>

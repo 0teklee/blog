@@ -8,7 +8,6 @@ import { IBlogGetCategorySideBar } from "types/IBlogItem";
 import Head from "next/head";
 import htmlParser from "libs/utils/htmlParser";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
-import { useState } from "react";
 
 interface IProps {
   content: string;
@@ -29,11 +28,6 @@ const BlogDetailPageTemplate = ({
 }: IProps) => {
   const router = Router;
 
-  const [naturalSize, setNaturalSize] = useState({
-    width: 0,
-    height: 0,
-  });
-
   const caption = content.replace(/<img .*?>/g, "");
   const imgTagExtract = content.match(/<img .*?>/g);
 
@@ -52,7 +46,7 @@ const BlogDetailPageTemplate = ({
     updatedContent
       .match(imgSrcReplaceReg)
       .filter((src) => src.includes("https://res.cloudinary.com"))
-      .map((src) => src.slice(4, -1));
+      .map((src) => src.slice(4, -1).replaceAll(`"`, ""));
   const imgTag = imgTagExtract[0];
 
   return (
