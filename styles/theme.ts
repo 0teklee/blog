@@ -18,6 +18,7 @@ export const theme: DefaultTheme = {
     midGrey: "#c6c6c6",
     lightGrey: "#d9e0e9",
     black: "#2b2b2b",
+    night: "#22252b",
   },
   displayFlex: (align = "center", justify = "center", direction = "row") => {
     return `

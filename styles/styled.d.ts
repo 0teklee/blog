@@ -9,6 +9,7 @@ declare module "styled-components" {
       midGrey: string;
       lightGrey: string;
       black: string;
+      night: string;
     };
     devices: {
       mobileS: string;
