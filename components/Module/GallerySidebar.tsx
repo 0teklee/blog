@@ -128,5 +128,6 @@ const __CategoryTitle = styled(__CategoryItem)`
 
   &:hover {
     color: #000;
+    text-decoration: none;
   }
 `;

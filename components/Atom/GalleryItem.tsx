@@ -66,7 +66,7 @@ const GalleryItem = ({
               alt="teklog-gallery"
               width={width}
               height={height}
-              priority
+              loading="lazy"
             />
             <__ImageItemFooter isNight={isNightMode === "mode"}>
               <p>{dayJs(createdAt)}</p>

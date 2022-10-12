@@ -7,7 +7,6 @@ import styled from "styled-components";
 import { theme } from "styles/theme";
 
 const GalleryTemplate = ({ list, categories, query }) => {
-  console.log("Gtemplate list", list);
   return (
     <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 1rem 3rem 1rem">
       <Title
