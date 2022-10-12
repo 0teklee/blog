@@ -49,6 +49,9 @@ export default GalleryTemplate;
 
 const _ContentWrapper = styled.section`
   padding: 1rem 1rem 1rem 12rem;
+  @media (max-width: 720px) {
+    padding: 0;
+  }
 `;
 
 const __ContentBox = styled.div`

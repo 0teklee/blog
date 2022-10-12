@@ -122,6 +122,9 @@ const __ImageItemWrapper = styled(__Wrapper)`
 
   position: relative;
   transition: 0.5s;
+  @media (max-width: 720px) {
+    min-width: 0;
+  }
 `;
 
 const __ImageItemFooter = styled.div<{ isNight: boolean }>`

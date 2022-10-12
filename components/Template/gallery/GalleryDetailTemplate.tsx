@@ -8,7 +8,6 @@ import { IBlogGetCategorySideBar } from "types/IBlogItem";
 import Head from "next/head";
 import htmlParser from "libs/utils/htmlParser";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
-import Image from "next/image";
 import { useState } from "react";
 
 interface IProps {
