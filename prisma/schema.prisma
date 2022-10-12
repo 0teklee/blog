@@ -32,3 +32,18 @@ model Tag {
   posts Post[]
   
 }
+
+model GalleyPost {
+  id    Int     @id @default(autoincrement())
+  title  String
+  imgUrl String @db.VarChar(16000)
+  createdAt DateTime @default(now())
+  gpost_id Int 
+  galleryCategory GalleryCategory @relation(fields: [gpost_id], references: [id])
+}
+
+model GalleryCategory {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(20)
+  gposts GalleyPost[] 
+}
