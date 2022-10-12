@@ -219,6 +219,9 @@ const __ContentWrapper = styled.div`
   video {
     width: 100%;
   }
+  a {
+    text-decoration: underline;
+  }
   a:hover {
     color: ${theme.colors.sign};
   }
