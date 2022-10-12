@@ -55,7 +55,7 @@ const InfoTemplate = () => {
             협업 / 기타 여러가지 질문들은 언제든 이메일로 문의주세요
           </__Val>
           <__Val>Collab & Questions are welcome!{"\n"}</__Val>
-          <__Val>Please contact me anytimeia email {`:)`}</__Val>
+          <__Val>Please contact me anytime via email {`:)`}</__Val>
         </__Section>
         <__Section>
           <__SunbTitle title="About teklog" customStyle={subTitleStyle} />
