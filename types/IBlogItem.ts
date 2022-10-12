@@ -60,6 +60,24 @@ interface IBlogGetCategorySideBar {
   }[];
 }
 
+interface IGalleryPost {
+  title: string;
+  imgUrl: string;
+  galleryCategory: string;
+}
+
+interface IGalleryPostGetDetail {
+  detail: {
+    id: number;
+    createdAt: string;
+    title: string;
+    imgUrl: string;
+    galleryCategory: { name: string };
+  };
+}
+
+interface IGalleryGetCategorySideBar
+  extends Omit<IBlogGetCategorySideBar, "post"> {}
 export type {
   IBlogMainItem,
   IBlogItem,
@@ -70,4 +88,7 @@ export type {
   IBlogGetCategory,
   IBlogGetCategorySideBar,
   IBlogGetDetail,
+  IGalleryPost,
+  IGalleryPostGetDetail,
+  IGalleryGetCategorySideBar,
 };
