@@ -46,7 +46,8 @@ const index = (props: IProps) => {
     content
       .match(imgSrcReplaceReg)
       .map((src) => src.slice(4, -1))[0]
-      .replace("http", "https");
+      .replace("http", "https")
+      .replace(`"`, "");
   return (
     <>
       <MetaTag

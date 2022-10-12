@@ -23,7 +23,7 @@ const index = (props: IProps) => {
   /* Wrong Paths Branch*/
   const router = useRouter();
   if (!props.post) {
-    setTimeout(() => router.push("/blog"), 60000);
+    setTimeout(() => router.push("/gallery"), 60000);
     return (
       <>
         <MetaTag
@@ -50,7 +50,8 @@ const index = (props: IProps) => {
     imgUrl
       .match(imgSrcReplaceReg)
       .map((src) => src.slice(4, -1))[0]
-      .replace("http", "https");
+      .replace("http", "https")
+      .replace(`"`, "");
   return (
     <>
       <MetaTag
