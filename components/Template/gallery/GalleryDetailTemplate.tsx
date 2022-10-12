@@ -107,7 +107,7 @@ const __Wrapper = styled.div`
   ${theme.displayFlex("center", "center", "column")}
   padding: 0 10rem 0 8rem;
   @media only screen and (max-width: ${sizes.laptop}) {
-    padding: 5rem;
+    padding: 0.5rem;
   }
 `;
 
@@ -148,8 +148,6 @@ const __ContentWrapper = styled.div`
 const __ImageWrapper = styled.div`
   width: 100%;
 
-  padding: 1rem;
-
   font-size: 1.1rem;
   line-height: 1.8;
 
@@ -165,13 +163,6 @@ const __ImageWrapper = styled.div`
   @media only screen and (max-width: ${sizes.laptop}) {
     img {
       width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    img {
-      position: static;
-      width: 50%;
     }
   }
 `;

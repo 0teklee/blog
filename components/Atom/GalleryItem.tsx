@@ -68,7 +68,7 @@ const GalleryItem = ({
               height={height}
               loading="lazy"
             />
-            <__ImageItemFooter isNight={isNightMode === "mode"}>
+            <__ImageItemFooter isNight={isNightMode === "mode"} isPreset>
               <p>{dayJs(createdAt)}</p>
               <p>{title}</p>
             </__ImageItemFooter>
@@ -127,12 +127,13 @@ const __ImageItemWrapper = styled(__Wrapper)`
   }
 `;
 
-const __ImageItemFooter = styled.div<{ isNight: boolean }>`
+const __ImageItemFooter = styled.div<{ isNight: boolean; isPreset?: boolean }>`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 
   width: 100%;
+  ${(props) => (props.isPreset ? `padding: 0 1.5%` : null)};
   margin-top: 1rem;
   background: ${(props) => (props.isNight ? theme.colors.night : "#fff")};
   color: ${(props) => (props.isNight ? "#fff" : "#000")};
