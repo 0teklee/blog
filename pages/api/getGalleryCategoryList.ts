@@ -5,6 +5,7 @@ const getGalleryCategoryList = async (): Promise<IGalleryGetCategory[]> => {
   try {
     const categoriesDB = await prisma.galleryCategory.findMany({
       select: {
+        id: true,
         name: true,
       },
     });
