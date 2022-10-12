@@ -20,6 +20,9 @@ const getGalleryList = async (query: string | string[]): Promise<IData> => {
             name: category,
           },
         },
+        orderBy: {
+          id: "desc",
+        },
         select: {
           id: true,
           createdAt: true,

@@ -8,6 +8,8 @@ import { IBlogGetCategorySideBar } from "types/IBlogItem";
 import Head from "next/head";
 import htmlParser from "libs/utils/htmlParser";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
+import Image from "next/image";
+import { useState } from "react";
 
 interface IProps {
   content: string;
@@ -27,7 +29,15 @@ const BlogDetailPageTemplate = ({
   categories,
 }: IProps) => {
   const router = Router;
+
+  const [naturalSize, setNaturalSize] = useState({
+    width: 0,
+    height: 0,
+  });
+
   const caption = content.replace(/<img .*?>/g, "");
+  const imgTagExtract = content.match(/<img .*?>/g);
+
   const updatedContent = content
     .replaceAll(
       "<img",
@@ -44,6 +54,8 @@ const BlogDetailPageTemplate = ({
       .match(imgSrcReplaceReg)
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1));
+  const imgTag = imgTagExtract[0];
+
   return (
     <>
       <Head>
@@ -76,11 +88,11 @@ const BlogDetailPageTemplate = ({
                 <p>{dayJs(createdAt)}</p>
                 <p>{`n°${id}`}</p>
               </__DateId>
-              <p>category : {category}</p>
+              <__Category>category : {category}</__Category>
               {caption && htmlParser(caption)}
             </__HeaderWrapper>
             <__ImageWrapper>
-              {updatedContent ? htmlParser(updatedContent) : <p>Loading...</p>}
+              {imgTag ? htmlParser(imgTag) : <p>Loading...</p>}
             </__ImageWrapper>
           </__ContentWrapper>
           <__GoBack onClick={() => router.back()}>← go back to list</__GoBack>
@@ -137,9 +149,11 @@ const __ContentWrapper = styled.div`
 const __ImageWrapper = styled.div`
   width: 100%;
 
+  padding: 1rem;
+
   font-size: 1.1rem;
   line-height: 1.8;
-  padding: 1rem;
+
   p {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
@@ -163,6 +177,10 @@ const __ImageWrapper = styled.div`
   }
 `;
 
+const __Category = styled.p`
+  margin-bottom: 3rem;
+`;
+
 const __GoBack = styled.button`
   all: unset;
   cursor: pointer;
@@ -175,53 +193,5 @@ const __GoBack = styled.button`
     color: #fff;
     background: ${theme.colors.sign};
     transition: 0.5s;
-  }
-`;
-
-const __NavWrapper = styled.div`
-  width: 100%;
-`;
-
-const __NavItem = styled.div`
-  position: relative;
-  ${theme.displayFlex("center", "space-between")}
-  width: 100%;
-  height: 100%;
-  margin-bottom: 0.7rem;
-  padding: 0 1rem;
-
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-
-  &:hover {
-    background: ${theme.colors.grey};
-    color: #fff;
-    transition: 0.5s;
-  }
-
-  p:nth-child(2) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 50%;
-    ${theme.titleEllipsis("nowrap")}
-
-    @media only screen and (max-width: 500px) {
-      font-size: 0.8em;
-      max-width: 30%;
-    }
-  }
-
-  p:last-child {
-    font-size: 0.9rem;
-  }
-
-  p:nth-child(2) ~ p:last-child {
-    @media only screen and (max-width: 500px) {
-      font-size: 0.8rem;
-      max-width: 30%;
-    }
   }
 `;
