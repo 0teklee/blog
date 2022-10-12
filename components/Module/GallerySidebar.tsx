@@ -124,4 +124,9 @@ const __CategoryItem = styled.div`
 
 const __CategoryTitle = styled(__CategoryItem)`
   font-size: 1rem;
+  cursor: default;
+
+  &:hover {
+    color: #000;
+  }
 `;
