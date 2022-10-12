@@ -9,7 +9,7 @@ import { toolbarOptions, formats } from "libs/utils/quillFormat";
 import { unstable_getServerSession } from "next-auth";
 import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
-import { theme } from "styles/theme";
+import { sizes, theme } from "styles/theme";
 
 const QuillWrapper = dynamic(
   async () => {
@@ -183,7 +183,10 @@ const __Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 17rem;
+  @media only screen and (max-width: ${sizes.laptop}) {
+    padding: 0 8rem;
+  }
 `;
 const __Header = styled.h1`
   margin: 4rem 0;
