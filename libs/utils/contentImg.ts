@@ -1,6 +1,6 @@
 /* 블로그 포스트 이미지 미리보기*/
 
-const getContentImg = (content): string | undefined => {
+const getContentImg = (content: string): string | undefined => {
   const contentReg = content.match(/<img [^>]*src="[^"]*"[^>]*>/gm);
   const contentImg =
     contentReg &&
