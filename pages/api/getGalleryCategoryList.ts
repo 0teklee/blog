@@ -1,7 +1,7 @@
 import prisma from "libs/prisma";
-import { IBlogGetCategory } from "types/IBlogItem";
+import { IGalleryGetCategory } from "types/IBlogItem";
 
-const getGalleryCategoryList = async (): Promise<IBlogGetCategory[]> => {
+const getGalleryCategoryList = async (): Promise<IGalleryGetCategory[]> => {
   try {
     const categoriesDB = await prisma.galleryCategory.findMany({
       select: {
@@ -9,7 +9,7 @@ const getGalleryCategoryList = async (): Promise<IBlogGetCategory[]> => {
       },
     });
 
-    const categories: Promise<IBlogGetCategory[]> = JSON.parse(
+    const categories: Promise<IGalleryGetCategory[]> = JSON.parse(
       JSON.stringify(categoriesDB)
     );
     return categories;

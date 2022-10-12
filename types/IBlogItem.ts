@@ -76,6 +76,10 @@ interface IGalleryPostGetDetail {
   };
 }
 
+interface IGalleryGetCategory {
+  galleryCategory: { name: string };
+}
+
 interface IGalleryGetCategorySideBar
   extends Omit<IBlogGetCategorySideBar, "post"> {}
 export type {
@@ -91,4 +95,5 @@ export type {
   IGalleryPost,
   IGalleryPostGetDetail,
   IGalleryGetCategorySideBar,
+  IGalleryGetCategory,
 };
