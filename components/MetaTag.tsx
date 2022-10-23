@@ -35,6 +35,7 @@ const MetaTag = ({
         />
         <meta property="og:image" content={img} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:ur" content={url} />
         <meta name="twitter:image" content={img} />
         <meta name="twitter:image:alt" content={title} />
         <meta name="twitter:title" content={title} />
