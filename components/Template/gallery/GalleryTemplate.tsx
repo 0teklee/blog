@@ -1,14 +1,17 @@
+import GalleryCollectionItem from "components/Atom/GalleryCollectionItem";
 import GalleryItem from "components/Atom/GalleryItem";
 import Layout from "components/Atom/Layout";
 import Title from "components/Atom/Title";
 import GallerySidebar from "components/Module/GallerySidebar";
 import { galleryImagesV1 } from "libs/galleryImages";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import styled from "styled-components";
 import { theme } from "styles/theme";
+import { IGalleryTemplateProp } from "types/IGallery";
 
-const GalleryTemplate = ({ list, categories, query }) => {
+const GalleryTemplate = ({ list, categories, query }: IGalleryTemplateProp) => {
   return (
-    <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 1rem 3rem 1rem">
+    <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 0 3rem 0">
       <Title
         title="Gallery"
         customStyle={{
@@ -19,27 +22,48 @@ const GalleryTemplate = ({ list, categories, query }) => {
       <GallerySidebar categories={categories} />
       <_ContentWrapper>
         <__ContentBox>
-          {query !== "~2022"
-            ? list?.map((item, i) => (
-                <GalleryItem
-                  id={item.id}
-                  url={item.imgUrl}
-                  title={item.title}
-                  createdAt={item.createdAt}
-                  key={`${item.title}_key_${i}`}
-                />
-              ))
-            : galleryImagesV1.map((img, i) => (
-                <GalleryItem
-                  url={img.url}
-                  title={img.title}
-                  createdAt={img.createdAt}
-                  key={`${img.title}_key_${i}`}
-                  width={img.width}
-                  height={img.height}
-                />
-              ))}
+          {query !== "~2022" &&
+            query !== "Collection" &&
+            list?.map((item, i) => (
+              <GalleryItem
+                id={item.id}
+                url={item.imgUrl}
+                title={item.title}
+                createdAt={item.createdAt}
+                key={`${item.title}_key_${i}`}
+              />
+            ))}
+          {query === "~2022" &&
+            galleryImagesV1.map((img, i) => (
+              <GalleryItem
+                url={img.url}
+                title={img.title}
+                createdAt={img.createdAt}
+                key={`${img.title}_key_${i}`}
+                width={img.width}
+                height={img.height}
+              />
+            ))}
         </__ContentBox>
+        <__CollectionBox>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 3, 1024: 4 }}
+          >
+            <Masonry
+              className="container"
+              columnClassName="container-grid_column"
+            >
+              {query === "Collection" &&
+                list?.map((item, i) => (
+                  <GalleryCollectionItem
+                    id={item.id}
+                    url={item.imgUrl}
+                    key={`${item.title}_key_${i}`}
+                  />
+                ))}
+            </Masonry>
+          </ResponsiveMasonry>
+        </__CollectionBox>
       </_ContentWrapper>
     </Layout>
   );
@@ -66,9 +90,25 @@ const __ContentBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
     & > div {
       margin-bottom: 3rem;
+    }
+  }
+`;
+
+const __CollectionBox = styled.div`
+  .container {
+    div > div {
+      margin-bottom: 1rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .container {
+      display: block !important;
+      margin: 0;
+      div > div {
+        margin-bottom: 0rem;
+      }
     }
   }
 `;

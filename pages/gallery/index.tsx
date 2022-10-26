@@ -4,8 +4,9 @@ import { galleryImagesV1 } from "libs/galleryImages";
 import { GetServerSideProps } from "next";
 import getGalleryCategoryList from "pages/api/getGalleryCategoryList";
 import getGalleryList from "pages/api/getGalleryList";
+import { IGalleryProps } from "types/IGallery";
 
-const index = ({ list, categories, category }) => {
+const index = ({ list, categories, category }: IGalleryProps) => {
   return (
     <>
       <MetaTag
