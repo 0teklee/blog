@@ -39,7 +39,7 @@ const __Wrapper = styled.div<{ width: number; height: number }>`
   height: ${(props) => props.height / 5}px;
   filter: grayscale(1);
   cursor: pointer;
-  cursor:hover {
+  &:hover {
     filter: grayscale(0);
     transition: 1s;
   }
