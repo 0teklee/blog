@@ -21,7 +21,8 @@
     "recoil": "^0.7.5",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.3.5",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "twitter-api-sdk": "^1.2.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
