@@ -1,6 +1,9 @@
 import Twitter from "twitter-lite";
 
-const postTwitter = async (link: string, title?: string, category?: string) => {
+const postTwitter = async (req, res) => {
+  const data = JSON.parse(req.body);
+  const { title, category, link } = data;
+
   const app = new Twitter({
     consumer_key: process.env.TW_API_KEY,
     consumer_secret: process.env.TW_API_KEY_SECRET,
@@ -12,7 +15,7 @@ const postTwitter = async (link: string, title?: string, category?: string) => {
     .post("statuses/update", {
       status: `${title} ${category ? "#dalle2" : "#photography"} ${link}`,
     })
-    .then((res) => res.status(200).json(res))
+    .then((result) => res.status(200).json(result))
     .catch((err) => console.log("err", err));
 };
 

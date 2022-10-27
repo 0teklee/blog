@@ -10,7 +10,6 @@ import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
 import { sizes, theme } from "styles/theme";
 import handlePostGallery from "libs/post/handlePostGallery";
-import postTwitter from "pages/api/twitter/postTwitter";
 import getGalleryDetailId from "pages/api/getGalleryDetailId";
 
 const QuillWrapper = dynamic(
@@ -40,13 +39,22 @@ const index = ({ nextId }) => {
     }
     handlePostGallery(`/api/postGallery`, title, content, category);
     if (category === "Convo w copilot" || category === "From Labs") {
-      await postTwitter(
-        `https://teklog.site/gallery/${nextId + 1}`,
-        title,
-        "#dalle2"
-      );
+      const result = fetch("/api/twitter/postTwitter", {
+        method: "POST",
+        body: JSON.stringify({
+          link: `https://teklog.site/gallery/${nextId + 1}`,
+          title,
+          category: "#dalle2",
+        }),
+      });
     } else {
-      await postTwitter(`https://teklog.site/gallery/${nextId + 1}`, title);
+      const result = fetch("/api/twitter/postTwitter", {
+        method: "POST",
+        body: JSON.stringify({
+          link: `https://teklog.site/gallery/${nextId + 1}`,
+          title,
+        }),
+      });
     }
     router.push("/");
   };
