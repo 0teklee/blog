@@ -1,11 +1,16 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import Github from "next-auth/providers/github";
+import TwitterProvider from "next-auth/providers/twitter";
 
 export const authOptions: NextAuthOptions = {
   providers: [
     Github({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
+    }),
+    TwitterProvider({
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
     }),
   ],
   secret: process.env.NEXT_PUBLIC_SECRET,
