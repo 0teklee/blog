@@ -18,6 +18,14 @@ const nextConfig = {
     TW_API_KEY_SECRET: process.env.TW_API_KEY_SECRET,
   },
   compress: true,
+  async rewrites() {
+    return [
+      {
+        source: "api/postTweet",
+        destination: "https://api.twitter.com/2/tweets/api/postTweet",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
