@@ -22,7 +22,7 @@ const nextConfig = {
     return [
       {
         source: "api/postTweet",
-        destination: "https://api.twitter.com/2/tweets/api/postTweet",
+        destination: "https://api.twitter.com/2/tweets/1",
       },
     ];
   },
