@@ -13,19 +13,12 @@ const nextConfig = {
     CLIENT_ID: process.env.CLIENT_ID,
     CLIENT_SECRET: process.env.CLIENT_SECRET,
     TW_ACCESS_TOKEN: process.env.TW_ACCESS_TOKEN,
-    TW_ACESS_TOKEN_SECRET: process.env.TW_ACESS_TOKEN_SECRET,
+    TW_ACCESS_TOKEN_SECRET: process.env.TW_ACCESS_TOKEN_SECRET,
     TW_API_KEY: process.env.TW_API_KEY,
     TW_API_KEY_SECRET: process.env.TW_API_KEY_SECRET,
+    NEXT_PUBLIC_SECRET: process.env.NEXT_PUBLIC_SECRET,
   },
   compress: true,
-  async rewrites() {
-    return [
-      {
-        source: "/api/postTweet",
-        destination: "https://api.twitter.com/2/tweets/1",
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

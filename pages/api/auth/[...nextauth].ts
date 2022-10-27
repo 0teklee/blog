@@ -11,6 +11,7 @@ export const authOptions: NextAuthOptions = {
     TwitterProvider({
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
+      version: "2.0",
     }),
   ],
   secret: process.env.NEXT_PUBLIC_SECRET,
@@ -25,6 +26,7 @@ export const authOptions: NextAuthOptions = {
       if (account) {
         token.accessToken = account.access_token;
       }
+      console.log("account", account);
       return token;
     },
   },

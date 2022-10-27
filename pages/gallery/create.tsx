@@ -10,6 +10,8 @@ import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
 import { sizes, theme } from "styles/theme";
 import handlePostGallery from "libs/post/handlePostGallery";
+import postTwitter from "pages/api/twitter/postTwitter";
+import getGalleryDetailId from "pages/api/getGalleryDetailId";
 
 const QuillWrapper = dynamic(
   async () => {
@@ -22,7 +24,7 @@ const QuillWrapper = dynamic(
   { ssr: false }
 );
 
-const index = () => {
+const index = ({ nextId }) => {
   const [category, setCategory] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -31,12 +33,21 @@ const index = () => {
 
   const router = Router;
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!title || !content) {
       alert("내용을 입력해주세요");
       return;
     }
     handlePostGallery(`/api/postGallery`, title, content, category);
+    if (category === "Convo w copilot" || category === "From Labs") {
+      await postTwitter(
+        `https://teklog.site/gallery/${nextId + 1}`,
+        title,
+        "#dalle2"
+      );
+    } else {
+      await postTwitter(`https://teklog.site/gallery/${nextId + 1}`, title);
+    }
     router.push("/");
   };
 
@@ -136,10 +147,13 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       },
     };
   }
+  const latestId = await getGalleryDetailId();
 
+  console.log("latestId", latestId[latestId.length - 1]);
   return {
     props: {
       session,
+      nextId: latestId[latestId.length - 1].id,
     },
   };
 };
