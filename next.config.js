@@ -21,7 +21,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "api/postTweet",
+        source: "/api/postTweet",
         destination: "https://api.twitter.com/2/tweets/1",
       },
     ];
