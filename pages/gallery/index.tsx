@@ -33,7 +33,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   if (!category) {
     return {
       redirect: {
-        destination: "/gallery?category=~2022",
+        destination: "/gallery?category=Collection",
         permanent: false,
       },
     };

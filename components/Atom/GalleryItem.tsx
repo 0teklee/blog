@@ -87,6 +87,9 @@ const __Container = styled.div`
   flex-basis: 25rem;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
+  @media screen and (max-width: 720px) {
+    margin-right: 0rem;
+  }
 `;
 
 const __Wrapper = styled.div`
@@ -123,7 +126,7 @@ const __ImageItemWrapper = styled(__Wrapper)`
   position: relative;
   transition: 0.5s;
   @media (max-width: 720px) {
-    min-width: 0;
+    min-width: 0rem;
   }
 `;
 
