@@ -47,3 +47,22 @@ model GalleryCategory {
   name String @unique @db.VarChar(20)
   gposts GalleyPost[] 
 }
+
+model GuestBookPost {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  author String @db.VarChar(12)
+  email String 
+  post String @db.VarChar(1000)
+  isPrivate Boolean
+  comments GuestBookComment[] 
+}
+
+model GuestBookComment {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  author String @db.VarChar(12)
+  email String 
+  isPrivate Boolean
+  posts GuestBookPost[]
+}
