@@ -1,68 +1,84 @@
-
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
   referentialIntegrity = "prisma"
 }
 
 model Post {
-  id    Int     @id @default(autoincrement())
-  title  String
-  content String @db.VarChar(16000)
-  createdAt DateTime @default(now())
-  post_id Int 
+  id         Int      @id @default(autoincrement())
+  title      String
+  content    String   @db.VarChar(16000)
+  createdAt  DateTime @default(now())
+  post_id    Int
   categories Category @relation(fields: [post_id], references: [id])
-  tags Tag[] 
+  tags       Tag[]    @relation(references: [id])
 }
 
 model Category {
-  id Int @id @default(autoincrement())
-  name String @unique @db.VarChar(20)
-  posts Post[] 
+  id    Int    @id @default(autoincrement())
+  name  String @unique @db.VarChar(20)
+  posts Post[]
 }
 
 model Tag {
-  id Int @id @default(autoincrement())
-  tag String @db.VarChar(20) @unique
-  posts Post[]
-  
+  id    Int    @id @default(autoincrement())
+  tag   String @unique @db.VarChar(20)
+  posts Post[] @relation(references: [id])
 }
 
 model GalleyPost {
-  id    Int     @id @default(autoincrement())
-  title  String
-  imgUrl String @db.VarChar(16000)
-  createdAt DateTime @default(now())
-  gpost_id Int 
+  id              Int             @id @default(autoincrement())
+  title           String
+  imgUrl          String          @db.VarChar(16000)
+  createdAt       DateTime        @default(now())
+  gpost_id        Int
   galleryCategory GalleryCategory @relation(fields: [gpost_id], references: [id])
 }
 
 model GalleryCategory {
-  id Int @id @default(autoincrement())
-  name String @unique @db.VarChar(20)
-  gposts GalleyPost[] 
+  id     Int          @id @default(autoincrement())
+  name   String       @unique @db.VarChar(20)
+  gposts GalleyPost[]
 }
 
 model GuestBookPost {
-  id Int @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  author String @db.VarChar(12)
-  email String 
-  post String @db.VarChar(1000)
+  id        Int                @id @default(autoincrement())
+  createdAt DateTime           @default(now())
+  author    String             @db.VarChar(12)
+  email     String
+  post      String             @db.VarChar(1000)
   isPrivate Boolean
-  comments GuestBookComment[] 
+  comments  GuestBookComment[] @relation(references: [id])
 }
 
 model GuestBookComment {
-  id Int @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  author String @db.VarChar(12)
-  email String 
+  id        Int             @id @default(autoincrement())
+  createdAt DateTime        @default(now())
+  author    String          @db.VarChar(12)
+  email     String
   isPrivate Boolean
-  posts GuestBookPost[]
+  posts     GuestBookPost[] @relation(references: [id])
+}
+
+model GuestBookCommentToGuestBookPost {
+  A Int
+  B Int
+
+  @@unique([A, B], map: "_GuestBookCommentToGuestBookPost_AB_unique")
+  @@index([B], map: "_GuestBookCommentToGuestBookPost_B_index")
+  @@map("_GuestBookCommentToGuestBookPost")
+}
+
+model PostToTag {
+  A Int
+  B Int
+
+  @@unique([A, B], map: "_PostToTag_AB_unique")
+  @@index([B], map: "_PostToTag_B_index")
+  @@map("_PostToTag")
 }
