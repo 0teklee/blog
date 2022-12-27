@@ -1,23 +1,31 @@
 import Layout from "components/Atom/Layout";
 import Title from "components/Atom/Title";
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import { theme } from "styles/theme";
-import GuestbookPost from "../../Atom/GuestbookPost";
 import { useInfiniteQuery } from "react-query";
 import { getGuestbookListFetcher } from "../../../libs/utils/guestbookFetcher";
 import { useInView } from "react-intersection-observer";
+import GuestbookPost from "../../Atom/GuestbookPost";
 
 const GuestbookTemplate = () => {
   const { ref, inView } = useInView();
-  const [email, setEmail] = useState("");
-  const { data, fetchNextPage, status, isFetchingNextPage } = useInfiniteQuery({
+  const emailRef = useRef("");
+
+  const {
+    data: queryData,
+    fetchNextPage,
+    status,
+    isFetchingNextPage,
+  } = useInfiniteQuery({
     queryKey: ["cursor", "email"],
     queryFn: ({ pageParam = 1 }) => {
-      getGuestbookListFetcher(pageParam, email);
+      return getGuestbookListFetcher(pageParam, emailRef.current);
     },
   });
-  console.log("data", data);
+
+  const pages = queryData && queryData.pages;
+  console.log("data", queryData);
+
   return (
     <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 0 3rem 0">
       <Title
@@ -29,9 +37,17 @@ const GuestbookTemplate = () => {
       />
       <_ContentWrapper>
         <__ContentBox>
-          {/*{data &&*/}
-          {/*  data.map((post) => <GuestbookPost key={post.id} {...post} />)}*/}
-          {/*{isFetchingNextPage ? <>Loading...</> : <div ref={ref} />}*/}
+          {queryData &&
+            pages &&
+            pages.length > 0 &&
+            pages.map((post) => {
+              const { pageData } = post;
+              if (pageData.length === 0) return;
+              return pageData.map((item) => (
+                <GuestbookPost key={item.id} {...item} />
+              ));
+            })}
+          {isFetchingNextPage ? <>Loading...</> : <div ref={ref} />}
         </__ContentBox>
       </_ContentWrapper>
     </Layout>
@@ -53,8 +69,6 @@ const __ContentBox = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 2rem;
-
-  height: 300rem;
   border: 1px solid #eaeaea;
   border-radius: 0.5rem;
 

@@ -17,7 +17,7 @@ const getGuestbookList = async (req, res) => {
       res.setHeader("Content-Type", "application/json");
       res.setHeader("Cache-Control", "max-age=180000");
       res.end(JSON.stringify(posts));
-      return;
+      return JSON.stringify(posts);
     }
 
     if (!email) {
@@ -35,7 +35,7 @@ const getGuestbookList = async (req, res) => {
       res.setHeader("Content-Type", "application/json");
       res.setHeader("Cache-Control", "max-age=180000");
       res.end(JSON.stringify(userNotLogin));
-      return;
+      return JSON.stringify(userNotLogin);
     }
 
     const userLogin = await posts.map((post) => {
@@ -51,7 +51,7 @@ const getGuestbookList = async (req, res) => {
     });
     res.setHeader("Content-Type", "application/json");
     res.end(JSON.stringify(userLogin));
-    return;
+    return JSON.parse(JSON.stringify(userLogin));
   } catch (e) {
     console.error(e);
     return res.status(501).json({ error: e.message });

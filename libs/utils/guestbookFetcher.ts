@@ -5,12 +5,12 @@ const getGuestbookListFetcher = async (cursor: number, email?: string) => {
     const res = await fetch(
       `/api/getGuestbookList?cursor=${cursor}&email=${email}`
     );
-    const data = await res.json();
-    const isLast = data.length < 20;
+    const pageData = await res.json();
+    const isLast = pageData.length < 20;
     return {
-      data,
+      pageData,
       isLast,
-      cursor: cursor,
+      cursor,
     };
   } catch (err) {
     console.error(err);
