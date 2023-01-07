@@ -3,12 +3,6 @@ import Router from "next/router";
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
-const headerItems = [
-  { id: 0, item: "contact", path: "/info" },
-  { id: 1, item: "top", path: "/" },
-  { id: 3, item: "CV", path: "" },
-];
-
 const Footer = () => {
   const router = Router;
 
@@ -31,7 +25,7 @@ const Footer = () => {
         <__Button onClick={handleContact}>contact</__Button>
         <__Top onClick={handleTop}>top</__Top>
         <__Button>
-          <Link href="https://0teklee.github.io/resume">cv</Link>
+          <Link href="https://teklog.site/guestbook">guestbook</Link>
         </__Button>
       </__Flex>
     </__Wrapper>

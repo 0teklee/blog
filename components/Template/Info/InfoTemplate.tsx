@@ -37,6 +37,12 @@ const InfoTemplate = () => {
               <__LinkVal>@0teklee</__LinkVal>
             </Link>
           </__GithubWrapper>
+          <__ItemWrapper>
+            <__Field>Twitter</__Field>
+            <Link href="https://twitter.com/0teklee">
+              <__LinkVal>@0teklee</__LinkVal>
+            </Link>
+          </__ItemWrapper>
         </__Section>
         <__Section>
           <__SunbTitle title="CV" customStyle={subTitleStyle} />
@@ -113,7 +119,7 @@ const InfoTemplate = () => {
               </__SpecLogoWrapper>
               <__PhotoCaptionWrapper>
                 <__Val>
-                  블로그에 사용된 (거의) 모든 이미지는 직접 촬영했습니다.
+                  블로그에 사용된 대부분의 이미지는 직접 촬영했습니다.
                 </__Val>
                 <__Val>Images are made by @0teklee</__Val>
                 <__Val id="copyrights">
