@@ -9,6 +9,12 @@ datasource db {
   referentialIntegrity = "prisma"
 }
 
+model Category {
+  id    Int    @id @default(autoincrement())
+  name  String @unique @db.VarChar(20)
+  posts Post[]
+}
+
 model Post {
   id         Int      @id @default(autoincrement())
   title      String
@@ -16,34 +22,21 @@ model Post {
   createdAt  DateTime @default(now())
   post_id    Int
   categories Category @relation(fields: [post_id], references: [id])
-  tags       Tag[]    @relation(references: [id])
-}
-
-model Category {
-  id    Int    @id @default(autoincrement())
-  name  String @unique @db.VarChar(20)
-  posts Post[]
-}
-
-model Tag {
-  id    Int    @id @default(autoincrement())
-  tag   String @unique @db.VarChar(20)
-  posts Post[] @relation(references: [id])
-}
-
-model GalleyPost {
-  id              Int             @id @default(autoincrement())
-  title           String
-  imgUrl          String          @db.VarChar(16000)
-  createdAt       DateTime        @default(now())
-  gpost_id        Int
-  galleryCategory GalleryCategory @relation(fields: [gpost_id], references: [id])
 }
 
 model GalleryCategory {
-  id     Int          @id @default(autoincrement())
-  name   String       @unique @db.VarChar(20)
-  gposts GalleyPost[]
+  id            Int          @id @default(autoincrement())
+  name          String       @unique @db.VarChar(20)
+  categoryPosts GalleyPost[]
+}
+
+model GalleyPost {
+  id        Int             @id @default(autoincrement())
+  title     String
+  imgUrl    String          @db.VarChar(16000)
+  createdAt DateTime        @default(now())
+  gpost_id  Int
+  galleryCategory  GalleryCategory @relation(fields: [gpost_id], references: [id])
 }
 
 model GuestBookPost {
@@ -51,27 +44,34 @@ model GuestBookPost {
   createdAt DateTime           @default(now())
   author    String             @db.VarChar(12)
   email     String
+  name      String             @db.VarChar(30)
   post      String             @db.VarChar(1000)
   isPrivate Boolean
-  comments  GuestBookComment[] @relation(references: [id])
+  comments  GuestBookComment[]
 }
 
 model GuestBookComment {
-  id        Int             @id @default(autoincrement())
-  createdAt DateTime        @default(now())
-  author    String          @db.VarChar(12)
-  email     String
-  isPrivate Boolean
-  posts     GuestBookPost[] @relation(references: [id])
+  id            Int           @id @default(autoincrement())
+  createdAt     DateTime      @default(now())
+  author        String        @db.VarChar(12)
+  email         String
+  name          String        @db.VarChar(30)
+  isPrivate     Boolean
+  comment       String        @db.VarChar(300)
+  comment_id    Int?
+  guestbookpost GuestBookPost? @relation(fields: [comment_id], references: [id])
 }
 
-model GuestBookCommentToGuestBookPost {
-  A Int
-  B Int
+model GuestList {
+  id        Int           @id @default(autoincrement())
+  createdAt DateTime      @default(now())
+  name      String
+  email     String
+}
 
-  @@unique([A, B], map: "_GuestBookCommentToGuestBookPost_AB_unique")
-  @@index([B], map: "_GuestBookCommentToGuestBookPost_B_index")
-  @@map("_GuestBookCommentToGuestBookPost")
+model Tag {
+  id  Int    @id @default(autoincrement())
+  tag String @unique @db.VarChar(20)
 }
 
 model PostToTag {
