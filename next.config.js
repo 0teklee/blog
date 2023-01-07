@@ -17,6 +17,9 @@ const nextConfig = {
     TW_API_KEY: process.env.TW_API_KEY,
     TW_API_KEY_SECRET: process.env.TW_API_KEY_SECRET,
     NEXT_PUBLIC_SECRET: process.env.NEXT_PUBLIC_SECRET,
+    GUESTBOOK_GAUTH_CLIENT_ID: process.env.GUESTBOOK_GAUTH_CLIENT_ID,
+    GUESTBOOK_GAUTH_CLIENTPW: process.env.GUESTBOOK_GAUTH_CLIENTPW,
+    ADMIN_GUESTBOOK_TOKEN: process.env.ADMIN_GUESTBOOK_TOKEN,
   },
   compress: true,
 };
