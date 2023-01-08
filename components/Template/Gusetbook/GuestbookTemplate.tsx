@@ -56,7 +56,6 @@ const GuestbookTemplate = () => {
     }
   }, [inView]);
 
-  console.log("pages", pages);
   return (
     <Layout padding="8rem 2rem 5rem 2rem" mobilePadding="5rem 0 3rem 0">
       <Title

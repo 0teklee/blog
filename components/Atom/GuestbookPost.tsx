@@ -93,7 +93,7 @@ const GuestbookPost = ({
     <__Wrapper className="postBox">
       <__PostHeader>
         <div className="info">
-          <span className="id">no.{id}</span>
+          <span className="id"></span>
           <span>{dayjs(createdAt).format("YY/MM/DD HH:mm")}</span>
         </div>
         <p>{author}</p>

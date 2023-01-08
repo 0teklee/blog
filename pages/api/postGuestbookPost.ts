@@ -32,7 +32,7 @@ const postGuestbookPost = async (req, res) => {
       throw Error("Please login again");
     }
 
-    if (postCount > 5 && email !== process.env.ADMIN_GUESTBOOK_TOKEN) {
+    if (postCount > 3 && email !== process.env.ADMIN_GUESTBOOK_TOKEN) {
       res.status(403);
       return res.json({ message: "You have reached your daily post limit." });
     }
@@ -47,7 +47,7 @@ const postGuestbookPost = async (req, res) => {
       },
     });
 
-    return res.json(post);
+    return res.json({ message: "successfully uploaded" });
   } catch (e) {
     console.error(e);
     if (e.message === "Please login again") {

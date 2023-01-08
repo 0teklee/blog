@@ -34,7 +34,7 @@ const postGuestbookComment = async (req, res) => {
       throw Error("Please login again");
     }
 
-    if (postCount > 5 && email !== process.env.ADMIN_GUESTBOOK_TOKEN) {
+    if (postCount > 10 && email !== process.env.ADMIN_GUESTBOOK_TOKEN) {
       res.status(400);
       throw Error("You have reached your daily comment limit.");
     }
