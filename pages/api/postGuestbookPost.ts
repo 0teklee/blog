@@ -53,7 +53,7 @@ const postGuestbookPost = async (req, res) => {
     if (e.message === "Please login again") {
       return res.status(403).json({ error: e.message, status: 403 });
     }
-    return e.status(501).json({ error: e.message });
+    return res.status(501).json({ error: e.message });
   }
 };
 

@@ -1,10 +1,9 @@
 import MetaTag from "components/MetaTag";
 import GuestbookTemplate from "components/Template/Gusetbook/GuestbookTemplate";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
 const GuestBook = () => {
-  const queryClient = new QueryClient();
-
   return (
     <>
       <MetaTag
@@ -14,9 +13,11 @@ const GuestBook = () => {
       />
       <QueryClientProvider client={queryClient}>
         <GuestbookTemplate />
+        <ReactQueryDevtools initialIsOpen={true} />
       </QueryClientProvider>
     </>
   );
 };
 
 export default GuestBook;
+export const queryClient = new QueryClient();

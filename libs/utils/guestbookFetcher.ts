@@ -12,20 +12,21 @@ interface IPostGuestbookCommentProps {
 }
 
 const getGuestbookListFetcher = async (
-  cursor: number,
+  cursorIn: number,
   access_token?: string
 ) => {
   try {
     const res = await fetch(
-      `/api/getGuestbookList?cursor=${cursor}&access_token=${access_token}`
+      `/api/getGuestbookList?cursor=${cursorIn}&access_token=${access_token}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+        },
+      }
     );
     const pageData = await res.json();
-    const isLast = pageData.length < 20;
-    return {
-      pageData,
-      isLast,
-      cursor,
-    };
+    return pageData;
   } catch (err) {
     console.error(err);
     return err;

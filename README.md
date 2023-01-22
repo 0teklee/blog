@@ -51,6 +51,11 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 - 게시글 아카이브 (월별 게시글 필터링)
 - UI 편의성 (반응형 대응, night 모드 etc..)
 - 예외처리, 로딩 시 fallback 페이지
+- **ver 1.1.0** 게스트북 페이지 추가
+  - 게스트 유저의 Google OAuth 로그인 기능 
+  - 게스트북 페이지에서 게시글 작성 기능
+  - 게스트북 페이지 게시글에 댓글 작성 기능
+  - 게시들, 댓글 비밀글 설정 기능
 
 ### Stack
 
@@ -72,6 +77,13 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 - **Authorization :** next/auth
 - **State Management :** Recoil
 - eslint / prettier
+
+### Versions
+
+- 1.1.0 23/01/08 - Added Guestbook Page (google Oauth2.0 login, create posts &comments)
+- 1.0.1 22/09/20
+- 1.0.0 22/09/06 - first release
+
 
 ### Demo
 
@@ -118,6 +130,12 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 ![EDIT](https://res.cloudinary.com/dolziw8fv/image/upload/v1662371541/teklog_readme/teklog_editing_lopyut.gif)
 ![DELETE](https://res.cloudinary.com/dolziw8fv/image/upload/v1662371746/teklog_readme/teklog_delete_iiqwka.gif)
 
+#### 게스트북 게시글 생성
+![GUEST_POST_CREATE](https://res.cloudinary.com/dolziw8fv/image/upload/v1673151940/teklog_readme/blog_post_create_AdobeExpress_sc2yho.gif)
+
+#### 게스트북 댓글 생성
+![GUEST_COMMENT_CREATE](https://res.cloudinary.com/dolziw8fv/image/upload/v1673151940/teklog_readme/blog_comment_create_AdobeExpress_sphomg.gif)
+
 #### 모바일 반응형
 
 ![RESPONSIVE](https://res.cloudinary.com/dolziw8fv/image/upload/v1662453542/teklog_readme/teklog_mobile_qvant3.gif)
@@ -125,3 +143,5 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 #### 잘못된 경로 접근 혹은 페이지 로딩 시 FALLBACK 페이지
 
 ![FALLBACK](https://res.cloudinary.com/dolziw8fv/image/upload/v1662447361/teklog_readme/teklog_fallback_pghd3m.jpg)
+
+

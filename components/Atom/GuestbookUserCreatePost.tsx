@@ -1,14 +1,34 @@
 import styled from "styled-components";
-import { Dispatch, MouseEvent, SetStateAction, useState } from "react";
+import {
+  Dispatch,
+  MouseEvent,
+  MutableRefObject,
+  SetStateAction,
+  useState,
+} from "react";
 import { postGuestbookPostFetcher } from "../../libs/utils/guestbookFetcher";
 import Cookie from "js-cookie";
+import { queryClient } from "../../pages/guestbook";
+
+import {
+  InfiniteData,
+  QueryObserverResult,
+  RefetchOptions,
+  RefetchQueryFilters,
+  useMutation,
+} from "react-query";
 
 const GuestbookUserCreatePost = ({
   setIsPost,
   refetch,
+  setCursorZero,
 }: {
   setIsPost: Dispatch<SetStateAction<boolean>>;
-  refetch: () => void;
+  refetch: (
+    options?: RefetchOptions & RefetchQueryFilters
+  ) => Promise<QueryObserverResult<InfiniteData<any>, unknown>>;
+  cursor: MutableRefObject<number>;
+  setCursorZero: () => void;
 }) => {
   const [author, setAuthor] = useState("");
   const [post, setPost] = useState("");
@@ -29,17 +49,11 @@ const GuestbookUserCreatePost = ({
     setIsPrivate(e.target.checked);
   };
 
-  const handleSubmit = async (e: MouseEvent) => {
-    e.preventDefault();
-    if (!post) {
-      alert("Post is empty");
-      return;
-    }
-    if (!author) {
-      alert("Author is empty");
-      return;
-    }
-
+  const postGuestbookPost = async (body: {
+    author: string;
+    post: string;
+    isPrivate: boolean;
+  }) => {
     try {
       const res = await postGuestbookPostFetcher(access_token, {
         author,
@@ -50,9 +64,7 @@ const GuestbookUserCreatePost = ({
       if (res.status === 403) {
         throw new Error(res.error);
       }
-
-      refetch();
-      setIsPost(false);
+      return res.data;
     } catch (e) {
       alert(e.message);
       Cookie.remove("guest_access_token");
@@ -61,18 +73,62 @@ const GuestbookUserCreatePost = ({
     }
   };
 
+  const { mutate } = useMutation(postGuestbookPost, {
+    onSuccess: () => {
+      queryClient.clear();
+    },
+    onSettled: () => {
+      setCursorZero();
+      refetch();
+    },
+  });
+
+  const handleSubmit = async (e: MouseEvent) => {
+    e.preventDefault();
+    if (!post) {
+      alert("Post is empty");
+      return;
+    }
+    if (!author) {
+      alert("Author is empty");
+      return;
+    }
+    mutate(
+      { author, post, isPrivate },
+      {
+        onSuccess: () => {
+          setCursorZero();
+          refetch();
+          setIsPost(false);
+        },
+        onError: (e) => {
+          setIsPost(false);
+        },
+      }
+    );
+  };
+
   return (
     <__Wrapper>
       <__PostHeader>
         <div className="info">
           <span>name : </span>
-          <__NameInputBox type="text" onChange={handleAuthor} value={author} />
+          <__NameInputBox
+            type="text"
+            onChange={handleAuthor}
+            value={author}
+            maxLength={30}
+          />
           <__LengthCheck>( {author.length} / 30 )</__LengthCheck>
         </div>
       </__PostHeader>
       <__PostContent>
         <span>post : </span>
-        <__PostTextAreaBox onChange={handlePost} value={post} />
+        <__PostTextAreaBox
+          onChange={handlePost}
+          value={post}
+          maxLength={1000}
+        />
         <__FlexLeftBox>
           <__PrivateBox>
             <__IsPrivateCheckBox type="checkbox" onChange={handleIsPrivate} />

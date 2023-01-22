@@ -1,8 +1,17 @@
 import styled from "styled-components";
 import dayjs from "dayjs";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, MutableRefObject, useState } from "react";
 import Cookie from "js-cookie";
 import { postGuestbookCommentFetcher } from "../../libs/utils/guestbookFetcher";
+import {
+  InfiniteData,
+  QueryObserverResult,
+  RefetchOptions,
+  RefetchQueryFilters,
+  useMutation,
+} from "react-query";
+import DOMPurify from "isomorphic-dompurify";
+import { queryClient } from "../../pages/guestbook";
 
 interface IProps {
   id: number;
@@ -16,7 +25,11 @@ interface IProps {
     comment: string;
     createdAt: string;
   }[];
-  refetch: () => void;
+  refetch: (
+    options?: RefetchOptions & RefetchQueryFilters
+  ) => Promise<QueryObserverResult<InfiniteData<any>, unknown>>;
+  cursor: MutableRefObject<number>;
+  setCursorZero: () => void;
 }
 
 const GuestbookPost = ({
@@ -26,12 +39,47 @@ const GuestbookPost = ({
   createdAt,
   post,
   refetch,
+  cursor,
+  setCursorZero,
 }: IProps) => {
   const access_token = Cookie.get("guest_access_token") || "";
   const [isCommentOn, setIsCommentOn] = useState(false);
   const [commentValue, setCommentValue] = useState("");
   const [commentAuthor, setCommentAuthor] = useState("");
   const [isCommentPrivate, setIsCommentPrivate] = useState(false);
+
+  const sanitizedPost = DOMPurify.sanitize(post);
+
+  const postGuestbookComment = async (body: {
+    author: string;
+    comment_id: number;
+    comment: string;
+    isPrivate: boolean;
+  }) => {
+    try {
+      const res = await postGuestbookCommentFetcher(access_token, body);
+
+      const resJson = await res.json();
+
+      if (resJson.status === 403) {
+        throw new Error(resJson.error);
+      }
+      setCommentValue("");
+      return resJson;
+    } catch (e) {
+      alert(e.message);
+      Cookie.remove("guest_access_token");
+      window.location.reload();
+      return;
+    }
+  };
+
+  const { mutate } = useMutation(postGuestbookComment, {
+    onSuccess: () => {
+      setCursorZero();
+      queryClient.clear();
+    },
+  });
 
   const handleCommentValue = (e: ChangeEvent<HTMLTextAreaElement>) => {
     if (e.target.value.length > 300) return;
@@ -64,29 +112,30 @@ const GuestbookPost = ({
       alert("Please login again");
     }
 
-    try {
-      const res = await postGuestbookCommentFetcher(access_token, {
+    mutate(
+      {
         author: commentAuthor,
         comment_id: id,
         comment: commentValue,
         isPrivate: isCommentPrivate,
-      });
-
-      const resJson = await res.json();
-
-      if (resJson.status === 403) {
-        throw new Error(resJson.error);
+      },
+      {
+        onSuccess: () => {
+          setCommentValue("");
+          setIsCommentOn(true);
+        },
+        onError: (e) => {
+          alert("error occured");
+          setCommentValue("");
+          setCommentAuthor("");
+          setCursorZero();
+          window.location.reload();
+        },
+        onSettled: () => {
+          refetch();
+        },
       }
-      setIsCommentOn(false);
-      refetch();
-      setCommentValue("");
-      return resJson;
-    } catch (e) {
-      alert(e.message);
-      Cookie.remove("guest_access_token");
-      window.location.reload();
-      return;
-    }
+    );
   };
 
   return (
@@ -98,7 +147,7 @@ const GuestbookPost = ({
         </div>
         <p>{author}</p>
       </__PostHeader>
-      <__PostContent>{post}</__PostContent>
+      <__PostContent disabled={true} defaultValue={sanitizedPost} />
       {
         <__CommentsButton
           onClick={() => {
@@ -117,7 +166,11 @@ const GuestbookPost = ({
               <p>{dayjs(comment.createdAt).format("YY/MM/DD HH:mm")}</p>
               <p className="comment_author">{comment.author}</p>
             </__CommentHeader>
-            <p className="comment">{comment.comment}</p>
+            <__PostCommentsText
+              className="comment"
+              disabled={true}
+              defaultValue={DOMPurify.sanitize(comment.comment)}
+            />
           </__PostComments>
         ))}
       {access_token && isCommentOn && (
@@ -128,10 +181,15 @@ const GuestbookPost = ({
               type="text"
               value={commentAuthor}
               onChange={handleCommentAuthor}
+              maxLength={30}
             />
             <__LengthCheck> ({commentAuthor.length}/ 30)</__LengthCheck>
           </__NameBox>
-          <__CreatePost value={commentValue} onChange={handleCommentValue} />
+          <__CreatePost
+            value={commentValue}
+            onChange={handleCommentValue}
+            maxLength={300}
+          />
           <__PostLengthCheck> ({commentValue.length}/ 300)</__PostLengthCheck>
           <__FlexLeftBox>
             <__PrivateBox>
@@ -181,10 +239,23 @@ const __PostHeader = styled.div`
   }
 `;
 
-const __PostContent = styled.div`
+const __PostContent = styled.textarea`
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 2rem 8rem 2rem;
+  height: 100%;
+
+  border: none;
   font-weight: 300;
+  font-size: 1rem;
+
+  overflow: scroll;
+  word-break: break-word;
+
+  resize: none;
+
+  &:disabled {
+    background: #fff;
+  }
 `;
 
 const __CommentsButton = styled.button`
@@ -195,7 +266,6 @@ const __CommentsButton = styled.button`
 const __PostComments = styled.div`
   padding: 1rem;
   border-top: 1px dot-dash #cbcbcb;
-  text-align: right;
 
   p {
     margin-bottom: 0.5rem;
@@ -206,6 +276,23 @@ const __PostComments = styled.div`
     text-align: left;
 
     font-size: 0.9rem;
+  }
+`;
+
+const __PostCommentsText = styled.textarea`
+  width: 100%;
+
+  border: none;
+  text-align: right;
+  font-weight: 300;
+
+  overflow: scroll;
+  word-break: break-word;
+
+  resize: none;
+
+  &:disabled {
+    background: #fff;
   }
 `;
 

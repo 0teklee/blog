@@ -3,10 +3,10 @@ import Title from "components/Atom/Title";
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { useInfiniteQuery } from "react-query";
-import { getGuestbookListFetcher } from "../../../libs/utils/guestbookFetcher";
+import { getGuestbookListFetcher } from "libs/utils/guestbookFetcher";
 import { useInView } from "react-intersection-observer";
-import GuestbookPost from "../../Atom/GuestbookPost";
-import GuestGoogleLogin from "../../Module/GuestGoogleLogin";
+import GuestbookPost from "components/Atom/GuestbookPost";
+import GuestGoogleLogin from "components/Module/GuestGoogleLogin";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import Cookie from "js-cookie";
 import GuestbookUserCreatePost from "components/Atom/GuestbookUserCreatePost";
@@ -15,45 +15,71 @@ import Link from "next/link";
 
 const GuestbookTemplate = () => {
   const { ref, inView } = useInView();
-  const access_token = Cookie.get("guest_access_token") || "";
+  const access_token = useRef(Cookie.get("guest_access_token") || "");
 
   const [isPost, setIsPost] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
+  const [isLast, setIsLast] = useState(false);
+  const pageCursor = useRef(0);
 
   const {
     data: queryData,
     fetchNextPage,
-    status,
     isFetchingNextPage,
     refetch,
+    isLoading,
+    error: isError,
   } = useInfiniteQuery({
     queryKey: ["cursor", "access_token"],
-    queryFn: ({ pageParam = 0 }) => {
-      const res = getGuestbookListFetcher(pageParam, access_token);
+    queryFn: ({ pageParam = pageCursor.current }) => {
+      const res = getGuestbookListFetcher(pageParam, access_token.current);
       return res;
     },
     cacheTime: 0,
-    getNextPageParam: (lastPage) => {
-      if (lastPage.isLast) return;
-      return lastPage.pageData[lastPage.pageData?.length - 1].id;
+    refetchOnWindowFocus: false,
+    onSuccess: (data) => {
+      if (data.pages[data.pages.length - 1].length < 20) {
+        setIsLast(true);
+        return;
+      }
+      pageCursor.current = pageCursor.current + 20;
     },
   });
 
-  const isLoading = status === "loading";
   const pages = queryData && queryData.pages;
+  const lastCursor = pages && pages[pages.length - 1].isLast;
+
+  const isFirstPost =
+    !isLoading && !isFetchingNextPage && isLast && pages[0].length === 0;
+  const isDataLoaded =
+    !!queryData &&
+    !!pages &&
+    pages.length > 0 &&
+    !pages[0].pageData?.error &&
+    pageCursor.current !== undefined;
+
+  const setCursorZero = (): void => {
+    if (!pageCursor.current) {
+      return;
+    }
+    pageCursor.current = 0;
+  };
 
   useEffect(() => {
-    if (access_token) {
+    access_token.current = Cookie.get("guest_access_token") || "";
+    if (access_token.current !== "") {
       setIsLogin(true);
-    } else {
-      setIsLogin(false);
     }
-  }, [isLogin]);
+  }, []);
 
   useEffect(() => {
-    if (inView && pages.length > 0 && !pages[pages.length - 1].isLast) {
-      fetchNextPage();
+    if (lastCursor || isError) {
+      return;
     }
+
+    fetchNextPage({
+      pageParam: pageCursor.current,
+    });
   }, [inView]);
 
   return (
@@ -67,7 +93,12 @@ const GuestbookTemplate = () => {
       />
       {isLogin && isPost && (
         <__CreatePostContainer>
-          <GuestbookUserCreatePost setIsPost={setIsPost} refetch={refetch} />
+          <GuestbookUserCreatePost
+            setIsPost={setIsPost}
+            refetch={refetch}
+            cursor={pageCursor}
+            setCursorZero={setCursorZero}
+          />
         </__CreatePostContainer>
       )}
       {isLogin && !isPost && (
@@ -97,18 +128,16 @@ const GuestbookTemplate = () => {
         {!isLoading && (
           <_ContentWrapper>
             <__ContentBox>
-              {queryData &&
-                pages &&
-                pages.length > 0 &&
+              {isDataLoaded &&
                 pages.map((post) => {
-                  const { pageData } = post;
-                  if (pageData.length === 0 || !pageData) return;
-                  return pageData.map((item) => (
+                  return post.map((item) => (
                     <GuestbookPost
                       className="postBox"
                       key={item.id}
                       {...item}
                       refetch={refetch}
+                      cursor={pageCursor}
+                      setCursorZero={setCursorZero}
                     />
                   ));
                 })}
@@ -117,14 +146,13 @@ const GuestbookTemplate = () => {
                   <p>Loading...</p>
                 </__LoadingContainer>
               ) : (
-                <div ref={ref} />
+                !isLast && <div ref={ref} />
               )}
-              {pages[0].pageData.length === 0 &&
-                pages[pages.length - 1].isLast && (
-                  <__FlexCenterBox>
-                    <p>Please Leave the first post :)</p>
-                  </__FlexCenterBox>
-                )}
+              {isFirstPost && (
+                <__FlexCenterBox>
+                  <p>Please Leave the first post :)</p>
+                </__FlexCenterBox>
+              )}
             </__ContentBox>
           </_ContentWrapper>
         )}
@@ -158,7 +186,7 @@ const __ContentBox = styled.div`
 
   overflow-x: scroll;
 
-  & > div:nth-last-child(2) {
+  & > div:nth-last-child(1) {
     border-bottom: none;
   }
 `;
@@ -205,6 +233,8 @@ const __LoadingContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding: 1rem;
+
+  border: 1px dotted #eaeaea;
 
   transition: 0.5s;
 `;
