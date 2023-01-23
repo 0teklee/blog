@@ -253,6 +253,7 @@ const __PostContent = styled.textarea`
   word-break: break-word;
 
   resize: none;
+  color: #000;
 
   &:disabled {
     background: #fff;
@@ -285,6 +286,7 @@ const __PostCommentsText = styled.textarea`
 
   border: none;
   text-align: right;
+  color: #000;
   font-weight: 300;
 
   overflow: scroll;
