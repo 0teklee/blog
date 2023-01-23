@@ -36,7 +36,7 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
   const [title, setTitle] = useState(propTitle);
   const [content, setContent] = useState(propContent);
   const [category, setCategory] = useState(propCategory.name);
-  const [tags, setTags] = useState<string[]>(propTags.map((item) => item.tag));
+  // const [tags, setTags] = useState<string[]>(propTags.map((item) => item.tag));
   const quillRef = useRef(null);
   const router = Router;
 
@@ -51,7 +51,7 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
       return;
     }
 
-    handlePutBlog(`/api/putBlogPost`, title, content, category, id, tags);
+    handlePutBlog(`/api/putBlogPost`, title, content, category, id);
     router.push("/");
   };
 
@@ -119,33 +119,33 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
           onChange={(e) => setCategory(e.target.value)}
           value={category}
         />
-        <__TagInput
-          placeholder="tags"
-          type="text"
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              e.preventDefault();
-              setTags(tags.concat(e.target.value));
-              e.target.value = "";
-            }
-          }}
-        />
+        {/*<__TagInput*/}
+        {/*  placeholder="tags"*/}
+        {/*  type="text"*/}
+        {/*  onKeyDown={(e) => {*/}
+        {/*    if (e.key === "Enter") {*/}
+        {/*      e.preventDefault();*/}
+        {/*      setTags(tags.concat(e.target.value));*/}
+        {/*      e.target.value = "";*/}
+        {/*    }*/}
+        {/*  }}*/}
+        {/*/>*/}
         <__TagWrapper>
-          {tags.length !== 0 &&
-            tags.map((item, i) => (
-              <div key={`${item}_tag_wrapper_${i}`}>
-                <__TagItem key={`${item}_${i}`}>#{item}</__TagItem>
-                <__TagDelete
-                  key={`${item}_${i}_delete`}
-                  type="button"
-                  onClick={() => {
-                    setTags(tags.filter((tag) => tag !== item));
-                  }}
-                >
-                  x
-                </__TagDelete>
-              </div>
-            ))}
+          {/*{tags.length !== 0 &&*/}
+          {/*  tags.map((item, i) => (*/}
+          {/*    <div key={`${item}_tag_wrapper_${i}`}>*/}
+          {/*      <__TagItem key={`${item}_${i}`}>#{item}</__TagItem>*/}
+          {/*      <__TagDelete*/}
+          {/*        key={`${item}_${i}_delete`}*/}
+          {/*        type="button"*/}
+          {/*        onClick={() => {*/}
+          {/*          setTags(tags.filter((tag) => tag !== item));*/}
+          {/*        }}*/}
+          {/*      >*/}
+          {/*        x*/}
+          {/*      </__TagDelete>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
         </__TagWrapper>
         <__ContentWrapper>
           <QuillWrapper
