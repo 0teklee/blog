@@ -4,7 +4,6 @@ import { GetServerSideProps } from "next";
 import getBlogCategoryList from "pages/api/getBlogCategoryList";
 import getBlogCategoryPost from "pages/api/getBlogCategoryPost";
 import getBlogList from "pages/api/getBlogList";
-import getBlogTagPost from "pages/api/getBlogTagPost";
 import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";
 
 const index = ({
@@ -43,13 +42,6 @@ export const getServerSideProps: GetServerSideProps = async ({
     const categoryPosts = await getBlogCategoryPost(category);
     return {
       props: { list: categoryPosts[0].posts, categories },
-    };
-  }
-
-  if (tag) {
-    const tagPosts = await getBlogTagPost(tag);
-    return {
-      props: { list: tagPosts[0].posts, categories },
     };
   }
 

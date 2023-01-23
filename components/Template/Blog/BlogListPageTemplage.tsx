@@ -49,7 +49,7 @@ const BlogListPageTemplage = ({
         <__Title>
           {router.query.page ? "Blog" : null}
           {router.query.category ? posts[0].categories.name : null}
-          {router.query.tag ? `#${posts[0].tags[0].tag}` : null}
+          {/*{router.query.tag ? `#${posts[0].tags[0].tag}` : null}*/}
         </__Title>
         <__ListWrapper isNight={isNightMode}>
           {!posts && <__NoPost>No Posts Yet</__NoPost>}

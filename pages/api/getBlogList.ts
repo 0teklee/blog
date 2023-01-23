@@ -27,11 +27,11 @@ const getBlogList = async (page: string | string[]): Promise<IData> => {
             name: true,
           },
         },
-        tags: {
-          select: {
-            tag: true,
-          },
-        },
+        // tags: {
+        //   select: {
+        //     tag: true,
+        //   },
+        // },
       },
     });
     const posts = JSON.parse(JSON.stringify(postsDB));

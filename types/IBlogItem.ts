@@ -32,7 +32,7 @@ interface IBlogGetListItem {
   title: string;
   content: string;
   createdAt: string;
-  tags: { tag: string }[];
+  // tags: { tag: string }[];
   categories: { name: string };
 }
 

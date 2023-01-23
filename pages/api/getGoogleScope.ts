@@ -1,6 +1,4 @@
-const getGoogleScope = async (
-  access_token?: string
-): { email: string; [key: string]: string } => {
+const getGoogleScope = async (access_token?: string) => {
   try {
     if (!access_token) {
       return { email: null };

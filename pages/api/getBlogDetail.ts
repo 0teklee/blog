@@ -25,11 +25,7 @@ const getBlogDetail = async (
             name: true,
           },
         },
-        tags: {
-          select: {
-            tag: true,
-          },
-        },
+        // post_id: true,
       },
     });
 

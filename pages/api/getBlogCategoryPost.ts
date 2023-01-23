@@ -20,11 +20,7 @@ const getBlogCategoryPost = async (category: string | string[]) => {
                   name: true,
                 },
               },
-              tags: {
-                select: {
-                  tag: true,
-                },
-              },
+              // post_id: true,
             },
           },
         },

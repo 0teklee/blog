@@ -14,8 +14,8 @@ const BlogListItem = ({
   createdAt,
   title,
   categories,
-  tags,
-}: IBlogGetListItem) => {
+}: // tags,
+IBlogGetListItem) => {
   const router = Router;
 
   /*블로그 내용 미리보기 */
@@ -77,9 +77,9 @@ const BlogListItem = ({
             </__CategoryDateWrapper>
             <p>{contentReplace}</p>
             <__TagWrapper key={`${id}_tag`}>
-              {tags?.map((tag, i) => (
-                <span key={`${tag}_${i}`}>#{tag.tag}</span>
-              ))}
+              {/*{tags?.map((tag, i) => (*/}
+              {/*  <span key={`${tag}_${i}`}>#{tag.tag}</span>*/}
+              {/*))}*/}
             </__TagWrapper>
           </__ContentsWrapper>
         </__Wrapper>
