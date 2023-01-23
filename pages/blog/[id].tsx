@@ -34,7 +34,7 @@ const index = (props: IProps) => {
 
   const { post, categoryList } = props;
   const { detail, nav } = post;
-  const { content, createdAt, id, title, categories, tags } = detail;
+  const { content, createdAt, id, title, categories } = detail;
 
   const isImage =
     content &&
@@ -62,7 +62,7 @@ const index = (props: IProps) => {
         id={id}
         title={title}
         category={categories.name}
-        tags={tags.map((item) => item.tag)}
+        // tags={tags.map((item) => item.tag)}
         nav={nav}
         categories={categoryList}
       />
