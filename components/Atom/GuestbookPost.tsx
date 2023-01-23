@@ -212,10 +212,11 @@ export default GuestbookPost;
 const __Wrapper = styled.div`
   width: 100%;
   padding: 1rem;
+
+  color: #000;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-size: 1rem;
 
-  // border-bottom: {(props)= > (props.isLast ? "none": "2px dotted #cbcbcb")};
   border-bottom: 2px dotted #cbcbcb;
 `;
 

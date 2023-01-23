@@ -13,7 +13,8 @@ const Home = (props: { posts: IBlogMainItem[] }) => {
       <MetaTag
         title="teklog"
         url="https://www.teklog.site"
-        description="Tekwoo Lee's Tech Blog - 프론트엔드 개발자 이택우의 기술블로그 "
+        description="TEKLOG"
+        img="https://res.cloudinary.com/dolziw8fv/image/upload/v1674413434/DALL_E_2023-01-23_03.46.28_-_a_sceintific_photo_of_the_most_nostalgic_sundog_during_sunset_on_ocean_provia_400_rillrw.png"
       />
       <HomeTemplate posts={posts} />
     </>
