@@ -18,9 +18,9 @@ const postBlog = async (req: NextApiRequest, res: NextApiResponse) => {
     const result = await prisma.post.create({
       data: {
         ...rest,
-        tags: {
-          connectOrCreate: tagsReqData,
-        },
+        // tags: {
+        //   connectOrCreate: tagsReqData,
+        // },
         categories: {
           connectOrCreate: {
             where: { name: category },

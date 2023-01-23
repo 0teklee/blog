@@ -2,8 +2,8 @@ const handlePostBlog = (
   url: string,
   title: string,
   content: string,
-  category = ".etc",
-  tag: string[]
+  category = ".etc"
+  // tag: string[]
 ) => {
   if (!title && !content) {
     alert("Please Insert Title & Content");
@@ -16,7 +16,6 @@ const handlePostBlog = (
       title,
       content,
       category,
-      tag,
     }),
   });
 };

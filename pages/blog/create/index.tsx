@@ -26,7 +26,7 @@ const index = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("");
-  const [tags, setTags] = useState<string[]>([]);
+  // const [tags, setTags] = useState<string[]>([]);
   const quillRef = useRef(null);
 
   const router = Router;
@@ -42,7 +42,7 @@ const index = () => {
       return;
     }
 
-    handlePostBlog(`/api/postBlog`, title, content, category, tags);
+    handlePostBlog(`/api/postBlog`, title, content, category);
     router.push("/");
   };
 
@@ -101,33 +101,23 @@ const index = () => {
           type="text"
           onChange={(e) => setCategory(e.target.value)}
         />
-        <__TagInput
-          placeholder="tags"
-          type="text"
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              e.preventDefault();
-              setTags(tags.concat(e.target.value));
-              e.target.value = "";
-            }
-          }}
-        />
+
         <__TagWrapper>
-          {tags.length !== 0 &&
-            tags.map((item, i) => (
-              <div key={`${item}_tag_wrapper_${i}`}>
-                <__TagItem key={`${item}_${i}`}>#{item}</__TagItem>
-                <__TagDelete
-                  key={`${item}_${i}_delete`}
-                  type="button"
-                  onClick={() => {
-                    setTags(tags.filter((tag) => tag !== item));
-                  }}
-                >
-                  x
-                </__TagDelete>
-              </div>
-            ))}
+          {/*{tags.length !== 0 &&*/}
+          {/*  tags.map((item, i) => (*/}
+          {/*    <div key={`${item}_tag_wrapper_${i}`}>*/}
+          {/*      <__TagItem key={`${item}_${i}`}>#{item}</__TagItem>*/}
+          {/*      <__TagDelete*/}
+          {/*        key={`${item}_${i}_delete`}*/}
+          {/*        type="button"*/}
+          {/*        onClick={() => {*/}
+          {/*          setTags(tags.filter((tag) => tag !== item));*/}
+          {/*        }}*/}
+          {/*      >*/}
+          {/*        x*/}
+          {/*      </__TagDelete>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
         </__TagWrapper>
         <__ContentWrapper>
           <QuillWrapper
