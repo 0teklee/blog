@@ -62,7 +62,7 @@ const BlogListPageTemplage = ({
                 createdAt={item.createdAt}
                 key={`BlogListItem_${i}`}
                 categories={item.categories}
-                tags={item.tags}
+                // tags={item.tags}
               />
             ))}
           <__PaginationWrapper isNight={isNightMode}>

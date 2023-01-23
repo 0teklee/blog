@@ -15,7 +15,7 @@ interface IProps {
   id: number;
   title: string;
   category: string;
-  tags: string[];
+  // tags: string[];
   categories: IBlogGetCategorySideBar[];
   nav: {
     id: number;
@@ -30,7 +30,7 @@ const BlogDetailPageTemplate = ({
   id,
   title,
   category,
-  tags,
+  // tags,
   nav,
   categories,
 }: IProps) => {
@@ -86,14 +86,14 @@ const BlogDetailPageTemplate = ({
             <__TagCategoryWrpper>
               <p>category : {category}</p>
               <__TagWrapper>
-                {tags?.map((tag, i) => (
-                  <button
-                    key={`${tag}_btn_${i}`}
-                    onClick={() => router.push(`/blog?tag=${tag}`)}
-                  >
-                    <span key={`${tag}_${i}`}>#{tag}</span>
-                  </button>
-                ))}
+                {/*{tags?.map((tag, i) => (*/}
+                {/*  <button*/}
+                {/*    key={`${tag}_btn_${i}`}*/}
+                {/*    onClick={() => router.push(`/blog?tag=${tag}`)}*/}
+                {/*  >*/}
+                {/*    <span key={`${tag}_${i}`}>#{tag}</span>*/}
+                {/*  </button>*/}
+                {/*))}*/}
               </__TagWrapper>
             </__TagCategoryWrpper>
           </__HeaderWrapper>
@@ -134,7 +134,7 @@ const BlogDetailPageTemplate = ({
 export default BlogDetailPageTemplate;
 
 const __Wrapper = styled.div`
-  ${theme.displayFlex("center", "center", "column")}
+  ${theme.displayFlex("center", "center", "column")};
   @media only screen and (min-width: ${sizes.laptop}) {
     padding: 8rem 12rem 5rem 12rem;
   }
@@ -312,7 +312,7 @@ const __NavItem = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 50%;
-    ${theme.titleEllipsis("nowrap")}
+    ${theme.titleEllipsis("nowrap")};
 
     @media only screen and (max-width: 500px) {
       font-size: 0.8em;
