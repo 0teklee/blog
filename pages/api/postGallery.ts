@@ -10,7 +10,7 @@ const postGallery = async (req: NextApiRequest, res: NextApiResponse) => {
     const result = await prisma.galleyPost.create({
       data: {
         ...rest,
-        category: {
+        galleryCategory: {
           connectOrCreate: {
             where: { name: galleryCategory },
             create: { name: galleryCategory },
