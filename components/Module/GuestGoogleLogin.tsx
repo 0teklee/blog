@@ -4,32 +4,6 @@ import Cookie from "js-cookie";
 import styled from "styled-components";
 import Modal from "react-modal";
 
-const modalStyle = {
-  overlay: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(0,0,0,0.5)",
-    zIndex: 10,
-  },
-  content: {
-    display: "flex",
-    justifyContent: "center",
-    height: "50vh",
-    background: "#ffffff",
-    overflow: "auto",
-    top: "50%",
-    left: "50%",
-    translate: "-50% -50%",
-    WebkitOverflowScrolling: "touch",
-    borderRadius: "14px",
-    outline: "none",
-    zIndex: 10,
-  },
-};
-
 const GuestGoogleLogin = ({
   setIsLogin,
 }: {
@@ -56,8 +30,33 @@ const GuestGoogleLogin = ({
       <Modal
         isOpen={isModal}
         onRequestClose={() => setIsModal(false)}
-        style={modalStyle}
         ariaHideApp={false}
+        style={{
+          overlay: {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0,0,0,0.5)",
+            zIndex: 10,
+          },
+          content: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "80%",
+            height: "30rem",
+            background: "#ffffff",
+            overflow: "auto",
+            top: "50%",
+            left: "50%",
+            translate: "-50% -50%",
+            borderRadius: "14px",
+            outline: "none",
+            zIndex: 10,
+          },
+        }}
       >
         <__ModalContainer>
           <h2>개인 정보 이용 동의</h2>
@@ -81,7 +80,6 @@ const GuestGoogleLogin = ({
           </div>
         </__ModalContainer>
       </Modal>
-      {/*<__Button onClick={() => login()}>Login with Google to post</__Button>*/}
       <__Button onClick={() => setIsModal(true)}>
         Login with Google to post
       </__Button>
@@ -115,12 +113,13 @@ const __ModalContainer = styled.div`
   }
 
   h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
   .kr {
     margin: 1rem;
+    margin-bottom: 2rem;
 
     p {
       margin: 0.5rem;

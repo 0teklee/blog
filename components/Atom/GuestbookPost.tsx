@@ -254,6 +254,7 @@ const __PostContent = styled.textarea`
 
   resize: none;
   color: #000;
+  opacity: 1;
 
   &:disabled {
     background: #fff;
@@ -269,6 +270,7 @@ const __PostComments = styled.div`
   padding: 1rem;
   border-top: 1px dot-dash #cbcbcb;
 
+  opacity: 1;
   p {
     margin-bottom: 0.5rem;
     font-weight: 300;
@@ -293,9 +295,12 @@ const __PostCommentsText = styled.textarea`
   word-break: break-word;
 
   resize: none;
+  opacity: 1;
 
   &:disabled {
     background: #fff;
+    color: #000;
+    opacity: 1;
   }
 `;
 
