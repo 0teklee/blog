@@ -80,7 +80,7 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 
 ### Versions
 
-- 1.1.0 23/01/08 - Added Guestbook Page (google Oauth2.0 login, create posts &comments)
+- 1.1.0 23/01/08 - Added Guestbook Page (google Oauth2.0 login, create posts & comments)
 - 1.0.1 22/09/20
 - 1.0.0 22/09/06 - first release
 
