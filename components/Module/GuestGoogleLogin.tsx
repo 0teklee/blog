@@ -59,8 +59,8 @@ const GuestGoogleLogin = ({
         }}
       >
         <__ModalContainer>
-          <h2>개인 정보 이용 동의</h2>
-          <h3>Privacy Policy</h3>
+          {/*<h2>개인 정보 이용 동의</h2>*/}
+          <h3 className="title">Privacy Policy</h3>
           <div className="kr">
             <p>1) 제공하는 개인정보의 항목 : 성명, 이메일</p>
             <p>2) 개인정보를 제공받는 자의 개인정보 이용 목적 : 유저 관리</p>
@@ -73,7 +73,7 @@ const GuestGoogleLogin = ({
               않습니다.
             </p>
           </div>
-          <h3 className="agree">※ 위 고유식별정보 수집이용에 동의하십니까?</h3>
+          <h3 className="agree">※ 개인정보 수집이용에 동의하십니까?</h3>
           <div className="btns">
             <button onClick={() => login()}>YES</button>
             <button onClick={() => setIsModal(false)}>NO</button>
@@ -104,21 +104,24 @@ const __ModalContainer = styled.div`
   width: 100%;
 
   h2 {
-    padding: 1rem;
-
     color: #000;
     text-align: center;
-    font-size: 1.5rem;
-    word-break: keep-all;
   }
 
   h3 {
-    margin-bottom: 2rem;
     text-align: center;
+    font-size: 1rem;
+  }
+
+  .title {
+    margin: 1rem 0;
+  }
+
+  .agree {
+    padding-bottom: 2rem;
   }
 
   .kr {
-    margin: 1rem;
     margin-bottom: 2rem;
 
     p {
