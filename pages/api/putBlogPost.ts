@@ -3,13 +3,13 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const putBlogEditPost = async (req: NextApiRequest, res: NextApiResponse) => {
   const data = req.body;
-  const { id, tag: tagIn, category, ...rest } = data;
-  const tagsReqData = tagIn.map((item: string) => {
-    return {
-      where: { tag: item },
-      create: { tag: item },
-    };
-  });
+  const { id, category, ...rest } = data;
+  // const tagsReqData = tagIn.map((item: string) => {
+  //   return {
+  //     where: { tag: item },
+  //     create: { tag: item },
+  //   };
+  // });
 
   try {
     const putDB = await prisma.post.update({
@@ -18,9 +18,9 @@ const putBlogEditPost = async (req: NextApiRequest, res: NextApiResponse) => {
       },
       data: {
         ...rest,
-        tags: {
-          connectOrCreate: tagsReqData,
-        },
+        // tags: {
+        //   connectOrCreate: tagsReqData,
+        // },
         categories: {
           connectOrCreate: {
             where: { name: category },
