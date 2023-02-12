@@ -6,7 +6,8 @@ const getContentImg = (content: string): string | undefined => {
     contentReg &&
     contentReg
       .map((x: string) => x.replace(/.*src="([^"]*)".*/, "$1"))[0]
-      .replace("http", "https");
+      .replace("http", "https")
+      .replace("httpss", "https");
   return contentImg;
 };
 
@@ -33,7 +34,8 @@ const setCategoryPresetImg = (category: string): string | undefined => {
   if (category === "Error") {
     return "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975868/error-preset_s0chxc.png";
   }
-  return;
+
+  return "https://res.cloudinary.com/dolziw8fv/image/upload/v1674554187/rkvskmgscq88ku3kzfks.png";
 };
 
 export { getContentImg, setCategoryPresetImg };

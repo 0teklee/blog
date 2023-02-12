@@ -22,7 +22,16 @@ const Footer = () => {
   return (
     <__Wrapper>
       <__Flex>
-        <__Button onClick={handleContact}>contact</__Button>
+        <__LeftBtnContainer>
+          <button
+            onClick={() => {
+              router.push(`/daily?page=1&category=daily`);
+            }}
+          >
+            <__LifeBlogButton>𓅩</__LifeBlogButton>
+          </button>
+          <__Button onClick={handleContact}>contact</__Button>
+        </__LeftBtnContainer>
         <__Top onClick={handleTop}>top</__Top>
         <__Button>
           <Link href="https://teklog.site/guestbook">guestbook</Link>
@@ -73,6 +82,17 @@ const __Top = styled(__Button)`
 const __Flex = styled.div`
   position: relative;
   ${theme.displayFlex("center", "space-between")};
+`;
+
+const __LeftBtnContainer = styled.div`
+  display: block;
+  position: relative;
+`;
+
+const __LifeBlogButton = styled.p`
+  position: absolute;
+  top: -150%;
+  left: 0;
 `;
 
 export default Footer;

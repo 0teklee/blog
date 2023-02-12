@@ -10,6 +10,9 @@ const getBlogCategoryList = async (): Promise<IBlogGetCategory[]> => {
             none: {},
           },
         },
+        name: {
+          not: "daily",
+        },
       },
       select: {
         name: true,

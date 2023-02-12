@@ -2,46 +2,48 @@ import Router from "next/router";
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { sizes, theme } from "styles/theme";
-import { IBlogGetCategorySideBar } from "types/IBlogItem";
+import {
+  IBlogGetCategorySideBar,
+  IDetailGetCategorySideBar,
+} from "types/IBlogItem";
 
-const BlogSideBar = ({
+const DailySideBar = ({
   categories,
   padding = "2rem",
   mobilePadding,
 }: {
-  categories: IBlogGetCategorySideBar[];
+  categories: IDetailGetCategorySideBar[];
   padding?: string;
   mobilePadding?: string;
 }) => {
   const router = Router;
-
   const [mainToggle, setMainToggle] = useState<boolean>(false);
   const [mainCategory, setMainCategory] = useState<boolean>(false);
 
   /* subCategory Object Assign*/
-  const subKeys = categories
-    .map((item) => item.name)
-    .reduce((acc, item) => {
-      return { ...acc, [item]: false };
-    }, {});
+  // const subKeys = categories
+  //   .map((item) => item.name)
+  //   .reduce((acc, item) => {
+  //     return { ...acc, [item]: false };
+  //   }, {});
 
-  const [subCategory, setSubCategory] = useState(subKeys);
+  // const [subCategory, setSubCategory] = useState(subKeys);
 
   const handleMainToggle = () => {
     setMainToggle((prev) => !prev);
     setTimeout(() => setMainCategory((prev) => !prev), 300);
   };
 
-  const handleSubToggle = (name: string) => {
-    setSubCategory((prev) => {
-      return { ...prev, [name]: !prev[name] };
-    });
-  };
+  // const handleSubToggle = (name: string) => {
+  //   setSubCategory((prev) => {
+  //     return { ...prev, [name]: !prev[name] };
+  //   });
+  // };
 
   return (
     <__Wrapper padding={padding} mobilePadding={mobilePadding}>
       <__TitleWrapper>
-        <__Title>categories </__Title>
+        <__Title>Daily Posts</__Title>
         <__ToggleButton onClick={handleMainToggle} visible={mainToggle}>
           ⇣
         </__ToggleButton>
@@ -50,56 +52,55 @@ const BlogSideBar = ({
         {categories &&
           0 < categories.length &&
           categories.map((item) => (
-            <__CategoryItemWrapper key={`${item.name}_wrapper`}>
+            <__CategoryItemWrapper key={`${item}_wrapper`}>
               <__CategoryItem
                 onClick={() =>
                   router.push({
-                    pathname: "/blog",
-                    query: { category: item.name },
+                    pathname: `/daily/${item.id}`,
                   })
                 }
-                key={`${item.name}_categoryItem`}
+                key={`${item.id}_categoryItem`}
               >
-                {item.name}
-                {item?.posts?.map((blog, i) => (
-                  <__SubCategoryWrapper
-                    visible={subCategory[item.name]}
-                    key={`${item.name}_subwrapper_${i}`}
-                  >
-                    <__SubCategoryTitle
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        router.push(`/blog/${blog.id}`);
-                      }}
-                      key={`${item.name}_Title`}
-                    >
-                      - {blog.title}
-                    </__SubCategoryTitle>
-                  </__SubCategoryWrapper>
-                ))}
-                {item?.posts && item?.posts.length >= 10 && (
-                  <__SubCategoryWrapper visible={subCategory[item.name]}>
-                    <__SubCategoryTitle
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        router.push(`/blog?category=${item.name}`);
-                      }}
-                      key={`${item.name}_Title`}
-                    >
-                      .....more
-                    </__SubCategoryTitle>
-                  </__SubCategoryWrapper>
-                )}
+                {item.category}
+                {/*{item?.posts?.map((blog, i) => (*/}
+                {/*  <__SubCategoryWrapper*/}
+                {/*    visible={subCategory[item.name]}*/}
+                {/*    key={`${item.name}_subwrapper_${i}`}*/}
+                {/*  >*/}
+                {/*    <__SubCategoryTitle*/}
+                {/*      onClick={(e) => {*/}
+                {/*        e.stopPropagation();*/}
+                {/*        router.push(`/blog/${blog.id}`);*/}
+                {/*      }}*/}
+                {/*      key={`${item.name}_Title`}*/}
+                {/*    >*/}
+                {/*      - {blog.title}*/}
+                {/*    </__SubCategoryTitle>*/}
+                {/*  </__SubCategoryWrapper>*/}
+                {/*))}*/}
+                {/*{item?.posts && item?.posts.length >= 10 && (*/}
+                {/*  <__SubCategoryWrapper visible={subCategory[item.name]}>*/}
+                {/*    <__SubCategoryTitle*/}
+                {/*      onClick={(e) => {*/}
+                {/*        e.stopPropagation();*/}
+                {/*        router.push(`/blog?category=${item.name}`);*/}
+                {/*      }}*/}
+                {/*      key={`${item.name}_Title`}*/}
+                {/*    >*/}
+                {/*      .....more*/}
+                {/*    </__SubCategoryTitle>*/}
+                {/*  </__SubCategoryWrapper>*/}
+                {/*)}*/}
               </__CategoryItem>
-              <__CateogryItemToggle
-                onClick={() => {
-                  handleSubToggle(item.name);
-                }}
-                visible={subCategory[item.name]}
-                key={`${item.name}_Toggle`}
-              >
-                <span>▾</span>
-              </__CateogryItemToggle>
+              {/*<__CateogryItemToggle*/}
+              {/*  onClick={() => {*/}
+              {/*    handleSubToggle(item.name);*/}
+              {/*  }}*/}
+              {/*  visible={subCategory[item.name]}*/}
+              {/*  key={`${item.name}_Toggle`}*/}
+              {/*>*/}
+              {/*  <span>▾</span>*/}
+              {/*</__CateogryItemToggle>*/}
             </__CategoryItemWrapper>
           ))}
       </__CategoryWrapper>
@@ -107,7 +108,7 @@ const BlogSideBar = ({
   );
 };
 
-export default BlogSideBar;
+export default DailySideBar;
 
 const __Wrapper = styled.aside<{ padding?: string; mobilePadding?: string }>`
   position: fixed;
@@ -212,22 +213,21 @@ const __CategoryItemWrapper = styled.div`
   padding-left: 0.8rem;
 `;
 
-const __CateogryItemToggle = styled(__ToggleButton)<{ visible: boolean }>`
-  top: 10px;
-  color: ${theme.colors.grey};
-
-  ${(props) =>
-    props.visible
-      ? css`
-          transform: rotate(0.5turn);
-          transition: 1s;
-        `
-      : null};
-
-  @media only screen and (max-width: 500px) {
-    top: 18px;
-  }
-`;
+// const __CateogryItemToggle = styled(__ToggleButton)<{ visible: boolean }>`
+//   top: 10px;
+//   color: ${theme.colors.grey};
+//
+//   ${(props) =>
+//     props.visible
+//       ? css`
+//           transform: rotate(0.5turn);
+//           transition: 1s;
+//         `
+//       : null}
+//   @media only screen and(max-width: 500px) {
+//     top: 18px;
+//   }
+// `;
 
 const __CategoryItem = styled.div`
   all: unset;
@@ -260,7 +260,7 @@ const __SubCategoryWrapper = styled.div<{ visible: boolean }>`
       ? css`
           @keyframes mount {
             0% {
-              opacity: 0;
+              opacity: 0%;
             }
             100% {
               opacity: 100%;

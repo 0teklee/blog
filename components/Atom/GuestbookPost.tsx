@@ -285,6 +285,9 @@ const __PostComments = styled.div`
 
 const __PostCommentsText = styled.textarea`
   width: 100%;
+  height: 5rem;
+
+  padding-bottom: 1rem;
 
   border: none;
   text-align: right;

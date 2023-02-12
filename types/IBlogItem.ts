@@ -60,6 +60,11 @@ interface IBlogGetCategorySideBar {
   }[];
 }
 
+interface IDetailGetCategorySideBar {
+  id: number;
+  category: string;
+}
+
 interface IGalleryPost {
   title: string;
   imgUrl: string;
@@ -96,4 +101,5 @@ export type {
   IGalleryPostGetDetail,
   IGalleryGetCategorySideBar,
   IGalleryGetCategory,
+  IDetailGetCategorySideBar,
 };

@@ -1,20 +1,21 @@
 import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
-import BlogSideBar from "components/Module/BlogSideBar";
 import isNightModeState from "libs/recoil/isNightModeState";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
-import { IBlogGetCategorySideBar, IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetListItem, IDetailGetCategorySideBar } from "types/IBlogItem";
+import DailySideBar from "../../Module/DailySideBar";
+import DailyListItem from "../../Atom/DailyListItem";
 
-const BlogListPageTemplage = ({
+const DailyListPageTemplate = ({
   posts,
   categories,
 }: {
   posts?: IBlogGetListItem[];
-  categories: IBlogGetCategorySideBar[];
+  categories: IDetailGetCategorySideBar[];
 }) => {
   const router = useRouter();
   const [page, setPage] = useState<number>(1);
@@ -32,7 +33,7 @@ const BlogListPageTemplage = ({
   useEffect(() => {
     if (router.query.page && router.query.category !== "daily") {
       router.push({
-        pathname: "/blog",
+        pathname: "/daily",
         query: { page: page },
       });
     }
@@ -41,28 +42,31 @@ const BlogListPageTemplage = ({
   return (
     <Layout padding="8rem 0rem 5rem 0rem" mobilePadding="2.3rem 1rem">
       <__Container>
-        <BlogSideBar
+        <DailySideBar
           categories={categories}
           padding="3rem 2rem"
           mobilePadding="2rem 1rem"
         />
-        <__Title>
-          {router.query.page ? "Blog" : null}
-          {router.query.category ? posts[0].categories.name : null}
-          {/*{router.query.tag ? `#${posts[0].tags[0].tag}` : null}*/}
-        </__Title>
+        <__TitleContainer>
+          <__Title>Daily Blog </__Title>
+          <__TitleLogo>𓅫</__TitleLogo>
+        </__TitleContainer>
+        <__DescriptionBox>
+          <__Description>essays</__Description>
+          <__Description>not necessarily about programming</__Description>
+          <__Description>uncategorized thoughts on random things</__Description>
+        </__DescriptionBox>
         <__ListWrapper isNight={isNightMode}>
           {!posts && <__NoPost>No Posts Yet</__NoPost>}
           {posts &&
             posts.map((item, i) => (
-              <BlogListItem
+              <DailyListItem
                 content={item.content}
                 title={item.title}
                 id={item.id}
                 createdAt={item.createdAt}
                 key={`BlogListItem_${i}`}
                 categories={item.categories}
-                // tags={item.tags}
               />
             ))}
           <__PaginationWrapper isNight={isNightMode}>
@@ -71,7 +75,7 @@ const BlogListPageTemplage = ({
                 prev
               </__PaginationBtn>
             )}
-            {posts && posts[posts.length - 1].id !== 1 && (
+            {posts && posts[posts.length - 1].id !== 1 && posts.length >= 5 && (
               <__PaginationBtn isNight={isNightMode} onClick={handleNext}>
                 next
               </__PaginationBtn>
@@ -83,22 +87,55 @@ const BlogListPageTemplage = ({
   );
 };
 
-export default BlogListPageTemplage;
+export default DailyListPageTemplate;
 
 const __Container = styled.div`
   position: relative;
 `;
 
+const __TitleContainer = styled.div`
+  position: relative;
+`;
+
 const __Title = styled.h1`
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   font-family: "IBM Plex Sans KR", sans-serif;
   text-align: center;
   ${theme.titleEllipsis("wrap")}
 
   @media only screen and (${theme.devices.laptop}) {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
   }
+`;
+
+const __TitleLogo = styled.p`
+  position: absolute;
+  left: 54.5%;
+  top: 1%;
+
+  @media only screen and (max-width: ${sizes.laptop}) {
+    left: 59%;
+    top: 0;
+  }
+
+  @media only screen and (max-width: ${sizes.mobileL}) {
+    left: 70%;
+    top: 0;
+  }
+`;
+
+const __DescriptionBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4rem;
+`;
+
+const __Description = styled.p`
+  color: #808080;
+  font-size: 0.8rem;
+  text-align: center;
 `;
 
 const __NoPost = styled(__Title)``;

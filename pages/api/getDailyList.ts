@@ -10,11 +10,11 @@ interface IData {
   nav: { id: number; createdAt: string; title: string }[];
 }
 
-const getBlogList = async (page: string | string[]): Promise<IData> => {
+const getDailyList = async (page: string | string[]): Promise<IData> => {
   try {
     const postsDB = await prisma.post.findMany({
       orderBy: { id: "desc" },
-      take: 5,
+      take: 20,
       skip: Number(page) === 1 ? 0 : (Number(page) - 1) * 5,
       select: {
         id: true,
@@ -29,9 +29,7 @@ const getBlogList = async (page: string | string[]): Promise<IData> => {
       },
       where: {
         categories: {
-          name: {
-            not: "daily",
-          },
+          name: "daily",
         },
       },
     });
@@ -42,4 +40,4 @@ const getBlogList = async (page: string | string[]): Promise<IData> => {
   }
 };
 
-export default getBlogList;
+export default getDailyList;

@@ -38,7 +38,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   const { page, category, tag } = query;
   const categories = await getBlogCategoryList();
 
-  if (category) {
+  if (category && category !== "daily") {
     const categoryPosts = await getBlogCategoryPost(category);
     return {
       props: { list: categoryPosts[0].posts, categories },
