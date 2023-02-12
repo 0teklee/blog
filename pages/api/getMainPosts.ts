@@ -11,6 +11,11 @@ const getMainPosts = async (): Promise<IBlogMainItem[]> => {
           title: "",
           content: "",
         },
+        categories: {
+          name: {
+            not: "daily",
+          },
+        },
       },
       select: {
         id: true,
