@@ -157,7 +157,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
   const latestId = await getGalleryDetailId();
 
-  console.log("latestId", latestId[latestId.length - 1]);
   return {
     props: {
       session,

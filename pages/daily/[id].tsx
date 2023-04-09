@@ -85,7 +85,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = await getDailyDetail(params.id);
 
   const categories = await getDailyCategoryList("1");
-  console.log("backend", categories);
   return {
     props: { post, categories },
     revalidate: 3,

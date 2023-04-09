@@ -105,28 +105,28 @@ const DailyDetailPageTemplate = ({
           <__GoBack onClick={() => router.push("/daily?page=1&category=daily")}>
             ← go back to list
           </__GoBack>
-          <__NavWrapper>
-            {next && (
-              <__NavItem
-                key="next"
-                onClick={() => router.push(`/blog/${next.id}`)}
-              >
-                <p>next</p>
-                <p>{next.title}</p>
-                <p>{dayJs(next.createdAt)}</p>
-              </__NavItem>
-            )}
-            {prev && (
-              <__NavItem
-                key="prev"
-                onClick={() => router.push(`/blog/${prev.id}`)}
-              >
-                <p>{id < prev.id ? "next" : "prev"}</p>
-                <p>{prev.title}</p>
-                <p>{dayJs(prev.createdAt)}</p>
-              </__NavItem>
-            )}
-          </__NavWrapper>
+          {/*<__NavWrapper>*/}
+          {/*  {next && (*/}
+          {/*    <__NavItem*/}
+          {/*      key="next"*/}
+          {/*      onClick={() => router.push(`/blog/${next.id}`)}*/}
+          {/*    >*/}
+          {/*      <p>next</p>*/}
+          {/*      <p>{next.title}</p>*/}
+          {/*      <p>{dayJs(next.createdAt)}</p>*/}
+          {/*    </__NavItem>*/}
+          {/*  )}*/}
+          {/*  {prev && (*/}
+          {/*    <__NavItem*/}
+          {/*      key="prev"*/}
+          {/*      onClick={() => router.push(`/blog/${prev.id}`)}*/}
+          {/*    >*/}
+          {/*      <p>{id < prev.id ? "next" : "prev"}</p>*/}
+          {/*      <p>{prev.title}</p>*/}
+          {/*      <p>{dayJs(prev.createdAt)}</p>*/}
+          {/*    </__NavItem>*/}
+          {/*  )}*/}
+          {/*</__NavWrapper>*/}
         </__Wrapper>
       </Layout>
     </>
