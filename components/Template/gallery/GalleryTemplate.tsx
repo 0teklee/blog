@@ -21,7 +21,7 @@ const GalleryTemplate = ({ list, categories, query }: IGalleryTemplateProp) => {
       />
       <GallerySidebar categories={categories} />
       <_ContentWrapper>
-        <__ContentBox>
+        <__ContentBox query={query}>
           {query !== "~2022" &&
             query !== "Collection" &&
             list?.map((item, i) => (
@@ -31,6 +31,7 @@ const GalleryTemplate = ({ list, categories, query }: IGalleryTemplateProp) => {
                 title={item.title}
                 createdAt={item.createdAt}
                 key={`${item.title}_key_${i}`}
+                category={query}
               />
             ))}
           {query === "~2022" &&
@@ -42,6 +43,7 @@ const GalleryTemplate = ({ list, categories, query }: IGalleryTemplateProp) => {
                 key={`${img.title}_key_${i}`}
                 width={img.width}
                 height={img.height}
+                category={query}
               />
             ))}
         </__ContentBox>
@@ -73,12 +75,13 @@ export default GalleryTemplate;
 
 const _ContentWrapper = styled.section`
   padding: 1rem 1rem 1rem 12rem;
+
   @media (max-width: 720px) {
     padding: 0;
   }
 `;
 
-const __ContentBox = styled.div`
+const __ContentBox = styled.div<{ query: string }>`
   ${theme.displayFlex("center", "stretch")}
   flex-wrap: nowrap;
   overflow-x: scroll;

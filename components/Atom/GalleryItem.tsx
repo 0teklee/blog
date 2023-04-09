@@ -15,6 +15,7 @@ const GalleryItem = ({
   title = "untitled",
   width,
   height,
+  category,
 }: {
   id?: number;
   url: string;
@@ -22,6 +23,7 @@ const GalleryItem = ({
   createdAt?: string;
   width?: string;
   height?: string;
+  category: string;
 }) => {
   const [naturalSize, setNaturalSize] = useState({
     width: 0,
@@ -29,13 +31,23 @@ const GalleryItem = ({
   });
   const isNightMode = useRecoilValue<string>(isNightModeState);
   const router = Router;
+
+  console.log("naturalSize", naturalSize, "width", width, "height", height);
   return (
     <__Container>
       <__ImageItemWrapper>
         {!width || !height ? (
           <__ImageInnerWrapper
-            width={naturalSize.width}
-            height={naturalSize.height}
+            width={
+              category === "Drawings"
+                ? naturalSize.width * 0.5
+                : naturalSize.width
+            }
+            height={
+              category === "Drawings"
+                ? naturalSize.height * 0.5
+                : naturalSize.height
+            }
             onClick={() => {
               router.push(`/gallery/${id}`);
             }}
@@ -109,8 +121,6 @@ const __ImageInnerWrapper = styled.div<{
 `;
 
 const __ImgBackDrop = styled(Image)`
-  width: "100%";
-  height: "100%";
   padding: 2rem;
   transition: 0.5s;
   z-index: 0;
