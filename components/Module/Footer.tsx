@@ -90,6 +90,12 @@ const __LeftBtnContainer = styled.div`
 `;
 
 const __LifeBlogButton = styled.p`
+  color: #fff;
+
+  hover {
+    color: #81d0ff;
+  }
+
   position: absolute;
   top: -150%;
   left: 0;
