@@ -18,7 +18,7 @@ model Category {
 model Post {
   id         Int      @id @default(autoincrement())
   title      String
-  content    String   @db.VarChar(16000)
+  content    String   @db.LongText()
   createdAt  DateTime @default(now())
   post_id    Int
   categories Category @relation(fields: [post_id], references: [id])

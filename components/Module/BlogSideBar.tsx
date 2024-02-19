@@ -117,6 +117,7 @@ const __Wrapper = styled.aside<{ padding?: string; mobilePadding?: string }>`
   margin-left: 1rem;
   background: #fff;
 
+  overflow: scroll;
   @media only screen and (max-width: ${sizes.laptop}) {
     position: relative;
     top: unset;
@@ -195,8 +196,10 @@ const __CategoryWrapper = styled.div<{ visible: boolean; mainToggle: boolean }>`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  background: #fff;
 
   animation: mount 0.5s;
+  overflow: scroll;
 
   ${(props) =>
     !props.mainToggle
@@ -215,6 +218,8 @@ const __CategoryItemWrapper = styled.div`
 const __CateogryItemToggle = styled(__ToggleButton)<{ visible: boolean }>`
   top: 10px;
   color: ${theme.colors.grey};
+  background: #fff;
+  overflow: scroll;
 
   ${(props) =>
     props.visible
@@ -234,6 +239,7 @@ const __CategoryItem = styled.div`
   padding: 1rem;
 
   color: #000;
+  background: #fff;
   font-family: "proxima-nova", "IBM Plex Sans KR", sans-serif;
   font-size: 0.9rem;
 
