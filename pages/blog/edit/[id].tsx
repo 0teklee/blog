@@ -46,8 +46,8 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
       return;
     }
 
-    if (title.length > 191 || content.length > 16000) {
-      alert("내용이 너무 깁니다.");
+    if (title.length > 191) {
+      alert("제목이 너무 깁니다.");
       return;
     }
 
