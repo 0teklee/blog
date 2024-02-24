@@ -1,5 +1,4 @@
 import Router from "next/router";
-import { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
