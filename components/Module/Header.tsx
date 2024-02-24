@@ -55,6 +55,9 @@ const __Wrapper = styled.header`
   mix-blend-mode: difference;
 
   z-index: 10;
+  @media only screen and (max-width: 500px) {
+    width: 100vw;
+  }
 `;
 
 const __Button = styled.button`
@@ -131,6 +134,7 @@ const __InnerFlexRight = styled.div`
   }
 
   @media only screen and (max-width: 500px) {
+    //width: 100vw;
     padding: 0.5rem 0;
     button {
       display: none;
