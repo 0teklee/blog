@@ -207,6 +207,7 @@ const __ContentWrapper = styled.div`
   font-size: 1.1rem;
   line-height: 1.8;
   padding: 1rem;
+
   p {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
@@ -219,12 +220,15 @@ const __ContentWrapper = styled.div`
   video {
     width: 100%;
   }
+
   a {
     text-decoration: underline;
   }
+
   a:hover {
     color: ${theme.colors.sign};
   }
+
   pre {
     margin: 1rem;
     padding: 1.5rem;
@@ -233,13 +237,28 @@ const __ContentWrapper = styled.div`
     white-space: pre-wrap;
   }
 
+  blockquote {
+    padding: 1rem;
+    background: #9ca2ae;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  blockquote:before {
+    content: "“";
+  }
+
+  blockquote:after {
+    content: "”";
+  }
+
   ol,
   ul {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
   }
 
   @media only screen and (${theme.devices.laptop}) {
@@ -258,6 +277,7 @@ const __ContentWrapper = styled.div`
     ul {
       padding-left: 1.8rem;
     }
+
     pre {
       position: relative;
       left: -2rem;
