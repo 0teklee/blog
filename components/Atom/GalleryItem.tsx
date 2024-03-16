@@ -32,7 +32,6 @@ const GalleryItem = ({
   const isNightMode = useRecoilValue<string>(isNightModeState);
   const router = Router;
 
-  console.log("naturalSize", naturalSize, "width", width, "height", height);
   return (
     <__Container>
       <__ImageItemWrapper>
@@ -73,11 +72,11 @@ const GalleryItem = ({
           </__ImageInnerWrapper>
         ) : (
           <__ImageInnerWrapper isPreset>
-            <__ImgBackDrop
+            <Image
               src={url}
               alt="teklog-gallery"
-              width={width}
-              height={height}
+              width={typeof width === "string" ? parseInt(width) : width}
+              height={typeof height === "string" ? parseInt(height) : height}
               loading="lazy"
             />
             <__ImageItemFooter isNight={isNightMode === "mode"} isPreset>

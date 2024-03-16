@@ -1,6 +1,6 @@
 /* 블로그 포스트 이미지 미리보기*/
 
-const getContentImg = (content: string): string | undefined => {
+const getContentImg = (content: string): string => {
   const contentReg = content.match(/<img [^>]*src="[^"]*"[^>]*>/gm);
   const contentImg =
     contentReg &&
@@ -8,7 +8,10 @@ const getContentImg = (content: string): string | undefined => {
       .map((x: string) => x.replace(/.*src="([^"]*)".*/, "$1"))[0]
       .replace("http", "https")
       .replace("httpss", "https");
-  return contentImg;
+  return (
+    contentImg ??
+    "https://res.cloudinary.com/dolziw8fv/image/upload/v1661838248/handinthesky_by7xjb.jpg"
+  );
 };
 
 /* 카테고리 별 다른 프리셋 이미지 설정*/
