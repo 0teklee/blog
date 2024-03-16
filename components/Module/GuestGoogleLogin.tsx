@@ -1,8 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import { useGoogleLogin } from "@react-oauth/google";
-import Cookie from "js-cookie";
 import styled from "styled-components";
 import Modal from "react-modal";
+import { signIn } from "next-auth/react";
 
 const GuestGoogleLogin = ({
   setIsLogin,
@@ -11,19 +10,23 @@ const GuestGoogleLogin = ({
 }) => {
   const [isModal, setIsModal] = useState(false);
 
-  const login = useGoogleLogin({
-    onSuccess: async (response) => {
-      const { access_token } = response;
-      if (!Cookie.get("guest_access_token")) {
-        Cookie.set("guest_access_token", access_token);
-      }
-      setIsLogin(true);
-    },
-    onError: (error) => {
-      console.error(error);
-      alert("Please login again");
-    },
-  });
+  const login = () => {
+    signIn("google");
+  };
+
+  //   useGoogleLogin({
+  //   onSuccess: async (response) => {
+  //     const { access_token } = response;
+  //     if (!Cookie.get("guest_access_token")) {
+  //       Cookie.set("guest_access_token", access_token);
+  //     }
+  //     setIsLogin(true);
+  //   },
+  //   onError: (error) => {
+  //     console.error(error);
+  //     alert("Please login again");
+  //   },
+  // });
 
   return (
     <__Container>
@@ -75,7 +78,13 @@ const GuestGoogleLogin = ({
           </div>
           <h3 className="agree">※ 개인정보 수집이용에 동의하십니까?</h3>
           <div className="btns">
-            <button onClick={() => login()}>YES</button>
+            <button
+              onClick={() => {
+                login();
+              }}
+            >
+              YES
+            </button>
             <button onClick={() => setIsModal(false)}>NO</button>
           </div>
         </__ModalContainer>
