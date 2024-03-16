@@ -50,15 +50,15 @@ IBlogGetListItem) => {
       >
         <__Wrapper key={`${id}_wrapper`}>
           <__HeaderImgWrapper>
-            <__HeaderImg
+            <Image
               src={
                 getContentImg(content) || setCategoryPresetImg(categories.name)
               }
+              className="object-cover"
               key={`${id}_img`}
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               layout="responsive"
-              objectFit="cover"
               alt={title}
               sizes="(max-width: 720px) 100vw,
               (max-width: 1200px) 50vw,
