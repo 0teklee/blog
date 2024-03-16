@@ -19,8 +19,9 @@ const GalleryCollectionItem = ({ id, url }: { id?: number; url: string }) => {
       }}
     >
       <Image
+        alt={`gallery_${id}`}
         src={getContentImg(url)}
-        layout="fill"
+        fill={true}
         onLoadingComplete={(e) => {
           setSize({
             width: e.naturalWidth,

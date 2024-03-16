@@ -119,8 +119,8 @@ const GuestbookTemplate = () => {
             <Image
               src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
               alt="hummingbird"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
             />
             <p>Loading...</p>
           </__FallbackContainer>
@@ -157,11 +157,6 @@ const GuestbookTemplate = () => {
           </_ContentWrapper>
         )}
       </GoogleOAuthProvider>
-      <__FlexCenterBox>
-        <Link href="https://www.twitter.com/0teklee">
-          <__FollowMe>follow me</__FollowMe>
-        </Link>
-      </__FlexCenterBox>
     </Layout>
   );
 };

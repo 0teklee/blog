@@ -12,8 +12,8 @@ const Loading = () => {
         <Image
           src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
           alt="hummingbird"
-          width="200px"
-          height="200px"
+          width={200}
+          height={200}
         />
         <h4>
           If it takes more than a minute... you are trying to access wrong

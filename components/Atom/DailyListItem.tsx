@@ -55,8 +55,8 @@ IBlogGetListItem) => {
                 getContentImg(content) || setCategoryPresetImg(categories.name)
               }
               key={`${id}_img`}
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               layout="responsive"
               objectFit="cover"
               alt={title}
