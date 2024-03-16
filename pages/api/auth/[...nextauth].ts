@@ -1,6 +1,7 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import Github from "next-auth/providers/github";
 import TwitterProvider from "next-auth/providers/twitter";
+import Google from "next-auth/providers/google";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -13,13 +14,14 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.CLIENT_SECRET,
       version: "2.0",
     }),
+    Google({
+      clientId: process.env.GUESTBOOK_GAUTH_CLIENT_ID,
+      clientSecret: process.env.GUESTBOOK_GAUTH_CLIENTPW,
+    }),
   ],
-  secret: process.env.NEXT_PUBLIC_SECRET,
+  secret: process.env.NEXT_SECRET,
   session: {
     strategy: "jwt",
-  },
-  jwt: {
-    secret: process.env.LOGIN_TOKEN,
   },
   callbacks: {
     async jwt({ token, account }) {
