@@ -2,10 +2,7 @@ import Router from "next/router";
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import { sizes, theme } from "styles/theme";
-import {
-  IBlogGetCategorySideBar,
-  IDetailGetCategorySideBar,
-} from "types/IBlogItem";
+import { IDetailGetCategorySideBar } from "types/IBlogItem";
 
 const DailySideBar = ({
   categories,

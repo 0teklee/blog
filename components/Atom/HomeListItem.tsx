@@ -193,7 +193,7 @@ const __BlogContent = styled.div`
 
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  word-wrap: break-all;
+  word-wrap: break-word;
   line-height: 1.6rem;
   max-height: 3.2rem;
   overflow: hidden;

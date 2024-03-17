@@ -7,7 +7,7 @@ const GallerySidebar = ({
   padding = "2rem",
   mobilePadding,
 }: {
-  categories: { name: string }[];
+  categories?: { name: string }[];
   padding?: string;
   mobilePadding?: string;
 }) => {

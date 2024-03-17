@@ -46,16 +46,18 @@ const BlogDetailPageTemplate = ({
     .replaceAll("</img>", "/>");
 
   const isImage = updatedContent.match(imgSrcReplaceReg);
+  const matchSrc =
+    isImage && updatedContent && updatedContent.match(imgSrcReplaceReg);
   const imgSrcArr =
-    isImage &&
-    updatedContent
-      .match(imgSrcReplaceReg)
+    matchSrc &&
+    matchSrc
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1).replaceAll(`"`, ""));
   return (
     <>
       <Head>
         {isImage &&
+          imgSrcArr &&
           imgSrcArr.map((src) => (
             <link
               key={src}

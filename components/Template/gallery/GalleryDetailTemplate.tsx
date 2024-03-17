@@ -41,18 +41,21 @@ const BlogDetailPageTemplate = ({
     .replaceAll("</img>", "/>");
 
   const isImage = updatedContent.match(imgSrcReplaceReg);
+  const matchSrc =
+    isImage && updatedContent && updatedContent.match(imgSrcReplaceReg);
   const imgSrcArr =
     isImage &&
-    updatedContent
-      .match(imgSrcReplaceReg)
+    matchSrc &&
+    matchSrc
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1).replaceAll(`"`, ""));
-  const imgTag = imgTagExtract[0];
+  const imgTag = imgTagExtract?.[0] ?? "";
 
   return (
     <>
       <Head>
         {isImage &&
+          imgSrcArr &&
           imgSrcArr.map((src) => (
             <link
               key={src}
@@ -133,10 +136,11 @@ const __DateId = styled.div`
 `;
 
 const __ContentWrapper = styled.div`
-  ${theme.displayFlex("center", "space-between")}
   @media only screen and (max-width: ${sizes.laptop}) {
     flex-direction: column-reverse;
   }
+
+  ${theme.displayFlex("center", "space-between")}
 `;
 
 const __ImageWrapper = styled.div`

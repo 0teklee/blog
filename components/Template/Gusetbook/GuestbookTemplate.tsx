@@ -7,11 +7,9 @@ import { getGuestbookListFetcher } from "libs/utils/guestbookFetcher";
 import { useInView } from "react-intersection-observer";
 import GuestbookPost from "components/Atom/GuestbookPost";
 import GuestGoogleLogin from "components/Module/GuestGoogleLogin";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import Cookie from "js-cookie";
 import GuestbookUserCreatePost from "components/Atom/GuestbookUserCreatePost";
 import Image from "next/image";
-import Link from "next/link";
 
 const GuestbookTemplate = () => {
   const { ref, inView } = useInView();
@@ -50,7 +48,8 @@ const GuestbookTemplate = () => {
   const lastCursor = pages && pages[pages.length - 1].isLast;
 
   const isFirstPost =
-    !isLoading && !isFetchingNextPage && isLast && pages[0].length === 0;
+    !isLoading && !isFetchingNextPage && isLast && pages?.[0].length === 0;
+
   const isDataLoaded =
     !!queryData &&
     !!pages &&
@@ -112,51 +111,49 @@ const GuestbookTemplate = () => {
           </__CreatePostButton>
         </_CreatePostButtonBox>
       )}
-      <GoogleOAuthProvider clientId={process.env.GUESTBOOK_GAUTH_CLIENT_ID}>
-        {!isLogin && <GuestGoogleLogin setIsLogin={setIsLogin} />}
-        {isLoading && (
-          <__FallbackContainer>
-            <Image
-              src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
-              alt="hummingbird"
-              width={200}
-              height={200}
-            />
-            <p>Loading...</p>
-          </__FallbackContainer>
-        )}
-        {!isLoading && (
-          <_ContentWrapper>
-            <__ContentBox>
-              {isDataLoaded &&
-                pages.map((post) => {
-                  return post.map((item) => (
-                    <GuestbookPost
-                      className="postBox"
-                      key={item.id}
-                      {...item}
-                      refetch={refetch}
-                      cursor={pageCursor}
-                      setCursorZero={setCursorZero}
-                    />
-                  ));
-                })}
-              {isFetchingNextPage ? (
-                <__LoadingContainer>
-                  <p>Loading...</p>
-                </__LoadingContainer>
-              ) : (
-                !isLast && <div ref={ref} />
-              )}
-              {isFirstPost && (
-                <__FlexCenterBox>
-                  <p>Please Leave the first post :)</p>
-                </__FlexCenterBox>
-              )}
-            </__ContentBox>
-          </_ContentWrapper>
-        )}
-      </GoogleOAuthProvider>
+      {!isLogin && <GuestGoogleLogin setIsLogin={setIsLogin} />}
+      {isLoading && (
+        <__FallbackContainer>
+          <Image
+            src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
+            alt="hummingbird"
+            width={200}
+            height={200}
+          />
+          <p>Loading...</p>
+        </__FallbackContainer>
+      )}
+      {!isLoading && (
+        <_ContentWrapper>
+          <__ContentBox>
+            {isDataLoaded &&
+              pages.map((post) => {
+                return post.map((item) => (
+                  <GuestbookPost
+                    className="postBox"
+                    key={item.id}
+                    {...item}
+                    refetch={refetch}
+                    cursor={pageCursor}
+                    setCursorZero={setCursorZero}
+                  />
+                ));
+              })}
+            {isFetchingNextPage ? (
+              <__LoadingContainer>
+                <p>Loading...</p>
+              </__LoadingContainer>
+            ) : (
+              !isLast && <div ref={ref} />
+            )}
+            {isFirstPost && (
+              <__FlexCenterBox>
+                <p>Please Leave the first post :)</p>
+              </__FlexCenterBox>
+            )}
+          </__ContentBox>
+        </_ContentWrapper>
+      )}
     </Layout>
   );
 };

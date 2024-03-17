@@ -15,7 +15,7 @@ const getContentImg = (content: string): string => {
 };
 
 /* 카테고리 별 다른 프리셋 이미지 설정*/
-const setCategoryPresetImg = (category: string): string | undefined => {
+const setCategoryPresetImg = (category: string): string => {
   if (category === ("React" || "react")) {
     return "https://res.cloudinary.com/dolziw8fv/image/upload/v1661838248/handinthesky_by7xjb.jpg";
   }

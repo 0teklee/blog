@@ -1,4 +1,3 @@
-import BlogListItem from "components/Atom/BlogListItem";
 import Layout from "components/Atom/Layout";
 import isNightModeState from "libs/recoil/isNightModeState";
 import { useRouter } from "next/router";
@@ -26,7 +25,7 @@ const DailyListPageTemplate = ({
   };
 
   const handleNext = () => {
-    if (posts.length < 5) return;
+    if (posts && posts.length < 5) return;
     setPage((prev) => prev + 1);
   };
 

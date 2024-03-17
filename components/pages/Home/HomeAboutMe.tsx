@@ -171,13 +171,6 @@ const __AboutContent = styled.div<{ isUnmount: boolean }>`
   }
 
   opacity: 1;
-  ${(props) =>
-    props.isUnmount
-      ? css`
-          opacity: 0;
-          transition: 0.5s;
-        `
-      : null}
 
   @media only screen and (max-width: 800px) {
     margin-top: 3rem;
@@ -186,4 +179,12 @@ const __AboutContent = styled.div<{ isUnmount: boolean }>`
   @media only screen and (max-width: 500px) {
     font-size: 1rem;
   }
+
+  ${(props) =>
+    props.isUnmount
+      ? css`
+          opacity: 0;
+          transition: 0.5s;
+        `
+      : null}
 `;

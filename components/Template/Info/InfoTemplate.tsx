@@ -19,8 +19,8 @@ const InfoTemplate = () => {
           <__MainLogo>
             <Image
               src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
-              width="300px"
-              height="300px"
+              width={300}
+              height={300}
               alt="Teklog-Info"
             />
           </__MainLogo>
@@ -72,20 +72,20 @@ const InfoTemplate = () => {
               <__SpecLogoWrapper>
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661927799/2560px-TypeScript_Logo__Blue_.svg_ed2qef.png"
-                  width="150px"
-                  height="40px"
+                  width={150}
+                  height={40}
                   alt="TypeScript"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926939/React-icon.svg_qpdlfw.png"
-                  width="70px"
-                  height="60px"
+                  width={70}
+                  height={60}
                   alt="React"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661927798/800px-Nextjs-logo.svg_ozmxzw.png"
-                  width="130px"
-                  height="80px"
+                  width={130}
+                  height={80}
                   alt="NextJs"
                 />
               </__SpecLogoWrapper>
@@ -95,14 +95,14 @@ const InfoTemplate = () => {
               <__SpecLogoWrapper>
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926895/prismalogo-freelogovectors.net__czjyfd.png"
-                  width="130px"
-                  height="40px"
+                  width={130}
+                  height={40}
                   alt="prisma"
                 />
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661926895/planetscale_owler_20210106_213213_original_h0rsjf.png"
-                  width="250px"
-                  height="40px"
+                  width={250}
+                  height={40}
                   alt="planetscale"
                 />
               </__SpecLogoWrapper>
@@ -112,8 +112,8 @@ const InfoTemplate = () => {
               <__SpecLogoWrapper>
                 <__SpecLogo
                   src="https://res.cloudinary.com/dolziw8fv/image/upload/v1661931739/Cloudinary_logo.svg_hsgzv7.png"
-                  width="260px"
-                  height="50px"
+                  width={260}
+                  height={50}
                   alt="Cloudinary"
                 />
               </__SpecLogoWrapper>

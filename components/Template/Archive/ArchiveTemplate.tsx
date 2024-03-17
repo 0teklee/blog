@@ -26,7 +26,7 @@ const ArchiveTemplate = ({ posts }: { posts: IProps[] }) => {
   const filteredByMonthsPosts = ():
     | { month: string; posts: IProps[] }[]
     | undefined => {
-    const filteredPosts = [];
+    const filteredPosts: { month: string; posts: IProps[] }[] = [];
     for (let i = 0; i < months.length; i++) {
       filteredPosts.push({
         month: months[i],

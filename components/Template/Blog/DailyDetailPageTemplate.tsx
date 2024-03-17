@@ -3,11 +3,7 @@ import dayJs from "libs/utils/dayJs";
 import styled from "styled-components";
 import { sizes, theme } from "styles/theme";
 import Router from "next/router";
-import BlogSideBar from "components/Module/BlogSideBar";
-import {
-  IBlogGetCategorySideBar,
-  IDetailGetCategorySideBar,
-} from "types/IBlogItem";
+import { IDetailGetCategorySideBar } from "types/IBlogItem";
 import Head from "next/head";
 import htmlParser from "libs/utils/htmlParser";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
@@ -47,10 +43,12 @@ const DailyDetailPageTemplate = ({
     .replaceAll("</img>", "/>");
 
   const isImage = updatedContent.match(imgSrcReplaceReg);
+  const matchSrc =
+    isImage && updatedContent && updatedContent.match(imgSrcReplaceReg);
   const imgSrcArr =
     isImage &&
-    updatedContent
-      .match(imgSrcReplaceReg)
+    matchSrc &&
+    matchSrc
       .filter((src) => src.includes("https://res.cloudinary.com"))
       .map((src) => src.slice(4, -1).replaceAll(`"`, ""));
 
@@ -59,6 +57,7 @@ const DailyDetailPageTemplate = ({
     <>
       <Head>
         {isImage &&
+          imgSrcArr &&
           imgSrcArr.map((src) => (
             <link
               key={src}
