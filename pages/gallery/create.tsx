@@ -1,10 +1,10 @@
 import Router from "next/router";
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import ImageUpload from "libs/utils/cloudinaryPost";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
-import { toolbarOptions, formats } from "libs/utils/quillFormat";
+import { formats, toolbarOptions } from "libs/utils/quillFormat";
 import { unstable_getServerSession } from "next-auth";
 import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
@@ -65,6 +65,7 @@ const index = ({ nextId }) => {
 
   // Custom Image Upload Handler
   const handleImage = () => {
+    // @ts-ignore
     const editor = quillRef.current.getEditor();
     const input = document.createElement("input");
     input.setAttribute("type", "file");
@@ -72,9 +73,9 @@ const index = ({ nextId }) => {
     input.click();
 
     input.onchange = async () => {
-      const file = input.files[0];
+      const file = input.files && input.files[0];
       const formData = new FormData();
-      if (/^image\//.test(file.type)) {
+      if (!!file && /^image\//.test(file.type)) {
         formData.append("file", file);
         formData.append("upload_preset", "teklog");
 

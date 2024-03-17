@@ -36,18 +36,18 @@ const index = (props: IProps) => {
   const { detail, nav } = post;
   const { content, createdAt, id, title, categories } = detail;
 
+  const matchSrc = content.match(imgSrcReplaceReg);
   const isImage =
-    content &&
-    content.match(imgSrcReplaceReg) &&
-    content.match(imgSrcReplaceReg).some((item) => item.includes("cloudinary"));
+    content && matchSrc && matchSrc.some((item) => item.includes("cloudinary"));
 
   const imgSrc =
     isImage &&
-    content
-      .match(imgSrcReplaceReg)
+    matchSrc &&
+    matchSrc
       .map((src) => src.slice(4, -1))[0]
       .replace("http", "https")
       .replaceAll(`"`, "");
+
   return (
     <>
       <MetaTag
@@ -82,6 +82,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (!params || !params.id) return { props: {} };
+
   const post = await getBlogDetail(params.id);
   const categoryList = await getBlogCategoryList();
 

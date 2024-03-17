@@ -1,5 +1,4 @@
 import MetaTag from "components/MetaTag";
-import BlogDetailPageTemplate from "components/Template/Blog/BlogDetailPageTemplate";
 import Loading from "components/Template/Loading";
 import { setCategoryPresetImg } from "libs/utils/contentImg";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
@@ -7,7 +6,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import getBlogDetailId from "pages/api/getBlogDetailId";
 import { IBlogGetDetail, IDetailGetCategorySideBar } from "types/IBlogItem";
-import getDailyList from "../api/getDailyList";
 import DailyDetailPageTemplate from "../../components/Template/Blog/DailyDetailPageTemplate";
 import getDailyDetail from "pages/api/getDailyDetail";
 import getDailyCategoryList from "../api/getDailyCategoryList";
@@ -38,15 +36,14 @@ const index = (props: IProps) => {
   const { detail, nav } = post;
   const { content, createdAt, id, title, categories: category } = detail;
 
+  const matchSrc = content.match(imgSrcReplaceReg);
+
   const isImage =
-    content &&
-    content.match(imgSrcReplaceReg) &&
-    content.match(imgSrcReplaceReg).some((item) => item.includes("cloudinary"));
+    content && matchSrc && matchSrc.some((item) => item.includes("cloudinary"));
 
   const imgSrc =
     isImage &&
-    content
-      .match(imgSrcReplaceReg)
+    matchSrc
       .map((src) => src.slice(4, -1))[0]
       .replace("http", "https")
       .replaceAll(`"`, "");
@@ -82,6 +79,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (!params || !params?.id) return { props: {} };
+
   const post = await getDailyDetail(params.id);
 
   const categories = await getDailyCategoryList("1");

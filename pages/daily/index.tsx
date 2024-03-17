@@ -1,10 +1,6 @@
 import MetaTag from "components/MetaTag";
 import { GetServerSideProps } from "next";
-import {
-  IBlogGetCategorySideBar,
-  IBlogGetListItem,
-  IDetailGetCategorySideBar,
-} from "types/IBlogItem";
+import { IBlogGetListItem, IDetailGetCategorySideBar } from "types/IBlogItem";
 import getDailyList from "../api/getDailyList";
 import DailyListPageTemplage from "../../components/Template/Blog/DailyListPageTemplage";
 import getDailyCategoryList from "../api/getDailyCategoryList";
@@ -39,6 +35,15 @@ export const getServerSideProps: GetServerSideProps = async ({
     "public, s-maxage=10, stale-while-revalidate=3000"
   );
   const { page, category } = query;
+
+  if (!page) {
+    return {
+      redirect: {
+        destination: "/daily?page=1&category=daily",
+        permanent: false,
+      },
+    };
+  }
 
   if (!category || category !== "daily") {
     return {

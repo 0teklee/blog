@@ -40,18 +40,18 @@ const index = (props: IProps) => {
   const { detail } = post;
   const { imgUrl, createdAt, id, title, galleryCategory } = detail;
 
+  const matchSrc = imgUrl.match(imgSrcReplaceReg);
+
   const isImage =
-    imgUrl &&
-    imgUrl.match(imgSrcReplaceReg) &&
-    imgUrl.match(imgSrcReplaceReg).some((item) => item.includes("cloudinary"));
+    imgUrl && matchSrc && matchSrc.some((item) => item.includes("cloudinary"));
 
   const imgSrc =
-    isImage &&
-    imgUrl
-      .match(imgSrcReplaceReg)
-      .map((src) => src.slice(4, -1))[0]
-      .replace("http", "https")
-      .replaceAll(`"`, "");
+    (isImage &&
+      matchSrc
+        .map((src) => src.slice(4, -1))[0]
+        .replace("http", "https")
+        .replaceAll(`"`, "")) ||
+    "";
   return (
     <>
       <MetaTag
@@ -83,6 +83,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  if (!params || !params?.id) return { props: {} };
+
   const post = await getGalleryDetail(params.id);
   const categoryList = await getGalleryCategoryList();
 
