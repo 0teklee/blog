@@ -1,12 +1,12 @@
 import LandingAboutMe from "components/landing/LandingAboutMe";
 import { IBlogMainItem } from "types/IBlogItem";
 import { clsx } from "clsx";
-import Link from "next/link";
-import LandingListItem from "components/landing/LandingListItem";
+import LandingListItem from "./LandingListItem";
+import LandingListContainer from "./LandingListContainer";
 
 const LandingTemplate = ({ posts }: { posts: IBlogMainItem[] }) => {
   return (
-    <>
+    <main className={clsx("flex flex-col gap-6", "lg:gap-16")}>
       <section
         className={clsx(`w-full mb-5 animate-intro`, "text-3xl font-bold")}
       >
@@ -14,22 +14,22 @@ const LandingTemplate = ({ posts }: { posts: IBlogMainItem[] }) => {
         <p>LEE TEK WOO</p>
         <p>Tech Blog</p>
       </section>
-      <div className={clsx("relative", "flex items-center mb-20", "md:mb-5")}>
-        <h2 className={clsx("text-xl", "font-semibold")}>Recent Posts</h2>
-        <Link
-          className={clsx("text-sm", "font-light", "hover:after:content-[`→`]")}
-          href={"blog?page=1"}
-        >
-          more posts
-        </Link>
-      </div>
-      <section>
-        <div className={clsx("grid grid-cols-3", "w-full")}>
-          <LandingListItem posts={posts} />
-        </div>
-      </section>
+      <LandingListContainer>
+        {posts && posts.length === 0 && (
+          <div className={clsx("flex items-center p-5")}>
+            <p className={clsx("text-xl font-medium")}>No Posts Yet</p>
+          </div>
+        )}
+        {posts &&
+          posts.length > 0 &&
+          posts
+            .filter((item) => item.title && item.content)
+            .map((post, index) => (
+              <LandingListItem post={post} index={index} />
+            ))}
+      </LandingListContainer>
       <LandingAboutMe />
-    </>
+    </main>
   );
 };
 
