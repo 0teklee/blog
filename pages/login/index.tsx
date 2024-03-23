@@ -1,12 +1,13 @@
+"use client";
+
 import { signIn, signOut, useSession } from "next-auth/react";
-import Layout from "components/Atom/Layout";
+import Layout from "components/common/Layout";
 import styled from "styled-components";
 import Link from "next/link";
 import { theme } from "styles/theme";
 
 const index = () => {
-  const { data: session, status } = useSession();
-  const loading = status === "loading";
+  const { data: session } = useSession();
 
   return (
     <Layout>

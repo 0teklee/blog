@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import GuestbookTemplate from "components/Template/Gusetbook/GuestbookTemplate";
+import MetaTag from "components/common/MetaTag";
+import GuestbookTemplate from "components/guestbook/GuestbookTemplate";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const GuestBook = () => {

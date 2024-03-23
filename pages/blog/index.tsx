@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import BlogListPageTemplage from "components/Template/Blog/BlogListPageTemplage";
+import MetaTag from "components/common/MetaTag";
+import BlogListPageTemplage from "components/blog/BlogListPageTemplage";
 import { GetServerSideProps } from "next";
 import getBlogCategoryList from "pages/api/getBlogCategoryList";
 import getBlogCategoryPost from "pages/api/getBlogCategoryPost";

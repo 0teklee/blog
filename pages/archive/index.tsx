@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import ArchiveTemplate from "components/Template/Archive/ArchiveTemplate";
+import MetaTag from "components/common/MetaTag";
+import ArchiveTemplate from "components/archive/ArchiveTemplate";
 import { GetServerSideProps } from "next";
 import getArchiveList from "pages/api/getArchiveList";
 

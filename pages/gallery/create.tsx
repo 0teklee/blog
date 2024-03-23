@@ -1,4 +1,3 @@
-import Router from "next/router";
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import ImageUpload from "libs/utils/cloudinaryPost";
@@ -30,7 +29,7 @@ const index = ({ nextId }) => {
 
   const quillRef = useRef(null);
 
-  const router = Router;
+  const router = useRouter();
 
   const handleSubmit = async () => {
     if (!title || !content) {
@@ -38,24 +37,6 @@ const index = ({ nextId }) => {
       return;
     }
     handlePostGallery(`/api/postGallery`, title, content, category);
-    if (category === "Convo w copilot" || category === "From Labs") {
-      const result = fetch("/api/twitter/postTwitter", {
-        method: "POST",
-        body: JSON.stringify({
-          link: `https://teklog.site/gallery/${nextId + 1}`,
-          title,
-          category: "#dalle2",
-        }),
-      });
-    } else {
-      const result = fetch("/api/twitter/postTwitter", {
-        method: "POST",
-        body: JSON.stringify({
-          link: `https://teklog.site/gallery/${nextId + 1}`,
-          title,
-        }),
-      });
-    }
     router.push("/");
   };
 

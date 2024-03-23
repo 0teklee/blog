@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import GalleryTemplate from "components/Template/gallery/GalleryTemplate";
+import MetaTag from "components/common/MetaTag";
+import GalleryTemplate from "components/gallery/GalleryTemplate";
 import { galleryImagesV1 } from "libs/galleryImages";
 import { GetServerSideProps } from "next";
 import getGalleryCategoryList from "pages/api/getGalleryCategoryList";

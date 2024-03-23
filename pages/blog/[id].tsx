@@ -1,6 +1,6 @@
-import MetaTag from "components/MetaTag";
-import BlogDetailPageTemplate from "components/Template/Blog/BlogDetailPageTemplate";
-import Loading from "components/Template/Loading";
+import MetaTag from "components/common/MetaTag";
+import BlogDetailPageTemplate from "components/blog/BlogDetailPageTemplate";
+import Loading from "components/common/Loading";
 import { setCategoryPresetImg } from "libs/utils/contentImg";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
 import { GetStaticPaths, GetStaticProps } from "next";

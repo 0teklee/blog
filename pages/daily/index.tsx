@@ -1,4 +1,4 @@
-import MetaTag from "components/MetaTag";
+import MetaTag from "components/common/MetaTag";
 import { GetServerSideProps } from "next";
 import { IBlogGetListItem, IDetailGetCategorySideBar } from "types/IBlogItem";
 import getDailyList from "../api/getDailyList";

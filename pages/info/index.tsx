@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import InfoTemplate from "components/Template/Info/InfoTemplate";
+import MetaTag from "components/common/MetaTag";
+import InfoTemplate from "components/info/InfoTemplate";
 
 const index = () => {
   return (

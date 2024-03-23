@@ -1,7 +1,7 @@
-import GalleryDetailTemplate from "components/Template/gallery/GalleryDetailTemplate";
+import GalleryDetailTemplate from "components/gallery/GalleryDetailTemplate";
 
-import MetaTag from "components/MetaTag";
-import Loading from "components/Template/Loading";
+import MetaTag from "components/common/MetaTag";
+import Loading from "components/common/Loading";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";

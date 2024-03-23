@@ -1,11 +1,10 @@
-import Router from "next/router";
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import ImageUpload from "libs/utils/cloudinaryPost";
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
-import { toolbarOptions, formats } from "libs/utils/quillFormat";
-import { unstable_getServerSession } from "next-auth";
+import { formats, toolbarOptions } from "libs/utils/quillFormat";
+import { getServerSession } from "next-auth";
 import { authOptions } from "pages/api/auth/[...nextauth]";
 import { GetServerSideProps } from "next";
 import getBlogEditPost from "pages/api/getBlogEditPost";
@@ -13,6 +12,7 @@ import handlePutBlog from "libs/post/handlePutBlog";
 import { IBlogGetEditItem } from "types/IBlogItem";
 import { sizes, theme } from "styles/theme";
 import handleDeleteBlogPost from "libs/post/handleDeleteBlogPost";
+import { useRouter } from "next/navigation";
 
 const QuillWrapper = dynamic(
   async () => {
@@ -38,7 +38,7 @@ const index = ({ post }: { post: IBlogGetEditItem }) => {
   const [category, setCategory] = useState(propCategory.name);
   // const [tags, setTags] = useState<string[]>(propTags.map((item) => item.tag));
   const quillRef = useRef(null);
-  const router = Router;
+  const router = useRouter();
 
   const handleSubmit = () => {
     if (!title || !content) {
@@ -188,7 +188,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   const { id } = params;
   const getEditPost = await getBlogEditPost(id);
 
-  const session = await unstable_getServerSession(req, res, authOptions);
+  const session = await getServerSession(req, res, authOptions);
   if (!session || !getEditPost) {
     return {
       redirect: {

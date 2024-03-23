@@ -1,4 +1,3 @@
-import Router from "next/router";
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import handlePostBlog from "libs/post/handlePostBlog";
@@ -29,7 +28,7 @@ const index = () => {
   // const [tags, setTags] = useState<string[]>([]);
   const quillRef = useRef(null);
 
-  const router = Router;
+  const router = useRouter();
 
   const handleSubmit = () => {
     if (!title || !content) {

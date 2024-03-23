@@ -1,5 +1,5 @@
-import MetaTag from "components/MetaTag";
-import Loading from "components/Template/Loading";
+import MetaTag from "components/common/MetaTag";
+import Loading from "components/common/Loading";
 import { setCategoryPresetImg } from "libs/utils/contentImg";
 import { imgSrcReplaceReg } from "libs/utils/regExp";
 import { GetStaticPaths, GetStaticProps } from "next";
