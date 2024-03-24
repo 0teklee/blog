@@ -1,9 +1,12 @@
 import "./globals.css";
 import React, { ReactNode } from "react";
 import { GlobalStyles } from "../styles/global-styles";
-import NextAuthSessionProvider from "../components/common/providers/NextAuthSessionProvider";
-import RecoilProvider from "../components/common/providers/RecoilProvider";
+import NextAuthSessionProvider from "components/common/providers/NextAuthSessionProvider";
+import RecoilProvider from "components/common/providers/RecoilProvider";
 import { clsx } from "clsx";
+import Header from "components/common/Header";
+import NightModeSelector from "components/common/NightModeSelector";
+import Footer from "components/common/Footer";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -13,15 +16,19 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <NextAuthSessionProvider>
           <GlobalStyles />
           <RecoilProvider>
+            <Header />
+            <NightModeSelector />
             <main
               className={clsx(
-                "w-full px-4 py-10",
-                "tablet:px-12 tablet:py-10",
-                "lg:px-20 lg:py-12",
+                "w-full px-4 py-24",
+                "tablet:px-12",
+                "lg:px-20",
+                "bg-white dark:bg-black",
               )}
             >
               {children}
             </main>
+            <Footer />
           </RecoilProvider>
         </NextAuthSessionProvider>
       </body>
