@@ -1,104 +1,62 @@
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import styled from "styled-components";
-import { theme } from "styles/theme";
+import { clsx } from "clsx";
+import FooterScrollButton from "./module/FooterScrollButton";
 
 const Footer = () => {
-  const router = useRouter();
-
-  const handleContact = (): void => {
-    router.push("/info");
-  };
-
-  const handleTop = (): void => {
-    if (window) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
-    <__Wrapper>
-      <__Flex>
-        <__LeftBtnContainer>
-          <button
-            onClick={() => {
-              router.push(`/daily?page=1&category=daily`);
-            }}
+    <footer
+      className={clsx(
+        "fixed bottom-0 w-full p-8 z-40",
+        "mix-blend-difference invert",
+        "text-md",
+      )}
+    >
+      <div className={clsx("relative flex justify-between items-center")}>
+        <Link
+          href={"/gallery"}
+          className={clsx(
+            "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5",
+            "font-[proxima-nova] font-normal",
+            "hover:text-blue-500 hover:font-bold",
+            "transition-all duration-150",
+          )}
+        >
+          𓃠
+        </Link>
+        <div className={clsx("relative")}>
+          <Link
+            href={"/info"}
+            className={clsx(
+              "mt-4 cursor-pointer font-[proxima-nova] font-normal",
+              "hover:text-blue-500 hover:font-bold",
+              " transition-all duration-150",
+            )}
           >
-            <__LifeBlogButton>𓅩</__LifeBlogButton>
-          </button>
-          <__Button onClick={handleContact}>contact</__Button>
-        </__LeftBtnContainer>
-        <__Top onClick={handleTop}>top</__Top>
-        <__Button>
-          <Link href="https://teklog.site/guestbook">guestbook</Link>
-        </__Button>
-      </__Flex>
-    </__Wrapper>
+            contact
+          </Link>
+        </div>
+        <FooterScrollButton
+          className={clsx(
+            "absolute cursor-pointer font-[proxima-nova] font-normal",
+            "hover:text-blue-500 hover:font-bold",
+            "transition-all duration-150 top-1/2 left-1/2",
+            "-translate-x-1/2 -translate-y-1/2",
+          )}
+        >
+          top
+        </FooterScrollButton>
+        <button
+          className={clsx(
+            "cursor-pointer font-[proxima-nova] font-normal",
+            "hover:text-blue-500 hover:font-bold",
+            "transition-all duration-150",
+          )}
+        >
+          <Link href="/guestbook">guestbook</Link>
+        </button>
+      </div>
+    </footer>
   );
 };
-
-const __Wrapper = styled.footer`
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 2rem;
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  filter: invert(1);
-  -webkit-filter: invert(1);
-  mix-blend-mode: difference;
-
-  z-index: 10;
-`;
-
-const __Button = styled.button`
-  all: unset;
-  cursor: pointer;
-
-  font-family: "proxima-nova", "Roboto", sans-serif;
-  font-weight: 400;
-  color: #000;
-
-  &:hover {
-    filter: invert(1);
-    color: #2d10b0;
-    transition: 1.5s;
-    font-weight: 900;
-  }
-`;
-
-const __Top = styled(__Button)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
-
-const __Flex = styled.div`
-  position: relative;
-  ${theme.displayFlex("center", "space-between")};
-`;
-
-const __LeftBtnContainer = styled.div`
-  display: block;
-  position: relative;
-`;
-
-const __LifeBlogButton = styled.p`
-  color: #fff;
-
-  hover {
-    color: #81d0ff;
-  }
-
-  position: absolute;
-  top: -150%;
-  left: 0;
-`;
 
 export default Footer;
