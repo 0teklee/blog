@@ -1,10 +1,6 @@
-import React, { Suspense } from "react";
+import React from "react";
 import GalleryCreateTemplate from "@/components/gallery/GalleryCreateTemplate";
 
-const page = () => (
-  <Suspense fallback={<>Loading...</>}>
-    <GalleryCreateTemplate />
-  </Suspense>
-);
+const page = () => <GalleryCreateTemplate />;
 
 export default page;

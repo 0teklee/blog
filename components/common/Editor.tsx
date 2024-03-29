@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -17,6 +17,7 @@ const Editor = ({
   const [content, setContent] = useState("");
 
   const quillRef = useRef<ReactQuill>(null);
+  const inputImageRef = useRef<HTMLInputElement>(null);
 
   const router = useRouter();
 
@@ -33,11 +34,11 @@ const Editor = ({
     if (
       !quillRef.current ||
       !quillRef?.current?.getEditor ||
-      typeof document === "undefined"
+      !inputImageRef?.current
     )
       return;
     const editor = quillRef.current.getEditor();
-    const input = document?.createElement("input");
+    const input = inputImageRef.current;
     input.setAttribute("type", "file");
     input.setAttribute("accept", "image/*");
     input.click();
@@ -51,7 +52,6 @@ const Editor = ({
         formData.append("file", file);
         formData.append("upload_preset", "teklog");
 
-        // ImageUpload = cloudinary API Post 함수
         const res = await postImageUpload(formData);
         const url = res.url;
         const selection = editor.getSelection();
@@ -77,6 +77,8 @@ const Editor = ({
     [],
   );
 
+  useEffect(() => {}, []);
+
   return (
     <div className="flex flex-col items-center w-full p-0 md:p-[8rem] lg:p-[17rem]">
       <h1 className="my-[4rem] text-center text-[5rem] font-[600] font-sans">
@@ -96,6 +98,7 @@ const Editor = ({
           onChange={(e) => setCategory(e.target.value)}
         />
         <div className="w-full min-h-[50vh]">
+          <input ref={inputImageRef} type="file" className={`hidden`} />
           <ReactQuill
             ref={quillRef}
             theme="snow"
