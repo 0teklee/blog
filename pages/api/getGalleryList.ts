@@ -1,17 +1,10 @@
 import prisma from "libs/prisma";
+import { IGalleryItem } from "@/components/gallery/types";
 
 const getGalleryList = async (
   query: string | string[],
   page?: string,
-): Promise<
-  {
-    id: number;
-    createdAt: string;
-    title: string;
-    content: string;
-    imgUrl: string;
-  }[]
-> => {
+): Promise<IGalleryItem[]> => {
   const category = query && typeof query === "string" ? query : "~2022";
   const cursor = page && !isNaN(Number(page)) ? parseInt(page) : 0;
 

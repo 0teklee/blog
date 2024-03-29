@@ -1,3 +1,5 @@
+import { IGalleryItem } from "@/components/gallery/types";
+
 export const imgSrcReplaceReg = new RegExp(
   /src=[\\"\']?([^>\\"\']+)[\\"\']?[^>]*>/g,
 );
@@ -24,118 +26,134 @@ export const DEFAULT_IMAGE =
   "https://res.cloudinary.com/dolziw8fv/image/upload/v1674554187/rkvskmgscq88ku3kzfks.png";
 export const DEFAULT_SKY =
   "https://res.cloudinary.com/dolziw8fv/image/upload/v1674554187/rkvskmgscq88ku3kzfks.png";
-const GALLERY_2022_IMAGES = [
+const GALLERY_2022_IMAGES: IGalleryItem[] = [
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--56_b1qhqt.jpg",
+    id: 2014.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--56_b1qhqt.jpg",
     title: "",
     createdAt: "2014",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--48_ylniyt.jpg",
+    id: 2018.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--48_ylniyt.jpg",
     title: "",
     createdAt: "2018",
-    width: "680pxpx",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--42_alerpg.jpg",
+    id: 2018.2,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--42_alerpg.jpg",
     title: "",
     createdAt: "2018",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662479712/gallery/v1/gallery-v1--58_pafn9u.jpg",
+    id: 2022.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1662479712/gallery/v1/gallery-v1--58_pafn9u.jpg",
     title: "",
     createdAt: "2022",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--53_q4b9hr.jpg",
+    id: 2021.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--53_q4b9hr.jpg",
     title: "unfold",
     createdAt: "2021",
-    width: "1024px",
-    height: "680px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--44_vd2be7.jpg",
+    id: 2018.3,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--44_vd2be7.jpg",
     title: "",
     createdAt: "2018",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--45_zihs6p.jpg",
+    id: 2018.4,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--45_zihs6p.jpg",
     title: "Iguazu",
     createdAt: "2018",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050042/gallery-v1--31_ud9i4l.jpg",
+    id: 2018.5,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050042/gallery-v1--31_ud9i4l.jpg",
     title: "",
     createdAt: "2018",
-    width: "800px",
-    height: "800px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--41_efzhkx.jpg",
+    id: 2018.6,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--41_efzhkx.jpg",
     title: "",
     createdAt: "2018",
-    width: "800px",
-    height: "800px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--34_nlztmy.jpg",
+    id: 2016.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--34_nlztmy.jpg",
     title: "curves",
     createdAt: "2016",
-    width: "730px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--37_mahgnu.jpg",
+    id: 2018.7,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--37_mahgnu.jpg",
     title: "",
     createdAt: "2018",
-    width: "800px",
-    height: "800px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--29_gmgn79.jpg",
+    id: 2016.2,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975835/gallery/v1/gallery-v1--29_gmgn79.jpg",
     title: "",
     createdAt: "2016",
-    width: "730px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--46_opobxq.jpg",
+    id: 2019.1,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975836/gallery/v1/gallery-v1--46_opobxq.jpg",
     title: "",
     createdAt: "2019",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--52_qrvivh.jpg",
+    id: 2021.2,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975838/gallery/v1/gallery-v1--52_qrvivh.jpg",
     title: "",
     createdAt: "2021",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050056/preset-pic-8_lwrnoh.jpg",
+    id: 2018.8,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1662050056/preset-pic-8_lwrnoh.jpg",
     title: "",
     createdAt: "2018",
-    width: "680px",
-    height: "1024px",
+    content: "",
   },
   {
-    url: "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--51_zm5vox.jpg",
+    id: 2021.3,
+    imgUrl:
+      "https://res.cloudinary.com/dolziw8fv/image/upload/v1661975837/gallery/v1/gallery-v1--51_zm5vox.jpg",
     title: "",
     createdAt: "2021",
-    width: "2024px",
-    height: "1400px",
+    content: "",
   },
 ];
 export { GALLERY_2022_IMAGES };

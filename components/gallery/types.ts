@@ -10,4 +10,13 @@ interface IGalleryProps {
   category: string;
 }
 
-export type { IGalleryProps };
+interface IGalleryItem {
+  id: number;
+  createdAt: string;
+  title: string;
+  content: string;
+  imgUrl: string;
+}
+[];
+
+export type { IGalleryProps, IGalleryItem };
