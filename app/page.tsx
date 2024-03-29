@@ -5,7 +5,7 @@ import LandingTemplate from "components/landing/LandingTemplate";
 const Home = async () => {
   const posts = await getMainPosts();
 
-  return <LandingTemplate posts={posts} key="RecentPosts" />;
+  return <LandingTemplate posts={posts} />;
 };
 
 export default Home;

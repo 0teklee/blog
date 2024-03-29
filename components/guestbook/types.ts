@@ -1,18 +1,18 @@
-export interface IPost {
+export interface IGuestbookPost {
   id: number;
-  createdAt: Date;
+  createdAt: string | Date;
   author: string;
   email: string;
   post: string;
   isPrivate: boolean;
-  comments: IComment[] | [];
+  comments: IGuestbookComment[] | [];
 }
 
-export interface IComment {
+export interface IGuestbookComment {
   id: number;
-  createdAt: Date;
+  createdAt: string | Date;
   author: string;
-  email: string;
+  email?: string;
   isPrivate: boolean;
   comment: string;
 }

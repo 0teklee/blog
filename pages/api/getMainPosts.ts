@@ -1,5 +1,5 @@
 import prisma from "libs/prisma";
-import { IBlogMainItem } from "types/IBlogItem";
+import { IBlogMainItem } from "@/components/blog/types";
 
 const getMainPosts = async (): Promise<IBlogMainItem[]> => {
   try {
@@ -28,6 +28,7 @@ const getMainPosts = async (): Promise<IBlogMainItem[]> => {
     return posts;
   } catch (err) {
     console.log(err);
+    return [];
   }
 };
 

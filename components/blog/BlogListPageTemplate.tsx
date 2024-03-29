@@ -1,5 +1,5 @@
 import BlogListItem from "components/blog/BlogListItem";
-import { IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetListItem } from "@/components/blog/types";
 import { clsx } from "clsx";
 import BlogListPagination from "./BlogListPagination";
 

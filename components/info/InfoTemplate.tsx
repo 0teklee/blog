@@ -53,7 +53,7 @@ const InfoTemplate = () => (
           )}
           href="https://drive.google.com/file/d/19je6lNnGQnYhUz-8jDlRGaVxhTjF__5h/view?usp=sharing"
         >
-          Link to LEE TEKWOO'S CV (KR)
+          {`Link to LEE TEKWOO'S CV (KR)`}
         </Link>
       </div>
     </section>

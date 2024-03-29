@@ -1,10 +1,13 @@
 import prisma from "libs/prisma";
+import { NextApiRequest, NextApiResponse } from "next";
+import { maskPrivateContent } from "@/libs/utils/utils";
+import getGoogleScope from "@/pages/api/getGoogleScope";
 
-const getGuestbookList = async (req, res) => {
+const getGuestbookList = async (req: NextApiRequest, res: NextApiResponse) => {
   const { access_token, cursor } = req.query;
   try {
     const posts = await prisma.guestBookPost.findMany({
-      take: 20,
+      take: 5,
       skip: cursor ? Number(cursor) : 0,
       select: {
         id: true,
@@ -27,103 +30,28 @@ const getGuestbookList = async (req, res) => {
       orderBy: { createdAt: "desc" },
     });
 
-    if (!access_token) {
-      const userNotLogin = posts.map((post) => {
-        if (post.isPrivate) {
-          post = {
-            ...post,
-            post: "This is a private post 🔒",
-            author: "anonymous",
-          };
-        }
-        post = {
-          ...post,
-          comments: post.comments.map((comment) => {
-            if (comment.isPrivate) {
-              return {
-                ...comment,
-                author: "anonymous",
-                comment: "This is a private comment 🔒",
-              };
-            }
-            delete comment.email;
-            return {
-              ...comment,
-            };
-          }),
-        };
-        delete post.email;
-        return post;
-      });
-      res.setHeader("Content-Type", "application/json");
-      res.setHeader("Cache-Control", "max-age=180000");
-      res.end(JSON.stringify(userNotLogin));
-      return JSON.stringify(userNotLogin);
+    let userEmail = "";
+    if (access_token) {
+      const getScope = await getGoogleScope((access_token as string) || "");
+      userEmail = (await getScope.json()).email;
     }
 
-    const getScope = await fetch(
-      `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${access_token}&access_type=offline`
+    const processedPosts = posts.map((post) =>
+      maskPrivateContent(
+        post,
+        userEmail === process.env.ADMIN_GUESTBOOK_TOKEN ? "" : userEmail,
+      ),
     );
-    const { email } = await getScope.json();
-
-    if (email === process.env.ADMIN_GUESTBOOK_TOKEN) {
-      res.setHeader("Content-Type", "application/json");
-      res.setHeader("Cache-Control", "max-age=180000");
-      res.end(JSON.stringify(posts));
-      return JSON.stringify(posts);
-    }
-
-    const userLogin = await posts.map((post) => {
-      if (post.isPrivate && post.email !== email) {
-        post = {
-          ...post,
-          post: "This is a private post 🔒",
-          author: "anonymous",
-          comments: post.comments.map((comment) => {
-            if (comment.isPrivate && comment.email !== email) {
-              return {
-                ...comment,
-                author: "anonymous",
-                comment: "This is a private comment 🔒",
-              };
-            }
-            delete comment.email;
-            return {
-              ...comment,
-            };
-          }),
-        };
-        delete post.email;
-        return post;
-      }
-
-      post = {
-        ...post,
-        comments: post.comments.map((comment) => {
-          if (comment.isPrivate && comment.email !== email) {
-            return {
-              ...comment,
-              comment: "This is a private comment 🔒",
-              author: "anonymous",
-            };
-          }
-          delete comment.email;
-          return comment;
-        }),
-      };
-      delete post.email;
-      return post;
-    });
 
     res.setHeader("Content-Type", "application/json");
-    res.end(JSON.stringify(userLogin));
-    return JSON.parse(JSON.stringify(userLogin));
+    res.setHeader("Cache-Control", "max-age=180000");
+    res.end(JSON.stringify(processedPosts));
+
+    return processedPosts;
   } catch (e) {
     console.error(e);
-    if (e.status === 403) {
-      return res.status(403).json({ error: "token expired" });
-    }
-    return res.status(501).json({ error: e.message });
+
+    return res.status(501).json(e);
   }
 };
 

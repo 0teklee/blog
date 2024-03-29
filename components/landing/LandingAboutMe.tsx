@@ -12,7 +12,7 @@ const LandingAboutMe = () => {
   const isEn = lang === "en";
   const isKr = lang === "kr";
 
-  const handleClick = (val) => {
+  const handleClick = (val: "en" | "kr") => {
     setLang(val);
   };
 

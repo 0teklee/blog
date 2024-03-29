@@ -1,7 +1,7 @@
 import prisma from "libs/prisma";
-import { IBlogGetCategory } from "types/IBlogItem";
+import { IBlogGetCategorySideBar } from "@/components/blog/types";
 
-const getBlogCategoryList = async (): Promise<IBlogGetCategory[]> => {
+const getBlogCategoryList = async (): Promise<IBlogGetCategorySideBar[]> => {
   try {
     const categoriesDB = await prisma.category.findMany({
       where: {
@@ -29,12 +29,13 @@ const getBlogCategoryList = async (): Promise<IBlogGetCategory[]> => {
       },
     });
 
-    const categories: Promise<IBlogGetCategory[]> = JSON.parse(
-      JSON.stringify(categoriesDB)
+    const categories: Promise<IBlogGetCategorySideBar[]> = JSON.parse(
+      JSON.stringify(categoriesDB),
     );
     return categories;
   } catch (err) {
     console.log(err);
+    return [];
   }
 };
 

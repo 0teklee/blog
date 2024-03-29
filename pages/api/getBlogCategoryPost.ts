@@ -3,24 +3,21 @@ import prisma from "libs/prisma";
 const getBlogCategoryPost = async (category: string | string[]) => {
   try {
     if (typeof category === "string") {
-      const categoriesDB = await prisma.category.findMany({
+      const categoriesDB = await prisma.post.findMany({
         where: {
-          name: category,
+          categories: {
+            name: category,
+          },
         },
         orderBy: { id: "desc" },
-        include: {
-          posts: {
+        select: {
+          id: true,
+          title: true,
+          content: true,
+          createdAt: true,
+          categories: {
             select: {
-              id: true,
-              title: true,
-              content: true,
-              createdAt: true,
-              categories: {
-                select: {
-                  name: true,
-                },
-              },
-              // post_id: true,
+              name: true,
             },
           },
         },

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { clsx } from "clsx";
-import { IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetListItem } from "@/components/blog/types";
 import Link from "next/link";
 
 const BlogListPagination = ({

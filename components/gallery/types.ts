@@ -10,8 +10,4 @@ interface IGalleryProps {
   category: string;
 }
 
-interface IGalleryTemplateProp extends Omit<IGalleryProps, "category"> {
-  query: string;
-}
-
-export type { IGalleryProps, IGalleryTemplateProp };
+export type { IGalleryProps };

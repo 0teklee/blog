@@ -1,5 +1,5 @@
 import prisma from "libs/prisma";
-import { getScope } from "libs/utils/guestbookFetcher";
+import { NextApiRequest, NextApiResponse } from "next";
 
 interface IPostGuestbookPostProps {
   author: string;
@@ -7,11 +7,13 @@ interface IPostGuestbookPostProps {
   isPrivate: boolean;
 }
 
-const postGuestbookPost = async (req, res) => {
+const postGuestbookPost = async (req: NextApiRequest, res: NextApiResponse) => {
   const { access_token } = req.query;
   const { body: postBody }: { body: IPostGuestbookPostProps } = req;
   try {
-    const getUserInfo = await getScope(access_token);
+    const getUserInfo = await fetch(
+      `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${access_token}&access_type=offline`,
+    ).then((res) => res.json());
     const { email, name } = getUserInfo;
     const startDate = new Date();
     const endDate = new Date();
@@ -50,11 +52,13 @@ const postGuestbookPost = async (req, res) => {
     return res.json({ message: "successfully uploaded" });
   } catch (e) {
     console.error(e);
-    if (e.message === "Please login again") {
-      return res.status(403).json({ error: e.message, status: 403 });
+    if (e === "Please login again") {
+      res.status(403).json({ message: e, status: 403 });
+      return;
     }
-    return res.status(501).json({ error: e.message });
+    res.status(501).json({ message: "Internal Server Error", status: 501 });
   }
+  return;
 };
 
 export default postGuestbookPost;

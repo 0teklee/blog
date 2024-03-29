@@ -1,7 +1,6 @@
 import prisma from "libs/prisma";
-import { IGalleryGetCategory } from "types/IBlogItem";
 
-const getGalleryCategoryList = async (): Promise<IGalleryGetCategory[]> => {
+const getGalleryCategoryList = async (): Promise<{ name: string }[]> => {
   try {
     const categoriesDB = await prisma.galleryCategory.findMany({
       select: {
@@ -9,12 +8,12 @@ const getGalleryCategoryList = async (): Promise<IGalleryGetCategory[]> => {
       },
     });
 
-    const categories: Promise<IGalleryGetCategory[]> = JSON.parse(
-      JSON.stringify(categoriesDB)
-    );
+    const categories = JSON.parse(JSON.stringify(categoriesDB));
+
     return categories;
   } catch (err) {
     console.log(err);
+    return [];
   }
 };
 

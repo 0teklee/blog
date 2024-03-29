@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { IBlogGetCategorySideBar } from "types/IBlogItem";
+import { IBlogGetCategorySideBar } from "@/components/blog/types";
 import { useRouter, useSearchParams } from "next/navigation";
 import { clsx } from "clsx";
 import { initialCategoryState } from "./utils";

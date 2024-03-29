@@ -1,10 +1,10 @@
 import prisma from "libs/prisma";
-import { IBlogGetDetail } from "types/IBlogItem";
+import { IBlogGetDetail } from "@/components/blog/types";
 import getBlogDetailId from "./getBlogDetailId";
 
 const getBlogDetail = async (
-  params: string | string[]
-): Promise<IBlogGetDetail | false> => {
+  params: string | string[],
+): Promise<IBlogGetDetail> => {
   const query = Number(params);
   const idList = await getBlogDetailId();
   const firstId = idList[0].id;
@@ -33,24 +33,24 @@ const getBlogDetail = async (
       JSON.stringify(
         postsDB.find(
           (item) =>
-            item.id === Number(query) && item.categories.name !== "daily"
-        )
-      )
+            item.id === Number(query) && item.categories.name !== "daily",
+        ),
+      ),
     );
 
     const postPrevNext: IBlogGetDetail["nav"] = JSON.parse(
       JSON.stringify(
         postsDB.filter(
           (item) =>
-            item.id !== Number(query) && item.categories.name !== "daily"
-        )
-      )
+            item.id !== Number(query) && item.categories.name !== "daily",
+        ),
+      ),
     );
 
     return { detail: postDetail, nav: postPrevNext };
   } catch (err) {
     console.log(err);
-    return false;
+    return {} as IBlogGetDetail;
   }
 };
 

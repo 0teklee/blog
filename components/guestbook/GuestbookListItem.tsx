@@ -2,14 +2,7 @@
 
 import dayjs from "dayjs";
 import { ChangeEvent, useState } from "react";
-import {
-  InfiniteData,
-  QueryObserverResult,
-  RefetchOptions,
-  RefetchQueryFilters,
-  useMutation,
-  useQueryClient,
-} from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import DOMPurify from "isomorphic-dompurify";
 import { clsx } from "clsx";
 import { useSession } from "next-auth/react";
@@ -18,7 +11,7 @@ import { htmlReplace } from "libs/utils/utils";
 
 interface IProps {
   id: number;
-  createdAt: string;
+  createdAt: string | Date;
   author: string;
   post: string;
   isPrivate: boolean;
@@ -26,11 +19,8 @@ interface IProps {
     id: number;
     author: string;
     comment: string;
-    createdAt: string;
+    createdAt: string | Date;
   }[];
-  refetch: (
-    options?: RefetchOptions & RefetchQueryFilters,
-  ) => Promise<QueryObserverResult<InfiniteData<any>, unknown>>;
 }
 
 const GuestbookListItem = ({

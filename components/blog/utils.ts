@@ -1,4 +1,4 @@
-import { IBlogGetCategorySideBar } from "types/IBlogItem";
+import { IBlogGetCategorySideBar } from "@/components/blog/types";
 import { DEFAULT_SKY, imgSrcReplaceReg } from "libs/constants";
 
 export const initialCategoryState = (categories: IBlogGetCategorySideBar[]) =>

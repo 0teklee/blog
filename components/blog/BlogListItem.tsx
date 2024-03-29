@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { IBlogGetListItem } from "types/IBlogItem";
+import { IBlogGetListItem } from "@/components/blog/types";
 import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
 import dayjs from "dayjs";

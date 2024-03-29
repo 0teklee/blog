@@ -4,12 +4,6 @@ import { NextApiRequest, NextApiResponse } from "next";
 const putBlogEditPost = async (req: NextApiRequest, res: NextApiResponse) => {
   const data = req.body;
   const { id, category, ...rest } = data;
-  // const tagsReqData = tagIn.map((item: string) => {
-  //   return {
-  //     where: { tag: item },
-  //     create: { tag: item },
-  //   };
-  // });
 
   try {
     const putDB = await prisma.post.update({
@@ -32,7 +26,7 @@ const putBlogEditPost = async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(200).json(putDB);
   } catch (err) {
     console.log(err);
-    res.status(403).json({ err: err.message });
+    res.status(403).json({ message: "Internal Server Error" });
   }
 };
 

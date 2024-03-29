@@ -1,14 +1,13 @@
 import prisma from "libs/prisma";
-import { IBlogItemNoDate } from "types/IBlogItem";
+import { NextApiRequest } from "next";
 
-const getBlogEditPost = async (
-  params: string | string[]
-): Promise<IBlogItemNoDate> => {
-  const query = Number(params);
+const getBlogEditPost = async (req: NextApiRequest) => {
+  const query = req.query;
+  const id = Number(query);
   try {
     const postsDB = await prisma.post.findUnique({
       where: {
-        id: query,
+        id,
       },
       include: {
         categories: {

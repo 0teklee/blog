@@ -50,10 +50,10 @@ export async function generateMetadata({
 
   return {
     title: `${data.detail.title} - teklog`,
-    description: htmlReplace(data.detail.content).slice(0, 200),
+    description: htmlReplace(data?.detail?.content).slice(0, 200),
     openGraph: {
       title: `${data.detail.title} - teklog`,
-      description: htmlReplace(data.detail.content).slice(0, 200),
+      description: htmlReplace(data.detail.content).slice(0, 200) || "",
       images: ImageSrc,
     },
   };

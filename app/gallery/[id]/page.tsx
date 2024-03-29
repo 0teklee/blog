@@ -2,7 +2,7 @@ import GalleryDetailTemplate from "components/gallery/GalleryDetailTemplate";
 import {
   IGalleryGetCategorySideBar,
   IGalleryPostGetDetail,
-} from "types/IBlogItem";
+} from "@/components/blog/types";
 import getGalleryDetail from "pages/api/getGalleryDetail";
 import getBlogDetailId from "pages/api/getBlogDetailId";
 import { getImgSrc } from "components/blog/utils";

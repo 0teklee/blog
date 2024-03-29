@@ -48,7 +48,7 @@ const GuestbookList = () => {
       >
         {data?.pages.map((post) => {
           return post.map((item) => (
-            <GuestbookListItem className="postBox" key={item.id} {...item} />
+            <GuestbookListItem key={item.id} {...item} />
           ));
         })}
       </div>
