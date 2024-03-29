@@ -2,10 +2,13 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { postImageUpload } from "libs/utils/fetcher";
 import { EDITOR_FORMATS, EDITOR_TOOLBAR_OPTIONS } from "./values";
+import dynamic from "next/dynamic";
+import { ReactQuillProps } from "react-quill";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const Editor = ({
   handler,
@@ -16,7 +19,7 @@ const Editor = ({
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const quillRef = useRef<ReactQuill>(null);
+  const quillRef = useRef<React.ComponentType<ReactQuillProps>>(null);
   const inputImageRef = useRef<HTMLInputElement>(null);
 
   const router = useRouter();
@@ -33,10 +36,12 @@ const Editor = ({
   const handleImage = () => {
     if (
       !quillRef.current ||
+      // @ts-ignore
       !quillRef?.current?.getEditor ||
       !inputImageRef?.current
     )
       return;
+    // @ts-ignore
     const editor = quillRef.current.getEditor();
     const input = inputImageRef.current;
     input.setAttribute("type", "file");
@@ -100,6 +105,7 @@ const Editor = ({
         <div className="w-full min-h-[50vh]">
           <input ref={inputImageRef} type="file" className={`hidden`} />
           <ReactQuill
+            // @ts-ignore
             ref={quillRef}
             theme="snow"
             style={{
