@@ -9,7 +9,13 @@ import dayjs from "dayjs";
 import { htmlReplace } from "libs/utils/utils";
 import LANDING_LIST_IMAGES from "./values";
 
-const LandingListItem = ({ post, index }: { post: IBlogMainItem; index }) => {
+const LandingListItem = ({
+  post,
+  index,
+}: {
+  post: IBlogMainItem;
+  index: number;
+}) => {
   const router = useRouter();
   const postImg = LANDING_LIST_IMAGES[index];
   const mtPosition = getYPositionClass(index);
