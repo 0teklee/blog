@@ -4,9 +4,12 @@ import { DEFAULT_SKY, imgSrcReplaceReg } from "libs/constants";
 export const initialCategoryState = (categories: IBlogGetCategorySideBar[]) =>
   categories
     .map((item) => item.name)
-    .reduce((acc, item) => {
-      return { ...acc, [item]: false };
-    }, {});
+    .reduce(
+      (acc, item) => {
+        return { ...acc, [item]: false };
+      },
+      {} as { [key: string]: boolean },
+    );
 
 export const getImgSrc = (content: string) => {
   const matchSrc = content.match(imgSrcReplaceReg);

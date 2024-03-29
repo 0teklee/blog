@@ -26,7 +26,7 @@ const BlogSideBar = ({
     setTimeout(() => setMainCategory((prev) => !prev), 300);
   };
 
-  const handleSubToggle = (name: string) => {
+  const handleSubToggle = (name: keyof typeof subCategory) => {
     setSubCategory((prev) => {
       return { ...prev, [name]: !prev[name] };
     });
