@@ -1,10 +1,16 @@
-export const getYPositionClass = (index) => {
-  const positions = {
-    0: "lg:mb-12",
-    2: "lg:mb-20",
-    3: "lg:mt-28",
-    4: "lg:mt-16",
-    5: "lg:mt-32",
-  };
-  return positions[index] || ""; // Return the class or an empty string if not found
+export const getYPositionClass = (index: number) => {
+  switch (index) {
+    case 1:
+      return "lg:mt-12";
+    case 2:
+      return "lg:mt-20";
+    case 3:
+      return "lg:mt-28";
+    case 4:
+      return "lg:mt-16";
+    case 5:
+      return "lg:mt-32";
+    default:
+      "";
+  }
 };
