@@ -54,21 +54,19 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         `}
         </Script>
       </head>
-      <body>
+      <body
+        className={clsx(
+          "w-full px-4 py-24",
+          "tablet:px-12",
+          "lg:px-20",
+          "bg-white dark:bg-black",
+        )}
+      >
         <NextAuthSessionProvider>
           <RecoilProvider>
             <Header fonts={cormorant.className} />
             <NightModeSelectButton />
-            <main
-              className={clsx(
-                "w-full px-4 py-24",
-                "tablet:px-12",
-                "lg:px-20",
-                "bg-white dark:bg-black",
-              )}
-            >
-              {children}
-            </main>
+            {children}
             <Footer fonts={cormorant.className} />
           </RecoilProvider>
         </NextAuthSessionProvider>
