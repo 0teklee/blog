@@ -27,30 +27,9 @@ const GuestbookUserCreatePost = () => {
     setIsPrivate(e.target.checked);
   };
 
-  const postGuestbookPost = async (body: {
-    author: string;
-    post: string;
-    isPrivate: boolean;
-  }) => {
-    try {
-      const res = await postGuestbookPostFetcher("", {
-        author,
-        post: postGext,
-        isPrivate,
-      });
-
-      if (res.status === 403) {
-        throw new Error(res.error);
-      }
-      return res.data;
-    } catch (e) {
-      alert(e);
-      window.location.reload();
-      return e;
-    }
-  };
-
-  const { mutate } = useMutation(postGuestbookPost, {
+  const { mutate } = useMutation({
+    mutationFn: () =>
+      postGuestbookPostFetcher("", { author, post: postGext, isPrivate }),
     onSuccess: () => {
       queryClient.invalidateQueries(["getGuestbookList"]);
     },
@@ -69,7 +48,7 @@ const GuestbookUserCreatePost = () => {
       alert("Author is empty");
       return;
     }
-    mutate({ author, post: postGext, isPrivate });
+    mutate();
   };
 
   return (
