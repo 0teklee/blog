@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+.next
+
+# code editor
+.idea
+what.html
+```
