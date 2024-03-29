@@ -1,32 +1,22 @@
-import styled from "styled-components";
+import { clsx } from "clsx";
 
 const Title = ({
   title,
   customStyle,
 }: {
   title: string;
-  customStyle?: { [key: string]: string };
+  customStyle?: string;
 }) => {
-  return <__Title customStyle={customStyle}>{title}</__Title>;
+  return (
+    <h1
+      className={clsx(
+        "mt-8 transition-all duration-1000 font-sans whitespace-pre-wrap animate-intro",
+        customStyle,
+      )}
+    >
+      {title}
+    </h1>
+  );
 };
 
 export default Title;
-
-const __Title = styled.h1<{ customStyle?: { [key: string]: string } }>`
-  margin-top: 2rem;
-  transition: 1s;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  white-space: pre-wrap;
-
-  ${(props) => (props.customStyle ? props.customStyle : null)};
-
-  animation: intro 1s;
-  @keyframes intro {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
-`;
