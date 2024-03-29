@@ -30,7 +30,12 @@ const Editor = ({
   };
 
   const handleImage = () => {
-    if (!quillRef.current || !quillRef?.current?.getEditor || !document) return;
+    if (
+      !quillRef.current ||
+      !quillRef?.current?.getEditor ||
+      typeof document === "undefined"
+    )
+      return;
     const editor = quillRef.current.getEditor();
     const input = document?.createElement("input");
     input.setAttribute("type", "file");
