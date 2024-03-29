@@ -1,3 +1,5 @@
+import { IGuestbookPost } from "@/components/guestbook/types";
+
 interface IPostGuestbookPostProps {
   author: string;
   post: string;
@@ -11,7 +13,9 @@ interface IPostGuestbookCommentProps {
   isPrivate: boolean;
 }
 
-export const getGuestbookListFetcher = async (cursorIn: number) => {
+export const getGuestbookListFetcher = async (
+  cursorIn: number,
+): Promise<IGuestbookPost[]> => {
   try {
     const res = await fetch(`/api/getGuestbookList?cursor=${cursorIn}`, {
       headers: {
@@ -19,11 +23,11 @@ export const getGuestbookListFetcher = async (cursorIn: number) => {
         "Cache-Control": "no-cache",
       },
     });
-    const pageData = await res.json();
+    const pageData: IGuestbookPost[] = await res.json();
     return pageData;
   } catch (err) {
     console.error(err);
-    return err;
+    return [];
   }
 };
 
