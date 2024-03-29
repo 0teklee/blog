@@ -1,31 +1,25 @@
+"use client";
+
 import { useState } from "react";
-import styled, { css } from "styled-components";
-import { sizes, theme } from "styles/theme";
 import { IBlogGetCategorySideBar } from "types/IBlogItem";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { clsx } from "clsx";
+import { initialCategoryState } from "./utils";
 
 const BlogSideBar = ({
   categories,
-  padding = "2rem",
-  mobilePadding,
 }: {
   categories: IBlogGetCategorySideBar[];
-  padding?: string;
-  mobilePadding?: string;
 }) => {
   const router = useRouter();
+  const params = useSearchParams();
+  const categoryParam = params?.get("category");
 
   const [mainToggle, setMainToggle] = useState<boolean>(false);
   const [mainCategory, setMainCategory] = useState<boolean>(false);
-
-  /* subCategory Object Assign*/
-  const subKeys = categories
-    .map((item) => item.name)
-    .reduce((acc, item) => {
-      return { ...acc, [item]: false };
-    }, {});
-
-  const [subCategory, setSubCategory] = useState(subKeys);
+  const [subCategory, setSubCategory] = useState(
+    initialCategoryState(categories),
+  );
 
   const handleMainToggle = () => {
     setMainToggle((prev) => !prev);
@@ -39,245 +33,123 @@ const BlogSideBar = ({
   };
 
   return (
-    <__Wrapper padding={padding} mobilePadding={mobilePadding}>
-      <__TitleWrapper>
-        <__Title>categories </__Title>
-        <__ToggleButton onClick={handleMainToggle} visible={mainToggle}>
+    <aside
+      className={clsx(
+        "flex flex-col items-stretch gap-5",
+        "w-full mb-12",
+        "flex-shrink-0",
+        "bg-white overflow-scroll",
+        "lg:w-56 lg:sticky lg:top-20 lg:h-[calc(100vh-4rem)]",
+      )}
+    >
+      <div className="flex justify-between">
+        <h4 className="text-lg font-normal font-sans">categories</h4>
+        <button
+          className={clsx(
+            "hover:text-blue-500 transition-all duration-300",
+            "transition-all duration-300",
+            mainToggle && "transform rotate-180",
+          )}
+          onClick={handleMainToggle}
+        >
           ⇣
-        </__ToggleButton>
-      </__TitleWrapper>
-      <__CategoryWrapper visible={mainCategory} mainToggle={mainToggle}>
+        </button>
+      </div>
+      <div
+        className={clsx(
+          "flex flex-col items-start justify-center gap-5",
+          "bg-white overflow-scroll",
+          "break-all",
+          "transition-all duration-300",
+          mainCategory && "translate-x-0",
+          !mainToggle && "-translate-x-[100%] h-0",
+        )}
+      >
         {categories &&
-          0 < categories.length &&
+          categories.length > 0 &&
           categories.map((item) => (
-            <__CategoryItemWrapper key={`${item.name}_wrapper`}>
-              <__CategoryItem
+            <div
+              key={`${item.name}_wrapper`}
+              className="flex items-start justify-between w-full pl-2"
+            >
+              <div
                 onClick={() => router.push(`/blog?category=${item.name}`)}
-                key={`${item.name}_categoryItem`}
+                className={clsx(
+                  "flex-1",
+                  "flex flex-col items-start justify-start",
+                  "bg-white cursor-pointer transition-colors duration-300",
+                  "hover:underline hover:text-blue-500",
+                  categoryParam === item.name
+                    ? "text-blue-500 font-semibold"
+                    : "text-black",
+                )}
               >
                 {item.name}
                 {item?.posts?.map((blog, i) => (
-                  <__SubCategoryWrapper
-                    visible={subCategory[item.name]}
+                  <div
                     key={`${item.name}_subwrapper_${i}`}
+                    className={clsx(
+                      "w-full pl-2",
+                      "text-sm",
+                      "lg:pl-2 lg:text-md",
+                      "overflow-y-hidden",
+                      "hover:bg-blue-500 hover:text-white transition-all duration-300",
+                      subCategory[item.name] && "opacity-100 h-auto",
+                      !subCategory[item.name] &&
+                        "opacity-0 translate-y-[100%] h-0",
+                      categoryParam === item.name
+                        ? "text-blue-500 font-semibold"
+                        : "text-black",
+                    )}
                   >
-                    <__SubCategoryTitle
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         router.push(`/blog/${blog.id}`);
                       }}
-                      key={`${item.name}_Title`}
+                      className={"w-full mt-2 text-left"}
                     >
                       - {blog.title}
-                    </__SubCategoryTitle>
-                  </__SubCategoryWrapper>
+                    </button>
+                  </div>
                 ))}
                 {item?.posts && item?.posts.length >= 10 && (
-                  <__SubCategoryWrapper visible={subCategory[item.name]}>
-                    <__SubCategoryTitle
+                  <div
+                    className={clsx(
+                      "flex flex-col items-start justify-start w-full pl-2 text-0.8rem",
+                      subCategory[item.name] && "flex",
+                      !subCategory[item.name] && "hidden",
+                    )}
+                  >
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         router.push(`/blog?category=${item.name}`);
                       }}
-                      key={`${item.name}_Title`}
+                      className="w-full mt-2 text-left hover:text-blue-500 transition-colors duration-300"
                     >
                       .....more
-                    </__SubCategoryTitle>
-                  </__SubCategoryWrapper>
+                    </button>
+                  </div>
                 )}
-              </__CategoryItem>
-              <__CateogryItemToggle
-                onClick={() => {
-                  handleSubToggle(item.name);
-                }}
-                visible={subCategory[item.name]}
-                key={`${item.name}_Toggle`}
+              </div>
+              <button
+                onClick={() => handleSubToggle(item.name)}
+                className={clsx(
+                  "relative",
+                  "text-grey overflow-scroll",
+                  "hover:text-blue-500 transition-all duration-300",
+                  subCategory[item.name] &&
+                    "transform rotate-180 transition-transform duration-1000",
+                )}
               >
                 <span>▾</span>
-              </__CateogryItemToggle>
-            </__CategoryItemWrapper>
+              </button>
+            </div>
           ))}
-      </__CategoryWrapper>
-    </__Wrapper>
+      </div>
+    </aside>
   );
 };
 
 export default BlogSideBar;
-
-const __Wrapper = styled.aside<{ padding?: string; mobilePadding?: string }>`
-  position: fixed;
-  top: 100px;
-  left: 1rem;
-
-  margin-left: 1rem;
-  background: #fff;
-
-  overflow: scroll;
-  @media only screen and (max-width: ${sizes.laptop}) {
-    position: relative;
-    top: unset;
-    left: 0;
-    bottom: 10px;
-
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 1rem;
-
-    padding: ${(props) => props.padding};
-
-    h4 {
-      padding: 0;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-    }
-    div {
-      max-width: unset;
-      font-size: 1rem;
-    }
-
-    button {
-      font-size: 1rem;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    top: 1.5rem;
-    padding: ${(props) => (props.mobilePadding ? props.mobilePadding : null)};
-  }
-`;
-
-const __TitleWrapper = styled.div`
-  ${theme.displayFlex("center", "space-between")};
-  min-width: 13.3rem;
-`;
-
-const __Title = styled.h4`
-  padding: 1rem 1rem 1rem 0;
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: "proxima-nova-condensed", "Roboto", sans-serif;
-`;
-
-const __ToggleButton = styled.button<{ visible: boolean }>`
-  position: relative;
-  top: 0.2rem;
-
-  margin-left: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50px;
-
-  font-size: 0.9rem;
-
-  ${(props) =>
-    props.visible
-      ? css`
-          transform: rotate(0.5turn);
-          transition: 1s;
-        `
-      : null}
-
-  &:hover {
-    background: #00000013;
-    transition: 0.3s;
-  }
-
-  @media only screen and (max-width: 500px) {
-    top: -6.5px;
-  }
-`;
-
-const __CategoryWrapper = styled.div<{ visible: boolean; mainToggle: boolean }>`
-  display: ${(props) => (props.visible ? "flex" : "none")};
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background: #fff;
-
-  animation: mount 0.5s;
-  overflow: scroll;
-
-  ${(props) =>
-    !props.mainToggle
-      ? css`
-          opacity: 0;
-          transition: 0.5s;
-        `
-      : null}
-`;
-const __CategoryItemWrapper = styled.div`
-  ${theme.displayFlex("flex-start", "space-between")}
-  width: 100%;
-  padding-left: 0.8rem;
-`;
-
-const __CateogryItemToggle = styled(__ToggleButton)<{ visible: boolean }>`
-  top: 10px;
-  color: ${theme.colors.grey};
-  background: #fff;
-  overflow: scroll;
-
-  ${(props) =>
-    props.visible
-      ? css`
-          transform: rotate(0.5turn);
-          transition: 1s;
-        `
-      : null};
-
-  @media only screen and (max-width: 500px) {
-    top: 18px;
-  }
-`;
-
-const __CategoryItem = styled.div`
-  all: unset;
-  padding: 1rem;
-
-  color: #000;
-  background: #fff;
-  font-family: "proxima-nova", "IBM Plex Sans KR", sans-serif;
-  font-size: 0.9rem;
-
-  cursor: pointer;
-
-  &:hover {
-    color: ${theme.colors.sign};
-    transition: 0.5s;
-  }
-`;
-
-const __SubCategoryWrapper = styled.div<{ visible: boolean }>`
-  display: ${(props) => (props.visible ? "flex" : "none")};
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  max-width: 8rem;
-  padding-left: 0.8rem;
-  font-size: 0.8rem;
-  animation: mount 0.5s;
-
-  ${(props) =>
-    !props.visible
-      ? css`
-          @keyframes mount {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 100%;
-            }
-          }
-        `
-      : null}
-`;
-
-const __SubCategoryTitle = styled.button`
-  margin-top: 0.8rem;
-  word-break: break-all;
-  text-align: start;
-
-  &:hover {
-    color: ${theme.colors.sign};
-    transition: 0.5s;
-  }
-`;

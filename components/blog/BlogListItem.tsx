@@ -1,12 +1,15 @@
-import { getContentImg, setCategoryPresetImg } from "libs/utils/contentImg";
-import dayJs from "libs/utils/dayJs";
-import htmlReplace from "libs/utils/htmlReplace";
-import Head from "next/head";
+"use client";
+
 import Image from "next/image";
-import styled from "styled-components";
-import { sizes, theme } from "styles/theme";
 import { IBlogGetListItem } from "types/IBlogItem";
 import { useRouter } from "next/navigation";
+import { clsx } from "clsx";
+import dayjs from "dayjs";
+import {
+  getContentImg,
+  htmlReplace,
+  setCategoryPresetImg,
+} from "libs/utils/utils";
 
 const BlogListItem = ({
   id,
@@ -14,189 +17,89 @@ const BlogListItem = ({
   createdAt,
   title,
   categories,
-}: // tags,
-IBlogGetListItem) => {
+}: IBlogGetListItem) => {
   const router = useRouter();
-
-  /*블로그 내용 미리보기 */
   const contentReplace = htmlReplace(content);
   return (
-    <>
-      <Head>
-        <link
-          rel="preload"
-          href={getContentImg(content) || setCategoryPresetImg(categories.name)}
-          as="image"
-          imageSrcSet={`${
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          } 1200w,
-          ${
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          }?w=200 200w,
-          ${
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          }?w=400 400w,
-          ${
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          }?w=800 800w,
-          ${
-            getContentImg(content) || setCategoryPresetImg(categories.name)
-          }?w=1024 1024w`}
-        />
-      </Head>
-      <__Container
-        key={`${id}_container`}
-        onClick={() => router.push(`/blog/${id}`)}
+    <section
+      className={clsx(
+        "w-full",
+        "group",
+        "overflow-hidden",
+        "transition-all duration-700",
+        "hover:bg-gray-100 dark:hover:bg-gray-800",
+        "tablet:px-2 tablet:py-3",
+      )}
+      onClick={() => router.push(`/blog/${id}`)}
+    >
+      <div
+        className={clsx(
+          "relative",
+          "flex flex-col items-center space-between gap-1",
+          "w-full",
+          "cursor-pointer",
+          "tablet:flex-row tablet:gap-12",
+        )}
       >
-        <__Wrapper key={`${id}_wrapper`}>
-          <__HeaderImgWrapper>
-            <Image
-              src={
-                getContentImg(content) || setCategoryPresetImg(categories.name)
-              }
-              className="object-cover"
-              key={`${id}_img`}
-              width={200}
-              height={200}
-              layout="responsive"
-              alt={title}
-              sizes="(max-width: 720px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-              priority
-            />
-          </__HeaderImgWrapper>
-          <__ContentsWrapper key={`${id}_`}>
-            <__ContentTitle key={`${id}_title`}>{title}</__ContentTitle>
-            <__CategoryDateWrapper key={`${id}_categoryDate`}>
-              <__CategoryWrapper key={`${id}_categoryInner`}>
-                <p>category : </p>
-                <p>{categories.name}</p>
-              </__CategoryWrapper>
-              <p>{dayJs(createdAt)}</p>
-            </__CategoryDateWrapper>
-            <p>{contentReplace}</p>
-            <__TagWrapper key={`${id}_tag`}>
-              {/*{tags?.map((tag, i) => (*/}
-              {/*  <span key={`${tag}_${i}`}>#{tag.tag}</span>*/}
-              {/*))}*/}
-            </__TagWrapper>
-          </__ContentsWrapper>
-        </__Wrapper>
-      </__Container>
-    </>
+        <div
+          className={clsx(
+            "relative",
+            "flex-shrink-0",
+            "w-full h-[120px]",
+            "rounded-t overflow-hidden",
+            "tablet:rounded-t-none tablet:border-none tablet:w-44 tablet:flex-shrink tablet:h-44",
+          )}
+        >
+          <Image
+            src={
+              getContentImg(content) || setCategoryPresetImg(categories.name)
+            }
+            className={clsx("object-cover")}
+            key={`${id}_img`}
+            fill={true}
+            alt={title}
+            priority
+          />
+        </div>
+        <div className={clsx("flex-1 max-h-80", "flex flex-col gap-4")}>
+          <div>
+            <h2
+              className={clsx(
+                "text-lg font-medium",
+                "line-clamp-1 text-ellipsis",
+                "transition-all duration-500",
+                "group-hover:underline group-hover:text-blue-500",
+              )}
+            >
+              {title}
+            </h2>
+            <div
+              className={clsx(
+                "flex justify-between flex-wrap w-full",
+                "text-xs font-medium",
+              )}
+            >
+              <div className="flex items-center">
+                <p className="font-semibold">category:</p>
+                <p className="ml-2">{categories.name}</p>
+              </div>
+              <p>{dayjs(createdAt).format("YYYY-MM-DD")}</p>
+            </div>
+          </div>
+          <p
+            className={clsx(
+              "text-xs",
+              "line-clamp-2",
+              "break-all leading-6",
+              "lg:text-base",
+            )}
+          >
+            {contentReplace}
+          </p>
+        </div>
+      </div>
+    </section>
   );
 };
 
 export default BlogListItem;
-
-const __Container = styled.section`
-  margin: 2rem 0 4rem 0;
-  &:hover h2 {
-    color: ${theme.colors.sign};
-    transition: 0.3s;
-  }
-`;
-
-const __Wrapper = styled.div`
-  ${theme.displayFlex("center", "space-between")}
-  width: 100%;
-
-  position: relative;
-  cursor: pointer;
-`;
-
-const __HeaderImgWrapper = styled.div`
-  flex: 1;
-  max-width: 200px;
-  max-height: 200px;
-  margin-right: 3rem;
-  overflow: hidden;
-  @media only screen and (max-width: 720px) {
-    display: none;
-  }
-  @media only screen and (max-width: 500px) {
-    display: none;
-    min-width: 0;
-  }
-`;
-
-const __HeaderImg = styled(Image)`
-  width: 100%;
-  height: 100%;
-`;
-
-const __ContentsWrapper = styled.div`
-  flex: 3;
-  max-height: 20rem;
-
-  & > p:nth-child(2) {
-    margin-bottom: 0.8rem;
-  }
-
-  & > p:nth-child(3) {
-    display: -webkit-box;
-    padding-bottom: 0.3rem;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-break: break-all;
-    line-height: 1.6rem;
-    font-family: "Tenon", "IBM Plex Sans KR", sans-serif;
-    height: 3.2rem;
-    overflow: hidden;
-  }
-
-  @media only screen and (min-width: 720px) and (max-width: ${sizes.laptop}) {
-    width: 24rem;
-  }
-`;
-
-const __ContentTitle = styled.h2`
-  word-break: break-all;
-  font-family: "IBM Plex Sans KR", "Roboto", sans-serif;
-  @media only screen and (max-width: 500px) {
-    font-size: 1.3rem;
-  }
-`;
-
-const __TagWrapper = styled.div`
-  display: -webkit-box;
-  width: 100%;
-  margin-top: 1rem;
-  color: ${theme.colors.grey};
-
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  word-break: break-all;
-  line-height: 1rem;
-  max-height: 2rem;
-
-  font-weight: 400;
-  font-size: 0.8rem;
-  span {
-    margin-right: 1rem;
-  }
-`;
-
-const __CategoryDateWrapper = styled.div`
-  ${theme.displayFlex("center", "space-between")}
-  flex-wrap: wrap;
-  font-weight: 500;
-  width: 100%;
-  margin: 0.8rem 0 1.5rem 0;
-  & p {
-    margin-right: 0;
-    font-size: 0.8rem;
-  }
-`;
-
-const __CategoryWrapper = styled.div`
-  ${theme.displayFlex("center", "center")}
-  p {
-    font-family: "proxima-nova", "IBM Plex Sans KR", sans-serif;
-    font-weight: 600;
-  }
-  & > p:last-child {
-    margin-left: 0.5rem;
-  }
-`;
