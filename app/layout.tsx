@@ -2,7 +2,6 @@ import "./globals.css";
 import React, { ReactNode } from "react";
 import NextAuthSessionProvider from "components/common/providers/NextAuthSessionProvider";
 import RecoilProvider from "components/common/providers/RecoilProvider";
-import { clsx } from "clsx";
 import Header from "components/common/Header";
 import NightModeSelectButton from "components/common/NightModeSelectButton";
 import Footer from "components/common/Footer";
@@ -11,6 +10,7 @@ import { GA_TRACKING_ID } from "libs/gtag";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
+import { clsx } from "clsx";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -57,19 +57,21 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         </Script>
         <Analytics />
       </head>
-      <body
-        className={clsx(
-          "w-full px-4 py-24",
-          "tablet:px-12",
-          "lg:px-20",
-          "bg-white dark:bg-black",
-        )}
-      >
+      <body>
         <NextAuthSessionProvider>
           <RecoilProvider>
             <Header fonts={cormorant.className} />
             <NightModeSelectButton />
-            {children}
+            <div
+              className={clsx(
+                "w-full px-4 py-24",
+                "tablet:px-12",
+                "lg:px-20",
+                "bg-white dark:bg-black",
+              )}
+            >
+              {children}
+            </div>
             <Footer fonts={cormorant.className} />
           </RecoilProvider>
         </NextAuthSessionProvider>

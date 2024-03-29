@@ -5,7 +5,7 @@ import { HEADER_LFET_ITEMS, HEADER_RIGHT_ITEMS } from "./values";
 const Header = ({ fonts }: { fonts: string }) => (
   <header
     className={clsx(
-      "fixed top-0 w-full p-8",
+      "fixed top-0 w-full",
       "z-40",
       "md:w-screen",
       "mix-blend-difference invert",
@@ -13,7 +13,11 @@ const Header = ({ fonts }: { fonts: string }) => (
       fonts,
     )}
   >
-    <div className={clsx(" flex items-center justify-between")}>
+    <div
+      className={clsx(
+        " flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8",
+      )}
+    >
       <div className={clsx("flex items-center justify-around gap-6")}>
         {HEADER_LFET_ITEMS.map((item, idx) => (
           <Link
