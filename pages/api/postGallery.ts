@@ -21,7 +21,7 @@ const postGallery = async (req: NextApiRequest, res: NextApiResponse) => {
 
     res.status(200).json(result);
   } catch (err) {
-    res.status(403).json({ err: err.message });
+    res.status(403).json({ message: "Failed to post gallery" });
   }
 };
 
