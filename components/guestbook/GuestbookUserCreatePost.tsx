@@ -1,7 +1,6 @@
 "use client";
 
 import React, { MouseEvent, useState } from "react";
-import Cookie from "js-cookie";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { postGuestbookPostFetcher } from "libs/utils/fetcher";
@@ -45,8 +44,7 @@ const GuestbookUserCreatePost = () => {
       }
       return res.data;
     } catch (e) {
-      alert(e.message);
-      Cookie.remove("guest_access_token");
+      alert(e);
       window.location.reload();
       return e;
     }
