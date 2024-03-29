@@ -1,10 +1,11 @@
-import Layout from "components/common/Layout";
+"use client";
+
 import Title from "components/common/Title";
-import { getContentImg, setCategoryPresetImg } from "libs/utils/contentImg";
-import dayJs from "libs/utils/dayJs";
-import styled from "styled-components";
-import { theme } from "styles/theme";
 import { useRouter } from "next/navigation";
+import { clsx } from "clsx";
+import dayjs from "dayjs";
+import Image from "next/image";
+import { getContentImg, setCategoryPresetImg } from "libs/utils/utils";
 
 interface IProps {
   id: number;
@@ -17,145 +18,72 @@ interface IProps {
 const ArchiveTemplate = ({ posts }: { posts: IProps[] }) => {
   const router = useRouter();
 
-  /*월별 포스팅 필터링*/
-  const contentMonths = posts.map((item) => item.createdAt.slice(0, 7));
-  const monthsSet = new Set(contentMonths);
-  const months = Array.from(monthsSet);
+  const sortedMonths = Array.from(
+    new Set(posts.map((item) => item.createdAt.slice(0, 7))),
+  ).sort();
 
-  const filteredByMonthsPosts = ():
-    | { month: string; posts: IProps[] }[]
-    | undefined => {
-    const filteredPosts: { month: string; posts: IProps[] }[] = [];
-    for (let i = 0; i < months.length; i++) {
-      filteredPosts.push({
-        month: months[i],
-        posts: posts.filter((post) => post.createdAt.startsWith(months[i])),
-      });
-    }
-    return filteredPosts;
-  };
+  const archivePosts = sortedMonths
+    .map((month) => ({
+      month,
+      posts: posts.filter((post) => post.createdAt.startsWith(month)),
+    }))
+    .reverse();
 
-  const archivePosts = filteredByMonthsPosts();
   return (
-    <Layout
-      padding="8rem 3rem 5rem 3rem"
-      mobilePadding="8rem 0.5rem 4rem 0.5rem"
-    >
-      <__Wrapper>
-        <Title title="Archive" />
-        {archivePosts &&
-          archivePosts.map((item) => (
-            <__MonthWrapper key={`${item.month}_month_wrapper`}>
-              <h2 key={`${item.month}_title`}>
-                {item.month.replace("-", "/")}
-              </h2>
-              <__PostWrapper key={`${item.month}_grid_wrapper`}>
-                {item.posts?.map((post) => (
-                  <__PostItem
-                    key={`${post.id}_grid_item`}
-                    onClick={() => router.push(`/blog/${post.id}`)}
+    <div className={clsx("flex flex-col gap-3", "mb-20")}>
+      <Title title="Archive" />
+      {archivePosts &&
+        archivePosts.map((item) => (
+          <div key={`${item.month}_month_wrapper`} className="mt-8">
+            <h2 className={`text-2xl font-semibold`}>
+              {item.month.replace("-", "/")}
+            </h2>
+            <div
+              key={`${item.month}_grid_wrapper`}
+              className={clsx("flex flex-wrap gap-5", "w-full mt-8")}
+            >
+              {item.posts?.map((post) => (
+                <div
+                  key={`${post.id}_grid_item`}
+                  onClick={() => router.push(`/blog/${post.id}`)}
+                  className={clsx(
+                    "flex-grow relative group",
+                    "w-60 h-60 mb-8 p-8",
+                    "overflow-hidden cursor-pointer",
+                    "text-white text-base",
+                    "z-20",
+                    "tablet:flex-grow-0",
+                  )}
+                >
+                  <Image
+                    className={clsx(
+                      "absolute top-0 left-0 w-full h-full object-cover -z-10",
+                      "group-hover:brightness-50 transition-all",
+                    )}
+                    src={
+                      getContentImg(post.content) ||
+                      setCategoryPresetImg(post.categories.name)
+                    }
+                    alt="post_image"
+                    fill={true}
+                  />
+                  <div
+                    className={clsx(
+                      "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
+                      "opacity-0 transition-opacity",
+                      "group-hover:opacity-100",
+                    )}
                   >
-                    <__PostItemBackground
-                      backgroundUrl={
-                        getContentImg(post.content) ||
-                        setCategoryPresetImg(post.categories.name)
-                      }
-                    />
-                    <div className="info" key={`${post}_info`}>
-                      <h4 key={`${post.id}_item_title`}>{post.title}</h4>
-                      <p key={`${post.id}_item_date`}>
-                        {dayJs(post.createdAt)}
-                      </p>
-                    </div>
-                  </__PostItem>
-                ))}
-              </__PostWrapper>
-            </__MonthWrapper>
-          ))}
-      </__Wrapper>
-    </Layout>
+                    <h4>{post.title}</h4>
+                    <p>{dayjs(post.createdAt).format("YYYY.MM.DD")}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+    </div>
   );
 };
 
 export default ArchiveTemplate;
-
-const __Wrapper = styled.div`
-  margin-bottom: 5rem;
-`;
-
-const __MonthWrapper = styled.div`
-  margin-top: 2rem;
-`;
-
-const __PostWrapper = styled.div`
-  ${theme.displayFlex("center", "flex-start")}
-  flex-wrap: wrap;
-  gap: 2%;
-
-  width: 100%;
-  margin-top: 2rem;
-
-  @media only screen and (max-width: 500px) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 0.2rem;
-  }
-`;
-
-const __PostItemBackground = styled.div<{ backgroundUrl?: string }>`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: ${(props) =>
-    props.backgroundUrl
-      ? `url("${props.backgroundUrl}")`
-      : `url("https://res.cloudinary.com/dolziw8fv/image/upload/v1661842335/preset-pic-blog-list_wzzr7i.jpg")`};
-
-  background-size: cover;
-  z-index: 0;
-`;
-
-const __PostItem = styled.div`
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 2;
-
-  width: 15rem;
-  height: 15rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  color: #fff;
-  font-size: 1rem;
-
-  .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-
-  &:hover ${__PostItemBackground} {
-    filter: brightness(30%);
-    transition: 0.5s;
-  }
-
-  &:hover .info {
-    opacity: 1;
-    transition: 0.5s;
-  }
-
-  @media only screen and (max-width: 500px) {
-    margin-bottom: 0;
-    width: 7.5rem;
-    height: 7.5rem;
-
-    .info {
-      font-size: 0.8rem;
-    }
-  }
-`;
