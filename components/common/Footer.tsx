@@ -2,13 +2,14 @@ import Link from "next/link";
 import { clsx } from "clsx";
 import FooterScrollButton from "./module/FooterScrollButton";
 
-const Footer = () => {
+const Footer = ({ fonts }: { fonts: string }) => {
   return (
     <footer
       className={clsx(
         "fixed bottom-0 w-full p-8 z-40",
         "mix-blend-difference invert",
-        "text-md",
+        "text-lg",
+        fonts,
       )}
     >
       <div className={clsx("relative flex justify-between items-center")}>
@@ -16,7 +17,6 @@ const Footer = () => {
           href={"/gallery"}
           className={clsx(
             "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5",
-            "font-[proxima-nova] font-normal",
             "hover:text-blue-500 hover:font-bold",
             "transition-all duration-150",
           )}
@@ -27,7 +27,7 @@ const Footer = () => {
           <Link
             href={"/info"}
             className={clsx(
-              "mt-4 cursor-pointer font-[proxima-nova] font-normal",
+              "mt-4 cursor-pointer font-normal",
               "hover:text-blue-500 hover:font-bold",
               " transition-all duration-150",
             )}
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <FooterScrollButton
           className={clsx(
-            "absolute cursor-pointer font-[proxima-nova] font-normal",
+            "absolute cursor-pointer font-normal",
             "hover:text-blue-500 hover:font-bold",
             "transition-all duration-150 top-1/2 left-1/2",
             "-translate-x-1/2 -translate-y-1/2",
@@ -47,7 +47,7 @@ const Footer = () => {
         </FooterScrollButton>
         <button
           className={clsx(
-            "cursor-pointer font-[proxima-nova] font-normal",
+            "cursor-pointer font-normal",
             "hover:text-blue-500 hover:font-bold",
             "transition-all duration-150",
           )}
