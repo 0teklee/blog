@@ -10,6 +10,8 @@ import Script from "next/script";
 import { GA_TRACKING_ID } from "libs/gtag";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
@@ -53,6 +55,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
           gtag('config', '${GA_TRACKING_ID}');
         `}
         </Script>
+        <Analytics />
       </head>
       <body
         className={clsx(
