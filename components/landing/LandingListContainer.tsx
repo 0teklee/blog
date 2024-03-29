@@ -32,7 +32,6 @@ const LandingListContainer = ({ children }: { children: ReactNode[] }) => {
           "grid grid-cols-1 gap-x-[8%] gap-y-3 items-stretch",
           "w-full",
           "md:grid-cols-3",
-          "lg:landing-list",
         )}
       >
         {children}

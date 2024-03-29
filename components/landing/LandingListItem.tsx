@@ -1,17 +1,17 @@
 "use client";
 
-import presetImgs from "libs/utils/presetImg";
 import { IBlogMainItem } from "types/IBlogItem";
-import htmlReplace from "libs/utils/htmlReplace";
 import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
-import dayJs from "libs/utils/dayJs";
 import Image from "next/image";
 import { getYPositionClass } from "./utils";
+import dayjs from "dayjs";
+import { htmlReplace } from "libs/utils/utils";
+import LANDING_LIST_IMAGES from "./values";
 
 const LandingListItem = ({ post, index }: { post: IBlogMainItem; index }) => {
   const router = useRouter();
-  const postImg = presetImgs[index];
+  const postImg = LANDING_LIST_IMAGES[index];
   const mtPosition = getYPositionClass(index);
 
   return (
@@ -38,7 +38,7 @@ const LandingListItem = ({ post, index }: { post: IBlogMainItem; index }) => {
             "group-hover:blur-sm group-hover:brightness-50 group-hover:contrast-150",
           )}
           key={`img_${post.id}`}
-          src={presetImgs[index].url}
+          src={LANDING_LIST_IMAGES[index].url}
           sizes="(min-width: 75em) 33vw, (min-width: 48em) 50vw, 100vw"
           alt="teklog-recent-post"
           priority={true}
@@ -70,7 +70,7 @@ const LandingListItem = ({ post, index }: { post: IBlogMainItem; index }) => {
           <div
             className={clsx(
               "w-full max-h-16 px-4",
-              "text-sm font-light font-[Tenon, 'IBM Plex Sans KR', sans-serif]",
+              "text-sm font-light",
               "overflow-hidden leading-6 break-words line-clamp-2",
             )}
           >
@@ -87,7 +87,7 @@ const LandingListItem = ({ post, index }: { post: IBlogMainItem; index }) => {
           "font-normal",
         )}
       >
-        <p>{dayJs(post.createdAt)}</p>
+        <p>{dayjs(post.createdAt).format("YYYY.MM.DD")}</p>
         <p>ⓒ All Rights Reserved by teklee </p>
         <p>{`n°${post.id}`}</p>
       </div>

@@ -54,7 +54,7 @@ const LandingAboutMe = () => {
         className={clsx(
           "h-50",
           "max-w-xl",
-          "line-height[1.4] whitespace-pre-wrap font-[IBM Plex Sans KR, sans-serif]",
+          "line-height[1.4] whitespace-pre-wrap",
           "font-normal text-md",
           "md:text-lg",
         )}
