@@ -1,39 +1,18 @@
-import styled from "styled-components";
-import {
-  Dispatch,
-  MouseEvent,
-  MutableRefObject,
-  SetStateAction,
-  useState,
-} from "react";
-import { postGuestbookPostFetcher } from "../../libs/utils/guestbookFetcher";
+"use client";
+
+import React, { MouseEvent, useState } from "react";
 import Cookie from "js-cookie";
-import { queryClient } from "../../pages/guestbook";
 
-import {
-  InfiniteData,
-  QueryObserverResult,
-  RefetchOptions,
-  RefetchQueryFilters,
-  useMutation,
-} from "react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { postGuestbookPostFetcher } from "libs/utils/fetcher";
 
-const GuestbookUserCreatePost = ({
-  setIsPost,
-  refetch,
-  setCursorZero,
-}: {
-  setIsPost: Dispatch<SetStateAction<boolean>>;
-  refetch: (
-    options?: RefetchOptions & RefetchQueryFilters
-  ) => Promise<QueryObserverResult<InfiniteData<any>, unknown>>;
-  cursor: MutableRefObject<number>;
-  setCursorZero: () => void;
-}) => {
+const GuestbookUserCreatePost = () => {
+  const queryClient = useQueryClient();
+
   const [author, setAuthor] = useState("");
-  const [post, setPost] = useState("");
+  const [postGext, setPostGext] = useState("");
   const [isPrivate, setIsPrivate] = useState(false);
-  const access_token = Cookie.get("guest_access_token") || "";
+  const [isCreatePost, setIsCreatePost] = useState(false);
 
   const handleAuthor = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length > 30) return;
@@ -42,7 +21,7 @@ const GuestbookUserCreatePost = ({
 
   const handlePost = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (e.target.value.length > 1000) return;
-    setPost(e.target.value);
+    setPostGext(e.target.value);
   };
 
   const handleIsPrivate = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,9 +34,9 @@ const GuestbookUserCreatePost = ({
     isPrivate: boolean;
   }) => {
     try {
-      const res = await postGuestbookPostFetcher(access_token, {
+      const res = await postGuestbookPostFetcher("", {
         author,
-        post,
+        post: postGext,
         isPrivate,
       });
 
@@ -75,17 +54,16 @@ const GuestbookUserCreatePost = ({
 
   const { mutate } = useMutation(postGuestbookPost, {
     onSuccess: () => {
-      queryClient.clear();
+      queryClient.invalidateQueries(["getGuestbookList"]);
     },
     onSettled: () => {
-      setCursorZero();
-      refetch();
+      queryClient.invalidateQueries(["getGuestbookList"]);
     },
   });
 
   const handleSubmit = async (e: MouseEvent) => {
     e.preventDefault();
-    if (!post) {
+    if (!postGext) {
       alert("Post is empty");
       return;
     }
@@ -93,155 +71,72 @@ const GuestbookUserCreatePost = ({
       alert("Author is empty");
       return;
     }
-    mutate(
-      { author, post, isPrivate },
-      {
-        onSuccess: () => {
-          setCursorZero();
-          refetch();
-          setIsPost(false);
-        },
-        onError: (e) => {
-          setIsPost(false);
-        },
-      }
-    );
+    mutate({ author, post: postGext, isPrivate });
   };
 
   return (
-    <__Wrapper>
-      <__PostHeader>
-        <div className="info">
-          <span>name : </span>
-          <__NameInputBox
-            type="text"
-            onChange={handleAuthor}
-            value={author}
-            maxLength={30}
-          />
-          <__LengthCheck>( {author.length} / 30 )</__LengthCheck>
+    <>
+      {!isCreatePost && (
+        <div className="flex justify-center w-full mt-6 text-base">
+          <button
+            className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+            onClick={() => setIsCreatePost(true)}
+          >
+            Create Post
+          </button>
         </div>
-      </__PostHeader>
-      <__PostContent>
-        <span>post : </span>
-        <__PostTextAreaBox
-          onChange={handlePost}
-          value={post}
-          maxLength={1000}
-        />
-        <__FlexLeftBox>
-          <__PrivateBox>
-            <__IsPrivateCheckBox type="checkbox" onChange={handleIsPrivate} />
-            <span>private 🔒</span>
-          </__PrivateBox>
-          <__LengthCheck>( {post.length} / 1000)</__LengthCheck>
-        </__FlexLeftBox>
-      </__PostContent>
-      <__ButtonBox>
-        <__SubmitButton onClick={() => setIsPost(false)}>Cancel</__SubmitButton>
-        <__SubmitButton onClick={handleSubmit}>Submit</__SubmitButton>
-      </__ButtonBox>
-    </__Wrapper>
+      )}
+      {isCreatePost && (
+        <div className="block w-full max-w-4xl m-auto p-4 border border-gray-200 rounded-lg font-sans text-base">
+          <div className="flex items-center p-4 font-bold text-sm">
+            <span>name : </span>
+            <input
+              type="text"
+              onChange={handleAuthor}
+              value={author}
+              maxLength={30}
+              className="ml-4 py-2 px-2 border border-gray-200 rounded focus:border-blue-300"
+            />
+            <span className="ml-4 text-sm"> ( {author.length} / 30 ) </span>
+          </div>
+          <div className="w-full p-4 mb-4 font-light">
+            <span>post : </span>
+            <textarea
+              onChange={handlePost}
+              value={postGext}
+              maxLength={1000}
+              className="mt-4 w-full h-40 p-4 border border-gray-200 rounded focus:border-blue-300 resize-none"
+            />
+            <div className="flex justify-between mt-4">
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  onChange={handleIsPrivate}
+                  className=""
+                />
+                <span className="ml-2">private 🔒</span>
+              </div>
+              <span className="text-sm">( {postGext.length} / 1000 )</span>
+            </div>
+          </div>
+          <div className="flex justify-between">
+            <button
+              className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+              onClick={() => {}}
+            >
+              Cancel
+            </button>
+            <button
+              className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+              onClick={handleSubmit}
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
 export default GuestbookUserCreatePost;
-
-const __Wrapper = styled.div`
-  display: block;
-  width: 100%;
-  max-width: 50rem;
-  margin: auto;
-  padding: 1rem;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-size: 1rem;
-
-  border: 1px solid #eaeaea;
-  border-radius: 0.5rem;
-`;
-
-const __PostHeader = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem 0 1rem;
-  font-weight: bold;
-  font-size: 0.8rem;
-`;
-
-const __NameInputBox = styled.input`
-  margin-left: 1rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.3rem;
-  border: 1px solid #eaeaea;
-  border-radius: 0.3rem;
-  &:focus {
-    border: 1px solid #aadcf7;
-  }
-`;
-
-const __PostContent = styled.div`
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
-  span {
-    font-weight: bold;
-    font-size: 0.8rem;
-  }
-`;
-
-const __PostTextAreaBox = styled.textarea`
-  position: relative;
-  width: 100%;
-  height: 10rem;
-  margin-top: 1rem;
-  padding: 1rem;
-
-  border: 1px solid #eaeaea;
-  border-radius: 0.5rem;
-
-  resize: none;
-
-  &:focus {
-    border: 1px solid #aadcf7;
-  }
-`;
-
-const __ButtonBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const __SubmitButton = styled.button`
-  padding: 0.6rem;
-  border: 1px solid #eaeaea;
-  border-radius: 0.3rem;
-  font-size: 0.8rem;
-
-  &:hover {
-    background-color: #eaeaea;
-  }
-`;
-
-const __FlexLeftBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-  span {
-    font-size: 0.7rem;
-  }
-`;
-
-const __LengthCheck = styled.span`
-  margin-left: 1rem;
-  color: #000;
-  font-size: 0.7rem;
-`;
-
-const __PrivateBox = styled.div`
-  display: flex;
-  align-items: center;
-  span {
-    margin-left: 0.5rem;
-  }
-`;
-const __IsPrivateCheckBox = styled.input``;
