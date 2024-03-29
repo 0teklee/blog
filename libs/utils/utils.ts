@@ -1,4 +1,4 @@
-import { IPost } from "components/guestbook/types";
+import { IGuestbookPost } from "components/guestbook/types";
 import {
   DEFAULT_ERROR_IMAGE,
   DEFAULT_ETC_IMAGE,
@@ -10,7 +10,10 @@ import {
   DEFAULT_TS_IMAGE,
 } from "libs/constants";
 
-export const maskPrivateContent = (post: IPost, userEmail?: string | null) => {
+export const maskPrivateContent = (
+  post: IGuestbookPost,
+  userEmail?: string | null,
+) => {
   if (post.isPrivate && post.email !== userEmail) {
     post = {
       ...post,
@@ -32,9 +35,9 @@ export const maskPrivateContent = (post: IPost, userEmail?: string | null) => {
   return { ...post, email: undefined };
 };
 
-export const htmlReplace = (content) => {
+export const htmlReplace = (content: string | null | undefined) => {
   return content === "" || content === null || content === undefined
-    ? content
+    ? ""
     : content
         .toString()
         .replace(/&quot;/gi, "")
