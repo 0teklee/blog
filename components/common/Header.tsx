@@ -2,13 +2,15 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { HEADER_LFET_ITEMS, HEADER_RIGHT_ITEMS } from "./values";
 
-const Header = () => (
+const Header = ({ fonts }: { fonts: string }) => (
   <header
     className={clsx(
       "fixed top-0 w-full p-8",
       "z-40",
       "md:w-screen",
       "mix-blend-difference invert",
+      "font-bold",
+      fonts,
     )}
   >
     <div className={clsx(" flex items-center justify-between")}>
@@ -18,8 +20,8 @@ const Header = () => (
             key={item.id}
             aria-label={item.item}
             className={clsx(
-              "text-lg font-[Cormorant] font-bold",
-              "hover:text-blue-500 hover:invert transition duration-150",
+              "text-lg  font-bold",
+              "hover:text-blue-500 hover:invert transition duration-700",
               idx === 0 && "hidden md:block",
             )}
             href={item.path}
@@ -31,8 +33,8 @@ const Header = () => (
       <Link
         className={clsx(
           "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40",
-          "font-[Cormorant] font-bold",
-          "hover:text-blue-500 hover:invert transition duration-150",
+          "font-bold",
+          "hover:text-blue-500 transition-all duration-700",
           "text-6xl",
         )}
         href="/"
@@ -45,9 +47,9 @@ const Header = () => (
             key={item.id}
             aria-label={item.item}
             className={clsx(
-              "text-lg font-[Cormorant] font-bold",
-              "hover:text-blue-500 hover:invert transition duration-150",
-              idx === 1 && "hidden md:block",
+              "text-lg  font-bold",
+              "hover:text-blue-500 hover:invert transition duration-700",
+              idx === 0 && "hidden md:block",
             )}
             href={item.path}
           >
