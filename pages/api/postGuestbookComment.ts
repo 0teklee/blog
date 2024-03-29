@@ -1,5 +1,6 @@
 import prisma from "libs/prisma";
-import { getScope } from "../../libs/utils/guestbookFetcher";
+import { NextApiRequest, NextApiResponse } from "next";
+import getGoogleScope from "@/pages/api/getGoogleScope";
 
 interface IPostGuestbookCommentProps {
   comment_id: number;
@@ -8,11 +9,14 @@ interface IPostGuestbookCommentProps {
   isPrivate: boolean;
 }
 
-const postGuestbookComment = async (req, res) => {
+const postGuestbookComment = async (
+  req: NextApiRequest,
+  res: NextApiResponse,
+) => {
   const { access_token } = req.query;
   const { body }: { body: IPostGuestbookCommentProps } = req;
   try {
-    const getUserInfo = await getScope(access_token);
+    const getUserInfo = await getGoogleScope(access_token as string);
     const { email, name }: { email: string; name: string } = getUserInfo;
 
     const startDate = new Date();
@@ -38,7 +42,7 @@ const postGuestbookComment = async (req, res) => {
       res.status(400);
       throw Error("You have reached your daily comment limit.");
     }
-    const post = await prisma.guestBookComment.create({
+    await prisma.guestBookComment.create({
       data: {
         name,
         email,
@@ -55,10 +59,9 @@ const postGuestbookComment = async (req, res) => {
 
     return res.status(200).json({ message: "Comment posted successfully." });
   } catch (e) {
-    if (e.message === "Please login again") {
-      return res.status(403).json({ error: e.message, status: 403 });
-    }
-    return e.status(403).json({ error: e.message, status: 403 });
+    console.error(e);
+    res.status(403);
+    res.json({ error: "please login again" });
   }
 };
 

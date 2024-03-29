@@ -1,6 +1,6 @@
 import prisma from "libs/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
-import { IGalleryPost } from "types/IBlogItem";
+import { IGalleryPost } from "@/components/blog/types";
 
 const postGallery = async (req: NextApiRequest, res: NextApiResponse) => {
   const data: IGalleryPost = req.body;
@@ -21,7 +21,7 @@ const postGallery = async (req: NextApiRequest, res: NextApiResponse) => {
 
     res.status(200).json(result);
   } catch (err) {
-    res.status(403).json({ err: err.message });
+    res.status(403).json({ message: "Failed to post gallery" });
   }
 };
 

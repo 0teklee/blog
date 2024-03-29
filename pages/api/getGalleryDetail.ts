@@ -1,11 +1,9 @@
 import prisma from "libs/prisma";
-import { IGalleryPostGetDetail } from "types/IBlogItem";
-import getBlogDetailId from "./getBlogDetailId";
+import { IGalleryPostGetDetail } from "@/components/blog/types";
 
 const getGalleryDetail = async (
-  params: string | string[]
-): Promise<IGalleryPostGetDetail | false> => {
-  const idList = await getBlogDetailId();
+  params: string | string[],
+): Promise<IGalleryPostGetDetail> => {
   const query = Number(params);
 
   try {
@@ -31,7 +29,17 @@ const getGalleryDetail = async (
     return { detail: postDetail };
   } catch (err) {
     console.log(err);
-    return false;
+    return {
+      detail: {
+        id: 0,
+        title: "",
+        imgUrl: "",
+        createdAt: "",
+        galleryCategory: {
+          name: "",
+        },
+      },
+    };
   }
 };
 

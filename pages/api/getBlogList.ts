@@ -1,21 +1,14 @@
 import prisma from "libs/prisma";
+import { IBlogGetListItem } from "@/components/blog/types";
 
-interface IData {
-  detail: {
-    id: number;
-    createdAt: string;
-    title: string;
-    content: string;
-  };
-  nav: { id: number; createdAt: string; title: string }[];
-}
-
-const getBlogList = async (page: string | string[]): Promise<IData> => {
+const getBlogList = async (
+  page: string | string[],
+): Promise<IBlogGetListItem[]> => {
   try {
     const postsDB = await prisma.post.findMany({
       orderBy: { id: "desc" },
       take: 5,
-      skip: Number(page) === 1 ? 0 : (Number(page) - 1) * 5,
+      skip: Number(page) === 1 || !page ? 0 : (Number(page) - 1) * 5,
       select: {
         id: true,
         title: true,
@@ -39,6 +32,7 @@ const getBlogList = async (page: string | string[]): Promise<IData> => {
     return posts;
   } catch (err) {
     console.log(err);
+    return [];
   }
 };
 

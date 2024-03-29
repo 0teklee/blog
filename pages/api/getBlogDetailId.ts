@@ -7,7 +7,10 @@ const getBlogDetailId = async () => {
         id: true,
       },
     });
-    const res = JSON.parse(JSON.stringify(postIdDB));
+    const res = JSON.parse(
+      JSON.stringify(postIdDB.map((item) => `${item.id}`)),
+    );
+
     return res;
   } catch (err) {
     console.log(err);
