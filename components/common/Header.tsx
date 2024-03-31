@@ -5,9 +5,9 @@ import { HEADER_LFET_ITEMS, HEADER_RIGHT_ITEMS } from "./values";
 const Header = ({ fonts }: { fonts: string }) => (
   <header
     className={clsx(
-      "fixed top-0 w-full",
+      "fixed top-0 ",
       "z-40",
-      "md:w-screen",
+      "w-screen",
       "mix-blend-difference invert",
       "font-bold",
       fonts,
