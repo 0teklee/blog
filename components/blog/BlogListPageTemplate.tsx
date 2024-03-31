@@ -2,14 +2,27 @@ import BlogListItem from "components/blog/BlogListItem";
 import { IBlogGetListItem } from "@/components/blog/types";
 import { clsx } from "clsx";
 import BlogListPagination from "./BlogListPagination";
+import getBlogList from "@/pages/api/getBlogList";
+import getBlogCategoryPost from "@/pages/api/getBlogCategoryPost";
 
-const BlogListPageTemplate = ({
-  posts,
+const BlogListPageTemplate = async ({
   searchParams,
 }: {
-  posts?: IBlogGetListItem[];
   searchParams: { [key: string]: string };
 }) => {
+  const getBlogListQuery = async (searchParams: {
+    [key: string]: string;
+  }): Promise<IBlogGetListItem[]> => {
+    "use server";
+    if (!searchParams) return getBlogList("1");
+
+    const { page: blogPage, category } = searchParams;
+
+    if (category) return getBlogCategoryPost(category);
+    return getBlogList(blogPage || "1");
+  };
+
+  const posts = await getBlogListQuery(searchParams);
   return (
     <div className="relative flex flex-col gap-16">
       <h1 className={"text-center text-3xl font-bold font-inter"}>
