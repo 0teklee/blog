@@ -7,7 +7,7 @@ const getBlogDetail = async (
 ): Promise<IBlogGetDetail> => {
   const query = Number(params);
   const idList = await getBlogDetailId();
-  const firstId = idList[0].id;
+  const firstId = idList[0]?.id || 0;
 
   try {
     const postsDB = await prisma.post.findMany({
@@ -25,7 +25,6 @@ const getBlogDetail = async (
             name: true,
           },
         },
-        // post_id: true,
       },
     });
 
