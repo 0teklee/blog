@@ -3,7 +3,7 @@
 import React, { MouseEvent, useState } from "react";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { postGuestbookPostFetcher } from "libs/utils/fetcher";
+import { postGuestbookPostFetcher } from "@/libs/fetcher";
 
 const GuestbookUserCreatePost = () => {
   const queryClient = useQueryClient();

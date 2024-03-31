@@ -6,8 +6,8 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import DOMPurify from "isomorphic-dompurify";
 import { clsx } from "clsx";
 import { useSession } from "next-auth/react";
-import { postGuestbookCommentFetcher } from "libs/utils/fetcher";
-import { htmlReplace } from "libs/utils/utils";
+import { postGuestbookCommentFetcher } from "@/libs/fetcher";
+import { htmlReplace } from "@/libs/utils";
 
 interface IProps {
   id: number;

@@ -6,7 +6,7 @@ import GuestbookListItem from "./GuestbookListItem";
 import { useInView } from "react-intersection-observer";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import Loading from "components/common/Loading";
-import { getGuestbookListFetcher } from "libs/utils/fetcher";
+import { getGuestbookListFetcher } from "@/libs/fetcher";
 
 const GuestbookList = () => {
   const { ref, inView } = useInView();

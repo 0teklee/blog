@@ -4,7 +4,7 @@ import Link from "next/link";
 import { clsx } from "clsx";
 import { memo } from "react";
 import dayjs from "dayjs";
-import { getContentImg } from "libs/utils/utils";
+import { getContentImg } from "@/libs/utils";
 
 const GalleryItem = ({
   id,

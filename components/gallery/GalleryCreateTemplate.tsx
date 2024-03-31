@@ -1,8 +1,6 @@
-"use client";
-
 import React from "react";
 import Editor from "@/components/common/Editor";
-import handlePostGallery from "@/libs/post/handlePostGallery";
+import handlePostGallery from "@/libs/fetcher";
 
 const GalleryCreateTemplate = () => {
   const handleSubmit = (title: string, content: string, category: string) => {

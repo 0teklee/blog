@@ -2,11 +2,7 @@ import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
-import {
-  getContentImg,
-  htmlReplace,
-  setCategoryPresetImg,
-} from "libs/utils/utils";
+import { getContentImg, htmlReplace, setCategoryPresetImg } from "@/libs/utils";
 import Link from "next/link";
 
 const BlogListItem = ({

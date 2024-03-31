@@ -1,7 +1,7 @@
 import { IBlogMainItem } from "@/components/blog/types";
 import { getYPositionClass } from "@/components/landing/utils";
 import dayjs from "dayjs";
-import { htmlReplace } from "libs/utils/utils";
+import { htmlReplace } from "@/libs/utils";
 import { LANDING_LIST_IMAGES } from "./values";
 import Link from "next/link";
 import Image from "next/image";

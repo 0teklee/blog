@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { postBlogContent } from "@/libs/utils/fetcher";
+import { postBlogContent } from "@/libs/fetcher";
 import Title from "@/components/common/Title";
 import Editor from "@/components/common/Editor";
 

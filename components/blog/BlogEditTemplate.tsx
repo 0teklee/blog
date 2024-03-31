@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useSearchParams } from "next/navigation";
-import { putEditBlogContent } from "@/libs/utils/fetcher";
+import { putEditBlogContent } from "@/libs/fetcher";
 import Title from "@/components/common/Title";
 import Editor from "@/components/common/Editor";
 
