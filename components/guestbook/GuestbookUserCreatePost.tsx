@@ -99,7 +99,9 @@ const GuestbookUserCreatePost = () => {
           <div className="flex justify-between">
             <button
               className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
-              onClick={() => {}}
+              onClick={() => {
+                setIsCreatePost(false);
+              }}
             >
               Cancel
             </button>
