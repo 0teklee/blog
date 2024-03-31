@@ -45,9 +45,9 @@ const BlogListItem = ({
           className={clsx(
             "relative",
             "flex-shrink-0",
-            "w-full h-[120px]",
+            "w-full h-[120px] ",
             "rounded-t overflow-hidden",
-            "tablet:rounded-t-none tablet:border-none tablet:w-44 tablet:flex-shrink tablet:h-44",
+            "tablet:rounded-t-none tablet:border-none tablet:flex-shrink tablet:w-44 tablet:h-44",
           )}
         >
           <Image
@@ -61,7 +61,13 @@ const BlogListItem = ({
             priority
           />
         </div>
-        <div className={clsx("flex-1 max-h-80", "flex flex-col gap-4")}>
+        <div
+          className={clsx(
+            "flex-1 max-h-80",
+            "flex flex-col gap-4",
+            "px-2.5 py-2",
+          )}
+        >
           <div>
             <h2
               className={clsx(
