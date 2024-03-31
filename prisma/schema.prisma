@@ -1,12 +1,11 @@
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
+  provider = "prisma-client-js"
 }
 
 datasource db {
-  provider             = "mysql"
-  url                  = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Category {
@@ -18,7 +17,7 @@ model Category {
 model Post {
   id         Int      @id @default(autoincrement())
   title      String
-  content    String   @db.LongText()
+  content    String   @db.Text
   createdAt  DateTime @default(now())
   post_id    Int
   categories Category @relation(fields: [post_id], references: [id])
