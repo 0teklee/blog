@@ -11,8 +11,8 @@ const BlogListPageTemplate = ({
   searchParams: { [key: string]: string };
 }) => {
   return (
-    <div className="relative">
-      <h1 className={clsx("mb-16 text-center")}>
+    <div className="relative flex flex-col gap-16">
+      <h1 className={"text-center text-3xl font-bold font-inter"}>
         {searchParams?.page ? "Blog" : null}
         {searchParams?.category ? posts?.[0]?.categories?.name : null}
       </h1>
@@ -42,7 +42,9 @@ const BlogListPageTemplate = ({
                 categories={item.categories}
               />
             ))}
-          <BlogListPagination searchParams={searchParams} posts={posts} />
+          {searchParams && (
+            <BlogListPagination searchParams={searchParams} posts={posts} />
+          )}{" "}
         </div>
       </div>
     </div>

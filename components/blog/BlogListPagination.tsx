@@ -31,7 +31,7 @@ const BlogListPagination = ({
         prev
       </Link>
     )}
-    {!!searchParams?.page && posts && posts[posts.length - 1].id !== 1 && (
+    {!!searchParams?.page && posts && posts[posts.length - 1]?.id !== 1 && (
       <Link
         className={clsx(
           "mx-8 text-sm",

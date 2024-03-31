@@ -52,7 +52,7 @@ const BlogDetailPageTemplate = ({
             <p>category : {category}</p>
           </div>
         </div>
-        <div className="blog-post-content">
+        <div className="relative blog-post-content">
           {updatedContent ? parsedHTMLTag(updatedContent) : <p>Loading...</p>}
         </div>
         <button
@@ -73,7 +73,12 @@ const BlogDetailPageTemplate = ({
               onClick={() => router.push(`/blog/${next.id}`)}
             >
               <p>next</p>
-              <p className="absolute top-1/2 left-1/2 max-w-50% -translate-x-1/2 -translate-y-1/2 500px:text-sm 500px:max-w-30%">
+              <p
+                className={`
+                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                max-w-50% lg:max-w-30%
+                text-sm line-clamp-1 overflow-ellipsis`}
+              >
                 {nav[1].title}
               </p>
               <p className="text-sm">
@@ -92,7 +97,12 @@ const BlogDetailPageTemplate = ({
               onClick={() => router.push(`/blog/${prev.id}`)}
             >
               <p>{id < prev.id ? "next" : "prev"}</p>
-              <p className="absolute top-1/2 left-1/2 max-w-50% -translate-x-1/2 -translate-y-1/2 500px:text-sm 500px:max-w-30%">
+              <p
+                className={`
+                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                max-w-50% lg:max-w-30%
+                text-sm line-clamp-1 overflow-ellipsis`}
+              >
                 {nav[0].title}
               </p>
               <p className="text-sm">
