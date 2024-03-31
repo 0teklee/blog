@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
-import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
 import {
@@ -10,6 +7,7 @@ import {
   htmlReplace,
   setCategoryPresetImg,
 } from "libs/utils/utils";
+import Link from "next/link";
 
 const BlogListItem = ({
   id,
@@ -18,10 +16,9 @@ const BlogListItem = ({
   title,
   categories,
 }: IBlogGetListItem) => {
-  const router = useRouter();
   const contentReplace = htmlReplace(content);
   return (
-    <section
+    <Link
       className={clsx(
         "w-full",
         "group",
@@ -30,7 +27,7 @@ const BlogListItem = ({
         "hover:bg-gray-100 dark:hover:bg-gray-800",
         "tablet:px-2 tablet:py-3",
       )}
-      onClick={() => router.push(`/blog/${id}`)}
+      href={`/blog/${id}`}
     >
       <div
         className={clsx(
@@ -57,8 +54,9 @@ const BlogListItem = ({
             className={clsx("object-cover")}
             key={`${id}_img`}
             fill={true}
+            sizes={"200px"}
             alt={title}
-            priority
+            priority={true}
           />
         </div>
         <div
@@ -104,7 +102,7 @@ const BlogListItem = ({
           </p>
         </div>
       </div>
-    </section>
+    </Link>
   );
 };
 
