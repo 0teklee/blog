@@ -3,7 +3,7 @@ import getBlogDetailId from "pages/api/getBlogDetailId";
 import getBlogDetail from "pages/api/getBlogDetail";
 import { getImgSrc } from "components/blog/utils";
 
-import { htmlReplace } from "libs/utils/utils";
+import { htmlReplace } from "@/libs/utils";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);

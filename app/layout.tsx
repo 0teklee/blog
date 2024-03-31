@@ -1,9 +1,8 @@
 import "./globals.css";
 import React, { ReactNode } from "react";
 import NextAuthSessionProvider from "components/common/providers/NextAuthSessionProvider";
-import RecoilProvider from "components/common/providers/RecoilProvider";
 import Header from "components/common/Header";
-import NightModeSelectButton from "components/common/NightModeSelectButton";
+import NightModeButton from "@/components/common/NightModeButton";
 import Footer from "components/common/Footer";
 import Script from "next/script";
 import { GA_TRACKING_ID } from "libs/gtag";
@@ -11,6 +10,7 @@ import { Cormorant_Garamond, IBM_Plex_Sans_KR, Inter } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 import { clsx } from "clsx";
+import NightModeProvider from "@/components/common/providers/NightModeProvider";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -56,22 +56,22 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       </head>
       <body>
         <NextAuthSessionProvider>
-          <RecoilProvider>
+          <NightModeProvider>
             <Header fonts={cormorant.className} />
-            <NightModeSelectButton />
+            <NightModeButton />
             <div
               className={clsx(
                 "w-full px-4 py-24",
                 "tablet:px-12",
                 "lg:px-20",
-                "bg-white dark:bg-black",
+                "bg-white dark:bg-gray-950 dark:text-warmGray-50",
                 ibmPlex.className,
               )}
             >
               {children}
             </div>
             <Footer fonts={cormorant.className} />
-          </RecoilProvider>
+          </NightModeProvider>
         </NextAuthSessionProvider>
       </body>
     </html>
