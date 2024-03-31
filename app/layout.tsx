@@ -29,7 +29,7 @@ const ibmPlex = IBM_Plex_Sans_KR({
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html className={inter.className}>
+    <html className={inter.className} lang={`kr`}>
       <head>
         <title>teklog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,7 +64,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
                 "w-full px-4 py-24",
                 "tablet:px-12",
                 "lg:px-20",
-                "bg-white dark:bg-gray-950 dark:text-warmGray-50",
+                "bg-white dark:bg-gray-950 dark:text-neutral-50",
                 ibmPlex.className,
               )}
             >
