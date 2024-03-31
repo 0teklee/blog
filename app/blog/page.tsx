@@ -10,7 +10,7 @@ const page = async ({
 }) => {
   return (
     <Suspense fallback={<Loading />}>
-      <BlogListPageTemplate searchParams={searchParams} />;
+      <BlogListPageTemplate searchParams={searchParams} />
     </Suspense>
   );
 };
