@@ -7,7 +7,7 @@ import NightModeSelectButton from "components/common/NightModeSelectButton";
 import Footer from "components/common/Footer";
 import Script from "next/script";
 import { GA_TRACKING_ID } from "libs/gtag";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Sans_KR, Inter } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 import { clsx } from "clsx";
@@ -20,6 +20,11 @@ const cormorant = Cormorant_Garamond({
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const ibmPlex = IBM_Plex_Sans_KR({
+  subsets: ["latin"],
+  weight: ["300", "400"],
 });
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
@@ -60,6 +65,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
                 "tablet:px-12",
                 "lg:px-20",
                 "bg-white dark:bg-black",
+                ibmPlex.className,
               )}
             >
               {children}
