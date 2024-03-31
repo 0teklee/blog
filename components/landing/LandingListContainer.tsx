@@ -1,8 +1,16 @@
-import React, { ReactNode } from "react";
+import React, { cache } from "react";
 import { clsx } from "clsx";
 import Link from "next/link";
+import LandingListItem from "@/components/landing/LandingListItem";
+import getMainPosts from "@/pages/api/getMainPosts";
 
-const LandingListContainer = ({ children }: { children: ReactNode[] }) => {
+const mainPostsCache = cache(async () => {
+  return await getMainPosts();
+});
+
+const LandingListContainer = async () => {
+  const posts = await mainPostsCache();
+
   return (
     <section>
       <div
@@ -34,7 +42,22 @@ const LandingListContainer = ({ children }: { children: ReactNode[] }) => {
           "md:grid-cols-3",
         )}
       >
-        {children}
+        {posts && posts.length === 0 && (
+          <div className={clsx("flex items-center p-5")}>
+            <p className={clsx("text-xl font-medium")}>No Posts Yet</p>
+          </div>
+        )}
+        {posts &&
+          posts.length > 0 &&
+          posts
+            .filter((item) => item.title && item.content)
+            .map((post, index) => (
+              <LandingListItem
+                key={`recent post_${index}`}
+                post={post}
+                index={index}
+              />
+            ))}
       </div>
     </section>
   );
