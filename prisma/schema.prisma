@@ -4,8 +4,9 @@ generator client {
 }
 
 datasource db {
-  provider             = "mysql"
+  provider             = "postgresql"
   url                  = env("DATABASE_URL")
+  directUrl            = env("DIRECT_URL")
   referentialIntegrity = "prisma"
 }
 
@@ -18,7 +19,7 @@ model Category {
 model Post {
   id         Int      @id @default(autoincrement())
   title      String
-  content    String   @db.LongText()
+  content    String   @db.Text
   createdAt  DateTime @default(now())
   post_id    Int
   categories Category @relation(fields: [post_id], references: [id])
