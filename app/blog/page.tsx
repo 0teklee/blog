@@ -12,8 +12,8 @@ const page = async ({
     "use server";
     if (!searchParams) return getBlogList("1");
 
-    const blogPage = searchParams.page;
-    const category = searchParams.category;
+    const blogPage = searchParams?.page;
+    const category = searchParams?.category;
 
     if (blogPage) return getBlogList(blogPage);
     if (category) return getBlogCategoryPost(category);
