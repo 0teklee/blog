@@ -1,4 +1,4 @@
-import { IGuestbookPost } from "components/guestbook/types";
+import { IGuestbookPost } from "@/components/guestbook/types";
 import {
   DEFAULT_ERROR_IMAGE,
   DEFAULT_ETC_IMAGE,
@@ -8,7 +8,7 @@ import {
   DEFAULT_REACT_IMAGE,
   DEFAULT_RECAP_IMAGE,
   DEFAULT_TS_IMAGE,
-} from "libs/constants";
+} from "@/libs/constants";
 
 export const maskPrivateContent = (
   post: IGuestbookPost,

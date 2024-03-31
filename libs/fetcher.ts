@@ -132,3 +132,29 @@ export const postBlogContent = (
     }),
   });
 };
+
+const handlePostGallery = async (
+  url: string,
+  title: string,
+  content: string,
+  category = "etc",
+) => {
+  if (!title && !content) {
+    alert("Please Insert Title & Content");
+    return;
+  }
+  try {
+    await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title,
+        imgUrl: content,
+        galleryCategory: category,
+      }),
+    });
+  } catch (err) {
+    console.error(err);
+  }
+};
+export default handlePostGallery;

@@ -1,6 +1,6 @@
 import prisma from "libs/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
-import { maskPrivateContent } from "@/libs/utils/utils";
+import { maskPrivateContent } from "@/libs/utils";
 import getGoogleScope from "@/pages/api/getGoogleScope";
 
 const getGuestbookList = async (req: NextApiRequest, res: NextApiResponse) => {
