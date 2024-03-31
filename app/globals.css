@@ -165,3 +165,9 @@
     scale: 1.2;
 }
 
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
 import Image from "next/image";
-import { getContentImg, setCategoryPresetImg } from "libs/utils/utils";
+import { getContentImg, setCategoryPresetImg } from "@/libs/utils";
 
 interface IProps {
   id: number;

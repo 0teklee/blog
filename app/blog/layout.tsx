@@ -1,5 +1,5 @@
 import React, { ReactNode, Suspense } from "react";
-import BlogSideBar from "../../components/blog/BlogSideBar";
+import BlogSideBar from "@/components/blog/BlogSideBar";
 
 const Layout = async ({
   children,
@@ -9,10 +9,7 @@ const Layout = async ({
   searchParams: { category: string };
 }) => {
   return (
-    <main
-      className={`flex flex-col lg:flex-row lg:gap-x-12 w-full`}
-      lang={`kr`}
-    >
+    <main className={`flex flex-col lg:flex-row lg:gap-x-12 lg:pt-12 w-full`}>
       <Suspense fallback={<>Loading...</>}>
         <BlogSideBar searchParams={searchParams} />
       </Suspense>

@@ -1,15 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
-import { useRouter } from "next/navigation";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
-import {
-  getContentImg,
-  htmlReplace,
-  setCategoryPresetImg,
-} from "libs/utils/utils";
+import { getContentImg, htmlReplace, setCategoryPresetImg } from "@/libs/utils";
+import Link from "next/link";
 
 const BlogListItem = ({
   id,
@@ -18,10 +12,9 @@ const BlogListItem = ({
   title,
   categories,
 }: IBlogGetListItem) => {
-  const router = useRouter();
   const contentReplace = htmlReplace(content);
   return (
-    <section
+    <Link
       className={clsx(
         "w-full",
         "group",
@@ -30,7 +23,7 @@ const BlogListItem = ({
         "hover:bg-gray-100 dark:hover:bg-gray-800",
         "tablet:px-2 tablet:py-3",
       )}
-      onClick={() => router.push(`/blog/${id}`)}
+      href={`/blog/${id}`}
     >
       <div
         className={clsx(
@@ -45,9 +38,9 @@ const BlogListItem = ({
           className={clsx(
             "relative",
             "flex-shrink-0",
-            "w-full h-[120px]",
+            "w-full h-[120px] ",
             "rounded-t overflow-hidden",
-            "tablet:rounded-t-none tablet:border-none tablet:w-44 tablet:flex-shrink tablet:h-44",
+            "tablet:rounded-t-none tablet:border-none tablet:flex-shrink tablet:w-44 tablet:h-44",
           )}
         >
           <Image
@@ -57,11 +50,18 @@ const BlogListItem = ({
             className={clsx("object-cover")}
             key={`${id}_img`}
             fill={true}
+            sizes={"200px"}
             alt={title}
-            priority
+            priority={true}
           />
         </div>
-        <div className={clsx("flex-1 max-h-80", "flex flex-col gap-4")}>
+        <div
+          className={clsx(
+            "flex-1 max-h-80",
+            "flex flex-col gap-4",
+            "px-2.5 py-2",
+          )}
+        >
           <div>
             <h2
               className={clsx(
@@ -98,7 +98,7 @@ const BlogListItem = ({
           </p>
         </div>
       </div>
-    </section>
+    </Link>
   );
 };
 

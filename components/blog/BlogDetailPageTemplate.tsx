@@ -25,15 +25,13 @@ const BlogDetailPageTemplate = ({
   id,
   title,
   category,
-  nav,
+  nav: [prev, next],
 }: IProps) => {
-  const [prev, next] = nav;
   const router = useRouter();
   const updatedContent = formatBlogContent(content);
 
   return (
     <div className={clsx("flex flex-col w-full gap-3", "lg:flex-row")}>
-      {/*<BlogSideBar categories={categories} />*/}
       <div
         className={clsx(
           "flex flex-col items-center justify-center gap-5",
@@ -79,10 +77,10 @@ const BlogDetailPageTemplate = ({
                 max-w-50% lg:max-w-30%
                 text-sm line-clamp-1 overflow-ellipsis`}
               >
-                {nav[1].title}
+                {next.title}
               </p>
               <p className="text-sm">
-                {dayjs(nav[1].createdAt).format("YYYY-MM-DD")}
+                {dayjs(next.createdAt).format("YYYY-MM-DD")}
               </p>
             </div>
           )}
@@ -103,10 +101,10 @@ const BlogDetailPageTemplate = ({
                 max-w-50% lg:max-w-30%
                 text-sm line-clamp-1 overflow-ellipsis`}
               >
-                {nav[0].title}
+                {prev.title}
               </p>
               <p className="text-sm">
-                {dayjs(nav[0].createdAt).format("YYYY-MM-DD")}
+                {dayjs(prev.createdAt).format("YYYY-MM-DD")}
               </p>
             </div>
           )}

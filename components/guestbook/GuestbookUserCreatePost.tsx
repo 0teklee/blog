@@ -3,7 +3,7 @@
 import React, { MouseEvent, useState } from "react";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { postGuestbookPostFetcher } from "libs/utils/fetcher";
+import { postGuestbookPostFetcher } from "@/libs/fetcher";
 
 const GuestbookUserCreatePost = () => {
   const queryClient = useQueryClient();
@@ -99,7 +99,9 @@ const GuestbookUserCreatePost = () => {
           <div className="flex justify-between">
             <button
               className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
-              onClick={() => {}}
+              onClick={() => {
+                setIsCreatePost(false);
+              }}
             >
               Cancel
             </button>

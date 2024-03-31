@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import "react-quill/dist/quill.snow.css";
-import { postImageUpload } from "libs/utils/fetcher";
+import { postImageUpload } from "@/libs/fetcher";
 import { EDITOR_FORMATS, EDITOR_TOOLBAR_OPTIONS } from "./values";
 import dynamic from "next/dynamic";
 import { ReactQuillProps } from "react-quill";
