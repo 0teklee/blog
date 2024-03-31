@@ -23,7 +23,7 @@ const BlogSideBar = async ({
         lg:top-20 lg:h-[calc(100vh-4rem)]`}
     >
       <div className="flex justify-between">
-        <details className={`w-full group`}>
+        <details className={`w-full group blog-sidebar`}>
           <summary
             className={`
             flex justify-between
@@ -45,7 +45,7 @@ const BlogSideBar = async ({
             categories.map((category) => (
               <details
                 key={`${category.name}_wrapper`}
-                className="flex flex-col items-start justify-center gap-5 bg-white overflow-scroll break-all"
+                className="flex flex-col items-start justify-center gap-5 bg-white overflow-scroll break-all blog-sidebar"
               >
                 <summary
                   className={`
