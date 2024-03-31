@@ -1,12 +1,7 @@
-import getMainPosts from "pages/api/getMainPosts";
 import { THEME_META_IMAGE } from "libs/constants";
 import LandingTemplate from "components/landing/LandingTemplate";
 
-const Home = async () => {
-  const posts = await getMainPosts();
-
-  return <LandingTemplate posts={posts} />;
-};
+const Home = async () => <LandingTemplate />;
 
 export default Home;
 
