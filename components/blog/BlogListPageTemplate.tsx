@@ -23,8 +23,9 @@ const BlogListPageTemplate = async ({
   };
 
   const posts = await getBlogListQuery(searchParams);
+
   return (
-    <div className="relative flex flex-col gap-16">
+    <div className="relative flex flex-col gap-16 lg:flex-grow">
       <h1 className={"text-center text-3xl font-bold font-inter"}>
         {searchParams?.page ? "Blog" : null}
         {searchParams?.category ? posts?.[0]?.categories?.name : null}
@@ -57,7 +58,7 @@ const BlogListPageTemplate = async ({
             ))}
           {searchParams && (
             <BlogListPagination searchParams={searchParams} posts={posts} />
-          )}{" "}
+          )}
         </div>
       </div>
     </div>
