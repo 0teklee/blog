@@ -6,15 +6,23 @@ import { clsx } from "clsx";
 
 const LoginTemplate = () => {
   const { data: session } = useSession();
+  const login = async () => {
+    console.log("login");
+    await signIn("Github", {
+      redirect: true,
+    }).then((res) => {
+      console.log("res done", res);
+    });
+  };
   return (
     <div className={clsx("flex justify-center items-center flex-col")}>
       {!session && (
         <>
           <h1 className={clsx("mb-[5rem]")}>Log In</h1>
           <button
-            onClick={(e) => {
+            onClick={async (e) => {
               e.preventDefault();
-              signIn("github");
+              await login();
             }}
             className={clsx(
               "block p-4 border border-black rounded-full",
@@ -29,9 +37,9 @@ const LoginTemplate = () => {
         <>
           <h1 className={clsx("mb-12")}>Sign Out</h1>
           <button
-            onClick={(e) => {
+            onClick={async (e) => {
               e.preventDefault();
-              signOut();
+              await signOut();
             }}
             className={clsx(
               "block p-4 border border-black rounded-full",

@@ -7,7 +7,7 @@ const GuestGoogleLogin = () => {
   return (
     <div className={clsx("flex justify-center mt-6")}>
       <button
-        onClick={() => signIn("google", { redirect: false })}
+        onClick={async () => await signIn("google", { redirect: true })}
         className={clsx("text-sm")}
       >
         Login with Google to post
