@@ -34,9 +34,6 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
         <title>teklog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="teklog - web dev & etc" />
-        <link rel="shortcut icon" href="/app/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon-precomposed" href="/app/favicon.ico" />
-        <link rel="shortcut icon" href="/app/favicon.ico" type="image/x-icon" />
         <link rel="canonical" href="https://www.teklog.site" key="canonical" />
         <Script
           async
