@@ -2,18 +2,24 @@ import NextAuth, { AuthOptions } from "next-auth";
 import Github from "next-auth/providers/github";
 import Google from "next-auth/providers/google";
 
+const providers = [
+  Github({
+    clientId: process.env.GITHUB_ID as string,
+    clientSecret: process.env.GITHUB_SECRET as string,
+    client: {
+      client_secret: process.env.GITHUB_SECRET as string,
+      client_id: process.env.GITHUB_ID as string,
+    },
+  }),
+  Google({
+    clientId: process.env.GUESTBOOK_GAUTH_CLIENT_ID as string,
+    clientSecret: process.env.GUESTBOOK_GAUTH_CLIENTPW as string,
+  }),
+];
+
 export const authOptions: AuthOptions = {
-  providers: [
-    Github({
-      clientId: process.env.GITHUB_ID || "",
-      clientSecret: process.env.GITHUB_SECRET || "",
-    }),
-    Google({
-      clientId: process.env.GUESTBOOK_GAUTH_CLIENT_ID || "",
-      clientSecret: process.env.GUESTBOOK_GAUTH_CLIENTPW || "",
-    }),
-  ],
-  secret: process.env.NEXT_SECRET,
+  providers,
+  secret: process.env.NEXT_SECRET as string,
   session: {
     strategy: "jwt",
   },
@@ -25,6 +31,10 @@ export const authOptions: AuthOptions = {
         token.accessToken = account.access_token;
       }
       return token;
+    },
+    async session({ session }) {
+      console.log("session", session);
+      return session;
     },
   },
 };
