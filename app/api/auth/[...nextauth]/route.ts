@@ -26,16 +26,22 @@ export const authOptions: AuthOptions = {
   useSecureCookies: true,
   debug: true,
   callbacks: {
-    async jwt({ token, account }) {
-      if (account) {
-        token.accessToken = account.access_token;
-      }
-      return token;
+    async signIn({ profile }) {
+      console.log("signIn", profile);
+      return profile?.name === "0teklee";
     },
-    async session({ session }) {
-      console.log("session", session);
-      return session;
-    },
+  },
+  // @ts-ignore
+  async jwt({ token, account }) {
+    if (account) {
+      token.accessToken = account.access_token;
+    }
+    return token;
+  },
+  // @ts-ignore
+  async session({ session }) {
+    console.log("session", session);
+    return session;
   },
 };
 
