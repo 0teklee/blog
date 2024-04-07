@@ -35,7 +35,7 @@ const BlogDetailPageTemplate = ({
       <div
         className={clsx(
           "flex flex-col items-center justify-center gap-5",
-          "lg:py-5 lg:pr-12",
+          "lg:py-5 lg:flex-grow lg:pt-0 2xl:pr-[20%]",
         )}
       >
         <div className="w-full">
