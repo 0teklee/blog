@@ -72,7 +72,7 @@ const LandingListItem = ({
         <div
           className={`flex items-start justify-between
             w-full z-20
-            bg-white
+            bg-white dark:bg-gray-950
             text-xs
             font-normal`}
         >
