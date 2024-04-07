@@ -1,16 +1,16 @@
+"use client";
+
 import Title from "components/common/Title";
 import React, { Suspense } from "react";
 import GuestbookList from "components/guestbook/GuestbookList";
 import Loading from "components/common/Loading";
 import GuestbookUserCreatePost from "components/guestbook/GuestbookUserCreatePost";
-import { getServerSession } from "next-auth";
 import GuestGoogleLogin from "components/guestbook/GuestGoogleLogin";
+import { useSession } from "next-auth/react";
 
-const GuestbookTemplate = async () => {
-  const session = await getServerSession({
-    secret: process.env.NEXT_SECRET as string,
-  });
-  const isLogin = session?.user;
+const GuestbookTemplate = () => {
+  const session = useSession();
+  const isLogin = session?.data;
   return (
     <article className={`flex flex-col items-center `}>
       <Title title="Guestbook" customStyle={`text-center`} />
