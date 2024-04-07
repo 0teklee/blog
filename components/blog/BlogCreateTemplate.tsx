@@ -16,9 +16,6 @@ const BlogCreateTemplate = () => {
   const isAdmin =
     name === process.env.ADMIN_NAME || email === process.env.ADMIN_EMAIL;
 
-  console.log("isAdmin", isAdmin);
-  console.log("session", session, process.env.ADMIN_EMAIL);
-
   return (
     <div className="flex flex-col items-center w-full">
       <Title title="Create Blog" customStyle={`text-center`} />
