@@ -15,7 +15,7 @@ const NightModeButton = () => {
     >
       <button
         className={clsx(
-          "cursor-pointer text-3xl font-[Cormorant]",
+          "cursor-pointer text-xl font-[Cormorant]",
           "transition duration-150 hover:invert",
           mode ? "text-amber-300" : "text-blue-900",
         )}

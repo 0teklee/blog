@@ -51,7 +51,7 @@ const LandingListItem = ({
             w-full p-4
             text-center
             z-10
-            invert mix-blend-difference`}
+            invert mix-blend-difference dark:text-black`}
         >
           <h3
             className={`w-full px-4

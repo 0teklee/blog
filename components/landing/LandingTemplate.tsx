@@ -6,7 +6,7 @@ import Loading from "@/components/common/Loading";
 
 const LandingTemplate = async () => {
   return (
-    <main className={clsx("flex flex-col gap-6", "lg:gap-16")}>
+    <main className={clsx("flex flex-col gap-6 pt-6", "lg:gap-16")}>
       <section
         className={clsx(`w-full mb-5 animate-intro`, "text-3xl font-semibold")}
       >
