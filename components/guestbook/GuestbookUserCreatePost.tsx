@@ -56,7 +56,7 @@ const GuestbookUserCreatePost = () => {
       {!isCreatePost && (
         <div className="flex justify-center w-full mt-6 text-base">
           <button
-            className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+            className="px-3 py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
             onClick={() => setIsCreatePost(true)}
           >
             Create Post
