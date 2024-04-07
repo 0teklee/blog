@@ -28,6 +28,7 @@ const nextConfig = {
     ADMIN_GUESTBOOK_TOKEN: process.env.ADMIN_GUESTBOOK_TOKEN,
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
     ADMIN_NAME: process.env.ADMIN_NAME,
+    NEXTAUTH_URL: process.env.NEXTAUTH_URL,
   },
   compress: true,
 };
