@@ -26,6 +26,8 @@ const nextConfig = {
     GUESTBOOK_GAUTH_CLIENT_ID: process.env.GUESTBOOK_GAUTH_CLIENT_ID,
     GUESTBOOK_GAUTH_CLIENTPW: process.env.GUESTBOOK_GAUTH_CLIENTPW,
     ADMIN_GUESTBOOK_TOKEN: process.env.ADMIN_GUESTBOOK_TOKEN,
+    ADMIN_EMAIL: process.env.ADMIN_EMAIL,
+    ADMIN_NAME: process.env.ADMIN_NAME,
   },
   compress: true,
 };
