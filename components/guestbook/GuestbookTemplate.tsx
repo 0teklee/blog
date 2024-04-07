@@ -7,7 +7,9 @@ import { getServerSession } from "next-auth";
 import GuestGoogleLogin from "components/guestbook/GuestGoogleLogin";
 
 const GuestbookTemplate = async () => {
-  const session = await getServerSession();
+  const session = await getServerSession({
+    secret: process.env.NEXT_SECRET as string,
+  });
   const isLogin = session?.user;
   return (
     <article className={`flex flex-col items-center `}>

@@ -3,7 +3,9 @@ import GalleryCreateTemplate from "@/components/gallery/GalleryCreateTemplate";
 import { getServerSession } from "next-auth";
 
 const page = async () => {
-  const session = await getServerSession();
+  const session = await getServerSession({
+    secret: process.env.NEXT_SECRET as string,
+  });
 
   const name = session?.user?.name || "unknown";
   const email = session?.user?.email || "unknown";
