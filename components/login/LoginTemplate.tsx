@@ -7,13 +7,9 @@ import { clsx } from "clsx";
 const LoginTemplate = () => {
   const { data: session } = useSession();
   const login = async () => {
-    console.log("login");
-    await signIn("Github", {
-      redirect: true,
-    }).then((res) => {
-      console.log("res done", res);
-    });
+    await signIn("github");
   };
+
   return (
     <div className={clsx("flex justify-center items-center flex-col")}>
       {!session && (
@@ -29,7 +25,7 @@ const LoginTemplate = () => {
               "text-sm font-bold cursor-pointer",
             )}
           >
-            <p>Login With Github</p>
+            <p>Login</p>
           </button>
         </>
       )}
