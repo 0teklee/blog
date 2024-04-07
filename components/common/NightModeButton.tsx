@@ -10,14 +10,14 @@ const NightModeButton = () => {
   return (
     <div
       className={clsx(
-        "fixed left-1/2 top-24 -translate-x-1/2 -translate-y-1/2",
+        "fixed left-1/2 top-24 -translate-x-1/2 -translate-y-1/2 z-30",
       )}
     >
       <button
         className={clsx(
-          "cursor-pointer text-xl font-[Cormorant]",
+          "cursor-pointer text-3xl font-[Cormorant]",
           "transition duration-150 hover:invert",
-          mode ? "text-amber-300" : "text-indigo-700",
+          mode ? "text-amber-300" : "text-blue-900",
         )}
         about="night/day_mode"
         onClick={() => setMode((prev) => !prev)}

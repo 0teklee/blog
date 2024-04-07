@@ -9,7 +9,9 @@ const Layout = async ({
   searchParams: { category: string };
 }) => {
   return (
-    <main className={`flex flex-col lg:flex-row lg:gap-x-12 lg:pt-12 w-full`}>
+    <main
+      className={`flex flex-col lg:flex-row pt-6 lg:gap-x-12 lg:pt-12 w-full`}
+    >
       <Suspense fallback={<>Loading...</>}>
         <BlogSideBar searchParams={searchParams} />
       </Suspense>
