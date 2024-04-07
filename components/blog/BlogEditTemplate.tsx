@@ -14,7 +14,7 @@ const BlogEditTemplate = () => {
   const name = session?.data?.user?.name || "unknown";
   const email = session?.data?.user?.email || "unknown";
   const isAdmin =
-    name === process.env.ADMIN_NAME || email === process.env.ANMIN_EMAIL;
+    name === process.env.ADMIN_NAME || email === process.env.ADMIN_EMAIL;
 
   const id = params?.get("id") || "";
   const handleSubmit = (title: string, content: string, category: string) => {
