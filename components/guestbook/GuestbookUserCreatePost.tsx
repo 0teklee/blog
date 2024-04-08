@@ -4,14 +4,17 @@ import React, { MouseEvent, useState } from "react";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { postGuestbookPostFetcher } from "@/libs/fetcher";
+import { Session } from "next-auth";
 
-const GuestbookUserCreatePost = () => {
+const GuestbookUserCreatePost = ({ session }: { session: Session }) => {
   const queryClient = useQueryClient();
 
   const [author, setAuthor] = useState("");
   const [postGext, setPostGext] = useState("");
   const [isPrivate, setIsPrivate] = useState(false);
   const [isCreatePost, setIsCreatePost] = useState(false);
+
+  const token = session.user;
 
   const handleAuthor = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length > 30) return;
@@ -29,7 +32,12 @@ const GuestbookUserCreatePost = () => {
 
   const { mutate } = useMutation({
     mutationFn: () =>
-      postGuestbookPostFetcher("", { author, post: postGext, isPrivate }),
+      postGuestbookPostFetcher({
+        author,
+        post: postGext,
+        isPrivate,
+        email: session.user?.email || "",
+      }),
     onSuccess: () => {
       queryClient.invalidateQueries(["getGuestbookList"]);
     },
@@ -72,7 +80,7 @@ const GuestbookUserCreatePost = () => {
               onChange={handleAuthor}
               value={author}
               maxLength={30}
-              className="ml-4 py-2 px-2 border border-gray-200 rounded focus:border-blue-300"
+              className="ml-4 py-2 px-3 border border-gray-200 rounded focus:border-blue-300"
             />
             <span className="ml-4 text-sm"> ( {author.length} / 30 ) </span>
           </div>
@@ -98,7 +106,7 @@ const GuestbookUserCreatePost = () => {
           </div>
           <div className="flex justify-between">
             <button
-              className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+              className="px-3 py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
               onClick={() => {
                 setIsCreatePost(false);
               }}
@@ -106,7 +114,7 @@ const GuestbookUserCreatePost = () => {
               Cancel
             </button>
             <button
-              className="py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
+              className="px-3 py-2 border border-gray-200 rounded text-sm hover:bg-gray-200"
               onClick={handleSubmit}
             >
               Submit

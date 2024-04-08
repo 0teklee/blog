@@ -10,12 +10,12 @@ import { useSession } from "next-auth/react";
 
 const GuestbookTemplate = () => {
   const session = useSession();
-  const isLogin = session?.data;
+  const userSession = session?.data;
   return (
     <article className={`flex flex-col items-center `}>
       <Title title="Guestbook" customStyle={`text-center`} />
-      {!!isLogin && <GuestbookUserCreatePost />}
-      {!isLogin && <GuestGoogleLogin />}
+      {!!userSession && <GuestbookUserCreatePost session={userSession} />}
+      {!userSession && <GuestGoogleLogin />}
       <Suspense fallback={<Loading />}>
         <GuestbookList />
       </Suspense>

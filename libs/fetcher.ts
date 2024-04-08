@@ -4,6 +4,7 @@ interface IPostGuestbookPostProps {
   author: string;
   post: string;
   isPrivate: boolean;
+  email: string;
 }
 
 interface IPostGuestbookCommentProps {
@@ -32,20 +33,21 @@ export const getGuestbookListFetcher = async (
 };
 
 export const postGuestbookPostFetcher = async (
-  access_token: string,
   body: IPostGuestbookPostProps,
 ) => {
+  if (!body.post || !body.author || !body.email) {
+    alert("please login and fill out all fields");
+    return;
+  }
+
   try {
-    const res = await fetch(
-      `/api/postGuestbookPost?access_token=${access_token}`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify(body),
+    const res = await fetch(`/api/postGuestbookPost`, {
+      headers: {
+        "Content-Type": "application/json",
       },
-    );
+      method: "POST",
+      body: JSON.stringify(body),
+    });
 
     return res.json();
   } catch (err) {
