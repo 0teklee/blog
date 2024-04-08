@@ -13,7 +13,7 @@ const GallerySidebar = async () => {
       className={clsx(
         "flex-shrink",
         "lg:fixed lg:top-auto lg:left-0  ",
-        "bg-white",
+        "bg-white dark:bg-gray-950",
         "lg:pl-8",
         "",
       )}
