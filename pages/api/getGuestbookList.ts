@@ -1,10 +1,9 @@
 import prisma from "libs/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
 import { maskPrivateContent } from "@/libs/utils";
-import getGoogleScope from "@/pages/api/getGoogleScope";
 
 const getGuestbookList = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { access_token, cursor } = req.query;
+  const { user, cursor } = req.query;
   try {
     const posts = await prisma.guestBookPost.findMany({
       take: 5,
@@ -30,17 +29,8 @@ const getGuestbookList = async (req: NextApiRequest, res: NextApiResponse) => {
       orderBy: { createdAt: "desc" },
     });
 
-    let userEmail = "";
-    if (access_token) {
-      const getScope = await getGoogleScope((access_token as string) || "");
-      userEmail = (await getScope.json()).email;
-    }
-
     const processedPosts = posts.map((post) =>
-      maskPrivateContent(
-        post,
-        userEmail === process.env.ADMIN_GUESTBOOK_TOKEN ? "" : userEmail,
-      ),
+      maskPrivateContent(post, user as string),
     );
 
     res.setHeader("Content-Type", "application/json");

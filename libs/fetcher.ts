@@ -16,14 +16,18 @@ interface IPostGuestbookCommentProps {
 
 export const getGuestbookListFetcher = async (
   cursorIn: number,
+  email: string | null | undefined,
 ): Promise<IGuestbookPost[]> => {
   try {
-    const res = await fetch(`/api/getGuestbookList?cursor=${cursorIn}`, {
-      headers: {
-        "Content-Type": "application/json",
-        "Cache-Control": "no-cache",
+    const res = await fetch(
+      `/api/getGuestbookList?cursor=${cursorIn}&user=${email || ""}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+        },
       },
-    });
+    );
     const pageData: IGuestbookPost[] = await res.json();
     return pageData;
   } catch (err) {

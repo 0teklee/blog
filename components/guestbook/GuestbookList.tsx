@@ -7,9 +7,11 @@ import { useInView } from "react-intersection-observer";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import Loading from "components/common/Loading";
 import { getGuestbookListFetcher } from "@/libs/fetcher";
+import { useSession } from "next-auth/react";
 
 const GuestbookList = () => {
   const { ref, inView } = useInView();
+  const session = useSession();
 
   const {
     data,
@@ -19,7 +21,8 @@ const GuestbookList = () => {
     error: isError,
   } = useInfiniteQuery({
     queryKey: ["guestbookList"],
-    queryFn: ({ pageParam = 0 }) => getGuestbookListFetcher(pageParam),
+    queryFn: ({ pageParam = 0 }) =>
+      getGuestbookListFetcher(pageParam, session?.data?.user?.email),
     cacheTime: 0,
     refetchOnWindowFocus: false,
     getNextPageParam: (lastPage, allPages) => {

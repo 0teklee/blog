@@ -14,7 +14,11 @@ export const maskPrivateContent = (
   post: IGuestbookPost,
   userEmail?: string | null,
 ) => {
-  if (post.isPrivate && post.email !== userEmail) {
+  if (
+    post.isPrivate &&
+    post.email !== userEmail &&
+    userEmail !== process.env.ADMIN_EMAIL
+  ) {
     post = {
       ...post,
       post: "This is a private post 🔒",
@@ -22,7 +26,11 @@ export const maskPrivateContent = (
     };
   }
   post.comments = post.comments.map((comment) => {
-    if (comment.isPrivate && comment.email !== userEmail) {
+    if (
+      comment.isPrivate &&
+      comment.email !== userEmail &&
+      userEmail !== process.env.ADMIN_EMAIL
+    ) {
       return {
         ...comment,
         author: "anonymous",
