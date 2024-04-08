@@ -7,6 +7,7 @@ const InfoTemplate = () => (
     <section className={clsx("mt-12 pb-8")}>
       <div className={clsx("flex justify-center items-center mb-8")}>
         <Image
+          className={"rounded-full"}
           src="https://res.cloudinary.com/dolziw8fv/image/upload/v1663058798/logo_ktizgo.jpg"
           width={300}
           height={300}

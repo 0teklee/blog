@@ -7,6 +7,7 @@ const Loading = () => {
   return (
     <div className={clsx("flex flex-col items-center justify-center p-8")}>
       <Image
+        className={`rounded-full`}
         src={THEME_LOGO_IMAGE}
         alt="hummingbird"
         width={200}
