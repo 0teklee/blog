@@ -14,8 +14,6 @@ const GuestbookUserCreatePost = ({ session }: { session: Session }) => {
   const [isPrivate, setIsPrivate] = useState(false);
   const [isCreatePost, setIsCreatePost] = useState(false);
 
-  const token = session.user;
-
   const handleAuthor = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.length > 30) return;
     setAuthor(e.target.value);
