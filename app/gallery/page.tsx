@@ -21,7 +21,7 @@ const page = async ({
     <>
       <Title title="Gallery" customStyle={"text-center mb-5"} />
       <section className="md:pl-36 py-4 md:py-0">
-        <div className={clsx("gallery-list-col gap-y-[100px]")}>
+        <div className={clsx("gallery-list-col gap-y-[100px] pt-12")}>
           {posts?.map((item, i) => (
             <GalleryItem
               key={`${item.title}_key_${i}`}

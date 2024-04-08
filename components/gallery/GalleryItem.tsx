@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { clsx } from "clsx";
 import { memo } from "react";
-import dayjs from "dayjs";
 import { getContentImg } from "@/libs/utils";
 
 const GalleryItem = ({
@@ -24,12 +23,14 @@ const GalleryItem = ({
         "relative group",
         "cursor-pointer transition duration-300 ",
         "max-w-[300px] max-h-[400px]",
+        "flex items-end lg:block",
       )}
       href={`/gallery/${id}`}
     >
       <Image
         className={`
-        mb-10 
+        flex-grow
+        mb-10
         group-hover:blur-md 
         group-hover:invert
         transition duration-[3s]`}
@@ -42,20 +43,6 @@ const GalleryItem = ({
         placeholder={"blur"}
         blurDataURL={contentUrl}
       />
-      <abbr
-        className={`
-        absolute top-1/2 left-1/2 
-        -translate-x-1/2 -translate-y-1/2 
-        opacity-0 group-hover:opacity-100
-        items-center gap-1 
-        transition-all duration-[5s]
-        text-sm text-white
-        mix-blend-difference`}
-      >
-        {title}
-        <br />
-        {dayjs(createdAt).format("YYMMDD")}
-      </abbr>
     </Link>
   );
 };

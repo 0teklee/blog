@@ -147,7 +147,8 @@
 
 .gallery-list-col > a:first-child {
     position: relative;
-    left: 25%;
+    left: 4.2%;
+    /*left: 25%;*/
     bottom: -2rem;
 }
 
@@ -162,7 +163,7 @@
     right: 15%;
 }
 
-.gallery-list-col > a:nth-of-type(5n+2) > img {
+.gallery-list-col > a:nth-of-type(2n+2) > img {
     scale: 0.5;
 }
 
