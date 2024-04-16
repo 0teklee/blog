@@ -12,11 +12,13 @@ interface IProps {
   id: number;
   title: string;
   category: string;
-  nav: {
+  nav: ({
+    createdAt: Date;
     id: number;
-    createdAt: string;
     title: string;
-  }[];
+    content: string;
+    categories: { name: string };
+  } | null)[];
 }
 
 const BlogDetailPageTemplate = ({

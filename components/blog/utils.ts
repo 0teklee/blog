@@ -12,7 +12,7 @@ export const initialCategoryState = (categories: IBlogGetCategorySideBar[]) =>
     );
 
 export const getImgSrc = (content: string) => {
-  const matchSrc = content.match(imgSrcReplaceReg);
+  const matchSrc = content?.match(imgSrcReplaceReg);
   const isImage =
     content && matchSrc && matchSrc.some((item) => item.includes("cloudinary"));
 

@@ -42,14 +42,19 @@ interface IBlogGetCategory {
 
 interface IBlogGetDetail {
   detail: {
+    createdAt: Date;
     id: number;
-    createdAt: string;
     title: string;
     content: string;
     categories: { name: string };
-    tags: { tag: string }[];
-  };
-  nav: { id: number; createdAt: string; title: string }[];
+  } | null;
+  nav: ({
+    createdAt: Date;
+    id: number;
+    title: string;
+    content: string;
+    categories: { name: string };
+  } | null)[];
 }
 
 interface IBlogGetCategorySideBar {
