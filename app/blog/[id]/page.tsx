@@ -4,9 +4,18 @@ import getBlogDetail from "pages/api/getBlogDetail";
 import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
+import Loading from "@/components/common/Loading";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
+
+  if (!post || !post.detail) {
+    return (
+      <div className={`w-full`}>
+        <Loading />
+      </div>
+    );
+  }
 
   const { detail, nav } = post;
   const { content, createdAt, id: postId, title, categories } = detail;
@@ -14,7 +23,7 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
   return (
     <BlogDetailPageTemplate
       content={content}
-      createdAt={createdAt}
+      createdAt={createdAt.toString()}
       title={title}
       id={postId}
       category={categories.name}
@@ -25,7 +34,6 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
 
 export default page;
 
-// dynamic 으로 교체
 export const generateStaticParams = async () => {
   const paths = await getBlogDetailId();
 
@@ -42,7 +50,7 @@ export async function generateMetadata({
   }
   const data = await getBlogDetail(id);
 
-  if (!data) {
+  if (!data || !data.detail) {
     return {};
   }
 
@@ -50,9 +58,9 @@ export async function generateMetadata({
 
   return {
     title: `${data.detail.title} - teklog`,
-    description: htmlReplace(data?.detail?.content).slice(0, 200),
+    description: htmlReplace(data.detail.content).slice(0, 200),
     openGraph: {
-      title: `${data.detail.title} - teklog`,
+      title: `${data?.detail?.title} - teklog`,
       description: htmlReplace(data.detail.content).slice(0, 200) || "",
       images: ImageSrc,
     },
