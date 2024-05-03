@@ -49,7 +49,7 @@ const getBlogDetail = async (
             { categories: { name: { not: "daily" } } },
           ],
         },
-        orderBy: { id: "asc" }, // 오름차순 정렬하여 가장 가까운 다음 ID 선택
+        orderBy: { id: "asc" },
         take: 1,
         select: {
           id: true,
