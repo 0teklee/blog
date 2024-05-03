@@ -14,7 +14,7 @@ const LandingTemplate = async () => {
         <p>LEE TEK WOO</p>
         <p>Tech Blog</p>
       </section>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading style={`h-[280px]`} />}>
         <LandingListContainer />
       </Suspense>
       <LandingAboutMe />

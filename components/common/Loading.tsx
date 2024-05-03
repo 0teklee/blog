@@ -3,9 +3,11 @@ import { clsx } from "clsx";
 import { THEME_LOGO_IMAGE } from "libs/constants";
 import React from "react";
 
-const Loading = () => {
+const Loading = ({ style }: { style?: string }) => {
   return (
-    <div className={clsx("flex flex-col items-center justify-center p-8")}>
+    <div
+      className={clsx("flex flex-col items-center justify-center p-8", style)}
+    >
       <Image
         className={`rounded-full`}
         src={THEME_LOGO_IMAGE}
