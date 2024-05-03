@@ -42,7 +42,7 @@ const InfoTemplate = () => (
             "hover:bg-blue-500 hover:text-white",
             "transition-colors duration-500 ease-in-out",
           )}
-          href="https://drive.google.com/file/d/19je6lNnGQnYhUz-8jDlRGaVxhTjF__5h/view?usp=sharing"
+          href="https://https://0teklee.github.io/resume/"
         >
           프론트 개발자 이택우 이력서
         </Link>
@@ -52,7 +52,7 @@ const InfoTemplate = () => (
             "hover:bg-blue-500 hover:text-white",
             "transition-colors duration-500 ease-in-out",
           )}
-          href="https://drive.google.com/file/d/19je6lNnGQnYhUz-8jDlRGaVxhTjF__5h/view?usp=sharing"
+          href="https://0teklee.github.io/resume/cv.html"
         >
           {`Link to LEE TEKWOO'S CV (KR)`}
         </Link>
