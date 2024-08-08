@@ -8,7 +8,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <ReactQueryProvider>{children}</ReactQueryProvider>;
       <Script
         src="https://package.commenti.co/commenti.umd.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
+        async={true}
       />
     </>
   );
