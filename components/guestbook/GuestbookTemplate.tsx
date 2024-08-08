@@ -2,11 +2,12 @@
 
 import Title from "components/common/Title";
 import React, { Suspense } from "react";
-import GuestbookList from "components/guestbook/GuestbookList";
-import Loading from "components/common/Loading";
 import GuestbookUserCreatePost from "components/guestbook/GuestbookUserCreatePost";
 import GuestGoogleLogin from "components/guestbook/GuestGoogleLogin";
 import { useSession } from "next-auth/react";
+import GuestbookList from "@/components/guestbook/GuestbookList";
+import Loading from "@/components/common/Loading";
+import CommentiSection from "@/components/guestbook/GuestbookCommenti";
 
 const GuestbookTemplate = () => {
   const session = useSession();
@@ -19,6 +20,8 @@ const GuestbookTemplate = () => {
       <Suspense fallback={<Loading />}>
         <GuestbookList />
       </Suspense>
+      {/*@ts-ignore*/}
+      <CommentiSection />
     </article>
   );
 };
