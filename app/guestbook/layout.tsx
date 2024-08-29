@@ -6,11 +6,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <ReactQueryProvider>{children}</ReactQueryProvider>;
-      <Script
-        src="https://package.commenti.co/commenti.umd.js"
-        strategy="lazyOnload"
-        async={true}
-      />
+      <Script src="https://package.commenti.co/commenti.umd.js" async={true} />
     </>
   );
 };

@@ -12,5 +12,5 @@ export default function CommentiSection() {
     }
   }, []);
 
-  return <div ref={ref} />;
+  return <div className={`w-full`} ref={ref} />;
 }
