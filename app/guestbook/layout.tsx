@@ -5,7 +5,7 @@ import Script from "next/script";
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <ReactQueryProvider>{children}</ReactQueryProvider>;
+      <ReactQueryProvider>{children}</ReactQueryProvider>
       <Script src="https://package.commenti.co/commenti.umd.js" async={true} />
     </>
   );
