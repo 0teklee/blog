@@ -7,7 +7,6 @@ import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
 import React from "react";
 import Script from "next/script";
-import CommentiSection from "@/components/guestbook/GuestbookCommenti";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
@@ -36,7 +35,6 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
         category={categories.name}
         nav={nav}
       />
-      <CommentiSection />
     </>
   );
 };

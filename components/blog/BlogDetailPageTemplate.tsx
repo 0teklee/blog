@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { formatBlogContent } from "./utils";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
+import CommentiSection from "@/components/guestbook/GuestbookCommenti";
+import React from "react";
 
 interface IProps {
   content: string;
@@ -54,6 +56,9 @@ const BlogDetailPageTemplate = ({
         </div>
         <div className="relative blog-post-content">
           {updatedContent ? parsedHTMLTag(updatedContent) : <p>Loading...</p>}
+        </div>
+        <div className={`w-full my-8`}>
+          <CommentiSection />
         </div>
         <button
           className="unset-cursor mt-12 font-sans font-light hover:text-blue-500 hover:bg-sign transition-all duration-500"
