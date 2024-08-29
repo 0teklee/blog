@@ -5,15 +5,20 @@ import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
+import React from "react";
+import Script from "next/script";
+import CommentiSection from "@/components/guestbook/GuestbookCommenti";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
 
   if (!post || !post.detail) {
     return (
-      <div className={`w-full`}>
-        <Loading />
-      </div>
+      <>
+        <div className={`w-full`}>
+          <Loading />
+        </div>
+      </>
     );
   }
 
@@ -21,14 +26,18 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
   const { content, createdAt, id: postId, title, categories } = detail;
 
   return (
-    <BlogDetailPageTemplate
-      content={content}
-      createdAt={createdAt.toString()}
-      title={title}
-      id={postId}
-      category={categories.name}
-      nav={nav}
-    />
+    <>
+      <Script src="https://package.commenti.co/commenti.umd.js" async={true} />
+      <BlogDetailPageTemplate
+        content={content}
+        createdAt={createdAt.toString()}
+        title={title}
+        id={postId}
+        category={categories.name}
+        nav={nav}
+      />
+      <CommentiSection />
+    </>
   );
 };
 
