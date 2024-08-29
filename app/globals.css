@@ -177,3 +177,11 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
+
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
