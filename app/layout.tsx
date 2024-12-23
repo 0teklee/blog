@@ -24,7 +24,7 @@ const inter = Inter({
 
 const notoSans = Noto_Sans_KR({
   subsets: ["latin"],
-  weight: ["300", "400"],
+  weight: ["300", "400", "500", "600"],
 });
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
