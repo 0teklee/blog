@@ -26,7 +26,7 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
 
   return (
     <>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading style={`lg:w-full`} />}>
         <BlogDetailPageTemplate
           content={content}
           createdAt={createdAt.toString()}
