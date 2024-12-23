@@ -20,9 +20,17 @@ const BlogSideBar = async ({
         w-full mb-12 flex-shrink-0 
         bg-white dark:bg-gray-950 scrollbar-hide
         lg:w-56 lg:pb-12 lg:sticky 
-        lg:top-20 lg:h-[calc(100vh-4rem)]`}
+        lg:top-20 lg:h-[calc(100vh-4rem)]
+        overflow-hidden
+        `}
     >
-      <div className="flex justify-between">
+      <div
+        className="
+        flex justify-between
+        h-full overflow-y-auto
+        scrollbar-hide
+        "
+      >
         <details className={`w-full group blog-sidebar`}>
           <summary
             className={`
@@ -45,7 +53,7 @@ const BlogSideBar = async ({
             categories.map((category) => (
               <details
                 key={`${category.name}_wrapper`}
-                className="flex flex-col items-start justify-center gap-5 bg-white dark:bg-gray-950 break-all blog-sidebar"
+                className="flex flex-col items-start justify-center gap-5 bg-white dark:bg-gray-950 break-all scrollbar-hide overflow-y-scroll"
               >
                 <summary
                   className={`
