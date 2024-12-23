@@ -1,4 +1,4 @@
-import parsedHTMLTag from "components/common/module/ParsedHTMLTag";
+import ParsedHTMLTag from "components/common/module/ParsedHTMLTag";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
 import { getImgSrc } from "components/blog/utils";
@@ -57,7 +57,7 @@ const BlogDetailPageTemplate = ({
             <p>{`n°${id}`}</p>
           </div>
           <p className="mb-12">category : {category}</p>
-          {caption && parsedHTMLTag(caption)}
+          {caption && <ParsedHTMLTag html={caption} />}
         </div>
         <div
           className={clsx(
