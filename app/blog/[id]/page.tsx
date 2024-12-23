@@ -5,8 +5,8 @@ import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
-import React from "react";
-import Script from "next/script";
+import React, { Suspense } from "react";
+import BlogTableContent from "@/components/blog/BlogTableContent";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
@@ -26,15 +26,17 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
 
   return (
     <>
-      <Script src="https://package.commenti.co/commenti.umd.js" async={true} />
-      <BlogDetailPageTemplate
-        content={content}
-        createdAt={createdAt.toString()}
-        title={title}
-        id={postId}
-        category={categories.name}
-        nav={nav}
-      />
+      <Suspense fallback={<Loading />}>
+        <BlogDetailPageTemplate
+          content={content}
+          createdAt={createdAt.toString()}
+          title={title}
+          id={postId}
+          category={categories.name}
+          nav={nav}
+        />
+      </Suspense>
+      <BlogTableContent content={content} />
     </>
   );
 };
