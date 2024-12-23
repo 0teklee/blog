@@ -36,3 +36,19 @@ export const formatBlogContent = (content: string) =>
     )
     .replaceAll("http://res.cloudinary.com", "https://res.cloudinary.com")
     .replaceAll("</img>", "/>");
+
+export const formatTableContentStyle = (level: number) => {
+  if (level == 1) {
+    return "text-sm font-semibold";
+  }
+
+  if (level == 2) {
+    return "text-[0.8rem] font-medium pl-1";
+  }
+
+  if (level == 3) {
+    return "text-xs pl-2";
+  }
+
+  return "text-xs pl-3";
+};
