@@ -7,8 +7,7 @@
 .blog-post-content {
     width: 100%;
     min-height: 50vh;
-    max-width: 800px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8;
     padding: 1rem;
     overflow-anchor: auto;
@@ -18,9 +17,19 @@
     }
 
     @media only screen and (min-width: 1024px) {
-        max-width: none;
+        width: 800px;
     }
+}
 
+.blog-post-content p:empty,
+.blog-post-content h1:empty,
+.blog-post-content h2:empty,
+.blog-post-content h3:empty,
+.blog-post-content h4:empty,
+.blog-post-content h5:empty,
+.blog-post-content h6:empty
+{
+    display: none;
 }
 
 .blog-post-content h2, h3, h4, h5 {
@@ -32,14 +41,15 @@
 }
 
 .blog-post-content h1 {
-    margin: 1.8rem 0;
+    font-weight: 600;
     @media only screen and (max-width: 500px) {
             font-size: 1.2rem;
     }
 }
 
 .blog-post-content h2 {
-    margin: 1.6rem 0;
+    /*margin: 1.6rem 0;*/
+    font-weight: 600;
     font-size: 1.5rem;
     @media only screen and (max-width: 500px) {
             font-size: 1.1rem;
@@ -47,7 +57,8 @@
 }
 
 .blog-post-content h3 {
-    margin: 1.5rem 0;
+    /*margin: 1.5rem 0;*/
+    font-weight: 500;
     font-size: 1.3rem;
     @media only screen and (max-width: 500px) {
             font-size: 1rem;
@@ -55,7 +66,7 @@
 }
 
 .blog-post-content h4 {
-    margin: 1.4rem 0;
+    /*margin: 1.4rem 0;*/
     font-size: 1.2rem;
     @media only screen and (max-width: 500px) {
             font-size: 1rem;
@@ -63,7 +74,7 @@
 }
 
 .blog-post-content h5 {
-    margin: 1.3rem 0;
+    /*margin: 1.3rem 0;*/
     font-size: 1.3rem;
     @media only screen and (max-width: 500px) {
             font-size: 1rem;
@@ -95,24 +106,53 @@
 }
 
 .blog-post-content pre {
-    margin: 1rem;
-    padding: 1.5rem;
-    color: #fff;
-    background: #43454a;
-    white-space: pre-wrap;
+    padding: 12px 0;
+    font-size: 0.9rem;
 
     @media only screen and (max-width: 600px) {
         margin: 1rem 0;
         font-size: 0.5rem;
     }
+}
 
-
+.blog-post-content pre code {
+    border-radius: 8px;
 }
 
 .blog-post-content blockquote {
-    padding: 1rem;
-    background: #5b667c;
-    color: #fff;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    color: #333;
+    border-left: 5px solid #4a90e2;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+.blog-post-content blockquote:before {
+    content: "“";
+    font-size: 3rem;
+    color: #4a90e2;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-family: Georgia, serif;
+    line-height: 0.6;
+}
+
+.blog-post-content blockquote:after {
+    content: "”";
+    font-size: 3rem;
+    color: #4a90e2;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-family: Georgia, serif;
+    line-height: 0.6;
 }
 
 .blog-post-content blockquote:before {
@@ -177,6 +217,23 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
 }
+
+.blog-table-content {
+    height: 100%;
+    padding: 3rem 0 5rem 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: -webkit-linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0) 100%
+    );
+}
+
 
 .scrollbar-hide {
     scrollbar-width: none;

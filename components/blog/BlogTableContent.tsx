@@ -16,6 +16,23 @@ const BlogTableContent = ({ content }: { content: string }) => {
         }),
       );
 
+  const scrollToHeading = (index: number) => {
+    const elements = document.querySelectorAll("h1, h2, h3");
+    const element = elements[index];
+
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   useEffect(() => {
     const elements = document.querySelectorAll("h1, h2, h3");
 
@@ -39,26 +56,10 @@ const BlogTableContent = ({ content }: { content: string }) => {
     return () => observer.disconnect();
   }, [content]);
 
-  const scrollToHeading = (index: number) => {
-    const elements = document.querySelectorAll("h1, h2, h3");
-    const element = elements[index];
-
-    if (element) {
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
-    <aside className="hidden lg:block lg:w-64 shrink-0 sticky top-20 h-[calc(100vh-5rem)] overflow-hidden pb-5">
-      <nav className="h-full overflow-y-auto scrollbar-hide">
+    <aside className="hidden lg:block lg:w-64 shrink-0 sticky top-20 h-[50vh] overflow-hidden">
+      <nav className="h-full overflow-y-auto scrollbar-hide blog-table-content pb-5">
+        <h1 className={`mb-2 font-bold`}>Table of Content</h1>
         <ul className="space-y-2">
           {headings.map((heading) =>
             heading.text ? (
