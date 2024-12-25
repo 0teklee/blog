@@ -1,22 +1,22 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { clsx } from "clsx";
-import { memo } from "react";
 import { getContentImg } from "@/libs/utils";
+import { SQUARE_BASE_64_BLUR } from "@/libs/constants";
 
 const GalleryItem = ({
   id,
   url,
-  title,
-  createdAt,
+  index,
+  isOldPhotos,
 }: {
   id?: number;
   url: string;
-  title: string;
-  createdAt?: string;
+  index: number;
+  isOldPhotos: boolean;
 }) => {
-  const contentUrl = getContentImg(url);
+  const contentUrl = isOldPhotos ? url : getContentImg(url);
+
   return (
     <Link
       className={clsx(
@@ -36,15 +36,14 @@ const GalleryItem = ({
         transition duration-[3s]`}
         alt={`gallery_${id}`}
         src={contentUrl}
-        fetchPriority={"high"}
-        sizes={`(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw`}
+        fetchPriority={index <= 8 ? "high" : "auto"}
         width={200}
         height={300}
         placeholder={"blur"}
-        blurDataURL={contentUrl}
+        blurDataURL={SQUARE_BASE_64_BLUR}
       />
     </Link>
   );
 };
 
-export default memo(GalleryItem);
+export default GalleryItem;

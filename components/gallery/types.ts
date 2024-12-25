@@ -17,6 +17,5 @@ interface IGalleryItem {
   content: string;
   imgUrl: string;
 }
-[];
 
 export type { IGalleryProps, IGalleryItem };

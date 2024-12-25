@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import Link from "next/link";
-import getGalleryCategoryList from "pages/api/getGalleryCategoryList";
+import getGalleryCategoryList from "@/libs/api/getGalleryCategoryList";
 import { cache } from "react";
 
 const getGalleryCategoryListCache = cache(getGalleryCategoryList);
