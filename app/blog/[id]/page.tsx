@@ -1,11 +1,12 @@
+import React, { Suspense } from "react";
+
 import BlogDetailPageTemplate from "components/blog/BlogDetailPageTemplate";
-import getBlogDetailId from "pages/api/getBlogDetailId";
-import getBlogDetail from "pages/api/getBlogDetail";
+import getBlogDetailId from "@/libs/api/getBlogDetailId";
+import getBlogDetail from "@/libs/api/getBlogDetail";
 import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
-import React, { Suspense } from "react";
 import BlogTableContent from "@/components/blog/BlogTableContent";
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {

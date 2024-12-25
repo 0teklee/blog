@@ -3,8 +3,8 @@ import {
   IGalleryGetCategorySideBar,
   IGalleryPostGetDetail,
 } from "@/components/blog/types";
-import getGalleryDetail from "pages/api/getGalleryDetail";
-import getBlogDetailId from "pages/api/getBlogDetailId";
+import getGalleryDetail from "@/libs/api/getGalleryDetail";
+import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import { getImgSrc } from "components/blog/utils";
 
 interface IProps {

@@ -9,7 +9,7 @@ const page = async ({
   searchParams: { [key: string]: string };
 }) => {
   return (
-    <Suspense fallback={<Loading style={`flex-1 100%`} />}>
+    <Suspense fallback={<Loading style={`flex-1 w-full`} />}>
       <BlogListPageTemplate searchParams={searchParams} />
     </Suspense>
   );
