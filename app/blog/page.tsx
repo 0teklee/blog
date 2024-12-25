@@ -6,7 +6,7 @@ import Loading from "@/components/common/Loading";
 const page = async ({
   searchParams,
 }: {
-  searchParams: { [key: string]: string };
+  searchParams?: { page: string; category: string };
 }) => {
   return (
     <Suspense fallback={<Loading style={`flex-1 w-full`} />}>
