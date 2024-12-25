@@ -2,7 +2,7 @@ import React, { cache } from "react";
 import { clsx } from "clsx";
 import Link from "next/link";
 import LandingListItem from "@/components/landing/LandingListItem";
-import getMainPosts from "@/pages/api/getMainPosts";
+import getMainPosts from "@/libs/api/getMainPosts";
 
 const mainPostsCache = cache(async () => {
   return await getMainPosts();
