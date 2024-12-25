@@ -4,10 +4,10 @@ import { IBlogGetListResponse } from "@/components/blog/types";
 const getBlogList = async (
   page: string | string[],
   category?: string,
+  itemsPerPage = 5,
 ): Promise<IBlogGetListResponse> => {
   try {
     const pageNumber = Number(page) || 1;
-    const itemsPerPage = 5;
 
     const { data: postsResponse, error } = await supabase.rpc(
       "fetch_blog_posts",
@@ -28,6 +28,7 @@ const getBlogList = async (
       console.error("Unexpected data structure:", postsDB);
       return { has_next_page: false, posts: [] };
     }
+    if (error) throw error;
 
     const safePosts = postsDB.posts.map((post) => ({
       ...post,
@@ -38,8 +39,8 @@ const getBlogList = async (
       has_next_page: postsDB.has_next_page ?? false,
       posts: safePosts,
     };
-  } catch (error) {
-    console.error("Unexpected error:", error);
+  } catch (err) {
+    console.error("Error fetching blog list:", err);
     return { has_next_page: false, posts: [] };
   }
 };

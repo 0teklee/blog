@@ -1,14 +1,7 @@
 import { supabase } from "@/libs/api/supabase";
-import { IBlogGetListItem } from "@/components/blog/types";
 
-const getBlogList = async (
-  page: string | string[],
-): Promise<IBlogGetListItem[]> => {
+const getArchiveList = async () => {
   try {
-    const pageNumber = Number(page) || 1;
-    const itemsPerPage = 5;
-    const offset = (pageNumber - 1) * itemsPerPage;
-
     // Fetch posts from the Supabase database
     const { data: postsDB, error } = await supabase
       .from("Post")
@@ -16,15 +9,13 @@ const getBlogList = async (
         `
         id, 
         title, 
-        content, 
         createdAt,
+        content,
         categories:Category ( name )
       `,
       )
-      .neq("categories.name", "daily") // Exclude "daily" category
-      .order("id", { ascending: false }) // Order by descending ID
-      .range(offset, offset + itemsPerPage - 1); // Pagination
-
+      .neq("categories.name", "daily")
+      .order("createdAt", { ascending: false });
     if (error) throw error;
 
     return postsDB || [];
@@ -34,4 +25,4 @@ const getBlogList = async (
   }
 };
 
-export default getBlogList;
+export default getArchiveList;
