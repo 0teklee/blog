@@ -4,18 +4,13 @@ import React from "react";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
 import { useRouter } from "next/navigation";
+import { IBlogGetListItem } from "@/components/blog/types";
 
 const BlogDetailFooterNav = ({
   id,
   nav: [prev, next],
 }: {
-  nav: ({
-    createdAt: Date;
-    id: number;
-    title: string;
-    content: string;
-    categories: { name: string };
-  } | null)[];
+  nav: (IBlogGetListItem | null)[];
   id: number;
 }) => {
   const router = useRouter();

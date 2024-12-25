@@ -4,6 +4,7 @@ import { clsx } from "clsx";
 import dayjs from "dayjs";
 import { getContentImg, htmlReplace, setCategoryPresetImg } from "@/libs/utils";
 import Link from "next/link";
+import { SQUARE_BASE_64_BLUR } from "@/libs/constants";
 
 const BlogListItem = ({
   id,
@@ -52,7 +53,8 @@ const BlogListItem = ({
             fill={true}
             sizes={"200px"}
             alt={title}
-            priority={true}
+            placeholder={`blur`}
+            blurDataURL={SQUARE_BASE_64_BLUR}
           />
         </div>
         <div

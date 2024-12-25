@@ -1,14 +1,13 @@
 import React from "react";
 import { clsx } from "clsx";
-import { IBlogGetListItem } from "@/components/blog/types";
 import Link from "next/link";
 
 const BlogListPagination = ({
   searchParams,
-  posts,
+  hasNext = false,
 }: {
   searchParams: { [key: string]: string };
-  posts?: IBlogGetListItem[];
+  hasNext?: boolean;
 }) => (
   <div
     className={clsx(
@@ -24,26 +23,23 @@ const BlogListPagination = ({
           "hover:underline hover:text-blue-500",
           "dark:hover:text-[#d2ef4f]",
         )}
-        href={`/blog?page=${Number(searchParams?.page) - 1}`}
+        href={`/blog?page=${Number(searchParams?.page) - 1}${searchParams?.category ? `&category=${searchParams?.category}` : ""}`}
       >
         prev
       </Link>
     )}
-    {!!searchParams?.page &&
-      posts &&
-      posts.length > 0 &&
-      posts[posts.length - 1]?.id !== 1 && (
-        <Link
-          className={clsx(
-            "mx-8 text-sm",
-            "hover:underline hover:text-blue-500",
-            "dark:hover:text-[#d2ef4f]",
-          )}
-          href={`/blog?page=${Number(searchParams?.page) + 1}`}
-        >
-          next
-        </Link>
-      )}
+    {!!searchParams?.page && hasNext && (
+      <Link
+        className={clsx(
+          "mx-8 text-sm",
+          "hover:underline hover:text-blue-500",
+          "dark:hover:text-[#d2ef4f]",
+        )}
+        href={`/blog?page=${Number(searchParams?.page) + 1}${searchParams?.category ? `&category=${searchParams?.category}` : ""}`}
+      >
+        next
+      </Link>
+    )}
   </div>
 );
 

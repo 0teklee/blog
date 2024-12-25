@@ -36,25 +36,14 @@ interface IBlogGetListItem {
   categories: { name: string };
 }
 
-interface IBlogGetCategory {
-  categories: { name: string };
+interface IBlogGetListResponse {
+  posts: IBlogGetListItem[];
+  has_next_page: boolean;
 }
 
 interface IBlogGetDetail {
-  detail: {
-    createdAt: Date;
-    id: number;
-    title: string;
-    content: string;
-    categories: { name: string };
-  } | null;
-  nav: ({
-    createdAt: Date;
-    id: number;
-    title: string;
-    content: string;
-    categories: { name: string };
-  } | null)[];
+  detail: IBlogGetListItem | null;
+  nav: (IBlogGetListItem | null)[];
 }
 
 interface IBlogGetCategorySideBar {
@@ -99,7 +88,7 @@ export type {
   IBlogItemPost,
   IBlogGetEditItem,
   IBlogGetListItem,
-  IBlogGetCategory,
+  IBlogGetListResponse,
   IBlogGetCategorySideBar,
   IBlogGetDetail,
   IGalleryPost,

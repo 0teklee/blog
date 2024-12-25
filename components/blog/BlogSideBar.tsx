@@ -1,18 +1,8 @@
 import Link from "next/link";
-import getBlogCategoryList from "@/pages/api/getBlogCategoryList";
-import { cache } from "react";
+import getBlogCategoryList from "@/libs/api/getBlogCategoryList";
 
-const getBlogCategoryListCache = cache(getBlogCategoryList);
-
-const BlogSideBar = async ({
-  searchParams,
-}: {
-  searchParams: { category: string };
-}) => {
-  const categories = await getBlogCategoryListCache();
-
-  const categoryParam = searchParams?.category || "";
-
+const BlogSideBar = async () => {
+  const categories = await getBlogCategoryList();
   return (
     <aside
       className={`
@@ -62,11 +52,7 @@ const BlogSideBar = async ({
                     transition-all duration-300
                     `}
                 >
-                  <span
-                    className={`${categoryParam === category.name && "font-semibold"}`}
-                  >
-                    {category.name}
-                  </span>
+                  <span>{category.name}</span>
                   <span>▾</span>
                 </summary>
                 {category?.posts?.map((blog, i) => (
@@ -89,7 +75,7 @@ const BlogSideBar = async ({
                 {category?.posts && category?.posts.length >= 10 && (
                   <Link
                     className="flex flex-col items-start justify-start w-full pl-2 pt-3 text-0.8rem"
-                    href={`/blog?category=${category.name}`}
+                    href={`/blog?page=1&category=${category.name}`}
                   >
                     <button className="w-full mt-2 text-left hover:text-blue-500 transition-colors duration-300">
                       .....more
