@@ -4,10 +4,12 @@ import React, { MouseEvent, useState } from "react";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { postGuestbookPostFetcher } from "@/libs/fetcher";
-import { Session } from "next-auth";
+import { useSession } from "next-auth/react";
 
-const GuestbookUserCreatePost = ({ session }: { session: Session }) => {
+const GuestbookUserCreatePost = () => {
   const queryClient = useQueryClient();
+  const userSession = useSession();
+  const session = userSession?.data;
 
   const [author, setAuthor] = useState("");
   const [postGext, setPostGext] = useState("");
@@ -34,7 +36,7 @@ const GuestbookUserCreatePost = ({ session }: { session: Session }) => {
         author,
         post: postGext,
         isPrivate,
-        email: session.user?.email || "",
+        email: session?.user?.email || "",
       }),
     onSuccess: () => {
       queryClient.invalidateQueries(["getGuestbookList"]);
@@ -56,6 +58,8 @@ const GuestbookUserCreatePost = ({ session }: { session: Session }) => {
     }
     mutate();
   };
+
+  if (!session) return null;
 
   return (
     <>

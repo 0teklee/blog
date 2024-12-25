@@ -20,11 +20,10 @@ const GuestbookList = () => {
     isLoading,
     error: isError,
   } = useInfiniteQuery({
-    queryKey: ["guestbookList"],
+    queryKey: ["guestbookList", session?.data?.user?.email],
     queryFn: ({ pageParam = 0 }) =>
       getGuestbookListFetcher(pageParam, session?.data?.user?.email),
     cacheTime: 0,
-    refetchOnWindowFocus: false,
     getNextPageParam: (lastPage, allPages) => {
       if (lastPage?.length < 5) {
         return undefined;
