@@ -1,22 +1,25 @@
+import { supabase } from "@/libs/api/supabase";
 import { IGalleryItem } from "@/components/gallery/types";
 
-const getGalleryList = async (
-  query: string,
-  page?: string,
-): Promise<IGalleryItem[] | undefined> => {
+const getGalleryList = async (query?: string): Promise<IGalleryItem[]> => {
   try {
-    const response = await fetch(
-      `${process.env.BASE_URL}/api/gallery/list?category=${encodeURIComponent(query || "")}&page=${page || 0}`,
-    );
-
-    if (!response.ok) {
-      throw new Error("Failed to fetch gallery list");
+    if (!query) {
+      return [];
     }
 
-    const data = await response.json();
-    return data as Promise<IGalleryItem[]>;
-  } catch (error) {
-    console.error(`Fetch error gallery list : ${error}`);
+    const { data: posts, error } = await supabase.rpc("fetch_gallery_posts", {
+      p_category_name: query,
+    });
+
+    if (error || !posts) {
+      console.error(`Supabase error >>>  ${JSON.stringify(error)}`);
+      throw new Error(error?.message || "No posts found");
+    }
+
+    // @ts-expect-error
+    return (posts as IGalleryItem[]) || [];
+  } catch (err) {
+    return [];
   }
 };
 
