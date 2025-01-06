@@ -639,24 +639,15 @@ export type Database = {
         }
         Returns: Json
       }
-      upsert_blog_post:
-        | {
-            Args: {
-              p_id: number
-              p_title: string
-              p_content: string
-            }
-            Returns: undefined
-          }
-        | {
-            Args: {
-              p_id: number
-              p_title: string
-              p_content: string
-              p_category_id: number
-            }
-            Returns: undefined
-          }
+      upsert_blog_post: {
+        Args: {
+          p_id: number
+          p_title: string
+          p_content: string
+          p_category_id: number
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never
