@@ -14,6 +14,9 @@ import rehypeParse from "rehype-parse";
 import { visit } from "unist-util-visit";
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import rehypeHighlight from "rehype-highlight";
+import rehypeStringify from "rehype-stringify";
+import DOMPurify from "isomorphic-dompurify";
 
 const parseHTMLToString = (html: string): string => {
   const processor = unified().use(rehypeParse, { fragment: true });
@@ -113,4 +116,43 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export { setCategoryPresetImg, getContentImg, parseHTMLToString, cn };
+const addCodeTag = () => {
+  return (tree: any) => {
+    visit(tree, "element", (node) => {
+      if (
+        node.tagName === "pre" &&
+        node.properties?.className?.includes("ql-syntax")
+      ) {
+        const codeContent = node.children[0]?.value || "";
+        node.children = [
+          {
+            type: "element",
+            tagName: "code",
+            properties: {},
+            children: [{ type: "text", value: codeContent }],
+          },
+        ];
+      }
+    });
+  };
+};
+
+async function processHTML(html: string) {
+  const file = await unified()
+    .use(rehypeParse, { fragment: true })
+    .use(addCodeTag)
+    .use(rehypeHighlight, { detect: true })
+    .use(rehypeStringify)
+    .process(html);
+
+  const processedHTML = file.toString();
+  return DOMPurify.sanitize(processedHTML);
+}
+
+export {
+  setCategoryPresetImg,
+  getContentImg,
+  parseHTMLToString,
+  cn,
+  processHTML,
+};
