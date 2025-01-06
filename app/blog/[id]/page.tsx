@@ -9,6 +9,8 @@ import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
 import BlogTableContent from "@/components/blog/BlogTableContent";
 
+export const revalidate = 3600;
+
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
 
