@@ -9,6 +9,25 @@ import {
   DEFAULT_RECAP_IMAGE,
   DEFAULT_TS_IMAGE,
 } from "@/libs/constants";
+import { unified } from "unified";
+import rehypeParse from "rehype-parse";
+import { visit } from "unist-util-visit";
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+const parseHTMLToString = (html: string): string => {
+  const processor = unified().use(rehypeParse, { fragment: true });
+
+  // 파싱한 AST에서 텍스트 추출
+  const ast = processor.parse(html);
+  let extractedText = "";
+
+  visit(ast, "text", (node: any) => {
+    extractedText += node.value;
+  });
+
+  return extractedText.trim();
+};
 
 export const maskPrivateContent = (
   post: IGuestbookPost,
@@ -89,4 +108,9 @@ const setCategoryPresetImg = (category: string): string => {
       return DEFAULT_IMAGE;
   }
 };
-export { setCategoryPresetImg, getContentImg };
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+export { setCategoryPresetImg, getContentImg, parseHTMLToString, cn };
