@@ -7,7 +7,12 @@ import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
-import BlogTableContent from "@/components/blog/BlogTableContent";
+import dynamic from "next/dynamic";
+
+const BlogTableContent = dynamic(
+  () => import("@/components/blog/BlogTableContent"),
+  { ssr: false },
+);
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
