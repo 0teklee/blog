@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { formatTableContentStyle } from "@/components/blog/utils";
+import { parseHTMLToString } from "@/libs/utils";
 
 const BlogTableContent = ({ content }: { content: string }) => {
   const [activeIndex, setActiveIndex] = useState<number>(-1);
@@ -9,11 +10,14 @@ const BlogTableContent = ({ content }: { content: string }) => {
   const headings = !content
     ? []
     : Array.from(content.matchAll(/<h([1-3]).*?>(.*?)<\/h[1-3]>/g)).map(
-        (match, index) => ({
-          level: parseInt(match[1]),
-          text: match[2].replace(/<[^>]*>/g, ""),
-          index: index + 1, // title h1 = index 0
-        }),
+        (match, index) => {
+          const text = parseHTMLToString(match[2]);
+          return {
+            level: parseInt(match[1]),
+            text: text.trim(),
+            index: index + 1, // title h1 = index 0
+          };
+        },
       );
 
   const scrollToHeading = (index: number) => {
@@ -25,7 +29,6 @@ const BlogTableContent = ({ content }: { content: string }) => {
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
-
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
@@ -59,7 +62,9 @@ const BlogTableContent = ({ content }: { content: string }) => {
   return (
     <aside className="hidden lg:block lg:w-64 shrink-0 sticky top-20 h-[50vh] overflow-hidden">
       <nav className="h-full overflow-y-auto scrollbar-hide blog-table-content pb-5">
-        <h1 className={`mb-2 font-bold`}>Table of Content</h1>
+        {headings.length > 0 && (
+          <h1 className={`mb-2 font-bold`}>Table of Content</h1>
+        )}
         <ul className="space-y-2">
           {headings.map((heading) =>
             heading.text ? (
@@ -76,7 +81,7 @@ const BlogTableContent = ({ content }: { content: string }) => {
                 `}
                   onClick={() => scrollToHeading(heading.index)}
                 >
-                  {heading.text}
+                  {decodeURIComponent(heading.text)}
                 </button>
               </li>
             ) : null,
