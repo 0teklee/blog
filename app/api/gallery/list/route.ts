@@ -19,8 +19,6 @@ export async function GET(request: Request) {
       "fetch_gallery_posts",
       {
         p_category_name: category,
-        p_page: page,
-        p_items_per_page: itemsPerPage,
       },
     );
 
