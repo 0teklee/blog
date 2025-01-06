@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 
 import BlogDetailPageTemplate from "components/blog/BlogDetailPageTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
@@ -7,7 +7,9 @@ import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
-import BlogTableContent from "@/components/blog/BlogTableContent";
+import { LoaderCircle } from "lucide-react";
+
+const BlogTableContent = lazy(() => import("components/blog/BlogTableContent"));
 
 const page = async ({ params: { id } }: { params: { id: string } }) => {
   const post = await getBlogDetail(id);
@@ -37,7 +39,11 @@ const page = async ({ params: { id } }: { params: { id: string } }) => {
           nav={nav}
         />
       </Suspense>
-      <BlogTableContent content={content} />
+      <Suspense
+        fallback={<LoaderCircle className={`animate-spin text-gray-100`} />}
+      >
+        <BlogTableContent content={content} />
+      </Suspense>
     </>
   );
 };
