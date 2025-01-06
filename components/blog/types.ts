@@ -41,6 +41,8 @@ interface IBlogGetListResponse {
   has_next_page: boolean;
 }
 
+type TEditItem = Omit<IBlogGetListItem, "content">;
+
 interface IBlogGetDetail {
   detail: IBlogGetListItem | null;
   nav: (IBlogGetListItem | null)[];
@@ -96,4 +98,5 @@ export type {
   IGalleryGetCategorySideBar,
   IGalleryGetCategory,
   IDetailGetCategorySideBar,
+  TEditItem,
 };
