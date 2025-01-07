@@ -1,46 +1,18 @@
 import React, { Suspense } from "react";
 
-import BlogDetailPageTemplate from "components/blog/BlogDetailPageTemplate";
+import BlogDetailPageTemplate from "@/components/blog/BlogDetailPageTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import getBlogDetail from "@/libs/api/getBlogDetail";
 import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
-import BlogTableContent from "@/components/blog/BlogTableContent";
 
-export const revalidate = 3600;
-
-const page = async ({ params: { id } }: { params: { id: string } }) => {
-  const post = await getBlogDetail(id);
-
-  if (!post || !post.detail) {
-    return (
-      <>
-        <div className={`w-full`}>
-          <Loading />
-        </div>
-      </>
-    );
-  }
-
-  const { detail, nav } = post;
-  const { content, createdAt, id: postId, title, categories } = detail;
-
+const page = ({ params: { id } }: { params: { id: string } }) => {
   return (
-    <>
-      <Suspense fallback={<Loading style={`lg:w-full`} />}>
-        <BlogDetailPageTemplate
-          content={content}
-          createdAt={createdAt.toString()}
-          title={title}
-          id={postId}
-          category={categories.name}
-          nav={nav}
-        />
-      </Suspense>
-      <BlogTableContent content={content} />
-    </>
+    <Suspense fallback={<Loading style={`lg:w-full`} />}>
+      <BlogDetailPageTemplate id={id} />
+    </Suspense>
   );
 };
 
@@ -51,6 +23,8 @@ export const generateStaticParams = async () => {
 
   return paths;
 };
+
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params: { id },
