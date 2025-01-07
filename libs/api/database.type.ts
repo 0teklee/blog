@@ -639,6 +639,12 @@ export type Database = {
         }
         Returns: Json
       }
+      get_blog_detail: {
+        Args: {
+          p_post_id: number
+        }
+        Returns: Json
+      }
       upsert_blog_post:
         | {
             Args: {
