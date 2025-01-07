@@ -12,7 +12,13 @@ interface IProps {
   categoryList: IGalleryGetCategorySideBar[];
 }
 
-const page = async ({ params: { id } }: { params: { id: string } }) => {
+const page = async (props: { params: Promise<{ id: string }> }) => {
+  const params = await props.params;
+
+  const {
+    id
+  } = params;
+
   /* Wrong Paths Branch*/
   const post = await getGalleryDetail(id);
 
@@ -37,11 +43,17 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
-export async function generateMetadata({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ id: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    id
+  } = params;
+
   if (!id) {
     return {};
   }

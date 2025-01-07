@@ -8,7 +8,13 @@ import { getImgSrc } from "components/blog/utils";
 import { htmlReplace } from "@/libs/utils";
 import Loading from "@/components/common/Loading";
 
-const page = ({ params: { id } }: { params: { id: string } }) => {
+const page = async (props: { params: Promise<{ id: string }> }) => {
+  const params = await props.params;
+
+  const {
+    id
+  } = params;
+
   return (
     <Suspense fallback={<Loading style={`lg:w-full`} />}>
       <BlogDetailPageTemplate id={id} />
@@ -26,11 +32,17 @@ export const generateStaticParams = async () => {
 
 export const revalidate = 3600;
 
-export async function generateMetadata({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ id: string }>;
+  }
+) {
+  const params = await props.params;
+
+  const {
+    id
+  } = params;
+
   if (!id) {
     return {};
   }

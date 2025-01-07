@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
       process.env.SUPABASE_URL!,
       process.env.SUPABASE_ANON_KEY!,
       {
-        cookies: cookies(),
+        cookies: await cookies(),
       },
     );
 

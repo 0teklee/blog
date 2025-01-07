@@ -4,11 +4,17 @@ import GalleryListContents from "@/components/gallery/GalleryListContents";
 import { Suspense } from "react";
 import Loading from "@/components/common/Loading";
 
-const page = async ({
-  searchParams: { category },
-}: {
-  searchParams: { category: string };
-}) => {
+const page = async (
+  props: {
+    searchParams: Promise<{ category: string }>;
+  }
+) => {
+  const searchParams = await props.searchParams;
+
+  const {
+    category
+  } = searchParams;
+
   return (
     <>
       <Title title="Gallery" customStyle={"text-center mb-5"} />

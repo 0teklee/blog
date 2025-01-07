@@ -1,11 +1,12 @@
 import { THEME_META_IMAGE } from "libs/constants";
 import BlogListPageTemplate from "components/blog/BlogListPageTemplate";
 
-const page = async ({
-  searchParams,
-}: {
-  searchParams?: { page: string; category: string };
-}) => {
+const page = async (
+  props: {
+    searchParams?: Promise<{ page: string; category: string }>;
+  }
+) => {
+  const searchParams = await props.searchParams;
   return <BlogListPageTemplate searchParams={searchParams} />;
 };
 
