@@ -1,15 +1,17 @@
-import React from "react";
+import React, { cache } from "react";
 import { clsx } from "clsx";
 import GalleryItem from "@/components/gallery/GalleryItem";
 import { GALLERY_2022_IMAGES } from "@/libs/constants";
 import getGalleryList from "@/libs/api/getGalleryList";
+
+const cachedGalleryList = cache(getGalleryList);
 
 const GalleryListContents = async ({ category }: { category: string }) => {
   const isOldPhotos = category === "~2022";
 
   const posts = isOldPhotos
     ? GALLERY_2022_IMAGES
-    : await getGalleryList(category || "Collection");
+    : await cachedGalleryList(category || "Collection");
 
   return (
     <div className={clsx("gallery-list-col gap-y-[100px] pt-12")}>
@@ -20,6 +22,7 @@ const GalleryListContents = async ({ category }: { category: string }) => {
           url={item.imgUrl}
           index={i}
           isOldPhotos={isOldPhotos}
+          createdAt={item.createdAt}
         />
       ))}
     </div>
