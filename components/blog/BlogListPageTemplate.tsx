@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import Loading from "@/components/common/Loading";
 import BlogListContents from "@/components/blog/BlogListContents";
+import { LoaderCircle } from "lucide-react";
 
 const BlogListPageTemplate = ({
   searchParams,
@@ -13,7 +13,13 @@ const BlogListPageTemplate = ({
         {searchParams?.page && !searchParams?.category ? "Blog" : null}
         {searchParams?.category ? searchParams?.category : null}
       </h1>
-      <Suspense fallback={<Loading style={`w-full`} />}>
+      <Suspense
+        fallback={
+          <LoaderCircle
+            className={`flex-1 w-full text-blue-500 animate-spin`}
+          />
+        }
+      >
         <BlogListContents searchParams={searchParams} />
       </Suspense>
     </div>

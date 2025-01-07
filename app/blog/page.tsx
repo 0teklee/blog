@@ -1,18 +1,12 @@
 import { THEME_META_IMAGE } from "libs/constants";
 import BlogListPageTemplate from "components/blog/BlogListPageTemplate";
-import { Suspense } from "react";
-import Loading from "@/components/common/Loading";
 
 const page = async ({
   searchParams,
 }: {
   searchParams?: { page: string; category: string };
 }) => {
-  return (
-    <Suspense fallback={<Loading style={`flex-1 w-full`} />}>
-      <BlogListPageTemplate searchParams={searchParams} />
-    </Suspense>
-  );
+  return <BlogListPageTemplate searchParams={searchParams} />;
 };
 
 export default page;

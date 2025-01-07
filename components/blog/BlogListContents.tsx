@@ -1,8 +1,10 @@
-import React from "react";
+import React, { cache } from "react";
 import getBlogList from "@/libs/api/getBlogList";
 import { clsx } from "clsx";
 import BlogListItem from "@/components/blog/BlogListItem";
 import BlogListPagination from "@/components/blog/BlogListPagination";
+
+const cachedGetBlogList = cache(getBlogList);
 
 const BlogListContents = async ({
   searchParams,
@@ -10,7 +12,7 @@ const BlogListContents = async ({
   searchParams?: { page: string; category: string };
 }) => {
   const { page, category } = searchParams || { page: "1", category: "" };
-  const { posts, has_next_page } = await getBlogList(page, category);
+  const { posts, has_next_page } = await cachedGetBlogList(page, category);
   return (
     <div className={clsx("flex flex-col", "lg:flex-row lg:gap-3")}>
       <div

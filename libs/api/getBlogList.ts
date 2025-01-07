@@ -30,15 +30,7 @@ const getBlogList = async (
     }
     if (error) throw error;
 
-    const safePosts = postsDB.posts.map((post) => ({
-      ...post,
-      content: post.content.slice(0, 200),
-    }));
-
-    return {
-      has_next_page: postsDB.has_next_page ?? false,
-      posts: safePosts,
-    };
+    return postsDB;
   } catch (err) {
     console.error("Error fetching blog list:", err);
     return { has_next_page: false, posts: [] };

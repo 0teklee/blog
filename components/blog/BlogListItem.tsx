@@ -2,9 +2,16 @@ import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
-import { getContentImg, htmlReplace, setCategoryPresetImg } from "@/libs/utils";
+import {
+  getContentImg,
+  parseHTMLToString,
+  setCategoryPresetImg,
+} from "@/libs/utils";
 import Link from "next/link";
 import { SQUARE_BASE_64_BLUR } from "@/libs/constants";
+import { cache } from "react";
+
+const cachedParseHTMLString = cache(parseHTMLToString);
 
 const BlogListItem = ({
   id,
@@ -13,7 +20,6 @@ const BlogListItem = ({
   title,
   categories,
 }: IBlogGetListItem) => {
-  const contentReplace = htmlReplace(content);
   return (
     <Link
       className={clsx(
@@ -96,7 +102,7 @@ const BlogListItem = ({
               "lg:text-base",
             )}
           >
-            {contentReplace}
+            {cachedParseHTMLString(content).slice(0, 200)}
           </p>
         </div>
       </div>
