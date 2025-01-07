@@ -8,16 +8,14 @@ const BlogListPageTemplate = ({
   searchParams?: { page: string; category: string };
 }) => {
   return (
-    <div className="relative flex flex-col gap-16 lg:flex-grow">
-      <h1 className={"text-center text-3xl font-bold font-inter"}>
+    <div className="relative flex flex-col items-center gap-16 lg:flex-grow">
+      <h1 className={"text-3xl font-bold font-inter"}>
         {searchParams?.page && !searchParams?.category ? "Blog" : null}
         {searchParams?.category ? searchParams?.category : null}
       </h1>
       <Suspense
         fallback={
-          <LoaderCircle
-            className={`flex-1 w-full text-blue-500 animate-spin`}
-          />
+          <LoaderCircle className={`w-32 text-gray-300 animate-spin`} />
         }
       >
         <BlogListContents searchParams={searchParams} />
