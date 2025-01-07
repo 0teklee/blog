@@ -21,7 +21,6 @@ import DOMPurify from "isomorphic-dompurify";
 const parseHTMLToString = (html: string): string => {
   const processor = unified().use(rehypeParse, { fragment: true });
 
-  // 파싱한 AST에서 텍스트 추출
   const ast = processor.parse(html);
   let extractedText = "";
 
