@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
-import { clsx } from "clsx";
 import dayjs from "dayjs";
 import {
+  cn,
   getContentImg,
   parseHTMLToString,
   setCategoryPresetImg,
@@ -13,27 +13,33 @@ import { cache } from "react";
 
 const cachedParseHTMLString = cache(parseHTMLToString);
 
+interface IBlogListItemProps extends IBlogGetListItem {
+  index: number;
+}
+
 const BlogListItem = ({
   id,
   content,
   createdAt,
   title,
   categories,
-}: IBlogGetListItem) => {
+  index,
+}: IBlogListItemProps) => {
   return (
     <Link
-      className={clsx(
+      className={cn(
         "w-full",
         "group",
         "overflow-hidden",
         "transition-all duration-700",
         "hover:bg-gray-100 dark:hover:bg-gray-800",
         "lg:px-2 lg:py-3",
+        "border-b-2 border-secondary last-of-type:border-none",
       )}
       href={`/blog/${id}`}
     >
       <div
-        className={clsx(
+        className={cn(
           "relative",
           "flex flex-col items-center space-between gap-1",
           "w-full",
@@ -42,7 +48,7 @@ const BlogListItem = ({
         )}
       >
         <div
-          className={clsx(
+          className={cn(
             "relative",
             "flex-shrink-0",
             "w-full h-[120px] ",
@@ -54,17 +60,18 @@ const BlogListItem = ({
             src={
               getContentImg(content) || setCategoryPresetImg(categories.name)
             }
-            className={clsx("object-cover")}
+            className={cn("object-cover")}
             key={`${id}_img`}
             fill={true}
-            sizes={"200px"}
             alt={title}
+            priority={index < 3}
             placeholder={`blur`}
+            sizes="300px, (min-width: 1024px) 196px"
             blurDataURL={SQUARE_BASE_64_BLUR}
           />
         </div>
         <div
-          className={clsx(
+          className={cn(
             "flex-1 max-h-80",
             "flex flex-col gap-4",
             "px-2.5 py-2",
@@ -72,7 +79,7 @@ const BlogListItem = ({
         >
           <div>
             <h2
-              className={clsx(
+              className={cn(
                 "text-lg font-medium",
                 "line-clamp-1 text-ellipsis",
                 "transition-all duration-500",
@@ -82,7 +89,7 @@ const BlogListItem = ({
               {title}
             </h2>
             <div
-              className={clsx(
+              className={cn(
                 "flex justify-between flex-wrap w-full",
                 "text-xs font-medium",
               )}
@@ -95,7 +102,7 @@ const BlogListItem = ({
             </div>
           </div>
           <p
-            className={clsx(
+            className={cn(
               "text-xs",
               "line-clamp-2",
               "break-all leading-6",

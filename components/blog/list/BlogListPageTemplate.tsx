@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import BlogListContents from "@/components/blog/BlogListContents";
+import BlogListContents from "@/components/blog/list/BlogListContents";
 import { LoaderCircle } from "lucide-react";
 
 const BlogListPageTemplate = ({
@@ -8,10 +8,9 @@ const BlogListPageTemplate = ({
   searchParams?: { page: string; category: string };
 }) => {
   return (
-    <div className="relative flex flex-col items-center gap-16 lg:flex-grow">
+    <div className="relative flex flex-col gap-16 w-full">
       <h1 className={"text-3xl font-bold font-inter"}>
-        {searchParams?.page && !searchParams?.category ? "Blog" : null}
-        {searchParams?.category ? searchParams?.category : null}
+        {searchParams?.category ? searchParams?.category : "Posts"}
       </h1>
       <Suspense
         fallback={

@@ -51,9 +51,9 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
           />
           {data && (
             <Editor
-              initialTitle={data.detail?.title}
-              initialCategory={data.detail?.categories.name}
-              initialContent={data.detail?.content}
+              initialTitle={data.title}
+              initialCategory={data.categories.name}
+              initialContent={data.content}
               handler={handleSubmit}
               isEditor={true}
             />
