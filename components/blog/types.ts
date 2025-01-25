@@ -43,11 +43,6 @@ interface IBlogGetListResponse {
 
 type TEditItem = Omit<IBlogGetListItem, "content">;
 
-interface IBlogGetDetail {
-  detail: IBlogGetListItem | null;
-  nav: (IBlogGetListItem | null)[];
-}
-
 interface IBlogGetCategorySideBar {
   name: string;
   posts: {
@@ -92,7 +87,6 @@ export type {
   IBlogGetListItem,
   IBlogGetListResponse,
   IBlogGetCategorySideBar,
-  IBlogGetDetail,
   IGalleryPost,
   IGalleryPostGetDetail,
   IGalleryGetCategorySideBar,
