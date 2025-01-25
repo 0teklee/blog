@@ -2,7 +2,7 @@ import LandingAboutMe from "components/landing/LandingAboutMe";
 import { clsx } from "clsx";
 import LandingBlogSection from "@/components/landing/LandingBlogSection";
 
-const LandingTemplate = async () => {
+const LandingTemplate = () => {
   return (
     <main className={clsx("flex flex-col gap-6 pt-6", "lg:gap-16")}>
       <section
