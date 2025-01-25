@@ -28,7 +28,7 @@ const BlogListItem = ({
         "overflow-hidden",
         "transition-all duration-700",
         "hover:bg-gray-100 dark:hover:bg-gray-800",
-        "tablet:px-2 tablet:py-3",
+        "lg:px-2 lg:py-3",
       )}
       href={`/blog/${id}`}
     >
@@ -38,7 +38,7 @@ const BlogListItem = ({
           "flex flex-col items-center space-between gap-1",
           "w-full",
           "cursor-pointer",
-          "tablet:flex-row tablet:gap-12",
+          "lg:flex-row lg:gap-12",
         )}
       >
         <div
@@ -47,7 +47,7 @@ const BlogListItem = ({
             "flex-shrink-0",
             "w-full h-[120px] ",
             "rounded-t overflow-hidden",
-            "tablet:rounded-t-none tablet:border-none tablet:flex-shrink tablet:w-44 tablet:h-44",
+            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-44 lg:h-44",
           )}
         >
           <Image
