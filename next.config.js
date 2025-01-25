@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     deviceSizes: [640, 768, 1024, 1280, 1536],
     remotePatterns: [
@@ -13,6 +12,7 @@ const nextConfig = {
     ],
     minimumCacheTTL: 300000,
   },
+
   env: {
     CLOUD_NAME: process.env.CLOUD_NAME,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
@@ -35,6 +35,9 @@ const nextConfig = {
     SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
   },
   compress: true,
+  experimental: {
+    ppr: "incremental",
+  },
 };
 
 module.exports = nextConfig;
