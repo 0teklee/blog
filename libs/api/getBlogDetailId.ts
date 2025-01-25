@@ -1,14 +1,12 @@
 import { supabase } from "@/libs/api/supabase";
 
-const getBlogDetailId = async (): Promise<string[] | undefined> => {
+const getBlogDetailId = async (): Promise<{ id: string }[] | undefined> => {
   try {
-    // Fetch all post IDs from the database
     const { data: postIds, error } = await supabase.from("Post").select("id");
 
     if (error) throw error;
 
-    // Map post IDs to strings
-    const res = (postIds || []).map((item) => `${item.id}`);
+    const res = (postIds || []).map((item) => ({ id: String(item.id) }));
 
     return res;
   } catch (err) {
