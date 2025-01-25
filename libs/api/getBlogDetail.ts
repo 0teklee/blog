@@ -1,76 +1,51 @@
 import { IBlogGetDetail } from "@/components/blog/types";
 import { supabase } from "@/libs/api/supabase";
 
+const POST_SELECT = `
+  id, 
+  title, 
+  content, 
+  createdAt,
+  categories:Category ( name )
+` as const;
 const getBlogDetail = async (
   params: string | string[],
 ): Promise<IBlogGetDetail> => {
-  const query = Number(params);
+  const id = Number(params);
+
   try {
-    const { data: mainPost, error: mainPostError } = await supabase
-      .from("Post")
-      .select(
-        `
-        id, 
-        title, 
-        content, 
-        createdAt,
-        categories:Category ( name )
-      `,
-      )
-      .eq("id", query)
-      .single();
+    const [mainPost, prevPost, nextPost] = await Promise.all([
+      // 현재 글
+      supabase.from("Post").select(POST_SELECT).eq("id", id).single(),
 
-    if (mainPostError) throw mainPostError;
-
-    // Fetch navigation posts (previous and next)
-    const [
-      { data: prevPost, error: prevPostError },
-      { data: nextPost, error: nextPostError },
-    ] = await Promise.all([
+      // 이전 글
       supabase
         .from("Post")
-        .select(
-          `
-          id, 
-          title, 
-          content, 
-          createdAt,
-          categories:Category ( name )
-        `,
-        )
-        .lt("id", query)
+        .select(POST_SELECT)
+        .lt("id", id)
         .neq("categories.name", "daily")
         .order("id", { ascending: false })
-        .limit(1)
-        .single(),
+        .limit(1),
 
+      // 다음 글
       supabase
         .from("Post")
-        .select(
-          `
-          id, 
-          title, 
-          content, 
-          createdAt,
-          categories:Category ( name )
-        `,
-        )
-        .gt("id", query)
+        .select(POST_SELECT)
+        .gt("id", id)
         .neq("categories.name", "daily")
         .order("id", { ascending: true })
-        .limit(1)
-        .single(),
+        .limit(1),
     ]);
 
-    if (prevPostError)
-      console.error("Error fetching previous post:", prevPostError);
-    if (nextPostError)
-      console.error("Error fetching next post:", nextPostError);
+    if (mainPost.error) throw mainPost.error;
 
-    const nav = [prevPost, nextPost].filter((post) => post !== null);
+    // single()을 제거하고 배열의 첫 번째 항목을 사용
+    const nav = [prevPost.data?.[0] || null, nextPost.data?.[0] || null].filter(
+      Boolean,
+    );
 
     return {
-      detail: mainPost || null,
+      detail: mainPost.data,
       nav,
     };
   } catch (err) {
