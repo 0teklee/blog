@@ -1,7 +1,10 @@
 import { THEME_META_IMAGE } from "libs/constants";
 import LandingTemplate from "components/landing/LandingTemplate";
 
-const Home = async () => <LandingTemplate />;
+const Home = () => <LandingTemplate />;
+
+export const revalidate = 600;
+export const experimental_ppr = true;
 
 export default Home;
 

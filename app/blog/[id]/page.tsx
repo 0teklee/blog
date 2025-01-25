@@ -1,22 +1,32 @@
 import React, { Suspense } from "react";
 
-import BlogDetailPageTemplate from "@/components/blog/BlogDetailPageTemplate";
+import BlogDetailPageTemplate from "@/components/blog/detail/BlogDetailPageTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import getBlogDetail from "@/libs/api/getBlogDetail";
 import { getImgSrc } from "components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
-import Loading from "@/components/common/Loading";
+import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";
+import { DEFAULT_BLOG_ITEM } from "@/components/blog/values";
+import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const page = async (props: { params: Promise<{ id: string }> }) => {
-  const params = await props.params;
-
-  const {
-    id
-  } = params;
+  const { id } = await props.params;
 
   return (
-    <Suspense fallback={<Loading style={`lg:w-full`} />}>
+    <Suspense
+      fallback={
+        <DetailLayout>
+          <DetailHeader
+            id={DEFAULT_BLOG_ITEM.id}
+            title={DEFAULT_BLOG_ITEM.title}
+            categories={DEFAULT_BLOG_ITEM.categories}
+            createdAt={DEFAULT_BLOG_ITEM.createdAt}
+          />
+          <LoaderSpin />
+        </DetailLayout>
+      }
+    >
       <BlogDetailPageTemplate id={id} />
     </Suspense>
   );
@@ -30,36 +40,33 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
-export const revalidate = 3600;
+export const revalidate = 600;
+export const experimental_ppr = true;
 
-export async function generateMetadata(
-  props: {
-    params: Promise<{ id: string }>;
-  }
-) {
+export async function generateMetadata(props: {
+  params: Promise<{ id: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    id
-  } = params;
+  const { id } = params;
 
   if (!id) {
     return {};
   }
   const data = await getBlogDetail(id);
 
-  if (!data || !data.detail) {
+  if (!data) {
     return {};
   }
 
-  const ImageSrc = getImgSrc(data.detail.content);
+  const ImageSrc = getImgSrc(data.content);
 
   return {
-    title: `${data.detail.title} - teklog`,
-    description: htmlReplace(data.detail.content).slice(0, 200),
+    title: `${data.title} - teklog`,
+    description: htmlReplace(data.content).slice(0, 200),
     openGraph: {
-      title: `${data?.detail?.title} - teklog`,
-      description: htmlReplace(data.detail.content).slice(0, 200) || "",
+      title: `${data.title} - teklog`,
+      description: htmlReplace(data.content).slice(0, 200) || "",
       images: ImageSrc,
     },
   };
