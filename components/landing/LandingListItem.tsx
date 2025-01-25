@@ -51,7 +51,7 @@ const LandingListItem = ({
             w-full p-4
             text-center
             z-10
-            invert mix-blend-difference dark:text-black`}
+            invert dark:invert-0 mix-blend-difference`}
         >
           <h3
             className={`w-full px-4
@@ -72,7 +72,7 @@ const LandingListItem = ({
         <div
           className={`flex items-start justify-between
             w-full z-20
-            bg-white dark:bg-gray-950
+            bg-background
             text-xs
             font-normal`}
         >

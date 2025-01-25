@@ -13,7 +13,7 @@ const GallerySidebar = async () => {
       className={clsx(
         "flex-shrink",
         "lg:fixed lg:top-auto lg:left-0  ",
-        "bg-white dark:bg-gray-950",
+        "bg-background",
         "lg:pl-8",
         "",
       )}
@@ -32,7 +32,7 @@ const GallerySidebar = async () => {
               key={`category_${i}`}
             >
               <Link
-                className="unset-button mb-2 text-black dark:text-gray-50 font-sans text-sm hover:text-primary hover:underline"
+                className="unset-button mb-2 font-sans text-sm hover:text-primary hover:underline"
                 href={`/gallery?category=${item.name}`}
               >
                 {item.name}
@@ -41,7 +41,7 @@ const GallerySidebar = async () => {
           ))}
         <div className="flex items-start justify-between w-full">
           <Link
-            className="unset-button mb-2 text-black dark:text-gray-50 font-sans text-sm hover:text-primary hover:underline"
+            className="unset-button mb-2 font-sans text-sm hover:text-primary hover:underline"
             href={`/gallery?category=~2022`}
           >
             ~ 2022

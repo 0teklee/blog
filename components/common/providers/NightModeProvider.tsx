@@ -1,8 +1,8 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { useAtomValue } from "jotai/react";
-import { isNightModeAtom } from "@/libs/atoms";
+import { Provider, useAtomValue } from "jotai/react";
+import { isNightModeAtom, store } from "@/libs/atoms";
 
 const NightModeProvider = ({
   children,
@@ -10,7 +10,12 @@ const NightModeProvider = ({
   children: ReactNode | ReactNode[];
 }) => {
   const isNightMode = useAtomValue(isNightModeAtom);
-  return <div className={isNightMode ? "dark" : ""}>{children}</div>;
+
+  return (
+    <Provider store={store}>
+      <div className={isNightMode ? "dark" : ""}>{children}</div>
+    </Provider>
+  );
 };
 
 export default NightModeProvider;

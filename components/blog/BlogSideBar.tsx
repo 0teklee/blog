@@ -9,7 +9,7 @@ const BlogSideBar = async () => {
       className={`
         flex flex-col items-stretch gap-5 
         w-full mb-12 flex-shrink-0 
-        bg-white dark:bg-gray-950 scrollbar-hide
+        bg-background scrollbar-hide
         lg:w-56 lg:pb-12 lg:sticky 
         lg:top-20 lg:h-[calc(100vh-4rem)]
         overflow-hidden
@@ -45,7 +45,7 @@ const BlogSideBar = async () => {
               <details
                 key={`${category.name}_wrapper`}
                 className={`flex flex-col items-start justify-center gap-2 
-                    bg-white dark:bg-gray-950 break-all 
+                    bg-background break-all 
                     scrollbar-hide overflow-y-scroll 
                     `}
               >

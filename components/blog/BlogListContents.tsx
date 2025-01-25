@@ -19,9 +19,8 @@ const BlogListContents = async ({
         className={clsx(
           "flex flex-col gap-12",
           "w-full px-4",
-          "text-black dark:text-white",
           "tablet:gap-8 tablet:pr-12 xl:pr-32",
-          "dark:hover:text-[#d2ef4f] transition-colors duration-500",
+          "transition-colors duration-500",
         )}
       >
         {!posts && (

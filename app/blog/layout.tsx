@@ -13,7 +13,7 @@ const Layout = async ({ children }: { children: ReactNode | ReactNode[] }) => {
             className={`
         flex flex-col items-stretch gap-5 
         w-full mb-12 flex-shrink-0 
-        bg-white dark:bg-gray-950 scrollbar-hide
+        bg-background scrollbar-hide
         lg:w-56 lg:pb-12 lg:sticky 
         lg:top-20 lg:h-[calc(100vh-4rem)]
         overflow-hidden

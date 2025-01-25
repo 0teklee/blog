@@ -61,7 +61,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
                 "w-full px-4 py-24",
                 "tablet:px-12",
                 "lg:px-20",
-                "bg-white dark:bg-gray-950 dark:text-neutral-50",
+                "bg-background text-primary",
                 notoSans.className,
               )}
             >

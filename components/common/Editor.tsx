@@ -28,7 +28,7 @@ const ReactQuillBase = dynamic(
 
 ReactQuillBase.displayName = "ReactQuillBase";
 interface EditorProps {
-  handler: (title: string, category: string, content: string) => void;
+  handler: (title: string, content: string, category: string) => void;
   initialTitle?: string;
   initialCategory?: string;
   initialContent?: string;

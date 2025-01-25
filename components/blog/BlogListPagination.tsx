@@ -1,6 +1,6 @@
 import React from "react";
-import { clsx } from "clsx";
 import Link from "next/link";
+import { cn } from "@/libs/utils";
 
 const BlogListPagination = ({
   searchParams,
@@ -9,20 +9,10 @@ const BlogListPagination = ({
   searchParams: { [key: string]: string };
   hasNext?: boolean;
 }) => (
-  <div
-    className={clsx(
-      "flex justify-center items-center mt-20 py-12",
-      "bg-white text-black",
-      "dark:bg-gray-950 dark:text-neutral-50",
-    )}
-  >
+  <div className={cn("flex justify-center items-center mt-20 py-12")}>
     {!!searchParams?.page && Number(searchParams?.page) !== 1 && (
       <Link
-        className={clsx(
-          "mx-8 text-sm",
-          "hover:underline hover:text-blue-500",
-          "dark:hover:text-[#d2ef4f]",
-        )}
+        className={cn("mx-8 text-sm", "hover:underline hover:text-blue-500")}
         href={`/blog?page=${Number(searchParams?.page) - 1}${searchParams?.category ? `&category=${searchParams?.category}` : ""}`}
       >
         prev
@@ -30,11 +20,7 @@ const BlogListPagination = ({
     )}
     {!!searchParams?.page && hasNext && (
       <Link
-        className={clsx(
-          "mx-8 text-sm",
-          "hover:underline hover:text-blue-500",
-          "dark:hover:text-[#d2ef4f]",
-        )}
+        className={cn("mx-8 text-sm", "hover:underline hover:text-blue-500")}
         href={`/blog?page=${Number(searchParams?.page) + 1}${searchParams?.category ? `&category=${searchParams?.category}` : ""}`}
       >
         next

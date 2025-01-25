@@ -108,7 +108,7 @@ const GalleryItem = ({
                     exit: { opacity: 0, scale: 0.8, y: 100 },
                   }}
                 >
-                  <p className="mt-2 text-zinc-500 dark:text-zinc-500"></p>
+                  <p className="mt-2"></p>
                   <p className="text-zinc-500"></p>
                 </MorphingDialogDescription>
               </div>
