@@ -1,3 +1,6 @@
+import { IBlogGetListItem } from "@/components/blog/types";
+import dayjs from "dayjs";
+
 export const LANDING_LIST_IMAGES = [
   {
     id: 1,
@@ -31,4 +34,13 @@ export const LANDING_LIST_IMAGES = [
   },
 ];
 
-export const IMAGE_WIDTH = 375;
+export const MAIN_LIST_FALLBACK: IBlogGetListItem[] = Array.from(
+  { length: 6 },
+  (_, index) => ({
+    id: index,
+    title: "",
+    categories: { name: "" },
+    content: "",
+    createdAt: dayjs().toString(),
+  }),
+);

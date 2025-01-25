@@ -1,8 +1,6 @@
 import LandingAboutMe from "components/landing/LandingAboutMe";
 import { clsx } from "clsx";
-import LandingListContainer from "components/landing/LandingListContainer";
-import { Suspense } from "react";
-import Loading from "@/components/common/Loading";
+import LandingBlogSection from "@/components/landing/LandingBlogSection";
 
 const LandingTemplate = async () => {
   return (
@@ -14,9 +12,7 @@ const LandingTemplate = async () => {
         <p>LEE TEK WOO</p>
         <p>Tech Blog</p>
       </section>
-      <Suspense fallback={<Loading style={`h-[280px]`} />}>
-        <LandingListContainer />
-      </Suspense>
+      <LandingBlogSection />
       <LandingAboutMe />
     </main>
   );
