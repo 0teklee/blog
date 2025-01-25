@@ -1,38 +1,32 @@
-"use client";
-
-import React from "react";
+import React, { cache } from "react";
 import { clsx } from "clsx";
 import dayjs from "dayjs";
-import { useRouter } from "next/navigation";
-import { IBlogGetListItem } from "@/components/blog/types";
+import Link from "next/link";
+import getBlogNav from "@/libs/api/getBlogNav";
 
-const BlogDetailFooterNav = ({
-  id,
-  nav: [prev, next],
-}: {
-  nav: (IBlogGetListItem | null)[];
-  id: number;
-}) => {
-  const router = useRouter();
+const getCacheBlogNav = cache(getBlogNav);
+
+const BlogDetailFooterNav = async ({ id }: { id: string }) => {
+  const [prev, next] = await getCacheBlogNav(id);
 
   return (
     <>
-      <button
+      <Link
         className="unset-cursor mt-12 font-sans font-light hover:text-blue-500 hover:bg-sign transition-all duration-500"
-        onClick={() => router.push("/blog?page=1")}
+        href={`/blog`}
       >
         ← go back to list
-      </button>
+      </Link>
       <div className="w-full">
         {next && (
-          <div
+          <Link
             key="next"
             className={clsx(
               "relative px-2 py-1 flex justify-between",
               "w-full text-base cursor-pointer",
               "hover:bg-gray-500 hover:text-white transition-all duration-500",
             )}
-            onClick={() => router.push(`/blog/${next.id}`)}
+            href={`/blog/${next.id}`}
           >
             <p>next</p>
             <p
@@ -46,19 +40,19 @@ const BlogDetailFooterNav = ({
             <p className="text-sm">
               {dayjs(next.createdAt).format("YYYY-MM-DD")}
             </p>
-          </div>
+          </Link>
         )}
         {prev && (
-          <div
+          <Link
             key="prev"
             className={clsx(
               "relative px-2 py-1 flex justify-between",
               "w-full font-sans text-base cursor-pointer",
               "hover:bg-gray-500 hover:text-white transition-all duration-500",
             )}
-            onClick={() => router.push(`/blog/${prev.id}`)}
+            href={`/blog/${prev.id}`}
           >
-            <p>{id < prev.id ? "next" : "prev"}</p>
+            <p>prev</p>
             <p
               className={`
                 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
@@ -70,7 +64,7 @@ const BlogDetailFooterNav = ({
             <p className="text-sm">
               {dayjs(prev.createdAt).format("YYYY-MM-DD")}
             </p>
-          </div>
+          </Link>
         )}
       </div>
     </>
