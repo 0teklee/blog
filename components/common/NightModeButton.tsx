@@ -1,29 +1,45 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { clsx } from "clsx";
-import { isNightModeAtom } from "@/libs/atoms";
-import { useAtom } from "jotai/react";
+import { useTheme } from "next-themes";
 
 const NightModeButton = () => {
-  const [mode, setMode] = useAtom(isNightModeAtom);
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <div
       className={clsx(
         "fixed left-1/2 top-24 -translate-x-1/2 -translate-y-1/2 z-30",
+        "text-xl font-[Cormorant]"
       )}
     >
+      { mounted ?
       <button
         className={clsx(
-          "cursor-pointer text-xl font-[Cormorant]",
+          "cursor-pointer",
           "transition duration-150 hover:invert",
-          mode ? "text-amber-300" : "text-blue-900",
+          theme === "dark" ? "text-amber-300" : "text-blue-900"
         )}
         about="night/day_mode"
-        onClick={() => setMode((prev) => !prev)}
+        onClick={toggleTheme}
       >
-        {mode ? "☼" : "☽"}
+        {theme === "dark" ? "☼" : "☽"}
       </button>
+        :
+        <p>
+          ☼
+        </p>
+      }
     </div>
   );
 };
