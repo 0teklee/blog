@@ -37,7 +37,7 @@ const ListFallbackItem = () => {
             "relative",
             "flex-shrink-0 flex items-center justify-center",
             "w-full h-[120px]",
-            "bg-primary rounded-t overflow-hidden",
+            "bg-secondary rounded-t overflow-hidden",
             "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-44 lg:h-44",
             "animate-pulse",
           )}

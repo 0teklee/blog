@@ -3,6 +3,7 @@ import getBlogList from "@/libs/api/getBlogList";
 import BlogListItem from "@/components/blog/list/BlogListItem";
 import BlogListPagination from "@/components/blog/list/BlogListPagination";
 import { cn } from "@/libs/utils";
+import ListWrapper from "@/components/blog/list/ListWrapper";
 
 const cachedGetBlogList = cache(getBlogList);
 
@@ -20,7 +21,8 @@ const BlogListContents = async ({
           "flex flex-col gap-12",
           "w-full px-4",
           "tablet:gap-8",
-          "transition-colors duration-500",
+          "transition-all duration-500 ease-in-out",
+          "overflow-x-hidden",
         )}
       >
         {searchParams && (
@@ -32,17 +34,22 @@ const BlogListContents = async ({
         {posts.length === 0 && (
           <h1 className="mb-16 text-center font-sans lg:mb-28">No Posts Yet</h1>
         )}
-        {posts.map((item, i) => (
-          <BlogListItem
-            content={item.content}
-            title={item.title}
-            id={item.id}
-            createdAt={item.createdAt}
-            key={`BlogListItem_${i}`}
-            categories={item.categories}
-            index={i}
-          />
-        ))}
+        <ListWrapper
+          key={`${searchParams?.page || ""}${searchParams?.category || ""}`}
+          searchParams={searchParams}
+        >
+          {posts.map((item, i) => (
+            <BlogListItem
+              content={item.content}
+              title={item.title}
+              id={item.id}
+              createdAt={item.createdAt}
+              key={`BlogListItem_${i}`}
+              categories={item.categories}
+              index={i}
+            />
+          ))}
+        </ListWrapper>
         {searchParams && (
           <BlogListPagination
             searchParams={searchParams}
