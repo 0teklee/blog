@@ -74,9 +74,9 @@ const BlogTableContent = ({ content }: { content: string }) => {
               <button
                 className={`
                   text-left w-full
-                  hover:text-blue-500 
+                  hover:text-theme 
                   transition-colors duration-200
-                  ${activeHeading === heading.text ? "text-blue-500 font-medium" : ""}
+                  ${activeHeading === heading.text ? "text-theme font-medium" : ""}
                 `}
                 onClick={() => scrollToHeading(heading.text)}
               >

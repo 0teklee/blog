@@ -33,7 +33,7 @@ function ScrollProgressAnimate({
 
   return (
     <motion.div
-      className={cn("inset-x-0 top-0 h-1 origin-left", className)}
+      className={cn("inset-x-0 top-0 h-2 origin-left", className)}
       style={{
         scaleX,
       }}
@@ -46,11 +46,8 @@ const ScrollProgress = (props: ScrollProgressProps) => {
     <div className={`fixed top-0 w-full z-50`}>
       <div className="pointer-events-none absolute bottom-0 left-0 h-12 w-full bg-white to-transparent backdrop-blur-xl [-webkit-mask-image:linear-gradient(to_top,white,transparent)] dark:bg-neutral-900" />
       <div className="pointer-events-none absolute left-0 top-0 w-full">
-        <div className="absolute left-0 top-0 h-1 w-full bg-[#E6F4FE] dark:bg-[#111927]" />
-        <ScrollProgressAnimate
-          {...props}
-          className="absolute top-0 bg-[#0090FF]"
-        />
+        <div className="absolute left-0 top-0 h-1 w-full" />
+        <ScrollProgressAnimate {...props} className="absolute top-0 bg-theme" />
       </div>
     </div>
   );

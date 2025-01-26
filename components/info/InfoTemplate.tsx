@@ -39,7 +39,7 @@ const InfoTemplate = () => (
         <Link
           className={clsx(
             "underline block",
-            "hover:bg-blue-500 hover:text-white",
+            "hover:bg-theme hover:text-white",
             "transition-colors duration-500 ease-in-out",
           )}
           href="https://0teklee.github.io/resume"
@@ -49,7 +49,7 @@ const InfoTemplate = () => (
         <Link
           className={clsx(
             "underline block",
-            "hover:bg-blue-500 hover:text-white",
+            "hover:bg-theme hover:text-white",
             "transition-colors duration-500 ease-in-out",
           )}
           href="https://0teklee.github.io/resume/cv.html"

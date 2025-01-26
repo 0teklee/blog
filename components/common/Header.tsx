@@ -25,7 +25,7 @@ const Header = ({ fonts }: { fonts: string }) => (
             aria-label={item.item}
             className={clsx(
               "text-lg  font-bold",
-              "hover:text-blue-500 hover:invert transition duration-700",
+              "hover:text-theme hover:invert transition duration-700",
               idx === 0 && "hidden md:block",
             )}
             href={item.path}
@@ -38,7 +38,7 @@ const Header = ({ fonts }: { fonts: string }) => (
         className={clsx(
           "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40",
           "font-bold",
-          "hover:text-blue-500 transition-all duration-700",
+          "hover:text-theme transition-all duration-700",
           "text-6xl",
         )}
         href="/"
@@ -52,7 +52,7 @@ const Header = ({ fonts }: { fonts: string }) => (
             aria-label={item.item}
             className={clsx(
               "text-lg  font-bold",
-              "hover:text-blue-500 hover:invert transition duration-700",
+              "hover:text-theme hover:invert transition duration-700",
               idx === 0 && "hidden md:block",
             )}
             href={item.path}

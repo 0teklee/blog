@@ -5,7 +5,9 @@ import ListItemFallback from "@/components/blog/list/ListItemFallback";
 
 const ListFallback = () => {
   return (
-    <div className={cn("flex flex-col", "lg:flex-row lg:gap-3")}>
+    <div
+      className={cn("flex flex-col", "lg:flex-row lg:gap-3", "fade-out-100")}
+    >
       <div
         className={cn(
           "flex flex-col gap-12",

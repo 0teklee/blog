@@ -57,7 +57,7 @@ const ListFallbackItem = () => {
                 "text-lg font-medium",
                 "line-clamp-1 text-ellipsis",
                 "transition-all duration-500",
-                "group-hover:underline group-hover:text-blue-500",
+                "group-hover:underline group-hover:text-theme",
                 "blur-sm",
               )}
             >

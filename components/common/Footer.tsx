@@ -17,7 +17,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
           href={"/gallery"}
           className={clsx(
             "absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5",
-            "hover:text-blue-500 hover:font-bold",
+            "hover:text-theme hover:font-bold",
             "transition-all duration-150",
           )}
         >
@@ -28,7 +28,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
             href={"/info"}
             className={clsx(
               "mt-4 cursor-pointer font-normal",
-              "hover:text-blue-500 hover:font-bold",
+              "hover:text-theme hover:font-bold",
               " transition-all duration-150",
             )}
           >
@@ -38,7 +38,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
         <FooterScrollButton
           className={clsx(
             "absolute cursor-pointer font-normal",
-            "hover:text-blue-500 hover:font-bold",
+            "hover:text-theme hover:font-bold",
             "transition-all duration-150 top-1/2 left-1/2",
             "-translate-x-1/2 -translate-y-1/2",
           )}
@@ -48,7 +48,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
         <button
           className={clsx(
             "cursor-pointer font-normal",
-            "hover:text-blue-500 hover:font-bold",
+            "hover:text-theme hover:font-bold",
             "transition-all duration-150",
           )}
         >

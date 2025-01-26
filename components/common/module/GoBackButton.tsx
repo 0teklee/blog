@@ -9,7 +9,7 @@ const GoBackButton = () => {
     <button
       className={clsx(
         "mt-12 text-base font-light",
-        "unset-button hover:text-white hover:bg-blue-500",
+        "unset-button hover:text-white hover:bg-theme",
         "transition-colors duration-500",
       )}
       onClick={() => router.back()}

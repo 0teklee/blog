@@ -12,7 +12,7 @@ const BlogDetailFooterNav = async ({ id }: { id: string }) => {
   return (
     <>
       <Link
-        className="unset-cursor mt-12 font-sans font-light hover:text-blue-500 hover:bg-sign transition-all duration-500"
+        className="unset-cursor mt-12 font-sans font-light hover:text-theme hover:bg-sign transition-all duration-500"
         href={`/blog`}
       >
         ← go back to list
