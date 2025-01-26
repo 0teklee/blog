@@ -1,10 +1,11 @@
 "use client";
 
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense } from "react";
 import { LoaderCircle } from "lucide-react";
 import { createPortal } from "react-dom";
 import { AnimatePresence } from "motion/react";
 import { cn } from "@/libs/utils";
+import { useMount } from "@/libs/hooks/useMount";
 
 const BlogTableContent = lazy(
   () => import("@/components/blog/detail/BlogTableContent"),
@@ -15,34 +16,28 @@ const BlogHeadingNavContainer = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [mounted, setMounted] = useState(false);
+  const { isMounted, isWindowLoaded } = useMount();
 
-  useEffect(() => {
-    setMounted(true);
-    return () => setMounted(false);
-  }, []);
+  const containerElement = isWindowLoaded
+    ? document.getElementById("left-nav-portal")
+    : null;
 
-  if (!mounted) return null;
-
-  const containerElement =
-    typeof window !== "undefined"
-      ? document.getElementById("left-nav-portal")
-      : null;
-
-  return createPortal(
-    <AnimatePresence initial={false} mode="sync">
-      <div
-        className={cn(
-          "sticky right-0 top-20 shrink-0",
-          "lg:grid grid-cols-16",
-          "hidden w-64 h-[50vh] overflow-hidden",
-        )}
-      >
-        {children}
-      </div>
-    </AnimatePresence>,
-    containerElement ?? document.body,
-  );
+  return isMounted
+    ? createPortal(
+        <AnimatePresence initial={false} mode="sync">
+          <div
+            className={cn(
+              "sticky right-0 top-20 shrink-0",
+              "lg:grid grid-cols-16",
+              "hidden w-64 h-[50vh] overflow-hidden",
+            )}
+          >
+            {children}
+          </div>
+        </AnimatePresence>,
+        containerElement ?? document.body,
+      )
+    : null;
 };
 
 const BlogHeadingNav = ({ content }: { content: string }) => {
