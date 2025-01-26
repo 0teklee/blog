@@ -30,10 +30,10 @@ const BlogListPagination = ({
             "hover:animate-pulse",
             `after:content-["prev"]`,
           )}
-          href={`/blog?page=${pageNum - 1}${category ? `&category=${category}` : ""}&prev=${pageNum - 1}`}
-          prefetch={true}
+          href={`/blog?page=${pageNum - 1}${category ? `&category=${category}` : ""}&prev=${pageNum}`}
+          about={"prev-blog-page"}
         >
-          <ChevronLeftIcon className={` `} />
+          <ChevronLeftIcon />
         </Link>
       )}
       {!!page && hasNext && (
@@ -45,8 +45,8 @@ const BlogListPagination = ({
             "hover:animate-pulse",
             'before:content-["next"]',
           )}
-          href={`/blog?page=${pageNum + 1}${category ? `&category=${category}` : ""}&prev=${page !== "1" ? pageNum - 1 : 1}`}
-          prefetch={true}
+          href={`/blog?page=${pageNum + 1}${category ? `&category=${category}` : ""}&prev=${pageNum}`}
+          about={"next-blog-page"}
         >
           <ChevronRightIcon />
         </Link>
