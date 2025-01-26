@@ -33,7 +33,6 @@ const LandingListCard = ({
           className={`
             w-full -z-30
             transition-all duration-200
-            aspect-[375/500]
             group-hover:blur-sm group-hover:brightness-50 group-hover:contrast-150
             `}
           key={`img_${post.id}`}
@@ -42,7 +41,11 @@ const LandingListCard = ({
           width={375}
           height={500}
           priority={index < 3}
-          sizes="(min-width: 1024px) 375px, (min-width: 768px) 50vw, 100vw"
+          sizes={`
+           (max-width: 599px) 345px, 
+           (min-width: 600px) and (max-width: 767px) 172.5px, 
+            345px
+          `}
         />
         <div
           className={`
