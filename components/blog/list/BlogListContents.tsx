@@ -10,7 +10,7 @@ const cachedGetBlogList = cache(getBlogList);
 const BlogListContents = async ({
   searchParams,
 }: {
-  searchParams?: { page: string; category: string };
+  searchParams?: { page: string; category: string; prev?: string };
 }) => {
   const { page, category } = searchParams || { page: "1", category: "" };
   const { posts, has_next_page } = await cachedGetBlogList(page, category);
@@ -39,15 +39,7 @@ const BlogListContents = async ({
           searchParams={searchParams}
         >
           {posts.map((item, i) => (
-            <BlogListItem
-              content={item.content}
-              title={item.title}
-              id={item.id}
-              createdAt={item.createdAt}
-              key={`BlogListItem_${i}`}
-              categories={item.categories}
-              index={i}
-            />
+            <BlogListItem {...item} key={`BlogListItem_${i}`} index={i} />
           ))}
         </ListWrapper>
         {searchParams && (
