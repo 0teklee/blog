@@ -1,25 +1,22 @@
+import ListFallback from "@/components/blog/list/ListFallback";
 import { Suspense } from "react";
 import BlogListContents from "@/components/blog/list/BlogListContents";
-import { LoaderCircle } from "lucide-react";
+import { ListHeader, ListLayout } from "@/components/blog/list/Template";
 
-const BlogListPageTemplate = ({
+const BlogListPageTemplate = async ({
   searchParams,
 }: {
-  searchParams?: { page: string; category: string };
+  searchParams?: Promise<{ page: string; category: string }>;
 }) => {
+  const params = await searchParams!; // middleware 적용됨
+
   return (
-    <div className="relative flex flex-col gap-16 w-full">
-      <h1 className={"text-3xl font-bold font-inter"}>
-        {searchParams?.category ? searchParams?.category : "Posts"}
-      </h1>
-      <Suspense
-        fallback={
-          <LoaderCircle className={`w-32 text-gray-300 animate-spin`} />
-        }
-      >
-        <BlogListContents searchParams={searchParams} />
+    <ListLayout>
+      <ListHeader text={params?.category ? params?.category : "Posts"} />
+      <Suspense fallback={<ListFallback />}>
+        <BlogListContents searchParams={params} />
       </Suspense>
-    </div>
+    </ListLayout>
   );
 };
 

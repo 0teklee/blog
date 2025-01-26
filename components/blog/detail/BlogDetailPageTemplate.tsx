@@ -9,9 +9,15 @@ import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const getCacheBlogDetail = cache(getBlogDetail);
 
-const BlogDetailPageTemplate = async ({ id }: { id: string }) => {
+const BlogDetailPageTemplate = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
+  const { id } = await params;
   const { content, createdAt, title, categories } =
     await getCacheBlogDetail(id);
+
   const updatedContent = formatBlogContent(content);
 
   return (
