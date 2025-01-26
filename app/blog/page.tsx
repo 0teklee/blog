@@ -16,7 +16,7 @@ const page = async (props: {
         </ListLayout>
       }
     >
-      <BlogListPageTemplate searchParams={props?.searchParams} />;
+      <BlogListPageTemplate searchParams={props?.searchParams} />
     </Suspense>
   );
 };
