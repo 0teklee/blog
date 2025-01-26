@@ -16,11 +16,17 @@ const ListFallback = () => {
           "transition-colors duration-500",
         )}
       >
-        <BlogListPagination searchParams={{ page: "1" }} hasNext={true} />
+        <BlogListPagination
+          searchParams={{ page: "1", category: "" }}
+          hasNext={true}
+        />
         {Array.from({ length: 5 }).map((_, i) => (
           <ListItemFallback key={`list-loading-fallback-${i}`} />
         ))}
-        <BlogListPagination searchParams={{ page: "1" }} hasNext={true} />
+        <BlogListPagination
+          searchParams={{ page: "1", category: "" }}
+          hasNext={true}
+        />
       </div>
     </div>
   );
