@@ -7,7 +7,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
     <footer
       className={clsx(
         "fixed bottom-0 w-full p-8 z-40",
-        "mix-blend-difference invert",
+        "mix-blend-difference invert dark:invert-0",
         "text-lg",
         fonts,
       )}

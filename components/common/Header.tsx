@@ -8,7 +8,7 @@ const Header = ({ fonts }: { fonts: string }) => (
       "fixed top-0 ",
       "z-40",
       "w-screen",
-      "mix-blend-difference invert",
+      "mix-blend-difference invert dark:invert-0",
       "font-bold",
       fonts,
     )}
