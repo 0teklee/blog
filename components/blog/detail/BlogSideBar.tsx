@@ -23,18 +23,18 @@ const BlogSideBar = ({ className }: { className?: string }) => {
         scrollbar-hide
         "
       >
-        <details className={`w-full group blog-sidebar`}>
+        <details className={`w-full group/parent blog-sidebar`}>
           <summary
             className={`
             flex justify-between
             w-full pb-2 
             text-lg font-normal font-sans 
             cursor-pointer 
-            hover:text-blue-500 group-open:text-blue-500
+            hover:text-theme group-open:text-theme
             after:transition-all after:duration-300
             after:content-["⇣"]
-            after:group-open:rotate-180
-            open:text-blue-500
+            after:group-open/parent:rotate-180
+            group-open/parent:text-theme
             list-outside 
             `}
           >
