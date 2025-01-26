@@ -11,23 +11,16 @@ import { DEFAULT_BLOG_ITEM } from "@/components/blog/values";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const page = async (props: { params: Promise<{ id: string }> }) => {
-  const { id } = await props.params;
-
   return (
     <Suspense
       fallback={
         <DetailLayout>
-          <DetailHeader
-            id={DEFAULT_BLOG_ITEM.id}
-            title={DEFAULT_BLOG_ITEM.title}
-            categories={DEFAULT_BLOG_ITEM.categories}
-            createdAt={DEFAULT_BLOG_ITEM.createdAt}
-          />
+          <DetailHeader {...DEFAULT_BLOG_ITEM} />
           <LoaderSpin />
         </DetailLayout>
       }
     >
-      <BlogDetailPageTemplate id={id} />
+      <BlogDetailPageTemplate params={props.params} />
     </Suspense>
   );
 };

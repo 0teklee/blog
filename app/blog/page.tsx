@@ -1,11 +1,24 @@
 import { THEME_META_IMAGE } from "libs/constants";
 import BlogListPageTemplate from "@/components/blog/list/BlogListPageTemplate";
+import { Suspense } from "react";
+import { ListHeader, ListLayout } from "@/components/blog/list/Template";
+import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const page = async (props: {
   searchParams?: Promise<{ page: string; category: string }>;
 }) => {
-  const searchParams = await props.searchParams;
-  return <BlogListPageTemplate searchParams={searchParams} />;
+  return (
+    <Suspense
+      fallback={
+        <ListLayout>
+          <ListHeader text={"Posts"} />
+          <LoaderSpin />
+        </ListLayout>
+      }
+    >
+      <BlogListPageTemplate searchParams={props?.searchParams} />;
+    </Suspense>
+  );
 };
 
 export const revalidate = 1200;
