@@ -45,7 +45,6 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', '${GA_TRACKING_ID}');
         `}
         </Script>
@@ -61,7 +60,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
                 "w-full px-4 py-24",
                 "tablet:px-12",
                 "lg:px-20",
-                "bg-background text-primary",
+                "bg-background text-primary selection:bg-theme selection:text-background",
                 notoSans.className,
               )}
             >
