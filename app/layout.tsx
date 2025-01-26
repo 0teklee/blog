@@ -29,7 +29,7 @@ const notoSans = Noto_Sans_KR({
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <html className={inter.className} lang={`kr`}>
+    <html className={inter.className} lang={`kr`} suppressHydrationWarning>
       <head>
         <title>teklog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
