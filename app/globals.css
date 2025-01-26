@@ -87,9 +87,6 @@
 
 .blog-post-content img {
     width: 100%;
-    @media only screen and (min-width: 1024px) {
-            padding: 0 8rem;
-    }
 }
 
 .blog-post-content video {
@@ -243,8 +240,10 @@ details > summary::-webkit-details-marker {
 }
 
 
+
 @layer base {
   :root {
+        --theme: 221 90% 55%;
         --background: 0 0% 100%;
         --foreground: 0 0% 3.9%;
         --card: 0 0% 100%;
@@ -271,10 +270,10 @@ details > summary::-webkit-details-marker {
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
 
-
     }
   .dark {
-        --background: 0 0% 3.9%;
+        --theme: 74 91% 54%;
+        --background:235 15% 9.5%;
         --foreground: 0 0% 98%;
         --card: 0 0% 3.9%;
         --card-foreground: 0 0% 98%;
@@ -298,25 +297,15 @@ details > summary::-webkit-details-marker {
         --chart-3: 30 80% 55%;
         --chart-4: 280 65% 60%;
         --chart-5: 340 75% 55%;
-
-
     }
-
-
 }
 
 
 @layer base {
   * {
     @apply border-border;
-
-
     }
   body {
     @apply bg-background text-foreground;
-
-
     }
-
-
 }
