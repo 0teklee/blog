@@ -12,8 +12,8 @@ const BlogSideBarList = async () => {
           <details
             key={`${category.name}_wrapper`}
             className={cn(
-              "flex flex-col items-start justify-center gap-2",
-              "bg-background break-all",
+              "flex flex-col items-stretch justify-center gap-2",
+              "w-full bg-background break-all",
               "scrollbar-hide overflow-y-scroll",
               "group/child",
               "transition-opacity duration-700",
@@ -33,7 +33,7 @@ const BlogSideBarList = async () => {
             </summary>
             <div
               className={cn(
-                "flex flex-col gap-2 w-full",
+                "flex flex-col gap-2 w-full p-0",
                 "transition-opacity duration-500",
                 "opacity-0 group-open/child:opacity-100",
               )}
@@ -41,15 +41,15 @@ const BlogSideBarList = async () => {
               {category.posts.map((blog, i) => (
                 <Link
                   key={`${category.name}_sub_wrapper_${i}`}
-                  className={`
-                      w-full pl-2 pr-3 py-1 text-sm 
-                      lg:pl-2 lg:text-md 
-                      overflow-y-hidden rounded
-                      text-left line-clamp-2 overflow-ellipsis
-                      hover:bg-theme hover:text-background
-                      
-                      last:mb-4
-                      `}
+                  className={cn(
+                    "flex w-full pl-2 pr-3 py-1",
+                    "text-sm lg:pl-2 lg:text-md",
+                    "overflow-y-hidden rounded",
+                    "text-left line-clamp-2 overflow-ellipsis",
+                    "transition-colors duration-200",
+                    "hover:bg-theme hover:text-background",
+                    "last:mb-4",
+                  )}
                   href={`/blog/${blog.id}`}
                 >
                   - {blog.title}
