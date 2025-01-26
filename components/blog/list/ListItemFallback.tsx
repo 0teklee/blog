@@ -14,7 +14,7 @@ const ListFallbackItem = () => {
   return (
     <div
       className={cn(
-        "w-full",
+        "w-full px-4",
         "group",
         "overflow-hidden",
         "transition-all duration-700",
@@ -69,11 +69,13 @@ const ListFallbackItem = () => {
                 "text-xs font-medium",
               )}
             >
-              <div className="flex items-center">
+              <div className="flex items-center blur-sm">
                 <p className="font-semibold">category:</p>
-                <p className="ml-2 blur-sm">{category}</p>
+                <p className="ml-2">{category}</p>
               </div>
-              <p>{dayjs().format("YYYY-MM-DD")}</p>
+              <p className={`blur-sm`}>
+                {dayjs("2025.01.01").format("YYYY-MM-DD")}
+              </p>
             </div>
           </div>
           <p
