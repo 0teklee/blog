@@ -179,10 +179,19 @@ async function processHTML(html: string) {
   return DOMPurify.sanitize(processedHTML);
 }
 
+const generateFallbackText = (length: number): string => {
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUV WXYZabcd efghijklm nopqrstuvwxyz0123456789 ";
+  return Array.from({ length }, () =>
+    chars.charAt(Math.floor(Math.random() * chars.length)),
+  ).join("");
+};
+
 export {
   setCategoryPresetImg,
   getContentImg,
   parseHTMLToString,
   cn,
   processHTML,
+  generateFallbackText,
 };
