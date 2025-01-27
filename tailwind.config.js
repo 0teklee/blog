@@ -13,6 +13,7 @@ module.exports = {
       },
       screens: {
         tablet: "600px",
+        widescreen: "1536px",
       },
       borderRadius: {
         lg: "var(--radius)",

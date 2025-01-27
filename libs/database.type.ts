@@ -4,661 +4,684 @@ export type Json =
   | boolean
   | null
   | { [key: string]: Json | undefined }
-  | Json[]
+  | Json[];
 
 export type Database = {
   public: {
     Tables: {
       _7baa8382_497e_5600_80d2_ff3404e50ecf_20221231060956_vrepl: {
         Row: {
-          author: string
-          comment: string
-          comment_id: number
-          createdAt: string
-          email: string
-          id: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id: number;
+          createdAt: string;
+          email: string;
+          id: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Insert: {
-          author: string
-          comment: string
-          comment_id: number
-          createdAt?: string
-          email: string
-          id?: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id: number;
+          createdAt?: string;
+          email: string;
+          id?: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Update: {
-          author?: string
-          comment?: string
-          comment_id?: number
-          createdAt?: string
-          email?: string
-          id?: number
-          isPrivate?: boolean
-          name?: string
-        }
-        Relationships: []
-      }
+          author?: string;
+          comment?: string;
+          comment_id?: number;
+          createdAt?: string;
+          email?: string;
+          id?: number;
+          isPrivate?: boolean;
+          name?: string;
+        };
+        Relationships: [];
+      };
       _CategoryToPlaylist: {
         Row: {
-          A: string | null
-          B: string | null
-        }
+          A: string | null;
+          B: string | null;
+        };
         Insert: {
-          A?: string | null
-          B?: string | null
-        }
+          A?: string | null;
+          B?: string | null;
+        };
         Update: {
-          A?: string | null
-          B?: string | null
-        }
-        Relationships: []
-      }
+          A?: string | null;
+          B?: string | null;
+        };
+        Relationships: [];
+      };
       _ea6e01a8_888d_5e86_bdad_f414a0c5e562_20221231065800_vrepl: {
         Row: {
-          author: string
-          comment: string
-          comment_id: number
-          createdAt: string
-          email: string
-          id: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id: number;
+          createdAt: string;
+          email: string;
+          id: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Insert: {
-          author: string
-          comment: string
-          comment_id: number
-          createdAt?: string
-          email: string
-          id?: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id: number;
+          createdAt?: string;
+          email: string;
+          id?: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Update: {
-          author?: string
-          comment?: string
-          comment_id?: number
-          createdAt?: string
-          email?: string
-          id?: number
-          isPrivate?: boolean
-          name?: string
-        }
-        Relationships: []
-      }
+          author?: string;
+          comment?: string;
+          comment_id?: number;
+          createdAt?: string;
+          email?: string;
+          id?: number;
+          isPrivate?: boolean;
+          name?: string;
+        };
+        Relationships: [];
+      };
       _PlaylistToRecentPlay: {
         Row: {
-          A: string | null
-          B: string | null
-        }
+          A: string | null;
+          B: string | null;
+        };
         Insert: {
-          A?: string | null
-          B?: string | null
-        }
+          A?: string | null;
+          B?: string | null;
+        };
         Update: {
-          A?: string | null
-          B?: string | null
-        }
-        Relationships: []
-      }
+          A?: string | null;
+          B?: string | null;
+        };
+        Relationships: [];
+      };
       _PostToTag: {
         Row: {
-          A: number
-          B: number
-        }
+          A: number;
+          B: number;
+        };
         Insert: {
-          A: number
-          B: number
-        }
+          A: number;
+          B: number;
+        };
         Update: {
-          A?: number
-          B?: number
-        }
-        Relationships: []
-      }
+          A?: number;
+          B?: number;
+        };
+        Relationships: [];
+      };
       _RecentPlayToUser: {
         Row: {
-          A: string | null
-          B: string | null
-        }
+          A: string | null;
+          B: string | null;
+        };
         Insert: {
-          A?: string | null
-          B?: string | null
-        }
+          A?: string | null;
+          B?: string | null;
+        };
         Update: {
-          A?: string | null
-          B?: string | null
-        }
-        Relationships: []
-      }
+          A?: string | null;
+          B?: string | null;
+        };
+        Relationships: [];
+      };
       Category: {
         Row: {
-          id: number
-          name: string
-        }
+          id: number;
+          name: string;
+        };
         Insert: {
-          id?: number
-          name: string
-        }
+          id?: number;
+          name: string;
+        };
         Update: {
-          id?: number
-          name?: string
-        }
-        Relationships: []
-      }
+          id?: number;
+          name?: string;
+        };
+        Relationships: [];
+      };
       Comment: {
         Row: {
-          authorId: string | null
-          comment: string | null
-          createdAt: string
-          id: string | null
-          isDeleted: number
-          isPrivate: number
-          playlistId: string | null
-          profileId: string | null
-          type: string | null
-          updatedAt: string
-        }
+          authorId: string | null;
+          comment: string | null;
+          createdAt: string;
+          id: string | null;
+          isDeleted: number;
+          isPrivate: number;
+          playlistId: string | null;
+          profileId: string | null;
+          type: string | null;
+          updatedAt: string;
+        };
         Insert: {
-          authorId?: string | null
-          comment?: string | null
-          createdAt: string
-          id?: string | null
-          isDeleted: number
-          isPrivate: number
-          playlistId?: string | null
-          profileId?: string | null
-          type?: string | null
-          updatedAt: string
-        }
+          authorId?: string | null;
+          comment?: string | null;
+          createdAt: string;
+          id?: string | null;
+          isDeleted: number;
+          isPrivate: number;
+          playlistId?: string | null;
+          profileId?: string | null;
+          type?: string | null;
+          updatedAt: string;
+        };
         Update: {
-          authorId?: string | null
-          comment?: string | null
-          createdAt?: string
-          id?: string | null
-          isDeleted?: number
-          isPrivate?: number
-          playlistId?: string | null
-          profileId?: string | null
-          type?: string | null
-          updatedAt?: string
-        }
-        Relationships: []
-      }
+          authorId?: string | null;
+          comment?: string | null;
+          createdAt?: string;
+          id?: string | null;
+          isDeleted?: number;
+          isPrivate?: number;
+          playlistId?: string | null;
+          profileId?: string | null;
+          type?: string | null;
+          updatedAt?: string;
+        };
+        Relationships: [];
+      };
       commentlikedbyusers: {
         Row: {
-          commentId: string | null
-          userId: string | null
-        }
+          commentId: string | null;
+          userId: string | null;
+        };
         Insert: {
-          commentId?: string | null
-          userId?: string | null
-        }
+          commentId?: string | null;
+          userId?: string | null;
+        };
         Update: {
-          commentId?: string | null
-          userId?: string | null
-        }
-        Relationships: []
-      }
+          commentId?: string | null;
+          userId?: string | null;
+        };
+        Relationships: [];
+      };
       follow: {
         Row: {
-          followerId: string | null
-          followingId: string | null
-        }
+          followerId: string | null;
+          followingId: string | null;
+        };
         Insert: {
-          followerId?: string | null
-          followingId?: string | null
-        }
+          followerId?: string | null;
+          followingId?: string | null;
+        };
         Update: {
-          followerId?: string | null
-          followingId?: string | null
-        }
-        Relationships: []
-      }
+          followerId?: string | null;
+          followingId?: string | null;
+        };
+        Relationships: [];
+      };
       GalleryCategory: {
         Row: {
-          id: number
-          name: string
-        }
+          id: number;
+          name: string;
+        };
         Insert: {
-          id?: number
-          name: string
-        }
+          id?: number;
+          name: string;
+        };
         Update: {
-          id?: number
-          name?: string
-        }
-        Relationships: []
-      }
+          id?: number;
+          name?: string;
+        };
+        Relationships: [];
+      };
       GalleyPost: {
         Row: {
-          createdAt: string
-          gpost_id: number
-          id: number
-          imgUrl: string
-          title: string
-        }
+          createdAt: string;
+          gpost_id: number;
+          id: number;
+          imgUrl: string;
+          title: string;
+        };
         Insert: {
-          createdAt?: string
-          gpost_id: number
-          id?: number
-          imgUrl: string
-          title: string
-        }
+          createdAt?: string;
+          gpost_id: number;
+          id?: number;
+          imgUrl: string;
+          title: string;
+        };
         Update: {
-          createdAt?: string
-          gpost_id?: number
-          id?: number
-          imgUrl?: string
-          title?: string
-        }
+          createdAt?: string;
+          gpost_id?: number;
+          id?: number;
+          imgUrl?: string;
+          title?: string;
+        };
         Relationships: [
           {
-            foreignKeyName: "GalleyPost_gpost_id_fkey"
-            columns: ["gpost_id"]
-            isOneToOne: false
-            referencedRelation: "GalleryCategory"
-            referencedColumns: ["id"]
+            foreignKeyName: "GalleyPost_gpost_id_fkey";
+            columns: ["gpost_id"];
+            isOneToOne: false;
+            referencedRelation: "GalleryCategory";
+            referencedColumns: ["id"];
           },
-        ]
-      }
+        ];
+      };
       GuestBookComment: {
         Row: {
-          author: string
-          comment: string
-          comment_id: number | null
-          createdAt: string
-          email: string
-          id: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id: number | null;
+          createdAt: string;
+          email: string;
+          id: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Insert: {
-          author: string
-          comment: string
-          comment_id?: number | null
-          createdAt?: string
-          email: string
-          id?: number
-          isPrivate: boolean
-          name: string
-        }
+          author: string;
+          comment: string;
+          comment_id?: number | null;
+          createdAt?: string;
+          email: string;
+          id?: number;
+          isPrivate: boolean;
+          name: string;
+        };
         Update: {
-          author?: string
-          comment?: string
-          comment_id?: number | null
-          createdAt?: string
-          email?: string
-          id?: number
-          isPrivate?: boolean
-          name?: string
-        }
-        Relationships: []
-      }
+          author?: string;
+          comment?: string;
+          comment_id?: number | null;
+          createdAt?: string;
+          email?: string;
+          id?: number;
+          isPrivate?: boolean;
+          name?: string;
+        };
+        Relationships: [];
+      };
       GuestBookPost: {
         Row: {
-          author: string
-          createdAt: string
-          email: string
-          id: number
-          isPrivate: boolean
-          name: string
-          post: string
-        }
+          author: string;
+          createdAt: string;
+          email: string;
+          id: number;
+          isPrivate: boolean;
+          name: string;
+          post: string;
+        };
         Insert: {
-          author: string
-          createdAt?: string
-          email: string
-          id?: number
-          isPrivate: boolean
-          name: string
-          post: string
-        }
+          author: string;
+          createdAt?: string;
+          email: string;
+          id?: number;
+          isPrivate: boolean;
+          name: string;
+          post: string;
+        };
         Update: {
-          author?: string
-          createdAt?: string
-          email?: string
-          id?: number
-          isPrivate?: boolean
-          name?: string
-          post?: string
-        }
-        Relationships: []
-      }
+          author?: string;
+          createdAt?: string;
+          email?: string;
+          id?: number;
+          isPrivate?: boolean;
+          name?: string;
+          post?: string;
+        };
+        Relationships: [];
+      };
       GuestList: {
         Row: {
-          createdAt: string
-          email: string
-          id: number
-          name: string
-        }
+          createdAt: string;
+          email: string;
+          id: number;
+          name: string;
+        };
         Insert: {
-          createdAt?: string
-          email: string
-          id?: number
-          name: string
-        }
+          createdAt?: string;
+          email: string;
+          id?: number;
+          name: string;
+        };
         Update: {
-          createdAt?: string
-          email?: string
-          id?: number
-          name?: string
-        }
-        Relationships: []
-      }
+          createdAt?: string;
+          email?: string;
+          id?: number;
+          name?: string;
+        };
+        Relationships: [];
+      };
       mood: {
         Row: {
-          id: string | null
-          name: string | null
-        }
+          id: string | null;
+          name: string | null;
+        };
         Insert: {
-          id?: string | null
-          name?: string | null
-        }
+          id?: string | null;
+          name?: string | null;
+        };
         Update: {
-          id?: string | null
-          name?: string | null
-        }
-        Relationships: []
-      }
+          id?: string | null;
+          name?: string | null;
+        };
+        Relationships: [];
+      };
       playlist: {
         Row: {
-          authorId: string | null
-          bgColor: string | null
-          coverImage: string | null
-          createdAt: string
-          description: string | null
-          fontColor: string | null
-          id: string | null
-          likedCount: number
-          moodId: string | null
-          playedCount: number
-          playedTime: number
-          title: string | null
-          updatedAt: string
-        }
+          authorId: string | null;
+          bgColor: string | null;
+          coverImage: string | null;
+          createdAt: string;
+          description: string | null;
+          fontColor: string | null;
+          id: string | null;
+          likedCount: number;
+          moodId: string | null;
+          playedCount: number;
+          playedTime: number;
+          title: string | null;
+          updatedAt: string;
+        };
         Insert: {
-          authorId?: string | null
-          bgColor?: string | null
-          coverImage?: string | null
-          createdAt: string
-          description?: string | null
-          fontColor?: string | null
-          id?: string | null
-          likedCount: number
-          moodId?: string | null
-          playedCount: number
-          playedTime: number
-          title?: string | null
-          updatedAt: string
-        }
+          authorId?: string | null;
+          bgColor?: string | null;
+          coverImage?: string | null;
+          createdAt: string;
+          description?: string | null;
+          fontColor?: string | null;
+          id?: string | null;
+          likedCount: number;
+          moodId?: string | null;
+          playedCount: number;
+          playedTime: number;
+          title?: string | null;
+          updatedAt: string;
+        };
         Update: {
-          authorId?: string | null
-          bgColor?: string | null
-          coverImage?: string | null
-          createdAt?: string
-          description?: string | null
-          fontColor?: string | null
-          id?: string | null
-          likedCount?: number
-          moodId?: string | null
-          playedCount?: number
-          playedTime?: number
-          title?: string | null
-          updatedAt?: string
-        }
-        Relationships: []
-      }
+          authorId?: string | null;
+          bgColor?: string | null;
+          coverImage?: string | null;
+          createdAt?: string;
+          description?: string | null;
+          fontColor?: string | null;
+          id?: string | null;
+          likedCount?: number;
+          moodId?: string | null;
+          playedCount?: number;
+          playedTime?: number;
+          title?: string | null;
+          updatedAt?: string;
+        };
+        Relationships: [];
+      };
       playlistlikedbyusers: {
         Row: {
-          createdAt: string
-          playlistId: string | null
-          userId: string | null
-        }
+          createdAt: string;
+          playlistId: string | null;
+          userId: string | null;
+        };
         Insert: {
-          createdAt: string
-          playlistId?: string | null
-          userId?: string | null
-        }
+          createdAt: string;
+          playlistId?: string | null;
+          userId?: string | null;
+        };
         Update: {
-          createdAt?: string
-          playlistId?: string | null
-          userId?: string | null
-        }
-        Relationships: []
-      }
+          createdAt?: string;
+          playlistId?: string | null;
+          userId?: string | null;
+        };
+        Relationships: [];
+      };
       playlistsong: {
         Row: {
-          id: string | null
-          playlistId: string | null
-          songId: string | null
-          songIndex: number
-        }
+          id: string | null;
+          playlistId: string | null;
+          songId: string | null;
+          songIndex: number;
+        };
         Insert: {
-          id?: string | null
-          playlistId?: string | null
-          songId?: string | null
-          songIndex: number
-        }
+          id?: string | null;
+          playlistId?: string | null;
+          songId?: string | null;
+          songIndex: number;
+        };
         Update: {
-          id?: string | null
-          playlistId?: string | null
-          songId?: string | null
-          songIndex?: number
-        }
-        Relationships: []
-      }
+          id?: string | null;
+          playlistId?: string | null;
+          songId?: string | null;
+          songIndex?: number;
+        };
+        Relationships: [];
+      };
       Post: {
         Row: {
-          content: string
-          createdAt: string
-          id: number
-          post_id: number
-          title: string
-        }
+          content: string;
+          createdAt: string;
+          id: number;
+          post_id: number;
+          title: string;
+        };
         Insert: {
-          content: string
-          createdAt?: string
-          id?: number
-          post_id: number
-          title: string
-        }
+          content: string;
+          createdAt?: string;
+          id?: number;
+          post_id: number;
+          title: string;
+        };
         Update: {
-          content?: string
-          createdAt?: string
-          id?: number
-          post_id?: number
-          title?: string
-        }
+          content?: string;
+          createdAt?: string;
+          id?: number;
+          post_id?: number;
+          title?: string;
+        };
         Relationships: [
           {
-            foreignKeyName: "Post_post_id_fkey"
-            columns: ["post_id"]
-            isOneToOne: false
-            referencedRelation: "Category"
-            referencedColumns: ["id"]
+            foreignKeyName: "Post_post_id_fkey";
+            columns: ["post_id"];
+            isOneToOne: false;
+            referencedRelation: "Category";
+            referencedColumns: ["id"];
           },
-        ]
-      }
+        ];
+      };
       recentplay: {
         Row: {
-          createdAt: string
-          id: string | null
-        }
+          createdAt: string;
+          id: string | null;
+        };
         Insert: {
-          createdAt: string
-          id?: string | null
-        }
+          createdAt: string;
+          id?: string | null;
+        };
         Update: {
-          createdAt?: string
-          id?: string | null
-        }
-        Relationships: []
-      }
+          createdAt?: string;
+          id?: string | null;
+        };
+        Relationships: [];
+      };
       song: {
         Row: {
-          artist: string | null
-          id: string | null
-          likedCount: number
-          playedCount: number | null
-          thumbnail: string | null
-          title: string | null
-          url: string | null
-        }
+          artist: string | null;
+          id: string | null;
+          likedCount: number;
+          playedCount: number | null;
+          thumbnail: string | null;
+          title: string | null;
+          url: string | null;
+        };
         Insert: {
-          artist?: string | null
-          id?: string | null
-          likedCount: number
-          playedCount?: number | null
-          thumbnail?: string | null
-          title?: string | null
-          url?: string | null
-        }
+          artist?: string | null;
+          id?: string | null;
+          likedCount: number;
+          playedCount?: number | null;
+          thumbnail?: string | null;
+          title?: string | null;
+          url?: string | null;
+        };
         Update: {
-          artist?: string | null
-          id?: string | null
-          likedCount?: number
-          playedCount?: number | null
-          thumbnail?: string | null
-          title?: string | null
-          url?: string | null
-        }
-        Relationships: []
-      }
+          artist?: string | null;
+          id?: string | null;
+          likedCount?: number;
+          playedCount?: number | null;
+          thumbnail?: string | null;
+          title?: string | null;
+          url?: string | null;
+        };
+        Relationships: [];
+      };
       songlikedbyusers: {
         Row: {
-          createdAt: string
-          songId: string | null
-          userId: string | null
-        }
+          createdAt: string;
+          songId: string | null;
+          userId: string | null;
+        };
         Insert: {
-          createdAt: string
-          songId?: string | null
-          userId?: string | null
-        }
+          createdAt: string;
+          songId?: string | null;
+          userId?: string | null;
+        };
         Update: {
-          createdAt?: string
-          songId?: string | null
-          userId?: string | null
-        }
-        Relationships: []
-      }
+          createdAt?: string;
+          songId?: string | null;
+          userId?: string | null;
+        };
+        Relationships: [];
+      };
       Tag: {
         Row: {
-          id: number
-          tag: string
-        }
+          id: number;
+          tag: string;
+        };
         Insert: {
-          id?: number
-          tag: string
-        }
+          id?: number;
+          tag: string;
+        };
         Update: {
-          id?: number
-          tag?: string
-        }
-        Relationships: []
-      }
+          id?: number;
+          tag?: string;
+        };
+        Relationships: [];
+      };
       User: {
         Row: {
-          bgColor: string | null
-          bio: string | null
-          blockReason: string | null
-          createdAt: string
-          email: string | null
-          fontColor: string | null
-          id: string | null
-          instagram: string | null
-          isBlocked: number
-          isEditor: number
-          nickname: string | null
-          profilePic: string | null
-          twitter: string | null
-          updatedAt: string
-          website: string | null
-        }
+          bgColor: string | null;
+          bio: string | null;
+          blockReason: string | null;
+          createdAt: string;
+          email: string | null;
+          fontColor: string | null;
+          id: string | null;
+          instagram: string | null;
+          isBlocked: number;
+          isEditor: number;
+          nickname: string | null;
+          profilePic: string | null;
+          twitter: string | null;
+          updatedAt: string;
+          website: string | null;
+        };
         Insert: {
-          bgColor?: string | null
-          bio?: string | null
-          blockReason?: string | null
-          createdAt: string
-          email?: string | null
-          fontColor?: string | null
-          id?: string | null
-          instagram?: string | null
-          isBlocked: number
-          isEditor: number
-          nickname?: string | null
-          profilePic?: string | null
-          twitter?: string | null
-          updatedAt: string
-          website?: string | null
-        }
+          bgColor?: string | null;
+          bio?: string | null;
+          blockReason?: string | null;
+          createdAt: string;
+          email?: string | null;
+          fontColor?: string | null;
+          id?: string | null;
+          instagram?: string | null;
+          isBlocked: number;
+          isEditor: number;
+          nickname?: string | null;
+          profilePic?: string | null;
+          twitter?: string | null;
+          updatedAt: string;
+          website?: string | null;
+        };
         Update: {
-          bgColor?: string | null
-          bio?: string | null
-          blockReason?: string | null
-          createdAt?: string
-          email?: string | null
-          fontColor?: string | null
-          id?: string | null
-          instagram?: string | null
-          isBlocked?: number
-          isEditor?: number
-          nickname?: string | null
-          profilePic?: string | null
-          twitter?: string | null
-          updatedAt?: string
-          website?: string | null
-        }
-        Relationships: []
-      }
-    }
+          bgColor?: string | null;
+          bio?: string | null;
+          blockReason?: string | null;
+          createdAt?: string;
+          email?: string | null;
+          fontColor?: string | null;
+          id?: string | null;
+          instagram?: string | null;
+          isBlocked?: number;
+          isEditor?: number;
+          nickname?: string | null;
+          profilePic?: string | null;
+          twitter?: string | null;
+          updatedAt?: string;
+          website?: string | null;
+        };
+        Relationships: [];
+      };
+    };
     Views: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     Functions: {
+      create_blog_post: {
+        Args: {
+          p_category: string;
+          p_title: string;
+          p_content: string;
+        };
+        Returns: Json;
+      };
       fetch_blog_posts: {
         Args: {
-          page_number: number
-          items_per_page: number
-          category_filter?: string
-        }
-        Returns: Json
-      }
+          page_number: number;
+          items_per_page: number;
+          category_filter?: string;
+        };
+        Returns: Json;
+      };
       fetch_edit_posts: {
-        Args: Record<PropertyKey, never>
-        Returns: Json[]
-      }
+        Args: Record<PropertyKey, never>;
+        Returns: Json[];
+      };
       fetch_gallery_posts: {
         Args: {
-          p_category_name: string
-        }
-        Returns: Json
-      }
-      upsert_blog_post: {
+          p_category_name: string;
+        };
+        Returns: Json;
+      };
+      get_blog_detail: {
         Args: {
-          p_id: number
-          p_title: string
-          p_content: string
-          p_category_id: number
-        }
-        Returns: undefined
-      }
-    }
+          p_post_id: number;
+        };
+        Returns: Json;
+      };
+      upsert_blog_post:
+        | {
+            Args: {
+              p_id: number;
+              p_title: string;
+              p_content: string;
+            };
+            Returns: undefined;
+          }
+        | {
+            Args: {
+              p_id: number;
+              p_title: string;
+              p_content: string;
+              p_category_id: number;
+            };
+            Returns: undefined;
+          };
+    };
     Enums: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     CompositeTypes: {
-      [_ in never]: never
-    }
-  }
-}
+      [_ in never]: never;
+    };
+  };
+};
 
-type PublicSchema = Database[Extract<keyof Database, "public">]
+type PublicSchema = Database[Extract<keyof Database, "public">];
 
 export type Tables<
   PublicTableNameOrOptions extends
@@ -671,7 +694,7 @@ export type Tables<
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
       Database[PublicTableNameOrOptions["schema"]]["Views"])[TableName] extends {
-      Row: infer R
+      Row: infer R;
     }
     ? R
     : never
@@ -679,11 +702,11 @@ export type Tables<
         PublicSchema["Views"])
     ? (PublicSchema["Tables"] &
         PublicSchema["Views"])[PublicTableNameOrOptions] extends {
-        Row: infer R
+        Row: infer R;
       }
       ? R
       : never
-    : never
+    : never;
 
 export type TablesInsert<
   PublicTableNameOrOptions extends
@@ -694,17 +717,17 @@ export type TablesInsert<
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
-      Insert: infer I
+      Insert: infer I;
     }
     ? I
     : never
   : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
     ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
-        Insert: infer I
+        Insert: infer I;
       }
       ? I
       : never
-    : never
+    : never;
 
 export type TablesUpdate<
   PublicTableNameOrOptions extends
@@ -715,17 +738,17 @@ export type TablesUpdate<
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
-      Update: infer U
+      Update: infer U;
     }
     ? U
     : never
   : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
     ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
-        Update: infer U
+        Update: infer U;
       }
       ? U
       : never
-    : never
+    : never;
 
 export type Enums<
   PublicEnumNameOrOptions extends
@@ -738,14 +761,14 @@ export type Enums<
   ? Database[PublicEnumNameOrOptions["schema"]]["Enums"][EnumName]
   : PublicEnumNameOrOptions extends keyof PublicSchema["Enums"]
     ? PublicSchema["Enums"][PublicEnumNameOrOptions]
-    : never
+    : never;
 
 export type CompositeTypes<
   PublicCompositeTypeNameOrOptions extends
     | keyof PublicSchema["CompositeTypes"]
     | { schema: keyof Database },
   CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
-    schema: keyof Database
+    schema: keyof Database;
   }
     ? keyof Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
     : never = never,
@@ -753,4 +776,4 @@ export type CompositeTypes<
   ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
   : PublicCompositeTypeNameOrOptions extends keyof PublicSchema["CompositeTypes"]
     ? PublicSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
-    : never
+    : never;

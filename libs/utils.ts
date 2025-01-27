@@ -18,6 +18,7 @@ import rehypeHighlight from "rehype-highlight";
 import rehypeStringify from "rehype-stringify";
 
 import DOMPurify from "isomorphic-dompurify";
+import { all, createLowlight } from "lowlight";
 
 const parseHTMLToString = (html: string): string => {
   const processor = unified().use(rehypeParse, { fragment: true });
@@ -149,22 +150,69 @@ const editPreTagCode = () => {
         };
       }
 
-      if (
-        node.tagName === "pre" &&
-        node.properties?.className?.includes("ql-syntax")
-      ) {
-        const codeContent = node.children[0]?.value || "";
-        node.children = [
-          {
-            type: "element",
-            tagName: "code",
-            properties: {},
-            children: [{ type: "text", value: codeContent }],
-          },
-        ];
-      }
+      // if (
+      //   node.tagName === "pre" &&
+      //   node.properties?.className?.includes("ql-syntax")
+      // ) {
+      //   node.properties.className += " pre";
+      //   const codeContent = node.children[0]?.value || "";
+      //   node.children = [
+      //     {
+      //       type: "element",
+      //       tagName: "code",
+      //       properties: {},
+      //       children: [{ type: "text", value: codeContent }],
+      //     },
+      //   ];
+      // }
     });
   };
+};
+
+export const highlightCode = (html: string) => {
+  const lowlight = createLowlight(all);
+
+  // HTML 문자열을 파싱하여 AST로 변환
+  const ast = unified().use(rehypeParse, { fragment: true }).parse(html);
+
+  // AST를 순회하면서 code 노드 찾기
+  const visit = (node: any) => {
+    if (
+      node.type === "element" &&
+      node.tagName === "code" &&
+      node.properties?.className?.[0]?.startsWith("language-")
+    ) {
+      const lang = node.properties.className[0].replace("language-", "");
+      const code = node.children?.[0]?.value || "";
+
+      try {
+        const highlighted = lowlight.highlight(lang, code);
+        node.children = highlighted.children;
+        node.properties.className = [
+          ...(node.properties.className || []),
+          "hljs",
+        ];
+      } catch (e) {
+        console.warn("Failed to highlight:", e);
+        node.properties.className = [
+          ...(node.properties.className || []),
+          "hljs",
+        ];
+      }
+    }
+
+    // 자식 노드들도 순회
+    if (node.children) {
+      node.children.forEach(visit);
+    }
+  };
+
+  visit(ast);
+
+  // AST를 다시 HTML 문자열로 변환
+  const result = unified().use(rehypeStringify).stringify(ast);
+
+  return result;
 };
 
 async function processHTML(html: string) {

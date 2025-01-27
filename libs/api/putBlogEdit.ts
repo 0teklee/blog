@@ -1,18 +1,18 @@
 import { supabase } from "@/libs/api/supabase";
 
-export const putBlogPost = async (
-  id: number | null,
-  title: string,
-  content: string,
-) => {
-  if (!id) {
+export const putBlogPost = async (payload: {
+  id: number | null;
+  title: string;
+  content: string;
+}) => {
+  if (!payload?.id) {
     throw new Error(`id is null`);
   }
 
   const { data, error } = await supabase.rpc("upsert_blog_post", {
-    p_id: id,
-    p_title: title,
-    p_content: content,
+    p_id: payload.id,
+    p_title: payload.title,
+    p_content: payload.content,
   });
 
   if (error) {

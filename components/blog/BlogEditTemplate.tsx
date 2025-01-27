@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Editor from "@/components/common/Editor";
 import { putBlogPost } from "@/libs/api/putBlogEdit";
 import BlogEditSelect from "@/components/blog/BlogEditSelect";
 import { TEditItem } from "@/components/blog/types";
@@ -9,6 +8,7 @@ import { useQuery } from "@tanstack/react-query";
 import getBlogDetail from "@/libs/api/getBlogDetail";
 import { LoaderCircle } from "lucide-react";
 import { useSession } from "next-auth/react";
+import TiptapEditor from "@/components/common/editor/TiptapEditor";
 
 const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
   const [selectedId, setSelectedId] = useState<string | undefined>();
@@ -25,8 +25,16 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
     setSelectedId(id);
   };
 
-  const handleSubmit = async (title: string, content: string) => {
-    await putBlogPost(Number(selectedId), title, content);
+  const handleSubmit = async ({
+    title,
+    content,
+    category,
+  }: {
+    title: string;
+    content: string;
+    category: string;
+  }) => {
+    await putBlogPost({ id: Number(selectedId), title, content });
   };
 
   const { data, isLoading } = useQuery({
@@ -50,7 +58,7 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
             onSelect={handleSelect}
           />
           {data && (
-            <Editor
+            <TiptapEditor
               initialTitle={data.title}
               initialCategory={data.categories.name}
               initialContent={data.content}

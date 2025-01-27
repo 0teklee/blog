@@ -1,13 +1,17 @@
 "use client";
 
 import React from "react";
-import { postBlogContent } from "@/libs/fetcher";
-import Editor from "@/components/common/Editor";
 import { useSession } from "next-auth/react";
+import TiptapEditor from "@/components/common/editor/TiptapEditor";
+import { postBlogPost } from "@/libs/api/postBlog";
 
 const BlogCreateTemplate = () => {
-  const handleSubmit = (title: string, content: string, category: string) => {
-    postBlogContent(title, content, category);
+  const handleSubmit = async (payload: {
+    title: string;
+    content: string;
+    category: string;
+  }) => {
+    await postBlogPost(payload);
   };
   const session = useSession();
   const name = session?.data?.user?.name || "unknown";
@@ -19,7 +23,8 @@ const BlogCreateTemplate = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      {isAdmin && <Editor handler={handleSubmit} />}
+      {/*{isAdmin && <Editor handler={handleSubmit} />}*/}
+      {isAdmin && <TiptapEditor handler={handleSubmit} />}
     </div>
   );
 };
