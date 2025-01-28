@@ -121,6 +121,12 @@ const editPreTagCode = () => {
   return (tree: any) => {
     const headingIds = new Set<string>();
     visit(tree, "element", (node) => {
+      const isQuillCodeBlock =
+        node.tagName === "pre" &&
+        node.properties?.className?.includes("ql-syntax") &&
+        node.children?.length > 0 &&
+        !node.children[0]?.children;
+
       if (node.tagName.match(/^h[1-3]$/)) {
         // Get text content from the heading
         const text = node.children
@@ -150,21 +156,18 @@ const editPreTagCode = () => {
         };
       }
 
-      // if (
-      //   node.tagName === "pre" &&
-      //   node.properties?.className?.includes("ql-syntax")
-      // ) {
-      //   node.properties.className += " pre";
-      //   const codeContent = node.children[0]?.value || "";
-      //   node.children = [
-      //     {
-      //       type: "element",
-      //       tagName: "code",
-      //       properties: {},
-      //       children: [{ type: "text", value: codeContent }],
-      //     },
-      //   ];
-      // }
+      if (isQuillCodeBlock) {
+        node.properties.className += " pre";
+        const codeContent = node.children[0]?.value || "";
+        node.children = [
+          {
+            type: "element",
+            tagName: "code",
+            properties: {},
+            children: [{ type: "text", value: codeContent }],
+          },
+        ];
+      }
     });
   };
 };
