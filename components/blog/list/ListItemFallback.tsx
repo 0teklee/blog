@@ -29,7 +29,7 @@ const ListFallbackItem = () => {
           "flex flex-col items-center space-between gap-1",
           "w-full",
           "cursor-pointer",
-          "lg:flex-row lg:gap-12",
+          "lg:flex-row lg:gap-6 lg:items-stretch",
         )}
       >
         <div
@@ -38,7 +38,7 @@ const ListFallbackItem = () => {
             "flex-shrink-0 flex items-center justify-center",
             "w-full h-[120px]",
             "bg-secondary rounded-t overflow-hidden",
-            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-44 lg:h-44",
+            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-36 lg:h-36 lg:rounded-sm",
             "animate-pulse",
           )}
         >
@@ -83,7 +83,7 @@ const ListFallbackItem = () => {
               "text-xs",
               "line-clamp-2",
               "break-all leading-6",
-              "lg:text-base",
+              "lg:line-clamp-3",
               "blur-sm",
             )}
           >

@@ -44,7 +44,7 @@ const BlogListItem = ({
           "flex flex-col items-center space-between gap-1",
           "w-full",
           "cursor-pointer",
-          "lg:flex-row lg:gap-12",
+          "lg:flex-row lg:gap-6 lg:items-stretch",
         )}
       >
         <div
@@ -53,7 +53,7 @@ const BlogListItem = ({
             "flex-shrink-0",
             "w-full h-[120px] ",
             "rounded-t overflow-hidden",
-            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-44 lg:h-44",
+            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-36 lg:h-36 lg:rounded-sm",
           )}
         >
           <Image
@@ -106,7 +106,7 @@ const BlogListItem = ({
               "text-xs",
               "line-clamp-2",
               "break-all leading-6",
-              "lg:text-base",
+              "lg:line-clamp-3",
             )}
           >
             {cachedParseHTMLString(content).slice(0, 200)}
