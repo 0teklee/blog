@@ -25,30 +25,6 @@ const BlogDetailFooterNav = async ({ id }: { id: string }) => {
           go back to list
         </Link>
         <div className="w-full">
-          {prev && (
-            <Link
-              key="prev"
-              className={cn(
-                "relative px-2 py-1 flex justify-between",
-                "w-full cursor-pointer",
-                "hover:bg-theme hover:text-background transition-all duration-500",
-              )}
-              href={`/blog/${prev.id}`}
-            >
-              <p>prev</p>
-              <p
-                className={`
-                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                max-w-50% lg:max-w-30%
-                text-sm line-clamp-1 overflow-ellipsis`}
-              >
-                {prev.title}
-              </p>
-              <p className="text-sm">
-                {dayjs(prev.createdAt).format("YYYY-MM-DD")}
-              </p>
-            </Link>
-          )}
           {next && (
             <Link
               key="next"
@@ -70,6 +46,30 @@ const BlogDetailFooterNav = async ({ id }: { id: string }) => {
               </p>
               <p className="text-sm">
                 {dayjs(next.createdAt).format("YYYY-MM-DD")}
+              </p>
+            </Link>
+          )}
+          {prev && (
+            <Link
+              key="prev"
+              className={cn(
+                "relative px-2 py-1 flex justify-between",
+                "w-full cursor-pointer",
+                "hover:bg-theme hover:text-background transition-all duration-500",
+              )}
+              href={`/blog/${prev.id}`}
+            >
+              <p>prev</p>
+              <p
+                className={`
+                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                max-w-50% lg:max-w-30%
+                text-sm line-clamp-1 overflow-ellipsis`}
+              >
+                {prev.title}
+              </p>
+              <p className="text-sm">
+                {dayjs(prev.createdAt).format("YYYY-MM-DD")}
               </p>
             </Link>
           )}
