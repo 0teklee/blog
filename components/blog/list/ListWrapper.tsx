@@ -24,7 +24,7 @@ const ListWrapper = ({ children, searchParams }: ListWrapperProps) => {
         "w-full px-4",
         "tablet:gap-8",
         "w-full",
-        "duration-600 animate-in",
+        "duration-700 animate-in ease-in-out",
         isForward
           ? "motion-safe:slide-in-from-right"
           : "motion-safe:slide-in-from-left",
