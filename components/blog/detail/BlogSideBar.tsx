@@ -23,30 +23,47 @@ const BlogSideBar = ({ className }: { className?: string }) => {
         scrollbar-hide
         "
       >
-        <details className={`w-full group/parent blog-sidebar`}>
+        <details
+          className={cn(
+            `w-full group/parent`,
+            "transition-all duration-800 ease-in-out",
+            "blog-sidebar",
+          )}
+        >
           <summary
-            className={`
-            flex justify-between
-            w-full pb-2 
-            text-lg font-normal font-sans 
-            cursor-pointer 
-            hover:text-theme group-open:text-theme
-            after:transition-all after:duration-300
-            after:content-["⇣"]
-            after:group-open/parent:rotate-180
-            group-open/parent:text-theme
-            list-outside 
-            `}
+            className={cn(
+              "flex justify-between",
+              "w-full pb-2",
+              "text-lg font-normal font-sans ",
+              "cursor-pointer ",
+              "hover:text-theme group-open:text-theme",
+              "after:transition-all after:duration-300",
+              `after:content-["⇣"]`,
+              "after:group-open/parent:rotate-180",
+              "group-open/parent:text-theme",
+              "list-outside",
+            )}
           >
             <span>categories</span>
           </summary>
-          <Suspense
-            fallback={
-              <LoaderCircle className={`pt-2 text-gray-300 animate-spin`} />
-            }
+          <div
+            className={cn(
+              "grid grid-rows-[0fr]",
+              "group-open/parent:animate-expand",
+              "group-[&:not([open])]/parent:animate-collapse",
+              "transition-all duration-500",
+            )}
           >
-            <BlogSideBarList />
-          </Suspense>
+            <div className="w-full overflow-hidden">
+              <Suspense
+                fallback={
+                  <LoaderCircle className={`pt-2 text-gray-300 animate-spin`} />
+                }
+              >
+                <BlogSideBarList />
+              </Suspense>
+            </div>
+          </div>
         </details>
       </div>
     </aside>

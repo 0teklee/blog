@@ -16,7 +16,7 @@ const BlogSideBarList = async () => {
               "w-full bg-background break-all",
               "scrollbar-hide overflow-y-scroll",
               "group/child",
-              "transition-opacity duration-700",
+              "transition-opacity duration-800 ease-in-out",
               "opacity-0 group-open/parent:opacity-100",
             )}
           >
@@ -33,35 +33,44 @@ const BlogSideBarList = async () => {
             </summary>
             <div
               className={cn(
-                "flex flex-col gap-2 w-full p-0",
-                "transition-opacity duration-500",
+                "grid grid-rows-[0fr]",
+                "group-open/child:animate-expand",
+                "group-[&:not([open])]/child:animate-collapse",
+                "transition-all duration-500 ease-in-out",
                 "opacity-0 group-open/child:opacity-100",
               )}
             >
-              {category.posts.map((blog, i) => (
-                <Link
-                  key={`${category.name}_sub_wrapper_${i}`}
-                  className={cn(
-                    "flex w-full pl-2 pr-3 py-1",
-                    "text-sm lg:pl-2 lg:text-md",
-                    "overflow-y-hidden rounded",
-                    "text-left line-clamp-2 overflow-ellipsis",
-                    "transition-colors duration-200",
-                    "hover:bg-theme hover:text-background",
-                    "last:mb-4",
-                  )}
-                  href={`/blog/${blog.id}`}
-                >
-                  - {blog.title}
-                </Link>
-              ))}
-              {category?.posts && category?.posts.length >= 10 && (
-                <div className={`mt-2 mb-4 text-left`}>
-                  <Link href={`/blog?page=1&category=${category.name}`}>
-                    ...more
+              <div
+                className={cn(
+                  "flex flex-col gap-2 w-full p-0",
+                  "overflow-hidden",
+                )}
+              >
+                {category.posts.map((blog, i) => (
+                  <Link
+                    key={`${category.name}_sub_wrapper_${i}`}
+                    className={cn(
+                      "flex w-full pl-2 pr-3 py-1",
+                      "text-sm lg:pl-2 lg:text-md",
+                      "overflow-y-hidden rounded",
+                      "text-left line-clamp-2 overflow-ellipsis",
+                      "transition-colors duration-200",
+                      "hover:bg-theme hover:text-background",
+                      "last:mb-4",
+                    )}
+                    href={`/blog/${blog.id}`}
+                  >
+                    - {blog.title}
                   </Link>
-                </div>
-              )}
+                ))}
+                {category?.posts && category?.posts.length >= 10 && (
+                  <div className={`mt-2 mb-4 text-left`}>
+                    <Link href={`/blog?page=1&category=${category.name}`}>
+                      ...more
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
           </details>
         ))}
