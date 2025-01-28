@@ -59,31 +59,33 @@ const BlogTableContent = ({ content }: { content: string }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="hidden lg:block lg:w-64 shrink-0 sticky top-40 h-[50vh] overflow-hidden"
+      className="hidden lg:block lg:w-64 shrink-0 sticky top-40 h-[50vh] overflow-hidden py-5"
     >
-      <div className="h-full overflow-y-auto scrollbar-hide blog-table-content pb-5">
+      <div className="h-full overflow-y-auto scrollbar-hide blog-table-content">
         {headings.length > 0 && (
           <h1 className={`mb-2 font-bold`}>Table of Content</h1>
         )}
         <ul className="space-y-2">
-          {headings.map((heading) => (
-            <li
-              key={heading.index}
-              className={formatTableContentStyle(heading.level)}
-            >
-              <button
-                className={`
+          {headings.map((heading) =>
+            !!heading && heading.text ? (
+              <li
+                key={heading.index}
+                className={formatTableContentStyle(heading.level)}
+              >
+                <button
+                  className={`
                   text-left w-full
                   hover:text-theme 
                   transition-colors duration-200
                   ${activeHeading === heading.text ? "text-theme font-medium" : ""}
                 `}
-                onClick={() => scrollToHeading(heading.text)}
-              >
-                {heading.text}
-              </button>
-            </li>
-          ))}
+                  onClick={() => scrollToHeading(heading.text)}
+                >
+                  {heading.text}
+                </button>
+              </li>
+            ) : null,
+          )}
         </ul>
       </div>
     </motion.nav>
