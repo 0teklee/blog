@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import { putBlogPost } from "@/libs/api/putBlogEdit";
-import BlogEditSelect from "@/components/blog/BlogEditSelect";
+import BlogEditSelect from "@/components/blog/edit/BlogEditSelect";
 import { TEditItem } from "@/components/blog/types";
 import { useQuery } from "@tanstack/react-query";
 import getBlogDetail from "@/libs/api/getBlogDetail";
-import { LoaderCircle } from "lucide-react";
 import { useSession } from "next-auth/react";
 import TiptapEditor from "@/components/common/editor/TiptapEditor";
+import { convertQuillToTiptap } from "@/libs/utils";
+import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
   const [selectedId, setSelectedId] = useState<string | undefined>();
@@ -39,19 +40,15 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
 
   const { data, isLoading } = useQuery({
     queryKey: ["edit_post", selectedId],
-    queryFn: () => {
-      if (!selectedId) {
-        return;
-      }
-
-      return getBlogDetail(selectedId);
-    },
+    queryFn: () => getBlogDetail(selectedId!),
+    suspense: true,
+    enabled: isAdmin && !!selectedId,
   });
 
   return (
     <>
       {isAdmin && (
-        <div className="flex flex-col items-center w-full p-0">
+        <>
           <BlogEditSelect
             lists={lists}
             selectedId={selectedId}
@@ -61,13 +58,13 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
             <TiptapEditor
               initialTitle={data.title}
               initialCategory={data.categories.name}
-              initialContent={data.content}
+              initialContent={convertQuillToTiptap(data.content)}
               handler={handleSubmit}
               isEditor={true}
             />
           )}
-          {isLoading && <LoaderCircle className={`animate-spin`} />}
-        </div>
+          {isLoading && <LoaderSpin />}
+        </>
       )}
     </>
   );

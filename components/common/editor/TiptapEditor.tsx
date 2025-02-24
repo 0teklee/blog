@@ -117,7 +117,7 @@ const TiptapEditor = ({
       TableHeader,
       TableCell,
     ],
-    content: "<p>Writing</p>",
+    content: initialContent || "<p>Writing</p>",
     editorProps: {
       attributes: {
         class: cn(

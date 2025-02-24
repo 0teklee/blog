@@ -1,5 +1,5 @@
 import React from "react";
-import BlogEditTemplate from "@/components/blog/BlogEditTemplate";
+import BlogEditTemplate from "@/components/blog/edit/BlogEditTemplate";
 import getEditList from "@/libs/api/getEditList";
 
 const page = async () => {

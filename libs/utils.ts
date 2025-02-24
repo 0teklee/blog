@@ -171,10 +171,9 @@ const editPreTagCode = () => {
     });
   };
 };
+const lowlight = createLowlight(all);
 
 export const highlightCode = (html: string) => {
-  const lowlight = createLowlight(all);
-
   // HTML 문자열을 파싱하여 AST로 변환
   const ast = unified().use(rehypeParse, { fragment: true }).parse(html);
 
@@ -218,6 +217,86 @@ export const highlightCode = (html: string) => {
   return result;
 };
 
+// TODO QuillEditor 내용 -> Tiptap으로 전환
+const convertQuillToTiptap = (html: string): string => {
+  const ast = unified().use(rehypeParse, { fragment: true }).parse(html);
+
+  visit(ast, "element", (node) => {
+    if (
+      node.tagName === "p" &&
+      node.children?.length === 1 &&
+      node.children[0].type === "text" &&
+      node.children[0].value === "<br/>"
+    ) {
+      node.children = [
+        {
+          type: "element",
+          tagName: "br",
+          properties: {},
+          children: [],
+        },
+      ];
+    }
+
+    if (
+      node.properties?.className &&
+      (node.properties?.className as string).includes("ql-syntax") &&
+      node.tagName === "pre"
+    ) {
+      const langClass = (node.properties.className as string[]).find(
+        (cls: string) => cls.startsWith("language-"),
+      );
+      const lang = langClass ? langClass.replace("language-", "") : "plaintext";
+
+      //@ts-ignore
+      const codeContent = node.children[0]?.value || "";
+
+      try {
+        const highlighted = lowlight.highlight(lang, codeContent);
+
+        node.children = [
+          {
+            type: "element",
+            tagName: "code",
+            properties: {
+              className: [`language-${lang}`, "hljs"],
+            },
+            children: highlighted.children as any,
+          },
+        ];
+
+        // Add necessary classes for Tiptap
+        node.properties.className = ["pre"];
+      } catch (e) {
+        console.warn("Failed to highlight code:", e);
+        // Fallback: Create basic code element without highlighting
+        node.children = [
+          {
+            type: "element",
+            tagName: "code",
+            properties: {
+              className: ["hljs"],
+            },
+            children: [{ type: "text", value: codeContent }],
+          },
+        ];
+      }
+    }
+
+    if (node.tagName === "img") {
+      // Ensure proper image properties for Tiptap
+      node.properties = {
+        ...node.properties,
+        draggable: false,
+      };
+    }
+  });
+
+  // Convert AST back to HTML string
+  const result = unified().use(rehypeStringify).stringify(ast);
+  return result;
+};
+
 async function processHTML(html: string) {
   const file = await unified()
     .use(rehypeParse, { fragment: true })
@@ -245,4 +324,5 @@ export {
   cn,
   processHTML,
   generateFallbackText,
+  convertQuillToTiptap,
 };
