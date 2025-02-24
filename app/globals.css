@@ -249,8 +249,14 @@
 
       & > li > ul,
       & > li > ol {
+        margin: 0;
+        padding-top: 0;
         line-height: 1.6;
         font-size: 0.8rem;
+        background: inherit;
+        border: none;
+        border-left: 2px solid hsl(var(--accent-foreground));
+        border-radius: 0;
       }
 
       @media only screen and (max-width: 500px) {
