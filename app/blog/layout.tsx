@@ -1,8 +1,15 @@
 import React, { ReactNode } from "react";
-import BlogSideBar from "@/components/blog/detail/BlogSideBar";
 import { cn } from "@/libs/utils";
+import BlogSideBar from "@/components/blog/detail/BlogSideBar";
 
-const Layout = async ({ children }: { children: ReactNode | ReactNode[] }) => {
+const Layout = async ({
+  children,
+  sidebar,
+}: {
+  children: ReactNode | ReactNode[];
+  sidebar: ReactNode;
+}) => {
+  console.log("sidebar", sidebar);
   return (
     <main
       className={cn(

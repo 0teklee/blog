@@ -3,7 +3,7 @@ import React, { Suspense } from "react";
 import BlogDetailPageTemplate from "@/components/blog/detail/BlogDetailPageTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import getBlogDetail from "@/libs/api/getBlogDetail";
-import { getImgSrc } from "components/blog/utils";
+import { getImgSrc } from "@/components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
 import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";

@@ -1,4 +1,4 @@
-import { THEME_META_IMAGE } from "libs/constants";
+import { THEME_META_IMAGE } from "@/libs/constants";
 import BlogListPageTemplate from "@/components/blog/list/BlogListPageTemplate";
 import { Suspense } from "react";
 import { ListHeader, ListLayout } from "@/components/blog/list/Template";
