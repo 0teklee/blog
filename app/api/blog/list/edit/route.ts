@@ -1,12 +1,10 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest } from "next";
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
+import { NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
+async function handler(req: NextApiRequest) {
   if (req.method === "GET") {
     try {
       const postsWithExtra = await db
@@ -28,12 +26,25 @@ export default async function handler(
         categories: { name: post.categoryName },
       }));
 
-      res.status(200).json(result);
+      return NextResponse.json(result);
     } catch (err) {
-      console.error("Error fetching editing posts:", err);
-      res.status(500).json({ error: "Failed to fetch editing posts" });
+      console.error("[SERVER]:Error fetching editing posts:", err);
+      NextResponse.json(
+        {
+          error: "Failed to fetch editing posts",
+        },
+        { status: 500 },
+      );
     }
   } else {
-    res.status(405).json({ error: "Method not allowed" });
+    console.error("[SERVER]:Method not allowed");
+    NextResponse.json(
+      {
+        error: "Failed to fetch editing posts",
+      },
+      { status: 405 },
+    );
   }
 }
+
+export { handler as GET };

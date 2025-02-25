@@ -3,7 +3,22 @@
 import React from "react";
 import { useSession } from "next-auth/react";
 import TiptapEditor from "@/components/common/editor/TiptapEditor";
-import { postBlogPost } from "@/libs/api/postBlog";
+
+const postBlogPost = async (payload: {
+  title: string;
+  content: string;
+  category: string;
+}) => {
+  const res = await fetch("/api/blog/create", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+  const data = await res.json();
+  return data;
+};
 
 const BlogCreateTemplate = () => {
   const handleSubmit = async (payload: {

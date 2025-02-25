@@ -1,16 +1,14 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiResponse } from "next";
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
+import { NextRequest, NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
+async function handler(req: NextRequest, res: NextApiResponse) {
   if (req.method === "GET") {
-    const { id } = req.query;
+    const id = req.nextUrl.pathname.split("/").pop();
     if (!id || Array.isArray(id)) {
-      return res.status(400).json({ error: "Invalid post ID" });
+      return NextResponse.json({ error: "Invalid id" }, { status: 400 });
     }
 
     try {
@@ -34,12 +32,21 @@ export default async function handler(
       }
 
       const mainPost = postData[0];
-      res.status(200).json(mainPost);
+
+      return NextResponse.json(mainPost);
     } catch (err) {
-      console.error("Error fetching blog detail:", err);
-      res.status(500).json({ error: "Failed to fetch blog detail" });
+      console.error("[SERVER]: Error fetching blog detail:", err);
+      return NextResponse.json(
+        { error: "Internal Server Error" },
+        { status: 500 },
+      );
     }
   } else {
-    res.status(405).json({ error: "Method not allowed" });
+    return NextResponse.json(
+      { error: "[SERVER]: Method not allowed" },
+      { status: 405 },
+    );
   }
 }
+
+export { handler as GET };

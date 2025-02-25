@@ -1,21 +1,14 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
+import { NextRequest, NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
+async function handler(req: NextRequest) {
   if (req.method === "POST") {
-    const {
-      category: p_category,
-      title: p_title,
-      content: p_content,
-    } = req.body;
+    const body = await req.json();
 
+    const { category: p_category, title: p_title, content: p_content } = body;
     try {
-      // Get or create category
       let categoryId = await db
         .select({ id: category.id })
         .from(category)
@@ -34,7 +27,7 @@ export default async function handler(
 
       // Get next ID for post using raw SQL
       const nextIdResult = await db.execute<{ next_id: number }>(
-        sql`SELECT coalesce(max(id), 0) + 1 as next_id FROM "Post"`,
+        sql`SELECT coalesce(max(id), 0) + 1 as next_id FROM "Post";`,
       );
       const nextId = nextIdResult[0].next_id;
 
@@ -57,12 +50,15 @@ export default async function handler(
         .execute()
         .then((result) => result[0]);
 
-      res.status(201).json(newPost);
+      return NextResponse.json(newPost, { status: 201 });
     } catch (err) {
-      console.error("Error creating post:", err);
-      res.status(500).json({ error: "Failed to create post" });
+      console.error("[SERVER]:Error creating post:", err);
+      return NextResponse.json("Failed to create post", { status: 500 });
     }
   } else {
-    res.status(405).json({ error: "Method not allowed" });
+    console.error("[SERVER]:Method not allowed");
+    return NextResponse.json("Method not allowed", { status: 405 });
   }
 }
+
+export { handler as POST };

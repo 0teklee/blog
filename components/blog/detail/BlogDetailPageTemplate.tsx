@@ -1,11 +1,17 @@
 import React, { cache, Suspense } from "react";
 import ParsedHTMLTag from "@/components/common/module/ParsedHTMLTag";
 import BlogDetailFooterNav from "@/components/blog/detail/BlogDetailFooterNav";
-import getBlogDetail from "@/libs/api/getBlogDetail";
+// import getBlogDetail from "@/libs/api/getBlogDetail";
 import { formatBlogContent } from "@/components/blog/utils";
 import BlogHeadingNav from "@/components/blog/detail/BlogHeadingNav";
 import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
+
+const getBlogDetail = async (id: string) => {
+  const res = await fetch(`${process.env.BASE_URL}/api/blog/${id}`);
+  const data = await res.json();
+  return data;
+};
 
 const getCacheBlogDetail = cache(getBlogDetail);
 

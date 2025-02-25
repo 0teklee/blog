@@ -1,56 +1,51 @@
-import { NextApiRequest, NextApiResponse } from "next";
+// app/api/blog/list/route.ts
+import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
-  if (req.method === "GET") {
-    const { page, category: categoryFilter, itemsPerPage = 5 } = req.query;
-    const pageNumber = Number(page) || 1;
-    const offset = (pageNumber - 1) * Number(itemsPerPage);
+export async function GET(req: NextRequest) {
+  const searchParams = req.nextUrl.searchParams;
 
-    try {
-      const postsWithExtra = await db
-        .select({
-          id: post.id,
-          title: post.title,
-          content: post.content,
-          createdAt: post.createdAt,
-          categoryName: category.name,
-        })
-        .from(post)
-        .leftJoin(category, sql`${category.id} = ${post.postId}`)
-        .where(
-          categoryFilter
-            ? sql`${category.name} = ${categoryFilter}`
-            : sql`true`,
-        )
-        .orderBy(sql`${post.id} DESC`)
-        .limit(Number(itemsPerPage) + 1)
-        .offset(offset)
-        .execute();
+  const page = searchParams.get("page") || "1";
+  const categoryFilter = searchParams.get("category");
 
-      const hasNextPage = postsWithExtra.length > Number(itemsPerPage);
+  const pageNumber = Number(page);
+  // TODO 변경 + 필터링 로직 추가
+  const itemsPerPage = 5;
 
-      const posts = postsWithExtra
-        .slice(0, Number(itemsPerPage))
-        .map((post) => ({
-          id: post.id,
-          title: post.title,
-          content: post.content,
-          createdAt: post.createdAt,
-          categories: { name: post.categoryName },
-        }));
+  try {
+    const postsResponse = await db
+      .select({
+        id: post.id,
+        title: post.title,
+        content: post.content,
+        createdAt: post.createdAt,
+        categories: {
+          name: category.name,
+        },
+      })
+      .from(post)
+      .leftJoin(category, sql`${category.id} = ${post.postId}`)
+      .where(
+        categoryFilter ? sql`${category.name} = ${categoryFilter}` : sql`true`,
+      )
+      .orderBy(sql`${post.id} DESC`)
+      .limit(itemsPerPage)
+      .offset((pageNumber - 1) * itemsPerPage)
+      .execute();
 
-      res.status(200).json({ posts, has_next_page: hasNextPage });
-    } catch (err) {
-      console.error("Error fetching blog list:", err);
-      res.status(500).json({ error: "Failed to fetch blog list" });
-    }
-  } else {
-    res.status(405).json({ error: "Method not allowed" });
+    const hasNextPage = postsResponse.length === itemsPerPage;
+
+    return NextResponse.json({
+      posts: postsResponse,
+      has_next_page: hasNextPage,
+    });
+  } catch (err) {
+    console.error("Error fetching blog list:", err);
+    return NextResponse.json(
+      { error: "Failed to fetch blog list" },
+      { status: 500 },
+    );
   }
 }

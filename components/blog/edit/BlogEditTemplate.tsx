@@ -1,11 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { putBlogPost } from "@/libs/api/putBlogEdit";
 import BlogEditSelect from "@/components/blog/edit/BlogEditSelect";
 import { TEditItem } from "@/components/blog/types";
 import { useQuery } from "@tanstack/react-query";
-import getBlogDetail from "@/libs/api/getBlogDetail";
 import { useSession } from "next-auth/react";
 import TiptapEditor from "@/components/common/editor/TiptapEditor";
 import { convertQuillToTiptap } from "@/libs/utils";
@@ -35,13 +33,32 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
     content: string;
     category: string;
   }) => {
-    await putBlogPost({ id: Number(selectedId), title, content });
+    const res = await fetch(`${process.env.BASE_URL}/api/blog/edit`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        id: Number(selectedId),
+        title,
+        content,
+        category,
+      }),
+    });
+
+    if (res.ok) {
+      alert("Successfully updated");
+    } else {
+      alert("Failed to update");
+    }
+  };
+
+  const getBlogDetail = async (id: string) => {
+    const res = await fetch(`/api/blog/${id}`);
+    const data = await res.json();
+    return data;
   };
 
   const { data, isLoading } = useQuery({
     queryKey: ["edit_post", selectedId],
     queryFn: () => getBlogDetail(selectedId!),
-    suspense: true,
     enabled: isAdmin && !!selectedId,
   });
 
@@ -63,7 +80,8 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
               isEditor={true}
             />
           )}
-          {isLoading && <LoaderSpin />}
+          {!!selectedId && isLoading && <LoaderSpin />}
+          {!selectedId && !isLoading && <p>Please Select Post</p>}
         </>
       )}
     </>

@@ -1,7 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import getBlogCategoryList from "@/libs/api/getBlogCategoryList";
 import { cn } from "@/libs/utils";
+import { IBlogGetCategorySideBar } from "@/components/blog/types";
+
+const getBlogCategoryList = async (): Promise<IBlogGetCategorySideBar[]> => {
+  try {
+    const res = await fetch(`${process.env.BASE_URL}/api/blog/categories`);
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    console.error(e);
+    return [];
+  }
+};
 
 const BlogSideBarList = async () => {
   const categories = await getBlogCategoryList();

@@ -1,9 +1,26 @@
 import React, { cache } from "react";
-import getBlogList from "@/libs/api/getBlogList";
+// import getBlogList from "@/libs/api/getBlogList";
 import BlogListItem from "@/components/blog/list/BlogListItem";
 import BlogListPagination from "@/components/blog/list/BlogListPagination";
 import { cn } from "@/libs/utils";
 import ListWrapper from "@/components/blog/list/ListWrapper";
+import { IBlogGetListResponse } from "@/components/blog/types";
+
+const getBlogList = async (
+  page: string,
+  category: string,
+): Promise<IBlogGetListResponse> => {
+  try {
+    const res = await fetch(
+      `${process.env.BASE_URL}/api/blog/list?page=${page}${category ? `&category=${category}` : ""}`,
+    );
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    console.error(e);
+    return { posts: [], has_next_page: false };
+  }
+};
 
 const cachedGetBlogList = cache(getBlogList);
 
@@ -13,7 +30,8 @@ const BlogListContents = async ({
   searchParams?: { page: string; category: string; prev?: string };
 }) => {
   const { page, category } = searchParams || { page: "1", category: "" };
-  const { posts, has_next_page } = await cachedGetBlogList(page, category);
+  const { posts, has_next_page } = await getBlogList(page, category);
+
   return (
     <div className={cn("flex flex-col", "lg:flex-row lg:gap-3")}>
       <div
@@ -31,14 +49,14 @@ const BlogListContents = async ({
             hasNext={has_next_page}
           />
         )}
-        {posts.length === 0 && (
+        {posts?.length === 0 && (
           <h1 className="mb-16 text-center font-sans lg:mb-28">No Posts Yet</h1>
         )}
         <ListWrapper
           key={`${searchParams?.page || ""}${searchParams?.category || ""}`}
           searchParams={searchParams}
         >
-          {posts.map((item, i) => (
+          {posts?.map((item, i) => (
             <BlogListItem {...item} key={`BlogListItem_${i}`} index={i} />
           ))}
         </ListWrapper>

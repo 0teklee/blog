@@ -1,6 +1,11 @@
 import React from "react";
 import BlogEditTemplate from "@/components/blog/edit/BlogEditTemplate";
-import getEditList from "@/libs/api/getEditList";
+
+const getEditList = async () => {
+  const res = await fetch(`${process.env.BASE_URL}/api/blog/list/edit`);
+  const data = await res.json();
+  return data;
+};
 
 const page = async () => {
   const lists = await getEditList();

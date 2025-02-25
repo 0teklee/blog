@@ -1,15 +1,17 @@
 // app/api/blog/nav/route.ts
-import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
+import { NextRequest, NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
-  const query = req.query;
-  const id = Number(query.id);
+async function GET(req: NextRequest) {
+  const query = req.nextUrl.pathname.split("/").pop();
+
+  const id = Number(query);
+
+  if (!query || isNaN(id)) {
+    return NextResponse.json({ error: "Invalid id" }, { status: 404 });
+  }
 
   try {
     const [prevPost, nextPost] = await Promise.all([
@@ -46,12 +48,20 @@ export default async function handler(
         .execute(),
     ]);
 
-    res.status(200).json({
-      prevPost: prevPost[0] || null,
-      nextPost: nextPost[0] || null,
-    });
+    return NextResponse.json(
+      {
+        prevPost: prevPost[0] || null,
+        nextPost: nextPost[0] || null,
+      },
+      { status: 200 },
+    );
   } catch (err) {
-    console.error("Error fetching blog navigation posts:", err);
-    res.status(500).json({ error: "Failed to fetch blog navigation posts" });
+    console.error("[SERVER]: Error fetching blog navigation posts:", err);
+    return NextResponse.json(
+      { error: "Failed to fetch blog navigation posts" },
+      { status: 500 },
+    );
   }
 }
+
+export { GET };

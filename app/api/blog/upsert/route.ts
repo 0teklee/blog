@@ -1,13 +1,11 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest } from "next";
 import { db } from "@/db";
 import { post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
+import { NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse,
-) {
-  if (req.method === "POST") {
+async function handler(req: NextApiRequest) {
+  if (req.method === "PATCH") {
     const {
       id: p_id,
       title: p_title,
@@ -44,12 +42,23 @@ export default async function handler(
           })
           .execute();
       }
-      res.status(200).json({ message: "Post upserted successfully" });
+      return NextResponse.json({
+        message: "Post upserted successfully",
+        status: 200,
+      });
     } catch (err) {
-      console.error("Error upserting post:", err);
-      res.status(500).json({ error: "Failed to upsert post" });
+      console.error("[SERVER]:Error upserting post:", err);
+      return NextResponse.json(
+        { error: "Failed to upsert post" },
+        { status: 500 },
+      );
     }
   } else {
-    res.status(405).json({ error: "Method not allowed" });
+    return NextResponse.json(
+      { error: "[SERVER]:Method not allowed" },
+      { status: 405 },
+    );
   }
 }
+
+export { handler as PATCH };
