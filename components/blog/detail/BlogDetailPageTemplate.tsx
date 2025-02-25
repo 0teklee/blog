@@ -6,8 +6,10 @@ import { formatBlogContent } from "@/components/blog/utils";
 import BlogHeadingNav from "@/components/blog/detail/BlogHeadingNav";
 import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
+import MermaidInitializer from "@/components/blog/detail/MermaidInitializer";
+import { IBlogDetailResponse } from "@/components/blog/detail/type";
 
-const getBlogDetail = async (id: string) => {
+const getBlogDetail = async (id: string): Promise<IBlogDetailResponse> => {
   const res = await fetch(`${process.env.BASE_URL}/api/blog/${id}`);
   const data = await res.json();
   return data;
@@ -38,6 +40,7 @@ const BlogDetailPageTemplate = async ({
         <div className="relative blog-post-content">
           <Suspense fallback={<LoaderSpin />}>
             <ParsedHTMLTag html={updatedContent} />
+            <MermaidInitializer />
           </Suspense>
         </div>
         <Suspense fallback={<LoaderSpin />}>

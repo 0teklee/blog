@@ -10,7 +10,7 @@ const DetailHeader = ({
 }: {
   id: string;
   title: string;
-  categories: { name: string };
+  categories: string;
   createdAt: string;
 }) => (
   <div className="w-full">
@@ -20,7 +20,7 @@ const DetailHeader = ({
       <p>{`n°${id}`}</p>
     </div>
     <div className="flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap">
-      <p>category : {categories.name}</p>
+      <p>category : {categories}</p>
     </div>
   </div>
 );
