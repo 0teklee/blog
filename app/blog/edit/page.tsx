@@ -1,5 +1,6 @@
 import React from "react";
 import BlogEditTemplate from "@/components/blog/edit/BlogEditTemplate";
+import ReactQueryProvider from "@/components/common/providers/ReactQueryProvider";
 
 const getEditList = async () => {
   try {
@@ -14,6 +15,10 @@ const getEditList = async () => {
 const page = async () => {
   const lists = await getEditList();
 
-  return <BlogEditTemplate lists={lists} />;
+  return (
+    <ReactQueryProvider>
+      <BlogEditTemplate lists={lists} />
+    </ReactQueryProvider>
+  );
 };
 export default page;

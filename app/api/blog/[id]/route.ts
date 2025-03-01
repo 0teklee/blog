@@ -4,52 +4,45 @@ import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
 import { NextRequest, NextResponse } from "next/server";
 
-async function handler(req: NextRequest, res: NextApiResponse) {
-  if (req.method === "GET") {
-    const id = req.nextUrl.pathname.split("/").pop();
-    if (!id || Array.isArray(id)) {
-      return NextResponse.json({ error: "Invalid id" }, { status: 400 });
+async function GET(req: NextRequest, res: NextApiResponse) {
+  const id = req.nextUrl.pathname.split("/").pop();
+  if (!id || Array.isArray(id)) {
+    return NextResponse.json({ error: "Invalid id" }, { status: 400 });
+  }
+
+  try {
+    const postId = Number(id);
+    const postData = await db
+      .select({
+        id: post.id,
+        title: post.title,
+        content: post.content,
+        createdAt: post.createdAt,
+        categories: sql`array_agg(${category.name}) as categories`,
+      })
+      .from(post)
+      .leftJoin(category, sql`${category.id} = ${post.postId}`)
+      .where(sql`${post.id} = ${postId}`)
+      .groupBy(post.id)
+      .execute();
+
+    if (!postData || postData.length === 0) {
+      return res.status(404).json({ error: "Post not found" });
     }
 
-    try {
-      const postId = Number(id);
-      const postData = await db
-        .select({
-          id: post.id,
-          title: post.title,
-          content: post.content,
-          createdAt: post.createdAt,
-          categories: sql`array_agg(${category.name}) as categories`,
-        })
-        .from(post)
-        .leftJoin(category, sql`${category.id} = ${post.postId}`)
-        .where(sql`${post.id} = ${postId}`)
-        .groupBy(post.id)
-        .execute();
+    const mainPost = postData[0];
 
-      if (!postData || postData.length === 0) {
-        return res.status(404).json({ error: "Post not found" });
-      }
-
-      const mainPost = postData[0];
-
-      return NextResponse.json({
-        ...mainPost,
-        categories: (mainPost.categories as string[])[0],
-      });
-    } catch (err) {
-      console.error("[SERVER]: Error fetching blog detail:", err);
-      return NextResponse.json(
-        { error: "Internal Server Error" },
-        { status: 500 },
-      );
-    }
-  } else {
+    return NextResponse.json({
+      ...mainPost,
+      categories: (mainPost.categories as string[])[0],
+    });
+  } catch (err) {
+    console.error("[SERVER]: Error fetching blog detail:", err);
     return NextResponse.json(
-      { error: "[SERVER]: Method not allowed" },
-      { status: 405 },
+      { error: "Internal Server Error" },
+      { status: 500 },
     );
   }
 }
 
-export { handler as GET };
+export { GET };

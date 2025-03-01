@@ -31,7 +31,7 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
     content: string;
     category: string;
   }) => {
-    const res = await fetch(`${process.env.BASE_URL}/api/blog/upsert`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/blog/upsert`, {
       method: "PATCH",
       body: JSON.stringify({
         id: Number(selectedId),
