@@ -33,7 +33,10 @@ async function handler(req: NextRequest, res: NextApiResponse) {
 
       const mainPost = postData[0];
 
-      return NextResponse.json(mainPost);
+      return NextResponse.json({
+        ...mainPost,
+        categories: (mainPost.categories as string[])[0],
+      });
     } catch (err) {
       console.error("[SERVER]: Error fetching blog detail:", err);
       return NextResponse.json(
