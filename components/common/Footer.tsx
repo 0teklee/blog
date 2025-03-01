@@ -52,7 +52,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
             "transition-all duration-150",
           )}
         >
-          <Link href="/guestbook">guestbook</Link>
+          <Link href="/blog">main</Link>
         </button>
       </div>
     </footer>

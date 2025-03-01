@@ -1,11 +1,11 @@
-import GalleryDetailTemplate from "components/gallery/GalleryDetailTemplate";
+import GalleryDetailTemplate from "@/components/gallery/GalleryDetailTemplate";
 import {
   IGalleryGetCategorySideBar,
   IGalleryPostGetDetail,
 } from "@/components/blog/types";
 import getGalleryDetail from "@/libs/api/getGalleryDetail";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
-import { getImgSrc } from "components/blog/utils";
+import { getImgSrc } from "@/components/blog/utils";
 
 interface IProps {
   post: IGalleryPostGetDetail;
@@ -15,9 +15,7 @@ interface IProps {
 const page = async (props: { params: Promise<{ id: string }> }) => {
   const params = await props.params;
 
-  const {
-    id
-  } = params;
+  const { id } = params;
 
   /* Wrong Paths Branch*/
   const post = await getGalleryDetail(id);
@@ -43,16 +41,12 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
-export async function generateMetadata(
-  props: {
-    params: Promise<{ id: string }>;
-  }
-) {
+export async function generateMetadata(props: {
+  params: Promise<{ id: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    id
-  } = params;
+  const { id } = params;
 
   if (!id) {
     return {};

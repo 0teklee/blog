@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import GallerySidebar from "components/gallery/GallerySidebar";
+import GallerySidebar from "@/components/gallery/GallerySidebar";
 
 const Layout = ({ children }: { children: ReactNode | ReactNode[] }) => {
   return (

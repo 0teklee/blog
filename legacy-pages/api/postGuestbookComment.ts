@@ -1,6 +1,6 @@
 import prisma from "libs/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
-import getGoogleScope from "@/pages/api/getGoogleScope";
+import getGoogleScope from "@/legacy-pages/api/getGoogleScope";
 
 interface IPostGuestbookCommentProps {
   comment_id: number;

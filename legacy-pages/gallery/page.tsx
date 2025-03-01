@@ -1,19 +1,13 @@
-import { THEME_META_IMAGE } from "libs/constants";
-import Title from "components/common/Title";
+import { THEME_META_IMAGE } from "@/libs/constants";
+import Title from "@/components/common/Title";
 import GalleryListContents from "@/components/gallery/GalleryListContents";
 import { Suspense } from "react";
 import Loading from "@/components/common/Loading";
 
-const page = async (
-  props: {
-    searchParams: Promise<{ category: string }>;
-  }
-) => {
+const page = async (props: { searchParams: Promise<{ category: string }> }) => {
   const searchParams = await props.searchParams;
 
-  const {
-    category
-  } = searchParams;
+  const { category } = searchParams;
 
   return (
     <>

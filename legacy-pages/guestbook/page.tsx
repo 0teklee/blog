@@ -1,5 +1,5 @@
-import GuestbookTemplate from "components/guestbook/GuestbookTemplate";
-import { THEME_META_IMAGE } from "libs/constants";
+import GuestbookTemplate from "@/components/guestbook/GuestbookTemplate";
+import { THEME_META_IMAGE } from "@/libs/constants";
 
 const page = () => <GuestbookTemplate />;
 
