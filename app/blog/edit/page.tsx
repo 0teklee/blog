@@ -4,11 +4,12 @@ import ReactQueryProvider from "@/components/common/providers/ReactQueryProvider
 
 const getEditList = async () => {
   try {
+    console.info("BASE_URL", process.env.BASE_URL);
     const res = await fetch(`${process.env.BASE_URL}/api/blog/list/edit`);
     const data = await res.json();
     return data;
   } catch (err) {
-    console.error("❌[SERVER]:blog/list/edit GET ERROR");
+    console.error("❌[SERVER]:blog/list/edit GET ERROR", err);
   }
 };
 
