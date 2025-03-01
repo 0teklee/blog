@@ -1,6 +1,4 @@
 import React, { Suspense } from "react";
-
-import BlogDetailPageTemplate from "@/components/blog/detail/BlogDetailPageTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import getBlogDetail from "@/libs/api/getBlogDetail";
 import { getImgSrc } from "@/components/blog/utils";
@@ -20,7 +18,7 @@ const page = async (props: { params: Promise<{ id: string }> }) => {
         </DetailLayout>
       }
     >
-      <BlogDetailPageTemplate params={props.params} />
+      {/*<BlogDetailPageTemplate params={props.params} />*/}
     </Suspense>
   );
 };
