@@ -27,7 +27,7 @@ async function GET() {
     return NextResponse.json(result);
   } catch (err) {
     console.error("[SERVER]:Error fetching editing posts:", err);
-    NextResponse.json(
+    return NextResponse.json(
       {
         error: "Failed to fetch editing posts",
       },
