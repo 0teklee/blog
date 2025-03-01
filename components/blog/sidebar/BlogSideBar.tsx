@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { LoaderCircle } from "lucide-react";
-import BlogSideBarList from "@/components/blog/detail/BlogSideBarList";
+import BlogSideBarList from "@/components/blog/sidebar/BlogSideBarList";
 import { cn } from "@/libs/utils";
 
 const BlogSideBar = ({ className }: { className?: string }) => {
