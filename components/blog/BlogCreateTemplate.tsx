@@ -9,7 +9,7 @@ const postBlogPost = async (payload: {
   content: string;
   category: string;
 }) => {
-  const res = await fetch("/api/blog/create", {
+  const res = await fetch(`${process.env.BASE_URL}/api/blog/create`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
