@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
-import { sql } from "drizzle-orm";
+import { desc, sql } from "drizzle-orm";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -23,6 +23,7 @@ export async function GET() {
           .select()
           .from(post)
           .where(sql`${post.postId} = ${cat.id}`)
+          .orderBy(desc(post.createdAt))
           .limit(10)
           .execute();
         return {
