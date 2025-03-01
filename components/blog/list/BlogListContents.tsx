@@ -1,6 +1,9 @@
 import React, { cache } from "react";
 // import getBlogList from "@/libs/api/getBlogList";
+import BlogListItem from "@/components/blog/list/BlogListItem";
+import BlogListPagination from "@/components/blog/list/BlogListPagination";
 import { cn } from "@/libs/utils";
+import ListWrapper from "@/components/blog/list/ListWrapper";
 import { IBlogGetListResponse } from "@/components/blog/types";
 
 const getBlogList = async (
@@ -27,7 +30,7 @@ const BlogListContents = async ({
   searchParams?: { page: string; category: string; prev?: string };
 }) => {
   const { page, category } = searchParams || { page: "1", category: "" };
-  // const { posts, has_next_page } = await getBlogList(page, category);
+  const { posts, has_next_page } = await getBlogList(page, category);
 
   return (
     <div className={cn("flex flex-col", "lg:flex-row lg:gap-3")}>
@@ -40,29 +43,29 @@ const BlogListContents = async ({
           "overflow-x-hidden",
         )}
       >
-        {/*{searchParams && (*/}
-        {/*  <BlogListPagination*/}
-        {/*    searchParams={searchParams}*/}
-        {/*    hasNext={has_next_page}*/}
-        {/*  />*/}
-        {/*)}*/}
-        {/*{posts?.length === 0 && (*/}
-        {/*  <h1 className="mb-16 text-center font-sans lg:mb-28">No Posts Yet</h1>*/}
-        {/*)}*/}
-        {/*<ListWrapper*/}
-        {/*  key={`${searchParams?.page || ""}${searchParams?.category || ""}`}*/}
-        {/*  searchParams={searchParams}*/}
-        {/*>*/}
-        {/*  {posts?.map((item, i) => (*/}
-        {/*    <BlogListItem {...item} key={`BlogListItem_${i}`} index={i} />*/}
-        {/*  ))}*/}
-        {/*</ListWrapper>*/}
-        {/*{searchParams && (*/}
-        {/*  <BlogListPagination*/}
-        {/*    searchParams={searchParams}*/}
-        {/*    hasNext={has_next_page}*/}
-        {/*  />*/}
-        {/*)}*/}
+        {searchParams && (
+          <BlogListPagination
+            searchParams={searchParams}
+            hasNext={has_next_page}
+          />
+        )}
+        {posts?.length === 0 && (
+          <h1 className="mb-16 text-center font-sans lg:mb-28">No Posts Yet</h1>
+        )}
+        <ListWrapper
+          key={`${searchParams?.page || ""}${searchParams?.category || ""}`}
+          searchParams={searchParams}
+        >
+          {posts?.map((item, i) => (
+            <BlogListItem {...item} key={`BlogListItem_${i}`} index={i} />
+          ))}
+        </ListWrapper>
+        {searchParams && (
+          <BlogListPagination
+            searchParams={searchParams}
+            hasNext={has_next_page}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import BlogEditTemplate from "@/components/blog/edit/BlogEditTemplate";
 import ReactQueryProvider from "@/components/common/providers/ReactQueryProvider";
 
 const getEditList = async () => {
@@ -13,12 +14,11 @@ const getEditList = async () => {
 };
 
 const page = async () => {
-  // const lists = await getEditList();
+  const lists = await getEditList();
 
   return (
     <ReactQueryProvider>
-      <></>
-      {/*<BlogEditTemplate lists={lists} />*/}
+      <BlogEditTemplate lists={lists} />
     </ReactQueryProvider>
   );
 };
