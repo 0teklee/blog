@@ -1,4 +1,3 @@
-// app/api/blog/nav/route.ts
 import { db } from "@/db";
 import { category, post } from "@/db/migrations/schema";
 import { sql } from "drizzle-orm";
@@ -26,7 +25,7 @@ async function GET(req: NextRequest) {
         })
         .from(post)
         .leftJoin(category, sql`${category.id} = ${post.postId}`)
-        .where(sql`${post.id} < ? AND ${category.name} != ?`, [id, "daily"])
+        .where(sql`${post.id} < ${id} AND ${category.name} != ${"daily"}`)
         .orderBy(sql`${post.id} DESC`)
         .limit(1)
         .execute(),
@@ -42,7 +41,7 @@ async function GET(req: NextRequest) {
         })
         .from(post)
         .leftJoin(category, sql`${category.id} = ${post.postId}`)
-        .where(sql`${post.id} > ? AND ${category.name} != ?`, [id, "daily"])
+        .where(sql`${post.id} > ${id} AND ${category.name} != ${"daily"}`)
         .orderBy(sql`${post.id} ASC`)
         .limit(1)
         .execute(),
