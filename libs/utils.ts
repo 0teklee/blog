@@ -238,51 +238,6 @@ const convertQuillToTiptap = (html: string): string => {
       ];
     }
 
-    if (
-      node.properties?.className &&
-      (node.properties?.className as string).includes("ql-syntax") &&
-      node.tagName === "pre"
-    ) {
-      const langClass = (node.properties.className as string[]).find(
-        (cls: string) => cls.startsWith("language-"),
-      );
-      const lang = langClass ? langClass.replace("language-", "") : "plaintext";
-
-      //@ts-ignore
-      const codeContent = node.children[0]?.value || "";
-
-      try {
-        const highlighted = lowlight.highlight(lang, codeContent);
-
-        node.children = [
-          {
-            type: "element",
-            tagName: "code",
-            properties: {
-              className: [`language-${lang}`, "hljs"],
-            },
-            children: highlighted.children as any,
-          },
-        ];
-
-        // Add necessary classes for Tiptap
-        node.properties.className = ["pre"];
-      } catch (e) {
-        console.warn("Failed to highlight code:", e);
-        // Fallback: Create basic code element without highlighting
-        node.children = [
-          {
-            type: "element",
-            tagName: "code",
-            properties: {
-              className: ["hljs"],
-            },
-            children: [{ type: "text", value: codeContent }],
-          },
-        ];
-      }
-    }
-
     if (node.tagName === "img") {
       // Ensure proper image properties for Tiptap
       node.properties = {
@@ -293,7 +248,11 @@ const convertQuillToTiptap = (html: string): string => {
   });
 
   // Convert AST back to HTML string
-  const result = unified().use(rehypeStringify).stringify(ast);
+  const result = unified()
+    .use(editPreTagCode)
+    .use(rehypeHighlight, { detect: true })
+    .use(rehypeStringify)
+    .stringify(ast);
   return result;
 };
 
