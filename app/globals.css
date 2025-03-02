@@ -186,9 +186,9 @@
       border-radius: 8px;
     }
 
-    .language-mermaid {
+    .language-mermaid > svg {
       display: flex;
-      justify-content: center;
+      justify-self: center;
     }
 
     blockquote {
