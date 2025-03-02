@@ -9,6 +9,11 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "asset.leetekwoo.com",
+        port: "",
+      },
     ],
     minimumCacheTTL: 300000,
   },
