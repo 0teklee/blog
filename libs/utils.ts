@@ -159,6 +159,15 @@ const editPreTagCode = () => {
       if (isQuillCodeBlock) {
         node.properties.className += " pre";
         const codeContent = node.children[0]?.value || "";
+
+        if (
+          node.children?.[0]?.properties?.className?.includes(
+            "language-mermaid",
+          )
+        ) {
+          codeContent.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+        }
+
         node.children = [
           {
             type: "element",
