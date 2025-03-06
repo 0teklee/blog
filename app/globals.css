@@ -239,25 +239,25 @@
       }
     }
 
-    table {
-      @apply w-full overflow-x-scroll
-      break-keep border-2 border-accent rounded;
+    .parsed-content > table {
+      @apply w-full px-0.5 overflow-scroll
+      border-2 border-accent rounded;
     }
 
-    table th {
+    .parsed-content > table tr {
+      @apply w-full odd:bg-accent/50;
+    }
+
+    .parsed-content > table th {
       @apply px-1.5 py-1 sm:px-2 sm:py-1.5
       bg-accent border-e border-b border-accent-foreground/30
       text-sm;
     }
 
-    table td {
+    .parsed-content > table td {
       @apply px-1.5 py-1 sm:p-1.5
       border-e border-accent
       text-xs md:text-sm;
-    }
-
-    table tr:nth-child(odd) {
-      @apply odd:bg-accent/50;
     }
   }
 
