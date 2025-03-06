@@ -91,7 +91,7 @@
   /* /blog/[id] 디테일 컨텐츠*/
   .blog-post-content {
     @apply w-full min-h-[50dvh] p-1
-    text-base leading-6 sm:leading-[1.9rem];
+    text-base leading-[2rem] sm:leading-6;
     overflow-anchor: auto;
 
     h1 {
