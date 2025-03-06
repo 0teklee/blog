@@ -64,102 +64,83 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
+  p:empty,
+  h1:empty,
+  h2:empty,
+  h3:empty,
+  h4:empty,
+  h5:empty,
+  h6:empty {
+    display: none;
+  }
+
+  details > summary {
+    list-style: none;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+@layer components {
+  /* /blog/[id] 디테일 컨텐츠*/
   .blog-post-content {
-    width: 100%;
-    min-height: 50vh;
-    font-size: 1rem;
-    line-height: 1.9;
-    padding: 1rem;
+    @apply w-full min-h-[50dvh] p-1
+    text-base leading-6 sm:leading-[1.9rem];
     overflow-anchor: auto;
 
-    @media only screen and (max-width: 500px) {
-      font-size: 1rem;
-      line-height: 2;
-    }
-
-    p:empty,
-    h1:empty,
-    h2:empty,
-    h3:empty,
-    h4:empty,
-    h5:empty,
-    h6:empty {
-      display: none;
-    }
-
-    strong {
-      font-size: 100%;
-      font-weight: 500;
-    }
-
-    mark {
-      color: white !important;
-    }
-
     h1 {
-      font-weight: 600;
-      font-size: 1.6rem;
-      @media only screen and (max-width: 500px) {
-        font-size: 1.2rem;
-      }
+      @apply my-6 text-xl font-bold sm:text-2xl;
     }
 
     h2 {
-      /*margin: 1.6rem 0;*/
-      font-weight: 600;
-      font-size: 1.5rem;
-      @media only screen and (max-width: 500px) {
-        font-size: 1.1rem;
-      }
+      @apply my-5 text-lg font-bold sm:text-xl;
     }
 
     h3 {
-      /*margin: 1.5rem 0;*/
-      font-weight: 500;
-      font-size: 1.3rem;
-      @media only screen and (max-width: 500px) {
-        font-size: 1rem;
-      }
+      @apply my-4 text-base font-semibold sm:text-lg;
     }
 
     h4 {
-      /*margin: 1.4rem 0;*/
-      font-size: 1.2rem;
-      @media only screen and (max-width: 500px) {
-        font-size: 1rem;
-      }
+      @apply my-3 text-sm font-semibold sm:text-base;
     }
 
     h5 {
-      /*margin: 1.3rem 0;*/
-      font-size: 1.3rem;
-      @media only screen and (max-width: 500px) {
-        font-size: 1rem;
-      }
+      @apply my-3 text-sm font-semibold;
     }
 
-    p {
-      font-weight: 300;
+    /* p 태그, 텍스트 컨텐츠, code, ul 등 기타 내부 x */
+    .parsed-content > p {
+      @apply mb-4 font-light indent-1 whitespace-pre-line;
     }
 
-    & > .parsed-content > p {
-      margin-bottom: 1rem;
+    p br {
+      display: none;
     }
 
-    & > .parsed-content > p:has(> br:only-child):is(:not(:has(text))) {
-      margin-bottom: 0;
-      height: 0;
-      line-height: 0;
+    /* code block */
+    .pre {
+      @apply mb-4 text-sm sm:px-3 sm:text-base;
     }
 
-    img {
-      width: 100%;
+    .pre > code {
+      @apply mx-1 px-1
+      bg-muted dark:bg-muted-foreground rounded
+      text-orange-700 dark:text-theme italic font-mono
+      transition-colors duration-300;
     }
 
+    .language-mermaid > svg {
+      display: flex;
+      justify-self: center;
+    }
+
+    img,
     video {
       width: 100%;
     }
@@ -172,23 +153,12 @@
       color: rgb(59 130 246);
     }
 
-    .pre {
-      padding: 12px 0;
-      font-size: 0.9rem;
-
-      @media only screen and (max-width: 600px) {
-        margin: 1rem 0;
-        font-size: 0.8rem;
-      }
+    strong {
+      @apply font-medium;
     }
 
-    .pre > code {
-      border-radius: 8px;
-    }
-
-    .language-mermaid > svg {
-      display: flex;
-      justify-self: center;
+    mark {
+      color: white !important;
     }
 
     blockquote {
@@ -268,46 +238,35 @@
         padding-left: 1.8rem;
       }
     }
+
+    table {
+      @apply w-full overflow-x-scroll
+      break-keep border-2 border-accent rounded;
+    }
+
+    table th {
+      @apply px-1.5 py-1 sm:px-2 sm:py-1.5
+      bg-accent border-e border-b border-accent-foreground/30
+      text-sm;
+    }
+
+    table td {
+      @apply px-1.5 py-1 sm:p-1.5
+      border-e border-accent
+      text-xs md:text-sm;
+    }
+
+    table tr:nth-child(odd) {
+      @apply odd:bg-accent/50;
+    }
   }
 
-  .gallery-list-col {
-    column-count: auto;
-    column-gap: 10rem;
-    column-width: 12rem;
+  /* /blog/* 사이드바 */
+  .blog-sidebar[open] {
+    height: auto;
   }
 
-  .gallery-list-col > a:first-child {
-    position: relative;
-    left: 4.2%;
-    /*left: 25%;*/
-    bottom: -2rem;
-  }
-
-  .gallery-list-col > a:nth-of-type(3n + 2) {
-    position: relative;
-    left: 15%;
-  }
-
-  .gallery-list-col > a:nth-of-type(7n) {
-    position: relative;
-    right: 15%;
-  }
-
-  .gallery-list-col > a:nth-of-type(2n + 2) > img {
-    scale: 0.5;
-  }
-
-  .gallery-list-col > a:nth-of-type(17n + 1) > img {
-    scale: 1.2;
-  }
-
-  details > summary {
-    list-style: none;
-  }
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-
+  /*디테일 우측 사이드바 블로그 컨텐츠의 목차 부분*/
   .blog-table-content {
     height: 100%;
     padding: 3rem 0 5rem 0;
@@ -329,17 +288,15 @@
       rgba(0, 0, 0, 0) 100%
     );
   }
+}
 
+@layer utilities {
   .scrollbar-hide {
     scrollbar-width: none;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
       display: none;
     }
-  }
-
-  .blog-sidebar[open] {
-    height: auto;
   }
 
   @keyframes slideDown {
