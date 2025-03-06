@@ -55,12 +55,6 @@ const TiptapEditor = ({
   const editor = useEditor({
     extensions: [
       StarterKit.configure({
-        heading: {
-          levels: [1, 2, 3, 4],
-          HTMLAttributes: {
-            class: "mt-5 mb-3",
-          },
-        },
         horizontalRule: {
           HTMLAttributes: {
             class: "my-5",
