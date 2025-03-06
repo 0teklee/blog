@@ -142,7 +142,7 @@
 
     img,
     video {
-      width: 100%;
+      @apply w-full my-6 p-0.5 rounded-sm border-accent;
     }
 
     a {
