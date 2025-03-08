@@ -1,6 +1,6 @@
-import ArchiveTemplate from "components/archive/ArchiveTemplate";
+import ArchiveTemplate from "@/components/archive/ArchiveTemplate";
 import getArchiveList from "@/libs/api/getArchiveList";
-import { THEME_META_IMAGE } from "libs/constants";
+import { THEME_META_IMAGE } from "@/libs/constants";
 
 const page = async () => {
   const posts = await getArchiveList();
