@@ -1,14 +1,16 @@
 import React, { Suspense } from "react";
 
-import BlogDetailPageTemplate from "@/components/blog/detail/BlogDetailPageTemplate";
+import DetailTemplate from "@/components/blog/detail/DetailTemplate";
 import getBlogDetailId from "@/libs/api/getBlogDetailId";
 import getBlogDetail from "@/libs/api/getBlogDetail";
 import { getImgSrc } from "@/components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
-import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";
 import { DEFAULT_BLOG_ITEM } from "@/components/blog/values";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
+import { THEME_META_IMAGE } from "@/libs/constants";
+import DetailLayout from "@/components/blog/detail/DetailLayout";
+import DetailHeader from "@/components/blog/detail/DetailHeader";
 
 const page = async (props: { params: Promise<{ id: string }> }) => {
   return (
@@ -20,7 +22,7 @@ const page = async (props: { params: Promise<{ id: string }> }) => {
         </DetailLayout>
       }
     >
-      <BlogDetailPageTemplate params={props.params} />
+      <DetailTemplate params={props.params} />
     </Suspense>
   );
 };
@@ -60,7 +62,7 @@ export async function generateMetadata(props: {
     openGraph: {
       title: `${data.title} - teklog`,
       description: htmlReplace(data.content).slice(0, 200) || "",
-      images: ImageSrc,
+      images: ImageSrc || THEME_META_IMAGE,
     },
   };
 }
