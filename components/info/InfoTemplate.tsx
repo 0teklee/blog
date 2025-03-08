@@ -42,7 +42,8 @@ const InfoTemplate = () => (
             "hover:bg-theme hover:text-white",
             "transition-colors duration-500 ease-in-out",
           )}
-          href="https://0teklee.github.io/resume"
+          href="https://resume.leetekwoo.com"
+          target={"_blank"}
         >
           프론트 개발자 이택우 이력서
         </Link>
