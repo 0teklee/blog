@@ -5,7 +5,13 @@ import { cn, parseHTMLToString } from "@/libs/utils";
 import Link from "next/link";
 import { SQUARE_BASE_64_BLUR } from "@/libs/constants";
 import { cache } from "react";
-import { getCategoryImgSrc, getImgSrc } from "@/components/blog/utils";
+import {
+  extractMermaidCode,
+  getCategoryImgSrc,
+  getImgSrc,
+} from "@/components/blog/utils";
+import MermaidParser from "@/components/blog/detail/MermaidParser";
+import ParsedHTMLTag from "@/components/common/module/ParsedHTMLTag";
 
 const cachedParseHTMLString = cache(parseHTMLToString);
 
@@ -13,7 +19,7 @@ interface IBlogListItemProps extends IBlogGetListItem {
   index: number;
 }
 
-const BlogListItem = ({
+const BlogListItem = async ({
   id,
   content,
   createdAt,
@@ -21,6 +27,10 @@ const BlogListItem = ({
   categories,
   index,
 }: IBlogListItemProps) => {
+  const mermaidCode = extractMermaidCode(content);
+  const rawPreview = mermaidCode ? content.replace(mermaidCode, "") : content;
+  const preview = cachedParseHTMLString(rawPreview).slice(0, 200);
+
   return (
     <Link
       className={cn(
@@ -52,17 +62,34 @@ const BlogListItem = ({
             "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-36 lg:h-36 lg:rounded-sm",
           )}
         >
-          <Image
-            src={getImgSrc(content) || getCategoryImgSrc(categories.name)}
-            className={cn("object-cover")}
-            key={`${id}_img`}
-            fill={true}
-            alt={title}
-            priority={index < 3}
-            placeholder={`blur`}
-            sizes="300px, (min-width: 1024px) 196px"
-            blurDataURL={SQUARE_BASE_64_BLUR}
-          />
+          {
+            // TODO ParsedHTMLTag, MermaidParser 사용성 개선
+            !getImgSrc(content) && mermaidCode ? (
+              <div className={`w-full h-full`}>
+                <ParsedHTMLTag
+                  html={mermaidCode}
+                  className={cn(
+                    "flex justify-center items-center",
+                    "w-full h-full object-contain",
+                    "bg-primary/30 [&_code]:bg-transparent [&_code]:text-transparent",
+                  )}
+                />
+                <MermaidParser />
+              </div>
+            ) : (
+              <Image
+                src={getImgSrc(content) || getCategoryImgSrc(categories.name)}
+                className={cn("object-cover")}
+                key={`${id}_img`}
+                fill={true}
+                alt={title}
+                priority={index < 3}
+                placeholder={`blur`}
+                sizes="300px, (min-width: 1024px) 196px"
+                blurDataURL={SQUARE_BASE_64_BLUR}
+              />
+            )
+          }
         </div>
         <div
           className={cn(
@@ -103,7 +130,7 @@ const BlogListItem = ({
               "lg:line-clamp-3",
             )}
           >
-            {cachedParseHTMLString(content).slice(0, 200)}
+            {preview}
           </p>
         </div>
       </div>
