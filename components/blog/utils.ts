@@ -68,3 +68,10 @@ export const formatTableContentStyle = (level: number) => {
 
   return "text-xs pl-3";
 };
+
+export function extractMermaidCode(content: string): string | null {
+  const mermaidRegex =
+    /(<code\s+class=["']language-mermaid["'][^>]*>[\s\S]*?<\/code>)/i;
+  const match = content.match(mermaidRegex);
+  return match ? match[1].trim() : null;
+}
