@@ -1,5 +1,5 @@
 import "highlight.js/styles/github-dark-dimmed.css";
-import { highlightCode, processHTML } from "@/libs/utils";
+import { cn, highlightCode, processHTML } from "@/libs/utils";
 import { cache } from "react";
 
 const cachedHTML = cache(async (html: string) => {
@@ -7,12 +7,18 @@ const cachedHTML = cache(async (html: string) => {
   return highlightCode(cleanHTML);
 });
 
-async function ParsedHTMLTag({ html }: { html: string }) {
+async function ParsedHTMLTag({
+  html,
+  className,
+}: {
+  html: string;
+  className?: string;
+}) {
   const cleanHTML = await cachedHTML(html);
   return (
     <div
       dangerouslySetInnerHTML={{ __html: cleanHTML }}
-      className="parsed-content"
+      className={cn("parsed-content", className)}
     />
   );
 }
