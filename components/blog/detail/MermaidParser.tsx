@@ -2,7 +2,11 @@
 import { useEffect } from "react";
 import mermaid from "mermaid";
 
-const MermaidParser = () => {
+const MermaidParser = ({
+  mermaidCode,
+}: {
+  mermaidCode?: ArrayLike<HTMLElement>;
+}) => {
   useEffect(() => {
     mermaid.initialize({
       startOnLoad: false,
@@ -13,12 +17,12 @@ const MermaidParser = () => {
          {
           color: white !important;
           background: none !important;
-        } 
+        }
       `,
     });
 
     mermaid.run({
-      nodes: document.querySelectorAll(".language-mermaid"),
+      nodes: mermaidCode || document.querySelectorAll(".language-mermaid"),
     });
   }, []);
 
