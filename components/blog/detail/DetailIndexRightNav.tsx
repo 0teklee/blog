@@ -7,8 +7,8 @@ import { AnimatePresence } from "motion/react";
 import { cn } from "@/libs/utils";
 import { useMount } from "@/libs/hooks/useMount";
 
-const BlogTableContent = lazy(
-  () => import("@/components/blog/detail/BlogTableContent"),
+const TableContentIndex = lazy(
+  () => import("@/components/blog/detail/TableContentIndex"),
 );
 
 const BlogHeadingNavContainer = ({
@@ -40,7 +40,7 @@ const BlogHeadingNavContainer = ({
     : null;
 };
 
-const BlogHeadingNav = ({ content }: { content: string }) => {
+const DetailIndexRightNav = ({ content }: { content: string }) => {
   return (
     <BlogHeadingNavContainer>
       <Suspense
@@ -52,10 +52,10 @@ const BlogHeadingNav = ({ content }: { content: string }) => {
           </nav>
         }
       >
-        <BlogTableContent content={content} />
+        <TableContentIndex content={content} />
       </Suspense>
     </BlogHeadingNavContainer>
   );
 };
 
-export default BlogHeadingNav;
+export default DetailIndexRightNav;

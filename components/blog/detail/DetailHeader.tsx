@@ -1,6 +1,5 @@
-import React, { ReactNode } from "react";
-import { cn } from "@/libs/utils";
 import dayjs from "dayjs";
+import React from "react";
 
 const DetailHeader = ({
   id,
@@ -25,17 +24,4 @@ const DetailHeader = ({
   </div>
 );
 
-const DetailLayout = ({ children }: { children: ReactNode | ReactNode[] }) => {
-  return (
-    <div
-      className={cn(
-        "flex flex-col w-full gap-3",
-        "lg:items-center lg:py-5 lg:flex-grow lg:pt-0",
-      )}
-    >
-      {children}
-    </div>
-  );
-};
-
-export { DetailHeader, DetailLayout };
+export default DetailHeader;

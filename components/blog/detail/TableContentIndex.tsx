@@ -5,7 +5,7 @@ import { formatTableContentStyle } from "@/components/blog/utils";
 import { motion } from "framer-motion";
 import { parseHTMLToString } from "@/libs/utils";
 
-const BlogTableContent = ({ content }: { content: string }) => {
+const TableContentIndex = ({ content }: { content: string }) => {
   const [activeHeading, setActiveHeading] = useState<string>("");
 
   const headings = !content
@@ -92,4 +92,4 @@ const BlogTableContent = ({ content }: { content: string }) => {
   );
 };
 
-export default BlogTableContent;
+export default TableContentIndex;

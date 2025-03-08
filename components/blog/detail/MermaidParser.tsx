@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import mermaid from "mermaid";
 
-const MermaidInitializer = () => {
+const MermaidParser = () => {
   useEffect(() => {
     mermaid.initialize({
       startOnLoad: false,
@@ -25,4 +25,4 @@ const MermaidInitializer = () => {
   return null;
 };
 
-export default MermaidInitializer;
+export default MermaidParser;

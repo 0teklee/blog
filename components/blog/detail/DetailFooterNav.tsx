@@ -6,7 +6,7 @@ import { cn } from "@/libs/utils";
 
 const getCacheBlogNav = cache(getBlogNav);
 
-const BlogDetailFooterNav = async ({ id }: { id: string }) => {
+const DetailFooterNav = async ({ id }: { id: string }) => {
   const [prev, next] = await getCacheBlogNav(id);
   return (
     <footer className={`w-full`}>
@@ -79,4 +79,4 @@ const BlogDetailFooterNav = async ({ id }: { id: string }) => {
   );
 };
 
-export default BlogDetailFooterNav;
+export default DetailFooterNav;

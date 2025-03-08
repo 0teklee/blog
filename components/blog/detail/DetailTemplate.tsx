@@ -1,13 +1,14 @@
 import React, { cache, Suspense } from "react";
 import ParsedHTMLTag from "@/components/common/module/ParsedHTMLTag";
-import BlogDetailFooterNav from "@/components/blog/detail/BlogDetailFooterNav";
+import DetailFooterNav from "@/components/blog/detail/DetailFooterNav";
 // import getBlogDetail from "@/libs/api/getBlogDetail";
 import { formatBlogContent } from "@/components/blog/utils";
-import BlogHeadingNav from "@/components/blog/detail/BlogHeadingNav";
-import { DetailHeader, DetailLayout } from "@/components/blog/detail/Template";
+import DetailIndexRightNav from "@/components/blog/detail/DetailIndexRightNav";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
-import MermaidInitializer from "@/components/blog/detail/MermaidInitializer";
+import MermaidParser from "@/components/blog/detail/MermaidParser";
 import { IBlogDetailResponse } from "@/components/blog/detail/type";
+import DetailLayout from "@/components/blog/detail/DetailLayout";
+import DetailHeader from "@/components/blog/detail/DetailHeader";
 
 const getBlogDetail = async (id: string): Promise<IBlogDetailResponse> => {
   const res = await fetch(`${process.env.BASE_URL}/api/blog/${id}`);
@@ -17,7 +18,7 @@ const getBlogDetail = async (id: string): Promise<IBlogDetailResponse> => {
 
 const getCacheBlogDetail = cache(getBlogDetail);
 
-const BlogDetailPageTemplate = async ({
+const DetailTemplate = async ({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -30,6 +31,7 @@ const BlogDetailPageTemplate = async ({
 
   return (
     <>
+      <DetailIndexRightNav content={content} />
       <DetailLayout>
         <DetailHeader
           id={id}
@@ -40,16 +42,15 @@ const BlogDetailPageTemplate = async ({
         <div className="relative blog-post-content">
           <Suspense fallback={<LoaderSpin />}>
             <ParsedHTMLTag html={updatedContent} />
-            <MermaidInitializer />
+            <MermaidParser />
           </Suspense>
         </div>
         <Suspense fallback={<LoaderSpin />}>
-          <BlogDetailFooterNav id={id} />
+          <DetailFooterNav id={id} />
         </Suspense>
       </DetailLayout>
-      <BlogHeadingNav content={content} />
     </>
   );
 };
 
-export default BlogDetailPageTemplate;
+export default DetailTemplate;
