@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sparkles } from "@react-three/drei";
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { BlogPoint } from "./BlogPoint";
 import { BlogConnections } from "./BlogConnections";
 import { CelestialBlogProps, Position } from "./types";
@@ -10,7 +10,6 @@ import { cn } from "@/libs/utils";
 import { TooltipPortal } from "./TooltipPortal";
 import { useTooltip } from "./useTooltip";
 import { calculateCategoryCenters } from "./utils";
-import { Vector3 } from "three";
 import { Bloom, EffectComposer, GodRays } from "@react-three/postprocessing";
 import { BlendFunction, KernelSize } from "postprocessing";
 
@@ -27,6 +26,7 @@ export default function CelestialBlog({
     handleClick,
     handleClickOutside,
   } = useTooltip();
+  const sunRef = useRef(null);
 
   const categoryCenters = calculateCategoryCenters(categories);
 
@@ -45,8 +45,6 @@ export default function CelestialBlog({
     },
     [],
   );
-
-  const sunPosition = new Vector3(0, 0, 0);
 
   return (
     <div
@@ -71,16 +69,15 @@ export default function CelestialBlog({
         )}
         camera={{ position: [0, 0, 5], fov: 50 }}
       >
+        <mesh ref={sunRef} position={[0, 0, 0]}>
+          <sphereGeometry args={[0.1, 16, 16]} />
+          <meshBasicMaterial color="#ffffff" />
+        </mesh>
+
         <ambientLight intensity={0.1} />
         <pointLight position={[10, 10, 10]} intensity={0.5} />
-        <Sparkles
-          count={100}
-          scale={8}
-          size={2}
-          speed={0.4}
-          opacity={0.1}
-        />
-        
+        <Sparkles count={20} scale={7} size={1} speed={0.4} opacity={0.2} />
+
         {posts.map((post, index) => {
           const categoryIndex = categories.findIndex(
             (c) => c.id === post.categoryId,
@@ -106,9 +103,9 @@ export default function CelestialBlog({
           hoveredPostId={hoveredPost?.id || null}
           positions={positions}
         />
-        
+
         <OrbitControls enableZoom={true} />
-        
+
         <EffectComposer multisampling={8}>
           <Bloom
             intensity={1.5}
@@ -118,10 +115,10 @@ export default function CelestialBlog({
             kernelSize={KernelSize.LARGE}
           />
           <GodRays
-            sun={sunPosition}
+            sun={sunRef}
             blendFunction={BlendFunction.SCREEN}
             samples={60}
-            density={0.96}
+            density={1}
             decay={0.9}
             weight={0.4}
             exposure={0.6}

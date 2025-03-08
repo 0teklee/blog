@@ -1,4 +1,5 @@
 import { Line } from "@react-three/drei";
+import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 import { BlogPost, Position } from "./types";
 import { INTRO_POST_ID } from "@/components/landing/celestial/constants";
@@ -15,6 +16,7 @@ type Connection = {
 };
 
 export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
+  const { theme } = useTheme();
   const [connections, setConnections] = useState<Connection[]>([]);
 
   // 연결 계산을 메모이제이션
@@ -29,13 +31,20 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
       return posts
         .filter((p) => {
           // 자기 자신 제외 및 유효한 포지션이 있는 포스트만 필터링
-          return p.id !== INTRO_POST_ID && 
-                 positions[p.id] && 
-                 Array.isArray(positions[p.id]) && 
-                 positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
+          return (
+            p.id !== INTRO_POST_ID &&
+            positions[p.id] &&
+            Array.isArray(positions[p.id]) &&
+            positions[p.id].every(
+              (coord) => typeof coord === "number" && !isNaN(coord),
+            )
+          );
         })
         .map((post) => ({
-          points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+          points: [positions[hoveredPostId], positions[post.id]] as [
+            Position,
+            Position,
+          ],
           type: "category" as const,
         }));
     }
@@ -48,12 +57,17 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
           p.categoryId === hoveredPost.categoryId &&
           positions[p.id] &&
           Array.isArray(positions[p.id]) &&
-          positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
+          positions[p.id].every(
+            (coord) => typeof coord === "number" && !isNaN(coord),
+          );
 
         return isSameCategory;
       })
       .map((post) => ({
-        points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+        points: [positions[hoveredPostId], positions[post.id]] as [
+          Position,
+          Position,
+        ],
         type: "category" as const,
       }));
 
@@ -65,12 +79,17 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
           p.tags.some((tag) => hoveredPost.tags.includes(tag)) &&
           positions[p.id] &&
           Array.isArray(positions[p.id]) &&
-          positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
+          positions[p.id].every(
+            (coord) => typeof coord === "number" && !isNaN(coord),
+          );
 
         return hasCommonTags;
       })
       .map((post) => ({
-        points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+        points: [positions[hoveredPostId], positions[post.id]] as [
+          Position,
+          Position,
+        ],
         type: "tag" as const,
       }));
 
@@ -83,18 +102,18 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
   }, [calculatedConnections]);
 
   return (
-    <>
+    <group>
       {connections.map((connection, index) => (
         <Line
           key={index}
           points={connection.points}
-          color={connection.type === "category" ? "#00ffff" : "#ff00ff"}
-          lineWidth={connection.type === "category" ? 1 : 0.5}
-          opacity={connection.type === "category" ? 1 : 0.5}
-          dashed={connection.type === "tag"}
-          segments
+          color={theme === "dark" ? "#c31ddd" : "#070d40"}
+          lineWidth={0.5}
+          transparent
+          opacity={1}
+          toneMapped={true}
         />
       ))}
-    </>
+    </group>
   );
 }

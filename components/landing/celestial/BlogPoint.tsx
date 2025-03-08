@@ -36,7 +36,7 @@ export function BlogPoint({
   const { theme } = useTheme();
   const { scene } = useThree();
   const isCategory = "isCategory" in post && post.isCategory;
-  const isCenter = "isCenter" in post && post.isCenter;
+  const isCenter = ("isCenter" in post && post.isCenter) as boolean;
 
   // 카테고리와 포스트의 위치 계산 로직 분리
   const calculatePosition = () => {
@@ -163,64 +163,167 @@ export function BlogPoint({
 
   return (
     <group>
-      <mesh
-        position={[position.x, position.y, position.z]}
-        onPointerOver={(event) => {
-          handleHover(post, {
-            x: event.clientX + eventOffset,
-            y: event.clientY - eventOffset,
-          });
-        }}
-        onPointerOut={(event) => {
-          handleHover(null, { x: 0, y: 0 });
-        }}
-        onPointerMove={(event) => {
-          handleHover(post, {
-            x: event.clientX + eventOffset,
-            y: event.clientY - eventOffset,
-          });
-        }}
-        onClick={(event) => {
-          handleClick(post, {
-            x: event.clientX + eventOffset,
-            y: event.clientY - eventOffset,
-          });
-        }}
-      >
-        <sphereGeometry args={[position.size, 16, 16]} />
-        <meshStandardMaterial
-          color={
-            isCenter
-              ? theme === "dark"
-                ? "#ffd700"
-                : "#4068b3"
-              : isCategory
-                ? theme === "dark"
-                  ? "#e8ddba"
-                  : "#4068b3"
-                : theme === "dark"
-                  ? "#ffffff"
-                  : "#282d37"
-          }
-          emissive={
-            isCenter
-              ? theme === "dark"
-                ? "#ffd700"
-                : "#4068b3"
-              : isCategory
-                ? theme === "dark"
-                  ? "#e8ddba"
-                  : "#4068b3"
-                : theme === "dark"
-                  ? "#e8ddba"
-                  : "#4068b3"
-          }
-          emissiveIntensity={isCenter ? 3 : isCategory ? 2 : 1}
-          toneMapped={false}
-          roughness={0.2}
-          metalness={0.8}
-        />
-      </mesh>
+      {!isCenter && (
+        <group
+          position={[position.x, position.y, position.z]}
+          onPointerOver={(event) => {
+            handleHover(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+          onPointerOut={(event) => {
+            handleHover(null, { x: 0, y: 0 });
+          }}
+          onPointerMove={(event) => {
+            handleHover(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+          onClick={(event) => {
+            handleClick(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+        >
+          {/* 중앙 구체 */}
+          <mesh>
+            <sphereGeometry args={[position.size * 0.8, 16, 16]} />
+            <meshStandardMaterial
+              color={
+                isCategory
+                  ? theme === "dark"
+                    ? "#e8ddba"
+                    : "#4068b3"
+                  : theme === "dark"
+                    ? "#ffffff"
+                    : "#282d37"
+              }
+              emissive={
+                isCategory
+                  ? theme === "dark"
+                    ? "#e8ddba"
+                    : "#4068b3"
+                  : theme === "dark"
+                    ? "#e8ddba"
+                    : "#4068b3"
+              }
+              emissiveIntensity={isCategory ? 2 : 1}
+              toneMapped={false}
+              roughness={0.2}
+              metalness={0.8}
+            />
+          </mesh>
+          
+          {/* 별의 가지들 - 3개의 직교 평면 */}
+          {[0, 1, 2].map((i) => (
+            <group key={i} rotation={[
+              i === 0 ? Math.PI / 2 : 0,
+              i === 1 ? Math.PI / 2 : 0,
+              i === 2 ? Math.PI / 2 : 0
+            ]}>
+              <mesh>
+                <planeGeometry args={[position.size * 4, position.size * 0.4]} />
+                <meshStandardMaterial
+                  color={
+                    isCategory
+                      ? theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                      : theme === "dark"
+                        ? "#ffffff"
+                        : "#282d37"
+                  }
+                  emissive={
+                    isCategory
+                      ? theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                      : theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                  }
+                  emissiveIntensity={isCategory ? 1.5 : 0.8}
+                  toneMapped={false}
+                  roughness={0.2}
+                  metalness={0.8}
+                  transparent={true}
+                  opacity={0.8}
+                  side={THREE.DoubleSide}
+                />
+              </mesh>
+              <mesh rotation={[0, 0, Math.PI / 2]}>
+                <planeGeometry args={[position.size * 4, position.size * 0.4]} />
+                <meshStandardMaterial
+                  color={
+                    isCategory
+                      ? theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                      : theme === "dark"
+                        ? "#ffffff"
+                        : "#282d37"
+                  }
+                  emissive={
+                    isCategory
+                      ? theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                      : theme === "dark"
+                        ? "#e8ddba"
+                        : "#4068b3"
+                  }
+                  emissiveIntensity={isCategory ? 1.5 : 0.8}
+                  toneMapped={false}
+                  roughness={0.2}
+                  metalness={0.8}
+                  transparent={true}
+                  opacity={0.8}
+                  side={THREE.DoubleSide}
+                />
+              </mesh>
+            </group>
+          ))}
+        </group>
+      )}
+      {isCenter && (
+        <mesh
+          position={[position.x, position.y, position.z]}
+          onPointerOver={(event) => {
+            handleHover(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+          onPointerOut={(event) => {
+            handleHover(null, { x: 0, y: 0 });
+          }}
+          onPointerMove={(event) => {
+            handleHover(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+          onClick={(event) => {
+            handleClick(post, {
+              x: event.clientX + eventOffset,
+              y: event.clientY - eventOffset,
+            });
+          }}
+        >
+          <sphereGeometry args={[position.size, 16, 16]} />
+          <meshStandardMaterial
+            color={theme === "dark" ? "#ffd700" : "#4068b3"}
+            emissive={theme === "dark" ? "#ffd700" : "#4068b3"}
+            emissiveIntensity={3}
+            toneMapped={false}
+            roughness={0.2}
+            metalness={0.8}
+          />
+        </mesh>
+      )}
     </group>
   );
 }
