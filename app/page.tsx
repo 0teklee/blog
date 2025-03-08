@@ -10,13 +10,13 @@ export default Home;
 
 export async function generateMetadata() {
   return {
-    title: `teklog - blog`,
-    description: `teklog: tech blog about frontend/web development`,
+    title: `teklog`,
+    description: `teklog: tech blog by TEK.LEE`,
     openGraph: {
       title: `teklog`,
-      description: `tech blog about frontend/web development`,
+      description: `tech blog by TEK.LEE`,
       images: THEME_META_IMAGE,
-      url: "https://www.teklog.site",
+      url: "https://blog.leetekwoo.com",
     },
   };
 }
