@@ -1,59 +1,86 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { useState } from "react";
+import { OrbitControls, Sparkles } from "@react-three/drei";
+import { useCallback, useState } from "react";
 import { BlogPoint } from "./BlogPoint";
 import { BlogConnections } from "./BlogConnections";
-import { Tooltip } from "./Tooltip";
-import { BlogPost } from "@/components/landing/celestial/types";
+import { CelestialBlogProps, Position } from "./types";
 import { cn } from "@/libs/utils";
+import { TooltipPortal } from "./TooltipPortal";
+import { useTooltip } from "./useTooltip";
+import { calculateCategoryCenters } from "./utils";
+import { Vector3 } from "three";
+import { Bloom, EffectComposer, GodRays } from "@react-three/postprocessing";
+import { BlendFunction, KernelSize } from "postprocessing";
 
-type Category = {
-  id: number;
-  name: string;
-};
+export default function CelestialBlog({
+  posts,
+  categories,
+}: CelestialBlogProps) {
+  const [positions, setPositions] = useState<Record<number, Position>>({});
+  const {
+    hoveredPost,
+    tooltipPosition,
+    isTooltipOpen,
+    handleHover,
+    handleClick,
+    handleClickOutside,
+  } = useTooltip();
 
-type Props = {
-  posts: BlogPost[];
-  categories: Category[];
-};
+  const categoryCenters = calculateCategoryCenters(categories);
 
-export default function CelestialBlog({ posts, categories }: Props) {
-  const [hoveredPost, setHoveredPost] = useState<BlogPost | null>(null);
-  const [tooltipPosition, setTooltipPosition] = useState<{
-    x: number;
-    y: number;
-  }>({ x: 0, y: 0 });
+  // positions 업데이트를 최적화
+  const updatePositions = useCallback(
+    (newPositions: Record<number, Position>) => {
+      setPositions((prev) => {
+        const updated = { ...prev, ...newPositions };
+        // 실제로 변경된 값이 있는지 확인
+        const hasChanges = Object.entries(newPositions).some(([key, value]) => {
+          const prevValue = prev[Number(key)];
+          return JSON.stringify(prevValue) !== JSON.stringify(value);
+        });
+        return hasChanges ? updated : prev;
+      });
+    },
+    [],
+  );
 
-  // 위치 정보 저장
-  const [positions, setPositions] = useState<
-    Record<number, [number, number, number]>
-  >({});
-
-  const categoryCenters = categories.map((_, index) => {
-    const angle = (index / categories.length) * Math.PI * 2;
-    return [Math.cos(angle) * 1.5, Math.sin(angle) * 1.5, 0];
-  });
+  const sunPosition = new Vector3(0, 0, 0);
 
   return (
-    <div className={cn("relative mx-auto", "aspect-1 bg-transparent")}>
-      {hoveredPost && <Tooltip post={hoveredPost} position={tooltipPosition} />}
+    <div
+      className={cn(
+        "relative mx-auto",
+        "max-w-[70dvw] max-h-[70dvh]",
+        "aspect-1 bg-transparent",
+      )}
+    >
+      <TooltipPortal
+        hoveredPost={hoveredPost}
+        position={tooltipPosition}
+        isTooltipOpen={isTooltipOpen}
+        onClose={handleClickOutside}
+      />
       <Canvas
         className={cn(
+          "my-5 lg:my-10",
           "aspect-1 bg-transparent",
           "rounded-full border-4 border-primary",
+          hoveredPost ? "cursor-pointer" : "cursor-move",
         )}
-        style={{
-          maxWidth: "32rem",
-          maxHeight: "32rem",
-        }}
         camera={{ position: [0, 0, 5], fov: 50 }}
-        onPointerMove={(e) =>
-          setTooltipPosition({ x: e.clientX, y: e.clientY })
-        }
       >
-        {/* 블로그 포스트 배치 */}
+        <ambientLight intensity={0.1} />
+        <pointLight position={[10, 10, 10]} intensity={0.5} />
+        <Sparkles
+          count={100}
+          scale={8}
+          size={2}
+          speed={0.4}
+          opacity={0.1}
+        />
+        
         {posts.map((post, index) => {
           const categoryIndex = categories.findIndex(
             (c) => c.id === post.categoryId,
@@ -67,20 +94,41 @@ export default function CelestialBlog({ posts, categories }: Props) {
               index={index}
               total={posts.length}
               center={center}
-              setHoveredPost={setHoveredPost}
-              setPositions={setPositions}
+              handleHover={handleHover}
+              handleClick={handleClick}
+              setPositions={updatePositions}
             />
           );
         })}
 
-        {/* 태그 기반 연결선 */}
         <BlogConnections
           posts={posts}
           hoveredPostId={hoveredPost?.id || null}
           positions={positions}
         />
-
+        
         <OrbitControls enableZoom={true} />
+        
+        <EffectComposer multisampling={8}>
+          <Bloom
+            intensity={1.5}
+            luminanceThreshold={0.2}
+            luminanceSmoothing={0.9}
+            blendFunction={BlendFunction.SCREEN}
+            kernelSize={KernelSize.LARGE}
+          />
+          <GodRays
+            sun={sunPosition}
+            blendFunction={BlendFunction.SCREEN}
+            samples={60}
+            density={0.96}
+            decay={0.9}
+            weight={0.4}
+            exposure={0.6}
+            clampMax={1}
+            kernelSize={KernelSize.LARGE}
+          />
+        </EffectComposer>
       </Canvas>
     </div>
   );

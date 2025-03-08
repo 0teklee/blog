@@ -1,44 +1,99 @@
 import { Line } from "@react-three/drei";
-import { useEffect, useState } from "react";
-import { BlogPost } from "@/components/landing/celestial/types";
+import { useEffect, useMemo, useState } from "react";
+import { BlogPost, Position } from "./types";
+import { INTRO_POST_ID } from "@/components/landing/celestial/constants";
 
 type Props = {
   posts: BlogPost[];
   hoveredPostId: number | null;
-  positions: Record<number, [number, number, number]>; // 각 BlogPoint의 위치를 저장
+  positions: Record<number, Position>;
+};
+
+type Connection = {
+  points: [Position, Position];
+  type: "category" | "tag";
 };
 
 export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
-  const [lines, setLines] = useState<[number, number, number][][]>([]);
+  const [connections, setConnections] = useState<Connection[]>([]);
 
-  useEffect(() => {
-    if (!hoveredPostId) {
-      setLines([]);
-      return;
-    }
+  // 연결 계산을 메모이제이션
+  const calculatedConnections = useMemo(() => {
+    if (!hoveredPostId) return [];
 
     const hoveredPost = posts.find((p) => p.id === hoveredPostId);
-    if (!hoveredPost || !positions[hoveredPostId]) return;
+    if (!hoveredPost || !positions[hoveredPostId]) return [];
 
-    const relatedPosts = posts.filter(
-      (p) =>
-        p.id !== hoveredPostId &&
-        p.tags.some((tag) => hoveredPost.tags.includes(tag)) &&
-        positions[p.id],
-    );
+    // INTRO_POST_ID인 경우 유효한 포지션이 있는 포스트들만 연결
+    if (hoveredPostId === INTRO_POST_ID) {
+      return posts
+        .filter((p) => {
+          // 자기 자신 제외 및 유효한 포지션이 있는 포스트만 필터링
+          return p.id !== INTRO_POST_ID && 
+                 positions[p.id] && 
+                 Array.isArray(positions[p.id]) && 
+                 positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
+        })
+        .map((post) => ({
+          points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+          type: "category" as const,
+        }));
+    }
 
-    const newLines = relatedPosts.map((post) => [
-      positions[hoveredPostId], // hover된 글의 위치
-      positions[post.id], // 연결할 글의 위치
-    ]);
+    // 같은 카테고리 연결
+    const categoryConnections = posts
+      .filter((p) => {
+        const isSameCategory =
+          p.id !== hoveredPostId &&
+          p.categoryId === hoveredPost.categoryId &&
+          positions[p.id] &&
+          Array.isArray(positions[p.id]) &&
+          positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
 
-    setLines(newLines);
+        return isSameCategory;
+      })
+      .map((post) => ({
+        points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+        type: "category" as const,
+      }));
+
+    // 같은 태그 연결
+    const tagConnections = posts
+      .filter((p) => {
+        const hasCommonTags =
+          p.id !== hoveredPostId &&
+          p.tags.some((tag) => hoveredPost.tags.includes(tag)) &&
+          positions[p.id] &&
+          Array.isArray(positions[p.id]) &&
+          positions[p.id].every(coord => typeof coord === 'number' && !isNaN(coord));
+
+        return hasCommonTags;
+      })
+      .map((post) => ({
+        points: [positions[hoveredPostId], positions[post.id]] as [Position, Position],
+        type: "tag" as const,
+      }));
+
+    return [...categoryConnections, ...tagConnections];
   }, [hoveredPostId, posts, positions]);
+
+  // connections 상태 업데이트를 최적화
+  useEffect(() => {
+    setConnections(calculatedConnections);
+  }, [calculatedConnections]);
 
   return (
     <>
-      {lines.map((line, index) => (
-        <Line key={index} points={line} color="cyan" lineWidth={1} />
+      {connections.map((connection, index) => (
+        <Line
+          key={index}
+          points={connection.points}
+          color={connection.type === "category" ? "#00ffff" : "#ff00ff"}
+          lineWidth={connection.type === "category" ? 1 : 0.5}
+          opacity={connection.type === "category" ? 1 : 0.5}
+          dashed={connection.type === "tag"}
+          segments
+        />
       ))}
     </>
   );
