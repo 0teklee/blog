@@ -1,15 +1,11 @@
 import Image from "next/image";
 import { IBlogGetListItem } from "@/components/blog/types";
 import dayjs from "dayjs";
-import {
-  cn,
-  getContentImg,
-  parseHTMLToString,
-  setCategoryPresetImg,
-} from "@/libs/utils";
+import { cn, parseHTMLToString } from "@/libs/utils";
 import Link from "next/link";
 import { SQUARE_BASE_64_BLUR } from "@/libs/constants";
 import { cache } from "react";
+import { getCategoryImgSrc, getImgSrc } from "@/components/blog/utils";
 
 const cachedParseHTMLString = cache(parseHTMLToString);
 
@@ -57,9 +53,7 @@ const BlogListItem = ({
           )}
         >
           <Image
-            src={
-              getContentImg(content) || setCategoryPresetImg(categories.name)
-            }
+            src={getImgSrc(content) || getCategoryImgSrc(categories.name)}
             className={cn("object-cover")}
             key={`${id}_img`}
             fill={true}
