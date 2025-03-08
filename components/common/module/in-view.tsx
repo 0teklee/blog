@@ -1,12 +1,15 @@
-'use client';
-import { ReactNode, useRef } from 'react';
+// TODO primitive motion version check
+/* eslint-disable */
+
+"use client";
+import { ReactNode, useRef } from "react";
 import {
   motion,
-  useInView,
-  Variant,
   Transition,
+  useInView,
   UseInViewOptions,
-} from 'motion/react';
+  Variant,
+} from "motion/react";
 
 export type InViewProps = {
   children: ReactNode;
@@ -29,7 +32,7 @@ export function InView({
   variants = defaultVariants,
   transition,
   viewOptions,
-  as = 'div',
+  as = "div",
 }: InViewProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, viewOptions);
@@ -39,8 +42,8 @@ export function InView({
   return (
     <MotionComponent
       ref={ref}
-      initial='hidden'
-      animate={isInView ? 'visible' : 'hidden'}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
       variants={variants}
       transition={transition}
     >
