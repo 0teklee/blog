@@ -19,6 +19,8 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
   const { theme } = useTheme();
   const [connections, setConnections] = useState<Connection[]>([]);
 
+  const [DARK_LINE_COLOR, LIGHT_LINE_COLOR] = ["#5d6ce3", "#003d87"];
+
   // 연결 계산을 메모이제이션
   const calculatedConnections = useMemo(() => {
     if (!hoveredPostId) return [];
@@ -107,7 +109,7 @@ export function BlogConnections({ posts, hoveredPostId, positions }: Props) {
         <Line
           key={index}
           points={connection.points}
-          color={theme === "dark" ? "#c31ddd" : "#070d40"}
+          color={theme === "dark" ? DARK_LINE_COLOR : LIGHT_LINE_COLOR}
           lineWidth={0.5}
           transparent
           opacity={1}

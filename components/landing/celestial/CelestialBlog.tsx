@@ -12,6 +12,13 @@ import { useTooltip } from "./useTooltip";
 import { calculateCategoryCenters } from "./utils";
 import { Bloom, EffectComposer, GodRays } from "@react-three/postprocessing";
 import { BlendFunction, KernelSize } from "postprocessing";
+import {
+  BLUR_COLOR_DARK,
+  BLUR_COLOR_LIGHT,
+  COLOR_DARK,
+  COLOR_LIGHT,
+} from "./constants";
+import { useTheme } from "next-themes";
 
 export default function CelestialBlog({
   posts,
@@ -24,9 +31,12 @@ export default function CelestialBlog({
     isTooltipOpen,
     handleHover,
     handleClick,
-    handleClickOutside,
+    handleClose,
   } = useTooltip();
   const sunRef = useRef(null);
+
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
 
   const categoryCenters = calculateCategoryCenters(categories);
 
@@ -50,7 +60,7 @@ export default function CelestialBlog({
     <div
       className={cn(
         "relative mx-auto",
-        "max-w-[70dvw] max-h-[70dvh]",
+        "max-w-screen max-h-screen sm:max-w-[70dvw] sm:max-h-[70dvh]",
         "aspect-1 bg-transparent",
       )}
     >
@@ -58,7 +68,7 @@ export default function CelestialBlog({
         hoveredPost={hoveredPost}
         position={tooltipPosition}
         isTooltipOpen={isTooltipOpen}
-        onClose={handleClickOutside}
+        onClose={handleClose}
       />
       <Canvas
         className={cn(
@@ -71,12 +81,20 @@ export default function CelestialBlog({
       >
         <mesh ref={sunRef} position={[0, 0, 0]}>
           <sphereGeometry args={[0.1, 16, 16]} />
-          <meshBasicMaterial color="#ffffff" />
+          <meshBasicMaterial
+            color={isDark ? BLUR_COLOR_LIGHT : BLUR_COLOR_DARK}
+          />
         </mesh>
 
-        <ambientLight intensity={0.1} />
         <pointLight position={[10, 10, 10]} intensity={0.5} />
-        <Sparkles count={20} scale={7} size={1} speed={0.4} opacity={0.2} />
+        <Sparkles
+          color={isDark ? COLOR_LIGHT : COLOR_DARK}
+          count={30}
+          scale={7}
+          size={2}
+          speed={0.4}
+          opacity={0.5}
+        />
 
         {posts.map((post, index) => {
           const categoryIndex = categories.findIndex(
@@ -87,6 +105,7 @@ export default function CelestialBlog({
           return (
             <BlogPoint
               key={post.id}
+              isDark={isDark}
               post={post}
               index={index}
               total={posts.length}
@@ -111,17 +130,17 @@ export default function CelestialBlog({
             intensity={1.5}
             luminanceThreshold={0.2}
             luminanceSmoothing={0.9}
-            blendFunction={BlendFunction.SCREEN}
             kernelSize={KernelSize.LARGE}
+            mipmapBlur={false}
+            blendFunction={isDark ? BlendFunction.ADD : BlendFunction.SKIP}
           />
           <GodRays
             sun={sunRef}
-            blendFunction={BlendFunction.SCREEN}
             samples={60}
-            density={1}
+            density={0.9}
             decay={0.9}
             weight={0.4}
-            exposure={0.6}
+            exposure={isDark ? 0.6 : 1}
             clampMax={1}
             kernelSize={KernelSize.LARGE}
           />

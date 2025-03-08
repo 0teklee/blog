@@ -1,9 +1,9 @@
-"use client";
-
 import { createPortal } from "react-dom";
-import useClickOutside from "@/libs/hooks/useClickOutside";
-import { useRef } from "react";
 import { BlogPost, TooltipPosition } from "./types";
+import { cn } from "@/libs/utils";
+import { XIcon } from "lucide-react";
+import Link from "next/link";
+import { useMount } from "@/libs/hooks/useMount";
 
 type TooltipProps = {
   hoveredPost: BlogPost | null;
@@ -18,49 +18,97 @@ export function TooltipPortal({
   isTooltipOpen,
   onClose,
 }: TooltipProps) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const { isMounted } = useMount();
 
-  useClickOutside(containerRef, onClose);
+  if (!isMounted) return null;
 
-  if (!hoveredPost || !isTooltipOpen) return null;
+  const isCategory =
+    !!hoveredPost && "isCategory" in hoveredPost && !!hoveredPost?.isCategory;
+  const href = isCategory
+    ? `/blog?page=1&category=${hoveredPost?.title || ""}`
+    : `/blog/${hoveredPost?.id || ""}`;
 
   return createPortal(
-    <div
-      ref={containerRef}
-      className="absolute bg-gray-800 text-white p-4 rounded-lg shadow-lg text-sm transition-all duration-300"
-      style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        position: "fixed",
-        zIndex: 1000,
-        pointerEvents: "auto",
-        transform: "translate(-50%, -100%)",
-        marginTop: "-10px",
-        marginLeft: "0",
-        minWidth: "200px",
-        maxWidth: "300px",
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-        textOverflow: "ellipsis",
-      }}
-    >
-      <div className="font-bold mb-1">{hoveredPost.title}</div>
-      {hoveredPost.category && (
-        <div className="text-xs text-gray-400">{hoveredPost.category.name}</div>
+    <>
+      {hoveredPost && !isTooltipOpen && (
+        <p
+          className={cn(
+            "fixed z-10",
+            "px-2 py-1 bg-background",
+            "rounded-lg",
+            "text-white text-sm",
+            "animate-pulse",
+          )}
+          style={{
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+          }}
+        >
+          Click
+        </p>
       )}
-      {hoveredPost.tags.length > 0 && (
-        <div className="flex gap-1 mt-2">
-          {hoveredPost.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-xs bg-gray-700 px-2 py-1 rounded-full"
+      {!hoveredPost || !isTooltipOpen ? null : (
+        <div
+          className={cn(
+            "fixed z-10",
+            "flex flex-col items-start justify-start gap-4",
+            "w-full max-w-36 sm:max-w-64 h-fit -mt-24 px-3 py-2",
+            "bg-gray-800 rounded-lg shadow-lg",
+            "text-white text-sm",
+            "pointer-events-auto",
+            "-translate-x-1/2 -translate-y-1/2",
+          )}
+          style={{
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+          }}
+        >
+          <button className="sm:absolute right-2 top-2" onClick={onClose}>
+            <XIcon className="w-6 h-6 sm:w-4 sm:h-4 text-white" />
+          </button>
+          <div className="w-full text-start space-y-1">
+            <div className="text-xs sm:text-base sm:font-bold mb-1">
+              {hoveredPost.title}
+            </div>
+            <div
+              className={`flex flex-wrap items-center justify-between text-xs`}
             >
-              {tag}
-            </span>
-          ))}
+              {hoveredPost.category && !isCategory && (
+                <div className="flex items-center flex-wrap gap-2">
+                  <p className={"font-medium"}>category:</p>
+                  <p>{hoveredPost.category.name}</p>
+                </div>
+              )}
+              <p>{new Date(hoveredPost.createdAt).toLocaleDateString()}</p>
+            </div>
+            {isCategory && hoveredPost?.postCount && (
+              <p className={"text-xs"}>{hoveredPost.postCount} Posts</p>
+            )}
+          </div>
+          {hoveredPost.tags.length > 0 && (
+            <div className="flex flex-wrap gap-1 items-center text-xs">
+              <span>Tags: </span>
+              {hoveredPost.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className={`last:after:hidden after:content-[","]`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <Link
+            className="text-sm leading-relaxed underline hover:text-theme"
+            href={href}
+          >
+            Go to Read
+          </Link>
         </div>
       )}
-    </div>,
-    document.body
+    </>,
+
+    document.body,
   );
 }

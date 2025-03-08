@@ -10,6 +10,9 @@ export type BlogPost = {
   categoryId: number;
   tags: string[];
   category: Category | null;
+  description?: string;
+  isCategory?: boolean;
+  postCount?: number;
 };
 
 export type Position = [number, number, number];
