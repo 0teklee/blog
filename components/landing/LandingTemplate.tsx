@@ -1,9 +1,5 @@
 import { cn } from "@/libs/utils";
-import CelestialRSC from "@/components/landing/celestial";
 import LandingAboutMe from "@/components/landing/LandingAboutMe";
-import { Suspense } from "react";
-import CelestialLayout from "@/components/landing/celestial/CelestialLayout";
-import LoaderSpin from "@/components/common/module/LoaderSpin";
 
 const LandingTemplate = async () => {
   return (
@@ -15,15 +11,15 @@ const LandingTemplate = async () => {
         <p>Tech Blog</p>
       </section>
       {/*<LandingBlogSection />*/}
-      <Suspense
-        fallback={
-          <CelestialLayout>
-            <LoaderSpin />
-          </CelestialLayout>
-        }
-      >
-        <CelestialRSC />
-      </Suspense>
+      {/*<Suspense*/}
+      {/*  fallback={*/}
+      {/*    <CelestialLayout>*/}
+      {/*      <LoaderSpin />*/}
+      {/*    </CelestialLayout>*/}
+      {/*  }*/}
+      {/*>*/}
+      {/*  <CelestialRSC />*/}
+      {/*</Suspense>*/}
       <LandingAboutMe />
     </main>
   );
