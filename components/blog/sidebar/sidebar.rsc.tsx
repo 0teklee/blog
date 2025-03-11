@@ -2,6 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/libs/utils";
 import { IBlogGetCategorySideBar } from "@/components/blog/types";
+import {
+  SidebarContent,
+  SidebarDetails,
+  SidebarSummary,
+} from "@/components/blog/sidebar/modules";
 
 const getBlogCategoryList = async (): Promise<IBlogGetCategorySideBar[]> => {
   try {
@@ -14,24 +19,23 @@ const getBlogCategoryList = async (): Promise<IBlogGetCategorySideBar[]> => {
   }
 };
 
-const BlogSideBarList = async () => {
+const SidebarRsc = async () => {
   const categories = await getBlogCategoryList();
   return (
     <>
       {categories.length > 0 &&
-        categories.map((category, index) => (
-          <details
+        categories.map((category) => (
+          <SidebarDetails
             key={`${category.name}_wrapper`}
             className={cn(
               "flex flex-col items-stretch justify-center gap-2",
               "w-full bg-background break-all",
-              "scrollbar-hide overflow-y-scroll",
               "group/child",
               "transition-opacity duration-800 ease-in-out",
               "opacity-0 group-open/parent:opacity-100",
             )}
           >
-            <summary
+            <SidebarSummary
               className={cn(
                 "flex justify-between w-full ",
                 "cursor-pointer py-2 hover:text-theme ",
@@ -41,10 +45,9 @@ const BlogSideBarList = async () => {
               )}
             >
               <span>{category.name}</span>
-            </summary>
-            <div
+            </SidebarSummary>
+            <SidebarContent
               className={cn(
-                "grid grid-rows-[0fr]",
                 "group-open/child:animate-expand",
                 "group-[&:not([open])]/child:animate-collapse",
                 "transition-all duration-500 ease-in-out",
@@ -75,18 +78,20 @@ const BlogSideBarList = async () => {
                   </Link>
                 ))}
                 {category?.posts && category?.posts.length >= 10 && (
-                  <div className={`mt-2 mb-4 text-left`}>
+                  <div
+                    className={`w-fill mt-2 mb-4 text-left hover:text-theme`}
+                  >
                     <Link href={`/blog?page=1&category=${category.name}`}>
                       ...more
                     </Link>
                   </div>
                 )}
               </div>
-            </div>
-          </details>
+            </SidebarContent>
+          </SidebarDetails>
         ))}
     </>
   );
 };
 
-export default BlogSideBarList;
+export default SidebarRsc;

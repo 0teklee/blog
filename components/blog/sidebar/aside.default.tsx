@@ -1,9 +1,16 @@
-import React, { Suspense } from "react";
-import { LoaderCircle } from "lucide-react";
-import BlogSideBarList from "@/components/blog/sidebar/BlogSideBarList";
 import { cn } from "@/libs/utils";
+import React, { PropsWithChildren } from "react";
+import {
+  SidebarContent,
+  SidebarDetails,
+  SidebarSummary,
+} from "@/components/blog/sidebar/modules";
 
-const BlogSideBar = ({ className }: { className?: string }) => {
+/** @description aside 태그 @sidebar/default에 children null로 사용됨  **/
+const SidebarAside = ({
+  children,
+  className,
+}: PropsWithChildren<{ className?: string }>) => {
   return (
     <aside
       className={cn(
@@ -23,19 +30,11 @@ const BlogSideBar = ({ className }: { className?: string }) => {
         scrollbar-hide
         "
       >
-        <details
-          className={cn(
-            `w-full group/parent`,
-            "transition-all duration-800 ease-in-out",
-            "blog-sidebar",
-          )}
-        >
-          <summary
+        <SidebarDetails className={"group/parent"}>
+          <SidebarSummary
             className={cn(
-              "flex justify-between",
-              "w-full pb-2",
-              "text-lg font-normal font-sans ",
-              "cursor-pointer ",
+              "w-pb-2",
+              "text-lg font-normal font-sans",
               "hover:text-theme group-open:text-theme",
               "after:transition-all after:duration-300",
               `after:content-["⇣"]`,
@@ -45,29 +44,20 @@ const BlogSideBar = ({ className }: { className?: string }) => {
             )}
           >
             <span>categories</span>
-          </summary>
-          <div
+          </SidebarSummary>
+          <SidebarContent
             className={cn(
-              "grid grid-rows-[0fr]",
               "group-open/parent:animate-expand",
               "group-[&:not([open])]/parent:animate-collapse",
               "transition-all duration-500",
             )}
           >
-            <div className="w-full overflow-hidden">
-              <Suspense
-                fallback={
-                  <LoaderCircle className={`pt-2 text-gray-300 animate-spin`} />
-                }
-              >
-                <BlogSideBarList />
-              </Suspense>
-            </div>
-          </div>
-        </details>
+            {children}
+          </SidebarContent>
+        </SidebarDetails>
       </div>
     </aside>
   );
 };
 
-export default BlogSideBar;
+export default SidebarAside;
