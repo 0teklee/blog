@@ -1,8 +1,13 @@
 import React, { ReactNode } from "react";
 import { cn } from "@/libs/utils";
-import BlogSideBar from "@/components/blog/sidebar/BlogSideBar";
 
-const Layout = async ({ children }: { children: ReactNode | ReactNode[] }) => {
+export default function Layout({
+  children,
+  sidebar,
+}: {
+  children: ReactNode;
+  sidebar: ReactNode;
+}) {
   return (
     <main
       className={cn(
@@ -10,7 +15,7 @@ const Layout = async ({ children }: { children: ReactNode | ReactNode[] }) => {
         "lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center",
       )}
     >
-      <BlogSideBar className={`lg:col-span-3`} />
+      {sidebar}
       <section
         className={cn(
           "flex flex-col items-center",
@@ -27,6 +32,4 @@ const Layout = async ({ children }: { children: ReactNode | ReactNode[] }) => {
       />
     </main>
   );
-};
-
-export default Layout;
+}
