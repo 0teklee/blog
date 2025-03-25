@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.4.2",
     "@prisma/client": "^5.11.0",
     "@radix-ui/react-select": "^2.1.4",
     "@react-oauth/google": "^0.5.1",
@@ -48,7 +49,7 @@
     "lucide-react": "^0.469.0",
     "mermaid": "^11.4.1",
     "motion": "^11.18.2",
-    "next": "^15.2.0-canary.26",
+    "next": "^15.2.4",
     "next-auth": "^4.24.7",
     "next-themes": "^0.4.4",
     "pg": "^8.13.3",
