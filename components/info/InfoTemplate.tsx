@@ -101,7 +101,9 @@ const InfoTemplate = () => (
       <div className={clsx("flex justify-center", "mb-4", "text-sm")}>
         <p>built with Next.js 15 App router, tailwindCSS, Supabase and etc..</p>
       </div>
-      <div className={clsx("flex justify-center", "mb-4", "text-sm")}>
+      <div
+        className={clsx("flex flex-col justify-start gap-2", "mb-4", "text-sm")}
+      >
         <p>
           현재는 DevOps(DevSecOps), WebGL, Cybersecurity 등 더 넓은 범위의
           기술에 관심이 있습니다.
