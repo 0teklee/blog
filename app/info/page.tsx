@@ -8,10 +8,10 @@ export default page;
 export async function generateMetadata() {
   return {
     title: `teklog - info`,
-    description: `tech blog about frontend/web development`,
+    description: `tech blog about software engineering`,
     openGraph: {
       title: `teklog - info`,
-      description: `tech blog about frontend/web development`,
+      description: `tech blog about software engineering`,
       images: THEME_META_IMAGE,
     },
   };

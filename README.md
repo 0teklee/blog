@@ -1,7 +1,7 @@
 # Teklog
 
-[Front End Developer Tekwoo Lee's Tech Blog](https://blog.leetekwoo.com)
-프론트엔드 개발자 이택우의 기술 블로그
+[Software Engineer Tekwoo Lee's Tech Blog](https://blog.leetekwoo.com)
+소프트웨어 엔지니어 이택우의 기술 블로그
 
 
 
@@ -9,7 +9,13 @@
 
 - 2025 WebGL 적용하였습니다.
 - Prisma를 Supabase로 완전히 대체했습니다.
-- Next.js 15의 Canary 기능을 적용하였습니다.
+- Next.js 15 Canary의 실험적 기능을 적용하였습니다.
+- 플러그인 기반의 TipTap 에디터로 변경했습니다.
+
+TBA
+- DB를 완전히 제거하고, 정적 웹사이트로 변경할 예정입니다.
+- Next.js / React를 이외의 적합한 프레임워크/라이브러리를 찾고 있습니다.
+  - - [art.leetekwoo.com](https://art.leetekwoo.com)
 
 
 

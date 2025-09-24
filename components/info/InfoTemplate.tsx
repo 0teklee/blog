@@ -44,7 +44,7 @@ const InfoTemplate = () => (
           >
             portfolio.leetekwoo.com
           </Link>
-          <p>경력 및 사이드프로젝트를 모은 포트폴리오 웹사이트입니다.</p>
+          <p>경력 및 사이드 프로젝트를 나타내는 포트폴리오 웹사이트입니다.</p>
         </li>
         <li>
           <Link
@@ -67,7 +67,7 @@ const InfoTemplate = () => (
           >
             art.leetekwoo.com
           </Link>
-          <p>제 개인 작품을 모은 웹사이트입니다.</p>
+          <p>제 개인 사진 작업을 공유하는 웹사이트입니다.</p>
         </li>
       </ul>
     </section>
@@ -100,6 +100,13 @@ const InfoTemplate = () => (
     <section className={clsx("mt-7 pb-8")}>
       <div className={clsx("flex justify-center", "mb-4", "text-sm")}>
         <p>built with Next.js 15 App router, tailwindCSS, Supabase and etc..</p>
+      </div>
+      <div className={clsx("flex justify-center", "mb-4", "text-sm")}>
+        <p>
+          현재는 DevOps(DevSecOps), WebGL, Cybersecurity 등 더 넓은 범위의
+          기술에 관심이 있습니다.
+        </p>
+        <p>Currently interested in DevSecOps, WebGL, Cybersecurity and more</p>
       </div>
     </section>
   </div>

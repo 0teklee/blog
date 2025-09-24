@@ -68,9 +68,7 @@ const LandingAboutMe = () => {
             "md:text-lg",
           )}
         >
-          PASSIONATE ABOUT WEB TECHNOLOGIES & USER INTERFACE. CURRENTLY WORKING
-          AS A FRONT-END DEVELOPER. I AM ABLE TO SEE THE BEAUTY IN CODING AND
-          CONTINUE TO CHALLENGE MYSELF TO CREATE FINER CODES.
+          PASSIONATE ABOUT WEB TECHNOLOGIES & INTERFACES OF ANY SORT.
         </p>
         <p
           className={cn(
@@ -79,7 +77,7 @@ const LandingAboutMe = () => {
             "md:text-lg",
           )}
         >
-          인터페이스에 관심이 많은 프론트 개발자 이택우입니다.
+          인터페이스에 관심이 많은 개발자 이택우입니다.
         </p>
       </div>
       <div>

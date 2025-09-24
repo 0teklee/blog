@@ -29,10 +29,10 @@ export default page;
 export async function generateMetadata() {
   return {
     title: `teklog - blog`,
-    description: `tech blog about frontend/web development`,
+    description: `tech blog about software engineering`,
     openGraph: {
       title: `teklog - blog`,
-      description: `tech blog about frontend/web development`,
+      description: `tech blog about software engineering`,
       images: THEME_META_IMAGE,
     },
   };
