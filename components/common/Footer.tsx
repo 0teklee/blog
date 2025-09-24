@@ -6,7 +6,7 @@ const Footer = ({ fonts }: { fonts: string }) => {
   return (
     <footer
       className={clsx(
-        "fixed bottom-0 w-full p-8 z-40",
+        "fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40",
         "mix-blend-difference invert dark:invert-0",
         "text-lg",
         fonts,
@@ -25,14 +25,15 @@ const Footer = ({ fonts }: { fonts: string }) => {
         </Link>
         <div className={clsx("relative")}>
           <Link
-            href={"/info"}
+            href={"https://portfolio.leetekwoo.com"}
+            target="_blank"
             className={clsx(
               "mt-4 cursor-pointer font-normal",
               "hover:text-theme hover:font-bold",
               " transition-all duration-150",
             )}
           >
-            contact
+            portfolio
           </Link>
         </div>
         <FooterScrollButton
@@ -52,7 +53,9 @@ const Footer = ({ fonts }: { fonts: string }) => {
             "transition-all duration-150",
           )}
         >
-          <Link href="/blog">main</Link>
+          <Link href="https://patterns.leetekwoo.com" target="_blank">
+            patterns
+          </Link>
         </button>
       </div>
     </footer>

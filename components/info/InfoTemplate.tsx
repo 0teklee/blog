@@ -17,7 +17,7 @@ const InfoTemplate = () => (
       <div className={clsx("text-xl font-bold text-center mb-6")}>Contact</div>
       <div className={clsx("flex justify-between items-center mb-4")}>
         <p>Email</p>
-        <p>leetekwoo@gmail.com</p>
+        <p>mail@leetekwoo.com</p>
       </div>
       <div
         className={clsx(
@@ -34,6 +34,44 @@ const InfoTemplate = () => (
       </div>
     </section>
     <section className={clsx("mt-7 pb-8")}>
+      <h3 className="text-lg font-semibold mb-4">Websites</h3>
+      <ul className="space-y-4">
+        <li>
+          <Link
+            className={clsx("underline ")}
+            href="https://portfolio.leetekwoo.com"
+            target="_blank"
+          >
+            portfolio.leetekwoo.com
+          </Link>
+          <p>경력 및 사이드프로젝트를 모은 포트폴리오 웹사이트입니다.</p>
+        </li>
+        <li>
+          <Link
+            className={clsx("underline ")}
+            href="https://patterns.leetekwoo.com"
+            target="_blank"
+          >
+            patterns.leetekwoo.com
+          </Link>
+          <p>
+            알고리즘, UI/UX 등 패턴을 모은 웹사이트입니다. 런타임 환경으로
+            컴포넌트를 실행하는 등 실험적인 기능을 포함하고 있습니다.
+          </p>
+        </li>
+        <li>
+          <Link
+            className={clsx("underline ")}
+            href="https://art.leetekwoo.com"
+            target="_blank"
+          >
+            art.leetekwoo.com
+          </Link>
+          <p>제 개인 작품을 모은 웹사이트입니다.</p>
+        </li>
+      </ul>
+    </section>
+    {/* <section className={clsx("mt-7 pb-8")}>
       <div className={clsx("text-xl font-bold text-center mb-6")}>CV</div>
       <div className={clsx("mb-4")}>
         <Link
@@ -58,10 +96,10 @@ const InfoTemplate = () => (
           {`Link to LEE TEKWOO'S CV (KR)`}
         </Link>
       </div>
-    </section>
+    </section> */}
     <section className={clsx("mt-7 pb-8")}>
       <div className={clsx("flex justify-center", "mb-4", "text-sm")}>
-        <p>built with Next.js 14 App router, tailwindCSS, prisma and etc..</p>
+        <p>built with Next.js 15 App router, tailwindCSS, Supabase and etc..</p>
       </div>
     </section>
   </div>
