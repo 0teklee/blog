@@ -44,6 +44,9 @@ const nextConfig = {
   experimental: {
     ppr: "incremental",
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;

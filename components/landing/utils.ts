@@ -13,6 +13,6 @@ export const getYPositionClass = (index: number) => {
     case 5:
       return "lg:mt-32";
     default:
-      "";
+      return "lg:mt-0";
   }
 };
