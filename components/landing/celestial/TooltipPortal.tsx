@@ -52,7 +52,7 @@ export function TooltipPortal({
           className={cn(
             "fixed z-10",
             "flex flex-col items-start justify-start gap-4",
-            "w-full max-w-36 sm:max-w-64 h-fit -mt-24 px-3 py-2",
+            "w-full max-w-fit sm:max-w-64 h-fit -mt-24 px-3 py-2",
             "bg-gray-800 rounded-lg shadow-lg",
             "text-white text-sm",
             "pointer-events-auto",
@@ -63,8 +63,11 @@ export function TooltipPortal({
             top: `${position.y}px`,
           }}
         >
-          <button className="sm:absolute right-2 top-2" onClick={onClose}>
-            <XIcon className="w-6 h-6 sm:w-4 sm:h-4 text-white" />
+          <button
+            className="absolute right-1 top-1 sm:right-2 sm:top-2"
+            onClick={onClose}
+          >
+            <XIcon className="w-4 h-4 text-white" />
           </button>
           <div className="w-full text-start space-y-1">
             <div className="text-xs sm:text-base sm:font-bold mb-1">
@@ -100,10 +103,10 @@ export function TooltipPortal({
           )}
 
           <Link
-            className="text-sm leading-relaxed underline hover:text-theme"
+            className="text-xs leading-relaxed underline hover:text-theme"
             href={href}
           >
-            Go to Read
+            See more
           </Link>
         </div>
       )}
