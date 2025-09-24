@@ -15,8 +15,8 @@ const BlogEditTemplate = ({ lists }: { lists: TEditItem[] }) => {
   const session = useSession();
   const name = session?.data?.user?.name || "unknown";
   const email = session?.data?.user?.email || "unknown";
-  const isAdmin =
-    name === process.env.ADMIN_NAME || email === process.env.ADMIN_EMAIL;
+  const isAdmin = true;
+  // name === process.env.ADMIN_NAME || email === process.env.ADMIN_EMAIL
 
   const handleSelect = (id: string) => {
     setSelectedId(id);
