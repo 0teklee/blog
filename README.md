@@ -3,6 +3,19 @@
 [Front End Developer Tekwoo Lee's Tech Blog](https://teklog.site)
 프론트엔드 개발자 이택우의 기술 블로그
 
+
+
+<img width="1440" height="2740" alt="blog leetekwoo com_" src="https://github.com/user-attachments/assets/ec60a604-c462-4392-bcb3-bc17b9a9383d" />
+
+- 2025 WebGL 적용하였습니다.
+- Prisma를 Supabase로 완전히 대체했습니다.
+- Next.js 15의 Canary 기능을 적용하였습니다.
+
+
+
+---
+
+
 #### Review 개발 회고 ([LINK](https://teklog.site/blog/8))
 
 #### [Demo 시연 영상 보러가기](#demo)
