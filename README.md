@@ -1,6 +1,6 @@
 # Teklog
 
-[Front End Developer Tekwoo Lee's Tech Blog](https://teklog.site)
+[Front End Developer Tekwoo Lee's Tech Blog](https://blog.leetekwoo.com)
 프론트엔드 개발자 이택우의 기술 블로그
 
 
@@ -15,8 +15,12 @@
 
 ---
 
+<details>
+<summary>
+ 이전 로그 보기 (2022 v0)
+</summary>
 
-#### Review 개발 회고 ([LINK](https://teklog.site/blog/8))
+#### Review 개발 회고 ([LINK](https://blog.leetekwoo.com/blog/8))
 
 #### [Demo 시연 영상 보러가기](#demo)
 
@@ -156,5 +160,4 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 #### 잘못된 경로 접근 혹은 페이지 로딩 시 FALLBACK 페이지
 
 ![FALLBACK](https://res.cloudinary.com/dolziw8fv/image/upload/v1662447361/teklog_readme/teklog_fallback_pghd3m.jpg)
-
-
+</details>
