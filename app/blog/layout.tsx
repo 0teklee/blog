@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         "lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center",
       )}
     >
-      <Sidebar className="hidden lg:flex" />
+      {/* <Sidebar className="hidden lg:flex" /> */}
       <section
         className={cn(
           "flex flex-col items-center",
@@ -23,7 +23,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       </section>
       <aside
         id={"left-nav-portal"}
-        className={`lg:col-span-3 xl:col-start-[14]`}
+        className={`lg:col-span-3 xl:col-start-14`}
       />
     </main>
   );
