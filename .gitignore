@@ -42,3 +42,6 @@ what.html
 # deprecated
 .deprecated
 .temp
+
+# logs
+*.log
