@@ -1,14 +1,11 @@
-import React, { cache } from "react";
-import getMainPosts from "@/libs/api/getMainPosts";
+import React from "react";
+import { getParsedGithubBlogList } from "@/libs/api/github";
 import { cn } from "@/libs/utils";
 import LandingListCard from "@/components/landing/LandingListCard";
 
-const mainPostsCache = cache(async () => {
-  return await getMainPosts();
-});
-
 const LandingListContainer = async () => {
-  const posts = await mainPostsCache();
+  const allPosts = await getParsedGithubBlogList();
+  const posts = allPosts.slice(0, 6);
 
   return (
     <div
@@ -25,15 +22,13 @@ const LandingListContainer = async () => {
       )}
       {posts &&
         posts.length > 0 &&
-        posts
-          .filter((item) => item.title && item.content)
-          .map((post, index) => (
-            <LandingListCard
-              key={`recent post_${index}`}
-              post={post}
-              index={index}
-            />
-          ))}
+        posts.map((post, index) => (
+          <LandingListCard
+            key={`recent post_${index}`}
+            post={post}
+            index={index}
+          />
+        ))}
     </div>
   );
 };
