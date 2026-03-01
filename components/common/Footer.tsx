@@ -53,8 +53,8 @@ const Footer = ({ fonts }: { fonts: string }) => {
             "transition-all duration-150",
           )}
         >
-          <Link href="https://patterns.leetekwoo.com" target="_blank">
-            patterns
+          <Link href="https://wiki.leetekwoo.com" target="_blank">
+            wiki
           </Link>
         </button>
       </div>
