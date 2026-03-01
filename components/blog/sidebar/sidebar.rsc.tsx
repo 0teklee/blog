@@ -46,7 +46,7 @@ const SidebarRsc = async () => {
                 "cursor-pointer py-2 hover:text-theme ",
                 "after:transition-all after:duration-300",
                 `after:content-["▾"]`,
-                "after:group-open/child:rotate-180",
+                "group-open/child:after:rotate-180",
               )}
             >
               <span>{category.name}</span>
@@ -72,7 +72,7 @@ const SidebarRsc = async () => {
                       "flex w-full pl-2 pr-3 py-1",
                       "text-sm lg:pl-2 lg:text-md",
                       "overflow-y-hidden rounded",
-                      "text-left line-clamp-2 overflow-ellipsis",
+                      "text-left line-clamp-2 text-ellipsis",
                       "transition-colors duration-200",
                       "hover:bg-theme hover:text-background",
                       "last:mb-4",

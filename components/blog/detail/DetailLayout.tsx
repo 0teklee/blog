@@ -6,7 +6,7 @@ const DetailLayout = ({ children }: { children: ReactNode | ReactNode[] }) => {
     <div
       className={cn(
         "flex flex-col w-full gap-3",
-        "lg:items-center lg:py-5 lg:flex-grow lg:pt-0",
+        "lg:items-center lg:py-5 lg:grow lg:pt-0",
       )}
     >
       {children}

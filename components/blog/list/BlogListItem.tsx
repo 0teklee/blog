@@ -56,10 +56,10 @@ const BlogListItem = async ({
         <div
           className={cn(
             "relative",
-            "flex-shrink-0",
+            "shrink-0",
             "w-full h-[120px] ",
             "rounded-t overflow-hidden",
-            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-36 lg:h-36 lg:rounded-sm",
+            "lg:rounded-t-none lg:border-none lg:shrink lg:w-36 lg:h-36 lg:rounded-sm",
           )}
         >
           {

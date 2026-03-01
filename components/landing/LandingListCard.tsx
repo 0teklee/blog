@@ -33,7 +33,7 @@ const LandingListCard = ({
           className={`
             w-full -z-30
             transition-all duration-200
-            group-hover:blur-sm group-hover:brightness-50 group-hover:contrast-150
+            group-hover:blur-xs group-hover:brightness-50 group-hover:contrast-150
             `}
           key={`img_${post.id}`}
           src={LANDING_LIST_IMAGES[index].url}
@@ -61,7 +61,7 @@ const LandingListCard = ({
           <h3
             className={`w-full px-4
               text-center text-3xl
-              overflow-ellipsis line-clamp-1
+              text-ellipsis line-clamp-1
               font-bold`}
           >
             {post.title}
@@ -69,7 +69,7 @@ const LandingListCard = ({
           <div
             className={`w-full max-h-16 px-4
               text-sm font-light
-              overflow-hidden leading-6 break-words line-clamp-2`}
+              overflow-hidden leading-6 wrap-break-word line-clamp-2`}
           >
             {htmlReplace(post.content)}
           </div>

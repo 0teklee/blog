@@ -38,7 +38,7 @@ const DetailFooterNav = async ({ id }: { id: string }) => {
                 className={`
                 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                 max-w-50% lg:max-w-30%
-                text-sm line-clamp-1 overflow-ellipsis`}
+                text-sm line-clamp-1 text-ellipsis`}
               >
                 {next.title}
               </p>
@@ -62,7 +62,7 @@ const DetailFooterNav = async ({ id }: { id: string }) => {
                 className={`
                 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                 max-w-50% lg:max-w-30%
-                text-sm line-clamp-1 overflow-ellipsis`}
+                text-sm line-clamp-1 text-ellipsis`}
               >
                 {prev.title}
               </p>

@@ -15,7 +15,7 @@ const SidebarAside = ({
     <aside
       className={cn(
         "flex flex-col items-stretch gap-5",
-        "w-full mb-12 flex-shrink-0",
+        "w-full mb-12 shrink-0",
         "bg-background scrollbar-hide",
         "lg:pb-12 lg:sticky",
         "lg:top-20 lg:h-[calc(100vh-4rem)]",
@@ -38,7 +38,7 @@ const SidebarAside = ({
               "hover:text-theme group-open:text-theme",
               "after:transition-all after:duration-300",
               `after:content-["⇣"]`,
-              "after:group-open/parent:rotate-180",
+              "group-open/parent:after:rotate-180",
               "group-open/parent:text-theme",
               "list-outside",
             )}

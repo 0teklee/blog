@@ -35,10 +35,10 @@ const ListFallbackItem = () => {
         <div
           className={cn(
             "relative",
-            "flex-shrink-0 flex items-center justify-center",
+            "shrink-0 flex items-center justify-center",
             "w-full h-[120px]",
             "bg-secondary rounded-t overflow-hidden",
-            "lg:rounded-t-none lg:border-none lg:flex-shrink lg:w-36 lg:h-36 lg:rounded-sm",
+            "lg:rounded-t-none lg:border-none lg:shrink lg:w-36 lg:h-36 lg:rounded-sm",
             "animate-pulse",
           )}
         >
@@ -58,7 +58,7 @@ const ListFallbackItem = () => {
                 "line-clamp-1 text-ellipsis",
                 "transition-all duration-500",
                 "group-hover:underline group-hover:text-theme",
-                "blur-sm",
+                "blur-xs",
               )}
             >
               {title}
@@ -69,11 +69,11 @@ const ListFallbackItem = () => {
                 "text-xs font-medium",
               )}
             >
-              <div className="flex items-center blur-sm">
+              <div className="flex items-center blur-xs">
                 <p className="font-semibold">category:</p>
                 <p className="ml-2">{category}</p>
               </div>
-              <p className={`blur-sm`}>
+              <p className={`blur-xs`}>
                 {dayjs("2025.01.01").format("YYYY-MM-DD")}
               </p>
             </div>
@@ -84,7 +84,7 @@ const ListFallbackItem = () => {
               "line-clamp-2",
               "break-all leading-6",
               "lg:line-clamp-3",
-              "blur-sm",
+              "blur-xs",
             )}
           >
             {content}
