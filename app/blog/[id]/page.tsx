@@ -32,6 +32,8 @@ const page = async (props: { params: Promise<{ id: string }> }) => {
 
 export default page;
 
+export const dynamicParams = false;
+
 export const generateStaticParams = async () => {
   const files = await getGithubBlogList();
   return files.map((file) => ({
