@@ -1,13 +1,11 @@
-import React, { cache } from "react";
+import React from "react";
 import dayjs from "dayjs";
 import Link from "next/link";
-import getBlogNav from "@/libs/api/getBlogNav";
+import { getGithubBlogNav } from "@/libs/api/github";
 import { cn } from "@/libs/utils";
 
-const getCacheBlogNav = cache(getBlogNav);
-
 const DetailFooterNav = async ({ id }: { id: string }) => {
-  const [prev, next] = await getCacheBlogNav(id);
+  const [prev, next] = await getGithubBlogNav(id);
   return (
     <footer className={`w-full`}>
       <nav className={"relative flex flex-col items-center "}>

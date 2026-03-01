@@ -4,9 +4,7 @@ import { Suspense } from "react";
 import { ListHeader, ListLayout } from "@/components/blog/list/Template";
 import LoaderSpin from "@/components/common/module/LoaderSpin";
 
-const page = async (props: {
-  searchParams?: Promise<{ page: string; category: string }>;
-}) => {
+const page = () => {
   return (
     <Suspense
       fallback={
@@ -16,13 +14,10 @@ const page = async (props: {
         </ListLayout>
       }
     >
-      <BlogListPageTemplate searchParams={props?.searchParams} />
+      <BlogListPageTemplate />
     </Suspense>
   );
 };
-
-export const revalidate = 1200;
-export const experimental_ppr = true;
 
 export default page;
 

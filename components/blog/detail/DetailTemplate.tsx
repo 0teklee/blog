@@ -1,4 +1,4 @@
-import React, { cache, Suspense } from "react";
+import React, { Suspense } from "react";
 import ParsedHTMLTag from "@/components/common/module/ParsedHTMLTag";
 import DetailFooterNav from "@/components/blog/detail/DetailFooterNav";
 // import getBlogDetail from "@/libs/api/getBlogDetail";
@@ -10,13 +10,7 @@ import { IBlogDetailResponse } from "@/components/blog/detail/type";
 import DetailLayout from "@/components/blog/detail/DetailLayout";
 import DetailHeader from "@/components/blog/detail/DetailHeader";
 
-const getBlogDetail = async (id: string): Promise<IBlogDetailResponse> => {
-  const res = await fetch(`${process.env.BASE_URL}/api/blog/${id}`);
-  const data = await res.json();
-  return data;
-};
-
-const getCacheBlogDetail = cache(getBlogDetail);
+import { getGithubBlogDetail, parseBlogContent } from "@/libs/api/github";
 
 const DetailTemplate = async ({
   params,
@@ -24,8 +18,11 @@ const DetailTemplate = async ({
   params: Promise<{ id: string }>;
 }) => {
   const { id } = await params;
-  const { content, createdAt, title, categories } =
-    await getCacheBlogDetail(id);
+  const contentRaw = await getGithubBlogDetail(id);
+  const { content, createdAt, title, categories } = parseBlogContent(
+    id,
+    contentRaw,
+  );
 
   const updatedContent = formatBlogContent(content);
 
@@ -36,7 +33,7 @@ const DetailTemplate = async ({
         <DetailHeader
           id={id}
           title={title}
-          categories={categories}
+          categories={categories?.name || "Post"}
           createdAt={createdAt}
         />
         <div className="relative blog-post-content">

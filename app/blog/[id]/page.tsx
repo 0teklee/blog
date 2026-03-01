@@ -1,8 +1,11 @@
 import React, { Suspense } from "react";
 
 import DetailTemplate from "@/components/blog/detail/DetailTemplate";
-import getBlogDetailId from "@/libs/api/getBlogDetailId";
-import getBlogDetail from "@/libs/api/getBlogDetail";
+import {
+  getGithubBlogList,
+  getGithubBlogDetail,
+  parseBlogContent,
+} from "@/libs/api/github";
 import { getImgSrc } from "@/components/blog/utils";
 
 import { htmlReplace } from "@/libs/utils";
@@ -30,13 +33,11 @@ const page = async (props: { params: Promise<{ id: string }> }) => {
 export default page;
 
 export const generateStaticParams = async () => {
-  const paths = await getBlogDetailId();
-
-  return paths;
+  const files = await getGithubBlogList();
+  return files.map((file) => ({
+    id: file.name.replace(".mdx", ""),
+  }));
 };
-
-export const revalidate = 600;
-export const experimental_ppr = true;
 
 export async function generateMetadata(props: {
   params: Promise<{ id: string }>;
@@ -48,11 +49,13 @@ export async function generateMetadata(props: {
   if (!id) {
     return {};
   }
-  const data = await getBlogDetail(id);
+  const content = await getGithubBlogDetail(id);
 
-  if (!data) {
+  if (!content) {
     return {};
   }
+
+  const data = parseBlogContent(id, content);
 
   const ImageSrc = getImgSrc(data.content);
 

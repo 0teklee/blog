@@ -1,13 +1,8 @@
 import React, { ReactNode } from "react";
 import { cn } from "@/libs/utils";
+import Sidebar from "@/components/blog/sidebar/sidebar";
 
-export default function Layout({
-  children,
-  sidebar,
-}: {
-  children: ReactNode;
-  sidebar: ReactNode;
-}) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <main
       className={cn(
@@ -15,7 +10,7 @@ export default function Layout({
         "lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center",
       )}
     >
-      {sidebar}
+      <Sidebar className="hidden lg:flex" />
       <section
         className={cn(
           "flex flex-col items-center",

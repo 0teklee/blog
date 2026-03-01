@@ -7,12 +7,17 @@ import {
   SidebarDetails,
   SidebarSummary,
 } from "@/components/blog/sidebar/modules";
+import { getParsedGithubBlogList } from "@/libs/api/github";
 
 const getBlogCategoryList = async (): Promise<IBlogGetCategorySideBar[]> => {
   try {
-    const res = await fetch(`${process.env.BASE_URL}/api/blog/categories`);
-    const data = await res.json();
-    return data;
+    const posts = await getParsedGithubBlogList();
+    return [
+      {
+        name: "Post",
+        posts: posts.map((p) => ({ id: p.id, title: p.title })),
+      },
+    ] as any;
   } catch (e) {
     console.error(e);
     return [];

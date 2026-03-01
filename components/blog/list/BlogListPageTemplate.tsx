@@ -3,18 +3,12 @@ import { Suspense } from "react";
 import BlogListContents from "@/components/blog/list/BlogListContents";
 import { ListHeader, ListLayout } from "@/components/blog/list/Template";
 
-const BlogListPageTemplate = async ({
-  searchParams,
-}: {
-  searchParams?: Promise<{ page: string; category: string }>;
-}) => {
-  const params = await searchParams!; // middleware 적용됨
-
+const BlogListPageTemplate = () => {
   return (
     <ListLayout>
-      <ListHeader text={params?.category ? params?.category : "Posts"} />
+      <ListHeader text={"Posts"} />
       <Suspense fallback={<ListFallback />}>
-        <BlogListContents searchParams={params} />
+        <BlogListContents />
       </Suspense>
     </ListLayout>
   );
