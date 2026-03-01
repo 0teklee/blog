@@ -3,21 +3,19 @@
 [Software Engineer Tekwoo Lee's Tech Blog](https://blog.leetekwoo.com)
 소프트웨어 엔지니어 이택우의 기술 블로그
 
-
-
 <img width="1440" height="2740" alt="blog leetekwoo com_" src="https://github.com/user-attachments/assets/ec60a604-c462-4392-bcb3-bc17b9a9383d" />
 
 - 2025 WebGL 적용하였습니다.
 - Prisma를 Supabase로 완전히 대체했습니다.
 - Next.js 15 Canary의 실험적 기능을 적용하였습니다.
 - 플러그인 기반의 TipTap 에디터로 변경했습니다.
+- **2026 Tailwind CSS v4 마이그레이션 및 폰트 시스템 개선** 완료.
 
 TBA
+
 - DB를 완전히 제거하고, 정적 웹사이트로 변경할 예정입니다.
-- Next.js / React를 이외의 적합한 프레임워크/라이브러리를 찾고 있습니다.
-  - - [art.leetekwoo.com](https://art.leetekwoo.com)
-
-
+- Next.js / React 이외의 적합한 프레임워크/라이브러리를 찾고 있습니다.
+- [art.leetekwoo.com](https://art.leetekwoo.com)
 
 ---
 
@@ -75,7 +73,7 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 - UI 편의성 (반응형 대응, night 모드 etc..)
 - 예외처리, 로딩 시 fallback 페이지
 - **ver 1.1.0** 게스트북 페이지 추가
-  - 게스트 유저의 Google OAuth 로그인 기능 
+  - 게스트 유저의 Google OAuth 로그인 기능
   - 게스트북 페이지에서 게시글 작성 기능
   - 게스트북 페이지 게시글에 댓글 작성 기능
   - 게시들, 댓글 비밀글 설정 기능
@@ -103,10 +101,10 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 
 ### Versions
 
+- 2.0.0 26/03/02 - Tailwind CSS v4 Migration, Global Font System update (Cormorant, Inter, Noto Sans)
 - 1.1.0 23/01/08 - Added Guestbook Page (google Oauth 2.0 login, create posts & comments)
 - 1.0.1 22/09/20
 - 1.0.0 22/09/06 - first release
-
 
 ### Demo
 
@@ -154,9 +152,11 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 ![DELETE](https://res.cloudinary.com/dolziw8fv/image/upload/v1662371746/teklog_readme/teklog_delete_iiqwka.gif)
 
 #### 게스트북 게시글 생성
+
 ![GUEST_POST_CREATE](https://res.cloudinary.com/dolziw8fv/image/upload/v1673151940/teklog_readme/blog_post_create_AdobeExpress_sc2yho.gif)
 
 #### 게스트북 댓글 생성
+
 ![GUEST_COMMENT_CREATE](https://res.cloudinary.com/dolziw8fv/image/upload/v1673151940/teklog_readme/blog_comment_create_AdobeExpress_sphomg.gif)
 
 #### 모바일 반응형
@@ -166,4 +166,5 @@ CRUD가 구현된 풀스택 블로그앱을 개발하였습니다.
 #### 잘못된 경로 접근 혹은 페이지 로딩 시 FALLBACK 페이지
 
 ![FALLBACK](https://res.cloudinary.com/dolziw8fv/image/upload/v1662447361/teklog_readme/teklog_fallback_pghd3m.jpg)
+
 </details>
