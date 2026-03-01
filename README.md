@@ -5,11 +5,22 @@
 
 <img width="1440" height="2740" alt="blog leetekwoo com_" src="https://github.com/user-attachments/assets/ec60a604-c462-4392-bcb3-bc17b9a9383d" />
 
-- 2025 WebGL 적용하였습니다.
-- Prisma를 Supabase로 완전히 대체했습니다.
-- Next.js 15 Canary의 실험적 기능을 적용하였습니다.
-- 플러그인 기반의 TipTap 에디터로 변경했습니다.
+- **정적 웹사이트로 변경 완료**
+  - `GitHub Actions` 를 사용하여 정적 웹사이트를 생성하고 `cloudflare-pages`에 빌드 아웃풋을 커밋합니다.
+  - 이후 `Cloudflare Pages` 환경에서 빌드된 정적 에셋을 CDN에 배포합니다.
 - **2026 Tailwind CSS v4 마이그레이션 및 폰트 시스템 개선** 완료.
+
+---
+
+<details>
+<summary>
+이전 로그 보기 (~2026/03/01 version)
+</summary>
+
+2025 WebGL 적용하였습니다.
+Prisma를 Supabase로 완전히 대체했습니다.
+Next.js 15 Canary의 실험적 기능을 적용하였습니다.
+플러그인 기반의 TipTap 에디터로 변경했습니다.
 
 TBA
 
@@ -17,7 +28,7 @@ TBA
 - Next.js / React 이외의 적합한 프레임워크/라이브러리를 찾고 있습니다.
 - [art.leetekwoo.com](https://art.leetekwoo.com)
 
----
+</details>
 
 <details>
 <summary>
