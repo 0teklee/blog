@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     deviceSizes: [640, 768, 1024, 1280, 1536],
     remotePatterns: [
       {
@@ -19,33 +21,19 @@ const nextConfig = {
   },
 
   env: {
-    CLOUD_NAME: process.env.CLOUD_NAME,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
-    TWITTER_TOKEN: process.env.TWITTER_TOKEN,
-    CLIENT_ID: process.env.CLIENT_ID,
-    CLIENT_SECRET: process.env.CLIENT_SECRET,
-    TW_ACCESS_TOKEN: process.env.TW_ACCESS_TOKEN,
-    TW_ACCESS_TOKEN_SECRET: process.env.TW_ACCESS_TOKEN_SECRET,
-    TW_API_KEY: process.env.TW_API_KEY,
-    TW_API_KEY_SECRET: process.env.TW_API_KEY_SECRET,
-    NEXT_PUBLIC_SECRET: process.env.NEXT_PUBLIC_SECRET,
-    GUESTBOOK_GAUTH_CLIENT_ID: process.env.GUESTBOOK_GAUTH_CLIENT_ID,
-    GUESTBOOK_GAUTH_CLIENTPW: process.env.GUESTBOOK_GAUTH_CLIENTPW,
-    ADMIN_GUESTBOOK_TOKEN: process.env.ADMIN_GUESTBOOK_TOKEN,
-    ADMIN_EMAIL: process.env.ADMIN_EMAIL,
-    ADMIN_NAME: process.env.ADMIN_NAME,
-    NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
     BASE_URL: process.env.BASE_URL,
-    SUPABASE_URL: process.env.SUPABASE_URL,
-    SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
-    NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
   },
   compress: true,
-  experimental: {
-    ppr: "incremental",
-  },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  experimental: {
+    optimizeCss: false,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 

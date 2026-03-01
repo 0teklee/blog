@@ -3,9 +3,6 @@ import LandingTemplate from "components/landing/LandingTemplate";
 
 const Home = () => <LandingTemplate />;
 
-export const revalidate = 600;
-export const experimental_ppr = true;
-
 export default Home;
 
 export async function generateMetadata() {

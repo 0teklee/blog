@@ -1,71 +1,27 @@
-import React, { cache } from "react";
-// import getBlogList from "@/libs/api/getBlogList";
+import React from "react";
 import BlogListItem from "@/components/blog/list/BlogListItem";
-import BlogListPagination from "@/components/blog/list/BlogListPagination";
-import { cn } from "@/libs/utils";
 import ListWrapper from "@/components/blog/list/ListWrapper";
-import { IBlogGetListResponse } from "@/components/blog/types";
+import { getParsedGithubBlogList } from "@/libs/api/github";
 
-const getBlogList = async (
-  page: string,
-  category: string,
-): Promise<IBlogGetListResponse> => {
-  try {
-    const res = await fetch(
-      `${process.env.BASE_URL}/api/blog/list?page=${page}${category ? `&category=${category}` : ""}`,
-    );
-    const data = await res.json();
-    return data;
-  } catch (e) {
-    console.error(e);
-    return { posts: [], has_next_page: false };
-  }
-};
+const BlogListContents = async () => {
+  const posts = await getParsedGithubBlogList();
 
-const cachedGetBlogList = cache(getBlogList);
-
-const BlogListContents = async ({
-  searchParams,
-}: {
-  searchParams?: { page: string; category: string; prev?: string };
-}) => {
-  const { page, category } = searchParams || { page: "1", category: "" };
-  const { posts, has_next_page } = await getBlogList(page, category);
+  // If searchParams were actually functional, we could map it here, but next.js static export
+  // doesn't support dynamic searchParams unless we use `generateStaticParams`.
+  // We will just show all posts for the static export or handle pagination purely on client.
+  // For now, let's just render all of them.
 
   return (
-    <div className={cn("flex flex-col", "lg:flex-row lg:gap-3")}>
-      <div
-        className={cn(
-          "flex flex-col gap-12",
-          "w-full px-4",
-          "tablet:gap-8",
-          "transition-all duration-500 ease-in-out",
-          "overflow-x-hidden",
-        )}
-      >
-        {searchParams && (
-          <BlogListPagination
-            searchParams={searchParams}
-            hasNext={has_next_page}
-          />
-        )}
+    <div className="flex flex-col lg:flex-row lg:gap-3">
+      <div className="flex flex-col gap-12 w-full px-4 tablet:gap-8 transition-all duration-500 ease-in-out overflow-x-hidden">
         {posts?.length === 0 && (
           <h1 className="mb-16 text-center font-sans lg:mb-28">No Posts Yet</h1>
         )}
-        <ListWrapper
-          key={`${searchParams?.page || ""}${searchParams?.category || ""}`}
-          searchParams={searchParams}
-        >
+        <ListWrapper>
           {posts?.map((item, i) => (
-            <BlogListItem {...item} key={`BlogListItem_${i}`} index={i} />
+            <BlogListItem {...item} key={item.id} index={i} />
           ))}
         </ListWrapper>
-        {searchParams && (
-          <BlogListPagination
-            searchParams={searchParams}
-            hasNext={has_next_page}
-          />
-        )}
       </div>
     </div>
   );
