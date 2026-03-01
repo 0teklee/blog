@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: "pages"
@@ -34,11 +34,27 @@ jobs:
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
         run: npx next build
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: teklog
-          directory: out
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy built assets to cloudflare-pages branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Switch to (or create) the cloudflare-pages branch with no history
+          git checkout --orphan cloudflare-pages
+
+          # Remove everything except the out/ directory
+          git rm -rf --cached .
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name 'out' \
+            ! -name '.git' \
+            -exec rm -rf {} +
+
+          # Move all files out of out/ to root (Cloudflare serves from root)
+          mv out/* .
+          mv out/.* . 2>/dev/null || true
+          rmdir out
+
+          # Commit and force-push
+          git add -A
+          git commit -m "chore: deploy static build [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push origin cloudflare-pages --force
