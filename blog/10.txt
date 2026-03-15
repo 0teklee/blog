@@ -1,0 +1,439 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","10"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","10","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","10","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T24d1,<h1>Internship - 과제 2</h1><p><br></p><p><a href="https://teklog.site/blog/9" rel="noopener noreferrer" target="_blank">이전 글 보러가기 &lt;</a></p><p><br></p><h3>커스텀 비디오 플레이어</h3><h3><a href="https://github.com/0teklee/CustomVideoPlayer" rel="noopener noreferrer" target="_blank">프로젝트 깃허브 링크</a></h3><p><br></p><h3><strong>기능 구현 상세</strong></h3><p><br></p><h3><strong>컨트롤 바</strong></h3><p><br></p><ul><li>컨트롤 바 on/off</li><li>영상 영역에서 마우스 이동시 컨트롤바 보이도록 구현</li><li>영상 영역에서 마우스가 사라질시 컨트롤바 제거</li><li>영상 영역에서 3초 동안 마우스가 아무 반응이 없을시 컨트롤바 제거</li></ul><p><br></p><h3><strong>비디오 제어</strong></h3><p><br></p><ul><li>재생/ 정지 기능</li><li>전체화면 ,축소 기능</li><li>영상 전체길이 표기</li><li>현재 보고있는 영상 시간 표기</li><li>프로그레스바 클릭시 해당 시간으로 넘기기</li><li class="ql-indent-1">넘기는 도중 영상이 load 중이라면 로딩UI 표시</li><li>keyDown event 이용해서 키보드 이벤트 구현</li><li class="ql-indent-1">왼쪽 방향키 event - 영상 시간 -5초</li><li class="ql-indent-1">오른쪽 방향키 event - 영상 시간 +5초</li><li class="ql-indent-1">스페이스바 evnet - 영상 재생/정지 toggle</li><li>볼륨 조절 기능</li><li>볼륨 음소거 on/off기능</li><li>볼륨 아이콘 hover 시 볼륨 조절 기능 표시</li></ul><p><br></p><h3><strong>광고 기능</strong></h3><ul><li>특정 시간경과시 광고영상으로 교체되고 광고가 끝날 시 다시 원래 영상보던 시간으로 돌아오기</li></ul><p><br></p><p>&lt;hr/&gt;</p><p><br></p><h3>Challenging Points :</h3><ul><li>forwardRef의 Props 타입 지정! 프랍으로 타입을 넘겨주는 것이 처음이라 낯설었던듯.</li><li>비디오의 정보가 업데이트될 때마다 전체 페이지가 리렌더링되지 않도록 컴포넌트 분리-설계 해야했던 점</li><li>useFoarwardRef와 useImperativeHandle을 사용하여 자식 컴포넌트의 state를 형제 컴포넌트인 비디오 태그의 이벤트 핸들러가 제어하도록 구현</li><li>기본적으로 이벤트 핸들링이 많았다. onChange, onMouseEnter, onClick, onKeyPress 등등. 서로 충돌하는 이벤트 핸들러가 있어서 조금 고생했다.</li></ul><p><br></p><p><br></p><h3>공유하고 싶은 코드 :</h3><h3><br></h3><p><strong>1. 프로젝트 전체 컴포넌트 구조</strong></p><p><br></p><p>	<strong>player.tsx</strong> - 부모 컴포넌트</p><p>		<a href="https://github.com/0teklee/CustomVideoPlayer/blob/main/components/video/Video.tsx" rel="noopener noreferrer" target="_blank"><strong>Video.tsx 바로가기</strong></a> - 자식 컴포넌트</p><p>		<a href="https://github.com/0teklee/CustomVideoPlayer/blob/main/components/video/Controls.tsx" rel="noopener noreferrer" target="_blank"><strong>Controls.tsx 바로가기</strong></a> - 자식 컴포넌트</p><p><br></p><p>useForwardRef를 설명하기 위해서는 필요한 내용이라서 공유</p><p><br></p><h3>2.비디오 태그의 이벤트 핸들러 처리</h3><p><br></p><pre class="ql-syntax" spellcheck="false">const Video = () =&gt; {
+  const controllerRef = useRef&lt;ControllerInterface&gt;(null);
+  const containerRef = useRef&lt;HTMLDivElement&gt;(null);
+  const videoRef = useRef&lt;HTMLVideoElement&gt;(null);
+  const srcRef = useRef&lt;HTMLSourceElement&gt;(null);
+
+  // video source 링크
+  const srcOrigin =
+    "&lt;http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4&gt;";
+  const srcAd =
+    "&lt;http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4&gt;";
+
+  // container Props &amp; handlers
+  const containerProps = {
+    ref: containerRef,
+    tabIndex: 0,
+    onKeyDown: (e: React.KeyboardEvent) =&gt; {
+      if (controllerRef.current) controllerRef.current.handleKeyDown(e);
+    },
+    onMouseEnter: () =&gt; {
+      if (controllerRef.current) controllerRef.current.handleMouseIn();
+    },
+    onMouseLeave: () =&gt; {
+      if (controllerRef.current) controllerRef.current.handleMouseLeave();
+    },
+    onMouseMove: (e: React.MouseEvent) =&gt; {
+      if (controllerRef.current) controllerRef.current.handleMouseMove(e);
+    },
+  };
+
+  // video Prop &amp; handlers
+
+  const videoProps = {
+    ref: videoRef,
+    width: "100%",
+    controls: false,
+    onTimeUpdate: () =&gt; {
+      if (controllerRef.current) controllerRef.current.handleTimeUpdate();
+    },
+    onClick: () =&gt; {
+      if (controllerRef.current) controllerRef.current.handleVideoClick();
+    },
+  };
+
+  // Controls Props
+  const controlProps = {
+    ref: controllerRef,
+    containerRef: containerRef,
+    videoRef: videoRef,
+    srcRef: srcRef,
+    srcOrigin: srcOrigin,
+    srcAd: srcAd,
+  };
+  return (
+    &lt;Layout&gt;
+      &lt;Container {...containerProps}&gt;
+        &lt;VideoWrapper {...videoProps}&gt;
+          &lt;source ref={srcRef} src={srcOrigin} type="video/mp4" /&gt;
+        &lt;/VideoWrapper&gt;
+        &lt;Controls {...controlProps} /&gt;
+      &lt;/Container&gt;
+    &lt;/Layout&gt;
+  );
+};
+
+export default Video;
+
+const Container = styled.div`
+  position: relative;
+  &amp;:focus {
+    border: none;
+    outline: none;
+  }
+`;
+
+const VideoWrapper = styled.video`
+  &amp;::-webkit-media-controls {
+    display: none !important;
+  }
+`;
+</pre><h3><br></h3><h3>3.Video 컴포넌트의 자식 컴포넌트인 Controls</h3><p><strong>핸들러 함수들과 useImperativeHandle 함수로 부모컴포넌트의 ref에 함수 올리기</strong></p><p><br></p><pre class="ql-syntax" spellcheck="false">// 비디오 재생 키보드 이벤트 핸들러
+    const handleKeyDown = (e: React.KeyboardEvent): void =&gt; {
+      switch (e.code) {
+        case "ArrowLeft":
+          videoElement!.currentTime -= 5;
+          break;
+        case "ArrowRight":
+          videoElement!.currentTime += 5;
+          break;
+        case "Space":
+          if (videoElement!.paused) {
+            videoElement!.play();
+            setIsPlaying(true);
+          } else {
+            videoElement!.pause();
+            setIsPlaying(false);
+          }
+          break;
+        default:
+          return;
+      }
+    };
+
+    // 비디오 클릭 시 재생/정지 핸들러
+    const handleVideoClick = () =&gt; {
+      if (videoElement) {
+        if (videoElement.paused) {
+          videoElement.play();
+          setIsPlaying(true);
+        } else {
+          videoElement.pause();
+          setIsPlaying(false);
+        }
+      }
+    };
+
+    // mouse event handlers - 마우스가 비디오 위에서 움직일 때 컨트롤바 보이게.
+    const handleMouseMove = (e: React.MouseEvent) =&gt; {
+      setShowControl(true);
+      setHideCursor(false);
+      setCoords({ x: e.screenX });
+    };
+
+    const handleMouseIn = () =&gt; {
+      setShowControl(true);
+    };
+
+    const handleMouseLeave = () =&gt; {
+      setShowControl(false);
+    };
+
+    // 동영상 시간 업데이트 핸들러
+    const handleTimeUpdate = () =&gt; {
+      setCurrent(videoElement?.currentTime || 0);
+    };
+
+    // 마우스 3초 이상 호버 시 컨트롤 바 안보이도록 타임아웃 useEffect
+    useEffect(() =&gt; {
+      const timeOut = setTimeout(() =&gt; {
+        setShowControl(false);
+        setHideCursor(true);
+      }, 3000);
+      return () =&gt; clearTimeout(timeOut);
+    }, [coords]);
+
+    // volume toggle에 현재 volume 업데이트 useEffect
+    useEffect(() =&gt; {
+      if (volumeRef &amp;&amp; volumeRef.current) {
+        volumeRef.current.value = String(volume);
+      }
+    }, [isVolume]);
+
+// 부모 컴포넌트로 핸들러 함수 올리기
+    useImperativeHandle(ref, () =&gt; ({
+      handleVideoClick,
+      handleKeyDown,
+      handleMouseIn,
+      handleMouseLeave,
+      handleMouseMove,
+      handleTimeUpdate,
+    }));
+</pre><p><strong>광고 기능</strong></p><p><br></p><pre class="ql-syntax" spellcheck="false">///// 광고 기능 /////
+
+    // 30초 이후 광고 불러오도록 트리거
+    useEffect(() =&gt; {
+      if (isAdPlayed) return;
+      if (30 &lt; current) {
+        setAdTime({ ...adTime, originTime: current + 5, adLoaded: true });
+      }
+    }, [current]);
+
+    // 광고 안내 문구 마운트 &amp; 5초 후 광고 로드
+    useEffect(() =&gt; {
+      if (srcElement &amp;&amp; videoElement) {
+        setAdTime({ ...adTime, adPopUp: true });
+        let countdown = setInterval(
+          () =&gt; setAdCountDown((prev) =&gt; prev - 1),
+          1000
+        );
+        setTimeout(() =&gt; {
+          setAdTime({ ...adTime, adPopUp: false });
+          srcElement!.src = srcAd;
+          videoElement!.load();
+          videoElement!.play();
+          clearInterval(countdown);
+        }, 5000);
+      }
+    }, [adTime.adLoaded]);
+
+    // 광고 종료 이후 기존 비디오의 위치로 돌아가기
+    useEffect(() =&gt; {
+      if (isAdPlayed) return;
+      if (srcElement?.src === srcAd &amp;&amp; current === totalTime) {
+        srcElement!.src = srcOrigin;
+        videoElement!.load();
+        videoElement!.currentTime = adTime.originTime;
+        videoElement!.play();
+        setIsAdPlayed(true);
+      }
+    }, [current]);
+</pre><p><br></p><p>*이전 블로그에서 옮겨온 글입니다.</p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"인턴 회고록 pt.2"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2022/09/06"}],["$","p",null,{"children":"n°10"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","Recap"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:T3400,<h1 id="internship-2">Internship - 과제 2</h1><p><br></p><p><a href="https://teklog.site/blog/9" rel="noopener noreferrer">이전 글 보러가기 &#x3C;</a></p><p><br></p><h3 id="">커스텀 비디오 플레이어</h3><h3 id="-1"><a href="https://github.com/0teklee/CustomVideoPlayer" rel="noopener noreferrer">프로젝트 깃허브 링크</a></h3><p><br></p><h3 id="-2"><strong>기능 구현 상세</strong></h3><p><br></p><h3 id="-3"><strong>컨트롤 바</strong></h3><p><br></p><ul><li>컨트롤 바 on/off</li><li>영상 영역에서 마우스 이동시 컨트롤바 보이도록 구현</li><li>영상 영역에서 마우스가 사라질시 컨트롤바 제거</li><li>영상 영역에서 3초 동안 마우스가 아무 반응이 없을시 컨트롤바 제거</li></ul><p><br></p><h3 id="-4"><strong>비디오 제어</strong></h3><p><br></p><ul><li>재생/ 정지 기능</li><li>전체화면 ,축소 기능</li><li>영상 전체길이 표기</li><li>현재 보고있는 영상 시간 표기</li><li>프로그레스바 클릭시 해당 시간으로 넘기기</li><li class="ql-indent-1">넘기는 도중 영상이 load 중이라면 로딩UI 표시</li><li>keyDown event 이용해서 키보드 이벤트 구현</li><li class="ql-indent-1">왼쪽 방향키 event - 영상 시간 -5초</li><li class="ql-indent-1">오른쪽 방향키 event - 영상 시간 +5초</li><li class="ql-indent-1">스페이스바 evnet - 영상 재생/정지 toggle</li><li>볼륨 조절 기능</li><li>볼륨 음소거 on/off기능</li><li>볼륨 아이콘 hover 시 볼륨 조절 기능 표시</li></ul><p><br></p><h3 id="-5"><strong>광고 기능</strong></h3><ul><li>특정 시간경과시 광고영상으로 교체되고 광고가 끝날 시 다시 원래 영상보던 시간으로 돌아오기</li></ul><p><br></p><p>&#x3C;hr/></p><p><br></p><h3 id="challenging-points">Challenging Points :</h3><ul><li>forwardRef의 Props 타입 지정! 프랍으로 타입을 넘겨주는 것이 처음이라 낯설었던듯.</li><li>비디오의 정보가 업데이트될 때마다 전체 페이지가 리렌더링되지 않도록 컴포넌트 분리-설계 해야했던 점</li><li>useFoarwardRef와 useImperativeHandle을 사용하여 자식 컴포넌트의 state를 형제 컴포넌트인 비디오 태그의 이벤트 핸들러가 제어하도록 구현</li><li>기본적으로 이벤트 핸들링이 많았다. onChange, onMouseEnter, onClick, onKeyPress 등등. 서로 충돌하는 이벤트 핸들러가 있어서 조금 고생했다.</li></ul><p><br></p><p><br></p><h3 id="-6">공유하고 싶은 코드 :</h3><h3 id="-7"><br></h3><p><strong>1. 프로젝트 전체 컴포넌트 구조</strong></p><p><br></p><p>	<strong>player.tsx</strong> - 부모 컴포넌트</p><p>		<a href="https://github.com/0teklee/CustomVideoPlayer/blob/main/components/video/Video.tsx" rel="noopener noreferrer"><strong>Video.tsx 바로가기</strong></a> - 자식 컴포넌트</p><p>		<a href="https://github.com/0teklee/CustomVideoPlayer/blob/main/components/video/Controls.tsx" rel="noopener noreferrer"><strong>Controls.tsx 바로가기</strong></a> - 자식 컴포넌트</p><p><br></p><p>useForwardRef를 설명하기 위해서는 필요한 내용이라서 공유</p><p><br></p><h3 id="2">2.비디오 태그의 이벤트 핸들러 처리</h3><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">const <span class="hljs-attr">Video</span> = () => {
+  const <span class="hljs-attr">controllerRef</span> = useRef&#x3C;ControllerInterface>(null)<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">containerRef</span> = useRef&#x3C;HTMLDivElement>(null)<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">videoRef</span> = useRef&#x3C;HTMLVideoElement>(null)<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">srcRef</span> = useRef&#x3C;HTMLSourceElement>(null)<span class="hljs-comment">;</span>
+
+  // video source 링크
+  const <span class="hljs-attr">srcOrigin</span> =
+    "&#x3C;http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4>"<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">srcAd</span> =
+    "&#x3C;http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4>"<span class="hljs-comment">;</span>
+
+  // container Props &#x26; handlers
+  const <span class="hljs-attr">containerProps</span> = {
+    ref: containerRef,
+    tabIndex: 0,
+    onKeyDown: (e: React.KeyboardEvent) => {
+      if (controllerRef.current) controllerRef.current.handleKeyDown(e)<span class="hljs-comment">;</span>
+    },
+    onMouseEnter: () => {
+      if (controllerRef.current) controllerRef.current.handleMouseIn()<span class="hljs-comment">;</span>
+    },
+    onMouseLeave: () => {
+      if (controllerRef.current) controllerRef.current.handleMouseLeave()<span class="hljs-comment">;</span>
+    },
+    onMouseMove: (e: React.MouseEvent) => {
+      if (controllerRef.current) controllerRef.current.handleMouseMove(e)<span class="hljs-comment">;</span>
+    },
+  }<span class="hljs-comment">;</span>
+
+  // video Prop &#x26; handlers
+
+  const <span class="hljs-attr">videoProps</span> = {
+    ref: videoRef,
+    width: "100%",
+    controls: false,
+    onTimeUpdate: () => {
+      if (controllerRef.current) controllerRef.current.handleTimeUpdate()<span class="hljs-comment">;</span>
+    },
+    onClick: () => {
+      if (controllerRef.current) controllerRef.current.handleVideoClick()<span class="hljs-comment">;</span>
+    },
+  }<span class="hljs-comment">;</span>
+
+  // Controls Props
+  const <span class="hljs-attr">controlProps</span> = {
+    ref: controllerRef,
+    containerRef: containerRef,
+    videoRef: videoRef,
+    srcRef: srcRef,
+    srcOrigin: srcOrigin,
+    srcAd: srcAd,
+  }<span class="hljs-comment">;</span>
+  return (
+    &#x3C;Layout>
+      &#x3C;Container {...containerProps}>
+        &#x3C;VideoWrapper {...videoProps}>
+          &#x3C;source <span class="hljs-attr">ref</span>={srcRef} src={srcOrigin} type=<span class="hljs-string">"video/mp4"</span> />
+        &#x3C;/VideoWrapper>
+        &#x3C;Controls {...controlProps} />
+      &#x3C;/Container>
+    &#x3C;/Layout>
+  )<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+export default Video<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">Container</span> = styled.div`
+  position: relative<span class="hljs-comment">;</span>
+  &#x26;:focus {
+    border: none<span class="hljs-comment">;</span>
+    outline: none<span class="hljs-comment">;</span>
+  }
+`<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">VideoWrapper</span> = styled.video`
+  &#x26;::-webkit-media-controls {
+    display: none !important<span class="hljs-comment">;</span>
+  }
+`<span class="hljs-comment">;</span>
+</code></pre><h3 id="-8"><br></h3><h3 id="3-video-controls">3.Video 컴포넌트의 자식 컴포넌트인 Controls</h3><p><strong>핸들러 함수들과 useImperativeHandle 함수로 부모컴포넌트의 ref에 함수 올리기</strong></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss"><span class="hljs-comment">// 비디오 재생 키보드 이벤트 핸들러</span>
+    const handleKeyDown = (e: React.KeyboardEvent): void => {
+      <span class="hljs-selector-tag">switch</span> (e.code) {
+        case "ArrowLeft":
+          videoElement!.currentTime -= <span class="hljs-number">5</span>;
+          break;
+        case "ArrowRight":
+          videoElement!.currentTime += <span class="hljs-number">5</span>;
+          break;
+        case "Space":
+          if (videoElement!.paused) {
+            videoElement!<span class="hljs-selector-class">.play</span>();
+            <span class="hljs-built_in">setIsPlaying</span>(true);
+          } else {
+            videoElement!<span class="hljs-selector-class">.pause</span>();
+            <span class="hljs-built_in">setIsPlaying</span>(false);
+          }
+          break;
+        default:
+          return;
+      }
+    };
+
+    <span class="hljs-comment">// 비디오 클릭 시 재생/정지 핸들러</span>
+    const handleVideoClick = () => {
+      if (videoElement) {
+        if (videoElement.paused) {
+          videoElement<span class="hljs-selector-class">.play</span>();
+          <span class="hljs-built_in">setIsPlaying</span>(true);
+        } else {
+          videoElement<span class="hljs-selector-class">.pause</span>();
+          <span class="hljs-built_in">setIsPlaying</span>(false);
+        }
+      }
+    };
+
+    <span class="hljs-comment">// mouse event handlers - 마우스가 비디오 위에서 움직일 때 컨트롤바 보이게.</span>
+    const handleMouseMove = (e: React.MouseEvent) => {
+      <span class="hljs-built_in">setShowControl</span>(true);
+      <span class="hljs-built_in">setHideCursor</span>(false);
+      <span class="hljs-built_in">setCoords</span>({ x: e.screenX });
+    };
+
+    const handleMouseIn = () => {
+      <span class="hljs-built_in">setShowControl</span>(true);
+    };
+
+    const handleMouseLeave = () => {
+      <span class="hljs-built_in">setShowControl</span>(false);
+    };
+
+    <span class="hljs-comment">// 동영상 시간 업데이트 핸들러</span>
+    const handleTimeUpdate = () => {
+      <span class="hljs-built_in">setCurrent</span>(videoElement?.currentTime || <span class="hljs-number">0</span>);
+    };
+
+    <span class="hljs-comment">// 마우스 3초 이상 호버 시 컨트롤 바 안보이도록 타임아웃 useEffect</span>
+    <span class="hljs-built_in">useEffect</span>(() => {
+      const timeOut = <span class="hljs-built_in">setTimeout</span>(() => {
+        <span class="hljs-built_in">setShowControl</span>(false);
+        <span class="hljs-built_in">setHideCursor</span>(true);
+      }, <span class="hljs-number">3000</span>);
+      return () => <span class="hljs-built_in">clearTimeout</span>(timeOut);
+    }, <span class="hljs-selector-attr">[coords]</span>);
+
+    <span class="hljs-comment">// volume toggle에 현재 volume 업데이트 useEffect</span>
+    <span class="hljs-built_in">useEffect</span>(() => {
+      if (volumeRef &#x26;&#x26; volumeRef.current) {
+        volumeRef<span class="hljs-selector-class">.current</span><span class="hljs-selector-class">.value</span> = <span class="hljs-built_in">String</span>(volume);
+      }
+    }, <span class="hljs-selector-attr">[isVolume]</span>);
+
+<span class="hljs-comment">// 부모 컴포넌트로 핸들러 함수 올리기</span>
+    <span class="hljs-built_in">useImperativeHandle</span>(ref, () => ({
+      handleVideoClick,
+      handleKeyDown,
+      handleMouseIn,
+      handleMouseLeave,
+      handleMouseMove,
+      handleTimeUpdate,
+    }));
+</code></pre><p><strong>광고 기능</strong></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss"><span class="hljs-comment">///// 광고 기능 /////</span>
+
+    <span class="hljs-comment">// 30초 이후 광고 불러오도록 트리거</span>
+    <span class="hljs-built_in">useEffect</span>(() => {
+      if (isAdPlayed) return;
+      if (<span class="hljs-number">30</span> &#x3C; current) {
+        <span class="hljs-built_in">setAdTime</span>({ ...adTime, originTime: current + <span class="hljs-number">5</span>, adLoaded: true });
+      }
+    }, <span class="hljs-selector-attr">[current]</span>);
+
+    <span class="hljs-comment">// 광고 안내 문구 마운트 &#x26; 5초 후 광고 로드</span>
+    <span class="hljs-built_in">useEffect</span>(() => {
+      if (srcElement &#x26;&#x26; videoElement) {
+        <span class="hljs-built_in">setAdTime</span>({ ...adTime, adPopUp: true });
+        let countdown = <span class="hljs-built_in">setInterval</span>(
+          () => <span class="hljs-built_in">setAdCountDown</span>((prev) => prev - <span class="hljs-number">1</span>),
+          <span class="hljs-number">1000</span>
+        );
+        <span class="hljs-built_in">setTimeout</span>(() => {
+          <span class="hljs-built_in">setAdTime</span>({ ...adTime, adPopUp: false });
+          srcElement!<span class="hljs-selector-class">.src</span> = srcAd;
+          videoElement!<span class="hljs-selector-class">.load</span>();
+          videoElement!<span class="hljs-selector-class">.play</span>();
+          <span class="hljs-built_in">clearInterval</span>(countdown);
+        }, <span class="hljs-number">5000</span>);
+      }
+    }, <span class="hljs-selector-attr">[adTime.adLoaded]</span>);
+
+    <span class="hljs-comment">// 광고 종료 이후 기존 비디오의 위치로 돌아가기</span>
+    <span class="hljs-built_in">useEffect</span>(() => {
+      if (isAdPlayed) return;
+      if (srcElement?.src === srcAd &#x26;&#x26; current === totalTime) {
+        srcElement!<span class="hljs-selector-class">.src</span> = srcOrigin;
+        videoElement!<span class="hljs-selector-class">.load</span>();
+        videoElement!<span class="hljs-selector-class">.currentTime</span> = adTime<span class="hljs-selector-class">.originTime</span>;
+        videoElement!<span class="hljs-selector-class">.play</span>();
+        <span class="hljs-built_in">setIsAdPlayed</span>(true);
+      }
+    }, <span class="hljs-selector-attr">[current]</span>);
+</code></pre><p><br></p><p>*이전 블로그에서 옮겨온 글입니다.</p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/11","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"부동산 중개 서비스 - 팀 프로젝트 회고록"}],["$","p",null,{"className":"text-sm","children":"2022-09-15"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/9","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"인턴 회고록 pt.1 "}],["$","p",null,{"className":"text-sm","children":"2022-09-06"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"인턴 회고록 pt.2 - teklog"}],["$","meta","1",{"name":"description","content":"Internship - 과제 2이전 글 보러가기 커스텀 비디오 플레이어프로젝트 깃허브 링크기능 구현 상세컨트롤 바컨트롤 바 on/off영상 영역에서 마우스 이동시 컨트롤바 보이도록 구현영상 영역에서 마우스가 사라질시 컨트롤바 제거영상 영역에서 3초 동안 마우스가 아무 반응이 없을시 컨트롤바 제거비디오 제어재생/ 정지 기능전체화면 ,축소 기능영상 전체길이 표"}],["$","meta","2",{"property":"og:title","content":"인턴 회고록 pt.2 - teklog"}],["$","meta","3",{"property":"og:description","content":"Internship - 과제 2이전 글 보러가기 커스텀 비디오 플레이어프로젝트 깃허브 링크기능 구현 상세컨트롤 바컨트롤 바 on/off영상 영역에서 마우스 이동시 컨트롤바 보이도록 구현영상 영역에서 마우스가 사라질시 컨트롤바 제거영상 영역에서 3초 동안 마우스가 아무 반응이 없을시 컨트롤바 제거비디오 제어재생/ 정지 기능전체화면 ,축소 기능영상 전체길이 표"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"인턴 회고록 pt.2 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"Internship - 과제 2이전 글 보러가기 커스텀 비디오 플레이어프로젝트 깃허브 링크기능 구현 상세컨트롤 바컨트롤 바 on/off영상 영역에서 마우스 이동시 컨트롤바 보이도록 구현영상 영역에서 마우스가 사라질시 컨트롤바 제거영상 영역에서 3초 동안 마우스가 아무 반응이 없을시 컨트롤바 제거비디오 제어재생/ 정지 기능전체화면 ,축소 기능영상 전체길이 표"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

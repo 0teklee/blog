@@ -1,0 +1,213 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","47"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","47","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","47","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T1bf6,<p><a href="https://www.teklog.site/blog/46" rel="noopener noreferrer" target="_blank">지난 글</a>에 이어서 작성</p><p><br></p><h3>Compound </h3><p><br></p><blockquote>합성 컴포넌트의 이점은 렌더링의 제어를 <strong>부모에게 역전시키면서도, 자식들 사이에서 문맥적 상태 인식</strong>을 유지한다는 것입니다. (...) 또 다른 이점은 이 패턴이 관심사의 분리를 촉진한다는 것으로, 이는 시간이 지남에 따라 응용 프로그램이 훨씬 더 잘 확장할 수 있도록 돕습니다.</blockquote><p><br></p><p>Compound 패턴은함수형 컴포넌트에서도 활용할 수 있는 패턴이다. 여러 컴포넌트를 함께 사용하여 복잡한 기능을 구현하되, <strong>각 컴포넌트는 서로 독립적으로 상태</strong>를 관리할 수 있다. 부모 컴포넌트는 <strong>공유 상태를 관리</strong>하며, 자식 컴포넌트들은 이 상태를 기반으로 각각의 역할을 수행한다. </p><p><br></p><p>간단한 예시를 살펴보자.</p><p><br></p><h3>Snippet</h3><pre class="ql-syntax" spellcheck="false">const TabsContext = React.createContext();
+
+const Tabs = ({ children }) =&gt; {
+  const [activeIndex, setActiveIndex] = useState(0);
+  return (
+    &lt;TabsContext.Provider value={{ activeIndex, setActiveIndex }}&gt;
+      &lt;div className="tabs"&gt;{children}&lt;/div&gt;
+    &lt;/TabsContext.Provider&gt;
+  );
+};
+
+Tabs.Item = ({ index, title, children }) =&gt; {
+  return (
+    &lt;TabsContext.Consumer&gt;
+      {({ activeIndex, setActiveIndex }) =&gt; (
+        &lt;&gt;
+          &lt;button onClick={() =&gt; setActiveIndex(index)} className={activeIndex === index ? 'active' : ''}&gt;
+            {title}
+          &lt;/button&gt;
+          {activeIndex === index &amp;&amp; &lt;div className="tab-content"&gt;{children}&lt;/div&gt;}
+        &lt;/&gt;
+      )}
+    &lt;/TabsContext.Consumer&gt;
+  );
+};
+
+export default Tabs;
+
+const TABS_ARRAY = [
+  { id: 1, label: 'Tab 1 Content' },
+  { id: 2, label: 'Tab 2 Content' },
+  { id: 3, label: 'Tab 3 Content' },
+];
+
+const Sample = () =&gt; {
+...
+  return (
+    &lt;Tabs&gt;
+      {TABS_ARRAY.map((item, index) =&gt; (
+        // Tabs.Item에 key, index, title 속성을 제공합니다.
+        &lt;Tabs.Item key={item.id} index={index} title={`Tab ${item.id}`}&gt;
+          {item.label}
+        &lt;/Tabs.Item&gt;
+      ))}
+    &lt;/Tabs&gt;
+  );
+};
+
+
+</pre><p><br></p><p>해당 예시에서 Tabs의 부모에서 Context API 사용해 children으로 전달된 상태는 Tabs.Item 내부에서만 공유된다. Tab 컴포넌트가 여러 곳에서 재사용된다면, 선택된 TabsItem의 ui를 업데이트하기 위해 매번 activeIndex, setActiveIndex를 props로 내려줄 필요가 없어진다. 합성 패턴은 주로 '여러 컴포넌트를 조합하여 구성한다'고만 알고 있었는데, 사실 핵심은 1. 렌더링 제어를 부모 컴포넌트로 넘기면서 2. 부모와 자식 컴포넌트의 관계를 JSX로 명시하는 이점에 있겠다. 물론 합성 패턴을 사용하여 여러 컴포넌트를 조합하여 하나의 컴포넌트를 구현할 수도 있다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">// Tabs.tsx
+const Tabs = ({ children }) =&gt; { ... };
+
+Tabs.Content = ({ index, children }) =&gt; (
+&lt;TabsContext.Consumer&gt;
+      {({ activeIndex }) =&gt; (
+    &lt;&gt;
+      {activeIndex === index &amp;&amp;
+        &lt;div&gt;
+         {children}
+        &lt;/div&gt;
+      }
+    &lt;/&gt;
+)}
+&lt;/TabsContext.Consumer&gt;)
+
+
+// Sample.tsx Tabs를 사용하는 컴포넌트
+const Sample = () =&gt; {
+...
+  return (
+    &lt;Tabs&gt;
+      {TABS_ARRAY.map((item, index) =&gt; (
+       &lt;div key={item.id}&gt;  
+       &lt;div&gt;
+        &lt;Tabs.Item index={index} title={`Tab ${item.id}`}&gt;
+          {item.label}
+        &lt;/Tabs.Item&gt;
+       &lt;div&gt;
+        &lt;Tabs.Content index={index}&gt;
+          &lt;p&gt;{item.description}&lt;/p&gt;
+        &lt;/Tabs.Content&gt;
+       &lt;/div&gt;
+      ))}
+    &lt;/Tabs&gt;
+  );
+};
+
+</pre><p><br></p><p>Tabs.Content 컴포넌트를 추가하여 선택된 Tab에 따라 해당하는 tab의 description을 렌더링하는 컴포넌트를 추가하였다. 이처럼 Compound 패턴을 사용하면 여러 컴포넌트를 하위에 넣고 동일한 상태를 관리하도록 할 수 있다.  하지만 snippet을 작성하다보니 단점 또한 떠올랐다.</p><p><br></p><ul><li>재사용성의 저하</li><li>복잡성 증가</li></ul><p><br></p><p>초기 설계 의도에서 벗어나 Tabs.Child 컴포넌트의 수가 계속 증가하는 상황은 재사용성을 저하시킬 수 있다. 가령 Tabs.Content가 특정한 한가지 경우에만 사용될 때, 이를 위해 추가되는 컴포넌트는 결국 Tabs의 공용 컴포넌트로서의 역할을 줄이게 된다. 만약 이런 단일 컴포넌트의 사용이 계속해서 증가한다면, Tabs를 공용 컴포넌트로 사용하는 의미는 점차 희미해질 것이다. 이러한 상황에서는 모든 곳에서 공통으로 사용되는 컴포넌트 이외의 모든 컴포넌트를 제거하고 싶을 것이다. 그러나 Tabs 내부의 Context 상태인 activeIndex를 활용해야 하는 경우, 결국은 컴포넌트를 추가할 수밖에 없으며, 이는 코드량의 증가로 이어질 수 있다.</p><p><br></p><p>결론적으로, Compound 패턴은 특정 상황에서 명확한 장점을 주는 것으로 보인다. 첫째, 컴포넌트의 상태를 부모 컴포넌트가 관리할 때,  둘째, 여러 컴포넌트를 조합하여 사용할 때 그 조합 가능한 경우의 수를 충분히 활용할 수 있는 경우로 볼 수 있겠다. 개발 이전에 기획과 디자인 단계에서부터 모듈화가 잘 진행된다면, Compound 패턴을 효과적으로 사용할 수 있겠다.</p><h3><br></h3><h3>Pros</h3><ul><li><span style="color: var(--tw-prose-bold);">재사용성과 유연성</span>: 컴포넌트들이 독립적으로 존재하기 때문에, 다양한 조합으로 재사용이 가능</li><li><span style="color: var(--tw-prose-bold);">명시적인 관계</span>: 컴포넌트 관계가 JSX 구조를 통해 명시적으로 표현되어 코드 가독성 개선</li><li><span style="color: var(--tw-prose-bold);">캡슐화 유지</span>: 공유 상태를 부모 컴포넌트 내에 캡슐화하여 자식 컴포넌트는 상태 관리 로직으로부터 분리</li></ul><h3>Cons</h3><ul><li><span style="color: var(--tw-prose-bold);">복잡성 증가</span>: 여러 컴포넌트를 조합해야 하므로, 구조가 복잡해질 수 있다.</li></ul><p><br></p><h3>Use Case</h3><ul><li><span style="color: var(--tw-prose-bold);">UI 컴포넌트 라이브러리</span>: 탭, 아코디언, 드롭다운 메뉴와 같은 UI 컴포넌트를 구현할 때, 각 부분의 구현을 유연하게 조합 가능</li><li>공용 컴포넌트가 일부 컴포넌트의 조합으로 구성될 때 </li><li>(ex: 버튼 - 버튼 내의 아이콘, 아이콘의 위치, 버튼 하단의 문구 등 여러 props로 JSX가 조합이 될 때)</li></ul><h3><br></h3>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound)"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2024/02/26"}],["$","p",null,{"children":"n°47"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:T2cf0,<p><a href="https://www.teklog.site/blog/46" rel="noopener noreferrer">지난 글</a>에 이어서 작성</p><p><br></p><h3 id="compound">Compound </h3><p><br></p><blockquote>합성 컴포넌트의 이점은 렌더링의 제어를 <strong>부모에게 역전시키면서도, 자식들 사이에서 문맥적 상태 인식</strong>을 유지한다는 것입니다. (...) 또 다른 이점은 이 패턴이 관심사의 분리를 촉진한다는 것으로, 이는 시간이 지남에 따라 응용 프로그램이 훨씬 더 잘 확장할 수 있도록 돕습니다.</blockquote><p><br></p><p>Compound 패턴은함수형 컴포넌트에서도 활용할 수 있는 패턴이다. 여러 컴포넌트를 함께 사용하여 복잡한 기능을 구현하되, <strong>각 컴포넌트는 서로 독립적으로 상태</strong>를 관리할 수 있다. 부모 컴포넌트는 <strong>공유 상태를 관리</strong>하며, 자식 컴포넌트들은 이 상태를 기반으로 각각의 역할을 수행한다. </p><p><br></p><p>간단한 예시를 살펴보자.</p><p><br></p><h3 id="snippet">Snippet</h3><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">TabsContext</span> = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Tabs</span> = (<span class="hljs-params">{ children }</span>) => {
+  <span class="hljs-keyword">const</span> [activeIndex, setActiveIndex] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">TabsContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">activeIndex</span>, <span class="hljs-attr">setActiveIndex</span> }}></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"tabs"</span>></span>{children}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">TabsContext.Provider</span>></span></span>
+  );
+};
+
+<span class="hljs-title class_">Tabs</span>.<span class="hljs-property">Item</span> = <span class="hljs-function">(<span class="hljs-params">{ index, title, children }</span>) =></span> {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">TabsContext.Consumer</span>></span>
+      {({ activeIndex, setActiveIndex }) => (
+        <span class="hljs-tag">&#x3C;></span>
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> setActiveIndex(index)} className={activeIndex === index ? 'active' : ''}>
+            {title}
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+          {activeIndex === index &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"tab-content"</span>></span>{children}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>}
+        <span class="hljs-tag">&#x3C;/></span></span>
+      )}
+    &#x3C;/<span class="hljs-title class_">TabsContext</span>.<span class="hljs-property">Consumer</span>>
+  );
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Tabs</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">TABS_ARRAY</span> = [
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">label</span>: <span class="hljs-string">'Tab 1 Content'</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">label</span>: <span class="hljs-string">'Tab 2 Content'</span> },
+  { <span class="hljs-attr">id</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">label</span>: <span class="hljs-string">'Tab 3 Content'</span> },
+];
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Sample</span> = (<span class="hljs-params"></span>) => {
+...
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Tabs</span>></span>
+      {TABS_ARRAY.map((item, index) => (
+        // Tabs.Item에 key, index, title 속성을 제공합니다.
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Tabs.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span> <span class="hljs-attr">index</span>=<span class="hljs-string">{index}</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">Tab</span> ${<span class="hljs-attr">item.id</span>}`}></span>
+          {item.label}
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">Tabs.Item</span>></span>
+      ))}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Tabs</span>></span></span>
+  );
+};
+
+
+</code></pre><p><br></p><p>해당 예시에서 Tabs의 부모에서 Context API 사용해 children으로 전달된 상태는 Tabs.Item 내부에서만 공유된다. Tab 컴포넌트가 여러 곳에서 재사용된다면, 선택된 TabsItem의 ui를 업데이트하기 위해 매번 activeIndex, setActiveIndex를 props로 내려줄 필요가 없어진다. 합성 패턴은 주로 '여러 컴포넌트를 조합하여 구성한다'고만 알고 있었는데, 사실 핵심은 1. 렌더링 제어를 부모 컴포넌트로 넘기면서 2. 부모와 자식 컴포넌트의 관계를 JSX로 명시하는 이점에 있겠다. 물론 합성 패턴을 사용하여 여러 컴포넌트를 조합하여 하나의 컴포넌트를 구현할 수도 있다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-php-template"><span class="xml">// Tabs.tsx
+const Tabs = ({ children }) => { ... };
+
+Tabs.Content = ({ index, children }) => (
+<span class="hljs-tag">&#x3C;<span class="hljs-name">TabsContext.Consumer</span>></span>
+      {({ activeIndex }) => (
+    <span class="hljs-tag">&#x3C;></span>
+      {activeIndex === index &#x26;&#x26;
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+         {children}
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      }
+    <span class="hljs-tag">&#x3C;/></span>
+)}
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">TabsContext.Consumer</span>></span>)
+
+
+// Sample.tsx Tabs를 사용하는 컴포넌트
+const Sample = () => {
+...
+  return (
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">Tabs</span>></span>
+      {TABS_ARRAY.map((item, index) => (
+       <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>></span>  
+       <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Tabs.Item</span> <span class="hljs-attr">index</span>=<span class="hljs-string">{index}</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">Tab</span> ${<span class="hljs-attr">item.id</span>}`}></span>
+          {item.label}
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">Tabs.Item</span>></span>
+       <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Tabs.Content</span> <span class="hljs-attr">index</span>=<span class="hljs-string">{index}</span>></span>
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{item.description}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">Tabs.Content</span>></span>
+       <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      ))}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Tabs</span>></span>
+  );
+};
+
+</span></code></pre><p><br></p><p>Tabs.Content 컴포넌트를 추가하여 선택된 Tab에 따라 해당하는 tab의 description을 렌더링하는 컴포넌트를 추가하였다. 이처럼 Compound 패턴을 사용하면 여러 컴포넌트를 하위에 넣고 동일한 상태를 관리하도록 할 수 있다.  하지만 snippet을 작성하다보니 단점 또한 떠올랐다.</p><p><br></p><ul><li>재사용성의 저하</li><li>복잡성 증가</li></ul><p><br></p><p>초기 설계 의도에서 벗어나 Tabs.Child 컴포넌트의 수가 계속 증가하는 상황은 재사용성을 저하시킬 수 있다. 가령 Tabs.Content가 특정한 한가지 경우에만 사용될 때, 이를 위해 추가되는 컴포넌트는 결국 Tabs의 공용 컴포넌트로서의 역할을 줄이게 된다. 만약 이런 단일 컴포넌트의 사용이 계속해서 증가한다면, Tabs를 공용 컴포넌트로 사용하는 의미는 점차 희미해질 것이다. 이러한 상황에서는 모든 곳에서 공통으로 사용되는 컴포넌트 이외의 모든 컴포넌트를 제거하고 싶을 것이다. 그러나 Tabs 내부의 Context 상태인 activeIndex를 활용해야 하는 경우, 결국은 컴포넌트를 추가할 수밖에 없으며, 이는 코드량의 증가로 이어질 수 있다.</p><p><br></p><p>결론적으로, Compound 패턴은 특정 상황에서 명확한 장점을 주는 것으로 보인다. 첫째, 컴포넌트의 상태를 부모 컴포넌트가 관리할 때,  둘째, 여러 컴포넌트를 조합하여 사용할 때 그 조합 가능한 경우의 수를 충분히 활용할 수 있는 경우로 볼 수 있겠다. 개발 이전에 기획과 디자인 단계에서부터 모듈화가 잘 진행된다면, Compound 패턴을 효과적으로 사용할 수 있겠다.</p><h3 id=""><br></h3><h3 id="pros">Pros</h3><ul><li><span style="color: var(--tw-prose-bold);">재사용성과 유연성</span>: 컴포넌트들이 독립적으로 존재하기 때문에, 다양한 조합으로 재사용이 가능</li><li><span style="color: var(--tw-prose-bold);">명시적인 관계</span>: 컴포넌트 관계가 JSX 구조를 통해 명시적으로 표현되어 코드 가독성 개선</li><li><span style="color: var(--tw-prose-bold);">캡슐화 유지</span>: 공유 상태를 부모 컴포넌트 내에 캡슐화하여 자식 컴포넌트는 상태 관리 로직으로부터 분리</li></ul><h3 id="cons">Cons</h3><ul><li><span style="color: var(--tw-prose-bold);">복잡성 증가</span>: 여러 컴포넌트를 조합해야 하므로, 구조가 복잡해질 수 있다.</li></ul><p><br></p><h3 id="use-case">Use Case</h3><ul><li><span style="color: var(--tw-prose-bold);">UI 컴포넌트 라이브러리</span>: 탭, 아코디언, 드롭다운 메뉴와 같은 UI 컴포넌트를 구현할 때, 각 부분의 구현을 유연하게 조합 가능</li><li>공용 컴포넌트가 일부 컴포넌트의 조합으로 구성될 때 </li><li>(ex: 버튼 - 버튼 내의 아이콘, 아이콘의 위치, 버튼 하단의 문구 등 여러 props로 JSX가 조합이 될 때)</li></ul><h3 id="-1"><br></h3>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/48","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 5  - Prop 관련 패턴들"}],["$","p",null,{"className":"text-sm","children":"2024-02-28"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/46","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC)"}],["$","p",null,{"className":"text-sm","children":"2024-02-25"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound) - teklog"}],["$","meta","1",{"name":"description","content":"지난 글에 이어서 작성Compound \u0010합성 컴포넌트의 이점은 렌더링의 제어를 부모에게 역전시키면서도, 자식들 사이에서 문맥적 상태 인식을 유지한다는 것입니다. (...) 또 다른 이점은 이 패턴이 관심사의 분리를 촉진한다는 것으로, 이는 시간이 지남에 따라 응용 프로그램이 훨씬 더 잘 확장할 수 있도록 돕습니다.Compound 패턴은\u0010함수형 컴포넌트에서도"}],["$","meta","2",{"property":"og:title","content":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound) - teklog"}],["$","meta","3",{"property":"og:description","content":"지난 글에 이어서 작성Compound \u0010합성 컴포넌트의 이점은 렌더링의 제어를 부모에게 역전시키면서도, 자식들 사이에서 문맥적 상태 인식을 유지한다는 것입니다. (...) 또 다른 이점은 이 패턴이 관심사의 분리를 촉진한다는 것으로, 이는 시간이 지남에 따라 응용 프로그램이 훨씬 더 잘 확장할 수 있도록 돕습니다.Compound 패턴은\u0010함수형 컴포넌트에서도"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound) - teklog"}],["$","meta","7",{"name":"twitter:description","content":"지난 글에 이어서 작성Compound \u0010합성 컴포넌트의 이점은 렌더링의 제어를 부모에게 역전시키면서도, 자식들 사이에서 문맥적 상태 인식을 유지한다는 것입니다. (...) 또 다른 이점은 이 패턴이 관심사의 분리를 촉진한다는 것으로, 이는 시간이 지남에 따라 응용 프로그램이 훨씬 더 잘 확장할 수 있도록 돕습니다.Compound 패턴은\u0010함수형 컴포넌트에서도"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

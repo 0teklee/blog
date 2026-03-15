@@ -1,0 +1,1265 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","64"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","64","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","64","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T9865,<img src="https://asset.leetekwoo.com/demo/2025-03-02-Auto_Resume_Demo.gif" alt="Auto-Resume Demo"><p>배포된 사이트: <a target="_blank" rel="noopener noreferrer nofollow" href="https://resume.leetekwoo.com/">링크</a></p><p>깃헙 레포 : <a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/0teklee/auto-resume">링크</a></p><p>작업 소요 시간: 1.5일 (MVP 버전)</p><h2 class="mt-5 mb-3"><strong>1. 목적</strong></h2><p><strong>Auto Resume</strong>는 Figma 프로젝트를 원본 데이터(Source of Truth)로 삼는 정적 HTML 이력서 웹사이트입니다<strong>.</strong></p><p>이번 프로젝트에는 다음과 같은 목적이 있었습니다.</p><ul class="tight" data-tight="true"><li><p><strong>Figma = Source of Truth</strong> 피그마 문서와 동기화된 웹사이트</p></li><li><p><strong>자동 배포:</strong> Figma 변경 → JSON 변환 → HTML 생성 → 배포까지 수동 개입 없이 처리.</p><ul class="tight" data-tight="true"><li><p>Figma 변경점이 CI/CD의 기준점이 됨</p></li><li><p>최소한의 UI 코드와 최대한의 동기화</p></li></ul></li></ul><h4 class="mt-5 mb-3">동기 Motivation</h4><p>최근 블로그에 Tiptap 에디터를 적용하면서 동적 마크업, 특히 <strong>직렬화된 HTML 파싱</strong>에 대해 고민 중이었습니다. 서버/클라이언트 컴포넌트와 같은 방식 말고 <strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">다른 방법은 없을까 궁금했습니다</mark></strong>.</p><p>마침, <strong>하드 코딩하는 것이 번거로워 업데이트를 안하게 된 제 이력서 웹사이트</strong>가 눈에 들어왔습니다. 실제로 지원할 때 사용하는 이력서와 꽤 큰 차이가 있었습니다. 바로 해봐야겠다 싶었습니다.</p><hr class="my-5"><h2 class="mt-5 mb-3"><strong>2. 설계</strong></h2><h3 class="mt-5 mb-3"><strong>로직 흐름</strong></h3>
+<img src="https://asset.leetekwoo.com/blog/auto-resume-seketch.png" alt="Auto-Resume Sketch">
+<p>노트에 설계와 과정, 필요한 부분을 정리했습니다.</p>
+<p>Figma에서 문서가 바뀌었다는 신호만 서버에 전달할 수 있다면, 나머지는 가능하지 않을까 싶었습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-mermaid">
+stateDiagram
+state "Figma &gt; Source Truth" as Truth {
+이력서작성: 새로운 이력서를 작성한다
+버전변경: 이력서 파일을 피그마에서 "Publish"한다
+웹훅: 피그마에서 웹훅이 실행된다.
+이력서작성 --&gt; 버전변경
+버전변경 --&gt; 웹훅
+}
+
+Truth --&gt; Server: 버전 변경을 서버에 알림
+
+state "Workers(서버리스)" as Server {
+Listen: 📡 웹훅으로부터 버전 변경을 감지한다.
+FigmaAPI: 새로운 버전의 데이터를 피그마 API로 요청한다.
+R2: 응답 받은 피그마 JSON을 버켓에 저장한다.
+FIN: Cloudflare Pages의 deploy-hook을 트리거하고 Workers 종료.
+Listen --&gt; FigmaAPI
+FigmaAPI --&gt; R2
+R2 --&gt; FIN
+}
+
+Server --&gt; Build: Pages Deploy Hook으로 빌드 트리거
+state "빌드 Build" as Build {
+INIT: Deploy Hook이 실행되면 Github 레포에 저장된 빌드 스크립트가 실행된다.
+GET: R2에 저장된 JSON을 가져온다.
+BACKUP: 메타 데이터를 추출해 저장한다.
+PARSE: JSON을 파싱하여 HTML을 생성한다.
+배포트리거: 생성이 완료된 HTML을 Pages가 배포하도록 한다.
+
+INIT --&gt; GET
+GET --&gt; BACKUP
+GET --&gt; PARSE
+BACKUP --&gt; 배포트리거
+PARSE --&gt; 배포트리거
+}
+Build --&gt; StaticSite: Pages를 통한 배포
+state "배포: 정적 사이트 호스팅" as StaticSite {
+Pages: 빌드 완료 이후 새로 생성된 HTML을 감지한다.
+Deploy: Pages는 새로운 HTML을 배포한다.
+Pages --&gt; Deploy
+}</code></pre><h3 class="mt-5 mb-3"><strong>기술 스택</strong></h3><p>계획을 작성할 당시엔 다음과 같은 이유에서 스택을 결정했습니다.</p><table style="min-width: 50px"><colgroup><col style="min-width: 25px"><col style="min-width: 25px"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p></p></th><th colspan="1" rowspan="1"><p></p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Figma Webhook</strong></p></td><td colspan="1" rowspan="1"><p>Figma 프로젝트 Publish 시 웹훅 트리거 (FILE_UPDATE 이벤트 사용)</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare Worker</strong></p></td><td colspan="1" rowspan="1"><p>웹훅 이벤트 처리, Figma API 호출, JSON을 R2에 저장, Deploy Hook 실행</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare R2</strong></p></td><td colspan="1" rowspan="1"><p>최신 Figma JSON을 저장하는 클라우드 스토리지. 무료 플랜에서 Workers 실행은 30s 한도가 있다. R2에 JSON을 저장하고, 배포 스크립트가 실행될 때 JSON을 가져온다.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>GitHub Repository</strong></p></td><td colspan="1" rowspan="1"><p>빌드 및 배포 스크립트 저장</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Node.js + Handlebars</strong></p></td><td colspan="1" rowspan="1"><p>빌드 스크립트에서 사용된다. JSON을 기반으로 HTML 생성한다.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare Pages</strong></p></td><td colspan="1" rowspan="1"><p>정적 HTML을 자동 배포하기 위해 CDN을 사용한다.</p></td></tr></tbody></table><hr class="my-5"><h2 class="mt-5 mb-3"><strong>3. 워크 플로우 구체화</strong></h2><p>위 내용을 바탕으로 각 단계를 구체화했습니다.</p><h3 class="mt-5 mb-3"><strong>3.1 Figma → Worker</strong></h3><ul class="tight" data-tight="true"><li><p>Figma 프로젝트가 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Publish</code>되면, 웹훅을 통해 Cloudflare Worker를 호출.</p></li><li><p>Worker는 Figma API를 사용하여 최신 JSON을 가져옴.</p></li><li><p>가져온 JSON을 Cloudflare R2에 저장한 후, <strong>Pages Deploy Hook</strong>을 트리거.</p></li></ul><h3 class="mt-5 mb-3"><strong>3.2 빌드</strong></h3><ul class="tight" data-tight="true"><li><p>Deploy Hook이 호출되면 <strong>빌드 스크립트</strong>를 실행.</p></li><li><p>빌드가 실행되는 Node.js 환경에서:</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>R2에서 Figma JSON을 가져옴.</p></li><li><p>Handlebars를 사용해 JSON 기반 마크업 생성.</p></li><li><p>생성된 HTML을 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">dist/</code> 폴더에 저장.</p></li></ol></li></ul><h3 class="mt-5 mb-3"><strong>3.3 배포</strong></h3><ul class="tight" data-tight="true"><li><p>Cloudflare Pages의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">dist/</code> 경로로 정적 사이트를 자동 배포.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3"><strong>4. 구현 과정</strong></h1><h2 class="mt-5 mb-3"><strong>A. Figma → Worker</strong></h2><h3 class="mt-5 mb-3"><strong>문제 : Desgin Mode에서 API 사용하기</strong></h3><p>알고보니 Figma Webhook은 Figma Pro만 가능했습니다. 고민 끝에 Figma Pro를 사용하지 않기로 결정했습니다. 이 결정에는 다음과 같은 이유가 있었습니다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>프로젝트 목적 자체가 Figma Design Mode만 사용하는 것이었다.</p></li><li><p>Figma Pro (Dev Mode)가 제공하는 마크업과 CSS를 사용해야 한다.</p></li><li><p>Figma JSON의 Raw Data가 아니라 <strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">Figma 내부의 마크업 생성 로직이 의존성 레이어로 추가</mark></strong>된다.</p></li><li><p>Figma API JSON이 변동사항이 적고, 대응도 쉽다.</p></li><li><p>또한 경험 상, Figma가 생성한 마크업과 CSS의 신뢰성이 높지 않았다.</p></li><li><p>Figma Webhook의 대안으로 Figma 커스텀 플러그인을 만들면, 본래 목적을 이룰 수 있다.</p></li></ol><p>Figma에서 디자인 작업을 한 뒤, 작업 변동 여부만 서버에 전달하는 기능만 필요한 것이라 충분히 가능해 보였습니다.</p><h3 class="mt-5 mb-3"><strong>계획 수정</strong></h3><p>웹훅을 대체 할 커스텀 플러그인을 만들었습니다. 커스텀 플러그인 내부에서 Figma API를 미리 요청하고 Worker로 넘기면, Worker의 런타임 시간도 줄어들어 더욱 적절해 보였습니다.</p><h3 class="mt-5 mb-3"><strong>plugin.js</strong></h3><p>피그마 커스텀 플러그인은 Figma Desktop App에서 열 수 있습니다. manifest.json으로 플러그인을 정의하고, ui.html, plugin.js로 간단한 플러그인을 개발했습니다. 여기서 가장 중요한 plugin.js만 살펴보자면:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// figma는 플러그인이 실행될 때 전역 변수로 제공된다.
+// 플러그인의 ui를 html로 연다. ui.html
+figma.showUI(__html__, { width: 300, height: 150 });  
+
+// 플러그인에서 Figma API로 JSON을 요청한다.
+async function fetchFigmaJSON() {  
+    try {  
+        console.log("Fetching Figma JSON...");  
+        const response = await fetch(`https://api.figma.com/v1/files/${FIGMA_FILE_KEY}`, {  
+            headers: { "X-Figma-Token": FIGMA_API_KEY }  
+        });  
+  
+        if (!response.ok) throw new Error(`Failed to fetch Figma JSON: ${response.statusText}`);  
+  
+        const json = await response.json();  
+        console.log("Fetched JSON successfully:", json);  
+        return json;  
+    } catch (error) {  
+        console.error("Figma API Error:", error.message);  
+        figma.notify("❌ Figma API Error: " + error.message);  
+        return null;  
+    }  
+}  
+
+// figma.ui에 onmessage 이벤트를 등록한다.
+figma.ui.onmessage = async (msg) =&gt; {  
+    if (msg.type === "send-update") { 
+    // "send-update"라는 이벤트로 요청을 시작한다. 
+        console.log("Send update triggered");  
+
+	
+        try {  
+        // 1. Figma JSON 요청
+        const jsonData = await fetchFigmaJSON();  
+        if (!jsonData) {  
+            figma.notify("❌[FIGMA_API]:Failed to fetch Figma data");  
+        }  
+
+        console.log("✅[FIGMA_API]:", JSON.stringify(jsonData)); 
+
+	  // 2. R2로 Figma JSON을 저장한다.
+            const response = await fetch("https://auto-resume-worker.leetekwoo.com", {  
+                method: "POST",  
+                headers: {  
+                    "Content-Type": "application/json",  
+                },  
+                body: JSON.stringify(jsonData),  
+            });  
+  
+            console.log("Worker response status:", response.status);  
+  
+            if (!response.ok) {  
+                throw new Error(`❌[WORKER] Error: ${response.statusText}`);  
+            }  
+  
+            const res = await response.json();  
+  
+            figma.notify("✅[DONE]: Resume update sent successfully!");  
+        } catch (error) {  
+            console.error("❌ Fetch Error:", error.message);  
+            figma.notify("❌ Network error: " + error.message);  
+        } finally {  
+			// 정확히 figma.notify가 실행된 이후 닫히도록 하기 위해 추가
+            await new Promise(r =&gt; setTimeout(r, 500)); 
+            figma.closePlugin();  
+        }  
+    }  
+};</code></pre><p>플러그인이 실행되면, ui.html의 버튼 이벤트로 실행합니다. workers와의 통신에서 CORS 때문에 꽤 오랫동안 트러블 슛팅을 했는데, 이후 살펴보도록 하겠습니다.</p><h3 class="mt-5 mb-3"><strong>Figma JSON Interface</strong></h3><p>JSON으로 마크업을 구성하기 위해 피그마 JSON을 분석했습니다. Figma API의 GET 요청은 각 그래픽 요소를 노드로 나타냅니다. 그래픽 정보는 키-값으로 표현되고, children의 배열로 계층이 표현됩니다.</p><p>마크업을 표현하는 일반적인 자료 구조(ex:DOM api, ReactElement)와 유사하지만, Figma 고유의 필드명과 프로퍼티가 다르기 때문에 별도의 맵핑과 파싱이 필요합니다.</p><p>이번 프로젝트에서 중요하게 사용한 필드들은 다음과 같습니다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-json">{
+	// 부모:n번째 자식 - 으로 노드 연결관계를 표현한다  
+    "id": "0:1",  
+    // 피그마 레이어의 이름이 설정된다. 
+    // NOTE: 파싱에서 로직을 단순화하기 위한 인덱스로 사용했다.
+	"name": "truth-resume",  
+	// NOTE: 파싱에서 사용. 타입 구분이 중요하다. 
+	"type": "DOCUMENT | CANVAS | FRAME | LAYOUT | TEXT | IMAGE | ...",
+    // NOTE: HTTP 캐시 헤더처럼 활용할 수 있다    
+    "lastModified": "2025-03-01T03:10:10Z", 
+	// NOTE: 재귀적으로 계층 구조를 나타낸다.
+	"children": [  
+	//	... 동일한 구조의 객체(노드)로 구성
+	],
+
+	// NOTE: 각 노드의 스타일 정보를 포함한다.
+	"styles": {
+		"fontFamily": "Noto Sans KR",  
+		"fontPostScriptName": null,  
+		"fontStyle": "Bold",  
+		"fontWeight": 700, 
+		// NOTE: hyperlink 필드에는 링크 주소등이 포함된다. 
+		"hyperlink": {  
+		  "type": "URL",  
+		  "url": "https://resume.com"  
+		},  
+		"textAutoResize": "WIDTH_AND_HEIGHT",  
+		"textDecoration": "UNDERLINE",  
+		"fontSize": 11,  
+		"textAlignHorizontal": "RIGHT",  
+		"textAlignVertical": "TOP",  
+		"letterSpacing": 0,  
+		"lineHeightPx": 15.927999496459961,  
+		"lineHeightPercent": 100,  
+		"lineHeightUnit": "INTRINSIC_%"
+		// ....기타 수 많은 필드가 TYPE에 따라 추가/제거된다.
+	},  
+
+	// NOTE: type: 타입이 TEXT인 노드에서 특히 많이 사용된다. 
+	// characters 내부에 특정 영역만 볼드, 언더라인, 링크가 적용됐을 때 사용된다.
+	// 숫자로 스타일 오버라이드가 적용된 텍스트의 인덱스를 나타낸다.   
+	"characterStyleOverrides": [  
+	  18, 16, 16, 16, 16, 16, 16  
+	],
+	"styleOverrideTable": {  
+	// 위의 인덱스를 문자열 키로 나타낸다. 
+	  "16": {  
+	  // 텍스트의 일부에만 링크가 적용된 경우, 이 필드를 사용해야 한다.
+	    "hyperlink": {  
+	      "type": "URL",  
+	      "url": "https://0teklee.github.io/resume/cv.html"  
+	    },  
+	    "textDecoration": "UNDERLINE",  
+	    "fills": [  
+	      {  
+	        "blendMode": "NORMAL",  
+	        "type": "SOLID",  
+	        "color": {  
+	          "r": 0.11101888120174408,  
+	          "g": 0.11018768697977066,  
+	          "b": 0.11018768697977066,  
+	          "a": 1  
+	        }  
+	      }  
+	    ]  
+	  },  
+	  "18": { "textDecoration": "UNDERLINE" }  
+},
+
+	characters: "string", // TYPE TEXT 인 노드들의 텍스트 컨텐츠. 실제 텍스트 내용이된다.
+	
+  // NOTE: Figma Auto Layout에서 정렬을 나타내는 필드들
+  "constraints": {  
+    "vertical": "TOP", // align, justify 방향과 매치될 수 있다.  
+    "horizontal": "LEFT"  
+  },  
+  "layoutAlign": "INHERIT",  
+  "layoutGrow": 0,  
+  "layoutSizingHorizontal": "HUG", // figma auto layout의 크기 설정
+  "layoutSizingVertical": "HUG",
+  "components": {},  // 피그마 컴포넌트
+  "componentSets": {},  
+  "version": "2190358777510355977",   // 피그마 내부 버전
+  "role": "owner",  // Figma API 요청의 권한
+}</code></pre><p>Note에서 이번 작업에 중요하게 사용한 필드들을 정리했습니다. 생각보다 구조가 복잡하여, 레이어 이름 (name 필드)를 사용해 파싱 로직을 단순화하게 되었습니다. Figma 편집에서 적절한 레이어 이름을 추가해야 하는 단점이 있었지만, MVP 단계임을 감안했습니다.</p><h3 class="mt-5 mb-3"><strong>Cloudflare Worker</strong></h3><p><strong>Worker 역할:</strong></p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>피그마로부터 JSON을 넘겨받아 R2에 저장</p></li><li><p>Deploy Hook을 트리거</p></li></ol><p>Worker에서 더 많은 작업을 처리할 수도 있습니다. 하지만 무료 플랜에서 30초 런타임 시간 제한과 비용 관리도 신경써야 하기에, 빌드 스크립트에서 마크업을 변환했습니다. 따라서 Worker의 책임을 JSON을 R2에 저장하고, Deploy Hook URL로 POST 요청을 보내는 것으로 정했습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-typescript">// Cloudflare의 엣지 환경에서 실행될 때 사용되는 환경변수
+// wrangler secret으로 설정하여 코드에는 포함하지 않음
+export interface Env {  
+  //@ts-expect-error  
+  RESUME_STORAGE: R2Bucket;  
+  DEPLOY_HOOK_URL: any;  
+}  
+export default {  
+  async fetch(request: Request, env: Env): Promise&lt;Response&gt; {  
+    // NOTE: CORS의 Preflight 처리 (CORS)    
+    if (request.method === "OPTIONS") {  
+      return new Response(null, {  
+        status: 204,  
+        headers: {  
+....
+    }  
+  
+    if (request.method !== "POST") {  
+	    // worker의 CORS 설정을 POST만 가능하게 설정했음
+      return new Response("❌[WORKER]:Method Not Allowed", { status: 405 });  
+    }  
+  
+    try {  
+      const jsonData = await request.json();  
+      // NOTE: JSON 데이터의 변경 시점을 저장
+      const dateStr = jsonData?.lastModified ||
+      new Date().toISOString(); 
+  
+      // 1. R2에서 최신 파일 목록 가져오기  
+      const existingFiles = await env.RESUME_STORAGE.list({  
+        prefix: `v`,  
+        limit: 100,  
+      });  
+  
+      // 2. R2 리스트에서 가장 최신 버전 찾기  
+      let maxVersion = 0;  
+      if (existingFiles.objects.length &gt; 0) {  
+  existingFiles.objects.forEach((obj: any) =&gt; {  
+          const match = obj.key.match(/^v(\d+)-(\d{4}-\d{2}-\d{2})\T\((\d+):\(\d+):\(\d).json$/);  
+          if (match &amp;&amp; match[2] === dateStr) {  
+            maxVersion = Math.max(maxVersion, parseInt(match[1], 10));  
+          }  
+        });  
+      }  
+  
+      // 3. 파일 없을 시, 버전을 1로 설정  
+      const newVersion = maxVersion + 1;  
+      const versionedKey = `v${newVersion}-${dateStr}.json`;  
+      const fileName = `v${newVersion}-${dateStr}.json`;  
+  
+      //4. R2에 새 버전 저장 (버저닝 기록을 위해) 
+      await env.RESUME_STORAGE.put(fileName, JSON.stringify(jsonData), {  
+        httpMetadata: { contentType: "application/json" },  
+      });  
+  
+      // NOTE: Build 스크립트에서 가장 최신 버전을 "latest.json" 저장하여 포인터로 사용 
+      await env.RESUME_STORAGE.put("latest.json", JSON.stringify(jsonData), {  
+        httpMetadata: { contentType: "application/json" },  
+      });  
+
+	 // 5. Pages Deploy Hook에 POST 요청을 보내면 빌드-배포가 트리거됨
+      let deploy_url = env.DEPLOY_HOOK_URL;  
+      const deployResponse = await fetch(`${deploy_url}`, {  
+        method: "POST",  
+      });  
+  
+      if (deployResponse.ok) {  
+        console.info("✅[WORKER]:Deploy hook 호출: Cloudflare Pages Rebuild");  
+      } 
+      // 5. Figma 플러그인으로 Ok 응답 보내어 플러그인 종료 
+      return new Response(  
+        JSON.stringify({  
+          success: true,  
+          message: `✅[WORKER]:JSON saved as ${versionedKey}`,  
+        }),  
+        {  
+          headers: {  
+            "Content-Type": "application/json",  
+            "Access-Control-Allow-Origin": "*",  
+            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",  
+            "Access-Control-Allow-Headers": "Content-Type",  
+          },  
+        },  
+      );  
+    } catch (error) {  
+      console.error("❌[Worker]: Error", error);  
+      return new Response("❌[Worker]: Error", { status: 500 });  
+    }  
+  },  
+};</code></pre><p>빌드 스크립트와 버저닝을 위한 데이터를 저장하고 Deploy Hook을 요청하며 마칩니다. 이 때 중요한 것은 Worker의 응답을 받는 쪽은 Figma 플러그인입니다. CORS 에러를 해결하며 약간의 작업 지연이 있었습니다.</p><h4 class="mt-5 mb-3">Trouble Shoot: CORS 에러 처리하기</h4><p>피그마 커스텀 플러그인은 <strong>Webview</strong> 환경인 <strong>데스크탑 앱</strong>에서 구동되기 때문에, 플러그인 실행 이후 <strong>Worker 요청에서 계속 CORS에러가 발생</strong>했습니다. </p><p></p><p>알고보니Figma 플러그인이 실행되는 <strong>Desktop App의 환경에서 Origin, Referrer가 null</strong>이었습니다. 요청에서 Origin 헤더를 넣어도 하여도, 제거하고 원본을 보내기 때문에, 적절한 조치가 필요했습니다.</p><p></p><p>문제의 원인은 <strong>Workers가 응답으로 적절한 CORS 헤더를 보내고 있지 않았던 것</strong>입니다. 하지만 와일드 카드를 사용하자니, 제 Figma 문서와 배포된 웹사이트 모두 취약점이 노출될 수 있었습니다.</p><p></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// workers
+// Authorization 헤더 설정 - .env.local, figma client storage, cloudflare secret에 저장됨
+    const authHeader = request.headers.get("Authorization");
+    const isAuthorized = authHeader === `Bearer ${env.WORKER_API_KEY}`;
+
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "null",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      // 요청의 authorization 헤더를 받기 위해 true 설정
+      "Access-Control-Allow-Credentials": "true",
+    };
+
+// WORKER_API_KEY 토큰으로 권환 확인
+      if (request.method !== "POST" || !isAuthorized) {
+      return new Response("❌[WORKER]:Method Not Allowed", { status: 405 });
+    }
+
+
+// plugin.js
+      // 피그마 클라이언트 스토리지에서 환경변수 불러오기
+      // Promise.all 사용 시 RuntimeError: memory access out of bounds
+      const PLUGIN_API_KEY =
+        await figma.clientStorage.getAsync("PLUGIN_API_KEY");
+      const WORKER_URL = await figma.clientStorage.getAsync("WORKER_URL");
+      const FIGMA_FILE_KEY =
+        await figma.clientStorage.getAsync("FIGMA_FILE_KEY");
+      const FIGMA_API_KEY = await figma.clientStorage.getAsync("FIGMA_API_KEY");
+
+      figma.notify("✅ [ENV]: WORKER_URL SET");
+
+// Worker로 Figma JSON 전달
+      const response = await fetch(WORKER_URL, {
+        method: "POST",
+// 외부 주소인 worker로 요청을 보낼 때 인증 헤더를 포함한다
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+// Bearer Token을 보낸다
+          Authorization: `Bearer ${PLUGIN_API_KEY}`,
+        },
+        body: JSON.stringify(jsonData),
+      });
+
+</code></pre><p>서버리스 워커, 웹뷰, 빌드 모두 다른 환경에서 실행되는 스크립트여서 혼동이 많았습니다. 특히 플러그인의 경우 웹뷰 환경이어서 node나 web api를 활용할 수 없는 것이 어려웠습니다. 이를 해결하기 위해 figma clientStorage, wrangler secret, 로컬 개발 환경에선 .env.local을 적절히 사용하여 공개된 레포에 올리면서 환경변수를 분리할 수 있었습니다.</p><p></p><p>우선은 서버와 클라이언트의 적절한 CORS 헤더 설정으로 이를 방지할 수 있었습니다. credentials: "same-origin"이어도 origin이 null이면 어디서든 허용된 헤더를 추가할 수 있습니다.</p><h2 class="mt-5 mb-3"><strong>B. CI</strong></h2><h3 class="mt-5 mb-3"><strong>wrangler.toml</strong></h3><p>Cloudflare의 Worker, Pages는 서버리스 환경에서 실행됩니다. 이 환경에 필요한 변수들과 경로를 wrangler.toml에서 설정해야합니다. Secret을 사용해 퍼블릭 레포에 노출되어서 안되는 환경 변수들은 wrangler secret put {name} 명령어나 클라우드플레어 대시보드에서 설정할 수 있습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-toml">name = "auto-resume-worker"  
+main = "./cloudflare/worker.ts"  
+compatibility_date = "2025-02-27"  
+
+  %% NOTE: 중요! R2의 버켓과 워커의 환경변수를 바인딩해야 한다. %%
+[[r2_buckets]]  
+binding = "RESUME_STORAGE"  
+bucket_name = "auto-bucket"  
+preview_bucket_name= "auto-bucket-preview"  
+  
+[observability.logs]  
+enabled = true  
+  
+%% Pages 관련 환경 변수 %% 
+[build]  
+command = "npm run build"  
+%% 
+pages_build_output_dir를 대시보드나 .toml에서 정의해야 한다. 
+wrangler.toml에서 Pages 설정을 포함한다면 pages_build_output_dir가 
+필요하다. (wrangler cli 에러 발생)
+%%
+
+pages_build_output_dir = "dist"</code></pre><p>wrangler를 통해 서버리스 환경에서 실행될 함수를 명령어로 따로 배포할 수도 있습니다.</p><h3 class="mt-5 mb-3"><strong>build.js</strong></h3><p>Handlerbars를 이용해 JSON을 마크업으로 변환합니다. build.js는 Deploy Hook으로 POST 요청을 받으면 실행됩니다. 빌드 → 배포 순서를 보장하기 위해 적절한 스크립트 설정이 필요합니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-json">/*
+Pages 설정 혹은 wrangler.toml에서 
+"npm run build"를 포함해야 @/src/scripts/build.js 해당 스크립트가 실행됨
+*/
+// auto-resume/package.json
+{
+	"scripts": {  
+	  "build": "node src/scripts/build.js",  
+	}
+}</code></pre><p>이렇게 실행되는 빌드 스크립트는 다음과 같습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">/*  
+## Cloudflare Pages Build Script  
+    목적: 최신 버전의 JSON을 R2로부터 받은 뒤, dist/index.html 생성  
+    실행 시점: Deploy Hook 요청 받을 시 즉시 실행.  
+*/  
+// ...   
+// 즉시 실행 함수로 빌드 시작
+(async () =&gt; {  
+  try {  
+
+    // 1. 가장 최신 버전의 URL 포인터로 접근  
+    const response = await fetch(process.env.LATEST_FIGMA);  
+    if (!response.ok) {  
+      throw new Error(  
+        `❌[BUILD]: R2 request - Failed to get resume JSON : ${response.status} ${response.statusText}`,  
+      );  
+    } else {  
+      console.info(["[BUILD]:get latest json"]);  
+    }  
+    const resumeData = await response.json();  
+  
+    // 2. template.hbs를 배포된 파일로부터 가져옴
+    const templatePath = path.join(__dirname, "..", "template", "template.hbs");  
+    const templateSource = fs.readFileSync(templatePath, "utf-8"); 
+
+	// 3. NOTE: Handlerbars 인스턴스에 파싱 로직을 Helper로 등록 
+    Handlebars.registerHelper(  
+      recursiveChildren.key,  
+      recursiveChildren.function,  
+    );  
+  
+    // 4. NOTE: HandlerBars 인스턴스를 이용해 template.hbs를 컴파일
+    const template = Handlebars.compile(templateSource);  
+  
+    // 5. NOTE: Figma JSON을 template.hbs에 주입  
+    const outputHtml = template(resumeData);  
+  
+    // 6. output 경로 확인  
+    const distDir = path.join(__dirname, "..", "..", "dist");  
+    if (!fs.existsSync(distDir)) {  
+      fs.mkdirSync(distDir);  
+    }  
+  
+    // 7. 생성된 HTML을 경로 dist/index.html에 저장  
+    const outputPath = path.join(distDir, "index.html");  
+    fs.writeFileSync(outputPath, outputHtml);  
+  
+    console.log("✅[BUILD]: HTML 생성 완료 dist/index.html");  
+  } catch (err) {  
+    console.error("❌[BUILD]: Build script error:", err);  
+    process.exit(1); // Fail the build if an error occurs  
+  }  
+})();</code></pre><p>주석에서 3번부터 5번까지가 실제 변환이 일어나는 구간입니다. 이 부분을 순서대로 설명하면,</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>Handlebars 인스턴스에 파싱 로직을 주입</p></li><li><p>Handlerbars로 template.hbs를 컴파일 = 콜백 함수 리턴</p></li><li><p>콜백 함수에 Figma JSON을 인자로 넘겨 직렬화된 html을 생성</p></li></ol><p>과 같습니다. 이 단계를 조금 더 명확하게 하기 위해 파일을 분리했습니다. 특히 실질적인 파싱이 일어나는 helper.js에서 로직이 길어져 분리가 필요했습니다.</p><h3 class="mt-5 mb-3"><strong>template.hbs &amp; helper.js : Figma API JSON 파싱하기</strong></h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// helper.js
+// Figma 노드는 재귀적으로 구성된 그래프임으로, DFS가 필요합니다.
+const recursiveChildren = {  
+  key: "recursiveChildren",  
+  function(children, opts, parentMaxDepth = null) {  
+    let result = "";  
+  
+    children.forEach((child) =&gt; {  
+      // 그래프 높이 계산 유틸 적용
+      const maxDepth = parentMaxDepth ?? getMaxDepth({ children });  
+  
+      // NOTE: child.name = Figma 레이어 이름 
+      // 재귀 함수 실행 중 변경되면 영향을 줄 수 있어서 주의
+      const safeClassName = child.name ?? "";  
+  
+      // list-items를 ul &gt; li 태그로 전환  
+      if (safeClassName.includes("list-items")) {  
+        const lines = child.characters  
+          .split("\n")  
+          .map((line) =&gt; line.trim())  
+          .filter(Boolean);  
+  
+        let href = Object.values(child?.styleOverrideTable)[0]?.hyperlink?.url;  
+  
+        const liClass = safeClassName  
+          .split(" ")  
+          .filter((item) =&gt; item !== "list-items");  
+  
+        const listItems = lines  
+          .map((item, i) =&gt; {  
+          // NOTE: 리스트 내부에 부분적으로 링크가 적용된 부분이 있었습니다.
+            const isLinkList = liClass.includes("link");  
+            const isLinkFirstItem = isLinkList &amp;&amp; i === 0;  
+            if (isLinkFirstItem &amp;&amp; href) {  
+              return `&lt;li class=""&gt;&lt;a class="link" href="${href}"&gt;${item}&lt;/a&gt;&lt;/li&gt;`;  
+            } else if (isLinkList &amp;&amp; !isLinkFirstItem) {  
+              const filtered = liClass  
+                .filter((item) =&gt; item !== "link")  
+                .join("");  
+              return `&lt;li class="${filtered}"&gt;${item}&lt;/li&gt;`;  
+            }  
+            return `&lt;li class="${liClass}"&gt;${item}&lt;/li&gt;`;  
+          })  
+          .join("");  
+        result += `&lt;ul class="list-items"&gt;${listItems}&lt;/ul&gt;`;  
+      }  
+  
+      // NOTE: 텍스트 노드를 적절한 시멘틱 태그로 변경합니다.
+      if (child.type === "TEXT" &amp;&amp; !safeClassName.includes("list-items")) {  
+        let tag = "p";  
+        let attr = "";  
+        if (child.name.includes("h1")) tag = "h1";
+        // 피그마에서 link는 텍스트 + style.hyperlink로 저장되어 
+        // a 태그 변환이 필요합니다.  
+        else if (child.name.includes("link")) {  
+          tag = "a";  
+          attr = child?.style?.hyperlink?.url  
+            ? `href="${child.style.hyperlink.url}"`  
+            : "";  
+        } else if (child.name.includes("h2")) tag = "h2";  
+        else if (child.name.includes("h3")) tag = "h3";  
+        else if (child.name.includes("h4")) tag = "h4";  
+        else if (child.name.includes("h5")) tag = "h5";  
+        else if (child.name.includes("bold")) tag = "strong";  
+        else if (child.name.includes("span")) tag = "span";  
+
+		// NOTE: "link" 레이어의 overrideStyle 사용 시, a 태그 스타일과 충돌이 일어납니다.
+        const textStyleOverride =  
+          child.name !== "link" ? applyTextStyles(child) : child.characters;  
+          
+	   // NOTE: result에 직렬화된 태그를 추가합니다. 
+        result += `&lt;${tag} ${attr || ""} class="${child.name}"&gt;${textStyleOverride}&lt;/${tag}&gt;`;  
+      }  
+  
+      // COL/ROW 레이아웃 프레임 노드  
+      if (  
+        (child.type === "FRAME" || child.type === "GROUP") &amp;&amp;  
+        child.name.match(/\b(col-\d+|row-\d+)\b/g)  
+      ) {  
+      // Figma JSON의 레이아웃 필드를 사용합니다.
+        let { layoutMode, itemSpacing = 4 } = child;  
+
+		// layer 이름의 col | row로 layoutMode가 정확하지 않을 시
+        let tempClass = child.name;  
+        let classNames = tempClass.replace(/\b(col-\d+|row-\d+)\b/g, "").trim();  
+        const groupType = layoutMode === "VERTICAL" ? "col" : "row";  
+        let gapMatch = child.name.match(/(\d+)/);  
+  
+        let styleAttrs = itemSpacing ?? 4;  
+        styleAttrs = gapMatch ? gapMatch[0] : styleAttrs;  
+  
+        result += `&lt;div class="${groupType}${classNames ? " " + classNames : ""}" style="gap:${styleAttrs}px"&gt;`;  
+
+	// NOTE: 자식 노드가 모두 닫힌 후 자신의 태그를 닫아야함
+        if (child.children &amp;&amp; child.children.length &gt; 0) {  
+          result += Handlebars.helpers.recursiveChildren(  
+            child.children,  
+            opts,  
+            maxDepth,  
+          );  
+        } 
+        result += `&lt;/div&gt;`;  
+      } 
+      // 도형, 줄바꿈 노드인 경우 CSS 클래스로 스타일링 처리
+      else if (  
+        child.type === "RECTANGLE" ||  
+        child.type === "ELLIPSE" ||  
+        child.name === "br"  
+      ) {  
+        result += `&lt;div class="${safeClassName}"&gt;&lt;/div&gt;`;  
+      }  
+    });  
+  
+    return new Handlebars.SafeString(result);  
+  },  
+};  
+  
+module.exports = { if_eq, recursiveChildren };</code></pre><p>recursiveChildren에서 신경썼던 부분은 그래프 탐색입니다. 특히 자식이 있는 노드는 모든 자식 노드의 태그가 닫힌 다음에서야 자신의 노드가 닫혀야합니다. <a target="_blank" rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/63#b-postorder-traversal"><strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">후위 순회에서 DOM 트리의 직렬화-역직렬화</mark></strong></a>에 사용된다는 예시가 이제 이해됩니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// NOTE: 자식 노드가 모두 닫힌 후 자신의 태그를 닫아야함
+        if (child.children &amp;&amp; child.children.length &gt; 0) {  
+          result += Handlebars.helpers.recursiveChildren(  
+            child.children,  
+            opts,  
+            maxDepth,  
+          );  
+        } 
+        // 후위 순회 
+        result += `&lt;/div&gt;`;  
+      } </code></pre><h3 class="mt-5 mb-3"><strong>utils.js</strong></h3><p>helpers가 너무 길어져 함수 분리가 필요했습니다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">function getMaxDepth(node, depth = 1) {  
+  if (!node.children || node.children.length === 0) return depth;  
+  return Math.max(  
+    ...node.children.map((child) =&gt; getMaxDepth(child, depth + 1)),  
+  );  
+}  
+
+// NOTE: Figma API의 styleOverrride 필드, 텍스트의 부분적인 스타일링을 위한 별도의 함수입니다.
+function applyTextStyles(node) {  
+  let text = node.characters;  
+  if (!text || !node?.characterStyleOverrides) return "";  
+  let styles = node.characterStyleOverrides || [];  
+  let overrideTable = node.styleOverrideTable || {};  
+  let styledText = "";  
+  let openTags = [];  
+
+  for (let i = 0; i &lt; text.length; i++) {  
+    let styleKey = styles[i] || 0;  
+    let style = overrideTable[styleKey] || {};  
+  
+    let tagStart = "";  
+    let tagEnd = "";  
+  
+    if (style.fontWeight === 700) {  
+      tagStart += "&lt;b class='bold'&gt;";  
+      tagEnd = "&lt;/b&gt;" + tagEnd;  
+    }  
+    if (style.textDecoration === "UNDERLINE") {  
+      tagStart += "&lt;u class='underline'&gt;";  
+      tagEnd = "&lt;/u&gt;" + tagEnd;  
+    }  
+  
+    if (openTags.length &gt; 0 &amp;&amp; tagStart !== openTags[openTags.length - 1]) {  
+      styledText += openTags.pop();  
+    }  
+  
+    if (tagStart) {  
+      styledText += tagStart;  
+      openTags.push(tagEnd);  
+    }  
+  
+    styledText += text[i];  
+  }  
+  
+  while (openTags.length) {  
+    styledText += openTags.pop();  
+  }  
+  
+  return styledText;  
+}  </code></pre><h2 class="mt-5 mb-3"><strong>C. CD</strong></h2><p>클라우드플레어 Pages는 Deploy Hook을 제공합니다. Deploy Hook URL로 POST 요청이 들어오면, Pages에서 설정한 대로 CI/CD가 트리거됩니다. 빌드와 배포 순서를 보장하기 위해 앞서 빌드 파일을 구성했습니다.</p><hr class="my-5"><h1 class="mt-5 mb-3"><strong>5. 배포</strong></h1><h2 class="mt-5 mb-3"><strong>프로젝트 구조</strong></h2><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-arduino">├── README.md
+├── cloudflare
+│&nbsp;&nbsp; └── worker.ts
+├── dist
+│&nbsp;&nbsp; ├── index.html
+│&nbsp;&nbsp; └── template.css
+├── package-lock.json
+├── package.json
+├── src
+│&nbsp;&nbsp; ├── plugin // 피그마 플러그인 
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── manifest.json
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── plugin.js
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── ui.html
+│&nbsp;&nbsp; ├── scripts // 빌드 스크립트
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── build.js
+│&nbsp;&nbsp; ├── template // HTML 생성 hbs 관련 파일
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── helper.js
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── template.hbs
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── utils.js
+│&nbsp;&nbsp; └── test 
+│&nbsp;&nbsp;     └── template // 로컬 스크립트 실행으로 html 생성 
+│&nbsp;&nbsp;         ├── generate.js
+│&nbsp;&nbsp;         └── test:gen.js
+├── test
+├── tsconfig.json
+└── wrangler.toml
+</code></pre><h2 class="mt-5 mb-3"><strong>개선점</strong></h2><p>아직 손을 댈 부분이 많은 것 같습니다. 페이지 추가, 피그마 데이터를 바탕으로 CSS 생성하기, 지원 이력 A/B 테스트를 위한 추가 기록, 버저닝 개선 등등. 차근 차근 해나갈 예정입니다. 이력서를 시작으로 여러 정적 웹사이트 빌드, 배포에도 사용할 수 있을 것 같습니다.</p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Auto Resume"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2025/03/01"}],["$","p",null,{"children":"n°64"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","Recap"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:T127ec,<img alt="img" width="100%" height="100%" src="https://asset.leetekwoo.com/demo/2025-03-02-Auto_Resume_Demo.gif"><p>배포된 사이트: <a rel="noopener noreferrer nofollow" href="https://resume.leetekwoo.com/">링크</a></p><p>깃헙 레포 : <a rel="noopener noreferrer nofollow" href="https://github.com/0teklee/auto-resume">링크</a></p><p>작업 소요 시간: 1.5일 (MVP 버전)</p><h2 class="mt-5 mb-3" id=""><strong>1. 목적</strong></h2><p><strong>Auto Resume</strong>는 Figma 프로젝트를 원본 데이터(Source of Truth)로 삼는 정적 HTML 이력서 웹사이트입니다<strong>.</strong></p><p>이번 프로젝트에는 다음과 같은 목적이 있었습니다.</p><ul class="tight" data-tight="true"><li><p><strong>Figma = Source of Truth</strong> 피그마 문서와 동기화된 웹사이트</p></li><li><p><strong>자동 배포:</strong> Figma 변경 → JSON 변환 → HTML 생성 → 배포까지 수동 개입 없이 처리.</p><ul class="tight" data-tight="true"><li><p>Figma 변경점이 CI/CD의 기준점이 됨</p></li><li><p>최소한의 UI 코드와 최대한의 동기화</p></li></ul></li></ul><h4 class="mt-5 mb-3">동기 Motivation</h4><p>최근 블로그에 Tiptap 에디터를 적용하면서 동적 마크업, 특히 <strong>직렬화된 HTML 파싱</strong>에 대해 고민 중이었습니다. 서버/클라이언트 컴포넌트와 같은 방식 말고 <strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">다른 방법은 없을까 궁금했습니다</mark></strong>.</p><p>마침, <strong>하드 코딩하는 것이 번거로워 업데이트를 안하게 된 제 이력서 웹사이트</strong>가 눈에 들어왔습니다. 실제로 지원할 때 사용하는 이력서와 꽤 큰 차이가 있었습니다. 바로 해봐야겠다 싶었습니다.</p><hr class="my-5"><h2 class="mt-5 mb-3" id="-1"><strong>2. 설계</strong></h2><h3 class="mt-5 mb-3" id="-2"><strong>로직 흐름</strong></h3>
+<img alt="img" width="100%" height="100%" src="https://asset.leetekwoo.com/blog/auto-resume-seketch.png">
+<p>노트에 설계와 과정, 필요한 부분을 정리했습니다.</p>
+<p>Figma에서 문서가 바뀌었다는 신호만 서버에 전달할 수 있다면, 나머지는 가능하지 않을까 싶었습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-mermaid">
+stateDiagram
+state "Figma > Source Truth" as Truth {
+이력서작성: 새로운 이력서를 작성한다
+버전변경: 이력서 파일을 피그마에서 "Publish"한다
+웹훅: 피그마에서 웹훅이 실행된다.
+이력서작성 --> 버전변경
+버전변경 --> 웹훅
+}
+
+Truth --> Server: 버전 변경을 서버에 알림
+
+state "Workers(서버리스)" as Server {
+Listen: 📡 웹훅으로부터 버전 변경을 감지한다.
+FigmaAPI: 새로운 버전의 데이터를 피그마 API로 요청한다.
+R2: 응답 받은 피그마 JSON을 버켓에 저장한다.
+FIN: Cloudflare Pages의 deploy-hook을 트리거하고 Workers 종료.
+Listen --> FigmaAPI
+FigmaAPI --> R2
+R2 --> FIN
+}
+
+Server --> Build: Pages Deploy Hook으로 빌드 트리거
+state "빌드 Build" as Build {
+INIT: Deploy Hook이 실행되면 Github 레포에 저장된 빌드 스크립트가 실행된다.
+GET: R2에 저장된 JSON을 가져온다.
+BACKUP: 메타 데이터를 추출해 저장한다.
+PARSE: JSON을 파싱하여 HTML을 생성한다.
+배포트리거: 생성이 완료된 HTML을 Pages가 배포하도록 한다.
+
+INIT --> GET
+GET --> BACKUP
+GET --> PARSE
+BACKUP --> 배포트리거
+PARSE --> 배포트리거
+}
+Build --> StaticSite: Pages를 통한 배포
+state "배포: 정적 사이트 호스팅" as StaticSite {
+Pages: 빌드 완료 이후 새로 생성된 HTML을 감지한다.
+Deploy: Pages는 새로운 HTML을 배포한다.
+Pages --> Deploy
+}</code></pre><h3 class="mt-5 mb-3" id="-3"><strong>기술 스택</strong></h3><p>계획을 작성할 당시엔 다음과 같은 이유에서 스택을 결정했습니다.</p><table style="min-width: 50px"><colgroup><col style="min-width: 25px"><col style="min-width: 25px"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p></p></th><th colspan="1" rowspan="1"><p></p></th></tr><tr><td colspan="1" rowspan="1"><p><strong>Figma Webhook</strong></p></td><td colspan="1" rowspan="1"><p>Figma 프로젝트 Publish 시 웹훅 트리거 (FILE_UPDATE 이벤트 사용)</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare Worker</strong></p></td><td colspan="1" rowspan="1"><p>웹훅 이벤트 처리, Figma API 호출, JSON을 R2에 저장, Deploy Hook 실행</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare R2</strong></p></td><td colspan="1" rowspan="1"><p>최신 Figma JSON을 저장하는 클라우드 스토리지. 무료 플랜에서 Workers 실행은 30s 한도가 있다. R2에 JSON을 저장하고, 배포 스크립트가 실행될 때 JSON을 가져온다.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>GitHub Repository</strong></p></td><td colspan="1" rowspan="1"><p>빌드 및 배포 스크립트 저장</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Node.js + Handlebars</strong></p></td><td colspan="1" rowspan="1"><p>빌드 스크립트에서 사용된다. JSON을 기반으로 HTML 생성한다.</p></td></tr><tr><td colspan="1" rowspan="1"><p><strong>Cloudflare Pages</strong></p></td><td colspan="1" rowspan="1"><p>정적 HTML을 자동 배포하기 위해 CDN을 사용한다.</p></td></tr></tbody></table><hr class="my-5"><h2 class="mt-5 mb-3" id="-4"><strong>3. 워크 플로우 구체화</strong></h2><p>위 내용을 바탕으로 각 단계를 구체화했습니다.</p><h3 class="mt-5 mb-3" id="-5"><strong>3.1 Figma → Worker</strong></h3><ul class="tight" data-tight="true"><li><p>Figma 프로젝트가 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Publish</code>되면, 웹훅을 통해 Cloudflare Worker를 호출.</p></li><li><p>Worker는 Figma API를 사용하여 최신 JSON을 가져옴.</p></li><li><p>가져온 JSON을 Cloudflare R2에 저장한 후, <strong>Pages Deploy Hook</strong>을 트리거.</p></li></ul><h3 class="mt-5 mb-3" id="-6"><strong>3.2 빌드</strong></h3><ul class="tight" data-tight="true"><li><p>Deploy Hook이 호출되면 <strong>빌드 스크립트</strong>를 실행.</p></li><li><p>빌드가 실행되는 Node.js 환경에서:</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>R2에서 Figma JSON을 가져옴.</p></li><li><p>Handlebars를 사용해 JSON 기반 마크업 생성.</p></li><li><p>생성된 HTML을 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">dist/</code> 폴더에 저장.</p></li></ol></li></ul><h3 class="mt-5 mb-3" id="-7"><strong>3.3 배포</strong></h3><ul class="tight" data-tight="true"><li><p>Cloudflare Pages의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">dist/</code> 경로로 정적 사이트를 자동 배포.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3" id="-8"><strong>4. 구현 과정</strong></h1><h2 class="mt-5 mb-3" id="-9"><strong>A. Figma → Worker</strong></h2><h3 class="mt-5 mb-3" id="-10"><strong>문제 : Desgin Mode에서 API 사용하기</strong></h3><p>알고보니 Figma Webhook은 Figma Pro만 가능했습니다. 고민 끝에 Figma Pro를 사용하지 않기로 결정했습니다. 이 결정에는 다음과 같은 이유가 있었습니다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>프로젝트 목적 자체가 Figma Design Mode만 사용하는 것이었다.</p></li><li><p>Figma Pro (Dev Mode)가 제공하는 마크업과 CSS를 사용해야 한다.</p></li><li><p>Figma JSON의 Raw Data가 아니라 <strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">Figma 내부의 마크업 생성 로직이 의존성 레이어로 추가</mark></strong>된다.</p></li><li><p>Figma API JSON이 변동사항이 적고, 대응도 쉽다.</p></li><li><p>또한 경험 상, Figma가 생성한 마크업과 CSS의 신뢰성이 높지 않았다.</p></li><li><p>Figma Webhook의 대안으로 Figma 커스텀 플러그인을 만들면, 본래 목적을 이룰 수 있다.</p></li></ol><p>Figma에서 디자인 작업을 한 뒤, 작업 변동 여부만 서버에 전달하는 기능만 필요한 것이라 충분히 가능해 보였습니다.</p><h3 class="mt-5 mb-3" id="-11"><strong>계획 수정</strong></h3><p>웹훅을 대체 할 커스텀 플러그인을 만들었습니다. 커스텀 플러그인 내부에서 Figma API를 미리 요청하고 Worker로 넘기면, Worker의 런타임 시간도 줄어들어 더욱 적절해 보였습니다.</p><h3 class="mt-5 mb-3" id="-12"><strong>plugin.js</strong></h3><p>피그마 커스텀 플러그인은 Figma Desktop App에서 열 수 있습니다. manifest.json으로 플러그인을 정의하고, ui.html, plugin.js로 간단한 플러그인을 개발했습니다. 여기서 가장 중요한 plugin.js만 살펴보자면:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// figma는 플러그인이 실행될 때 전역 변수로 제공된다.</span>
+<span class="hljs-comment">// 플러그인의 ui를 html로 연다. ui.html</span>
+figma.<span class="hljs-title function_">showUI</span>(__html__, { <span class="hljs-attr">width</span>: <span class="hljs-number">300</span>, <span class="hljs-attr">height</span>: <span class="hljs-number">150</span> });  
+
+<span class="hljs-comment">// 플러그인에서 Figma API로 JSON을 요청한다.</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchFigmaJSON</span>(<span class="hljs-params"></span>) {  
+    <span class="hljs-keyword">try</span> {  
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Fetching Figma JSON..."</span>);  
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`https://api.figma.com/v1/files/<span class="hljs-subst">${FIGMA_FILE_KEY}</span>`</span>, {  
+            <span class="hljs-attr">headers</span>: { <span class="hljs-string">"X-Figma-Token"</span>: <span class="hljs-variable constant_">FIGMA_API_KEY</span> }  
+        });  
+  
+        <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`Failed to fetch Figma JSON: <span class="hljs-subst">${response.statusText}</span>`</span>);  
+  
+        <span class="hljs-keyword">const</span> json = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();  
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Fetched JSON successfully:"</span>, json);  
+        <span class="hljs-keyword">return</span> json;  
+    } <span class="hljs-keyword">catch</span> (error) {  
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"Figma API Error:"</span>, error.<span class="hljs-property">message</span>);  
+        figma.<span class="hljs-title function_">notify</span>(<span class="hljs-string">"❌ Figma API Error: "</span> + error.<span class="hljs-property">message</span>);  
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;  
+    }  
+}  
+
+<span class="hljs-comment">// figma.ui에 onmessage 이벤트를 등록한다.</span>
+figma.<span class="hljs-property">ui</span>.<span class="hljs-property">onmessage</span> = <span class="hljs-title function_">async</span> (msg) => {  
+    <span class="hljs-keyword">if</span> (msg.<span class="hljs-property">type</span> === <span class="hljs-string">"send-update"</span>) { 
+    <span class="hljs-comment">// "send-update"라는 이벤트로 요청을 시작한다. </span>
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Send update triggered"</span>);  
+
+	
+        <span class="hljs-keyword">try</span> {  
+        <span class="hljs-comment">// 1. Figma JSON 요청</span>
+        <span class="hljs-keyword">const</span> jsonData = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchFigmaJSON</span>();  
+        <span class="hljs-keyword">if</span> (!jsonData) {  
+            figma.<span class="hljs-title function_">notify</span>(<span class="hljs-string">"❌[FIGMA_API]:Failed to fetch Figma data"</span>);  
+        }  
+
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"✅[FIGMA_API]:"</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(jsonData)); 
+
+	  <span class="hljs-comment">// 2. R2로 Figma JSON을 저장한다.</span>
+            <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">"https://auto-resume-worker.leetekwoo.com"</span>, {  
+                <span class="hljs-attr">method</span>: <span class="hljs-string">"POST"</span>,  
+                <span class="hljs-attr">headers</span>: {  
+                    <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>,  
+                },  
+                <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(jsonData),  
+            });  
+  
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Worker response status:"</span>, response.<span class="hljs-property">status</span>);  
+  
+            <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {  
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`❌[WORKER] Error: <span class="hljs-subst">${response.statusText}</span>`</span>);  
+            }  
+  
+            <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();  
+  
+            figma.<span class="hljs-title function_">notify</span>(<span class="hljs-string">"✅[DONE]: Resume update sent successfully!"</span>);  
+        } <span class="hljs-keyword">catch</span> (error) {  
+            <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"❌ Fetch Error:"</span>, error.<span class="hljs-property">message</span>);  
+            figma.<span class="hljs-title function_">notify</span>(<span class="hljs-string">"❌ Network error: "</span> + error.<span class="hljs-property">message</span>);  
+        } <span class="hljs-keyword">finally</span> {  
+			<span class="hljs-comment">// 정확히 figma.notify가 실행된 이후 닫히도록 하기 위해 추가</span>
+            <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Promise</span>(<span class="hljs-function"><span class="hljs-params">r</span> =></span> <span class="hljs-built_in">setTimeout</span>(r, <span class="hljs-number">500</span>)); 
+            figma.<span class="hljs-title function_">closePlugin</span>();  
+        }  
+    }  
+};</code></pre><p>플러그인이 실행되면, ui.html의 버튼 이벤트로 실행합니다. workers와의 통신에서 CORS 때문에 꽤 오랫동안 트러블 슛팅을 했는데, 이후 살펴보도록 하겠습니다.</p><h3 class="mt-5 mb-3" id="-13"><strong>Figma JSON Interface</strong></h3><p>JSON으로 마크업을 구성하기 위해 피그마 JSON을 분석했습니다. Figma API의 GET 요청은 각 그래픽 요소를 노드로 나타냅니다. 그래픽 정보는 키-값으로 표현되고, children의 배열로 계층이 표현됩니다.</p><p>마크업을 표현하는 일반적인 자료 구조(ex:DOM api, ReactElement)와 유사하지만, Figma 고유의 필드명과 프로퍼티가 다르기 때문에 별도의 맵핑과 파싱이 필요합니다.</p><p>이번 프로젝트에서 중요하게 사용한 필드들은 다음과 같습니다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-json"><span class="hljs-punctuation">{</span>
+	<span class="hljs-comment">// 부모:n번째 자식 - 으로 노드 연결관계를 표현한다  </span>
+    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"0:1"</span><span class="hljs-punctuation">,</span>  
+    <span class="hljs-comment">// 피그마 레이어의 이름이 설정된다. </span>
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 파싱에서 로직을 단순화하기 위한 인덱스로 사용했다.</span>
+	<span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"truth-resume"</span><span class="hljs-punctuation">,</span>  
+	<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 파싱에서 사용. 타입 구분이 중요하다. </span>
+	<span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"DOCUMENT | CANVAS | FRAME | LAYOUT | TEXT | IMAGE | ..."</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> HTTP 캐시 헤더처럼 활용할 수 있다    </span>
+    <span class="hljs-attr">"lastModified"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2025-03-01T03:10:10Z"</span><span class="hljs-punctuation">,</span> 
+	<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 재귀적으로 계층 구조를 나타낸다.</span>
+	<span class="hljs-attr">"children"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>  
+	<span class="hljs-comment">//	... 동일한 구조의 객체(노드)로 구성</span>
+	<span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+
+	<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 각 노드의 스타일 정보를 포함한다.</span>
+	<span class="hljs-attr">"styles"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+		<span class="hljs-attr">"fontFamily"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Noto Sans KR"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"fontPostScriptName"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"fontStyle"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Bold"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"fontWeight"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">700</span><span class="hljs-punctuation">,</span> 
+		<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> hyperlink 필드에는 링크 주소등이 포함된다. </span>
+		<span class="hljs-attr">"hyperlink"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+		  <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"URL"</span><span class="hljs-punctuation">,</span>  
+		  <span class="hljs-attr">"url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://resume.com"</span>  
+		<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"textAutoResize"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"WIDTH_AND_HEIGHT"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"textDecoration"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"UNDERLINE"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"fontSize"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">11</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"textAlignHorizontal"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"RIGHT"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"textAlignVertical"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"TOP"</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"letterSpacing"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"lineHeightPx"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">15.927999496459961</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"lineHeightPercent"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span><span class="hljs-punctuation">,</span>  
+		<span class="hljs-attr">"lineHeightUnit"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"INTRINSIC_%"</span>
+		<span class="hljs-comment">// ....기타 수 많은 필드가 TYPE에 따라 추가/제거된다.</span>
+	<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+
+	<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> type: 타입이 TEXT인 노드에서 특히 많이 사용된다. </span>
+	<span class="hljs-comment">// characters 내부에 특정 영역만 볼드, 언더라인, 링크가 적용됐을 때 사용된다.</span>
+	<span class="hljs-comment">// 숫자로 스타일 오버라이드가 적용된 텍스트의 인덱스를 나타낸다.   </span>
+	<span class="hljs-attr">"characterStyleOverrides"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>  
+	  <span class="hljs-number">18</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span><span class="hljs-punctuation">,</span> <span class="hljs-number">16</span>  
+	<span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+	<span class="hljs-attr">"styleOverrideTable"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+	<span class="hljs-comment">// 위의 인덱스를 문자열 키로 나타낸다. </span>
+	  <span class="hljs-attr">"16"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+	  <span class="hljs-comment">// 텍스트의 일부에만 링크가 적용된 경우, 이 필드를 사용해야 한다.</span>
+	    <span class="hljs-attr">"hyperlink"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+	      <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"URL"</span><span class="hljs-punctuation">,</span>  
+	      <span class="hljs-attr">"url"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"https://0teklee.github.io/resume/cv.html"</span>  
+	    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+	    <span class="hljs-attr">"textDecoration"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"UNDERLINE"</span><span class="hljs-punctuation">,</span>  
+	    <span class="hljs-attr">"fills"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>  
+	      <span class="hljs-punctuation">{</span>  
+	        <span class="hljs-attr">"blendMode"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"NORMAL"</span><span class="hljs-punctuation">,</span>  
+	        <span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"SOLID"</span><span class="hljs-punctuation">,</span>  
+	        <span class="hljs-attr">"color"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+	          <span class="hljs-attr">"r"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0.11101888120174408</span><span class="hljs-punctuation">,</span>  
+	          <span class="hljs-attr">"g"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0.11018768697977066</span><span class="hljs-punctuation">,</span>  
+	          <span class="hljs-attr">"b"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0.11018768697977066</span><span class="hljs-punctuation">,</span>  
+	          <span class="hljs-attr">"a"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span>  
+	        <span class="hljs-punctuation">}</span>  
+	      <span class="hljs-punctuation">}</span>  
+	    <span class="hljs-punctuation">]</span>  
+	  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+	  <span class="hljs-attr">"18"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span> <span class="hljs-attr">"textDecoration"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"UNDERLINE"</span> <span class="hljs-punctuation">}</span>  
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+
+	characters<span class="hljs-punctuation">:</span> <span class="hljs-string">"string"</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// TYPE TEXT 인 노드들의 텍스트 컨텐츠. 실제 텍스트 내용이된다.</span>
+	
+  <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> Figma Auto Layout에서 정렬을 나타내는 필드들</span>
+  <span class="hljs-attr">"constraints"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+    <span class="hljs-attr">"vertical"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"TOP"</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// align, justify 방향과 매치될 수 있다.  </span>
+    <span class="hljs-attr">"horizontal"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"LEFT"</span>  
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+  <span class="hljs-attr">"layoutAlign"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"INHERIT"</span><span class="hljs-punctuation">,</span>  
+  <span class="hljs-attr">"layoutGrow"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0</span><span class="hljs-punctuation">,</span>  
+  <span class="hljs-attr">"layoutSizingHorizontal"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"HUG"</span><span class="hljs-punctuation">,</span> <span class="hljs-comment">// figma auto layout의 크기 설정</span>
+  <span class="hljs-attr">"layoutSizingVertical"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"HUG"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"components"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  <span class="hljs-comment">// 피그마 컴포넌트</span>
+  <span class="hljs-attr">"componentSets"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>  
+  <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2190358777510355977"</span><span class="hljs-punctuation">,</span>   <span class="hljs-comment">// 피그마 내부 버전</span>
+  <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"owner"</span><span class="hljs-punctuation">,</span>  <span class="hljs-comment">// Figma API 요청의 권한</span>
+<span class="hljs-punctuation">}</span></code></pre><p>Note에서 이번 작업에 중요하게 사용한 필드들을 정리했습니다. 생각보다 구조가 복잡하여, 레이어 이름 (name 필드)를 사용해 파싱 로직을 단순화하게 되었습니다. Figma 편집에서 적절한 레이어 이름을 추가해야 하는 단점이 있었지만, MVP 단계임을 감안했습니다.</p><h3 class="mt-5 mb-3" id="-14"><strong>Cloudflare Worker</strong></h3><p><strong>Worker 역할:</strong></p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>피그마로부터 JSON을 넘겨받아 R2에 저장</p></li><li><p>Deploy Hook을 트리거</p></li></ol><p>Worker에서 더 많은 작업을 처리할 수도 있습니다. 하지만 무료 플랜에서 30초 런타임 시간 제한과 비용 관리도 신경써야 하기에, 빌드 스크립트에서 마크업을 변환했습니다. 따라서 Worker의 책임을 JSON을 R2에 저장하고, Deploy Hook URL로 POST 요청을 보내는 것으로 정했습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-typescript"><span class="hljs-comment">// Cloudflare의 엣지 환경에서 실행될 때 사용되는 환경변수</span>
+<span class="hljs-comment">// wrangler secret으로 설정하여 코드에는 포함하지 않음</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Env</span> {  
+  <span class="hljs-comment">//@ts-expect-error  </span>
+  <span class="hljs-attr">RESUME_STORAGE</span>: R2Bucket;  
+  <span class="hljs-attr">DEPLOY_HOOK_URL</span>: <span class="hljs-built_in">any</span>;  
+}  
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {  
+  <span class="hljs-keyword">async</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-attr">request</span>: <span class="hljs-title class_">Request</span>, <span class="hljs-attr">env</span>: <span class="hljs-title class_">Env</span>): <span class="hljs-title class_">Promise</span>&#x3C;<span class="hljs-title class_">Response</span>> {  
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> CORS의 Preflight 처리 (CORS)    </span>
+    <span class="hljs-keyword">if</span> (request.<span class="hljs-property">method</span> === <span class="hljs-string">"OPTIONS"</span>) {  
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Response</span>(<span class="hljs-literal">null</span>, {  
+        <span class="hljs-attr">status</span>: <span class="hljs-number">204</span>,  
+        <span class="hljs-attr">headers</span>: {  
+....
+    }  
+  
+    <span class="hljs-keyword">if</span> (request.<span class="hljs-property">method</span> !== <span class="hljs-string">"POST"</span>) {  
+	    <span class="hljs-comment">// worker의 CORS 설정을 POST만 가능하게 설정했음</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Response</span>(<span class="hljs-string">"❌[WORKER]:Method Not Allowed"</span>, { <span class="hljs-attr">status</span>: <span class="hljs-number">405</span> });  
+    }  
+  
+    <span class="hljs-keyword">try</span> {  
+      <span class="hljs-keyword">const</span> jsonData = <span class="hljs-keyword">await</span> request.<span class="hljs-title function_">json</span>();  
+      <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> JSON 데이터의 변경 시점을 저장</span>
+      <span class="hljs-keyword">const</span> dateStr = jsonData?.<span class="hljs-property">lastModified</span> ||
+      <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>().<span class="hljs-title function_">toISOString</span>(); 
+  
+      <span class="hljs-comment">// 1. R2에서 최신 파일 목록 가져오기  </span>
+      <span class="hljs-keyword">const</span> existingFiles = <span class="hljs-keyword">await</span> env.<span class="hljs-property">RESUME_STORAGE</span>.<span class="hljs-title function_">list</span>({  
+        <span class="hljs-attr">prefix</span>: <span class="hljs-string">`v`</span>,  
+        <span class="hljs-attr">limit</span>: <span class="hljs-number">100</span>,  
+      });  
+  
+      <span class="hljs-comment">// 2. R2 리스트에서 가장 최신 버전 찾기  </span>
+      <span class="hljs-keyword">let</span> maxVersion = <span class="hljs-number">0</span>;  
+      <span class="hljs-keyword">if</span> (existingFiles.<span class="hljs-property">objects</span>.<span class="hljs-property">length</span> > <span class="hljs-number">0</span>) {  
+  existingFiles.<span class="hljs-property">objects</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">obj</span>: <span class="hljs-built_in">any</span></span>) =></span> {  
+          <span class="hljs-keyword">const</span> match = obj.<span class="hljs-property">key</span>.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/^v(\d+)-(\d{4}-\d{2}-\d{2})\T\((\d+):\(\d+):\(\d).json$/</span>);  
+          <span class="hljs-keyword">if</span> (match &#x26;&#x26; match[<span class="hljs-number">2</span>] === dateStr) {  
+            maxVersion = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(maxVersion, <span class="hljs-built_in">parseInt</span>(match[<span class="hljs-number">1</span>], <span class="hljs-number">10</span>));  
+          }  
+        });  
+      }  
+  
+      <span class="hljs-comment">// 3. 파일 없을 시, 버전을 1로 설정  </span>
+      <span class="hljs-keyword">const</span> newVersion = maxVersion + <span class="hljs-number">1</span>;  
+      <span class="hljs-keyword">const</span> versionedKey = <span class="hljs-string">`v<span class="hljs-subst">${newVersion}</span>-<span class="hljs-subst">${dateStr}</span>.json`</span>;  
+      <span class="hljs-keyword">const</span> fileName = <span class="hljs-string">`v<span class="hljs-subst">${newVersion}</span>-<span class="hljs-subst">${dateStr}</span>.json`</span>;  
+  
+      <span class="hljs-comment">//4. R2에 새 버전 저장 (버저닝 기록을 위해) </span>
+      <span class="hljs-keyword">await</span> env.<span class="hljs-property">RESUME_STORAGE</span>.<span class="hljs-title function_">put</span>(fileName, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(jsonData), {  
+        <span class="hljs-attr">httpMetadata</span>: { <span class="hljs-attr">contentType</span>: <span class="hljs-string">"application/json"</span> },  
+      });  
+  
+      <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> Build 스크립트에서 가장 최신 버전을 "latest.json" 저장하여 포인터로 사용 </span>
+      <span class="hljs-keyword">await</span> env.<span class="hljs-property">RESUME_STORAGE</span>.<span class="hljs-title function_">put</span>(<span class="hljs-string">"latest.json"</span>, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(jsonData), {  
+        <span class="hljs-attr">httpMetadata</span>: { <span class="hljs-attr">contentType</span>: <span class="hljs-string">"application/json"</span> },  
+      });  
+
+	 <span class="hljs-comment">// 5. Pages Deploy Hook에 POST 요청을 보내면 빌드-배포가 트리거됨</span>
+      <span class="hljs-keyword">let</span> deploy_url = env.<span class="hljs-property">DEPLOY_HOOK_URL</span>;  
+      <span class="hljs-keyword">const</span> deployResponse = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`<span class="hljs-subst">${deploy_url}</span>`</span>, {  
+        <span class="hljs-attr">method</span>: <span class="hljs-string">"POST"</span>,  
+      });  
+  
+      <span class="hljs-keyword">if</span> (deployResponse.<span class="hljs-property">ok</span>) {  
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>(<span class="hljs-string">"✅[WORKER]:Deploy hook 호출: Cloudflare Pages Rebuild"</span>);  
+      } 
+      <span class="hljs-comment">// 5. Figma 플러그인으로 Ok 응답 보내어 플러그인 종료 </span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Response</span>(  
+        <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({  
+          <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>,  
+          <span class="hljs-attr">message</span>: <span class="hljs-string">`✅[WORKER]:JSON saved as <span class="hljs-subst">${versionedKey}</span>`</span>,  
+        }),  
+        {  
+          <span class="hljs-attr">headers</span>: {  
+            <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>,  
+            <span class="hljs-string">"Access-Control-Allow-Origin"</span>: <span class="hljs-string">"*"</span>,  
+            <span class="hljs-string">"Access-Control-Allow-Methods"</span>: <span class="hljs-string">"GET, POST, OPTIONS"</span>,  
+            <span class="hljs-string">"Access-Control-Allow-Headers"</span>: <span class="hljs-string">"Content-Type"</span>,  
+          },  
+        },  
+      );  
+    } <span class="hljs-keyword">catch</span> (error) {  
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"❌[Worker]: Error"</span>, error);  
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Response</span>(<span class="hljs-string">"❌[Worker]: Error"</span>, { <span class="hljs-attr">status</span>: <span class="hljs-number">500</span> });  
+    }  
+  },  
+};</code></pre><p>빌드 스크립트와 버저닝을 위한 데이터를 저장하고 Deploy Hook을 요청하며 마칩니다. 이 때 중요한 것은 Worker의 응답을 받는 쪽은 Figma 플러그인입니다. CORS 에러를 해결하며 약간의 작업 지연이 있었습니다.</p><h4 class="mt-5 mb-3">Trouble Shoot: CORS 에러 처리하기</h4><p>피그마 커스텀 플러그인은 <strong>Webview</strong> 환경인 <strong>데스크탑 앱</strong>에서 구동되기 때문에, 플러그인 실행 이후 <strong>Worker 요청에서 계속 CORS에러가 발생</strong>했습니다. </p><p></p><p>알고보니Figma 플러그인이 실행되는 <strong>Desktop App의 환경에서 Origin, Referrer가 null</strong>이었습니다. 요청에서 Origin 헤더를 넣어도 하여도, 제거하고 원본을 보내기 때문에, 적절한 조치가 필요했습니다.</p><p></p><p>문제의 원인은 <strong>Workers가 응답으로 적절한 CORS 헤더를 보내고 있지 않았던 것</strong>입니다. 하지만 와일드 카드를 사용하자니, 제 Figma 문서와 배포된 웹사이트 모두 취약점이 노출될 수 있었습니다.</p><p></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// workers</span>
+<span class="hljs-comment">// Authorization 헤더 설정 - .env.local, figma client storage, cloudflare secret에 저장됨</span>
+    <span class="hljs-keyword">const</span> authHeader = request.<span class="hljs-property">headers</span>.<span class="hljs-title function_">get</span>(<span class="hljs-string">"Authorization"</span>);
+    <span class="hljs-keyword">const</span> isAuthorized = authHeader === <span class="hljs-string">`Bearer <span class="hljs-subst">${env.WORKER_API_KEY}</span>`</span>;
+
+    <span class="hljs-keyword">const</span> corsHeaders = {
+      <span class="hljs-string">"Access-Control-Allow-Origin"</span>: <span class="hljs-string">"null"</span>,
+      <span class="hljs-string">"Access-Control-Allow-Methods"</span>: <span class="hljs-string">"POST, OPTIONS"</span>,
+      <span class="hljs-string">"Access-Control-Allow-Headers"</span>: <span class="hljs-string">"Content-Type, Authorization"</span>,
+      <span class="hljs-comment">// 요청의 authorization 헤더를 받기 위해 true 설정</span>
+      <span class="hljs-string">"Access-Control-Allow-Credentials"</span>: <span class="hljs-string">"true"</span>,
+    };
+
+<span class="hljs-comment">// WORKER_API_KEY 토큰으로 권환 확인</span>
+      <span class="hljs-keyword">if</span> (request.<span class="hljs-property">method</span> !== <span class="hljs-string">"POST"</span> || !isAuthorized) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Response</span>(<span class="hljs-string">"❌[WORKER]:Method Not Allowed"</span>, { <span class="hljs-attr">status</span>: <span class="hljs-number">405</span> });
+    }
+
+
+<span class="hljs-comment">// plugin.js</span>
+      <span class="hljs-comment">// 피그마 클라이언트 스토리지에서 환경변수 불러오기</span>
+      <span class="hljs-comment">// Promise.all 사용 시 RuntimeError: memory access out of bounds</span>
+      <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PLUGIN_API_KEY</span> =
+        <span class="hljs-keyword">await</span> figma.<span class="hljs-property">clientStorage</span>.<span class="hljs-title function_">getAsync</span>(<span class="hljs-string">"PLUGIN_API_KEY"</span>);
+      <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">WORKER_URL</span> = <span class="hljs-keyword">await</span> figma.<span class="hljs-property">clientStorage</span>.<span class="hljs-title function_">getAsync</span>(<span class="hljs-string">"WORKER_URL"</span>);
+      <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">FIGMA_FILE_KEY</span> =
+        <span class="hljs-keyword">await</span> figma.<span class="hljs-property">clientStorage</span>.<span class="hljs-title function_">getAsync</span>(<span class="hljs-string">"FIGMA_FILE_KEY"</span>);
+      <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">FIGMA_API_KEY</span> = <span class="hljs-keyword">await</span> figma.<span class="hljs-property">clientStorage</span>.<span class="hljs-title function_">getAsync</span>(<span class="hljs-string">"FIGMA_API_KEY"</span>);
+
+      figma.<span class="hljs-title function_">notify</span>(<span class="hljs-string">"✅ [ENV]: WORKER_URL SET"</span>);
+
+<span class="hljs-comment">// Worker로 Figma JSON 전달</span>
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-variable constant_">WORKER_URL</span>, {
+        <span class="hljs-attr">method</span>: <span class="hljs-string">"POST"</span>,
+<span class="hljs-comment">// 외부 주소인 worker로 요청을 보낼 때 인증 헤더를 포함한다</span>
+        <span class="hljs-attr">credentials</span>: <span class="hljs-string">"include"</span>,
+        <span class="hljs-attr">headers</span>: {
+          <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"application/json"</span>,
+<span class="hljs-comment">// Bearer Token을 보낸다</span>
+          <span class="hljs-title class_">Authorization</span>: <span class="hljs-string">`Bearer <span class="hljs-subst">${PLUGIN_API_KEY}</span>`</span>,
+        },
+        <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(jsonData),
+      });
+
+</code></pre><p>서버리스 워커, 웹뷰, 빌드 모두 다른 환경에서 실행되는 스크립트여서 혼동이 많았습니다. 특히 플러그인의 경우 웹뷰 환경이어서 node나 web api를 활용할 수 없는 것이 어려웠습니다. 이를 해결하기 위해 figma clientStorage, wrangler secret, 로컬 개발 환경에선 .env.local을 적절히 사용하여 공개된 레포에 올리면서 환경변수를 분리할 수 있었습니다.</p><p></p><p>우선은 서버와 클라이언트의 적절한 CORS 헤더 설정으로 이를 방지할 수 있었습니다. credentials: "same-origin"이어도 origin이 null이면 어디서든 허용된 헤더를 추가할 수 있습니다.</p><h2 class="mt-5 mb-3" id="-15"><strong>B. CI</strong></h2><h3 class="mt-5 mb-3" id="-16"><strong>wrangler.toml</strong></h3><p>Cloudflare의 Worker, Pages는 서버리스 환경에서 실행됩니다. 이 환경에 필요한 변수들과 경로를 wrangler.toml에서 설정해야합니다. Secret을 사용해 퍼블릭 레포에 노출되어서 안되는 환경 변수들은 wrangler secret put {name} 명령어나 클라우드플레어 대시보드에서 설정할 수 있습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-toml"><span class="hljs-attr">name</span> = <span class="hljs-string">"auto-resume-worker"</span>  
+<span class="hljs-attr">main</span> = <span class="hljs-string">"./cloudflare/worker.ts"</span>  
+<span class="hljs-attr">compatibility_date</span> = <span class="hljs-string">"2025-02-27"</span>  
+
+  %% NOTE: 중요! R2의 버켓과 워커의 환경변수를 바인딩해야 한다. %%
+<span class="hljs-section">[[r2_buckets]]</span>  
+<span class="hljs-attr">binding</span> = <span class="hljs-string">"RESUME_STORAGE"</span>  
+<span class="hljs-attr">bucket_name</span> = <span class="hljs-string">"auto-bucket"</span>  
+<span class="hljs-attr">preview_bucket_name</span>= <span class="hljs-string">"auto-bucket-preview"</span>  
+  
+<span class="hljs-section">[observability.logs]</span>  
+<span class="hljs-attr">enabled</span> = <span class="hljs-literal">true</span>  
+  
+%% Pages 관련 환경 변수 %% 
+<span class="hljs-section">[build]</span>  
+<span class="hljs-attr">command</span> = <span class="hljs-string">"npm run build"</span>  
+%% 
+pages_build_output_dir를 대시보드나 .toml에서 정의해야 한다. 
+wrangler.toml에서 Pages 설정을 포함한다면 pages_build_output_dir가 
+필요하다. (wrangler cli 에러 발생)
+%%
+
+<span class="hljs-attr">pages_build_output_dir</span> = <span class="hljs-string">"dist"</span></code></pre><p>wrangler를 통해 서버리스 환경에서 실행될 함수를 명령어로 따로 배포할 수도 있습니다.</p><h3 class="mt-5 mb-3" id="-17"><strong>build.js</strong></h3><p>Handlerbars를 이용해 JSON을 마크업으로 변환합니다. build.js는 Deploy Hook으로 POST 요청을 받으면 실행됩니다. 빌드 → 배포 순서를 보장하기 위해 적절한 스크립트 설정이 필요합니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-json"><span class="hljs-comment">/*
+Pages 설정 혹은 wrangler.toml에서 
+"npm run build"를 포함해야 @/src/scripts/build.js 해당 스크립트가 실행됨
+*/</span>
+<span class="hljs-comment">// auto-resume/package.json</span>
+<span class="hljs-punctuation">{</span>
+	<span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>  
+	  <span class="hljs-attr">"build"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"node src/scripts/build.js"</span><span class="hljs-punctuation">,</span>  
+	<span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span></code></pre><p>이렇게 실행되는 빌드 스크립트는 다음과 같습니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">/*  
+## Cloudflare Pages Build Script  
+    목적: 최신 버전의 JSON을 R2로부터 받은 뒤, dist/index.html 생성  
+    실행 시점: Deploy Hook 요청 받을 시 즉시 실행.  
+*/</span>  
+<span class="hljs-comment">// ...   </span>
+<span class="hljs-comment">// 즉시 실행 함수로 빌드 시작</span>
+(<span class="hljs-title function_">async</span> () => {  
+  <span class="hljs-keyword">try</span> {  
+
+    <span class="hljs-comment">// 1. 가장 최신 버전의 URL 포인터로 접근  </span>
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(process.<span class="hljs-property">env</span>.<span class="hljs-property">LATEST_FIGMA</span>);  
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {  
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(  
+        <span class="hljs-string">`❌[BUILD]: R2 request - Failed to get resume JSON : <span class="hljs-subst">${response.status}</span> <span class="hljs-subst">${response.statusText}</span>`</span>,  
+      );  
+    } <span class="hljs-keyword">else</span> {  
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">info</span>([<span class="hljs-string">"[BUILD]:get latest json"</span>]);  
+    }  
+    <span class="hljs-keyword">const</span> resumeData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();  
+  
+    <span class="hljs-comment">// 2. template.hbs를 배포된 파일로부터 가져옴</span>
+    <span class="hljs-keyword">const</span> templatePath = path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">".."</span>, <span class="hljs-string">"template"</span>, <span class="hljs-string">"template.hbs"</span>);  
+    <span class="hljs-keyword">const</span> templateSource = fs.<span class="hljs-title function_">readFileSync</span>(templatePath, <span class="hljs-string">"utf-8"</span>); 
+
+	<span class="hljs-comment">// 3. <span class="hljs-doctag">NOTE:</span> Handlerbars 인스턴스에 파싱 로직을 Helper로 등록 </span>
+    <span class="hljs-title class_">Handlebars</span>.<span class="hljs-title function_">registerHelper</span>(  
+      recursiveChildren.<span class="hljs-property">key</span>,  
+      recursiveChildren.<span class="hljs-property">function</span>,  
+    );  
+  
+    <span class="hljs-comment">// 4. <span class="hljs-doctag">NOTE:</span> HandlerBars 인스턴스를 이용해 template.hbs를 컴파일</span>
+    <span class="hljs-keyword">const</span> template = <span class="hljs-title class_">Handlebars</span>.<span class="hljs-title function_">compile</span>(templateSource);  
+  
+    <span class="hljs-comment">// 5. <span class="hljs-doctag">NOTE:</span> Figma JSON을 template.hbs에 주입  </span>
+    <span class="hljs-keyword">const</span> outputHtml = <span class="hljs-title function_">template</span>(resumeData);  
+  
+    <span class="hljs-comment">// 6. output 경로 확인  </span>
+    <span class="hljs-keyword">const</span> distDir = path.<span class="hljs-title function_">join</span>(__dirname, <span class="hljs-string">".."</span>, <span class="hljs-string">".."</span>, <span class="hljs-string">"dist"</span>);  
+    <span class="hljs-keyword">if</span> (!fs.<span class="hljs-title function_">existsSync</span>(distDir)) {  
+      fs.<span class="hljs-title function_">mkdirSync</span>(distDir);  
+    }  
+  
+    <span class="hljs-comment">// 7. 생성된 HTML을 경로 dist/index.html에 저장  </span>
+    <span class="hljs-keyword">const</span> outputPath = path.<span class="hljs-title function_">join</span>(distDir, <span class="hljs-string">"index.html"</span>);  
+    fs.<span class="hljs-title function_">writeFileSync</span>(outputPath, outputHtml);  
+  
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"✅[BUILD]: HTML 생성 완료 dist/index.html"</span>);  
+  } <span class="hljs-keyword">catch</span> (err) {  
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">"❌[BUILD]: Build script error:"</span>, err);  
+    process.<span class="hljs-title function_">exit</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">// Fail the build if an error occurs  </span>
+  }  
+})();</code></pre><p>주석에서 3번부터 5번까지가 실제 변환이 일어나는 구간입니다. 이 부분을 순서대로 설명하면,</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>Handlebars 인스턴스에 파싱 로직을 주입</p></li><li><p>Handlerbars로 template.hbs를 컴파일 = 콜백 함수 리턴</p></li><li><p>콜백 함수에 Figma JSON을 인자로 넘겨 직렬화된 html을 생성</p></li></ol><p>과 같습니다. 이 단계를 조금 더 명확하게 하기 위해 파일을 분리했습니다. 특히 실질적인 파싱이 일어나는 helper.js에서 로직이 길어져 분리가 필요했습니다.</p><h3 class="mt-5 mb-3" id="-18"><strong>template.hbs &#x26; helper.js : Figma API JSON 파싱하기</strong></h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// helper.js</span>
+<span class="hljs-comment">// Figma 노드는 재귀적으로 구성된 그래프임으로, DFS가 필요합니다.</span>
+<span class="hljs-keyword">const</span> recursiveChildren = {  
+  <span class="hljs-attr">key</span>: <span class="hljs-string">"recursiveChildren"</span>,  
+  <span class="hljs-keyword">function</span>(<span class="hljs-params">children, opts, parentMaxDepth = <span class="hljs-literal">null</span></span>) {  
+    <span class="hljs-keyword">let</span> result = <span class="hljs-string">""</span>;  
+  
+    children.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">child</span>) =></span> {  
+      <span class="hljs-comment">// 그래프 높이 계산 유틸 적용</span>
+      <span class="hljs-keyword">const</span> maxDepth = parentMaxDepth ?? <span class="hljs-title function_">getMaxDepth</span>({ children });  
+  
+      <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> child.name = Figma 레이어 이름 </span>
+      <span class="hljs-comment">// 재귀 함수 실행 중 변경되면 영향을 줄 수 있어서 주의</span>
+      <span class="hljs-keyword">const</span> safeClassName = child.<span class="hljs-property">name</span> ?? <span class="hljs-string">""</span>;  
+  
+      <span class="hljs-comment">// list-items를 ul > li 태그로 전환  </span>
+      <span class="hljs-keyword">if</span> (safeClassName.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"list-items"</span>)) {  
+        <span class="hljs-keyword">const</span> lines = child.<span class="hljs-property">characters</span>  
+          .<span class="hljs-title function_">split</span>(<span class="hljs-string">"\n"</span>)  
+          .<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">line</span>) =></span> line.<span class="hljs-title function_">trim</span>())  
+          .<span class="hljs-title function_">filter</span>(<span class="hljs-title class_">Boolean</span>);  
+  
+        <span class="hljs-keyword">let</span> href = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">values</span>(child?.<span class="hljs-property">styleOverrideTable</span>)[<span class="hljs-number">0</span>]?.<span class="hljs-property">hyperlink</span>?.<span class="hljs-property">url</span>;  
+  
+        <span class="hljs-keyword">const</span> liClass = safeClassName  
+          .<span class="hljs-title function_">split</span>(<span class="hljs-string">" "</span>)  
+          .<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> item !== <span class="hljs-string">"list-items"</span>);  
+  
+        <span class="hljs-keyword">const</span> listItems = lines  
+          .<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">item, i</span>) =></span> {  
+          <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 리스트 내부에 부분적으로 링크가 적용된 부분이 있었습니다.</span>
+            <span class="hljs-keyword">const</span> isLinkList = liClass.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"link"</span>);  
+            <span class="hljs-keyword">const</span> isLinkFirstItem = isLinkList &#x26;&#x26; i === <span class="hljs-number">0</span>;  
+            <span class="hljs-keyword">if</span> (isLinkFirstItem &#x26;&#x26; href) {  
+              <span class="hljs-keyword">return</span> <span class="hljs-string">`&#x3C;li class="">&#x3C;a class="link" href="<span class="hljs-subst">${href}</span>"><span class="hljs-subst">${item}</span>&#x3C;/a>&#x3C;/li>`</span>;  
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isLinkList &#x26;&#x26; !isLinkFirstItem) {  
+              <span class="hljs-keyword">const</span> filtered = liClass  
+                .<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> item !== <span class="hljs-string">"link"</span>)  
+                .<span class="hljs-title function_">join</span>(<span class="hljs-string">""</span>);  
+              <span class="hljs-keyword">return</span> <span class="hljs-string">`&#x3C;li class="<span class="hljs-subst">${filtered}</span>"><span class="hljs-subst">${item}</span>&#x3C;/li>`</span>;  
+            }  
+            <span class="hljs-keyword">return</span> <span class="hljs-string">`&#x3C;li class="<span class="hljs-subst">${liClass}</span>"><span class="hljs-subst">${item}</span>&#x3C;/li>`</span>;  
+          })  
+          .<span class="hljs-title function_">join</span>(<span class="hljs-string">""</span>);  
+        result += <span class="hljs-string">`&#x3C;ul class="list-items"><span class="hljs-subst">${listItems}</span>&#x3C;/ul>`</span>;  
+      }  
+  
+      <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 텍스트 노드를 적절한 시멘틱 태그로 변경합니다.</span>
+      <span class="hljs-keyword">if</span> (child.<span class="hljs-property">type</span> === <span class="hljs-string">"TEXT"</span> &#x26;&#x26; !safeClassName.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"list-items"</span>)) {  
+        <span class="hljs-keyword">let</span> tag = <span class="hljs-string">"p"</span>;  
+        <span class="hljs-keyword">let</span> attr = <span class="hljs-string">""</span>;  
+        <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"h1"</span>)) tag = <span class="hljs-string">"h1"</span>;
+        <span class="hljs-comment">// 피그마에서 link는 텍스트 + style.hyperlink로 저장되어 </span>
+        <span class="hljs-comment">// a 태그 변환이 필요합니다.  </span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"link"</span>)) {  
+          tag = <span class="hljs-string">"a"</span>;  
+          attr = child?.<span class="hljs-property">style</span>?.<span class="hljs-property">hyperlink</span>?.<span class="hljs-property">url</span>  
+            ? <span class="hljs-string">`href="<span class="hljs-subst">${child.style.hyperlink.url}</span>"`</span>  
+            : <span class="hljs-string">""</span>;  
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"h2"</span>)) tag = <span class="hljs-string">"h2"</span>;  
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"h3"</span>)) tag = <span class="hljs-string">"h3"</span>;  
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"h4"</span>)) tag = <span class="hljs-string">"h4"</span>;  
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"h5"</span>)) tag = <span class="hljs-string">"h5"</span>;  
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"bold"</span>)) tag = <span class="hljs-string">"strong"</span>;  
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (child.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">"span"</span>)) tag = <span class="hljs-string">"span"</span>;  
+
+		<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> "link" 레이어의 overrideStyle 사용 시, a 태그 스타일과 충돌이 일어납니다.</span>
+        <span class="hljs-keyword">const</span> textStyleOverride =  
+          child.<span class="hljs-property">name</span> !== <span class="hljs-string">"link"</span> ? <span class="hljs-title function_">applyTextStyles</span>(child) : child.<span class="hljs-property">characters</span>;  
+          
+	   <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> result에 직렬화된 태그를 추가합니다. </span>
+        result += <span class="hljs-string">`&#x3C;<span class="hljs-subst">${tag}</span> <span class="hljs-subst">${attr || <span class="hljs-string">""</span>}</span> class="<span class="hljs-subst">${child.name}</span>"><span class="hljs-subst">${textStyleOverride}</span>&#x3C;/<span class="hljs-subst">${tag}</span>>`</span>;  
+      }  
+  
+      <span class="hljs-comment">// COL/ROW 레이아웃 프레임 노드  </span>
+      <span class="hljs-keyword">if</span> (  
+        (child.<span class="hljs-property">type</span> === <span class="hljs-string">"FRAME"</span> || child.<span class="hljs-property">type</span> === <span class="hljs-string">"GROUP"</span>) &#x26;&#x26;  
+        child.<span class="hljs-property">name</span>.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/\b(col-\d+|row-\d+)\b/g</span>)  
+      ) {  
+      <span class="hljs-comment">// Figma JSON의 레이아웃 필드를 사용합니다.</span>
+        <span class="hljs-keyword">let</span> { layoutMode, itemSpacing = <span class="hljs-number">4</span> } = child;  
+
+		<span class="hljs-comment">// layer 이름의 col | row로 layoutMode가 정확하지 않을 시</span>
+        <span class="hljs-keyword">let</span> tempClass = child.<span class="hljs-property">name</span>;  
+        <span class="hljs-keyword">let</span> classNames = tempClass.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\b(col-\d+|row-\d+)\b/g</span>, <span class="hljs-string">""</span>).<span class="hljs-title function_">trim</span>();  
+        <span class="hljs-keyword">const</span> groupType = layoutMode === <span class="hljs-string">"VERTICAL"</span> ? <span class="hljs-string">"col"</span> : <span class="hljs-string">"row"</span>;  
+        <span class="hljs-keyword">let</span> gapMatch = child.<span class="hljs-property">name</span>.<span class="hljs-title function_">match</span>(<span class="hljs-regexp">/(\d+)/</span>);  
+  
+        <span class="hljs-keyword">let</span> styleAttrs = itemSpacing ?? <span class="hljs-number">4</span>;  
+        styleAttrs = gapMatch ? gapMatch[<span class="hljs-number">0</span>] : styleAttrs;  
+  
+        result += <span class="hljs-string">`&#x3C;div class="<span class="hljs-subst">${groupType}</span><span class="hljs-subst">${classNames ? <span class="hljs-string">" "</span> + classNames : <span class="hljs-string">""</span>}</span>" style="gap:<span class="hljs-subst">${styleAttrs}</span>px">`</span>;  
+
+	<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 자식 노드가 모두 닫힌 후 자신의 태그를 닫아야함</span>
+        <span class="hljs-keyword">if</span> (child.<span class="hljs-property">children</span> &#x26;&#x26; child.<span class="hljs-property">children</span>.<span class="hljs-property">length</span> > <span class="hljs-number">0</span>) {  
+          result += <span class="hljs-title class_">Handlebars</span>.<span class="hljs-property">helpers</span>.<span class="hljs-title function_">recursiveChildren</span>(  
+            child.<span class="hljs-property">children</span>,  
+            opts,  
+            maxDepth,  
+          );  
+        } 
+        result += <span class="hljs-string">`&#x3C;/div>`</span>;  
+      } 
+      <span class="hljs-comment">// 도형, 줄바꿈 노드인 경우 CSS 클래스로 스타일링 처리</span>
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (  
+        child.<span class="hljs-property">type</span> === <span class="hljs-string">"RECTANGLE"</span> ||  
+        child.<span class="hljs-property">type</span> === <span class="hljs-string">"ELLIPSE"</span> ||  
+        child.<span class="hljs-property">name</span> === <span class="hljs-string">"br"</span>  
+      ) {  
+        result += <span class="hljs-string">`&#x3C;div class="<span class="hljs-subst">${safeClassName}</span>">&#x3C;/div>`</span>;  
+      }  
+    });  
+  
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Handlebars</span>.<span class="hljs-title class_">SafeString</span>(result);  
+  },  
+};  
+  
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = { if_eq, recursiveChildren };</code></pre><p>recursiveChildren에서 신경썼던 부분은 그래프 탐색입니다. 특히 자식이 있는 노드는 모든 자식 노드의 태그가 닫힌 다음에서야 자신의 노드가 닫혀야합니다. <a rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/63#b-postorder-traversal"><strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">후위 순회에서 DOM 트리의 직렬화-역직렬화</mark></strong></a>에 사용된다는 예시가 이제 이해됩니다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> 자식 노드가 모두 닫힌 후 자신의 태그를 닫아야함</span>
+        <span class="hljs-keyword">if</span> (child.<span class="hljs-property">children</span> &#x26;&#x26; child.<span class="hljs-property">children</span>.<span class="hljs-property">length</span> > <span class="hljs-number">0</span>) {  
+          result += <span class="hljs-title class_">Handlebars</span>.<span class="hljs-property">helpers</span>.<span class="hljs-title function_">recursiveChildren</span>(  
+            child.<span class="hljs-property">children</span>,  
+            opts,  
+            maxDepth,  
+          );  
+        } 
+        <span class="hljs-comment">// 후위 순회 </span>
+        result += <span class="hljs-string">`&#x3C;/div>`</span>;  
+      } </code></pre><h3 class="mt-5 mb-3" id="-19"><strong>utils.js</strong></h3><p>helpers가 너무 길어져 함수 분리가 필요했습니다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">getMaxDepth</span>(<span class="hljs-params">node, depth = <span class="hljs-number">1</span></span>) {  
+  <span class="hljs-keyword">if</span> (!node.<span class="hljs-property">children</span> || node.<span class="hljs-property">children</span>.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> depth;  
+  <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(  
+    ...node.<span class="hljs-property">children</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">child</span>) =></span> <span class="hljs-title function_">getMaxDepth</span>(child, depth + <span class="hljs-number">1</span>)),  
+  );  
+}  
+
+<span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> Figma API의 styleOverrride 필드, 텍스트의 부분적인 스타일링을 위한 별도의 함수입니다.</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">applyTextStyles</span>(<span class="hljs-params">node</span>) {  
+  <span class="hljs-keyword">let</span> text = node.<span class="hljs-property">characters</span>;  
+  <span class="hljs-keyword">if</span> (!text || !node?.<span class="hljs-property">characterStyleOverrides</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;  
+  <span class="hljs-keyword">let</span> styles = node.<span class="hljs-property">characterStyleOverrides</span> || [];  
+  <span class="hljs-keyword">let</span> overrideTable = node.<span class="hljs-property">styleOverrideTable</span> || {};  
+  <span class="hljs-keyword">let</span> styledText = <span class="hljs-string">""</span>;  
+  <span class="hljs-keyword">let</span> openTags = [];  
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; text.<span class="hljs-property">length</span>; i++) {  
+    <span class="hljs-keyword">let</span> styleKey = styles[i] || <span class="hljs-number">0</span>;  
+    <span class="hljs-keyword">let</span> style = overrideTable[styleKey] || {};  
+  
+    <span class="hljs-keyword">let</span> tagStart = <span class="hljs-string">""</span>;  
+    <span class="hljs-keyword">let</span> tagEnd = <span class="hljs-string">""</span>;  
+  
+    <span class="hljs-keyword">if</span> (style.<span class="hljs-property">fontWeight</span> === <span class="hljs-number">700</span>) {  
+      tagStart += <span class="hljs-string">"&#x3C;b class='bold'>"</span>;  
+      tagEnd = <span class="hljs-string">"&#x3C;/b>"</span> + tagEnd;  
+    }  
+    <span class="hljs-keyword">if</span> (style.<span class="hljs-property">textDecoration</span> === <span class="hljs-string">"UNDERLINE"</span>) {  
+      tagStart += <span class="hljs-string">"&#x3C;u class='underline'>"</span>;  
+      tagEnd = <span class="hljs-string">"&#x3C;/u>"</span> + tagEnd;  
+    }  
+  
+    <span class="hljs-keyword">if</span> (openTags.<span class="hljs-property">length</span> > <span class="hljs-number">0</span> &#x26;&#x26; tagStart !== openTags[openTags.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>]) {  
+      styledText += openTags.<span class="hljs-title function_">pop</span>();  
+    }  
+  
+    <span class="hljs-keyword">if</span> (tagStart) {  
+      styledText += tagStart;  
+      openTags.<span class="hljs-title function_">push</span>(tagEnd);  
+    }  
+  
+    styledText += text[i];  
+  }  
+  
+  <span class="hljs-keyword">while</span> (openTags.<span class="hljs-property">length</span>) {  
+    styledText += openTags.<span class="hljs-title function_">pop</span>();  
+  }  
+  
+  <span class="hljs-keyword">return</span> styledText;  
+}  </code></pre><h2 class="mt-5 mb-3" id="-20"><strong>C. CD</strong></h2><p>클라우드플레어 Pages는 Deploy Hook을 제공합니다. Deploy Hook URL로 POST 요청이 들어오면, Pages에서 설정한 대로 CI/CD가 트리거됩니다. 빌드와 배포 순서를 보장하기 위해 앞서 빌드 파일을 구성했습니다.</p><hr class="my-5"><h1 class="mt-5 mb-3" id="-21"><strong>5. 배포</strong></h1><h2 class="mt-5 mb-3" id="-22"><strong>프로젝트 구조</strong></h2><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-arduino">├── README.md
+├── cloudflare
+│   └── worker.ts
+├── dist
+│   ├── index.html
+│   └── <span class="hljs-keyword">template</span>.css
+├── package-lock.json
+├── package.json
+├── src
+│   ├── plugin <span class="hljs-comment">// 피그마 플러그인 </span>
+│   │   ├── manifest.json
+│   │   ├── plugin.js
+│   │   └── ui.html
+│   ├── scripts <span class="hljs-comment">// 빌드 스크립트</span>
+│   │   └── build.js
+│   ├── <span class="hljs-keyword">template</span> <span class="hljs-comment">// HTML 생성 hbs 관련 파일</span>
+│   │   ├── helper.js
+│   │   ├── <span class="hljs-keyword">template</span>.hbs
+│   │   └── utils.js
+│   └── test 
+│       └── <span class="hljs-keyword">template</span> <span class="hljs-comment">// 로컬 스크립트 실행으로 html 생성 </span>
+│           ├── generate.js
+│           └── test:gen.js
+├── test
+├── tsconfig.json
+└── wrangler.toml
+</code></pre><h2 class="mt-5 mb-3" id="-23"><strong>개선점</strong></h2><p>아직 손을 댈 부분이 많은 것 같습니다. 페이지 추가, 피그마 데이터를 바탕으로 CSS 생성하기, 지원 이력 A/B 테스트를 위한 추가 기록, 버저닝 개선 등등. 차근 차근 해나갈 예정입니다. 이력서를 시작으로 여러 정적 웹사이트 빌드, 배포에도 사용할 수 있을 것 같습니다.</p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/65","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"HTTP 완벽 가이드 - 5  웹 서버"}],["$","p",null,{"className":"text-sm","children":"2025-03-02"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/63","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Graph 3 - DFS I 기본 원리"}],["$","p",null,{"className":"text-sm","children":"2025-02-25"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Auto Resume - teklog"}],["$","meta","1",{"name":"description","content":"배포된 사이트: 링크깃헙 레포 : 링크작업 소요 시간: 1.5일 (MVP 버전)1. 목적Auto Resume는 Figma 프로젝트를 원본 데이터(Source of Truth)로 삼는 정적 HTML 이력서 웹사이트입니다.이번 프로젝트에는 다음과 같은 목적이 있었습니다.Figma = Source of Truth 피그마 문서와 동기화된 웹사이트자동 배포: Fig"}],["$","meta","2",{"property":"og:title","content":"Auto Resume - teklog"}],["$","meta","3",{"property":"og:description","content":"배포된 사이트: 링크깃헙 레포 : 링크작업 소요 시간: 1.5일 (MVP 버전)1. 목적Auto Resume는 Figma 프로젝트를 원본 데이터(Source of Truth)로 삼는 정적 HTML 이력서 웹사이트입니다.이번 프로젝트에는 다음과 같은 목적이 있었습니다.Figma = Source of Truth 피그마 문서와 동기화된 웹사이트자동 배포: Fig"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/demo/2025-03-02-Auto_Resume_Demo.gif"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Auto Resume - teklog"}],["$","meta","7",{"name":"twitter:description","content":"배포된 사이트: 링크깃헙 레포 : 링크작업 소요 시간: 1.5일 (MVP 버전)1. 목적Auto Resume는 Figma 프로젝트를 원본 데이터(Source of Truth)로 삼는 정적 HTML 이력서 웹사이트입니다.이번 프로젝트에는 다음과 같은 목적이 있었습니다.Figma = Source of Truth 피그마 문서와 동기화된 웹사이트자동 배포: Fig"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/demo/2025-03-02-Auto_Resume_Demo.gif"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

@@ -1,0 +1,879 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","48"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","48","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","48","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T7ea6,<p>지난 글에 이은 Fluent React의 5장, Powerful Patterns 챕터의 마지막 내용이다. Props와 연관된 설계 패턴을 모아 작성하였다.</p><p><br></p><p><br></p><h3><strong>Render Prop</strong></h3><p><br></p><pre class="ql-syntax" spellcheck="false">const WindowSize = (props) =&gt; {
+  const [size, setSize] = useState({ width: -1, height: -1 });
+  return props.render(size);
+};
+
+... 
+&lt;WindowSize
+  render={({ width, height }) =&gt; (
+    &lt;div&gt;
+      Your window is {width}x{height}px
+    &lt;/div&gt;
+  )}
+/&gt;
+</pre><p>render prop의 기본형은 컴포넌트의 prop으로 함수 형태의 컴포넌트를 넘겨주는 것이다. 이를 받는 컴포넌트는 prop을 렌더링한다. 위의 예시에서 WindowSize는 render에 div 컴포넌트를 리턴하며, 내부의 size에 접근하고 있다. 라이브러리에서 보통 접할 수 있다. 예시를 들어 react-error-boundary의 ErrorBoundary 컴포넌트의 fallback ui 패턴은 render props를 사용한다.</p><p><br></p><p>다음 예시를 통해 render props의 장단점, 사용처를 알아보자.</p><p><br></p><p><br></p><pre class="ql-syntax" spellcheck="false">// Before
+const SnippetInput = () =&gt; {
+  const [text, setText] = useState("");
+  const handleInputChange = (e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; {
+    setText(e.target.value);
+  };
+  return (
+    &lt;input
+      type="text"
+      placeholder="Type Here"
+      value={text}
+      onInput={handleInputChange}
+    /&gt;
+  );
+};
+
+const SnippetToLower = ({ text }: { text: string }) =&gt; {
+  return &lt;p&gt;{text.toLowerCase()}&lt;/p&gt;;
+};
+
+const SnippetToUpper = ({ text }: { text: string }) =&gt; {
+  return &lt;p&gt;{text.toUpperCase()}&lt;/p&gt;;
+};
+
+const SnippetSample = () =&gt; (
+  &lt;&gt;
+    &lt;SnippetInput /&gt;
+    &lt;SnippetToLower text="Hello World" /&gt;
+    &lt;SnippetToUpper text="Hello World" /&gt;
+    &lt;ExpensiveComponentA /&gt;
+    &lt;ExpensiveComponentB /&gt;
+    &lt;ExpensiveComponentC /&gt;
+  &lt;/&gt;
+);
+
+// Refactor-1
+const SnippetInput = () =&gt; {
+  const [text, setText] = useState("");
+  const handleInputChange = (e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; {
+    setText(e.target.value);
+  };
+  return (
+		&lt;&gt;
+    &lt;input
+      type="text"
+      placeholder="Type Here"
+      value={text}
+      onInput={handleInputChange}
+    /&gt;
+	  &lt;SnippetToLower text={text} /&gt;
+    &lt;SnippetToUpper text={text} /&gt;
+	&lt;/&gt;
+  );
+};
+</pre><p>Before 코드에서 input의 로컬 상태(text)에 접근할 수 없어 SnippetInput 컴포넌트 내부로 SnippetToLower, SnippetToUpper가 이동한 모습이다. Refactor-1에서 부모(SnippetSample)로 상태를 올리고, Input, ToLower, ToUpper 세 컴포넌트가 상태를 공유하지 않은 이유를, 키보드 입력마다 ExpensiveComponentA~C가 리렌더링 되기 때문이라고 가정하자. 일반적인 컴포넌트의 분리이지만, 컴포넌트의 deps가 생기는 점이 아쉽다.</p><p><br></p><p><br></p><pre class="ql-syntax" spellcheck="false">// Render Props - 1
+const SnippetInput = (props: {
+  render: (text: string) =&gt; React.ReactNode;
+}) =&gt; {
+  const [text, setText] = useState("");
+  const handleInputChange = (e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; {
+    setText(e.target.value);
+  };
+  return (
+    &lt;&gt;
+      &lt;input
+        type="text"
+        placeholder="Type Here"
+        value={text}
+        onInput={handleInputChange}
+      /&gt;
+      {props.render(text)}
+    &lt;/&gt;
+  );
+};
+
+const SnippetSample = () =&gt; {
+  console.log("rerender SnippetSample");
+  return (
+    &lt;&gt;
+      &lt;SnippetInput
+				render= {(text: string) =&gt; (
+          &lt;div&gt;
+            &lt;SnippetToLower text={text} /&gt;
+            &lt;SnippetToUpper text={text} /&gt;
+          &lt;/div&gt;
+        )}
+			 /&gt;
+    &lt;ExpensiveComponentA /&gt;
+    &lt;ExpensiveComponentB /&gt;
+    &lt;ExpensiveComponentC /&gt;
+    &lt;/&gt;
+  );
+};
+</pre><p>Render Prop 사용 시 다음과 같은 장점이 생긴다.</p><p><br></p><ol><li>부모 컴포넌트에서 자식의 상태를 접근하면서 부모 전체의 리렌더링을 방지</li><li>render prop으로 자식에서 생성될 JSX를 작성할 수 있다.</li></ol><p>상태의 관리는 자식에서 관리하지만, 부모에서 자식 컴포넌트의 상태에 접근하면서 렌더링될 JSX를 작성할 수 있는 점이 장점으로 다가온다. 만약 render={() ⇒ …} 형태가 가독성이 좋지 않다면 children을 이용해 더 명시적으로 표현할 수 있다.</p><p><br></p><p><br></p><pre class="ql-syntax" spellcheck="false">// Render Props - children
+const SnippetInput = (props: {
+  children: (text: string) =&gt; React.ReactNode;
+}) =&gt; {
+ ... (생략)
+  return (
+    &lt;&gt;
+      &lt;input
+        type="text"
+        placeholder="Type Here"
+        value={text}
+        onInput={handleInputChange}
+      /&gt;
+      {props.children(text)}
+    &lt;/&gt;
+  );
+};
+
+const SnippetSample = () =&gt; {
+  console.log("rerender SnippetSample");
+  return (
+    &lt;&gt;
+      &lt;SnippetInput&gt;
+        {(text: string) =&gt; (
+          &lt;div&gt;
+            &lt;SnippetToLower text={text} /&gt;
+            &lt;SnippetToUpper text={text} /&gt;
+          &lt;/div&gt;
+        )}
+      &lt;/SnippetInput&gt;
+			....
+    &lt;/&gt;
+  );
+};
+</pre><p><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1709130007/biwigl6bcil4m9vjabb6.png"></p><p>키보드 입력이 일어나도 모든 컴포넌트가 리렌더링되지 않는 것을 확인할 수 있다. 물론 부모 컴포넌트(SnippetSample)에 로컬 상태가 추가된다면, 이 상태가 업데이트 될 때마다 SnippetInput 또한 리렌더링될 것이다. 이 경우엔 상태를 효과적으로 분리했다고 보기 힘들 수 있다.</p><p>결론적으로 render prop의 사용목적은 ‘상태 공유’에 있겠다. children 패턴을 이용하면 코드의 가독성 또한 나쁘지 않아진다. 특히 SnippetInput 예시에서 살펴본 바와 같이 다음 상황에서 이점이 있겠다.</p><p><br></p><p><br></p><ul><li>부모에서 상태를 공유하는 것이 비용이 높은 다른 컴포넌트의 리렌더링을 불러 올 때,</li><li>지역적으로 사용되는 컴포넌트의 상태를 캡슐화하여 관리하게 해주고,</li><li>부모 컴포넌트에서 명시적(선언적)으로 렌더링될 컴포넌트를 작성할 수 있게 해주는 점</li></ul><p><br></p><p>현재는 커스텀 Hooks나 전역 상태 등으로 유즈 케이스가 많은 부분 대체되었다고 한다. 따라서 render prop이 1번 이상 네스팅된다면, 커스텀 훅을 고려해보는 것도 나쁘지 않겠다.</p><p><br></p><p><br></p><pre class="ql-syntax" spellcheck="false">&lt;SnippetInput&gt;
+{(text) ⇒ (
+	&lt;&gt;
+	&lt;NestedProp&gt;
+		{(localState) ⇒  
+			&lt;&gt;{localState ? “YES” : “NO” &lt;/&gt;
+		}
+	&lt;/NestedProp&gt;
+  &lt;SnippetToLower text={text} /&gt;
+  &lt;SnippetToUpper text={text} /&gt;
+&lt;/&gt;
+)}
+&lt;/SnippetInput&gt;
+</pre><h3>Conclusion</h3><p><br></p><ul><li><strong>Pros</strong>: 높은 유연성과 재사용성</li><li><strong>Cons</strong>:</li><li>props로 render 함수를 내리게 될 때 복잡한 컴포넌트 구조가 발생할 수 있음. (nesting 시 심해짐)</li><li>잘못 사용시 render prop의 render가 여러번 실행되어 성능 상 좋지 않을 수 있음.</li><li>Use case: 작은 단위에서 공유되는 상태를 캡슐화할 때</li></ul><h3><br></h3><h3><strong>Control Prop</strong></h3><p><br></p><blockquote>컨트롤된 컴포넌트는 <strong>자체적인 내부 상태를 유지하지 않는 컴포넌트</strong>입니다. 대신, 부모 컴포넌트로부터 현재 값이 prop으로 전달되며, 이는 그 상태의 유일한 원천이 됩니다. 상태가 변경되어야 할 때, 컨트롤된 컴포넌트는 일반적으로 onChange와 같은 <strong>콜백 함수</strong>를 사용하여 부모에게 알립니다. 따라서 <strong>부모 컴포넌트가 상태를 관리하고 컨트롤된 컴포넌트의 값을 업데이트하는 책임을 집니다</strong>.</blockquote><pre class="ql-syntax" spellcheck="false">jsxCopy code
+function ControlledInput({ value, onChange }) {
+  return &lt;input type="text" value={value} onChange={onChange} /&gt;;
+}
+
+function ParentComponent() {
+  const [inputValue, setInputValue] = useState("");
+  return &lt;ControlledInput value={inputValue} onChange={e =&gt; setInputValue(e.target.value)} /&gt;;
+}
+</pre><p>부모에서 상태를 관리하고, 자식 컴포넌트에 상태와 setter를 위한 콜백 함수를 전부 prop으로 받는다. 일견 앞선 패턴(render props, compound)들과 자식 컴포넌트의 상태를 분리하지 않고 상속하는 점에서 반대되며, presentational 패턴과 비슷해 보인다. 하지만 이 패턴은 <strong>자식 컴포넌트를 제어 컴포넌트로 만들어 상태 관리를 추상화하는 것</strong>에 초점을 맞춘다. 또한 제어된 props 패턴은 필요에 따라 자체적인 내부 상태도 유지할 수도 있다. 다음 예시에서 처럼 자식 컴포넌트 내부에서 새로운 state와 setter를 선언하고, 이를 controlled prop과 결합하여 사용한다.</p><p><br></p><p><br></p><pre class="ql-syntax" spellcheck="false">const Toggle = ({
+  on,
+  onToggle,
+}: {
+  on?: boolean;
+  onToggle?: Dispatch&lt;SetStateAction&lt;boolean&gt;&gt;;
+}) =&gt; {
+  const [isOn, setIsOn] = React.useState(false);
+
+  const handleToggle = () =&gt; {
+    const nextState = on === undefined ? !isOn : !on;
+    if (on === undefined) {
+      setIsOn(nextState);
+    }
+    if (onToggle) {
+      onToggle(nextState);
+    }
+  };
+
+  const displayText = useMemo(() =&gt; {
+		if (on !== undefined) {
+			 return on ? "On" : "Off"
+		}
+		return isOn ? "On" : "Off"
+	}, [on])
+
+  return &lt;button onClick={handleToggle}&gt;{displayText}&lt;/button&gt;;
+};
+
+const ControlPropsPattern = () =&gt; {
+  const [toggle, setToggle] = React.useState(false);
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Controlled Props Pattern&lt;/h1&gt;
+      &lt;Toggle on={toggle} onToggle={setToggle} /&gt;
+      &lt;p&gt;{toggle ? "The button is on" : "The button is off"}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+};  
+</pre><p>다음의 예시는 Toggle의 상태는 부모 컴포넌트의 toggle에 따라 결정된다. 굳이 이 방식을 사용할 이유가 있을까? 책에서는 다음과 같은 패턴의 이점을 설명한다.</p><p><br></p><p><br></p><blockquote>Control Props 패턴은 컴포넌트가 외부의 props에 의해 제어되거나 내부적으로 자체 상태를 관리할 수 있도록 함으로써 컨트롤할 수 있습니다… <strong>이러한 이중 능력은 부모가 선택적으로 자식 컴포넌트의 상태를 제어</strong>할 수 있게 해주며, 동시에 <strong>자식 컴포넌트가 제어되지 않을 경우 독립적으로 작동</strong>할 수 있도록 합니다.</blockquote><blockquote>... Toggle 컴포넌트에서, <strong>isOn</strong>은 내부 상태를 나타내고, <strong>on</strong>은 외부 제어 prop입니다. 부모로부터 <strong>on</strong> <strong>prop이 제공될</strong> 경우, 컴포넌트는 <strong>제어 모드에서 작동</strong>할 수 있습니다. <strong>제공되지 않으면 내부 상태인</strong> <strong>isOn</strong>으로 돌아갑니다. <strong>onToggle</strong> prop은 부모 컴포넌트가 상태 변경에 반응할 수 있게 하는 콜백으로, Toggle의 상태와 부모의 자체 상태를 동기화할 수 있는 기회를 부모에게 제공합니다. 이 패턴은 컴포넌트의 유연성을 향상시키며, <strong>제어된 모드와 비제어 모드의 운영을 모두 제공</strong>합니다. 필요할 때 부모가 제어할 수 있도록 하면서도, <strong>명시적으로 제어되지 않을 때는 컴포넌트가 자신의 상태에 대한 자율성을 유지</strong>할 수 있도록 합니다.</blockquote><p><br></p><p>Toggle 컴포넌트 예시와 달리 props가 undefined일 수 있다면, 제어 컴포넌트에 로컬 상태를 추가하여 <strong>자식 컴포넌트가 제어되지 않을 경우 독립적으로 작동</strong>하는 것이 좀 더 방어적일 수 있다.</p><p><br></p><p><br></p><ul><li>props로 넘어오는 상태가 api 데이터인 경우</li><li>컴포넌트가 공용으로 사용되지만 사용처에 따라 props로 넘겨줄 상태가 없을 수 있는 경우</li></ul><p><br></p><p>첫번째 경우엔 api 데이터를 리액트의 상태나 react-query, swr 등 라이브러리가 제공하는 상태를 props로 넘겨준다면 흔하게 일어날 수 있는 상황이다. pending 일 때 자식 컴포넌트의 default state를 보여주도록 할 수 있다. 두번째 경우, Toggle 컴포넌트를 여러 곳에서 사용하나 부모 컴포넌트에서 상태를 내려주지 않을 때를 가정할 수 있다.</p><p><br></p><p>결론적으로 Controlled props를 받는 제어된 컴포넌트 내부에서 로컬 상태를 포함하든, 하지 않든 Controlled Props 패턴의 효과는 동일하다. <strong>상태를 prop으로 전달하고, 상태를 부모에서 관리해 로직을 중앙화하는 것</strong>이다. 이를 통해 상태 관리 로직이 파편화되는 것을 막을 수 있다. 상태 관리 로직을 분리하는 패턴은 prop gettter, state reducer 패턴과 함께 더 효율적으로 추상화할 수 있다.</p><p><br></p><h3><strong>Use Case</strong></h3><p><br></p><ul><li><strong>조건에 따른 상태 변화 제어</strong>: 외부 조건, 부모 컴포넌트의 상태에 따라 특정 컴포넌트의 상태를 동적으로 변경해야 할 때 사용. ex) 입력 폼의 값에 따른 데이터 유효성 검사, 실패 시 에러메시지 문구 노출과 같은 사용자의 입력에 따라 다른 ui를 보여주는 경우.</li></ul><h3><br></h3><h3><strong>Pros &amp; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>상태 로직의 재사용성</strong>: 상태 관리 로직을 부모 컴포넌트에 중앙화하여 다양한 자식 컴포넌트 간에 상태 관리 로직을 재사용 가능. 코드의 중복을 줄이고, 유지보수성을 높일 수 있음.</li><li class="ql-indent-1"><strong>상태 공유 유연성</strong>: 여러 제어 컴포넌트에서 동일한 상태를 공유하고 싶을 때 유용합니다. 부모 컴포넌트가 중앙 집중식으로 상태를 관리하여, 제어된 자식 컴포넌트들이 상태를 쉽게 공유할 수 있음.</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>부모-자식 컴포넌트 간 결합도 증가</strong>: 상태를 부모 컴포넌트에서 관리하게 되면, 자식 컴포넌트가 해당 상태에 대해 부모 컴포넌트에 의존하게 됨. 부모 컴포넌트가 여러 자식 컴포넌트를 갖고 있다면, 모두 리렌더링되어 성능 상의 비용이 될 수 있음.</li></ul><h3><br></h3><p><br></p><h3><strong>Prop Collection &amp; Prop Getter</strong></h3><p><br></p><p>Controlled Props를 통해 부모 컴포넌트로 상태 관리를 분리하여 로직을 중앙화하였다. 하지만 state와 여러 종류의 이벤트 핸들러 등 제어된 컴포넌트로 넘길 props가 늘어가면, 점차 코드가 방대해지고 유지보수성이 떨어질 수 있다. 이 때 Prop collection과 prop getter를 사용하여 prop을 조금 더 효율적으로 관리할 수 있다.</p><p><br></p><p><strong>Prop Collection</strong> :</p><p>Prop Collection 패턴은 컴포넌트에 자주 전달되는 prop들을 하나의 객체로 묶어서 관리하는 방법이다.</p><pre class="ql-syntax" spellcheck="false">const droppableProps = {
+  onDragOver: (event) =&gt; {
+    event.preventDefault();
+  },
+  onDrop: (event) =&gt; {},
+};
+
+const mouseProps = {
+ onMouseEnter: (e) =&gt; {console.log("mouse enter")}
+ onMouseLeave: (e) =&gt; {console.log("mouse leave")}
+}
+
+&lt;DropzoneA {...droppableProps}/&gt;
+&lt;DropzoneB {{ onDragOver: (e) =&gt; {
+event.preventDefault();
+console.log(e.target.id)}, ...droppableProps}} 
+{...mouseProps}
+/&gt;
+
+</pre><p>객체로 prop을 작성하고, 이를 스프레드 문법으로 전달할 수 있다. 하지만 넘겨줘야할 props가 점점 증가하고, 컴포넌트 별로 구분하여 전달해야한다면 관리가 어려워질 수 있다. 이때 props를 반환하는 콜백 함수를 활용하는 Prop Getter를 활용할 수 있다.</p><p><br></p><p><strong>Prop Getter:</strong></p><p><br></p><blockquote>Props Getter는 여러 프롭을 반환하는 함수이며, 어떤 겟터가 어떤 컴포넌트에 사용되는지 명확하게 할 수 있습니다.</blockquote><p>Prop Getter는 ****Prop Collection과 함께 사용할 수 있다. Prop getter 콜백함수를 이용해 기본적으로 정의한 Prop collection과 사용자가 정의한 커스텀 prop을 결합할 수 있다.</p><pre class="ql-syntax" spellcheck="false">&lt;DropzoneA {...droppableProps} /&gt;
+&lt;DropzoneB {...droppableProps, onDragOver: (e) =&gt; {
+e.preventDefault();
+alert('added')
+}} /&gt;
+....
+</pre><p>위의 코드에서 onDragOver의 핸들러 함수 내부에 event.preventDefault() 이후 새로운 로직을 추가하려고 한다. spread 문법을 사용하여 덮어쓸 수 있지만, prop의 기존 로직을 반복해서 작성해야하며, prop collection을 개별 컴포넌트에서 오버라이딩 하는 방법이 적절한지 의문이 든다. Props Getter 패턴은 콜백함수로 이를 접근한다.</p><pre class="ql-syntax" spellcheck="false">const compose =
+  (...functions) =&gt;
+  (...args) =&gt;
+    functions.forEach((fn) =&gt; fn?.(...args));
+
+ const getDroppableProps = ({
+  onDragOver: replacementOnDragOver,
+  ...replacementProps
+}) =&gt; {
+  const defaultOnDragOver = (event) =&gt; {
+    event.preventDefault();
+  };
+
+  return {
+    onDragOver: compose(replacementOnDragOver, defaultOnDragOver),
+    onDrop: (event) =&gt; {...},
+    onDragEnd: (event) =&gt; {...}
+    ...replacementProps,
+  };
+};
+
+&lt;Dropzone
+  {...getDroppableProps({
+    onDragOver: () =&gt; {
+      alert("Dragged!");
+    },
+  })}
+/&gt;
+</pre><p>getDroppableProps 함수를 통해 onDragOver 핸들러에서 preventDefault의 기본동작에 alert 로직을 추가하게 하였다. Prop Collection의 객체에서 getter 함수로 전환하였다. 함수를 통해 prop 전달의 확장성을 고려할 수 있게 되었다. Props Getter는 함수 컴포넌트에서 Hooks와 함께 사용된다. 커스텀 훅을 만들어 prop collections을 제공하면, 컴포넌트의 재사용성과 가독성을 높일 수 있다.</p><pre class="ql-syntax" spellcheck="false">const useDroppablePropsGetter = () =&gt; { 
+return {
+    onDragOver: (event) =&gt; { e.preventDefault(); }
+    onDrop: (event) =&gt; {...},
+    onDragEnd: (event) =&gt; {...}
+}
+  };
+}
+
+const {onDragOver, ...callbacks} = useDroppablePropsGetter()
+
+const onDragOverHandler = (e) =&gt; {
+  onDragOver(e)
+  alert("dragged!!")
+}
+
+&lt;Dropzone onDragOver={onDragOverHandler} {...callbacks} /&gt;
+</pre><p>훅을 사용하여 prop으로 넘겨줄 함수를 더 간단히 만들었다. Props getter 패턴은 상태와 다양한 핸드러를 관리할 때 유용할 수 있다. 훅 내부에서 핸들러의 default 로직을 작성하고, 훅을 사용하는 컴포넌트에서 추가 로직을 작성할 수 있다.</p><pre class="ql-syntax" spellcheck="false">interface IUseInputArgs {
+  valueProp?: string;
+  defaultValue?: string;
+  onChange?: (next: string) =&gt; void;
+}
+
+export const useInput = function ({ valueProp, defaultValue = 'placeholder', ...callbackProps }: IUseCounterArgs) {
+  const [input, setInput] = useState(valueProp ?? defaultValue);
+
+  const onChange =  (inputVal: string) =&gt; {
+    setInput(string);
+    callbackProps?.onChange?.(inputVal);
+  };
+
+  return {
+    input,
+    onChange,
+  };
+};
+
+/** App.tsx */
+function App() {
+  const { input, ...callbacks } = useInput({ defaultValue: 10 });
+
+  // onchange 콜백에 커스텀 로직을 추가하여 사용
+  const onChange =  () =&gt; {
+    if(100 &lt; input.length) {
+		 return
+    callbacks?.onChange((inpiut ?? 0) + 2);
+  };
+
+  return (
+    &lt;div&gt;
+      &lt;TextInput input={input} onChange={onChange} {...callbacks}  /&gt;
+    &lt;/div&gt;
+  );
+}
+
+</pre><p>상태와 핸들러를 콜백함수로 관리하게 되었다. 하지만 여전히 콜백함수가 늘어날 시 prop으로 전달할 콜백함수가 늘어 관리가 어렵다는 점은 문제로 다가온다. 추상화 레벨이 높아질 수록 콜백 체인이 일어나기 때문에, 디버깅 시 어려움이 있을 수 있다. 또한 재사용될 로직이 없는데도 섣불리 패턴을 도입할 시 코드의 복잡성만 증가할 수 있다.</p><p><br></p><h3><strong>Use Case</strong></h3><p><br></p><ul><li><strong>컴포넌트 커스터마이징</strong>: 기본 컴포넌트에 추가적인 props를 적용하거나 기존의 props를 수정하여 컴포넌트의 기능이나 상태 등의 props를 커스터마이징 할 때 유용</li><li><strong>재사용 가능한 로직 공유</strong>: 비슷한 동작을 하는 여러 컴포넌트 간에 공통된 props 로직을 공유할 때.</li><li>Props Getter 함수를 통해 이 로직을 재사용하고 각 컴포넌트에 쉽게 적용할 수 있음.</li></ul><h3><br></h3><h3><strong>Pros &amp; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>유연성과 재사용성</strong>: Props Getter는 컴포넌트에 동적으로 props를 제공하고 수정할 수 있게 해주어 유연성과 재사용성을 높임</li><li class="ql-indent-1"><strong>커스터마이징 용이</strong>: props를 쉽게 수정하거나 확장할 수 있게 해줌.</li><li class="ql-indent-1"><strong>명시적인 코드</strong>: 컴포넌트가 어떤 props를 받게 될지 명시적으로 표현할 수 있어 가독성 개선 가능.</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>오버헤드 증가</strong>: 간단한 컴포넌트에 Props Getter 패턴을 적용하면, 필요 이상의 복잡성과 오버헤드를 초래할 수 있음.</li></ul><p><br></p><p>props로 넘기는 콜백함수의 관리가 어려워지는 경우를 위해, 리액트는 useReducer라는 훅을 제공한다. 만약 prop으로 전달되는 로직이 계속하여 증가할 가능성이 있다면, 리듀서를 고려해보는게 좋다.</p><p><br></p><p><br></p><h2><strong>State Reducer</strong></h2><p><br></p><blockquote>State Reducer 패턴은 컴포넌트의 상태 로직을 외부로 분리하여, 상태 변경 로직을 사용하는 측에서 직접 제어할 수 있도록 하는 디자인 패턴입니다.</blockquote><pre class="ql-syntax" spellcheck="false">const [state, dispatch] = useReducer(reducer, initialArg, init)
+</pre><p>useReducer 훅의 기본적인 형태는 다음과 같다.&nbsp;</p><p><br></p><p>Control Prop → Prop Collection → Props Getter로 갈수록 상태 관리 로직을 함수로 분리하며 점차 추상화를 높였다. 하지만 Props Getter가 너무 많은 콜백함수를 포함해 복잡해진다면, reducer를 사용하는 것이 적절하다. 이 패턴을 이용해 상태와 상태 업데이트 로직을 완전히 함수로 분리할 수 있다. 또한 Props Getter 패턴의 장점인 상태 변경 로직의 커스터마이징 또한 유연하게 처리할 수 있다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">function init(initialCount){ 
+  // 복잡한 계산을 통한 초기 상태 가공 함수
+    return {count: initialCount * 2}; 
+ } 
+
+function initReducer(state, action) { 
+  switch (action.type) { 
+      case 'increment': 
+      return {count: state.count + 1}; 
+      case 'decrement': 
+      return {count: state.count - 1}; 
+      default: throw new Error(); 
+  } 
+} 
+
+function Counter({initialCount}) { 
+  const [state, dispatch] = useReducer(initReducer, initialCount); 
+  return ( 
+          &lt;div&gt; 
+              &lt;button onClick={() =&gt; dispatch({ type: "increment" })}&gt;+&lt;/button&gt; 
+              &lt;button onClick={() =&gt; dispatch({ type: "decrement" })}&gt;-&lt;/button&gt; 
+           &lt;/div&gt;); 
+}
+
+</pre><p><br></p><ul><li><strong>reducer</strong>: 상태 업데이트 방식을 정의하는 함수. 이 함수는 현재 상태(<strong>state</strong>)와 액션(<strong>action</strong>)을 매개변수로 받고, 새로운 상태를 반환해야 한다. <strong>reducer</strong> 함수는 순수 함수여야 하며, <strong>동일한 입력에 대해 항상 동일한 출력을 반환</strong>해야 한다.</li><li><strong>initialArg</strong>: 초기 상태를 계산하기 위한 값. 초기 상태는 init 함수로 계산되며, 세번째 인자 <strong>init</strong> 함수가 없을 시 initialArg가 초기 값이 된다.</li><li><strong>optional init</strong>: 초기 상태를 반환하는 선택적인 초기화 함수. 이 함수는 <strong>initialArg</strong>를 매개변수로 받아 초기 상태를 계산하여 반환한다. 만약 <strong>init</strong> 함수가 지정되지 않으면, 초기 상태는 <strong>initialArg</strong>로 설정된다. <strong>복잡한 초기 상태를 설정</strong>할 때 유용하다. <strong>init</strong> 함수를 사용하면, <strong>useReducer</strong> 훅을 호출할 때마다 복잡한 초기 상태 계산 로직을 반복하지 않고, 한 번만 실행하여 성능을 최적화할 수 있다.</li></ul><p><br></p><p><strong>Reducer 확장하기</strong></p><p><br></p><p>앞선 예시(Props Getter)에서 compose 함수 혹은 커스텀 훅과 함께 props getter를 사용하여 props의 상태 제어 로직을 커스터마이징하였다. 리듀서 또한 마찬가지로 커스터마이징을 위한 추가 함수를 작성할 수 있다.</p><pre class="ql-syntax" spellcheck="false">// props로 커스터마이징된 리듀서를 매개변수로 받아 기존 리듀서를 확장하는 함수
+function enhancedReducer(reducer, propReducer) {
+&nbsp; return (state, action) =&gt; {
+&nbsp; &nbsp; // 1 -기존의 reducer 함수를 호출하여 다음 상태(nextState)를 계산하고
+&nbsp; &nbsp; const nextState = reducer(state, action);
+		// 2 - action에 changes 프로퍼티를 추가해 reducer에 다음 state를 할당한다.
+&nbsp; &nbsp; /* 3 -&nbsp; state와 changes가 추가된 action을 매개변수로 넣어&nbsp;
+&nbsp; &nbsp; &nbsp;* prop으로 내려올 커스터마이징 리듀서를 실행 */
+&nbsp; &nbsp;&nbsp;
+			 if(!propReducer) { // defaultProp을 추가하지 않는 대신 if로 분기처리할 수 있다.
+&nbsp; &nbsp; &nbsp; return nextState
+			}
+&nbsp;&nbsp;
+&nbsp; &nbsp; return propReducer(state, { ...action, changes: nextState });
+&nbsp; };
+}
+
+
+// Counter 컴포넌트는 propReducer(커스텀 리듀서)를 prop으로 받아 위의 enhancedReduce함수를&nbsp;
+// useReducer의 reducer 매개변수로 넣는다
+function Counter({initialCount, propReducer}) {
+&nbsp; const [state, dispatch] = useReducer(&nbsp; &nbsp;
+&nbsp; enhancedReducer(initReducer, propReducer),&nbsp;
+&nbsp; initialCount);
+
+
+&nbsp; &nbsp;return (
+&nbsp; &nbsp; &lt;div&gt;
+&nbsp; &nbsp; &nbsp; &lt;button onClick={() =&gt; dispatch({ type: "increment" })}&gt;+&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &lt;button onClick={() =&gt; dispatch({ type: "decrement" })}&gt;-&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &nbsp;Count: {state.count}
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; );
+}
+
+
+Counter.defaultProps = {
+&nbsp; initialCount: 0,
+&nbsp; // propReducer가 undefined일 시 default 함수로 기존 reducer의 반환값(nextState)을 사용
+&nbsp; propReducer: (state, action) =&gt; action.changes,&nbsp;
+};
+
+
+function App() {
+&nbsp; const customReducer = (state, action) =&gt; {
+&nbsp; &nbsp; // 기존 reducer에서'decrement' 액션을 수정
+&nbsp; &nbsp; // 카운터 값이 0이고 상태 변경 무시
+&nbsp; &nbsp; if (state.count === 0 &amp;&amp; action.type === 'decrement') {
+&nbsp; &nbsp; &nbsp; return state;
+&nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; // action.type을 추가
+&nbsp; &nbsp; if(action.type === 'onChange') {
+&nbsp; &nbsp; &nbsp;return action.value ?? 0
+		}
+
+
+&nbsp; &nbsp; // 아니라면 기존 reducer가 반환하는 값을 반환
+&nbsp; &nbsp; // nextState = reducer(state, action)가 할당된 action.changes를 할당
+&nbsp; &nbsp; return action.changes;
+&nbsp; };
+
+
+&nbsp; return &lt;Counter initialCount={0} propReducer={customReducer} /&gt;;
+}
+</pre><p><br></p><ul><li>enhancedReducer : 기존 reducer 함수를 확장하기 위한 함수이다. 기존의 reducer가 계산한 값을 action.changes에 할당한다.</li><li>propReducer : 기존 reducer에서 수정하고자 하는 로직을 작성한다. props가 undefined일 시 기존의 reducer가 반환하는 새 상태를 반환한다.</li><li>customReducer : Counter의 부모 컴포넌트에서 prop으로 내려줄 커스텀 리듀서이다. 기존의 action.type의 동작을 수정하고, action.type을 추가할 수 있다.</li></ul><p><br></p><p>useReducer 훅을 사용하여 위에서 다룬 패턴들과 동일한 효과를 갖는 상태 관리 로직의 분리를 이루었다. enhancedReducer을 통해 prop으로 수정된 리듀서의 추가여부에 따라 동작하게 하였다. 상태 업데이트에 대한 경우의 수가 많아질 수록, 공통된 로직은 initReducer에 정리될 것이고, 수정된 로직은 컴포넌트의 상위에서 함수로 작성될 것이다. 수정된 리듀서를 prop으로 받아, 수정된 상태만을 바라보게되어 이 패턴이 적용된 자식 컴포넌트들을 모두 제어할 수 있게 된다. enhancedReducer의 로직이 복잡하다면 다음의 예시로도 리듀서를 커스터마이즈 할 수 있다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">// composeReducer 함수는 외부 리듀서를 조합하여 반환
+function enhancedReducer(reducer, propReducer) {
+&nbsp; return function (state, action) {
+&nbsp; &nbsp; const nextState = reducer(state, action);
+&nbsp; &nbsp; if (!propReducer) {
+&nbsp; &nbsp; &nbsp; return nextState;
+&nbsp; &nbsp; }
+&nbsp; &nbsp; return propReducer(state, { ...action, changes: nextState }, reducer);
+&nbsp; };
+}
+
+
+function Counter({ initialCount, propReducer }) {
+&nbsp; const [state, dispatch] = useReducer(
+&nbsp; &nbsp; composeReducer(initReducer, propReducer),
+&nbsp; &nbsp; { count: initialCount }
+&nbsp; );
+
+
+...
+</pre><p><br></p><h3><strong>Use Case</strong></h3><p><br></p><ul><li><strong>고도의 커스터마이징 필요</strong>: 컴포넌트의 상태 관리 로직을 사용하는 측에서 완전히 제어하고 싶은 경우</li><li>ex) 예를 들어 다양한 사용 사례에 맞게 상태 업데이트 로직을 변경해야 할 때</li><li><strong>로직 재사용 및 분리</strong>: 상태 관리 로직을 컴포넌트에서 분리, 재사용할 수 있고, 컴포넌트를 더 순수한 UI로 유지할 수 있음</li></ul><p><br></p><h3><strong>Pros &amp; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>유연성 증가</strong>: 사용자가 컴포넌트의 상태 변경 로직을 완전히 제어할 수 있어, 다양한 요구 사항에 맞게 컴포넌트를 쉽게 조정 가능</li><li class="ql-indent-1"><strong>재사용성 및 분리</strong>: 상태 관리 로직을 컴포넌트로부터 완전히 분리. 로직의 재사용성, 관심사의 분리</li><li class="ql-indent-1"><strong>테스트 용이성</strong>: 로직 자체를 독립적으로 테스트하기 용이함</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>복잡성 증가</strong>: 상태 업데이트 로직을 외부에서 제공해야 하므로, 구현의 복잡성이 증가할 수 있습니다. 특히, 상태 관리 로직이 복잡한 경우, 이를 제어하는 것이 어려울 수 있습니다.</li><li class="ql-indent-1"><strong>학습 곡선</strong>: State Reducer 패턴을 효과적으로 사용하기 위해서는 리듀서 함수가 지나치게 복잡해질 수 있다. 예시에서 기존의 reducer를 확장하기 위해 propReducer, enhancedReducer 함수가 추가되었는데, 이 부분이 이해하기 까다로울 수 있다.</li></ul><p><br></p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Fluent React 5  - Prop 관련 패턴들"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2024/02/28"}],["$","p",null,{"children":"n°48"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:Tcc43,<p>지난 글에 이은 Fluent React의 5장, Powerful Patterns 챕터의 마지막 내용이다. Props와 연관된 설계 패턴을 모아 작성하였다.</p><p><br></p><p><br></p><h3 id=""><strong>Render Prop</strong></h3><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-arduino"><span class="hljs-type">const</span> WindowSize = (props) => {
+  <span class="hljs-type">const</span> [size, setSize] = <span class="hljs-built_in">useState</span>({ width: <span class="hljs-number">-1</span>, height: <span class="hljs-number">-1</span> });
+  <span class="hljs-keyword">return</span> props.<span class="hljs-built_in">render</span>(size);
+};
+
+... 
+&#x3C;WindowSize
+  render={({ width, height }) => (
+    &#x3C;div>
+      Your window is {width}x{height}px
+    &#x3C;/div>
+  )}
+/>
+</code></pre><p>render prop의 기본형은 컴포넌트의 prop으로 함수 형태의 컴포넌트를 넘겨주는 것이다. 이를 받는 컴포넌트는 prop을 렌더링한다. 위의 예시에서 WindowSize는 render에 div 컴포넌트를 리턴하며, 내부의 size에 접근하고 있다. 라이브러리에서 보통 접할 수 있다. 예시를 들어 react-error-boundary의 ErrorBoundary 컴포넌트의 fallback ui 패턴은 render props를 사용한다.</p><p><br></p><p>다음 예시를 통해 render props의 장단점, 사용처를 알아보자.</p><p><br></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">// Before
+const <span class="hljs-attr">SnippetInput</span> = () => {
+  const <span class="hljs-section">[text, setText]</span> = useState("")<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">handleInputChange</span> = (e: React.ChangeEvent&#x3C;HTMLInputElement>) => {
+    setText(e.target.value)<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+  return (
+    &#x3C;input
+      <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+      <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type Here"</span>
+      <span class="hljs-attr">value</span>={text}
+      <span class="hljs-attr">onInput</span>={handleInputChange}
+    />
+  )<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">SnippetToLower</span> = ({ text }: { text: string }) => {
+  return &#x3C;p>{text.toLowerCase()}&#x3C;/p><span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">SnippetToUpper</span> = ({ text }: { text: string }) => {
+  return &#x3C;p>{text.toUpperCase()}&#x3C;/p><span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">SnippetSample</span> = () => (
+  &#x3C;>
+    &#x3C;SnippetInput />
+    &#x3C;SnippetToLower <span class="hljs-attr">text</span>=<span class="hljs-string">"Hello World"</span> />
+    &#x3C;SnippetToUpper <span class="hljs-attr">text</span>=<span class="hljs-string">"Hello World"</span> />
+    &#x3C;ExpensiveComponentA />
+    &#x3C;ExpensiveComponentB />
+    &#x3C;ExpensiveComponentC />
+  &#x3C;/>
+)<span class="hljs-comment">;</span>
+
+// Refactor-1
+const <span class="hljs-attr">SnippetInput</span> = () => {
+  const <span class="hljs-section">[text, setText]</span> = useState("")<span class="hljs-comment">;</span>
+  const <span class="hljs-attr">handleInputChange</span> = (e: React.ChangeEvent&#x3C;HTMLInputElement>) => {
+    setText(e.target.value)<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+  return (
+		&#x3C;>
+    &#x3C;input
+      <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+      <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type Here"</span>
+      <span class="hljs-attr">value</span>={text}
+      <span class="hljs-attr">onInput</span>={handleInputChange}
+    />
+	  &#x3C;SnippetToLower <span class="hljs-attr">text</span>={text} />
+    &#x3C;SnippetToUpper <span class="hljs-attr">text</span>={text} />
+	&#x3C;/>
+  )<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+</code></pre><p>Before 코드에서 input의 로컬 상태(text)에 접근할 수 없어 SnippetInput 컴포넌트 내부로 SnippetToLower, SnippetToUpper가 이동한 모습이다. Refactor-1에서 부모(SnippetSample)로 상태를 올리고, Input, ToLower, ToUpper 세 컴포넌트가 상태를 공유하지 않은 이유를, 키보드 입력마다 ExpensiveComponentA~C가 리렌더링 되기 때문이라고 가정하자. 일반적인 컴포넌트의 분리이지만, 컴포넌트의 deps가 생기는 점이 아쉽다.</p><p><br></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-comment">// Render Props - 1</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">SnippetInput</span> = (<span class="hljs-params"><span class="hljs-attr">props</span>: {
+  render: (text: <span class="hljs-built_in">string</span>) => React.ReactNode;
+}</span>) => {
+  <span class="hljs-keyword">const</span> [text, setText] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">""</span>);
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleInputChange</span> = (<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">ChangeEvent</span>&#x3C;<span class="hljs-title class_">HTMLInputElement</span>></span>) => {
+    <span class="hljs-title function_">setText</span>(e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>);
+  };
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type Here"</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{text}</span>
+        <span class="hljs-attr">onInput</span>=<span class="hljs-string">{handleInputChange}</span>
+      /></span>
+      {props.render(text)}
+    <span class="hljs-tag">&#x3C;/></span></span>
+  );
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">SnippetSample</span> = (<span class="hljs-params"></span>) => {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"rerender SnippetSample"</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetInput</span>
+				<span class="hljs-attr">render</span>= <span class="hljs-string">{(text:</span> <span class="hljs-attr">string</span>) =></span> (
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToLower</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToUpper</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        )}
+			 />
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">ExpensiveComponentA</span> /></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">ExpensiveComponentB</span> /></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">ExpensiveComponentC</span> /></span>
+    <span class="hljs-tag">&#x3C;/></span></span>
+  );
+};
+</code></pre><p>Render Prop 사용 시 다음과 같은 장점이 생긴다.</p><p><br></p><ol><li>부모 컴포넌트에서 자식의 상태를 접근하면서 부모 전체의 리렌더링을 방지</li><li>render prop으로 자식에서 생성될 JSX를 작성할 수 있다.</li></ol><p>상태의 관리는 자식에서 관리하지만, 부모에서 자식 컴포넌트의 상태에 접근하면서 렌더링될 JSX를 작성할 수 있는 점이 장점으로 다가온다. 만약 render={() ⇒ …} 형태가 가독성이 좋지 않다면 children을 이용해 더 명시적으로 표현할 수 있다.</p><p><br></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-comment">// Render Props - children</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">SnippetInput</span> = (<span class="hljs-params"><span class="hljs-attr">props</span>: {
+  children: (text: <span class="hljs-built_in">string</span>) => React.ReactNode;
+}</span>) => {
+ ... (생략)
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type Here"</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{text}</span>
+        <span class="hljs-attr">onInput</span>=<span class="hljs-string">{handleInputChange}</span>
+      /></span>
+      {props.children(text)}
+    <span class="hljs-tag">&#x3C;/></span></span>
+  );
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">SnippetSample</span> = (<span class="hljs-params"></span>) => {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"rerender SnippetSample"</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetInput</span>></span>
+        {(text: string) => (
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToLower</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToUpper</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        )}
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">SnippetInput</span>></span>
+			....
+    <span class="hljs-tag">&#x3C;/></span></span>
+  );
+};
+</code></pre><p><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1709130007/biwigl6bcil4m9vjabb6.png"></p><p>키보드 입력이 일어나도 모든 컴포넌트가 리렌더링되지 않는 것을 확인할 수 있다. 물론 부모 컴포넌트(SnippetSample)에 로컬 상태가 추가된다면, 이 상태가 업데이트 될 때마다 SnippetInput 또한 리렌더링될 것이다. 이 경우엔 상태를 효과적으로 분리했다고 보기 힘들 수 있다.</p><p>결론적으로 render prop의 사용목적은 ‘상태 공유’에 있겠다. children 패턴을 이용하면 코드의 가독성 또한 나쁘지 않아진다. 특히 SnippetInput 예시에서 살펴본 바와 같이 다음 상황에서 이점이 있겠다.</p><p><br></p><p><br></p><ul><li>부모에서 상태를 공유하는 것이 비용이 높은 다른 컴포넌트의 리렌더링을 불러 올 때,</li><li>지역적으로 사용되는 컴포넌트의 상태를 캡슐화하여 관리하게 해주고,</li><li>부모 컴포넌트에서 명시적(선언적)으로 렌더링될 컴포넌트를 작성할 수 있게 해주는 점</li></ul><p><br></p><p>현재는 커스텀 Hooks나 전역 상태 등으로 유즈 케이스가 많은 부분 대체되었다고 한다. 따라서 render prop이 1번 이상 네스팅된다면, 커스텀 훅을 고려해보는 것도 나쁘지 않겠다.</p><p><br></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-php-template"><span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetInput</span>></span>
+{(text) ⇒ (
+	<span class="hljs-tag">&#x3C;></span>
+	<span class="hljs-tag">&#x3C;<span class="hljs-name">NestedProp</span>></span>
+		{(localState) ⇒  
+			<span class="hljs-tag">&#x3C;></span>{localState ? “YES” : “NO” <span class="hljs-tag">&#x3C;/></span>
+		}
+	<span class="hljs-tag">&#x3C;/<span class="hljs-name">NestedProp</span>></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToLower</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+  <span class="hljs-tag">&#x3C;<span class="hljs-name">SnippetToUpper</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{text}</span> /></span>
+<span class="hljs-tag">&#x3C;/></span>
+)}
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">SnippetInput</span>></span>
+</span></code></pre><h3 id="conclusion">Conclusion</h3><p><br></p><ul><li><strong>Pros</strong>: 높은 유연성과 재사용성</li><li><strong>Cons</strong>:</li><li>props로 render 함수를 내리게 될 때 복잡한 컴포넌트 구조가 발생할 수 있음. (nesting 시 심해짐)</li><li>잘못 사용시 render prop의 render가 여러번 실행되어 성능 상 좋지 않을 수 있음.</li><li>Use case: 작은 단위에서 공유되는 상태를 캡슐화할 때</li></ul><h3 id="-1"><br></h3><h3 id="-2"><strong>Control Prop</strong></h3><p><br></p><blockquote>컨트롤된 컴포넌트는 <strong>자체적인 내부 상태를 유지하지 않는 컴포넌트</strong>입니다. 대신, 부모 컴포넌트로부터 현재 값이 prop으로 전달되며, 이는 그 상태의 유일한 원천이 됩니다. 상태가 변경되어야 할 때, 컨트롤된 컴포넌트는 일반적으로 onChange와 같은 <strong>콜백 함수</strong>를 사용하여 부모에게 알립니다. 따라서 <strong>부모 컴포넌트가 상태를 관리하고 컨트롤된 컴포넌트의 값을 업데이트하는 책임을 집니다</strong>.</blockquote><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript">jsxCopy code
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ControlledInput</span>(<span class="hljs-params">{ value, onChange }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{onChange}</span> /></span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ParentComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [inputValue, setInputValue] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">""</span>);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ControlledInput</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{inputValue}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{e</span> =></span> setInputValue(e.target.value)} /></span>;
+}
+</code></pre><p>부모에서 상태를 관리하고, 자식 컴포넌트에 상태와 setter를 위한 콜백 함수를 전부 prop으로 받는다. 일견 앞선 패턴(render props, compound)들과 자식 컴포넌트의 상태를 분리하지 않고 상속하는 점에서 반대되며, presentational 패턴과 비슷해 보인다. 하지만 이 패턴은 <strong>자식 컴포넌트를 제어 컴포넌트로 만들어 상태 관리를 추상화하는 것</strong>에 초점을 맞춘다. 또한 제어된 props 패턴은 필요에 따라 자체적인 내부 상태도 유지할 수도 있다. 다음 예시에서 처럼 자식 컴포넌트 내부에서 새로운 state와 setter를 선언하고, 이를 controlled prop과 결합하여 사용한다.</p><p><br></p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">Toggle</span> = (<span class="hljs-params">{
+  on,
+  onToggle,
+}: {
+  on?: <span class="hljs-built_in">boolean</span>;
+  onToggle?: Dispatch&#x3C;SetStateAction&#x3C;<span class="hljs-built_in">boolean</span>>>;
+}</span>) => {
+  <span class="hljs-keyword">const</span> [isOn, setIsOn] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleToggle</span> = (<span class="hljs-params"></span>) => {
+    <span class="hljs-keyword">const</span> nextState = on === <span class="hljs-literal">undefined</span> ? !isOn : !on;
+    <span class="hljs-keyword">if</span> (on === <span class="hljs-literal">undefined</span>) {
+      <span class="hljs-title function_">setIsOn</span>(nextState);
+    }
+    <span class="hljs-keyword">if</span> (onToggle) {
+      <span class="hljs-title function_">onToggle</span>(nextState);
+    }
+  };
+
+  <span class="hljs-keyword">const</span> displayText = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =></span> {
+		<span class="hljs-keyword">if</span> (on !== <span class="hljs-literal">undefined</span>) {
+			 <span class="hljs-keyword">return</span> on ? <span class="hljs-string">"On"</span> : <span class="hljs-string">"Off"</span>
+		}
+		<span class="hljs-keyword">return</span> isOn ? <span class="hljs-string">"On"</span> : <span class="hljs-string">"Off"</span>
+	}, [on])
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleToggle}</span>></span>{displayText}<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span></span>;
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">ControlPropsPattern</span> = (<span class="hljs-params"></span>) => {
+  <span class="hljs-keyword">const</span> [toggle, setToggle] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>Controlled Props Pattern<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Toggle</span> <span class="hljs-attr">on</span>=<span class="hljs-string">{toggle}</span> <span class="hljs-attr">onToggle</span>=<span class="hljs-string">{setToggle}</span> /></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{toggle ? "The button is on" : "The button is off"}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+};  
+</code></pre><p>다음의 예시는 Toggle의 상태는 부모 컴포넌트의 toggle에 따라 결정된다. 굳이 이 방식을 사용할 이유가 있을까? 책에서는 다음과 같은 패턴의 이점을 설명한다.</p><p><br></p><p><br></p><blockquote>Control Props 패턴은 컴포넌트가 외부의 props에 의해 제어되거나 내부적으로 자체 상태를 관리할 수 있도록 함으로써 컨트롤할 수 있습니다… <strong>이러한 이중 능력은 부모가 선택적으로 자식 컴포넌트의 상태를 제어</strong>할 수 있게 해주며, 동시에 <strong>자식 컴포넌트가 제어되지 않을 경우 독립적으로 작동</strong>할 수 있도록 합니다.</blockquote><blockquote>... Toggle 컴포넌트에서, <strong>isOn</strong>은 내부 상태를 나타내고, <strong>on</strong>은 외부 제어 prop입니다. 부모로부터 <strong>on</strong> <strong>prop이 제공될</strong> 경우, 컴포넌트는 <strong>제어 모드에서 작동</strong>할 수 있습니다. <strong>제공되지 않으면 내부 상태인</strong> <strong>isOn</strong>으로 돌아갑니다. <strong>onToggle</strong> prop은 부모 컴포넌트가 상태 변경에 반응할 수 있게 하는 콜백으로, Toggle의 상태와 부모의 자체 상태를 동기화할 수 있는 기회를 부모에게 제공합니다. 이 패턴은 컴포넌트의 유연성을 향상시키며, <strong>제어된 모드와 비제어 모드의 운영을 모두 제공</strong>합니다. 필요할 때 부모가 제어할 수 있도록 하면서도, <strong>명시적으로 제어되지 않을 때는 컴포넌트가 자신의 상태에 대한 자율성을 유지</strong>할 수 있도록 합니다.</blockquote><p><br></p><p>Toggle 컴포넌트 예시와 달리 props가 undefined일 수 있다면, 제어 컴포넌트에 로컬 상태를 추가하여 <strong>자식 컴포넌트가 제어되지 않을 경우 독립적으로 작동</strong>하는 것이 좀 더 방어적일 수 있다.</p><p><br></p><p><br></p><ul><li>props로 넘어오는 상태가 api 데이터인 경우</li><li>컴포넌트가 공용으로 사용되지만 사용처에 따라 props로 넘겨줄 상태가 없을 수 있는 경우</li></ul><p><br></p><p>첫번째 경우엔 api 데이터를 리액트의 상태나 react-query, swr 등 라이브러리가 제공하는 상태를 props로 넘겨준다면 흔하게 일어날 수 있는 상황이다. pending 일 때 자식 컴포넌트의 default state를 보여주도록 할 수 있다. 두번째 경우, Toggle 컴포넌트를 여러 곳에서 사용하나 부모 컴포넌트에서 상태를 내려주지 않을 때를 가정할 수 있다.</p><p><br></p><p>결론적으로 Controlled props를 받는 제어된 컴포넌트 내부에서 로컬 상태를 포함하든, 하지 않든 Controlled Props 패턴의 효과는 동일하다. <strong>상태를 prop으로 전달하고, 상태를 부모에서 관리해 로직을 중앙화하는 것</strong>이다. 이를 통해 상태 관리 로직이 파편화되는 것을 막을 수 있다. 상태 관리 로직을 분리하는 패턴은 prop gettter, state reducer 패턴과 함께 더 효율적으로 추상화할 수 있다.</p><p><br></p><h3 id="-3"><strong>Use Case</strong></h3><p><br></p><ul><li><strong>조건에 따른 상태 변화 제어</strong>: 외부 조건, 부모 컴포넌트의 상태에 따라 특정 컴포넌트의 상태를 동적으로 변경해야 할 때 사용. ex) 입력 폼의 값에 따른 데이터 유효성 검사, 실패 시 에러메시지 문구 노출과 같은 사용자의 입력에 따라 다른 ui를 보여주는 경우.</li></ul><h3 id="-4"><br></h3><h3 id="-5"><strong>Pros &#x26; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>상태 로직의 재사용성</strong>: 상태 관리 로직을 부모 컴포넌트에 중앙화하여 다양한 자식 컴포넌트 간에 상태 관리 로직을 재사용 가능. 코드의 중복을 줄이고, 유지보수성을 높일 수 있음.</li><li class="ql-indent-1"><strong>상태 공유 유연성</strong>: 여러 제어 컴포넌트에서 동일한 상태를 공유하고 싶을 때 유용합니다. 부모 컴포넌트가 중앙 집중식으로 상태를 관리하여, 제어된 자식 컴포넌트들이 상태를 쉽게 공유할 수 있음.</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>부모-자식 컴포넌트 간 결합도 증가</strong>: 상태를 부모 컴포넌트에서 관리하게 되면, 자식 컴포넌트가 해당 상태에 대해 부모 컴포넌트에 의존하게 됨. 부모 컴포넌트가 여러 자식 컴포넌트를 갖고 있다면, 모두 리렌더링되어 성능 상의 비용이 될 수 있음.</li></ul><h3 id="-6"><br></h3><p><br></p><h3 id="-7"><strong>Prop Collection &#x26; Prop Getter</strong></h3><p><br></p><p>Controlled Props를 통해 부모 컴포넌트로 상태 관리를 분리하여 로직을 중앙화하였다. 하지만 state와 여러 종류의 이벤트 핸들러 등 제어된 컴포넌트로 넘길 props가 늘어가면, 점차 코드가 방대해지고 유지보수성이 떨어질 수 있다. 이 때 Prop collection과 prop getter를 사용하여 prop을 조금 더 효율적으로 관리할 수 있다.</p><p><br></p><p><strong>Prop Collection</strong> :</p><p>Prop Collection 패턴은 컴포넌트에 자주 전달되는 prop들을 하나의 객체로 묶어서 관리하는 방법이다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> droppableProps = {
+  <span class="hljs-attr">onDragOver</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {
+    event.<span class="hljs-title function_">preventDefault</span>();
+  },
+  <span class="hljs-attr">onDrop</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {},
+};
+
+<span class="hljs-keyword">const</span> mouseProps = {
+ <span class="hljs-attr">onMouseEnter</span>: <span class="hljs-function">(<span class="hljs-params">e</span>) =></span> {<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"mouse enter"</span>)}
+ <span class="hljs-attr">onMouseLeave</span>: <span class="hljs-function">(<span class="hljs-params">e</span>) =></span> {<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"mouse leave"</span>)}
+}
+
+&#x3C;<span class="hljs-title class_">DropzoneA</span> {...droppableProps}/>
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">DropzoneB</span> {{ <span class="hljs-attr">onDragOver:</span> (<span class="hljs-attr">e</span>) =></span> {
+event.preventDefault();
+console.log(e.target.id)}, ...droppableProps}} 
+{...mouseProps}
+/></span>
+
+</code></pre><p>객체로 prop을 작성하고, 이를 스프레드 문법으로 전달할 수 있다. 하지만 넘겨줘야할 props가 점점 증가하고, 컴포넌트 별로 구분하여 전달해야한다면 관리가 어려워질 수 있다. 이때 props를 반환하는 콜백 함수를 활용하는 Prop Getter를 활용할 수 있다.</p><p><br></p><p><strong>Prop Getter:</strong></p><p><br></p><blockquote>Props Getter는 여러 프롭을 반환하는 함수이며, 어떤 겟터가 어떤 컴포넌트에 사용되는지 명확하게 할 수 있습니다.</blockquote><p>Prop Getter는 ****Prop Collection과 함께 사용할 수 있다. Prop getter 콜백함수를 이용해 기본적으로 정의한 Prop collection과 사용자가 정의한 커스텀 prop을 결합할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">&#x3C;DropzoneA {..<span class="hljs-selector-class">.droppableProps</span>} />
+&#x3C;DropzoneB {..<span class="hljs-selector-class">.droppableProps</span>, onDragOver: (e) => {
+e<span class="hljs-selector-class">.preventDefault</span>();
+<span class="hljs-built_in">alert</span>('added')
+}} />
+....
+</code></pre><p>위의 코드에서 onDragOver의 핸들러 함수 내부에 event.preventDefault() 이후 새로운 로직을 추가하려고 한다. spread 문법을 사용하여 덮어쓸 수 있지만, prop의 기존 로직을 반복해서 작성해야하며, prop collection을 개별 컴포넌트에서 오버라이딩 하는 방법이 적절한지 의문이 든다. Props Getter 패턴은 콜백함수로 이를 접근한다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">compose</span> =
+  (<span class="hljs-params">...functions</span>) =>
+  <span class="hljs-function">(<span class="hljs-params">...args</span>) =></span>
+    functions.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">fn</span>) =></span> fn?.(...args));
+
+ <span class="hljs-keyword">const</span> <span class="hljs-title function_">getDroppableProps</span> = (<span class="hljs-params">{
+  onDragOver: replacementOnDragOver,
+  ...replacementProps
+}</span>) => {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">defaultOnDragOver</span> = (<span class="hljs-params">event</span>) => {
+    event.<span class="hljs-title function_">preventDefault</span>();
+  };
+
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">onDragOver</span>: <span class="hljs-title function_">compose</span>(replacementOnDragOver, defaultOnDragOver),
+    <span class="hljs-attr">onDrop</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {...},
+    <span class="hljs-attr">onDragEnd</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {...}
+    ...replacementProps,
+  };
+};
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Dropzone</span>
+  {<span class="hljs-attr">...getDroppableProps</span>({
+    <span class="hljs-attr">onDragOver:</span> () =></span> {
+      alert("Dragged!");
+    },
+  })}
+/></span>
+</code></pre><p>getDroppableProps 함수를 통해 onDragOver 핸들러에서 preventDefault의 기본동작에 alert 로직을 추가하게 하였다. Prop Collection의 객체에서 getter 함수로 전환하였다. 함수를 통해 prop 전달의 확장성을 고려할 수 있게 되었다. Props Getter는 함수 컴포넌트에서 Hooks와 함께 사용된다. 커스텀 훅을 만들어 prop collections을 제공하면, 컴포넌트의 재사용성과 가독성을 높일 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">useDroppablePropsGetter</span> = (<span class="hljs-params"></span>) => { 
+<span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">onDragOver</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> { e.<span class="hljs-title function_">preventDefault</span>(); }
+    <span class="hljs-attr">onDrop</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {...},
+    <span class="hljs-attr">onDragEnd</span>: <span class="hljs-function">(<span class="hljs-params">event</span>) =></span> {...}
+}
+  };
+}
+
+<span class="hljs-keyword">const</span> {onDragOver, ...callbacks} = <span class="hljs-title function_">useDroppablePropsGetter</span>()
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">onDragOverHandler</span> = (<span class="hljs-params">e</span>) => {
+  <span class="hljs-title function_">onDragOver</span>(e)
+  <span class="hljs-title function_">alert</span>(<span class="hljs-string">"dragged!!"</span>)
+}
+
+&#x3C;<span class="hljs-title class_">Dropzone</span> onDragOver={onDragOverHandler} {...callbacks} />
+</code></pre><p>훅을 사용하여 prop으로 넘겨줄 함수를 더 간단히 만들었다. Props getter 패턴은 상태와 다양한 핸드러를 관리할 때 유용할 수 있다. 훅 내부에서 핸들러의 default 로직을 작성하고, 훅을 사용하는 컴포넌트에서 추가 로직을 작성할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">IUseInputArgs</span> {
+  <span class="hljs-attr">valueProp</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">defaultValue</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">onChange</span>?: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">next</span>: <span class="hljs-built_in">string</span></span>) =></span> <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> useInput = <span class="hljs-keyword">function</span> (<span class="hljs-params">{ valueProp, defaultValue = <span class="hljs-string">'placeholder'</span>, ...callbackProps }: <span class="hljs-title class_">IUseCounterArgs</span></span>) {
+  <span class="hljs-keyword">const</span> [input, setInput] = <span class="hljs-title function_">useState</span>(valueProp ?? defaultValue);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">onChange</span> =  (<span class="hljs-params"><span class="hljs-attr">inputVal</span>: <span class="hljs-built_in">string</span></span>) => {
+    <span class="hljs-title function_">setInput</span>(<span class="hljs-built_in">string</span>);
+    callbackProps?.<span class="hljs-property">onChange</span>?.(inputVal);
+  };
+
+  <span class="hljs-keyword">return</span> {
+    input,
+    onChange,
+  };
+};
+
+<span class="hljs-comment">/** App.tsx */</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { input, ...callbacks } = <span class="hljs-title function_">useInput</span>({ <span class="hljs-attr">defaultValue</span>: <span class="hljs-number">10</span> });
+
+  <span class="hljs-comment">// onchange 콜백에 커스텀 로직을 추가하여 사용</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">onChange</span> =  (<span class="hljs-params"></span>) => {
+    <span class="hljs-keyword">if</span>(<span class="hljs-number">100</span> &#x3C; input.<span class="hljs-property">length</span>) {
+		 <span class="hljs-keyword">return</span>
+    callbacks?.<span class="hljs-title function_">onChange</span>((inpiut ?? <span class="hljs-number">0</span>) + <span class="hljs-number">2</span>);
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">TextInput</span> <span class="hljs-attr">input</span>=<span class="hljs-string">{input}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{onChange}</span> {<span class="hljs-attr">...callbacks</span>}  /></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+</code></pre><p>상태와 핸들러를 콜백함수로 관리하게 되었다. 하지만 여전히 콜백함수가 늘어날 시 prop으로 전달할 콜백함수가 늘어 관리가 어렵다는 점은 문제로 다가온다. 추상화 레벨이 높아질 수록 콜백 체인이 일어나기 때문에, 디버깅 시 어려움이 있을 수 있다. 또한 재사용될 로직이 없는데도 섣불리 패턴을 도입할 시 코드의 복잡성만 증가할 수 있다.</p><p><br></p><h3 id="-8"><strong>Use Case</strong></h3><p><br></p><ul><li><strong>컴포넌트 커스터마이징</strong>: 기본 컴포넌트에 추가적인 props를 적용하거나 기존의 props를 수정하여 컴포넌트의 기능이나 상태 등의 props를 커스터마이징 할 때 유용</li><li><strong>재사용 가능한 로직 공유</strong>: 비슷한 동작을 하는 여러 컴포넌트 간에 공통된 props 로직을 공유할 때.</li><li>Props Getter 함수를 통해 이 로직을 재사용하고 각 컴포넌트에 쉽게 적용할 수 있음.</li></ul><h3 id="-9"><br></h3><h3 id="-10"><strong>Pros &#x26; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>유연성과 재사용성</strong>: Props Getter는 컴포넌트에 동적으로 props를 제공하고 수정할 수 있게 해주어 유연성과 재사용성을 높임</li><li class="ql-indent-1"><strong>커스터마이징 용이</strong>: props를 쉽게 수정하거나 확장할 수 있게 해줌.</li><li class="ql-indent-1"><strong>명시적인 코드</strong>: 컴포넌트가 어떤 props를 받게 될지 명시적으로 표현할 수 있어 가독성 개선 가능.</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>오버헤드 증가</strong>: 간단한 컴포넌트에 Props Getter 패턴을 적용하면, 필요 이상의 복잡성과 오버헤드를 초래할 수 있음.</li></ul><p><br></p><p>props로 넘기는 콜백함수의 관리가 어려워지는 경우를 위해, 리액트는 useReducer라는 훅을 제공한다. 만약 prop으로 전달되는 로직이 계속하여 증가할 가능성이 있다면, 리듀서를 고려해보는게 좋다.</p><p><br></p><p><br></p><h2 id="-11"><strong>State Reducer</strong></h2><p><br></p><blockquote>State Reducer 패턴은 컴포넌트의 상태 로직을 외부로 분리하여, 상태 변경 로직을 사용하는 측에서 직접 제어할 수 있도록 하는 디자인 패턴입니다.</blockquote><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const <span class="hljs-selector-attr">[state, dispatch]</span> = <span class="hljs-built_in">useReducer</span>(reducer, initialArg, init)
+</code></pre><p>useReducer 훅의 기본적인 형태는 다음과 같다. </p><p><br></p><p>Control Prop → Prop Collection → Props Getter로 갈수록 상태 관리 로직을 함수로 분리하며 점차 추상화를 높였다. 하지만 Props Getter가 너무 많은 콜백함수를 포함해 복잡해진다면, reducer를 사용하는 것이 적절하다. 이 패턴을 이용해 상태와 상태 업데이트 로직을 완전히 함수로 분리할 수 있다. 또한 Props Getter 패턴의 장점인 상태 변경 로직의 커스터마이징 또한 유연하게 처리할 수 있다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">init</span>(<span class="hljs-params">initialCount</span>){ 
+  <span class="hljs-comment">// 복잡한 계산을 통한 초기 상태 가공 함수</span>
+    <span class="hljs-keyword">return</span> {<span class="hljs-attr">count</span>: initialCount * <span class="hljs-number">2</span>}; 
+ } 
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">initReducer</span>(<span class="hljs-params">state, action</span>) { 
+  <span class="hljs-keyword">switch</span> (action.<span class="hljs-property">type</span>) { 
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'increment'</span>: 
+      <span class="hljs-keyword">return</span> {<span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> + <span class="hljs-number">1</span>}; 
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'decrement'</span>: 
+      <span class="hljs-keyword">return</span> {<span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> - <span class="hljs-number">1</span>}; 
+      <span class="hljs-attr">default</span>: <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(); 
+  } 
+} 
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params">{initialCount}</span>) { 
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(initReducer, initialCount); 
+  <span class="hljs-keyword">return</span> ( 
+          <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span> 
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({ type: "increment" })}>+<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span> 
+              <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({ type: "decrement" })}>-<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span> 
+           <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>); 
+}
+
+</code></pre><p><br></p><ul><li><strong>reducer</strong>: 상태 업데이트 방식을 정의하는 함수. 이 함수는 현재 상태(<strong>state</strong>)와 액션(<strong>action</strong>)을 매개변수로 받고, 새로운 상태를 반환해야 한다. <strong>reducer</strong> 함수는 순수 함수여야 하며, <strong>동일한 입력에 대해 항상 동일한 출력을 반환</strong>해야 한다.</li><li><strong>initialArg</strong>: 초기 상태를 계산하기 위한 값. 초기 상태는 init 함수로 계산되며, 세번째 인자 <strong>init</strong> 함수가 없을 시 initialArg가 초기 값이 된다.</li><li><strong>optional init</strong>: 초기 상태를 반환하는 선택적인 초기화 함수. 이 함수는 <strong>initialArg</strong>를 매개변수로 받아 초기 상태를 계산하여 반환한다. 만약 <strong>init</strong> 함수가 지정되지 않으면, 초기 상태는 <strong>initialArg</strong>로 설정된다. <strong>복잡한 초기 상태를 설정</strong>할 때 유용하다. <strong>init</strong> 함수를 사용하면, <strong>useReducer</strong> 훅을 호출할 때마다 복잡한 초기 상태 계산 로직을 반복하지 않고, 한 번만 실행하여 성능을 최적화할 수 있다.</li></ul><p><br></p><p><strong>Reducer 확장하기</strong></p><p><br></p><p>앞선 예시(Props Getter)에서 compose 함수 혹은 커스텀 훅과 함께 props getter를 사용하여 props의 상태 제어 로직을 커스터마이징하였다. 리듀서 또한 마찬가지로 커스터마이징을 위한 추가 함수를 작성할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// props로 커스터마이징된 리듀서를 매개변수로 받아 기존 리듀서를 확장하는 함수</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">enhancedReducer</span>(<span class="hljs-params">reducer, propReducer</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">state, action</span>) =></span> {
+    <span class="hljs-comment">// 1 -기존의 reducer 함수를 호출하여 다음 상태(nextState)를 계산하고</span>
+    <span class="hljs-keyword">const</span> nextState = <span class="hljs-title function_">reducer</span>(state, action);
+		<span class="hljs-comment">// 2 - action에 changes 프로퍼티를 추가해 reducer에 다음 state를 할당한다.</span>
+    <span class="hljs-comment">/* 3 -  state와 changes가 추가된 action을 매개변수로 넣어 
+     * prop으로 내려올 커스터마이징 리듀서를 실행 */</span>
+    
+			 <span class="hljs-keyword">if</span>(!propReducer) { <span class="hljs-comment">// defaultProp을 추가하지 않는 대신 if로 분기처리할 수 있다.</span>
+      <span class="hljs-keyword">return</span> nextState
+			}
+  
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">propReducer</span>(state, { ...action, <span class="hljs-attr">changes</span>: nextState });
+  };
+}
+
+
+<span class="hljs-comment">// Counter 컴포넌트는 propReducer(커스텀 리듀서)를 prop으로 받아 위의 enhancedReduce함수를 </span>
+<span class="hljs-comment">// useReducer의 reducer 매개변수로 넣는다</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params">{initialCount, propReducer}</span>) {
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(   
+  <span class="hljs-title function_">enhancedReducer</span>(initReducer, propReducer), 
+  initialCount);
+
+
+   <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({ type: "increment" })}>+<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({ type: "decrement" })}>-<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+       Count: {state.count}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+
+<span class="hljs-title class_">Counter</span>.<span class="hljs-property">defaultProps</span> = {
+  <span class="hljs-attr">initialCount</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-comment">// propReducer가 undefined일 시 default 함수로 기존 reducer의 반환값(nextState)을 사용</span>
+  <span class="hljs-attr">propReducer</span>: <span class="hljs-function">(<span class="hljs-params">state, action</span>) =></span> action.<span class="hljs-property">changes</span>, 
+};
+
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">customReducer</span> = (<span class="hljs-params">state, action</span>) => {
+    <span class="hljs-comment">// 기존 reducer에서'decrement' 액션을 수정</span>
+    <span class="hljs-comment">// 카운터 값이 0이고 상태 변경 무시</span>
+    <span class="hljs-keyword">if</span> (state.<span class="hljs-property">count</span> === <span class="hljs-number">0</span> &#x26;&#x26; action.<span class="hljs-property">type</span> === <span class="hljs-string">'decrement'</span>) {
+      <span class="hljs-keyword">return</span> state;
+    }
+
+
+    <span class="hljs-comment">// action.type을 추가</span>
+    <span class="hljs-keyword">if</span>(action.<span class="hljs-property">type</span> === <span class="hljs-string">'onChange'</span>) {
+     <span class="hljs-keyword">return</span> action.<span class="hljs-property">value</span> ?? <span class="hljs-number">0</span>
+		}
+
+
+    <span class="hljs-comment">// 아니라면 기존 reducer가 반환하는 값을 반환</span>
+    <span class="hljs-comment">// nextState = reducer(state, action)가 할당된 action.changes를 할당</span>
+    <span class="hljs-keyword">return</span> action.<span class="hljs-property">changes</span>;
+  };
+
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Counter</span> <span class="hljs-attr">initialCount</span>=<span class="hljs-string">{0}</span> <span class="hljs-attr">propReducer</span>=<span class="hljs-string">{customReducer}</span> /></span></span>;
+}
+</code></pre><p><br></p><ul><li>enhancedReducer : 기존 reducer 함수를 확장하기 위한 함수이다. 기존의 reducer가 계산한 값을 action.changes에 할당한다.</li><li>propReducer : 기존 reducer에서 수정하고자 하는 로직을 작성한다. props가 undefined일 시 기존의 reducer가 반환하는 새 상태를 반환한다.</li><li>customReducer : Counter의 부모 컴포넌트에서 prop으로 내려줄 커스텀 리듀서이다. 기존의 action.type의 동작을 수정하고, action.type을 추가할 수 있다.</li></ul><p><br></p><p>useReducer 훅을 사용하여 위에서 다룬 패턴들과 동일한 효과를 갖는 상태 관리 로직의 분리를 이루었다. enhancedReducer을 통해 prop으로 수정된 리듀서의 추가여부에 따라 동작하게 하였다. 상태 업데이트에 대한 경우의 수가 많아질 수록, 공통된 로직은 initReducer에 정리될 것이고, 수정된 로직은 컴포넌트의 상위에서 함수로 작성될 것이다. 수정된 리듀서를 prop으로 받아, 수정된 상태만을 바라보게되어 이 패턴이 적용된 자식 컴포넌트들을 모두 제어할 수 있게 된다. enhancedReducer의 로직이 복잡하다면 다음의 예시로도 리듀서를 커스터마이즈 할 수 있다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-php"><span class="hljs-comment">// composeReducer 함수는 외부 리듀서를 조합하여 반환</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">enhancedReducer</span>(<span class="hljs-params">reducer, propReducer</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state, action</span>) </span>{
+    <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">nextState</span> = <span class="hljs-title function_ invoke__">reducer</span>(state, action);
+    <span class="hljs-keyword">if</span> (!propReducer) {
+      <span class="hljs-keyword">return</span> nextState;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_ invoke__">propReducer</span>(state, { ...action, <span class="hljs-attr">changes</span>: nextState }, reducer);
+  };
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Counter</span>(<span class="hljs-params">{ initialCount, propReducer }</span>) </span>{
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_ invoke__">useReducer</span>(
+    <span class="hljs-title function_ invoke__">composeReducer</span>(initReducer, propReducer),
+    { <span class="hljs-attr">count</span>: initialCount }
+  );
+
+
+...
+</code></pre><p><br></p><h3 id="-12"><strong>Use Case</strong></h3><p><br></p><ul><li><strong>고도의 커스터마이징 필요</strong>: 컴포넌트의 상태 관리 로직을 사용하는 측에서 완전히 제어하고 싶은 경우</li><li>ex) 예를 들어 다양한 사용 사례에 맞게 상태 업데이트 로직을 변경해야 할 때</li><li><strong>로직 재사용 및 분리</strong>: 상태 관리 로직을 컴포넌트에서 분리, 재사용할 수 있고, 컴포넌트를 더 순수한 UI로 유지할 수 있음</li></ul><p><br></p><h3 id="-13"><strong>Pros &#x26; Cons</strong></h3><p><br></p><ul><li><strong>Pros</strong>:</li><li class="ql-indent-1"><strong>유연성 증가</strong>: 사용자가 컴포넌트의 상태 변경 로직을 완전히 제어할 수 있어, 다양한 요구 사항에 맞게 컴포넌트를 쉽게 조정 가능</li><li class="ql-indent-1"><strong>재사용성 및 분리</strong>: 상태 관리 로직을 컴포넌트로부터 완전히 분리. 로직의 재사용성, 관심사의 분리</li><li class="ql-indent-1"><strong>테스트 용이성</strong>: 로직 자체를 독립적으로 테스트하기 용이함</li><li><strong>Cons</strong>:</li><li class="ql-indent-1"><strong>복잡성 증가</strong>: 상태 업데이트 로직을 외부에서 제공해야 하므로, 구현의 복잡성이 증가할 수 있습니다. 특히, 상태 관리 로직이 복잡한 경우, 이를 제어하는 것이 어려울 수 있습니다.</li><li class="ql-indent-1"><strong>학습 곡선</strong>: State Reducer 패턴을 효과적으로 사용하기 위해서는 리듀서 함수가 지나치게 복잡해질 수 있다. 예시에서 기존의 reducer를 확장하기 위해 propReducer, enhancedReducer 함수가 추가되었는데, 이 부분이 이해하기 까다로울 수 있다.</li></ul><p><br></p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/49","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"HTTP 완벽 가이드 1 - HTTP: 웹의 기초"}],["$","p",null,{"className":"text-sm","children":"2024-03-05"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/47","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound)"}],["$","p",null,{"className":"text-sm","children":"2024-02-26"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Fluent React 5  - Prop 관련 패턴들 - teklog"}],["$","meta","1",{"name":"description","content":"지난 글에 이은 Fluent React의 5장, Powerful Patterns 챕터의 마지막 내용이다. Props와 연관된 설계 패턴을 모아 작성하였다.Render Propconst WindowSize = (props) = {  const [size, setSize] = useState({ width: -1, height: -1 });  return pr"}],["$","meta","2",{"property":"og:title","content":"Fluent React 5  - Prop 관련 패턴들 - teklog"}],["$","meta","3",{"property":"og:description","content":"지난 글에 이은 Fluent React의 5장, Powerful Patterns 챕터의 마지막 내용이다. Props와 연관된 설계 패턴을 모아 작성하였다.Render Propconst WindowSize = (props) = {  const [size, setSize] = useState({ width: -1, height: -1 });  return pr"}],["$","meta","4",{"property":"og:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1709130007/biwigl6bcil4m9vjabb6.png"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Fluent React 5  - Prop 관련 패턴들 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"지난 글에 이은 Fluent React의 5장, Powerful Patterns 챕터의 마지막 내용이다. Props와 연관된 설계 패턴을 모아 작성하였다.Render Propconst WindowSize = (props) = {  const [size, setSize] = useState({ width: -1, height: -1 });  return pr"}],["$","meta","8",{"name":"twitter:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1709130007/biwigl6bcil4m9vjabb6.png"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

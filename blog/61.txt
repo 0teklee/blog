@@ -1,0 +1,731 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","61"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","61","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","61","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T9966,<h1 class="mt-5 mb-3">TLDR</h1><ul class="tight" data-tight="true"><li><p>그래프는 여러 노드가 엣지로 연결된 자료 구조이다.</p></li><li><p>JS에선 그래프를 인접 행렬과 인접 리스트로 만든다.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3">정의</h1><blockquote><p>컴퓨터 과학에서 그래프는 수학의 그래프 이론에서 정의된 무방향 그래프와 방향 그래프 개념을 구현하기 위한 추상 자료형이다. - <a target="_blank" rel="noopener noreferrer nofollow" href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)">wikipedia (graph)</a></p></blockquote><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-mermaid">graph TD
+
+A[A] --&gt; B[B];
+A --&gt; C[C];
+B --&gt; D;
+B --&gt; E;
+C --&gt; F;
+C --&gt; G;</code></pre><p>이전 글에서 HTML 트리, DOM api의 자료 구조를 비교하며 "그래프"에 대해 조금은 더 근본적인 탐구를 해보았다. 문제 풀이에만 집중하다 보니, 기본 개념을 제대로 안살펴본 것 같아 그래프 구조, 탐색, 구체적 탐색법을 나눠 글을 작성했다. </p><p></p><p>작성하면서 느낀 거지만, 알면 알수록 깊고 심오한 내용으로 다가온다.(?)</p><hr class="my-5"><h2 class="mt-5 mb-3">기본 요소</h2><p>그래프의 기본 요소들은 다양한 이름으로 불리지만, 아래의 정의로 통일한다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>    A ---- 0번 노드 
+  /   \ 
+ B     C ---- 2번 노드
+ └ 1번 노드
+ 
+예시 노드 { 인덱스 : 저장 값 }
+{ 0 : "A" } { 1 : "B" } { 2 : "C" }</code></pre><p><strong>노드</strong></p><ul class="tight" data-tight="true"><li><p>그래프를 구성하는 기본 단위로, <strong>데이터를 저장하는 개체</strong>이다.</p></li><li><p>노드 인덱스 + 노드 값 : 노드는 고유한 식별자와 안에 저장된 데이터로 구성된다.</p></li></ul><p><strong>노드 인덱스</strong>: 노드의 식별자. 0, 1, 2을 인덱스로 사용해 노드에 접근하고, 그래프 전체를 탐색할 수 있다.<br><strong>노드 데이터</strong>(값): 각 노드에 저장된 값. 노드는 인덱스와 별도의 데이터(값, 라벨, 가중치 등)를 저장할 수 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>노드 = ●    엣지: ● --- ● (노드 사이의 선)
+높이 = 3
+
+┌            ● - 루트         - 레이어 0
+|           / \
+|          /   \
+높이       ●     ● - 깊이 = 1  - 레이어 1
+|        / \   / \
+|       ●   ● ●   ●          - 레이어 2
+|      /           \
+└     ●             ● - 리프  - 레이어 3</code></pre><ul class="tight" data-tight="true"><li><p><strong>루트와 리프</strong> : 트리 구조에서 최상위 노드를 루트, 자식이 없는 노드를 리프라 한다.</p></li><li><p><strong>엣지(간선)</strong>: 노드 간의 관계를 나타내며, 두 노드를 연결하는 선이다.</p></li><li><p><strong>깊이</strong>: 주로 트리 구조에서 사용된다. 깊이(depth)는 특정 노드에서 루트까지의 거리이다.</p></li><li><p><strong>레이어(층위)</strong>: 그래프에서 특정 노드가 몇 단계 깊이(depth)에 위치하는지를 나타낸다.</p></li><li><p><strong>높이</strong>: <strong>그래프 전체의 최대 깊이</strong>는 <strong>높이</strong>(height)라고 부른다. 예를 들어, 트리에서 높이는 루트 노드부터 가장 깊은 리프 노드까지의 길이로 정의한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>방향:                 
+   ●        ● &lt;--&gt; ● &lt;--&gt; ●    
+ ↙   ↘ 
+●     ●
+
+
+순환: 어느 노드에서 출발해도 재자리로 돌아올 수 있음
+    ●
+  ↗   ↘ 
+ ●  ←  ● 
+
+가중치: ● --(5)-- ●  (엣지에 숫자로 표현)</code></pre><ul class="tight" data-tight="true"><li><p><strong>방향</strong>: 엣지가 단방향인지, 양방향인지에 따라 방향 그래프와 무방향 그래프로 구분된다.</p></li><li><p><strong>순환</strong>: 그래프 내에서 동일한 노드로 돌아올 수 있는 경로가 있을 때 <strong>순환</strong>한다.</p></li><li><p><strong>가중치</strong>: <strong>엣지</strong>에 부여된 값으로, 특정 노드에서 다른 노드로 <strong>이동하는 비용이나 거리 등을 나타낸다</strong>.</p></li></ul><hr class="my-5"><h2 class="mt-5 mb-3">종류</h2><p>그래프는 가장 상위의 개념이다. 방향, 순환, 가중치 등 요소로 분류할 수 있다. 예를 들어 HTML 트리는 비순환 방향 비가중치 그래프이다. 어떤 그래프인 지 감이 잡히지 않을 때, 조금 더 구체적으로 그래프를 파악할 수 있다.</p><p><strong>순환</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>비순환 그래프       순환 그래프
+     ●              ●
+   ↙   ↘          ↗   ↘ 
+  ●     ●        ●  ←  ●  
+                  ↖   ↙
+     0              ●              
+   ↙   ↖          
+  1  ←  2 
+  비순환 그래프</code></pre><ul class="tight" data-tight="true"><li><p><strong>순환 그래프</strong> : 노드들이 특정 경로를 따라 다시 자기 자신으로 돌아올 수 있는 그래프.</p></li><li><p><strong>비순환 그래프</strong> : 순환 경로가 존재하지 않는 그래프.</p></li></ul><p><strong>방향</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>● --- ● --- ●     무방향 그래프
+● --&gt; ● --&gt; ●     단방향 그래프
+● &lt;--&gt; ● &lt;--&gt; ●   양방향 그래프</code></pre><ul class="tight" data-tight="true"><li><p><strong>방향 그래프</strong> : 엣지에 방향성이 존재하는 그래프. (단방향/양방향)</p></li><li><p><strong>무방향 그래프</strong> : 엣지에 방향성이 없는 그래프.</p></li></ul><p><strong>가중치</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>● --(5)-- ●  가중치 그래프
+● ------- ●  비가중치 그래프</code></pre><ul class="tight" data-tight="true"><li><p><strong>가중치 그래프</strong> : 엣지에 가중치 값이 있는 그래프.</p></li><li><p><strong>비가중치 그래프</strong> : 엣지에 가중치가 없는 그래프</p></li></ul><h3 class="mt-5 mb-3">트리*</h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>이진 트리
+	      A  --루트----┐       
+	   ↙     ↘        |  
+ 	  B       C    ---┼- 서브 트리           
+    ↙  ↘     ↙        | 
+   D    E   F      ---┘   
+   └ 리프 (D~F)   </code></pre><p>트리는 프론트엔드 개발에서 자주 사용되며, 특히 코딩 테스트에선 <strong>이진 트리</strong>가 자주 사용된다.</p><p><strong>특징</strong></p><ul class="tight" data-tight="true"><li><p><strong>단방향, 비순환 그래프</strong>이다.</p></li><li><p><strong>루트 노드는 하나이며</strong>, 이로 인해 <strong>레이어가 계층</strong>을 이룬다.</p></li><li><p>임의의 두 노드를 연결하는 <strong>유일한 경로만 존재</strong>한다.</p></li><li><p>일반적으로 루트에서 리프까지 내려갈 수록 노드의 숫자가 점차 증가한다.</p></li><li><p><strong>부분과 전체의 구조가 일치</strong></p></li><li><p><strong>서브 트리</strong>: 특정 노드를 루트로 하는 하위 트리. (ex: 위에선 A-B-C, B-D-E, C-F) </p><ul class="tight" data-tight="true"><li><p>서브 트리도 전체 트리처럼 여전히 트리이다 (ex: C-F).</p></li></ul></li><li><p><strong>이진 트리</strong> : 각 노드가 최대 두 개의 자식을 가지는 트리.</p></li></ul><p>이외로 다양한 형태의 트리가 있다.</p><ul class="tight" data-tight="true"><li><p><strong>힙</strong>: 특정 규칙에 따라 구성된 <strong>완전 이진 트리</strong>.</p></li><li><p><strong>AVL 트리</strong> : 자동 균형 조정이 이루어지는 <strong>이진 탐색 트리</strong>.</p></li><li><p><strong>레드-블랙 트리</strong> : 삽입, 삭제 시 균형을 유지하는 <strong>이진 탐색 트리</strong>.</p></li><li><p><strong>B-트리</strong> : 데이터베이스 시스템에서 널리 사용되는 <strong>균형 트리 구조</strong>.</p></li></ul><h3 class="mt-5 mb-3">힙</h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>힙
+	      8  ---- 루트(최대 값)     
+	   ↙     ↘          
+ 	  4       5              
+    ↙  ↘     ↙  ↘          
+   2    3   2    3 ---- 리프(최소 값)    </code></pre><p>힙은 <strong>노드에 저장된 값을 특정 규칙에 따라 구성한 이진 트리</strong>이다. 노드 데이터가 무엇이든, 엣지로 연결된 노드들을 그래프로 간주하지만, 힙은 <strong>노드 데이터에 따라 노드 트리로된다</strong>. "특정 규칙"은 결국 이렇게 표현될 수 있다.</p><ul class="tight" data-tight="true"><li><p><strong>최대 힙</strong> : 부모 노드가 자식보다 항상 큰 값을 가짐.</p></li><li><p><strong>최소 힙</strong> : 부모 노드가 자식보다 항상 작은 값을 가짐.</p></li></ul><p>힙은 특정 규칙으로 우선 순위를 반영할 수 있다. 새로운 개념이 많이 등장하니, 상세한 내용은 추후 살펴보도록 한다.</p><p><em>힙에 새로운 노드가 추가되거나 삭제되면, "</em><strong><em>힙 속성</em></strong><em>"을 유지하기 위한 로직이 수행된다. JS에서는 보통 배열로 구현되며, 우선순위 큐Priority Queue로 정렬한다.</em></p><h3 class="mt-5 mb-3">기타 유형</h3><p>이외에도 다양한 그래프가 있다.</p><ul class="tight" data-tight="true"><li><p><strong>멀티 그래프</strong>: 두 노드 사이에 여러 개의 엣지가 존재할 수 있는 그래프.</p></li><li><p><strong>유사 그래프</strong>: 멀티그래프의 한 유형으로, 자기 자신을 향하는 엣지를 포함할 수 있음.</p></li><li><p><strong>완전 그래프</strong>: 모든 노드가 서로 연결된 그래프.</p></li><li><p><strong>이분 그래프</strong>: 노드 집합이 두 개의 그룹으로 나뉘고, 같은 그룹 내에서는 엣지가 없는 그래프.</p></li><li><p><strong>평면 그래프</strong>: 엣지가 교차하지 않고 평면에 그릴 수 있는 그래프.</p></li><li><p><strong>희소 그래프</strong>: 엣지 개수가 노드 개수에 비해 상대적으로 적은 그래프.</p></li><li><p><strong>밀집 그래프</strong>: 엣지 개수가 노드 개수에 비해 상대적으로 많은 그래프.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3">그래프 in JS</h1><h2 class="mt-5 mb-3">인접 행렬과 인접 리스트*</h2><p>대표적인 그래프 구현 방법은 <strong>인접 리스트와 인접 행렬</strong>이다. 목적에 따라 적합한 형태를 활용한다.</p><hr class="my-5"><h3 class="mt-5 mb-3">인접 행렬</h3><p>인접 행렬은 <strong>그래프의 노드 연결 관계를 2차원 배열</strong>(행렬)로 표현하는 방식이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>인접 행렬의 구조
+배열[노드1][노드2] = 값 (값으로 노드1,2의 연결 관계를 표현한다.)
+배열[행 번호 row][열 번호 col] = 0 | 1 (not 연결/연결)
+row와 col의 최댓값은 같아야한다.</code></pre><ul class="tight" data-tight="true"><li><p><strong>인접 행렬에서 노드 인덱스는 노드 데이터와 같다.</strong></p></li><li><p><strong>인접 행렬에서 노드 인덱스는 배열의 인덱스와 동일하다.</strong></p></li><li><p>두 노드의 연결 여부(엣지)가 인접 행렬에 저장된다.</p></li><li><p>2차원 배열(행렬)에서 <strong>노드 1은 행 번호</strong>, <strong>2는 열 번호</strong>이다.</p></li><li><p><strong>노드가 N개면 NxN 크기의 배열</strong>로 행렬을 나타낸다.</p></li></ul><h4 class="mt-5 mb-3">노드 데이터의 의미</h4><p>인접 행렬에서 두 노드를 통해 값을 얻을 수 있다. 값은 다양한 형태와 의미를 갖을 수 있다.</p><p>가장 기본적인 방식은 인접 행렬이 두 노드의 <strong>연결 관계를 나타내는 것</strong>이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">const adjacencyMatrix = [
+  [0, 1, 1, 0], // 0번 노드는 1, 2와 연결
+  [1, 0, 0, 1], // 1, 2번 노드는 0, 3과 연결
+  [1, 0, 0, 1],
+  [0, 1, 1, 0] // 3번 노드는 1, 2와 연결
+];
+
+/* 
+이 행렬을 그래프로 표현하면 다음과 같다
+    0 
+   / \
+  1   2
+   \ /
+    3
+ 모두 연결된 순환 그래프인 것을 알 수 있다.
+*/</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix</code>의 두 인덱스는 그래프에서 두 노드를 가리키고, <strong>데이터는 엣지</strong>를 나타낸다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix</code>는 노드가 4개로 이루어진 그래프를 표현한다.</p><ul class="tight" data-tight="true"><li><p>0번 노드와 1번 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix[0][1] = 1</code>이므로 연결되어있다.</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix[0][3] = 0</code>으로 노드 0,3은 연결되어 있지 않다.</p></li></ul><h4 class="mt-5 mb-3">장단점</h4><p>✅ <strong>장점:</strong></p><ul class="tight" data-tight="true"><li><p>구현이 직관적이고 단순하다.</p></li><li><p>두 노드의 인덱스로 행렬에 O(1)로 접근해 값을 얻을 수 있다.</p></li></ul><p>✅ <strong>단점:</strong></p><ul class="tight" data-tight="true"><li><p>행렬이기 때문에 불필요한 공간 낭비가 생긴다.</p></li><li><p>가장 큰 노드 인덱스를 기준으로 행렬 크기가 결정되어 차이가 클 수록 공간 낭비가 커진다. </p><ul class="tight" data-tight="true"><li><p>3 노드의 인덱스가 1, 2, 999 이라면, <strong>가장 큰 인덱스 999로 전체 행렬이 만들어진다</strong></p></li></ul></li><li><p>이런 경우 행렬에는 연결되지 않음을 나타내는 불필요한 값이 행렬 대부분을 차지한다.</p></li><li><p>간선이 노드보다 매우 적은 그래프를 희소 그래프라고 하며, 이때 행렬은 대부분 비효율적이다.</p></li></ul><h4 class="mt-5 mb-3">NOTE</h4><p>❓ <strong>인접 행렬은 항상 두 노드의 연결 여부를 나타낼까</strong></p><p><strong>노드 인덱스</strong><br>인접 행렬에서 인덱스가 곧 노드인 경우가 일반적이지만, 예외도 많다.</p><ul class="tight" data-tight="true"><li><p><strong>변환(예: 문자열 ID, 객체)</strong>: 데이터를 <strong>인접 행렬로 변환</strong>해야 할 때. 데이터와 행렬을 맵핑하면서 노드 인덱스를 숫자로 만들고, 행렬에 두 노드 연결 여부를 반영해야 한다.</p></li><li><p><strong>노드 번호가 특정 범위(예: 1부터 시작)인 경우</strong>: <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">matrix[1][1]</code>부터 사용하며, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">0</code>번 인덱스는 비워둘 수 있다.</p></li></ul><p><strong>노드 데이터 (배열의 값)</strong><br>인접 행렬에 들어있는 <strong>값</strong>은 <strong>문제에 따라 다를 수 있다</strong>. 조건에 따라 노드 값은 연결 관계를 나타낼 수도, 아닐 수도 있다. (ex: 노드 값 = 가중치 ) 혹은 <strong>노드 연결 관계를 구현하는 것</strong> 자체가 문제일 수도 있다.</p><p>경험 상 <strong>DFS, BFS 등 그래프 탐색</strong>에 사용해야 하는 경우가 잦아 인접 행렬의 기본 개념을 확실히 해두는 것이 중요하다.</p><hr class="my-5"><h3 class="mt-5 mb-3">인접 리스트</h3><p>인접 리스트는 반대다. 인접 행렬과 달리, <strong>연결된 노드만 저장하여 공간 효율성이높다</strong>. 인접 리스트는 보통 <strong>배열</strong>로 <strong>그래프 연결 관계</strong>를 표현한다.</p><p><strong>인접 리스트 배열에서 인덱스는 보통 노드 인덱스를 가리킨다</strong>.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">인접 리스트 예시
+인덱스 = 노드 번호 
+배열[인덱스] = 값 // 값은 연결 관계인 노드 번호나 가중치 등 다양한 형태가 될 수 있다.</code></pre><p>하지만 인접 행렬과 마찬가지로 주어진 문제에 따라 다양하게 표현되거나 변환이 필요할 수 있다.</p><h4 class="mt-5 mb-3">노드 데이터의 의미</h4><p>배열로 표현된 인접리스트는 다음과 같다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 1차원 배열
+const adjacencyList = [-1, 0, 0, 1, 1, 2, 2, 3]
+// 1,2번 노드는 0번과, 3,4번 노드는 1번과, 5,6은 2, 7은 3과 연결
+// 보통 루트는 -1로 표기하나,
+const adjacencyList = [Infinity, 0, 1, 1, 2, 2, 3, 3]
+// 인덱스 0번에 빈 값으로 Infinity 등 빈값을 넣기도 한다.
+
+// 저장 값이 더 복잡한 형태로 표현된 인접 리스트
+const weightedGraph = [
+  [[1, 5], [2, 10]], // 노드 0이 노드 1과 가중치 5, 노드 2와 가중치 10으로 연결됨
+  [[0, 5], [2, 3]],  // 노드 1이 노드 0과 5, 노드 2와 3으로 연결됨
+  [[0, 10], [1, 3]]  // 노드 2가 노드 0과 10, 노드 1과 3으로 연결됨
+];</code></pre><h4 class="mt-5 mb-3">장단점</h4><p>장점과 단점은 인접 행렬과 반대이다.</p><p>✅ <strong>장점:</strong></p><ul class="tight" data-tight="true"><li><p>공간 효율성이 좋다. 메모리를 적게 사용한다.</p></li><li><p>인접 행렬과 반대로 희소 그래프(노드가 엣지보다 상대적으로 많은 경우) 유리하다.</p></li><li><p>그래프 표현이 인접 행렬보다 직관적이다. 불필요한 값이 줄어들고, 연결 관계와 노드 값만 남긴다.</p></li></ul><p>✅ <strong>단점:</strong></p><ul class="tight" data-tight="true"><li><p>인접 행렬보다 <strong>탐색 효율이 낮다</strong>. </p><ul class="tight" data-tight="true"><li><p>최악의 경우 모든 엣지를 확인해야 하여 <strong>O(E = 엣지 갯수)</strong>이 될 수 있다.</p></li></ul></li><li><p>그래프가 가독성이 떨어진다. 데이터 구조가 복잡해질 수록 더 파악이 어려울 수 있다. (위의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">weightedGraph</code> 가 예시이다.)</p></li></ul><h4 class="mt-5 mb-3">NOTE</h4><p>❓ <strong>인접 리스트의 인덱스와 값은 항상 노드 인덱스와 엣지(연결 관계)일까</strong></p><ul class="tight" data-tight="true"><li><p>노드 인덱스와 노드에 저장된 값을 적절히 설계해야 한다.</p></li></ul><p>배열을 사용해 인덱스를 노드로, 값을 엣지로 하는 것은 직관적이다. 하지만 행렬과 마찬가지로 <strong>인접 리스트를 직접 만드는 것 자체가 문제 의도일 수 있다.</strong></p><p><strong>노드 인덱스</strong></p><ul class="tight" data-tight="true"><li><p>그래프 목적과 자료 구조에 따라 인덱스가 항상 노드 번호를 나타내지 않을 수 있다.</p></li></ul><p>배열 인덱스로 엣지를 나타낼 수 없는 경우도 흔하다.</p><ul class="tight" data-tight="true"><li><p><strong>노드의 고유한 ID가 문자열</strong>이거나, 특정 데이터 구조가 필요한 경우 </p><ul class="tight" data-tight="true"><li><p>노드는 배열 인덱스가 아닌 <strong>키가 노드</strong>를 식별하고, <strong>값이 연결 정보</strong>를 저장하게 된다.</p></li><li><p>배열 대신 객체(Map)를 활용하여 노드의 식별자를 키로 사용하는 방식도 가능하다.</p></li></ul></li></ul><p><strong>노드 데이터 (배열 요소)</strong><br><strong>노드에 저장된 값이 추가적인 정보</strong>를 포함하는 경우<br>- 노드 값이 단순히 다음 노드를 가리키는 것이 아니라 가중치나 방문 여부 등을 나타낼 수도 있다.</p><p>인접 리스트가 주어지면, <strong>인덱스와 배열 내부의 값이 각각 어떤 의미인지</strong> 파악하는 것이 중요한 단서를 준다. 이를 토대로 추론을 이어가야 수월하다.</p><p>경험 상 코딩 테스트 문제에서 그래프는 인덱스로 연결된 두 배열을 인접 행렬이나 인접 리스트로 만들어야 하는 경우가 많았다. ex) <em>arr1과 arr2는 인덱스로 연결된 두 배열입니다.</em></p><hr class="my-5"><h2 class="mt-5 mb-3">JS로 그래프 표현하기</h2><h3 class="mt-5 mb-3">TLDR :</h3><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>그래프 변환이 필요한 지 판단하고</p></li><li><p>탐색이 가능한 그래프를 판단하고 (리스트/ 행렬)</p></li><li><p>탐색을 수행하며 조건에 맞는 데이터를 얻는다</p></li></ol><p>이제 인접 행렬과 인접 리스트가 구체적으로 어떻게 JS에서 표현되는 지 알아보자. 보통은 참조 타입인 객체, 배열로 표현된다. 코딩 테스트에서는 문제에서 매개변수로 주어진 데이터를 <strong>적절한 형태의 그래프로 변경</strong>해야 한다.</p><hr class="my-5"><h3 class="mt-5 mb-3">객체</h3><p>JS에서 객체는 키-값 구조를 가지며, 그래프를 표현하는 방식 중 하나로 사용될 수 있다. <strong>주로 인접 리스트 방식</strong>으로 표현된다. 주로 <strong>키는 노드, 값은 연결된 노드의 배열</strong>로 표현한다.</p><h4 class="mt-5 mb-3">객체 인접 행렬</h4><p>인접 행렬을 객체로 표현하는 것은 일반적이지 않다. 인접 행렬은 2차원 배열로 표현되며, 객체 기반 표현은 비효율적이다. 하지만 <strong>객체를 2차원 배열의 인접 행렬로 변환</strong>해야될 때가 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">/* 
+{노드: 연결 관계[]}
+문제의 매개변수 obj의 키는 노드, 값은 연결 관계를 배열로 나타낸다.
+*/
+
+const paramObj = { // 그래프 obj의 키는 문자이다.
+  A: ['B', 'C'], 
+  B: ['D'], 
+  C: ['D'],
+  D: [] 
+};
+
+// 객체로 주어진 그래프를 인접 행렬로 변경하는 함수
+function convertToAdjacencyMatrix(obj) {
+  const nodes = Object.keys(obj); // A~D까지 노드를 모두 가져온다. 
+  const size = nodes.length; // 그래프 전체 노드 개수와 같다.
+  // 빈 인접 행렬을 만든다.
+  const matrix = Array.from({ length: size }, () =&gt; Array(size).fill(0)); 
+  /* size X size 크기의 행렬에 0으로 모든 값을 채워 초기화한다
+	문제 조건에 따라 fill(x)는 다른 값이 될 수 있다.*/
+ 
+// nodes A부터 D까지 순회하며 연결 관계를 인접 행렬에 업데이트한다.
+  nodes.forEach((node, i) =&gt; {
+   // node는 A~D, i는 현재 노드의 인덱스이다.
+   // 행렬은 배열이니, 문자열 노드 인덱스를 숫자로 바꿔 행렬에 넣는다.
+  // obj[node]는 노드의 값이다.
+  // 이 값은 현재 node와 연결된 모든 노드를 배열로 표현한다.
+    obj[node].forEach(adjNode =&gt; {
+      const j = nodes.indexOf(adjNode); // 연결된 노드의 인덱스를 찾는다.
+	  // 현재 노드의 인덱스 i는 행 번호가 되고 adjNode의 인덱스 j는 열 번호가 된다.
+      if (j !== -1) matrix[i][j] = 1; // j가 -1이 아니라면, 즉 nodes에 존재한다면
+      // 연결 관계를 1로 설정한다
+    });
+  });
+  return matrix;
+}
+
+const adjacencyMatrix = convertToAdjacenctMatrix(paramObj)</code></pre><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>현재 노드 인덱스는 i, 연결된 노드의 인덱스는 j. 
+adjacencyMatrix[i][j] = 값은 0, 1 </code></pre><p>주목 할 만한 점은 객체 그래프를 <strong>행렬(2차원 배열)로 만들기 위해 노드 인덱스(A~D)를 숫자로 변환하는 것</strong>이다.</p><p>예시에서 이미 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">paramObj</code>가 연결 관계를 나타내고 있지만, 행렬로 만들면 <strong>두 노드의 숫자 인덱스를 통해 연결 관계를 O(1)로 확인할 수 있다</strong>. 인접 리스트 탐색은 최악의 경우 O(N)이 될 수 있고, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">paramObj</code> 구조가 복잡해질 수록 효율적 탐색을 떠올리기 어렵다. 이런 경우 <strong>일반적으로 인접 행렬은 노드가 1,000개 이하일</strong> 때 유용하게 사용할 수 있다고 한다. (제한 조건에서 매개 변수인 배열의 길이가 10^2 이하인 경우)</p><h4 class="mt-5 mb-3">객체 인접 리스트</h4><p>객체로 표현된 인접 리스트는 노드와 엣지를 문자로 나타난다. 깔끔하게 표현되어 인접 리스트의 장점이 잘 보인다. 그러나 <strong>객체로 그래프를 구현하는 것 자체가 문제 의도</strong>일 때가 많다. 특히 <strong>해결 과정의 중간 단계에서</strong> 직접 인접 리스트를 만들어야 할 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 인접 리스트를 객체로 표현
+const adjacencyListObj = {
+  A: ['B', 'C'], // A노드는 B, C를 자식 노드로 갖는다.
+  B: ['D'], // B, C 노드는 D를 자식 노드로 갖는다
+  C: ['D'],
+  D: [] // D는 자식이 없는 리프 노드다.
+};
+
+// Map으로 인접 리스트를 표현할 수 있다.
+/* 
+아래 예시는 2개의 배열을 인접 리스트로 변환한다.
+arr1 = 모든 노드의 배열, arr2 = 모든 노드의 연결 관계를 나타낸 배열.
+문제에서 주어진 두 개의 매개변수가 각각 노드와 노드들의 연결 관계를 나타낸다.
+ */
+arr1 = ["A", "B", "C","D"]
+arr2 = [["B","C"],["D"],["D"],[]]
+
+const adjacencyListMap = new Map();
+
+for(let i = 0; i &lt; arr1.length; i++) {
+ const node = arr1[i]
+ const connectedNode = arr2[i]
+ if(adjacencyListMap.get(node)){
+	 adjacencyListMap.set(node, []) // 빈 배열로 노드의 값을 초기화한다.
+ }
+// .push는 참조된 값을 직접 변경하기에 set을 사용하지 않을 수 있다.
+ adjacencyListMap.get(node).push(connectedNode)
+}</code></pre><p>두 개의 배열이 인덱스로 연결된 경우를 자주 볼 수 있다. 배열 안의 값이 문자라면 꽤 자주 접하는 패턴이다.</p><hr class="my-5"><h3 class="mt-5 mb-3">배열*</h3><p>JS에서 배열과 그래프는 연관이 깊다.</p><hr class="my-5"><h4 class="mt-5 mb-3">배열 인접 행렬</h4><p>인접 행렬은 보통 <strong>2차원 배열</strong>이다. 배열 행과 열이 각각 노드 번호를 의미하며, 행렬의 값은 두 노드 간의 연결 관계를 나타낼 수 있다. 앞서 살핀 객체 변환 말고도, 배열 데이터를 인접 행렬로 가공할 필요가 자주 생긴다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 인접 행렬: 일반적인 2차원 배열 방식
+const adjacencyMatrixArray = [
+  [0, 1, 1, 0],
+  [1, 0, 0, 1],
+  [1, 0, 0, 1],
+  [0, 1, 1, 0]
+];
+
+// 인접 행렬을 1차원 배열로 압축하여 표현하는 방식
+const flatMatrix = [0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0];
+// 결국 adjacencyMatrixArray을 flat()한 것과 같다.
+// 1차원 배열을 다시 2차원 배열로 만든다.
+const col = Math.sqrt(adjacencyMatrixFlat.length); // 4 = 행의 크기
+const undoFlatMatrix = Array.from(
+  { length: col }, 
+  (_, row) =&gt; flatMatrix.slice(row * col, (row + 1) * col)
+);</code></pre><p>행렬을 만드는 것이 쉽기 때문에 활용하는 문제가 더 많다. 데이터가(ex:인덱스로 연결된 두 배열) 주어지고, 이를 행렬로 만든 뒤 연결 관계를 찾는 식이다. 인접 행렬 문제는 결국 이렇다:</p><p><strong>핵심</strong><br>매개 변수: arr1과 arr2는 길이가 동일하며 인덱스로 연결됩니다. (역시 다양한 변주가 있을 수 있다.)<br>x에서 y를 만족하는 z를 반환하시오.</p><p>x: arr1과 arr2, 데이터로 <strong>행렬</strong>을 만들라는 거다. 서술형으로 길게 풀어쓰면 놓치기 쉽다.<br>y: <strong>조건</strong>이다. 조건은 결국 행렬에 있는 값의 <strong>일치 여부</strong>다. 행렬 안에는 보통 0과 1로만 표현될 수 있는 값이 들어간다. (ex: 양/늑대, 벽/통로, 바다/섬, 땅/석유, etc)<br>z: <strong>사실상 정답과 가장 연관이 깊다.</strong> 유형마다 다르며, <strong>적절한 탐색법이 요구</strong>된다. (ex: 연결된 노드 그룹의 갯수,  연결된 노드 그룹 중 가장 최대/최소의 노드 갯수,  연결된 노드가 있는 지의 여부 등)</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">/*
+매개변수
+ arr1 = ["A", "B","C","D"] // arr1은 문자로 되어있고
+ arr2 = [0, 1, 1, 0]  // arr2는 연결 관계가 아닌 특정한 값을 나타낸다.
+보통 arr2는 육지나 바다, 통로 혹은 벽, 양 혹은 늑대 등 두가지를 뜻한다.
+*/
+
+function solution(arr1, arr2) {
+  const size = arr1.length; 
+  const matrix = Array.from(
+    { length: size }, 
+    (_, row) =&gt; arr2.slice(row * size, (row + 1) * size)
+  );
+  const visited = new Set();
+  let count = 0; // z = 연결된 노드 그룹의 갯수 일 때
+  let maxSize = 0;  // z = 연결된 노드 그룹 중 최대 노드 개수 일때
+  const target = 2 // z = 특정 노드가 연결 그룹에 속해 있는 지 여부
+  
+  // 행렬 문제는 자주 dfs로 탐색한다
+  function dfs(node) {
+   // 로직은 조건 y, 반환 값 z가 무엇이냐에 따라 달라진다
+   if (visited.has(node)){
+   // 더 깊은 내용은 DFS 글에서 다룬다.
+   // return; 
+   // return 0; 
+   }
+   // 생략.... 
+  }
+}</code></pre><hr class="my-5"><h4 class="mt-5 mb-3">배열 인접 리스트</h4><p>배열로 표현된 인접 리스트는 인덱스가 노드, 값이 연결 노드를 가리킬 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">const list = [-1, 0, 0, 2, 1]
+// 인덱스 = 자신의 노드 번호이고 값이 연결된 노드라면
+list[0] = -1 // 보통 루트는 -1로 표현한다 
+list[1] = 0 // 1번 노드는 0번과 연결
+list[2] = 0 // 2번은 0번과
+list[3] = 2 // 3번은 2번과
+list[4] = 0 // 4번은 1번과
+
+// 2차원 배열로도 나타낼 수도 있다.
+const list2D = [
+  [1, 2], // 0번 노드는 1, 2와 연결
+  [0, 4], // 1번 노드는 0, 4
+  [0, 3], // 2번은 0, 3
+  [2], // 3은 2
+  [1] // 4는 1
+];</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">list</code>는 이런 그래프를 그린다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>      0  
+    /   \
+  1      2
+ /     /
+4     3</code></pre><p>그래프 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">list</code>가 복잡하고 추상적일 수 파악이 어렵고, 바로 그것이 문제 의도일 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">
+// 가장 흔한 방식은 엣지가 배열로 주어진다.
+const edges = [ [0, 1], [0, 2], [1, 4], [2, 3], [3, 2], [4, 1] ];
+// 이 변수에서 노드는 0,1,2,3,4 5개이지만 엣지는 6개다.
+const size = new Set(edges.flat()).size // 중복된 노드(숫자)를 없애고
+// 1차원 배열로 리스트를 만든다면
+// 인덱스가 노드, 값은 연결된 노드이다.
+const list = Array(size).fill(-1) // -1  = 연결 없음을 나타내는 값으로 초기화
+		   
+// 2차원 배열일 때: 인덱스 = 노드, 값 = 연결된 모든 노드[]
+ const list = Array.from({length:size}, () =&gt; 
+	   [] // 빈 배열로 초가화			   
+ )
+// 이후 edge를 순회하면서 list에 연결 관계를 업데이트한다.
+ for(let [nodeA, nodeB] of edges) {
+	 // 1차원 배열
+	 list[nodeB] = nodeA 
+	 // 여기서 nodeA,B 중복된 노드는 덮어쓰기 된다
+	 // ex) [nodeA, nodeB] : [0,1] → [0,2] → [3,2] → [4,1] 
+	 // list[1]은 0 -&gt; 4로, list[2] 0 -&gt; 3으로 덮어쓰기
+
+	 // 2차원 배열 
+	 list[nodeA].push(nodeB);
+	 list[nodeB].push(nodeA);
+	 // 중복된 노드가 추가될 수 있다.
+	 // ex) list[0].push(1) : list[0] = [1]
+	 // list[1].push(0) : list[1] = [0]
+	 // list
+ }
+
+// 1차원 배열 결과: 
+result = [
+  -1,  // 0번 노드 → nodeA만 있고, 다른 노드에 의해 방문되지 않음 (루트 개념)
+   4,  // 1번 노드 → 4번 노드를 통해 마지막으로 방문됨
+   3,  // 2번 노드 → 3번 노드를 통해 마지막으로 방문됨
+   2,  // 3번 노드 → 2번 노드를 통해 마지막으로 방문됨
+   1   // 4번 노드 → 1번 노드를 통해 마지막으로 방문됨
+]
+
+/* 
+0번 노드는 nodeA만 있어 값이 업데이트 되지 않는다. 
+배열 값이 덮어쓰기되는 것은 같은 노드가 다른 노드에서 여러 번 방문되기 때문이다.
+그래서 배열의 값은 연결된 노드의 마지막 방문 경로를 나타낸다 
+*/
+
+// 2차원 배열 결과
+result = [
+  [1, 2],  // 0번 노드는 1번, 2번과 연결됨
+  [0, 4, 4],  // 1번 노드는 0번, 4번(중복)과 연결됨
+  [0, 3, 3],  // 2번 노드는 0번, 3번(중복)과 연결됨
+  [2, 2],  // 3번 노드는 2번(중복)과 연결됨
+  [1, 1]   // 4번 노드는 1번(중복)과 연결됨
+]
+/* 반면 2차원 배열은 덮어쓰기 없이 연결된 모든 노드 관계를 표현한다.
+result[0] = 1,2 0번 노드가 1,2와 연결
+중복 값을 없애기 위한 추가 로직이 필요할 수 있다. 
+*/</code></pre><p>인접 리스트 변환이 필요한 상황은 다양하다. 몇 가지 예시로 인접 리스트로 변환이 필요한 데이터를 보면,</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 두 변수는 노드 전체 갯수와 연결 관계를 표현한다.
+const numCourses = 4;
+const prerequisites = [[1, 0], [2, 1], [3, 2]];
+// 0 루트 -&gt; 1 -&gt; 2 -&gt; 3
+
+// 두 변수에 각각 저장된 노드 저장값과 엣지로 리스트를 만드는 경우
+const nodeValues = [5, 6, 4, 3, 0];  // 노드의 저장값
+const edges = [ // 노드의 연결
+  [1, 2], 
+  [0, 4], 
+  [0, 3], 
+  [2], 
+  [1]
+];
+
+// ex: 위의 list2D와 동일한 그래프이지만, 노드에 추가적인 저장값이 있을 때
+const list2D = [
+  [5 ,1, 2], // 0번 노드는 5라는 값이 저장되고 1, 2와 연결된다
+  [6, 0, 4], // 1번 노드는 저장값 6, 엣지는 0, 4 
+  [4, 0, 3], // 2번은 값 4, 엣지 0,3
+  [3, 2], // 3은 값 3, 엣지 2
+  [0, 1] // 4는 값 0, 엣지 1
+];
+
+
+// 혹은 엣지에 가중치가 포함된 리스트
+const weightedList = [
+  [[1, 4], [2, 1]], // 0번 노드는 1와 4 가중치로 연결, 2와는 1 가중치로 연결
+  [[0, 4], [3, 2]], // 1 노드는 0과 4로, 3과 2으로
+  [[0, 1], [3, 3]], // 2 노드는 0과 1로, 3과 3으로
+  [[1, 2], [2, 3]]  // 3 노드는 1과 2로, 2와 3으로
+];ㄱ
+
+
+// 임의의 문자 배열을 리스트로 나타낼 때
+const alienWords = ["wrt", "wrf", "er", "ett", "rftt"];
+// 배열 값을 조건에 따라 정렬하고 새로운 데이터 구조로 변환을 요구한다. </code></pre><p>모든 변환의 가능성을 익히는 것은 불가능하다. 사실 가장 중요한 점은 대부분의 문제가 <strong>그래프 설계와 함께 탐색 알고리즘을 요구한다.</strong></p><p></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/59"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#f8b200" style="background-color: #f8b200; color: inherit">이전 해시 글</mark></a>에서 알게된 내용이 떠오른다. 해시를 사용한다고 문제가 바로 풀리는 것이 아니다. 해시를 어떻게 설계하는 가가 관건이었다. 구체적으로 데이터가 키-값으로 저장되는 시점부터 탐색이 가능한 저장 구조를 다뤘다. 그래프도 똑같다. 그래프를 만들고 탐색을 해야한다. 그래프를 만들 때, 탐색이 효율적으로 이루어지게 만들어야 한다.</p><hr class="my-5"><h2 class="mt-5 mb-3">프론트 개발에서 그래프</h2><p>JS 기반의 프론트엔드에서 그래프는 자주 사용된다. Web API인 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체, DOM 트리, 상태 관리 등이 있다. </p><ul class="tight" data-tight="true"><li><p>HTML 문서와 DOM 트리 (<a target="_blank" rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/60">관련 글</a>)</p></li><li><p>모듈의 의존성 그래프</p></li><li><p>상태 그래프 (ex 리액트 상태, Props 의존성, 전역상태 등)</p></li><li><p>라우팅 그래프 (ex 라우팅 경로 (? 맞나))</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 리액트 엘리먼트는 객체로 표현된 연결 리스트이다. 
+// children에서 자식 노드의 연결 관계를 나타낸다.
+
+const ReactElement = {
+	type: "App", 
+	children: [ 
+		{ type: "Header", children: [] }, 
+		{ type: "Main", children: [ 
+			{ type: "Sidebar", children: [] }, 
+			{ type: "Content", children: [] } 
+			] 
+		}, 
+		{ type: "Footer", children: [] } ] };
+	]
+};
+
+// JS document 객체는 브라우저가 생성한 DOM 트리를 탐색, 변경하는 DOM API이다. // 각 노드는 부모-자식 관계로 연결된다.
+
+// console.dir(document)
+/*
+#Document 
+	URL: "https://example.com" 
+	documentElement: html 
+	head: head 
+	body: body 
+	title: "Example" 
+	cookie: "" 
+	location: Location {...} ...
+*/
+
+// console.log(document)
+/*
+	&lt;html&gt; 
+		&lt;head&gt;
+		&lt;body&gt;
+			&lt;header&gt;
+			&lt;main&gt;
+			&lt;footer&gt;
+*/</code></pre><p>다음 글은 그래프 탐색이다.</p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Graph 1 - 기본 구조와 개념"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2025/02/25"}],["$","p",null,{"children":"n°61"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","Data Structures & Algorithms"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:Tdfd0,<h1 class="mt-5 mb-3" id="tldr">TLDR</h1><ul class="tight" data-tight="true"><li><p>그래프는 여러 노드가 엣지로 연결된 자료 구조이다.</p></li><li><p>JS에선 그래프를 인접 행렬과 인접 리스트로 만든다.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3" id="">정의</h1><blockquote><p>컴퓨터 과학에서 그래프는 수학의 그래프 이론에서 정의된 무방향 그래프와 방향 그래프 개념을 구현하기 위한 추상 자료형이다. - <a rel="noopener noreferrer nofollow" href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)">wikipedia (graph)</a></p></blockquote><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-mermaid">graph TD
+
+A[A] --> B[B];
+A --> C[C];
+B --> D;
+B --> E;
+C --> F;
+C --> G;</code></pre><p>이전 글에서 HTML 트리, DOM api의 자료 구조를 비교하며 "그래프"에 대해 조금은 더 근본적인 탐구를 해보았다. 문제 풀이에만 집중하다 보니, 기본 개념을 제대로 안살펴본 것 같아 그래프 구조, 탐색, 구체적 탐색법을 나눠 글을 작성했다. </p><p></p><p>작성하면서 느낀 거지만, 알면 알수록 깊고 심오한 내용으로 다가온다.(?)</p><hr class="my-5"><h2 class="mt-5 mb-3" id="-1">기본 요소</h2><p>그래프의 기본 요소들은 다양한 이름으로 불리지만, 아래의 정의로 통일한다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-css">    <span class="hljs-selector-tag">A</span> ---- <span class="hljs-number">0</span>번 노드 
+  /   \ 
+ <span class="hljs-selector-tag">B</span>     C ---- <span class="hljs-number">2</span>번 노드
+ └ <span class="hljs-number">1</span>번 노드
+ 
+예시 노드 { 인덱스 : 저장 값 }
+{ <span class="hljs-number">0</span> : <span class="hljs-string">"A"</span> } { <span class="hljs-number">1</span> : <span class="hljs-string">"B"</span> } { <span class="hljs-number">2</span> : <span class="hljs-string">"C"</span> }</code></pre><p><strong>노드</strong></p><ul class="tight" data-tight="true"><li><p>그래프를 구성하는 기본 단위로, <strong>데이터를 저장하는 개체</strong>이다.</p></li><li><p>노드 인덱스 + 노드 값 : 노드는 고유한 식별자와 안에 저장된 데이터로 구성된다.</p></li></ul><p><strong>노드 인덱스</strong>: 노드의 식별자. 0, 1, 2을 인덱스로 사용해 노드에 접근하고, 그래프 전체를 탐색할 수 있다.<br><strong>노드 데이터</strong>(값): 각 노드에 저장된 값. 노드는 인덱스와 별도의 데이터(값, 라벨, 가중치 등)를 저장할 수 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-javascript">노드 = ●    엣지: ● --- ● (노드 사이의 선)
+높이 = <span class="hljs-number">3</span>
+
+┌            ● - 루트         - 레이어 <span class="hljs-number">0</span>
+|           / \
+|          /   \
+높이       ●     ● - 깊이 = <span class="hljs-number">1</span>  - 레이어 <span class="hljs-number">1</span>
+|        <span class="hljs-regexp">/ \   /</span> \
+|       ●   ● ●   ●          - 레이어 <span class="hljs-number">2</span>
+|      /           \
+└     ●             ● - 리프  - 레이어 <span class="hljs-number">3</span></code></pre><ul class="tight" data-tight="true"><li><p><strong>루트와 리프</strong> : 트리 구조에서 최상위 노드를 루트, 자식이 없는 노드를 리프라 한다.</p></li><li><p><strong>엣지(간선)</strong>: 노드 간의 관계를 나타내며, 두 노드를 연결하는 선이다.</p></li><li><p><strong>깊이</strong>: 주로 트리 구조에서 사용된다. 깊이(depth)는 특정 노드에서 루트까지의 거리이다.</p></li><li><p><strong>레이어(층위)</strong>: 그래프에서 특정 노드가 몇 단계 깊이(depth)에 위치하는지를 나타낸다.</p></li><li><p><strong>높이</strong>: <strong>그래프 전체의 최대 깊이</strong>는 <strong>높이</strong>(height)라고 부른다. 예를 들어, 트리에서 높이는 루트 노드부터 가장 깊은 리프 노드까지의 길이로 정의한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-makefile"><span class="hljs-section">방향:                 </span>
+   ●        ● &#x3C;--> ● &#x3C;--> ●    
+ ↙   ↘ 
+●     ●
+
+
+<span class="hljs-section">순환: 어느 노드에서 출발해도 재자리로 돌아올 수 있음</span>
+    ●
+  ↗   ↘ 
+ ●  ←  ● 
+
+<span class="hljs-section">가중치: ● --(5)-- ●  (엣지에 숫자로 표현)</span></code></pre><ul class="tight" data-tight="true"><li><p><strong>방향</strong>: 엣지가 단방향인지, 양방향인지에 따라 방향 그래프와 무방향 그래프로 구분된다.</p></li><li><p><strong>순환</strong>: 그래프 내에서 동일한 노드로 돌아올 수 있는 경로가 있을 때 <strong>순환</strong>한다.</p></li><li><p><strong>가중치</strong>: <strong>엣지</strong>에 부여된 값으로, 특정 노드에서 다른 노드로 <strong>이동하는 비용이나 거리 등을 나타낸다</strong>.</p></li></ul><hr class="my-5"><h2 class="mt-5 mb-3" id="-2">종류</h2><p>그래프는 가장 상위의 개념이다. 방향, 순환, 가중치 등 요소로 분류할 수 있다. 예를 들어 HTML 트리는 비순환 방향 비가중치 그래프이다. 어떤 그래프인 지 감이 잡히지 않을 때, 조금 더 구체적으로 그래프를 파악할 수 있다.</p><p><strong>순환</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs">비순환 그래프       순환 그래프
+     ●              ●
+   ↙   ↘          ↗   ↘ 
+  ●     ●        ●  ←  ●  
+                  ↖   ↙
+     0              ●              
+   ↙   ↖          
+  1  ←  2 
+  비순환 그래프</code></pre><ul class="tight" data-tight="true"><li><p><strong>순환 그래프</strong> : 노드들이 특정 경로를 따라 다시 자기 자신으로 돌아올 수 있는 그래프.</p></li><li><p><strong>비순환 그래프</strong> : 순환 경로가 존재하지 않는 그래프.</p></li></ul><p><strong>방향</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-rust">● --- ● --- ●     무방향 그래프
+● -<span class="hljs-punctuation">-></span> ● -<span class="hljs-punctuation">-></span> ●     단방향 그래프
+● &#x3C;-<span class="hljs-punctuation">-></span> ● &#x3C;-<span class="hljs-punctuation">-></span> ●   양방향 그래프</code></pre><ul class="tight" data-tight="true"><li><p><strong>방향 그래프</strong> : 엣지에 방향성이 존재하는 그래프. (단방향/양방향)</p></li><li><p><strong>무방향 그래프</strong> : 엣지에 방향성이 없는 그래프.</p></li></ul><p><strong>가중치</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-lua">● <span class="hljs-comment">--(5)-- ●  가중치 그래프</span>
+● <span class="hljs-comment">------- ●  비가중치 그래프</span></code></pre><ul class="tight" data-tight="true"><li><p><strong>가중치 그래프</strong> : 엣지에 가중치 값이 있는 그래프.</p></li><li><p><strong>비가중치 그래프</strong> : 엣지에 가중치가 없는 그래프</p></li></ul><h3 class="mt-5 mb-3" id="-3">트리*</h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-lua">이진 트리
+	      A  <span class="hljs-comment">--루트----┐       </span>
+	   ↙     ↘        |  
+ 	  B       C    <span class="hljs-comment">---┼- 서브 트리           </span>
+    ↙  ↘     ↙        | 
+   D    E   F      <span class="hljs-comment">---┘   </span>
+   └ 리프 (D~F)   </code></pre><p>트리는 프론트엔드 개발에서 자주 사용되며, 특히 코딩 테스트에선 <strong>이진 트리</strong>가 자주 사용된다.</p><p><strong>특징</strong></p><ul class="tight" data-tight="true"><li><p><strong>단방향, 비순환 그래프</strong>이다.</p></li><li><p><strong>루트 노드는 하나이며</strong>, 이로 인해 <strong>레이어가 계층</strong>을 이룬다.</p></li><li><p>임의의 두 노드를 연결하는 <strong>유일한 경로만 존재</strong>한다.</p></li><li><p>일반적으로 루트에서 리프까지 내려갈 수록 노드의 숫자가 점차 증가한다.</p></li><li><p><strong>부분과 전체의 구조가 일치</strong></p></li><li><p><strong>서브 트리</strong>: 특정 노드를 루트로 하는 하위 트리. (ex: 위에선 A-B-C, B-D-E, C-F) </p><ul class="tight" data-tight="true"><li><p>서브 트리도 전체 트리처럼 여전히 트리이다 (ex: C-F).</p></li></ul></li><li><p><strong>이진 트리</strong> : 각 노드가 최대 두 개의 자식을 가지는 트리.</p></li></ul><p>이외로 다양한 형태의 트리가 있다.</p><ul class="tight" data-tight="true"><li><p><strong>힙</strong>: 특정 규칙에 따라 구성된 <strong>완전 이진 트리</strong>.</p></li><li><p><strong>AVL 트리</strong> : 자동 균형 조정이 이루어지는 <strong>이진 탐색 트리</strong>.</p></li><li><p><strong>레드-블랙 트리</strong> : 삽입, 삭제 시 균형을 유지하는 <strong>이진 탐색 트리</strong>.</p></li><li><p><strong>B-트리</strong> : 데이터베이스 시스템에서 널리 사용되는 <strong>균형 트리 구조</strong>.</p></li></ul><h3 class="mt-5 mb-3" id="-4">힙</h3><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-lua">힙
+	      <span class="hljs-number">8</span>  <span class="hljs-comment">---- 루트(최대 값)     </span>
+	   ↙     ↘          
+ 	  <span class="hljs-number">4</span>       <span class="hljs-number">5</span>              
+    ↙  ↘     ↙  ↘          
+   <span class="hljs-number">2</span>    <span class="hljs-number">3</span>   <span class="hljs-number">2</span>    <span class="hljs-number">3</span> <span class="hljs-comment">---- 리프(최소 값)    </span></code></pre><p>힙은 <strong>노드에 저장된 값을 특정 규칙에 따라 구성한 이진 트리</strong>이다. 노드 데이터가 무엇이든, 엣지로 연결된 노드들을 그래프로 간주하지만, 힙은 <strong>노드 데이터에 따라 노드 트리로된다</strong>. "특정 규칙"은 결국 이렇게 표현될 수 있다.</p><ul class="tight" data-tight="true"><li><p><strong>최대 힙</strong> : 부모 노드가 자식보다 항상 큰 값을 가짐.</p></li><li><p><strong>최소 힙</strong> : 부모 노드가 자식보다 항상 작은 값을 가짐.</p></li></ul><p>힙은 특정 규칙으로 우선 순위를 반영할 수 있다. 새로운 개념이 많이 등장하니, 상세한 내용은 추후 살펴보도록 한다.</p><p><em>힙에 새로운 노드가 추가되거나 삭제되면, "</em><strong><em>힙 속성</em></strong><em>"을 유지하기 위한 로직이 수행된다. JS에서는 보통 배열로 구현되며, 우선순위 큐Priority Queue로 정렬한다.</em></p><h3 class="mt-5 mb-3" id="-5">기타 유형</h3><p>이외에도 다양한 그래프가 있다.</p><ul class="tight" data-tight="true"><li><p><strong>멀티 그래프</strong>: 두 노드 사이에 여러 개의 엣지가 존재할 수 있는 그래프.</p></li><li><p><strong>유사 그래프</strong>: 멀티그래프의 한 유형으로, 자기 자신을 향하는 엣지를 포함할 수 있음.</p></li><li><p><strong>완전 그래프</strong>: 모든 노드가 서로 연결된 그래프.</p></li><li><p><strong>이분 그래프</strong>: 노드 집합이 두 개의 그룹으로 나뉘고, 같은 그룹 내에서는 엣지가 없는 그래프.</p></li><li><p><strong>평면 그래프</strong>: 엣지가 교차하지 않고 평면에 그릴 수 있는 그래프.</p></li><li><p><strong>희소 그래프</strong>: 엣지 개수가 노드 개수에 비해 상대적으로 적은 그래프.</p></li><li><p><strong>밀집 그래프</strong>: 엣지 개수가 노드 개수에 비해 상대적으로 많은 그래프.</p></li></ul><hr class="my-5"><h1 class="mt-5 mb-3" id="in-js">그래프 in JS</h1><h2 class="mt-5 mb-3" id="-6">인접 행렬과 인접 리스트*</h2><p>대표적인 그래프 구현 방법은 <strong>인접 리스트와 인접 행렬</strong>이다. 목적에 따라 적합한 형태를 활용한다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="-7">인접 행렬</h3><p>인접 행렬은 <strong>그래프의 노드 연결 관계를 2차원 배열</strong>(행렬)로 표현하는 방식이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-scss">인접 행렬의 구조
+배열<span class="hljs-selector-attr">[노드1]</span><span class="hljs-selector-attr">[노드2]</span> = 값 (값으로 노드<span class="hljs-number">1</span>,<span class="hljs-number">2</span>의 연결 관계를 표현한다.)
+배열<span class="hljs-selector-attr">[행 번호 row]</span><span class="hljs-selector-attr">[열 번호 col]</span> = <span class="hljs-number">0</span> | <span class="hljs-number">1</span> (not 연결/연결)
+row와 col의 최댓값은 같아야한다.</code></pre><ul class="tight" data-tight="true"><li><p><strong>인접 행렬에서 노드 인덱스는 노드 데이터와 같다.</strong></p></li><li><p><strong>인접 행렬에서 노드 인덱스는 배열의 인덱스와 동일하다.</strong></p></li><li><p>두 노드의 연결 여부(엣지)가 인접 행렬에 저장된다.</p></li><li><p>2차원 배열(행렬)에서 <strong>노드 1은 행 번호</strong>, <strong>2는 열 번호</strong>이다.</p></li><li><p><strong>노드가 N개면 NxN 크기의 배열</strong>로 행렬을 나타낸다.</p></li></ul><h4 class="mt-5 mb-3">노드 데이터의 의미</h4><p>인접 행렬에서 두 노드를 통해 값을 얻을 수 있다. 값은 다양한 형태와 의미를 갖을 수 있다.</p><p>가장 기본적인 방식은 인접 행렬이 두 노드의 <strong>연결 관계를 나타내는 것</strong>이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-keyword">const</span> adjacencyMatrix = [
+  [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>], <span class="hljs-comment">// 0번 노드는 1, 2와 연결</span>
+  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>], <span class="hljs-comment">// 1, 2번 노드는 0, 3과 연결</span>
+  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>] <span class="hljs-comment">// 3번 노드는 1, 2와 연결</span>
+];
+
+<span class="hljs-comment">/* 
+이 행렬을 그래프로 표현하면 다음과 같다
+    0 
+   / \
+  1   2
+   \ /
+    3
+ 모두 연결된 순환 그래프인 것을 알 수 있다.
+*/</span></code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix</code>의 두 인덱스는 그래프에서 두 노드를 가리키고, <strong>데이터는 엣지</strong>를 나타낸다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix</code>는 노드가 4개로 이루어진 그래프를 표현한다.</p><ul class="tight" data-tight="true"><li><p>0번 노드와 1번 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix[0][1] = 1</code>이므로 연결되어있다.</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">adjacencyMatrix[0][3] = 0</code>으로 노드 0,3은 연결되어 있지 않다.</p></li></ul><h4 class="mt-5 mb-3">장단점</h4><p>✅ <strong>장점:</strong></p><ul class="tight" data-tight="true"><li><p>구현이 직관적이고 단순하다.</p></li><li><p>두 노드의 인덱스로 행렬에 O(1)로 접근해 값을 얻을 수 있다.</p></li></ul><p>✅ <strong>단점:</strong></p><ul class="tight" data-tight="true"><li><p>행렬이기 때문에 불필요한 공간 낭비가 생긴다.</p></li><li><p>가장 큰 노드 인덱스를 기준으로 행렬 크기가 결정되어 차이가 클 수록 공간 낭비가 커진다. </p><ul class="tight" data-tight="true"><li><p>3 노드의 인덱스가 1, 2, 999 이라면, <strong>가장 큰 인덱스 999로 전체 행렬이 만들어진다</strong></p></li></ul></li><li><p>이런 경우 행렬에는 연결되지 않음을 나타내는 불필요한 값이 행렬 대부분을 차지한다.</p></li><li><p>간선이 노드보다 매우 적은 그래프를 희소 그래프라고 하며, 이때 행렬은 대부분 비효율적이다.</p></li></ul><h4 class="mt-5 mb-3">NOTE</h4><p>❓ <strong>인접 행렬은 항상 두 노드의 연결 여부를 나타낼까</strong></p><p><strong>노드 인덱스</strong><br>인접 행렬에서 인덱스가 곧 노드인 경우가 일반적이지만, 예외도 많다.</p><ul class="tight" data-tight="true"><li><p><strong>변환(예: 문자열 ID, 객체)</strong>: 데이터를 <strong>인접 행렬로 변환</strong>해야 할 때. 데이터와 행렬을 맵핑하면서 노드 인덱스를 숫자로 만들고, 행렬에 두 노드 연결 여부를 반영해야 한다.</p></li><li><p><strong>노드 번호가 특정 범위(예: 1부터 시작)인 경우</strong>: <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">matrix[1][1]</code>부터 사용하며, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">0</code>번 인덱스는 비워둘 수 있다.</p></li></ul><p><strong>노드 데이터 (배열의 값)</strong><br>인접 행렬에 들어있는 <strong>값</strong>은 <strong>문제에 따라 다를 수 있다</strong>. 조건에 따라 노드 값은 연결 관계를 나타낼 수도, 아닐 수도 있다. (ex: 노드 값 = 가중치 ) 혹은 <strong>노드 연결 관계를 구현하는 것</strong> 자체가 문제일 수도 있다.</p><p>경험 상 <strong>DFS, BFS 등 그래프 탐색</strong>에 사용해야 하는 경우가 잦아 인접 행렬의 기본 개념을 확실히 해두는 것이 중요하다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="-8">인접 리스트</h3><p>인접 리스트는 반대다. 인접 행렬과 달리, <strong>연결된 노드만 저장하여 공간 효율성이높다</strong>. 인접 리스트는 보통 <strong>배열</strong>로 <strong>그래프 연결 관계</strong>를 표현한다.</p><p><strong>인접 리스트 배열에서 인덱스는 보통 노드 인덱스를 가리킨다</strong>.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js">인접 리스트 예시
+인덱스 = 노드 번호 
+배열[인덱스] = 값 <span class="hljs-comment">// 값은 연결 관계인 노드 번호나 가중치 등 다양한 형태가 될 수 있다.</span></code></pre><p>하지만 인접 행렬과 마찬가지로 주어진 문제에 따라 다양하게 표현되거나 변환이 필요할 수 있다.</p><h4 class="mt-5 mb-3">노드 데이터의 의미</h4><p>배열로 표현된 인접리스트는 다음과 같다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 1차원 배열</span>
+<span class="hljs-keyword">const</span> adjacencyList = [-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-comment">// 1,2번 노드는 0번과, 3,4번 노드는 1번과, 5,6은 2, 7은 3과 연결</span>
+<span class="hljs-comment">// 보통 루트는 -1로 표기하나,</span>
+<span class="hljs-keyword">const</span> adjacencyList = [<span class="hljs-title class_">Infinity</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>]
+<span class="hljs-comment">// 인덱스 0번에 빈 값으로 Infinity 등 빈값을 넣기도 한다.</span>
+
+<span class="hljs-comment">// 저장 값이 더 복잡한 형태로 표현된 인접 리스트</span>
+<span class="hljs-keyword">const</span> weightedGraph = [
+  [[<span class="hljs-number">1</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">10</span>]], <span class="hljs-comment">// 노드 0이 노드 1과 가중치 5, 노드 2와 가중치 10으로 연결됨</span>
+  [[<span class="hljs-number">0</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]],  <span class="hljs-comment">// 노드 1이 노드 0과 5, 노드 2와 3으로 연결됨</span>
+  [[<span class="hljs-number">0</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>]]  <span class="hljs-comment">// 노드 2가 노드 0과 10, 노드 1과 3으로 연결됨</span>
+];</code></pre><h4 class="mt-5 mb-3">장단점</h4><p>장점과 단점은 인접 행렬과 반대이다.</p><p>✅ <strong>장점:</strong></p><ul class="tight" data-tight="true"><li><p>공간 효율성이 좋다. 메모리를 적게 사용한다.</p></li><li><p>인접 행렬과 반대로 희소 그래프(노드가 엣지보다 상대적으로 많은 경우) 유리하다.</p></li><li><p>그래프 표현이 인접 행렬보다 직관적이다. 불필요한 값이 줄어들고, 연결 관계와 노드 값만 남긴다.</p></li></ul><p>✅ <strong>단점:</strong></p><ul class="tight" data-tight="true"><li><p>인접 행렬보다 <strong>탐색 효율이 낮다</strong>. </p><ul class="tight" data-tight="true"><li><p>최악의 경우 모든 엣지를 확인해야 하여 <strong>O(E = 엣지 갯수)</strong>이 될 수 있다.</p></li></ul></li><li><p>그래프가 가독성이 떨어진다. 데이터 구조가 복잡해질 수록 더 파악이 어려울 수 있다. (위의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">weightedGraph</code> 가 예시이다.)</p></li></ul><h4 class="mt-5 mb-3">NOTE</h4><p>❓ <strong>인접 리스트의 인덱스와 값은 항상 노드 인덱스와 엣지(연결 관계)일까</strong></p><ul class="tight" data-tight="true"><li><p>노드 인덱스와 노드에 저장된 값을 적절히 설계해야 한다.</p></li></ul><p>배열을 사용해 인덱스를 노드로, 값을 엣지로 하는 것은 직관적이다. 하지만 행렬과 마찬가지로 <strong>인접 리스트를 직접 만드는 것 자체가 문제 의도일 수 있다.</strong></p><p><strong>노드 인덱스</strong></p><ul class="tight" data-tight="true"><li><p>그래프 목적과 자료 구조에 따라 인덱스가 항상 노드 번호를 나타내지 않을 수 있다.</p></li></ul><p>배열 인덱스로 엣지를 나타낼 수 없는 경우도 흔하다.</p><ul class="tight" data-tight="true"><li><p><strong>노드의 고유한 ID가 문자열</strong>이거나, 특정 데이터 구조가 필요한 경우 </p><ul class="tight" data-tight="true"><li><p>노드는 배열 인덱스가 아닌 <strong>키가 노드</strong>를 식별하고, <strong>값이 연결 정보</strong>를 저장하게 된다.</p></li><li><p>배열 대신 객체(Map)를 활용하여 노드의 식별자를 키로 사용하는 방식도 가능하다.</p></li></ul></li></ul><p><strong>노드 데이터 (배열 요소)</strong><br><strong>노드에 저장된 값이 추가적인 정보</strong>를 포함하는 경우<br>- 노드 값이 단순히 다음 노드를 가리키는 것이 아니라 가중치나 방문 여부 등을 나타낼 수도 있다.</p><p>인접 리스트가 주어지면, <strong>인덱스와 배열 내부의 값이 각각 어떤 의미인지</strong> 파악하는 것이 중요한 단서를 준다. 이를 토대로 추론을 이어가야 수월하다.</p><p>경험 상 코딩 테스트 문제에서 그래프는 인덱스로 연결된 두 배열을 인접 행렬이나 인접 리스트로 만들어야 하는 경우가 많았다. ex) <em>arr1과 arr2는 인덱스로 연결된 두 배열입니다.</em></p><hr class="my-5"><h2 class="mt-5 mb-3" id="js">JS로 그래프 표현하기</h2><h3 class="mt-5 mb-3" id="tldr-1">TLDR :</h3><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>그래프 변환이 필요한 지 판단하고</p></li><li><p>탐색이 가능한 그래프를 판단하고 (리스트/ 행렬)</p></li><li><p>탐색을 수행하며 조건에 맞는 데이터를 얻는다</p></li></ol><p>이제 인접 행렬과 인접 리스트가 구체적으로 어떻게 JS에서 표현되는 지 알아보자. 보통은 참조 타입인 객체, 배열로 표현된다. 코딩 테스트에서는 문제에서 매개변수로 주어진 데이터를 <strong>적절한 형태의 그래프로 변경</strong>해야 한다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="-9">객체</h3><p>JS에서 객체는 키-값 구조를 가지며, 그래프를 표현하는 방식 중 하나로 사용될 수 있다. <strong>주로 인접 리스트 방식</strong>으로 표현된다. 주로 <strong>키는 노드, 값은 연결된 노드의 배열</strong>로 표현한다.</p><h4 class="mt-5 mb-3">객체 인접 행렬</h4><p>인접 행렬을 객체로 표현하는 것은 일반적이지 않다. 인접 행렬은 2차원 배열로 표현되며, 객체 기반 표현은 비효율적이다. 하지만 <strong>객체를 2차원 배열의 인접 행렬로 변환</strong>해야될 때가 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">/* 
+{노드: 연결 관계[]}
+문제의 매개변수 obj의 키는 노드, 값은 연결 관계를 배열로 나타낸다.
+*/</span>
+
+<span class="hljs-keyword">const</span> paramObj = { <span class="hljs-comment">// 그래프 obj의 키는 문자이다.</span>
+  <span class="hljs-attr">A</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'C'</span>], 
+  <span class="hljs-attr">B</span>: [<span class="hljs-string">'D'</span>], 
+  <span class="hljs-attr">C</span>: [<span class="hljs-string">'D'</span>],
+  <span class="hljs-attr">D</span>: [] 
+};
+
+<span class="hljs-comment">// 객체로 주어진 그래프를 인접 행렬로 변경하는 함수</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">convertToAdjacencyMatrix</span>(<span class="hljs-params">obj</span>) {
+  <span class="hljs-keyword">const</span> nodes = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(obj); <span class="hljs-comment">// A~D까지 노드를 모두 가져온다. </span>
+  <span class="hljs-keyword">const</span> size = nodes.<span class="hljs-property">length</span>; <span class="hljs-comment">// 그래프 전체 노드 개수와 같다.</span>
+  <span class="hljs-comment">// 빈 인접 행렬을 만든다.</span>
+  <span class="hljs-keyword">const</span> matrix = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({ <span class="hljs-attr">length</span>: size }, <span class="hljs-function">() =></span> <span class="hljs-title class_">Array</span>(size).<span class="hljs-title function_">fill</span>(<span class="hljs-number">0</span>)); 
+  <span class="hljs-comment">/* size X size 크기의 행렬에 0으로 모든 값을 채워 초기화한다
+	문제 조건에 따라 fill(x)는 다른 값이 될 수 있다.*/</span>
+ 
+<span class="hljs-comment">// nodes A부터 D까지 순회하며 연결 관계를 인접 행렬에 업데이트한다.</span>
+  nodes.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">node, i</span>) =></span> {
+   <span class="hljs-comment">// node는 A~D, i는 현재 노드의 인덱스이다.</span>
+   <span class="hljs-comment">// 행렬은 배열이니, 문자열 노드 인덱스를 숫자로 바꿔 행렬에 넣는다.</span>
+  <span class="hljs-comment">// obj[node]는 노드의 값이다.</span>
+  <span class="hljs-comment">// 이 값은 현재 node와 연결된 모든 노드를 배열로 표현한다.</span>
+    obj[node].<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">adjNode</span> =></span> {
+      <span class="hljs-keyword">const</span> j = nodes.<span class="hljs-title function_">indexOf</span>(adjNode); <span class="hljs-comment">// 연결된 노드의 인덱스를 찾는다.</span>
+	  <span class="hljs-comment">// 현재 노드의 인덱스 i는 행 번호가 되고 adjNode의 인덱스 j는 열 번호가 된다.</span>
+      <span class="hljs-keyword">if</span> (j !== -<span class="hljs-number">1</span>) matrix[i][j] = <span class="hljs-number">1</span>; <span class="hljs-comment">// j가 -1이 아니라면, 즉 nodes에 존재한다면</span>
+      <span class="hljs-comment">// 연결 관계를 1로 설정한다</span>
+    });
+  });
+  <span class="hljs-keyword">return</span> matrix;
+}
+
+<span class="hljs-keyword">const</span> adjacencyMatrix = <span class="hljs-title function_">convertToAdjacenctMatrix</span>(paramObj)</code></pre><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-css">현재 노드 인덱스는 <span class="hljs-selector-tag">i</span>, 연결된 노드의 인덱스는 j. 
+adjacencyMatrix<span class="hljs-selector-attr">[i]</span><span class="hljs-selector-attr">[j]</span> = 값은 <span class="hljs-number">0</span>, <span class="hljs-number">1</span> </code></pre><p>주목 할 만한 점은 객체 그래프를 <strong>행렬(2차원 배열)로 만들기 위해 노드 인덱스(A~D)를 숫자로 변환하는 것</strong>이다.</p><p>예시에서 이미 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">paramObj</code>가 연결 관계를 나타내고 있지만, 행렬로 만들면 <strong>두 노드의 숫자 인덱스를 통해 연결 관계를 O(1)로 확인할 수 있다</strong>. 인접 리스트 탐색은 최악의 경우 O(N)이 될 수 있고, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">paramObj</code> 구조가 복잡해질 수록 효율적 탐색을 떠올리기 어렵다. 이런 경우 <strong>일반적으로 인접 행렬은 노드가 1,000개 이하일</strong> 때 유용하게 사용할 수 있다고 한다. (제한 조건에서 매개 변수인 배열의 길이가 10^2 이하인 경우)</p><h4 class="mt-5 mb-3">객체 인접 리스트</h4><p>객체로 표현된 인접 리스트는 노드와 엣지를 문자로 나타난다. 깔끔하게 표현되어 인접 리스트의 장점이 잘 보인다. 그러나 <strong>객체로 그래프를 구현하는 것 자체가 문제 의도</strong>일 때가 많다. 특히 <strong>해결 과정의 중간 단계에서</strong> 직접 인접 리스트를 만들어야 할 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 인접 리스트를 객체로 표현</span>
+<span class="hljs-keyword">const</span> adjacencyListObj = {
+  <span class="hljs-attr">A</span>: [<span class="hljs-string">'B'</span>, <span class="hljs-string">'C'</span>], <span class="hljs-comment">// A노드는 B, C를 자식 노드로 갖는다.</span>
+  <span class="hljs-attr">B</span>: [<span class="hljs-string">'D'</span>], <span class="hljs-comment">// B, C 노드는 D를 자식 노드로 갖는다</span>
+  <span class="hljs-attr">C</span>: [<span class="hljs-string">'D'</span>],
+  <span class="hljs-attr">D</span>: [] <span class="hljs-comment">// D는 자식이 없는 리프 노드다.</span>
+};
+
+<span class="hljs-comment">// Map으로 인접 리스트를 표현할 수 있다.</span>
+<span class="hljs-comment">/* 
+아래 예시는 2개의 배열을 인접 리스트로 변환한다.
+arr1 = 모든 노드의 배열, arr2 = 모든 노드의 연결 관계를 나타낸 배열.
+문제에서 주어진 두 개의 매개변수가 각각 노드와 노드들의 연결 관계를 나타낸다.
+ */</span>
+arr1 = [<span class="hljs-string">"A"</span>, <span class="hljs-string">"B"</span>, <span class="hljs-string">"C"</span>,<span class="hljs-string">"D"</span>]
+arr2 = [[<span class="hljs-string">"B"</span>,<span class="hljs-string">"C"</span>],[<span class="hljs-string">"D"</span>],[<span class="hljs-string">"D"</span>],[]]
+
+<span class="hljs-keyword">const</span> adjacencyListMap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>();
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; arr1.<span class="hljs-property">length</span>; i++) {
+ <span class="hljs-keyword">const</span> node = arr1[i]
+ <span class="hljs-keyword">const</span> connectedNode = arr2[i]
+ <span class="hljs-keyword">if</span>(adjacencyListMap.<span class="hljs-title function_">get</span>(node)){
+	 adjacencyListMap.<span class="hljs-title function_">set</span>(node, []) <span class="hljs-comment">// 빈 배열로 노드의 값을 초기화한다.</span>
+ }
+<span class="hljs-comment">// .push는 참조된 값을 직접 변경하기에 set을 사용하지 않을 수 있다.</span>
+ adjacencyListMap.<span class="hljs-title function_">get</span>(node).<span class="hljs-title function_">push</span>(connectedNode)
+}</code></pre><p>두 개의 배열이 인덱스로 연결된 경우를 자주 볼 수 있다. 배열 안의 값이 문자라면 꽤 자주 접하는 패턴이다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="-10">배열*</h3><p>JS에서 배열과 그래프는 연관이 깊다.</p><hr class="my-5"><h4 class="mt-5 mb-3">배열 인접 행렬</h4><p>인접 행렬은 보통 <strong>2차원 배열</strong>이다. 배열 행과 열이 각각 노드 번호를 의미하며, 행렬의 값은 두 노드 간의 연결 관계를 나타낼 수 있다. 앞서 살핀 객체 변환 말고도, 배열 데이터를 인접 행렬로 가공할 필요가 자주 생긴다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 인접 행렬: 일반적인 2차원 배열 방식</span>
+<span class="hljs-keyword">const</span> adjacencyMatrixArray = [
+  [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],
+  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>]
+];
+
+<span class="hljs-comment">// 인접 행렬을 1차원 배열로 압축하여 표현하는 방식</span>
+<span class="hljs-keyword">const</span> flatMatrix = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>];
+<span class="hljs-comment">// 결국 adjacencyMatrixArray을 flat()한 것과 같다.</span>
+<span class="hljs-comment">// 1차원 배열을 다시 2차원 배열로 만든다.</span>
+<span class="hljs-keyword">const</span> col = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">sqrt</span>(adjacencyMatrixFlat.<span class="hljs-property">length</span>); <span class="hljs-comment">// 4 = 행의 크기</span>
+<span class="hljs-keyword">const</span> undoFlatMatrix = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(
+  { <span class="hljs-attr">length</span>: col }, 
+  <span class="hljs-function">(<span class="hljs-params">_, row</span>) =></span> flatMatrix.<span class="hljs-title function_">slice</span>(row * col, (row + <span class="hljs-number">1</span>) * col)
+);</code></pre><p>행렬을 만드는 것이 쉽기 때문에 활용하는 문제가 더 많다. 데이터가(ex:인덱스로 연결된 두 배열) 주어지고, 이를 행렬로 만든 뒤 연결 관계를 찾는 식이다. 인접 행렬 문제는 결국 이렇다:</p><p><strong>핵심</strong><br>매개 변수: arr1과 arr2는 길이가 동일하며 인덱스로 연결됩니다. (역시 다양한 변주가 있을 수 있다.)<br>x에서 y를 만족하는 z를 반환하시오.</p><p>x: arr1과 arr2, 데이터로 <strong>행렬</strong>을 만들라는 거다. 서술형으로 길게 풀어쓰면 놓치기 쉽다.<br>y: <strong>조건</strong>이다. 조건은 결국 행렬에 있는 값의 <strong>일치 여부</strong>다. 행렬 안에는 보통 0과 1로만 표현될 수 있는 값이 들어간다. (ex: 양/늑대, 벽/통로, 바다/섬, 땅/석유, etc)<br>z: <strong>사실상 정답과 가장 연관이 깊다.</strong> 유형마다 다르며, <strong>적절한 탐색법이 요구</strong>된다. (ex: 연결된 노드 그룹의 갯수,  연결된 노드 그룹 중 가장 최대/최소의 노드 갯수,  연결된 노드가 있는 지의 여부 등)</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">/*
+매개변수
+ arr1 = ["A", "B","C","D"] // arr1은 문자로 되어있고
+ arr2 = [0, 1, 1, 0]  // arr2는 연결 관계가 아닌 특정한 값을 나타낸다.
+보통 arr2는 육지나 바다, 통로 혹은 벽, 양 혹은 늑대 등 두가지를 뜻한다.
+*/</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">solution</span>(<span class="hljs-params">arr1, arr2</span>) {
+  <span class="hljs-keyword">const</span> size = arr1.<span class="hljs-property">length</span>; 
+  <span class="hljs-keyword">const</span> matrix = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(
+    { <span class="hljs-attr">length</span>: size }, 
+    <span class="hljs-function">(<span class="hljs-params">_, row</span>) =></span> arr2.<span class="hljs-title function_">slice</span>(row * size, (row + <span class="hljs-number">1</span>) * size)
+  );
+  <span class="hljs-keyword">const</span> visited = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+  <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>; <span class="hljs-comment">// z = 연결된 노드 그룹의 갯수 일 때</span>
+  <span class="hljs-keyword">let</span> maxSize = <span class="hljs-number">0</span>;  <span class="hljs-comment">// z = 연결된 노드 그룹 중 최대 노드 개수 일때</span>
+  <span class="hljs-keyword">const</span> target = <span class="hljs-number">2</span> <span class="hljs-comment">// z = 특정 노드가 연결 그룹에 속해 있는 지 여부</span>
+  
+  <span class="hljs-comment">// 행렬 문제는 자주 dfs로 탐색한다</span>
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">node</span>) {
+   <span class="hljs-comment">// 로직은 조건 y, 반환 값 z가 무엇이냐에 따라 달라진다</span>
+   <span class="hljs-keyword">if</span> (visited.<span class="hljs-title function_">has</span>(node)){
+   <span class="hljs-comment">// 더 깊은 내용은 DFS 글에서 다룬다.</span>
+   <span class="hljs-comment">// return; </span>
+   <span class="hljs-comment">// return 0; </span>
+   }
+   <span class="hljs-comment">// 생략.... </span>
+  }
+}</code></pre><hr class="my-5"><h4 class="mt-5 mb-3">배열 인접 리스트</h4><p>배열로 표현된 인접 리스트는 인덱스가 노드, 값이 연결 노드를 가리킬 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-keyword">const</span> list = [-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>]
+<span class="hljs-comment">// 인덱스 = 자신의 노드 번호이고 값이 연결된 노드라면</span>
+list[<span class="hljs-number">0</span>] = -<span class="hljs-number">1</span> <span class="hljs-comment">// 보통 루트는 -1로 표현한다 </span>
+list[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span> <span class="hljs-comment">// 1번 노드는 0번과 연결</span>
+list[<span class="hljs-number">2</span>] = <span class="hljs-number">0</span> <span class="hljs-comment">// 2번은 0번과</span>
+list[<span class="hljs-number">3</span>] = <span class="hljs-number">2</span> <span class="hljs-comment">// 3번은 2번과</span>
+list[<span class="hljs-number">4</span>] = <span class="hljs-number">0</span> <span class="hljs-comment">// 4번은 1번과</span>
+
+<span class="hljs-comment">// 2차원 배열로도 나타낼 수도 있다.</span>
+<span class="hljs-keyword">const</span> list2D = [
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], <span class="hljs-comment">// 0번 노드는 1, 2와 연결</span>
+  [<span class="hljs-number">0</span>, <span class="hljs-number">4</span>], <span class="hljs-comment">// 1번 노드는 0, 4</span>
+  [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>], <span class="hljs-comment">// 2번은 0, 3</span>
+  [<span class="hljs-number">2</span>], <span class="hljs-comment">// 3은 2</span>
+  [<span class="hljs-number">1</span>] <span class="hljs-comment">// 4는 1</span>
+];</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">list</code>는 이런 그래프를 그린다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs">      0  
+    /   \
+  1      2
+ /     /
+4     3</code></pre><p>그래프 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">list</code>가 복잡하고 추상적일 수 파악이 어렵고, 바로 그것이 문제 의도일 때가 많다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js">
+<span class="hljs-comment">// 가장 흔한 방식은 엣지가 배열로 주어진다.</span>
+<span class="hljs-keyword">const</span> edges = [ [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">0</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">1</span>] ];
+<span class="hljs-comment">// 이 변수에서 노드는 0,1,2,3,4 5개이지만 엣지는 6개다.</span>
+<span class="hljs-keyword">const</span> size = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>(edges.<span class="hljs-title function_">flat</span>()).<span class="hljs-property">size</span> <span class="hljs-comment">// 중복된 노드(숫자)를 없애고</span>
+<span class="hljs-comment">// 1차원 배열로 리스트를 만든다면</span>
+<span class="hljs-comment">// 인덱스가 노드, 값은 연결된 노드이다.</span>
+<span class="hljs-keyword">const</span> list = <span class="hljs-title class_">Array</span>(size).<span class="hljs-title function_">fill</span>(-<span class="hljs-number">1</span>) <span class="hljs-comment">// -1  = 연결 없음을 나타내는 값으로 초기화</span>
+		   
+<span class="hljs-comment">// 2차원 배열일 때: 인덱스 = 노드, 값 = 연결된 모든 노드[]</span>
+ <span class="hljs-keyword">const</span> list = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>({<span class="hljs-attr">length</span>:size}, <span class="hljs-function">() =></span> 
+	   [] <span class="hljs-comment">// 빈 배열로 초가화			   </span>
+ )
+<span class="hljs-comment">// 이후 edge를 순회하면서 list에 연결 관계를 업데이트한다.</span>
+ <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> [nodeA, nodeB] <span class="hljs-keyword">of</span> edges) {
+	 <span class="hljs-comment">// 1차원 배열</span>
+	 list[nodeB] = nodeA 
+	 <span class="hljs-comment">// 여기서 nodeA,B 중복된 노드는 덮어쓰기 된다</span>
+	 <span class="hljs-comment">// ex) [nodeA, nodeB] : [0,1] → [0,2] → [3,2] → [4,1] </span>
+	 <span class="hljs-comment">// list[1]은 0 -> 4로, list[2] 0 -> 3으로 덮어쓰기</span>
+
+	 <span class="hljs-comment">// 2차원 배열 </span>
+	 list[nodeA].<span class="hljs-title function_">push</span>(nodeB);
+	 list[nodeB].<span class="hljs-title function_">push</span>(nodeA);
+	 <span class="hljs-comment">// 중복된 노드가 추가될 수 있다.</span>
+	 <span class="hljs-comment">// ex) list[0].push(1) : list[0] = [1]</span>
+	 <span class="hljs-comment">// list[1].push(0) : list[1] = [0]</span>
+	 <span class="hljs-comment">// list</span>
+ }
+
+<span class="hljs-comment">// 1차원 배열 결과: </span>
+result = [
+  -<span class="hljs-number">1</span>,  <span class="hljs-comment">// 0번 노드 → nodeA만 있고, 다른 노드에 의해 방문되지 않음 (루트 개념)</span>
+   <span class="hljs-number">4</span>,  <span class="hljs-comment">// 1번 노드 → 4번 노드를 통해 마지막으로 방문됨</span>
+   <span class="hljs-number">3</span>,  <span class="hljs-comment">// 2번 노드 → 3번 노드를 통해 마지막으로 방문됨</span>
+   <span class="hljs-number">2</span>,  <span class="hljs-comment">// 3번 노드 → 2번 노드를 통해 마지막으로 방문됨</span>
+   <span class="hljs-number">1</span>   <span class="hljs-comment">// 4번 노드 → 1번 노드를 통해 마지막으로 방문됨</span>
+]
+
+<span class="hljs-comment">/* 
+0번 노드는 nodeA만 있어 값이 업데이트 되지 않는다. 
+배열 값이 덮어쓰기되는 것은 같은 노드가 다른 노드에서 여러 번 방문되기 때문이다.
+그래서 배열의 값은 연결된 노드의 마지막 방문 경로를 나타낸다 
+*/</span>
+
+<span class="hljs-comment">// 2차원 배열 결과</span>
+result = [
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>],  <span class="hljs-comment">// 0번 노드는 1번, 2번과 연결됨</span>
+  [<span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>],  <span class="hljs-comment">// 1번 노드는 0번, 4번(중복)과 연결됨</span>
+  [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>],  <span class="hljs-comment">// 2번 노드는 0번, 3번(중복)과 연결됨</span>
+  [<span class="hljs-number">2</span>, <span class="hljs-number">2</span>],  <span class="hljs-comment">// 3번 노드는 2번(중복)과 연결됨</span>
+  [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>]   <span class="hljs-comment">// 4번 노드는 1번(중복)과 연결됨</span>
+]
+<span class="hljs-comment">/* 반면 2차원 배열은 덮어쓰기 없이 연결된 모든 노드 관계를 표현한다.
+result[0] = 1,2 0번 노드가 1,2와 연결
+중복 값을 없애기 위한 추가 로직이 필요할 수 있다. 
+*/</span></code></pre><p>인접 리스트 변환이 필요한 상황은 다양하다. 몇 가지 예시로 인접 리스트로 변환이 필요한 데이터를 보면,</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 두 변수는 노드 전체 갯수와 연결 관계를 표현한다.</span>
+<span class="hljs-keyword">const</span> numCourses = <span class="hljs-number">4</span>;
+<span class="hljs-keyword">const</span> prerequisites = [[<span class="hljs-number">1</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>]];
+<span class="hljs-comment">// 0 루트 -> 1 -> 2 -> 3</span>
+
+<span class="hljs-comment">// 두 변수에 각각 저장된 노드 저장값과 엣지로 리스트를 만드는 경우</span>
+<span class="hljs-keyword">const</span> nodeValues = [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>];  <span class="hljs-comment">// 노드의 저장값</span>
+<span class="hljs-keyword">const</span> edges = [ <span class="hljs-comment">// 노드의 연결</span>
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], 
+  [<span class="hljs-number">0</span>, <span class="hljs-number">4</span>], 
+  [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>], 
+  [<span class="hljs-number">2</span>], 
+  [<span class="hljs-number">1</span>]
+];
+
+<span class="hljs-comment">// ex: 위의 list2D와 동일한 그래프이지만, 노드에 추가적인 저장값이 있을 때</span>
+<span class="hljs-keyword">const</span> list2D = [
+  [<span class="hljs-number">5</span> ,<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], <span class="hljs-comment">// 0번 노드는 5라는 값이 저장되고 1, 2와 연결된다</span>
+  [<span class="hljs-number">6</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>], <span class="hljs-comment">// 1번 노드는 저장값 6, 엣지는 0, 4 </span>
+  [<span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>], <span class="hljs-comment">// 2번은 값 4, 엣지 0,3</span>
+  [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>], <span class="hljs-comment">// 3은 값 3, 엣지 2</span>
+  [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>] <span class="hljs-comment">// 4는 값 0, 엣지 1</span>
+];
+
+
+<span class="hljs-comment">// 혹은 엣지에 가중치가 포함된 리스트</span>
+<span class="hljs-keyword">const</span> weightedList = [
+  [[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>]], <span class="hljs-comment">// 0번 노드는 1와 4 가중치로 연결, 2와는 1 가중치로 연결</span>
+  [[<span class="hljs-number">0</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>]], <span class="hljs-comment">// 1 노드는 0과 4로, 3과 2으로</span>
+  [[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">3</span>]], <span class="hljs-comment">// 2 노드는 0과 1로, 3과 3으로</span>
+  [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]]  <span class="hljs-comment">// 3 노드는 1과 2로, 2와 3으로</span>
+];ㄱ
+
+
+<span class="hljs-comment">// 임의의 문자 배열을 리스트로 나타낼 때</span>
+<span class="hljs-keyword">const</span> alienWords = [<span class="hljs-string">"wrt"</span>, <span class="hljs-string">"wrf"</span>, <span class="hljs-string">"er"</span>, <span class="hljs-string">"ett"</span>, <span class="hljs-string">"rftt"</span>];
+<span class="hljs-comment">// 배열 값을 조건에 따라 정렬하고 새로운 데이터 구조로 변환을 요구한다. </span></code></pre><p>모든 변환의 가능성을 익히는 것은 불가능하다. 사실 가장 중요한 점은 대부분의 문제가 <strong>그래프 설계와 함께 탐색 알고리즘을 요구한다.</strong></p><p></p><p><a rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/59"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#f8b200" style="background-color: #f8b200; color: inherit">이전 해시 글</mark></a>에서 알게된 내용이 떠오른다. 해시를 사용한다고 문제가 바로 풀리는 것이 아니다. 해시를 어떻게 설계하는 가가 관건이었다. 구체적으로 데이터가 키-값으로 저장되는 시점부터 탐색이 가능한 저장 구조를 다뤘다. 그래프도 똑같다. 그래프를 만들고 탐색을 해야한다. 그래프를 만들 때, 탐색이 효율적으로 이루어지게 만들어야 한다.</p><hr class="my-5"><h2 class="mt-5 mb-3" id="-11">프론트 개발에서 그래프</h2><p>JS 기반의 프론트엔드에서 그래프는 자주 사용된다. Web API인 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체, DOM 트리, 상태 관리 등이 있다. </p><ul class="tight" data-tight="true"><li><p>HTML 문서와 DOM 트리 (<a rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/60">관련 글</a>)</p></li><li><p>모듈의 의존성 그래프</p></li><li><p>상태 그래프 (ex 리액트 상태, Props 의존성, 전역상태 등)</p></li><li><p>라우팅 그래프 (ex 라우팅 경로 (? 맞나))</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 리액트 엘리먼트는 객체로 표현된 연결 리스트이다. </span>
+<span class="hljs-comment">// children에서 자식 노드의 연결 관계를 나타낸다.</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ReactElement</span> = {
+	<span class="hljs-attr">type</span>: <span class="hljs-string">"App"</span>, 
+	<span class="hljs-attr">children</span>: [ 
+		{ <span class="hljs-attr">type</span>: <span class="hljs-string">"Header"</span>, <span class="hljs-attr">children</span>: [] }, 
+		{ <span class="hljs-attr">type</span>: <span class="hljs-string">"Main"</span>, <span class="hljs-attr">children</span>: [ 
+			{ <span class="hljs-attr">type</span>: <span class="hljs-string">"Sidebar"</span>, <span class="hljs-attr">children</span>: [] }, 
+			{ <span class="hljs-attr">type</span>: <span class="hljs-string">"Content"</span>, <span class="hljs-attr">children</span>: [] } 
+			] 
+		}, 
+		{ <span class="hljs-attr">type</span>: <span class="hljs-string">"Footer"</span>, <span class="hljs-attr">children</span>: [] } ] };
+	]
+};
+
+<span class="hljs-comment">// JS document 객체는 브라우저가 생성한 DOM 트리를 탐색, 변경하는 DOM API이다. // 각 노드는 부모-자식 관계로 연결된다.</span>
+
+<span class="hljs-comment">// console.dir(document)</span>
+<span class="hljs-comment">/*
+#Document 
+	URL: "https://example.com" 
+	documentElement: html 
+	head: head 
+	body: body 
+	title: "Example" 
+	cookie: "" 
+	location: Location {...} ...
+*/</span>
+
+<span class="hljs-comment">// console.log(document)</span>
+<span class="hljs-comment">/*
+	&#x3C;html> 
+		&#x3C;head>
+		&#x3C;body>
+			&#x3C;header>
+			&#x3C;main>
+			&#x3C;footer>
+*/</span></code></pre><p>다음 글은 그래프 탐색이다.</p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/62","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Graph 2 - 탐색 기본 개념"}],["$","p",null,{"className":"text-sm","children":"2025-02-25"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/60","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"HTML 트리와 DOM api"}],["$","p",null,{"className":"text-sm","children":"2025-02-25"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Graph 1 - 기본 구조와 개념 - teklog"}],["$","meta","1",{"name":"description","content":"TLDR그래프는 여러 노드가 엣지로 연결된 자료 구조이다.JS에선 그래프를 인접 행렬과 인접 리스트로 만든다.정의컴퓨터 과학에서 그래프는 수학의 그래프 이론에서 정의된 무방향 그래프와 방향 그래프 개념을 구현하기 위한 추상 자료형이다. - wikipedia (graph)graph TDA[A] -- B[B];A -- C[C];B -- D;B -- E;C --"}],["$","meta","2",{"property":"og:title","content":"Graph 1 - 기본 구조와 개념 - teklog"}],["$","meta","3",{"property":"og:description","content":"TLDR그래프는 여러 노드가 엣지로 연결된 자료 구조이다.JS에선 그래프를 인접 행렬과 인접 리스트로 만든다.정의컴퓨터 과학에서 그래프는 수학의 그래프 이론에서 정의된 무방향 그래프와 방향 그래프 개념을 구현하기 위한 추상 자료형이다. - wikipedia (graph)graph TDA[A] -- B[B];A -- C[C];B -- D;B -- E;C --"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Graph 1 - 기본 구조와 개념 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"TLDR그래프는 여러 노드가 엣지로 연결된 자료 구조이다.JS에선 그래프를 인접 행렬과 인접 리스트로 만든다.정의컴퓨터 과학에서 그래프는 수학의 그래프 이론에서 정의된 무방향 그래프와 방향 그래프 개념을 구현하기 위한 추상 자료형이다. - wikipedia (graph)graph TDA[A] -- B[B];A -- C[C];B -- D;B -- E;C --"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

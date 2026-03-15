@@ -1,0 +1,629 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"r0asJgJ4taZwXOekAft3S","p":"","c":["","blog","57"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","57","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","57","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/03/15"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:Ta9f3,<p>최근 Next.js 15, React 19의 새로운 패턴에 적응하면서 Suspense를 자주 사용하게 됐다. 이 과정에서 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>가 단순히 '로딩 상태를 보여주기' 이상으로 중요한 개념으로 느껴져 궁금해졌다.</p><p>이 글은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>의 기본적인 사용법에서 시작하여 점진적 렌더링, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">선언적 UI</mark>, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render As You Fetch</mark> 등의 키워드로 서스팬스를 탐구해본다.</p><hr class="my-5"><h1 class="mt-5 mb-3">Suspense</h1><blockquote><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&lt;Suspense&gt;</code> lets you display a fallback until its children have finished loading<br>서스팬스는 자식 컴포넌트의 로딩상태가 끝날 때까지 fallback을 보여주도록 합니다.</p></blockquote><p>공식문서에 따르면 허무할 정도로 심플하다. 렌더링할 컨텐츠가 로딩 중일 때 fallback ui를 보여준다.</p><h2 class="mt-5 mb-3">사용법</h2><p>Suspense가 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">모든 자식 컴포넌트의 로딩 상태를 감지하는 것은 아니다</mark>. 바운더리 내부에 있는 자식 컴포넌트가 다음 세 가지 조건 일 때 동작한다:</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code> 지원 프레임워크의 데이터 요청</p><ul><li><p>Next.js의 서버 컴포넌트 데이터 페칭</p></li><li><p>Relay의 GraphQL 쿼리</p></li><li><p>이외 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>를 지원하도록 설계된 프레임워크의 데이터 요청</p><p>(Tanstack Query, SWR 등등)</p></li></ul></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">React.lazy()</code>를 통한 동적 임포트</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">use</code> 훅을 통한 Promise 캐시 값 읽기</p><ul class="tight" data-tight="true"><li><p>React.use를 통해 캐시된 Promise 값을 읽을 때</p></li></ul></li></ol><p>이 조건을 주의하자. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>를 지원하는 프레임워크나 라이브러리를 사용한다면 문제가 없겠지만, 몇년 전까지만해도 지원하지 않는 경우가 많았다. 혹은 지원하더라도 따로 옵션을 설정하고, 컴포넌트 구성을 올바르게 해야하는 등 신경을 써야 한다.</p><p>세 조건 중 하나가 성립되면, 서스팬스는 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">자식 컴포넌트 트리 전체에서 대기 상태를 캐치</mark>한다. <em>부모-서스팬스 자식-비동기 작업</em>의 패턴을 사용해야하므로, 익숙하지 않다면 혼동하기 쉽다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-tsx">// ❌ 잘못된 예시: 서스팬스가 트리거되지 않음
+async function AsyncComponent() {
+  const data = await fetchArtistData(); 
+  // await로 data 요청이 끝난 이후 아래 렌더링이 실행된다.
+  return (
+    &lt;Suspense fallback={&lt;Loading /&gt;}&gt;
+      &lt;Profile data={data} /&gt; 
+      {/* 
+      비동기 작업 fetchArtistData이 완료된 이후 렌더링이 실행되기에,
+      Suspense는 이미 완료된 data의 대기 상태를 캐치할 수 없다  */}
+    &lt;/Suspense&gt;
+  );
+}
+
+// ❌ 잘못된 예시: 서스팬스가 트리거되지 않음
+function Profile() {
+  const [data, setData] = useState(null);
+  
+  useEffect(() =&gt; {
+    fetchArtistData().then(setData);
+  }, []);
+
+  if (!data) return null;
+  return &lt;div&gt;{data.name}&lt;/div&gt;;
+}
+
+
+function Page() {
+  return (
+    &lt;Suspense fallback={&lt;Loading /&gt;}&gt;
+      &lt;Profile /&gt; {/* useEffect의 fetch는 서스팬스를 트리거하지 않음 */}
+    &lt;/Suspense&gt;
+  );
+}
+
+// ❌ 잘못된 예시: 이벤트 핸들러의 비동기 작업
+function Profile() {
+  async function handleClick() {
+    const data = await fetchArtistData(); 
+    // 이벤트 핸들러 내부의 fetch는 트리거되지 않음
+    // ...
+  }
+
+  return &lt;button onClick={handleClick}&gt;Load Data&lt;/button&gt;;
+}
+
+// ✅ 올바른 예시: 서스팬스가 트리거됨
+function Page() {
+  return (
+    &lt;Suspense fallback={&lt;Loading /&gt;}&gt;
+      &lt;Profile /&gt; {/* fetchArtistData가 트리거되면 Loading이 표시됨 */}
+    &lt;/Suspense&gt;
+  );
+}
+
+async function Profile() {
+  const data = await fetchArtistData(); // Suspense-enabled 요청
+  return &lt;div&gt;{data.name}&lt;/div&gt;;
+}</code></pre><p>또한 서스팬스는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useEffect</code>나 이벤트 핸들러의 비동기 작업은 감지하지 않는다. 이는 리액트가 의도적으로 설계한 것으로, 서스팬스는 렌더링 과정에서 발생하는 비동기 작업만을 처리한다.</p><h2 class="mt-5 mb-3">중첩된 서스팬스와 점진적 렌더링</h2><p>앞서 서스팬스는 자식 컴포넌트 트리 전체에서 대기 상태를 캐치한다고 하였다. 공식문서에서는 이러한 점을 활용해 서스팬스를 중첩하여 <strong>점진적으로 렌더링해가는 방법</strong>을 제시한다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">function ArtistPage({ artistId }) {
+  return (
+    &lt;article&gt;
+      &lt;Suspense fallback={&lt;PageSkeleton /&gt;}&gt;
+        {/* 페이지 레이아웃을 감싸는 외부 서스팬스 */}
+        &lt;Header /&gt;
+        &lt;div className="content"&gt;
+          &lt;Suspense fallback={&lt;ProfileSkeleton /&gt;}&gt;
+            {/* 프로필 데이터를 로드하는 컴포넌트 */}
+            &lt;ArtistProfile id={artistId} /&gt;
+          &lt;/Suspense&gt;
+          &lt;Suspense fallback={&lt;AlbumsSkeleton /&gt;}&gt;
+            {/* 앨범 목록을 로드하는 컴포넌트 */}
+            &lt;ArtistAlbums id={artistId} /&gt;
+          &lt;/Suspense&gt;
+        &lt;/div&gt;
+      &lt;/Suspense&gt;
+    &lt;/article&gt;
+  );
+}</code></pre><p>이렇게 중첩된 서스팬스는 컨텐츠의 점진적인 로딩을 가능하게 한다. 위 예시는 서스팬스를 중첩하여 로딩 상태를 점진적으로 노출한다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>최상단 서스팬스의 fallback ui가 렌더링</p></li><li><p>최상단 서스팬스 내부의 Header 렌더링이 완료된 이후, Profile과 Album의 스켈레톤 UI 렌더링</p></li><li><p>각 컴포넌트가 로딩 완료를 대기한 후 컴포넌트 렌더링</p></li></ol><p>이 방식은 모든 작업이 완료될 때까지 단일한 fallback UI를 보여주는 대신, 계층에 따라 작업이 완료된 UI를 순차적으로 노출한다. 이를 통해 FCP(First Contentful Paint)와 LCP(Largest Contentful Paint) 같은 성능 지표, 사용자 경험과 코드 효율성 모두 개선할 수 있다.</p><p>그러나 이 코드에는문제가 있다. 중첩된 서스펜스 중 일부 UI는 로딩 상태를 반복해서 보여줄 필요가 없다. 예를 들어 Header를 감싼 최상위 서스펜스는 일반적으로 최초 렌더링 이후 다시 렌더링될 필요가 없다. 하지만 페이지 이동마다 이미 렌더링이 완료된 UI가 다시 로딩 상태로 돌아가는 문제가 발생할 수 있다.</p><p>이런 문제를 해결하기 위해 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useTransition</code> 훅을 사용한다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">
+// ArtistPage의 상단 컴포넌트
+ function App() {
+  const [artistId, setArtistId] = useState(null); // 현재 아티스트 ID를 저장
+  const [isPending, startTransition] = useTransition(); // 점진적 상태 관리
+
+// 클릭 시 아티스트 선택 id를 새로운 상태로 변경한다.
+  function handleArtistSelection(newArtistId) {
+    startTransition(() =&gt; {
+      setArtistId(newArtistId); // 이전 상태를 유지하며 새로운 상태로 전환
+    });
+  }
+  const artistsInfo = getArtists()
+
+  return (
+    &lt;div&gt;
+      &lt;nav&gt;
+		{artistsInfo.map((artist, index) =&gt; (
+		 &lt;button onClick={() =&gt; handleArtistSelection(artist.id)}&gt;{artist.name}&lt;/button&gt;
+		))}
+      &lt;/nav&gt;
+      {/* isPending을 사용해 로딩 상태를 시각적으로 표시할 수 있다 */}
+      &lt;div className={isPending ? 'opacity-70' : ''}&gt;
+        {artistId ? (
+          &lt;ArtistPage artistId={artistId} /&gt;
+        ) : (
+          &lt;div&gt;Please select an artist to view details.&lt;/div&gt;
+        )}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">startTransition</code>으로 감싼 상태 업데이트는 긴급하지 않은 것으로 처리된다. 이로 인해 네비게이션 중에도 이미 표시된 UI를 유지하면서, 컨텐츠가 준비되면 자연스럽게 전환할 수 있다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isPending</code> 상태를 통해 전환 중임을 사용자에게 표시할 수도 있다.</p><p>이러한 패턴은 특히 데이터 기반 라우팅에서 유용하며, 대부분의 Suspense 지원 라우터는 이러한 동작을 기본으로 제공한다.</p><hr class="my-5"><h1 class="mt-5 mb-3">왜 사용하는가?</h1><p>점진적 렌더링, 로딩 상태의 분리, 목적, 사용 방법 등등.. 그 유용함은 표면적으로 모두 이해가 간다. 그러나 아직 이것만으로는 필요성이 크게 와닿지 않는다.</p><p>가령 Suspense 없이도 '로딩' 상태는 충분히 나타낼 수 있다. 비동기 요청이라면 Tanstack Query, SWR 등 데이터 상태 관리 라이브러리나 useState, 커스텀 훅을 통해 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isLoading</code> 상태를 플래그로 로딩 상태를 분기 처리할 수 있다. 그런 상황에서 Suspense 도입을 위해 의존성을 최신으로 업데이트하고, 전체적인 컴포넌트 설계를 변경할 정도의 필요를 느끼기 힘들었다.</p><p>서스팬스 적용 이전과 이후를 간단한 코드로 비교해보자.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 서스팬스 미적용
+function DataComponent() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(null);
+
+  useEffect(() =&gt; {
+    fetchData().then((res) =&gt; {
+      setData(res);
+      setIsLoading(false);
+    });
+  }, []); 
+
+  if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;;
+  return &lt;div&gt;{data}&lt;/div&gt;;
+}
+
+// Suspense 사용
+function DataComponent() {
+  const { data } = useData(); // 비동기 데이터를 가져오는 suspense-enabled custom hook
+  return &lt;div&gt;{data}&lt;/div&gt;;
+}
+
+function App() {
+  return (
+    &lt;Suspense fallback={&lt;p&gt;Loading...&lt;/p&gt;}&gt;
+      &lt;DataComponent /&gt;
+    &lt;/Suspense&gt;
+  );
+}</code></pre><p>코드가 간결해지니 왠지 '리액트'다운 것 같다. 기존 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 로딩 상태에 따라 두 개의 UI를 표현하는 분기가 생긴다. 반면 서스팬스를 적용하면 '로딩' 상태를 서스팬스가 관리하고, DataComponent는 하나의 UI를 보여주게 된다.</p><p>'리액트답다'. 이처럼 간단한 코드에서도 느껴진다. 좋다. 좋은 것은 좋으니 알겠다.</p><p>사실 이 정도의 감상은 공식문서만 봐도 알겠다.</p><strong>하지만 왜 좋은 것일까? </strong><p>'리액트다운 것'은 무엇이며, 왜 서스팬스를 써야 더 '좋게' 느껴지는 걸까? 솔직히 납득되지 않는다. 다시 공식문서를 뒤적이며 생각해본다.</p><hr class="my-5"><h2 class="mt-5 mb-3">선언적 UI: 비동기 요청도 리액트답게</h2><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>tldr: 일관성 있는 컴포넌트 = 코드가 UI를 직접 표현한다</code></pre><blockquote><p>Declarative programming means describing the UI for each visual state rather than micromanaging the UI .</p><p>선언형 프로그래밍은 UI의 세부 동작을 일일이 조작하는 대신, 각 시각적 상태에 따라 UI를 묘사하는 것을 의미합니다.</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://react.dev/learn/reacting-to-input-with-state#thinking-about-ui-declaratively">- React Docs</a></p></blockquote><p>리액트 공식문서에 따르면, 리액트는 UI를 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">선언적</mark>으로 구성한다.</p><p>'선언적 UI'란 UI가 "어떻게" 렌더링 될 지를 선언하는 것이며, 여기서 컴포넌트는 '무엇을 어떻게 렌더링할지' 정의한다. 이때 핵심은 코드는 <a target="_blank" rel="noopener noreferrer nofollow" href="https://react.dev/learn/keeping-components-pure#purity-components-as-formulas"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">항상 일관된 UI를 렌더링</mark></a>하는 것이다. 리액트 컴포넌트는 동일한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">props</code>와 상태<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">state</code>에 대해 항상 같은 UI를 보장해야한다.</p><p>이 개념을 위의 코드 조각에 대입해보자. 서스팬스 적용 이전 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 로딩/데이터 상태에 따라 두가지 UI를 표현한다.렌더링 과정은 다음과 같다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>DataComponent가 실행된다. isLoading의 초기값이 true이므로, 로딩 UI가 먼저 렌더링된다. 컴포넌트는 최초 실행으로 로딩 UI를 반환하고 마친다.</p></li><li><p>렌더링이 완료된 이후, useEffect가 실행된다. 내부의 fetchData가 실행되어 api를 요청한다.</p></li><li><p>비동기 요청이 완료된 이후 then 체인이 실행된다. setData, setIsLoading으로 상태가 변경된다</p></li><li><p>상태가 변경되면 리렌더링이 트리거된다. 컴포넌트는 다시 실행되어 업데이트된 새로운 상태data, isLoading를 기반으로 리렌더링한다.</p></li></ol><p>어딘가 선언적이지 않다. 선언적 UI라면 코드는 "무엇이 어떻게 렌더링될지" 미리 정의한다. 리액트 컴포넌트는 결국 UI를 정의하는 함수다. 그러나 이 코드는 실행하여도 의도한 UI를 바로 보여주지 않는다. 예외 처리와 에러 UI를 추가해도 오히려 더욱 '리액트스럽지' 않아진다.</p><p>다시 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>의 목적을 생각해보자. 로딩을 나타내기 위한 것인가, 데이터를 요청하고 이를 UI로 그리는 것인가? 당연히 후자일 것이다. 로딩은 데이터 요청에서 발생하는 지연을 표시하기 위한 부수적인 상태일 뿐, <strong>컴포넌트의 본래 목적인 의도했던 UI가 아니다</strong>.</p><p>그런 면에서<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 본래 의도를 코드가 직접 표현하고 있는가? 아닌 것 같다. 코드가 실제로 의도하는 UI는 최초 실행 이후에 렌더링되기 때문이다. 즉 <strong>컴포넌트가 여러 번 재실행되고 나서야 본래 의도한 UI를 나타낼 수 있다.</strong> 실행만으로 의도한 UI를 바로 얻을 수 없는 것은 곧 코드가 UI를 직접 표현하지 않는 것이다. 따라서 <strong>'선언적'이지 못하다.</strong></p><p>하지만 어쩔 수 없었다. 리액트를 처음 배울 때부터 받아들인 익숙한 사실이다. 리액트 컴포넌트의 실행 시점과 비동기 요청 시 생기는 지연으로 필연적인 시차가 발생하기 때문이다. 동기적 컴포넌트 함수 안에서 '비동기적 함수'를 실행하니 어쩌면 당연한 결과다.</p><p>리액트팀 또한 비동기 데이터를 이런 부수효과로 표현할 수 밖에 없는 게 난관이었을 것 같다. 실제로 리액트를 처음 배울 때부터 현업까지 이런 패턴에서 비롯된 까다로운 문제들을 나 또한 종종 마주쳤다. 기존 방식은 비동기 데이터를 사용해 의도한 UI를 직접 JSX로 표현할 수 없었고, 이는 리액트 설계 의도에 부합하지 않았다.</p><p>그럼 비동기 요청만이 문제일까? 조건부 렌더링같은 UI 분기는 선언적일까?</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">function conditionalUI ({ isOpen }) {
+	return (
+	&lt;p&gt;
+	  {isOpen ? "Yes" : "No"}
+	&lt;/p&gt;
+	)
+}</code></pre><p>이 코드는 선언적이다. 코드를 실행하면 props에 따라 Yes/No p태그를 렌더링한다. 결과가 될 UI를 코드가 명확히 직접 표현하고 있다. 조건부 렌더링은 실행 시점의 props나 state를 기반으로 렌더링이 결정된다. 선언적 UI 컴포넌트라면 주어진 상태 그대로 UI를 표현한다. useEffect 같은 부수 효과가 없는 일반적인 조건부 렌더링은 컴포넌트 실행과 함께 주어진 props, state를 기반으로 코드에서 정의한 그대로 UI를 그려낸다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">function eventHandleUI () {
+	const [count, setCount] = useState(0)
+	const handleCount = (num:number) =&gt; {
+		setCount((prev) =&gt; prev + num)
+	}
+	return (
+	&lt;div&gt;
+	  &lt;p&gt;{count}&lt;/p&gt;
+	  &lt;button onClick={() =&gt; handleCount(-1)}&gt;-1&lt;/button&gt;
+	  &lt;button onClick={() =&gt; handleCount(1)}&gt;+1&lt;/button&gt;
+	&lt;/div&gt;
+	)
+}</code></pre><p>일반적인 이벤트 핸들링도 선언적이다. 최초 렌더링 이후, 이벤트 핸들링으로 인한 업데이트는 자연스럽다. 의도한 UI 결과가 이벤트에 따라 업데이트되어야 함을 코드로 미리 결정하여 나타내고 있기 때문이다. 버튼을 누르면 새로운 상태 count를 기반으로 UI가 다시 렌더링될 것이란 걸 코드만 보고 알 수 있다. 사용자 이벤트로 컴포넌트 함수가 재실행되어 UI가 업데이트되는 것은 자연스럽고, 의도한 동작이다. 코드는 이러한 UI 의도를 선언적으로 표현하고 있다.</p><p>정리하자면, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">리액트스럽지 않은 것</mark>은:</p><ul><li><p>여러 번의 실행(리렌더링)을 통해 컴포넌트가 본래 의도한 UI를 만든다.</p></li><li><p>이를 위해 컴포넌트 최초 실행 후 발생하는 부수 효과 useEffect를 전제한다</p></li></ul><p>이러한 방식은 컴포넌트의 본래 의도를 모호하게 만든다. 그래서 서스팬스는 렌더링 과정에서 발생하는 비동기 작업만을 처리한다.</p><p>리액트스러운 것과 아닌 것을 '선언적 UI'라는 키워드로 알아보았다. 이제 납득이 간다. 서스팬스로 UI 컴포넌트를 리액트 원칙에 맞게 표현할 수 있다. 비동기 요청이 있는 컴포넌트는 목적 그대로 UI를 직접 표현하고, 로딩 상태는 Suspense 바운더리와 로딩 UI로 분리한다. 비동기 데이터, 로딩 모두 본래 의도에 맞게 컴포넌트로 분리하여 UI로 표현할 수 있다.</p><hr class="my-5"><h3 class="mt-5 mb-3">숨겨진 부수 효과</h3><p>사실 기존 방식의 문제는 간단한 코드 조각에서만 재현되는 건 아니다. 부수 효과를 커스텀 훅이나 데이터 페칭 라이브러리로 숨기더라도 문제는 남는다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">// ❌ useQuery로 숨겨진 부수 효과
+function Comments() {
+  const { data: comments, isLoading } = useQuery({
+    queryKey: ['comments'],
+    queryFn: fetchComments
+  });
+ // Comments는 실행 시 동일한 UI 결과를 보장할 수 없다.
+ // 부수효과에 의존하기 때문에 컴포넌트 첫 실행과 비동기 요청 완료 이후 UI가 다르다.
+ 
+  return (
+  &lt;div&gt;
+  {comments?.map(...)}
+  {isLoading &amp;&amp; &lt;Loading /&gt;}
+  &lt;/div&gt;
+  );
+}
+
+// tanstack/react-query 최신 버전의 useQuery 내부에서 실행되는 useBaseQuery
+
+// 옵저버를 통한 상태 관리
+const [observer] = React.useState(...)
+...
+// Suspense 모드가 아닐 때 
+// shouldSuspend(defaultedOptions, result) === false
+
+// 부수 효과를 통한 데이터 구독
+React.useSyncExternalStore(
+  React.useCallback(
+    (onStoreChange) =&gt; {
+      const unsubscribe = shouldSubscribe
+        ? observer.subscribe(notifyManager.batchCalls(onStoreChange))
+        : noop
+      ...
+    },
+    [observer, shouldSubscribe],
+  ),
+  ...
+)
+
+// 옵션 변경을 위한 부수 효과
+React.useEffect(() =&gt; {
+  observer.setOptions(defaultedOptions, { listeners: false })
+}, [defaultedOptions, observer])
+
+// Suspense 모드가 아닐 때 (shouldSuspend(defaultedOptions, result)===false), 컴포넌트는 여전히 초기 렌더링 → 데이터 페칭 → 상태 업데이트 → 리렌더링의 흐름을 따른다.</code></pre><p>Suspense 모드가 아닐 때 컴포넌트 렌더링 과정은 여전히 다음과 같다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code>초기 렌더링 → 데이터 페칭 → 상태 업데이트 → 리렌더링</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Comments</code>는 매번 동일한 UI 결과를 보장할 수 없다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isLoading</code>과 로딩 UI를 없애도 문제는 여전하다. 라이브러리 내부에서 비동기 요청이 부수효과에 의존하기 때문에, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Comments</code>의 첫 실행과 비동기 요청 완료 이후 UI는 다를 수 밖에 없다. 이처럼 Suspense가 적용되지 않은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useQuery</code>는 기존 방식의 문제를 해결하지 않는다. 라이브러리로 추상화하여도, 선언적이지 않은 UI 표현이라는 근본적인 문제는 동일하다.</p><p>서스팬스는 선언적 UI 원칙을 비동기 상황에서도 지킬 수 있게 해준다. 비동기 요청도 리액트답게.</p><hr class="my-5"><h1 class="mt-5 mb-3">설계 의도</h1><p>서스팬스도 벌써 수년 전에 도입됐다. 당시에 어떤 배경이 있었고, 의도가 어땠을 지 궁금했다. 이와 관련해 4년 전에 <a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">작성된 글</mark></a>을 읽어봤다.</p><blockquote><p>"You can fetch the data for a route, start streaming the shell, and then fill in the data as it arrives."<br>데이터를 가져오는 동시에 UI의 초기 구조를 스트리밍하고, 데이터가 준비되는 대로 채울 수 있다.</p></blockquote><p>이 말이 중요한 의도로 느껴진다. 핵심 문제는 <strong>병목</strong>이고, 이를 <strong>병렬적으로 해결</strong>한다. 공식문서는 Suspense를 "<em>로딩 상태의 UI를 보여준다</em>"고만 간략히 설명한다. 이 단순한 설명 뒤에 <strong>'데이터를 가져오는 동안 렌더링을 멈추지 않는다'</strong>는 의도가 있다고 생각하게 된다.</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">원문</mark></a>에서 작성자 @Dan은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code> 과정에서 발생하는 병목이라는, 더 큰 맥락에서 해결 방향을 제시한다. 이제는 익숙한 내용이지만, <a target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">이 글</mark></a>은 당시 맥락(특히 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>)에 대한 깊은 이해를 제공한다. 설명도 쉽고 친절해서 읽기 편하다.</p><p>글쓴이가 구체적으로 지적하는 문제는 기존 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>의 '<em>All or Nothing</em>' 방식이다. 서버 사이드에서 모든 비동기 데이터가 준비되어야 HTML을 보낼 수 있고, 모든 자바스크립트가 브라우저에 로드되어야 하이드레이션을 시작할 수 있었다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>서버에서 모든 데이터를 페치</p></li><li><p>HTML 렌더링</p></li><li><p>클라이언트에서 자바스크립트 로드</p></li><li><p>전체 앱 하이드레이션</p></li></ol><p>이 과정이 순차적으로 진행되며 병목이 발생한다. 데이터 요청 컴포넌트의 선언적인 작성과 함께, 렌더링과 네트워크 요청 병목이라는 다층적인 문제를 해결할 필요가 생겼다.</p><p>서스팬스는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 이를 해결하기 위해 제시된다. 서스팬스를 통해 이러한 동기적인 과정을 컴포넌트 단위로 쪼갠다. 데이터가 준비된 컴포넌트부터 보여주고, 하이드레이션할 수 있게 된다. 즉 <strong>컴포넌트 단위로 점진적으로 렌더링</strong> 해간다.</p><hr class="my-5"><h2 class="mt-5 mb-3"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render-as-You-Fetch</mark></h2><p>말 그대로, 데이터 요청을 렌더링 시작과 동시에 진행하는 패턴이다. 컴포넌트가 마운트되기를 기다리지 않고, <strong>렌더링 시작과 동시에 데이터 페칭을 시작</strong>한다. 그럼 서스팬스 사용이 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render-as-You-Fetch</mark>를 보장하나? 무조건 그렇진 않다. <em>Render-as-You-Fetch</em>가 제대로 작동하려면, 데이터 요청과 컴포넌트 렌더링 로직이 연계되어야 한다. 이때 Suspense의 사용 방식과 컴포넌트 실행 환경(서버/브라우저)에 따라 동작이 달라질 수 있다.</p><h3 class="mt-5 mb-3">Streaming SSR</h3><p>원문에서 언급된 SSR의 render-as-you-fetch은 Suspense를 사용해 구현할 수 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">import React from "react";
+
+async function ServerComponent() {
+  const data = await fetchData(); 
+  // suspense를 지원하는 데이터 요청 방식
+  return &lt;div&gt;{data}&lt;/div&gt;;
+}
+
+export default function Page() {
+  return (
+    &lt;React.Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;
+      &lt;ServerComponent /&gt;
+    &lt;/React.Suspense&gt;
+  );
+}</code></pre><p>이 코드에서 Suspense는 데이터 요청(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">fetchData</code>)과 렌더링을 병렬로 진행해 병목 문제를 해결한다. 서버는 먼저 가벼운 fallback ui를 렌더링해 브라우저로 보내고, fetchData 요청이 끝나면 해당 데이터를 포함한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">ServerComponent</code>를 렌더링해 브라우저에 전달한다.</p><p>이 접근법은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 발생할 수 있는 초기 로딩 지연을 개선한다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 페이지로 이동했지만 첫 화면을 보기까지 오랜 시간이 걸리는 문제를 해결한다.</p><p>이같은 서스팬스 바운더리를 활용한 SSR 방식은<mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#5c32a1" style="background-color: #5c32a1; color: inherit"> 스트리밍 Streaming SSR</mark>이라고 한다. 이 방식에서는 서스팬스 내의 각 컴포넌트가 데이터가 준비되는 즉시 독립적으로 렌더링되어 브라우저에 전달된다. '스트리밍'은 React가 서버에서 데이터를 처리한 뒤, 준비된 내용을 조금씩 클라이언트로 보내는 방식을 말한다.</p><p>사실 '<em>스트리밍</em>'이라는 단어가 생소했다. 맥락을 이해하는데 MDN의 Streams API의 설명이 도움이 됐다.</p><blockquote><p>스트리밍은 네트워크를 통해 받으려는 리소스를 작은 청크(chunk)로 나누어, 이를 조금씩 처리하는 방식을 의미합니다. ... Streams API를 사용하면..., JavaScript로 원시 데이터를 청크 단위로 점진적으로 처리할 수 있습니다</p><ul class="tight" data-tight="true"><li><p>MDN - Streams API</p></li></ul></blockquote><p><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#5c32a1" style="background-color: #5c32a1; color: inherit">Streaming SSR</mark>은 로딩 상태 UI를 관리하는 서스팬스를 넘어 '서버에서 실행되는 React'와 밀접하게 연관된다. '스트리밍' 구현에는 HTTP(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Transfer-Encoding:chunked</code>), JavaScript <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Streams API(ReadableStream)</code>, React 서버 DOM의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">readPipeableStream</code>가 연관이 있다.</p><p>더 자세한 내용은 관련 문서를 참고.</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Streams API - MDN</a><br><a target="_blank" rel="noopener noreferrer nofollow" href="https://react.dev/reference/react-dom/server/renderToPipeableStream">renderToPipeableStream - React Docs</a></p><p>그러고 보니, <a target="_blank" rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/50">renderToPipeableStream</a>에 대해 예전에 <a target="_blank" rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/50">써둔 글</a>이 있었다.</p><p>최근에 번역된 <em>전문가를 위한 리액트(Fluent React)</em>를 읽고 작성했다.</p><hr class="my-5"><h3 class="mt-5 mb-3">CSR에서의 병목</h3><p>비슷한 문제는 서버 사이드 뿐만 아니라 브라우저 환경에서도 발생한다. Suspense 없는 비동기 요청은 렌더링 과정으로 병목이 생긴다. 초기 렌더링이 완료된 이후, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useEffect</code>를 통해 비로소 요청이 발생하기 때문이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">
+function App () {
+	&lt;Parent /&gt;
+}
+
+// useQuery suspense: false 설정 시 
+function Parent() {
+  const { data: parentData, isLoading } = useQuery('parent', fetchParent);
+  return 
+  &lt;article&gt;
+	  &lt;ArticleHeader /&gt;
+	  {isLoading &amp;&amp; &lt;Loading /&gt;}
+	  {parentData &amp;&amp; &lt;Child parentId={parentData.id} /&gt; }
+  &lt;/article&gt;
+}
+
+function Child({parentId}) {
+  const { data: childData, isLoading } = useQuery(['child', parentId], () =&gt; fetchChild(id));
+  
+  return(
+	  &lt;div&gt;
+		{childData &amp;&amp; &lt;p&gt;childData.name&lt;/p&gt;}
+		{isLoading &amp;&amp; &lt;Loading /&gt;}
+	  &lt;/div&gt;;
+	)
+}</code></pre><p>실제로 이러한 코드는 불필요한 과정을 통해 완성된다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>Parent 컴포넌트 최초 렌더링</p></li><li><p>렌더링 완료 후 fetchParent 요청 시작</p></li><li><p>요청 완료 후 Parent 리렌더링</p></li><li><p>Child 컴포넌트 마운트 및 렌더링</p></li><li><p>Child 렌더링 완료 후 fetchChild 요청 시작</p></li><li><p>fetchChild 완료 후 Child 리렌더링</p></li><li><p>전체 UI 완성</p></li></ol><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">fetchChild</code>의 요청이 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">parent</code> 결과에 의존하기 때문에 요청 워터폴은 근본적으로 해결할 수 없다. 하지만 <strong>렌더링으로 인해 추가적인 병목이 발생</strong>한다.</p><p>이 과정에서 문제는</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><strong>네트워크 요청의 지연</strong><br>리액트 렌더링 과정이 요청 타이밍을 더 지연시킨다. Parent의 첫 렌더링이 완료된 후에야 fetchParent가 시작되고, 이 요청이 완료되어 Parent가 리렌더링된 후에야 Child가 마운트된다. Child의 첫 렌더링이 끝난 후에야 fetchChild가 시작되는 연쇄적인 지연이 발생한다.</p></li><li><p><strong>불필요한 리렌더링</strong><br>최소 4번의 렌더링을 전제한다. Parent는 fetchParent 완료 시 리렌더링되고, Child는 fetchChild 완료 시 리렌더링된다. (이또한 리액트 컴파일러, 메모이제이션이 적용되지 않은 경우를 전제로) Parent의 리렌더링은 모든 자식 컴포넌트의 리마운트를 유발하기 때문에 Parent에 Child와 같은 비동기 요청 컴포넌트가 늘어난다면, 코드의 오류 가능성이 더 높아진다. 즉, 컴포넌트 구조가 복잡해질 수록, <strong>'불필요한 렌더링'이 일으킬 에러의 가능성이 높아진다.</strong></p></li></ol><p>이제 서스팬스와 Render-as-You-Fetch 패턴을 적용해 클라이언트 사이드 렌더링(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">CSR</code>)에서 이를 해결해보자. 브라우저에서 실행되는 클라이언트 컴포넌트는 비동기 요청이 React의 렌더링 단계에서 직접 이루어질 수 없다. 이를 해결하기 위해 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">비동기 요청의 시점을 바꾸고, Suspense를 활용할 수 있다</mark>. 데이터 요청을 컴포넌트 렌더링 전에 시작하고 Suspense로 로딩 상태를 처리하는 방식으로 <strong>Render-as-You-Fetch</strong>를 구현할 수 있다.</p><p>여러가지 방법으로 구현할 수 있지만, 이번에는 REST API, Suspense와 함께 <strong>Tanstack Query</strong>, <strong>Tanstack Router</strong>의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">loader</code>를 사용해봤다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-jsx">import { createRootRoute, createRouter } from '@tanstack/react-router';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
+
+// 루트 경로의 Route 설정과 서스팬스 바운더리 적용
+// loader와 각 컴포넌트 useSuspenseQuery에서 동일한 쿼리 키 사용
+const rootRoute = createRootRoute({
+  loader: async () =&gt; {
+  // parent 데이터를 fetchQuery로 가져와서 캐시에 저장
+    const parentData = await queryClient.fetchQuery({
+      queryKey: ['parent'], 
+      queryFn: fetchParent
+    });
+    
+	// parent 데이터를 이용해 child 데이터 prefetch 시작
+    queryClient.prefetchQuery({
+      queryKey: ['child', parentData.id],
+      queryFn: () =&gt; fetchChild(parentData.id)
+    });
+
+    return parentData;
+  },
+  component: () =&gt; (
+    &lt;QueryClientProvider client={queryClient}&gt;
+      &lt;Suspense fallback={&lt;Loading /&gt;}&gt; 
+        &lt;Parent /&gt;
+      &lt;/Suspense&gt;
+    &lt;/QueryClientProvider&gt;
+  )
+});
+
+// Router 설정
+const router = createRouter({ routeTree: rootRoute });
+
+// App 컴포넌트
+function App() {
+  return &lt;RouterProvider router={router} /&gt;;
+}
+
+
+function Parent() {
+  const initialData = useLoaderData&lt;typeof parentRoute&gt;();
+  const { data: parentData } = useSuspenseQuery({
+    queryKey: ['parent'], 
+    queryFn: fetchParent,
+    initialData
+  });
+
+  return (
+    &lt;article&gt;
+      &lt;h1&gt;{parentData.title}&lt;/h1&gt;
+      &lt;Suspense fallback={&lt;Loading /&gt;}&gt;
+        &lt;Child parentId={parentData.id} /&gt;
+      &lt;/Suspense&gt;
+    &lt;/article&gt;
+  );
+}</code></pre><p>렌더링의 과정을 요약하면:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-markdown">before: 컴포넌트 초기 렌더링 → 요청 시작 → 완료 → 리렌더링 
+after: 요청 동시에 fallback UI 렌더링  -&gt; 완료후 컴포넌트 렌더링</code></pre><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><strong>Parent 컴포넌트의 Suspense 처리</strong></p><ul><li><p>route 진입 시 loader에서 Parent 데이터를 fetchQuery로 가져와 캐시에 저장한다.</p></li><li><p>최상위 Suspense는 loader에서 fetchParent가 완료될 때까지 Parent의 fallback을 보여준다.</p></li><li><p>완료가 끝나면, Parent 컴포넌트는 loader가 반환하는 데이터로 즉시 렌더링된다.</p></li><li><p>loader가 완료되면 캐시된 데이터로 한 번에 렌더링되어 Parent에 불필요한 리렌더링이 발생하지 않는다.</p></li></ul></li><li><p><strong>Child 컴포넌트의 요청과 렌더링</strong></p><ul><li><p>loader에서 prefetchQuery로 Child 데이터 요청이 미리 시작된다. Parent가 최종 렌더링되기 전에 fetchChild 요청을 시작한다.</p></li><li><p>Child 컴포넌트가 마운트될 때 캐시된 데이터가 있거나 진행 중인 요청을 재사용한다.</p></li><li><p>Child의 Suspense는 데이터가 준비될 때까지 fallback을 보여준다.</p></li></ul></li></ol><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">loader</code>를 통해 라우트 진입 시점에 미리 데이터 요청을 시작하고, Suspense로 컴포넌트의 렌더링을 데이터 준비 상태와 동기화한다. 비동기 요청 컴포넌트는 최초 렌더링으로 데이터를 UI로 표현하고, 이로써 렌더링 과정이 요청 지연을 방지한다.</p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Suspense 탐구하기"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2025/01/27"}],["$","p",null,{"children":"n°57"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+25:Teef5,<p>최근 Next.js 15, React 19의 새로운 패턴에 적응하면서 Suspense를 자주 사용하게 됐다. 이 과정에서 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>가 단순히 '로딩 상태를 보여주기' 이상으로 중요한 개념으로 느껴져 궁금해졌다.</p><p>이 글은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>의 기본적인 사용법에서 시작하여 점진적 렌더링, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">선언적 UI</mark>, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render As You Fetch</mark> 등의 키워드로 서스팬스를 탐구해본다.</p><hr class="my-5"><h1 class="mt-5 mb-3" id="suspense">Suspense</h1><blockquote><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&#x3C;Suspense></code> lets you display a fallback until its children have finished loading<br>서스팬스는 자식 컴포넌트의 로딩상태가 끝날 때까지 fallback을 보여주도록 합니다.</p></blockquote><p>공식문서에 따르면 허무할 정도로 심플하다. 렌더링할 컨텐츠가 로딩 중일 때 fallback ui를 보여준다.</p><h2 class="mt-5 mb-3" id="">사용법</h2><p>Suspense가 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">모든 자식 컴포넌트의 로딩 상태를 감지하는 것은 아니다</mark>. 바운더리 내부에 있는 자식 컴포넌트가 다음 세 가지 조건 일 때 동작한다:</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code> 지원 프레임워크의 데이터 요청</p><ul><li><p>Next.js의 서버 컴포넌트 데이터 페칭</p></li><li><p>Relay의 GraphQL 쿼리</p></li><li><p>이외 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>를 지원하도록 설계된 프레임워크의 데이터 요청</p><p>(Tanstack Query, SWR 등등)</p></li></ul></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">React.lazy()</code>를 통한 동적 임포트</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">use</code> 훅을 통한 Promise 캐시 값 읽기</p><ul class="tight" data-tight="true"><li><p>React.use를 통해 캐시된 Promise 값을 읽을 때</p></li></ul></li></ol><p>이 조건을 주의하자. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Suspense</code>를 지원하는 프레임워크나 라이브러리를 사용한다면 문제가 없겠지만, 몇년 전까지만해도 지원하지 않는 경우가 많았다. 혹은 지원하더라도 따로 옵션을 설정하고, 컴포넌트 구성을 올바르게 해야하는 등 신경을 써야 한다.</p><p>세 조건 중 하나가 성립되면, 서스팬스는 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">자식 컴포넌트 트리 전체에서 대기 상태를 캐치</mark>한다. <em>부모-서스팬스 자식-비동기 작업</em>의 패턴을 사용해야하므로, 익숙하지 않다면 혼동하기 쉽다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-tsx"><span class="hljs-comment">// ❌ 잘못된 예시: 서스팬스가 트리거되지 않음</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title class_">AsyncComponent</span>() {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchArtistData</span>(); 
+  <span class="hljs-comment">// await로 data 요청이 끝난 이후 아래 렌더링이 실행된다.</span>
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Loading</span> /></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Profile</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /></span> 
+      {/* 
+      비동기 작업 fetchArtistData이 완료된 이후 렌더링이 실행되기에,
+      Suspense는 이미 완료된 data의 대기 상태를 캐치할 수 없다  */}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// ❌ 잘못된 예시: 서스팬스가 트리거되지 않음</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Profile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-title function_">fetchArtistData</span>().<span class="hljs-title function_">then</span>(setData);
+  }, []);
+
+  <span class="hljs-keyword">if</span> (!data) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{data.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Page</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Loading</span> /></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Profile</span> /></span> {/* useEffect의 fetch는 서스팬스를 트리거하지 않음 */}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// ❌ 잘못된 예시: 이벤트 핸들러의 비동기 작업</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Profile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchArtistData</span>(); 
+    <span class="hljs-comment">// 이벤트 핸들러 내부의 fetch는 트리거되지 않음</span>
+    <span class="hljs-comment">// ...</span>
+  }
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>></span>Load Data<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span></span>;
+}
+
+<span class="hljs-comment">// ✅ 올바른 예시: 서스팬스가 트리거됨</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Page</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Loading</span> /></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Profile</span> /></span> {/* fetchArtistData가 트리거되면 Loading이 표시됨 */}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span></span>
+  );
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">Profile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchArtistData</span>(); <span class="hljs-comment">// Suspense-enabled 요청</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{data.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}</code></pre><p>또한 서스팬스는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useEffect</code>나 이벤트 핸들러의 비동기 작업은 감지하지 않는다. 이는 리액트가 의도적으로 설계한 것으로, 서스팬스는 렌더링 과정에서 발생하는 비동기 작업만을 처리한다.</p><h2 class="mt-5 mb-3" id="-1">중첩된 서스팬스와 점진적 렌더링</h2><p>앞서 서스팬스는 자식 컴포넌트 트리 전체에서 대기 상태를 캐치한다고 하였다. 공식문서에서는 이러한 점을 활용해 서스팬스를 중첩하여 <strong>점진적으로 렌더링해가는 방법</strong>을 제시한다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-keyword">function</span> <span class="hljs-title function_">ArtistPage</span>(<span class="hljs-params">{ artistId }</span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">article</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">PageSkeleton</span> /></span>}>
+        {/* 페이지 레이아웃을 감싸는 외부 서스팬스 */}
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Header</span> /></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"content"</span>></span>
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">ProfileSkeleton</span> /></span>}>
+            {/* 프로필 데이터를 로드하는 컴포넌트 */}
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">ArtistProfile</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{artistId}</span> /></span>
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span>
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">AlbumsSkeleton</span> /></span>}>
+            {/* 앨범 목록을 로드하는 컴포넌트 */}
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">ArtistAlbums</span> <span class="hljs-attr">id</span>=<span class="hljs-string">{artistId}</span> /></span>
+          <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">article</span>></span></span>
+  );
+}</code></pre><p>이렇게 중첩된 서스팬스는 컨텐츠의 점진적인 로딩을 가능하게 한다. 위 예시는 서스팬스를 중첩하여 로딩 상태를 점진적으로 노출한다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>최상단 서스팬스의 fallback ui가 렌더링</p></li><li><p>최상단 서스팬스 내부의 Header 렌더링이 완료된 이후, Profile과 Album의 스켈레톤 UI 렌더링</p></li><li><p>각 컴포넌트가 로딩 완료를 대기한 후 컴포넌트 렌더링</p></li></ol><p>이 방식은 모든 작업이 완료될 때까지 단일한 fallback UI를 보여주는 대신, 계층에 따라 작업이 완료된 UI를 순차적으로 노출한다. 이를 통해 FCP(First Contentful Paint)와 LCP(Largest Contentful Paint) 같은 성능 지표, 사용자 경험과 코드 효율성 모두 개선할 수 있다.</p><p>그러나 이 코드에는문제가 있다. 중첩된 서스펜스 중 일부 UI는 로딩 상태를 반복해서 보여줄 필요가 없다. 예를 들어 Header를 감싼 최상위 서스펜스는 일반적으로 최초 렌더링 이후 다시 렌더링될 필요가 없다. 하지만 페이지 이동마다 이미 렌더링이 완료된 UI가 다시 로딩 상태로 돌아가는 문제가 발생할 수 있다.</p><p>이런 문제를 해결하기 위해 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useTransition</code> 훅을 사용한다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx">
+<span class="hljs-comment">// ArtistPage의 상단 컴포넌트</span>
+ <span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [artistId, setArtistId] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>); <span class="hljs-comment">// 현재 아티스트 ID를 저장</span>
+  <span class="hljs-keyword">const</span> [isPending, startTransition] = <span class="hljs-title function_">useTransition</span>(); <span class="hljs-comment">// 점진적 상태 관리</span>
+
+<span class="hljs-comment">// 클릭 시 아티스트 선택 id를 새로운 상태로 변경한다.</span>
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleArtistSelection</span>(<span class="hljs-params">newArtistId</span>) {
+    <span class="hljs-title function_">startTransition</span>(<span class="hljs-function">() =></span> {
+      <span class="hljs-title function_">setArtistId</span>(newArtistId); <span class="hljs-comment">// 이전 상태를 유지하며 새로운 상태로 전환</span>
+    });
+  }
+  <span class="hljs-keyword">const</span> artistsInfo = <span class="hljs-title function_">getArtists</span>()
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">nav</span>></span>
+		{artistsInfo.map((artist, index) => (
+		 <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> handleArtistSelection(artist.id)}>{artist.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+		))}
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">nav</span>></span>
+      {/* isPending을 사용해 로딩 상태를 시각적으로 표시할 수 있다 */}
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{isPending</span> ? '<span class="hljs-attr">opacity-70</span>' <span class="hljs-attr">:</span> ''}></span>
+        {artistId ? (
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">ArtistPage</span> <span class="hljs-attr">artistId</span>=<span class="hljs-string">{artistId}</span> /></span>
+        ) : (
+          <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Please select an artist to view details.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        )}
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">startTransition</code>으로 감싼 상태 업데이트는 긴급하지 않은 것으로 처리된다. 이로 인해 네비게이션 중에도 이미 표시된 UI를 유지하면서, 컨텐츠가 준비되면 자연스럽게 전환할 수 있다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isPending</code> 상태를 통해 전환 중임을 사용자에게 표시할 수도 있다.</p><p>이러한 패턴은 특히 데이터 기반 라우팅에서 유용하며, 대부분의 Suspense 지원 라우터는 이러한 동작을 기본으로 제공한다.</p><hr class="my-5"><h1 class="mt-5 mb-3" id="-2">왜 사용하는가?</h1><p>점진적 렌더링, 로딩 상태의 분리, 목적, 사용 방법 등등.. 그 유용함은 표면적으로 모두 이해가 간다. 그러나 아직 이것만으로는 필요성이 크게 와닿지 않는다.</p><p>가령 Suspense 없이도 '로딩' 상태는 충분히 나타낼 수 있다. 비동기 요청이라면 Tanstack Query, SWR 등 데이터 상태 관리 라이브러리나 useState, 커스텀 훅을 통해 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isLoading</code> 상태를 플래그로 로딩 상태를 분기 처리할 수 있다. 그런 상황에서 Suspense 도입을 위해 의존성을 최신으로 업데이트하고, 전체적인 컴포넌트 설계를 변경할 정도의 필요를 느끼기 힘들었다.</p><p>서스팬스 적용 이전과 이후를 간단한 코드로 비교해보자.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 서스팬스 미적용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">DataComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [isLoading, setIsLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-title function_">fetchData</span>().<span class="hljs-title function_">then</span>(<span class="hljs-function">(<span class="hljs-params">res</span>) =></span> {
+      <span class="hljs-title function_">setData</span>(res);
+      <span class="hljs-title function_">setIsLoading</span>(<span class="hljs-literal">false</span>);
+    });
+  }, []); 
+
+  <span class="hljs-keyword">if</span> (isLoading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>;
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{data}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+<span class="hljs-comment">// Suspense 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">DataComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { data } = <span class="hljs-title function_">useData</span>(); <span class="hljs-comment">// 비동기 데이터를 가져오는 suspense-enabled custom hook</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{data}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">p</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">DataComponent</span> /></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span></span>
+  );
+}</code></pre><p>코드가 간결해지니 왠지 '리액트'다운 것 같다. 기존 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 로딩 상태에 따라 두 개의 UI를 표현하는 분기가 생긴다. 반면 서스팬스를 적용하면 '로딩' 상태를 서스팬스가 관리하고, DataComponent는 하나의 UI를 보여주게 된다.</p><p>'리액트답다'. 이처럼 간단한 코드에서도 느껴진다. 좋다. 좋은 것은 좋으니 알겠다.</p><p>사실 이 정도의 감상은 공식문서만 봐도 알겠다.</p><strong>하지만 왜 좋은 것일까? </strong><p>'리액트다운 것'은 무엇이며, 왜 서스팬스를 써야 더 '좋게' 느껴지는 걸까? 솔직히 납득되지 않는다. 다시 공식문서를 뒤적이며 생각해본다.</p><hr class="my-5"><h2 class="mt-5 mb-3" id="ui">선언적 UI: 비동기 요청도 리액트답게</h2><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-makefile"><span class="hljs-section">tldr: 일관성 있는 컴포넌트 = 코드가 UI를 직접 표현한다</span></code></pre><blockquote><p>Declarative programming means describing the UI for each visual state rather than micromanaging the UI .</p><p>선언형 프로그래밍은 UI의 세부 동작을 일일이 조작하는 대신, 각 시각적 상태에 따라 UI를 묘사하는 것을 의미합니다.</p><p><a rel="noopener noreferrer nofollow" href="https://react.dev/learn/reacting-to-input-with-state#thinking-about-ui-declaratively">- React Docs</a></p></blockquote><p>리액트 공식문서에 따르면, 리액트는 UI를 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">선언적</mark>으로 구성한다.</p><p>'선언적 UI'란 UI가 "어떻게" 렌더링 될 지를 선언하는 것이며, 여기서 컴포넌트는 '무엇을 어떻게 렌더링할지' 정의한다. 이때 핵심은 코드는 <a rel="noopener noreferrer nofollow" href="https://react.dev/learn/keeping-components-pure#purity-components-as-formulas"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">항상 일관된 UI를 렌더링</mark></a>하는 것이다. 리액트 컴포넌트는 동일한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">props</code>와 상태<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">state</code>에 대해 항상 같은 UI를 보장해야한다.</p><p>이 개념을 위의 코드 조각에 대입해보자. 서스팬스 적용 이전 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 로딩/데이터 상태에 따라 두가지 UI를 표현한다.렌더링 과정은 다음과 같다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>DataComponent가 실행된다. isLoading의 초기값이 true이므로, 로딩 UI가 먼저 렌더링된다. 컴포넌트는 최초 실행으로 로딩 UI를 반환하고 마친다.</p></li><li><p>렌더링이 완료된 이후, useEffect가 실행된다. 내부의 fetchData가 실행되어 api를 요청한다.</p></li><li><p>비동기 요청이 완료된 이후 then 체인이 실행된다. setData, setIsLoading으로 상태가 변경된다</p></li><li><p>상태가 변경되면 리렌더링이 트리거된다. 컴포넌트는 다시 실행되어 업데이트된 새로운 상태data, isLoading를 기반으로 리렌더링한다.</p></li></ol><p>어딘가 선언적이지 않다. 선언적 UI라면 코드는 "무엇이 어떻게 렌더링될지" 미리 정의한다. 리액트 컴포넌트는 결국 UI를 정의하는 함수다. 그러나 이 코드는 실행하여도 의도한 UI를 바로 보여주지 않는다. 예외 처리와 에러 UI를 추가해도 오히려 더욱 '리액트스럽지' 않아진다.</p><p>다시 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>의 목적을 생각해보자. 로딩을 나타내기 위한 것인가, 데이터를 요청하고 이를 UI로 그리는 것인가? 당연히 후자일 것이다. 로딩은 데이터 요청에서 발생하는 지연을 표시하기 위한 부수적인 상태일 뿐, <strong>컴포넌트의 본래 목적인 의도했던 UI가 아니다</strong>.</p><p>그런 면에서<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">DataComponent</code>는 본래 의도를 코드가 직접 표현하고 있는가? 아닌 것 같다. 코드가 실제로 의도하는 UI는 최초 실행 이후에 렌더링되기 때문이다. 즉 <strong>컴포넌트가 여러 번 재실행되고 나서야 본래 의도한 UI를 나타낼 수 있다.</strong> 실행만으로 의도한 UI를 바로 얻을 수 없는 것은 곧 코드가 UI를 직접 표현하지 않는 것이다. 따라서 <strong>'선언적'이지 못하다.</strong></p><p>하지만 어쩔 수 없었다. 리액트를 처음 배울 때부터 받아들인 익숙한 사실이다. 리액트 컴포넌트의 실행 시점과 비동기 요청 시 생기는 지연으로 필연적인 시차가 발생하기 때문이다. 동기적 컴포넌트 함수 안에서 '비동기적 함수'를 실행하니 어쩌면 당연한 결과다.</p><p>리액트팀 또한 비동기 데이터를 이런 부수효과로 표현할 수 밖에 없는 게 난관이었을 것 같다. 실제로 리액트를 처음 배울 때부터 현업까지 이런 패턴에서 비롯된 까다로운 문제들을 나 또한 종종 마주쳤다. 기존 방식은 비동기 데이터를 사용해 의도한 UI를 직접 JSX로 표현할 수 없었고, 이는 리액트 설계 의도에 부합하지 않았다.</p><p>그럼 비동기 요청만이 문제일까? 조건부 렌더링같은 UI 분기는 선언적일까?</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-keyword">function</span> <span class="hljs-title function_">conditionalUI</span> (<span class="hljs-params">{ isOpen }</span>) {
+	<span class="hljs-keyword">return</span> (
+	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>
+	  {isOpen ? "Yes" : "No"}
+	<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>
+	)
+}</code></pre><p>이 코드는 선언적이다. 코드를 실행하면 props에 따라 Yes/No p태그를 렌더링한다. 결과가 될 UI를 코드가 명확히 직접 표현하고 있다. 조건부 렌더링은 실행 시점의 props나 state를 기반으로 렌더링이 결정된다. 선언적 UI 컴포넌트라면 주어진 상태 그대로 UI를 표현한다. useEffect 같은 부수 효과가 없는 일반적인 조건부 렌더링은 컴포넌트 실행과 함께 주어진 props, state를 기반으로 코드에서 정의한 그대로 UI를 그려낸다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-keyword">function</span> <span class="hljs-title function_">eventHandleUI</span> (<span class="hljs-params"></span>) {
+	<span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>)
+	<span class="hljs-keyword">const</span> <span class="hljs-title function_">handleCount</span> = (<span class="hljs-params">num:number</span>) => {
+		<span class="hljs-title function_">setCount</span>(<span class="hljs-function">(<span class="hljs-params">prev</span>) =></span> prev + num)
+	}
+	<span class="hljs-keyword">return</span> (
+	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{count}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> handleCount(-1)}>-1<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> handleCount(1)}>+1<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+	<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+	)
+}</code></pre><p>일반적인 이벤트 핸들링도 선언적이다. 최초 렌더링 이후, 이벤트 핸들링으로 인한 업데이트는 자연스럽다. 의도한 UI 결과가 이벤트에 따라 업데이트되어야 함을 코드로 미리 결정하여 나타내고 있기 때문이다. 버튼을 누르면 새로운 상태 count를 기반으로 UI가 다시 렌더링될 것이란 걸 코드만 보고 알 수 있다. 사용자 이벤트로 컴포넌트 함수가 재실행되어 UI가 업데이트되는 것은 자연스럽고, 의도한 동작이다. 코드는 이러한 UI 의도를 선언적으로 표현하고 있다.</p><p>정리하자면, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">리액트스럽지 않은 것</mark>은:</p><ul><li><p>여러 번의 실행(리렌더링)을 통해 컴포넌트가 본래 의도한 UI를 만든다.</p></li><li><p>이를 위해 컴포넌트 최초 실행 후 발생하는 부수 효과 useEffect를 전제한다</p></li></ul><p>이러한 방식은 컴포넌트의 본래 의도를 모호하게 만든다. 그래서 서스팬스는 렌더링 과정에서 발생하는 비동기 작업만을 처리한다.</p><p>리액트스러운 것과 아닌 것을 '선언적 UI'라는 키워드로 알아보았다. 이제 납득이 간다. 서스팬스로 UI 컴포넌트를 리액트 원칙에 맞게 표현할 수 있다. 비동기 요청이 있는 컴포넌트는 목적 그대로 UI를 직접 표현하고, 로딩 상태는 Suspense 바운더리와 로딩 UI로 분리한다. 비동기 데이터, 로딩 모두 본래 의도에 맞게 컴포넌트로 분리하여 UI로 표현할 수 있다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="-3">숨겨진 부수 효과</h3><p>사실 기존 방식의 문제는 간단한 코드 조각에서만 재현되는 건 아니다. 부수 효과를 커스텀 훅이나 데이터 페칭 라이브러리로 숨기더라도 문제는 남는다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-comment">// ❌ useQuery로 숨겨진 부수 효과</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Comments</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: comments, isLoading } = <span class="hljs-title function_">useQuery</span>({
+    <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">'comments'</span>],
+    <span class="hljs-attr">queryFn</span>: fetchComments
+  });
+ <span class="hljs-comment">// Comments는 실행 시 동일한 UI 결과를 보장할 수 없다.</span>
+ <span class="hljs-comment">// 부수효과에 의존하기 때문에 컴포넌트 첫 실행과 비동기 요청 완료 이후 UI가 다르다.</span>
+ 
+  <span class="hljs-keyword">return</span> (
+  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+  {comments?.map(...)}
+  {isLoading &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">Loading</span> /></span>}
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// tanstack/react-query 최신 버전의 useQuery 내부에서 실행되는 useBaseQuery</span>
+
+<span class="hljs-comment">// 옵저버를 통한 상태 관리</span>
+<span class="hljs-keyword">const</span> [observer] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(...)
+...
+<span class="hljs-comment">// Suspense 모드가 아닐 때 </span>
+<span class="hljs-comment">// shouldSuspend(defaultedOptions, result) === false</span>
+
+<span class="hljs-comment">// 부수 효과를 통한 데이터 구독</span>
+<span class="hljs-title class_">React</span>.<span class="hljs-title function_">useSyncExternalStore</span>(
+  <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useCallback</span>(
+    <span class="hljs-function">(<span class="hljs-params">onStoreChange</span>) =></span> {
+      <span class="hljs-keyword">const</span> unsubscribe = shouldSubscribe
+        ? observer.<span class="hljs-title function_">subscribe</span>(notifyManager.<span class="hljs-title function_">batchCalls</span>(onStoreChange))
+        : noop
+      ...
+    },
+    [observer, shouldSubscribe],
+  ),
+  ...
+)
+
+<span class="hljs-comment">// 옵션 변경을 위한 부수 효과</span>
+<span class="hljs-title class_">React</span>.<span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+  observer.<span class="hljs-title function_">setOptions</span>(defaultedOptions, { <span class="hljs-attr">listeners</span>: <span class="hljs-literal">false</span> })
+}, [defaultedOptions, observer])
+
+<span class="hljs-comment">// Suspense 모드가 아닐 때 (shouldSuspend(defaultedOptions, result)===false), 컴포넌트는 여전히 초기 렌더링 → 데이터 페칭 → 상태 업데이트 → 리렌더링의 흐름을 따른다.</span></code></pre><p>Suspense 모드가 아닐 때 컴포넌트 렌더링 과정은 여전히 다음과 같다:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs">초기 렌더링 → 데이터 페칭 → 상태 업데이트 → 리렌더링</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Comments</code>는 매번 동일한 UI 결과를 보장할 수 없다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">isLoading</code>과 로딩 UI를 없애도 문제는 여전하다. 라이브러리 내부에서 비동기 요청이 부수효과에 의존하기 때문에, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Comments</code>의 첫 실행과 비동기 요청 완료 이후 UI는 다를 수 밖에 없다. 이처럼 Suspense가 적용되지 않은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useQuery</code>는 기존 방식의 문제를 해결하지 않는다. 라이브러리로 추상화하여도, 선언적이지 않은 UI 표현이라는 근본적인 문제는 동일하다.</p><p>서스팬스는 선언적 UI 원칙을 비동기 상황에서도 지킬 수 있게 해준다. 비동기 요청도 리액트답게.</p><hr class="my-5"><h1 class="mt-5 mb-3" id="-4">설계 의도</h1><p>서스팬스도 벌써 수년 전에 도입됐다. 당시에 어떤 배경이 있었고, 의도가 어땠을 지 궁금했다. 이와 관련해 4년 전에 <a rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">작성된 글</mark></a>을 읽어봤다.</p><blockquote><p>"You can fetch the data for a route, start streaming the shell, and then fill in the data as it arrives."<br>데이터를 가져오는 동시에 UI의 초기 구조를 스트리밍하고, 데이터가 준비되는 대로 채울 수 있다.</p></blockquote><p>이 말이 중요한 의도로 느껴진다. 핵심 문제는 <strong>병목</strong>이고, 이를 <strong>병렬적으로 해결</strong>한다. 공식문서는 Suspense를 "<em>로딩 상태의 UI를 보여준다</em>"고만 간략히 설명한다. 이 단순한 설명 뒤에 <strong>'데이터를 가져오는 동안 렌더링을 멈추지 않는다'</strong>는 의도가 있다고 생각하게 된다.</p><p><a rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">원문</mark></a>에서 작성자 @Dan은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code> 과정에서 발생하는 병목이라는, 더 큰 맥락에서 해결 방향을 제시한다. 이제는 익숙한 내용이지만, <a rel="noopener noreferrer nofollow" href="https://github.com/reactwg/react-18/discussions/37"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#2e39aa" style="background-color: #2e39aa; color: inherit">이 글</mark></a>은 당시 맥락(특히 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>)에 대한 깊은 이해를 제공한다. 설명도 쉽고 친절해서 읽기 편하다.</p><p>글쓴이가 구체적으로 지적하는 문제는 기존 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>의 '<em>All or Nothing</em>' 방식이다. 서버 사이드에서 모든 비동기 데이터가 준비되어야 HTML을 보낼 수 있고, 모든 자바스크립트가 브라우저에 로드되어야 하이드레이션을 시작할 수 있었다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>서버에서 모든 데이터를 페치</p></li><li><p>HTML 렌더링</p></li><li><p>클라이언트에서 자바스크립트 로드</p></li><li><p>전체 앱 하이드레이션</p></li></ol><p>이 과정이 순차적으로 진행되며 병목이 발생한다. 데이터 요청 컴포넌트의 선언적인 작성과 함께, 렌더링과 네트워크 요청 병목이라는 다층적인 문제를 해결할 필요가 생겼다.</p><p>서스팬스는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 이를 해결하기 위해 제시된다. 서스팬스를 통해 이러한 동기적인 과정을 컴포넌트 단위로 쪼갠다. 데이터가 준비된 컴포넌트부터 보여주고, 하이드레이션할 수 있게 된다. 즉 <strong>컴포넌트 단위로 점진적으로 렌더링</strong> 해간다.</p><hr class="my-5"><h2 class="mt-5 mb-3" id="-5"><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render-as-You-Fetch</mark></h2><p>말 그대로, 데이터 요청을 렌더링 시작과 동시에 진행하는 패턴이다. 컴포넌트가 마운트되기를 기다리지 않고, <strong>렌더링 시작과 동시에 데이터 페칭을 시작</strong>한다. 그럼 서스팬스 사용이 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">Render-as-You-Fetch</mark>를 보장하나? 무조건 그렇진 않다. <em>Render-as-You-Fetch</em>가 제대로 작동하려면, 데이터 요청과 컴포넌트 렌더링 로직이 연계되어야 한다. 이때 Suspense의 사용 방식과 컴포넌트 실행 환경(서버/브라우저)에 따라 동작이 달라질 수 있다.</p><h3 class="mt-5 mb-3" id="streaming-ssr">Streaming SSR</h3><p>원문에서 언급된 SSR의 render-as-you-fetch은 Suspense를 사용해 구현할 수 있다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">ServerComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchData</span>(); 
+  <span class="hljs-comment">// suspense를 지원하는 데이터 요청 방식</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>{data}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">Page</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">React.Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">div</span>></span>Loading...<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>}>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">ServerComponent</span> /></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">React.Suspense</span>></span></span>
+  );
+}</code></pre><p>이 코드에서 Suspense는 데이터 요청(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">fetchData</code>)과 렌더링을 병렬로 진행해 병목 문제를 해결한다. 서버는 먼저 가벼운 fallback ui를 렌더링해 브라우저로 보내고, fetchData 요청이 끝나면 해당 데이터를 포함한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">ServerComponent</code>를 렌더링해 브라우저에 전달한다.</p><p>이 접근법은 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 발생할 수 있는 초기 로딩 지연을 개선한다. <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">SSR</code>에서 페이지로 이동했지만 첫 화면을 보기까지 오랜 시간이 걸리는 문제를 해결한다.</p><p>이같은 서스팬스 바운더리를 활용한 SSR 방식은<mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#5c32a1" style="background-color: #5c32a1; color: inherit"> 스트리밍 Streaming SSR</mark>이라고 한다. 이 방식에서는 서스팬스 내의 각 컴포넌트가 데이터가 준비되는 즉시 독립적으로 렌더링되어 브라우저에 전달된다. '스트리밍'은 React가 서버에서 데이터를 처리한 뒤, 준비된 내용을 조금씩 클라이언트로 보내는 방식을 말한다.</p><p>사실 '<em>스트리밍</em>'이라는 단어가 생소했다. 맥락을 이해하는데 MDN의 Streams API의 설명이 도움이 됐다.</p><blockquote><p>스트리밍은 네트워크를 통해 받으려는 리소스를 작은 청크(chunk)로 나누어, 이를 조금씩 처리하는 방식을 의미합니다. ... Streams API를 사용하면..., JavaScript로 원시 데이터를 청크 단위로 점진적으로 처리할 수 있습니다</p><ul class="tight" data-tight="true"><li><p>MDN - Streams API</p></li></ul></blockquote><p><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#5c32a1" style="background-color: #5c32a1; color: inherit">Streaming SSR</mark>은 로딩 상태 UI를 관리하는 서스팬스를 넘어 '서버에서 실행되는 React'와 밀접하게 연관된다. '스트리밍' 구현에는 HTTP(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Transfer-Encoding:chunked</code>), JavaScript <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">Streams API(ReadableStream)</code>, React 서버 DOM의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">readPipeableStream</code>가 연관이 있다.</p><p>더 자세한 내용은 관련 문서를 참고.</p><p><a rel="noopener noreferrer nofollow" href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API">Streams API - MDN</a><br><a rel="noopener noreferrer nofollow" href="https://react.dev/reference/react-dom/server/renderToPipeableStream">renderToPipeableStream - React Docs</a></p><p>그러고 보니, <a rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/50">renderToPipeableStream</a>에 대해 예전에 <a rel="noopener noreferrer nofollow" href="https://blog.leetekwoo.com/blog/50">써둔 글</a>이 있었다.</p><p>최근에 번역된 <em>전문가를 위한 리액트(Fluent React)</em>를 읽고 작성했다.</p><hr class="my-5"><h3 class="mt-5 mb-3" id="csr">CSR에서의 병목</h3><p>비슷한 문제는 서버 사이드 뿐만 아니라 브라우저 환경에서도 발생한다. Suspense 없는 비동기 요청은 렌더링 과정으로 병목이 생긴다. 초기 렌더링이 완료된 이후, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">useEffect</code>를 통해 비로소 요청이 발생하기 때문이다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx">
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span> (<span class="hljs-params"></span>) {
+	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Parent</span> /></span></span>
+}
+
+<span class="hljs-comment">// useQuery suspense: false 설정 시 </span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: parentData, isLoading } = <span class="hljs-title function_">useQuery</span>(<span class="hljs-string">'parent'</span>, fetchParent);
+  <span class="hljs-keyword">return</span> 
+  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">article</span>></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">ArticleHeader</span> /></span>
+	  {isLoading &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">Loading</span> /></span>}
+	  {parentData &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">Child</span> <span class="hljs-attr">parentId</span>=<span class="hljs-string">{parentData.id}</span> /></span> }
+  <span class="hljs-tag">&#x3C;/<span class="hljs-name">article</span>></span></span>
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Child</span>(<span class="hljs-params">{parentId}</span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: childData, isLoading } = <span class="hljs-title function_">useQuery</span>([<span class="hljs-string">'child'</span>, parentId], <span class="hljs-function">() =></span> <span class="hljs-title function_">fetchChild</span>(id));
+  
+  <span class="hljs-keyword">return</span>(
+	  <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+		{childData &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>childData.name<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>}
+		{isLoading &#x26;&#x26; <span class="hljs-tag">&#x3C;<span class="hljs-name">Loading</span> /></span>}
+	  <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+	)
+}</code></pre><p>실제로 이러한 코드는 불필요한 과정을 통해 완성된다.</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p>Parent 컴포넌트 최초 렌더링</p></li><li><p>렌더링 완료 후 fetchParent 요청 시작</p></li><li><p>요청 완료 후 Parent 리렌더링</p></li><li><p>Child 컴포넌트 마운트 및 렌더링</p></li><li><p>Child 렌더링 완료 후 fetchChild 요청 시작</p></li><li><p>fetchChild 완료 후 Child 리렌더링</p></li><li><p>전체 UI 완성</p></li></ol><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">fetchChild</code>의 요청이 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">parent</code> 결과에 의존하기 때문에 요청 워터폴은 근본적으로 해결할 수 없다. 하지만 <strong>렌더링으로 인해 추가적인 병목이 발생</strong>한다.</p><p>이 과정에서 문제는</p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><strong>네트워크 요청의 지연</strong><br>리액트 렌더링 과정이 요청 타이밍을 더 지연시킨다. Parent의 첫 렌더링이 완료된 후에야 fetchParent가 시작되고, 이 요청이 완료되어 Parent가 리렌더링된 후에야 Child가 마운트된다. Child의 첫 렌더링이 끝난 후에야 fetchChild가 시작되는 연쇄적인 지연이 발생한다.</p></li><li><p><strong>불필요한 리렌더링</strong><br>최소 4번의 렌더링을 전제한다. Parent는 fetchParent 완료 시 리렌더링되고, Child는 fetchChild 완료 시 리렌더링된다. (이또한 리액트 컴파일러, 메모이제이션이 적용되지 않은 경우를 전제로) Parent의 리렌더링은 모든 자식 컴포넌트의 리마운트를 유발하기 때문에 Parent에 Child와 같은 비동기 요청 컴포넌트가 늘어난다면, 코드의 오류 가능성이 더 높아진다. 즉, 컴포넌트 구조가 복잡해질 수록, <strong>'불필요한 렌더링'이 일으킬 에러의 가능성이 높아진다.</strong></p></li></ol><p>이제 서스팬스와 Render-as-You-Fetch 패턴을 적용해 클라이언트 사이드 렌더링(<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">CSR</code>)에서 이를 해결해보자. 브라우저에서 실행되는 클라이언트 컴포넌트는 비동기 요청이 React의 렌더링 단계에서 직접 이루어질 수 없다. 이를 해결하기 위해 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">비동기 요청의 시점을 바꾸고, Suspense를 활용할 수 있다</mark>. 데이터 요청을 컴포넌트 렌더링 전에 시작하고 Suspense로 로딩 상태를 처리하는 방식으로 <strong>Render-as-You-Fetch</strong>를 구현할 수 있다.</p><p>여러가지 방법으로 구현할 수 있지만, 이번에는 REST API, Suspense와 함께 <strong>Tanstack Query</strong>, <strong>Tanstack Router</strong>의 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">loader</code>를 사용해봤다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { createRootRoute, createRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tanstack/react-router'</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">QueryClient</span>, <span class="hljs-title class_">QueryClientProvider</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tanstack/react-query'</span>;
+
+<span class="hljs-keyword">const</span> queryClient = <span class="hljs-keyword">new</span> <span class="hljs-title class_">QueryClient</span>();
+
+<span class="hljs-comment">// 루트 경로의 Route 설정과 서스팬스 바운더리 적용</span>
+<span class="hljs-comment">// loader와 각 컴포넌트 useSuspenseQuery에서 동일한 쿼리 키 사용</span>
+<span class="hljs-keyword">const</span> rootRoute = <span class="hljs-title function_">createRootRoute</span>({
+  <span class="hljs-attr">loader</span>: <span class="hljs-title function_">async</span> () => {
+  <span class="hljs-comment">// parent 데이터를 fetchQuery로 가져와서 캐시에 저장</span>
+    <span class="hljs-keyword">const</span> parentData = <span class="hljs-keyword">await</span> queryClient.<span class="hljs-title function_">fetchQuery</span>({
+      <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">'parent'</span>], 
+      <span class="hljs-attr">queryFn</span>: fetchParent
+    });
+    
+	<span class="hljs-comment">// parent 데이터를 이용해 child 데이터 prefetch 시작</span>
+    queryClient.<span class="hljs-title function_">prefetchQuery</span>({
+      <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">'child'</span>, parentData.<span class="hljs-property">id</span>],
+      <span class="hljs-attr">queryFn</span>: <span class="hljs-function">() =></span> <span class="hljs-title function_">fetchChild</span>(parentData.<span class="hljs-property">id</span>)
+    });
+
+    <span class="hljs-keyword">return</span> parentData;
+  },
+  <span class="hljs-attr">component</span>: <span class="hljs-function">() =></span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">QueryClientProvider</span> <span class="hljs-attr">client</span>=<span class="hljs-string">{queryClient}</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Loading</span> /></span>}> 
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Parent</span> /></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">QueryClientProvider</span>></span></span>
+  )
+});
+
+<span class="hljs-comment">// Router 설정</span>
+<span class="hljs-keyword">const</span> router = <span class="hljs-title function_">createRouter</span>({ <span class="hljs-attr">routeTree</span>: rootRoute });
+
+<span class="hljs-comment">// App 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">RouterProvider</span> <span class="hljs-attr">router</span>=<span class="hljs-string">{router}</span> /></span></span>;
+}
+
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> initialData = useLoaderData&#x3C;<span class="hljs-keyword">typeof</span> parentRoute>();
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: parentData } = <span class="hljs-title function_">useSuspenseQuery</span>({
+    <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">'parent'</span>], 
+    <span class="hljs-attr">queryFn</span>: fetchParent,
+    initialData
+  });
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">article</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>{parentData.title}<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&#x3C;<span class="hljs-attr">Loading</span> /></span>}>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">Child</span> <span class="hljs-attr">parentId</span>=<span class="hljs-string">{parentData.id}</span> /></span>
+      <span class="hljs-tag">&#x3C;/<span class="hljs-name">Suspense</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">article</span>></span></span>
+  );
+}</code></pre><p>렌더링의 과정을 요약하면:</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-markdown">before: 컴포넌트 초기 렌더링 → 요청 시작 → 완료 → 리렌더링 
+after: 요청 동시에 fallback UI 렌더링  -> 완료후 컴포넌트 렌더링</code></pre><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal"><li><p><strong>Parent 컴포넌트의 Suspense 처리</strong></p><ul><li><p>route 진입 시 loader에서 Parent 데이터를 fetchQuery로 가져와 캐시에 저장한다.</p></li><li><p>최상위 Suspense는 loader에서 fetchParent가 완료될 때까지 Parent의 fallback을 보여준다.</p></li><li><p>완료가 끝나면, Parent 컴포넌트는 loader가 반환하는 데이터로 즉시 렌더링된다.</p></li><li><p>loader가 완료되면 캐시된 데이터로 한 번에 렌더링되어 Parent에 불필요한 리렌더링이 발생하지 않는다.</p></li></ul></li><li><p><strong>Child 컴포넌트의 요청과 렌더링</strong></p><ul><li><p>loader에서 prefetchQuery로 Child 데이터 요청이 미리 시작된다. Parent가 최종 렌더링되기 전에 fetchChild 요청을 시작한다.</p></li><li><p>Child 컴포넌트가 마운트될 때 캐시된 데이터가 있거나 진행 중인 요청을 재사용한다.</p></li><li><p>Child의 Suspense는 데이터가 준비될 때까지 fallback을 보여준다.</p></li></ul></li></ol><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">loader</code>를 통해 라우트 진입 시점에 미리 데이터 요청을 시작하고, Suspense로 컴포넌트의 렌더링을 데이터 준비 상태와 동기화한다. 비동기 요청 컴포넌트는 최초 렌더링으로 데이터를 UI로 표현하고, 이로써 렌더링 과정이 요청 지연을 방지한다.</p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Suspense 탐구하기 - teklog"}],["$","meta","1",{"name":"description","content":"최근 Next.js 15, React 19의 새로운 패턴에 적응하면서 Suspense를 자주 사용하게 됐다. 이 과정에서 Suspense가 단순히 '로딩 상태를 보여주기' 이상으로 중요한 개념으로 느껴져 궁금해졌다.이 글은 Suspense의 기본적인 사용법에서 시작하여 점진적 렌더링, 선언적 UI, Render As You Fetch 등의 키워드로 서스팬스"}],["$","meta","2",{"property":"og:title","content":"Suspense 탐구하기 - teklog"}],["$","meta","3",{"property":"og:description","content":"최근 Next.js 15, React 19의 새로운 패턴에 적응하면서 Suspense를 자주 사용하게 됐다. 이 과정에서 Suspense가 단순히 '로딩 상태를 보여주기' 이상으로 중요한 개념으로 느껴져 궁금해졌다.이 글은 Suspense의 기본적인 사용법에서 시작하여 점진적 렌더링, 선언적 UI, Render As You Fetch 등의 키워드로 서스팬스"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Suspense 탐구하기 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"최근 Next.js 15, React 19의 새로운 패턴에 적응하면서 Suspense를 자주 사용하게 됐다. 이 과정에서 Suspense가 단순히 '로딩 상태를 보여주기' 이상으로 중요한 개념으로 느껴져 궁금해졌다.이 글은 Suspense의 기본적인 사용법에서 시작하여 점진적 렌더링, 선언적 UI, Render As You Fetch 등의 키워드로 서스팬스"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/58","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Hash 1 - 기본 개념과 적용"}],["$","p",null,{"className":"text-sm","children":"2025-02-24"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/56","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"1인 제품 개발 후기"}],["$","p",null,{"className":"text-sm","children":"2024-11-13"}]]}]]}]]}]}]
