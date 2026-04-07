@@ -1,0 +1,1191 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","52"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","52","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","52","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:Tcb7f,<p><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1710074466/uj4qgf2owzymdjv4tcj9.jpg"></p><p><br></p><p>Jotai의 개발자 Daishi Kato가 쓴 ‘리액트 훅을 활용한 마이크로 상태관리’ 를 읽고 정리한 내용이다. code snippet을 직접 작성하고, 기억할만한 내용을 선별하고, 글의 순서를 편집해 작성하였다. 지역상태/전역 상태의 구분, context api, 전역 상태가 어떤 문제를 공유하고 각각 어떻게 해결해가는지를 중점으로 작성했다. 이 글을 통해 복잡할 수 있는 전역 상태의 관리를 효과적으로 실천할 수 있기를 바라며…</p><p><br></p><h3>마이크로 상태 관리란 ?</h3><p><br></p><p>저자가 제안하는 상태 관리를 위한 방법론이다. 목적 지향형인 리액트 훅과 Redux와 같은 중앙 집중형 상태 관리의 한계를 개선하기 위한 방법을 제시한다.</p><p><br></p><ul><li>리액트 훅: 폼 상태, 서버 캐시, 라우팅 기반의 상태 관리 등 각 목적에 맞는 상태를 관리. 목적 지향적인 방법으로 처리할 수 없는 상태도 있어 한계가 있다.</li><li>중앙 집중형 상태 관리: 단 하나의 집중된 상태로 관리. 중앙 집중형 라이브러리는 사용되지 않는 기능까지 추가되거나, 사용법이 지나치게 복잡한 경향이 있다.</li></ul><p><br></p><p>저자는 대안으로&nbsp;<em>범용적인 상태관리</em>를 제시한다. 1) 가벼운 상태 관리 2) 개발자가 요구사항에 맞는 적절한 상태 관리법을 선택할 수 있도록 한다. 범용적인 상태관리는 다음과 같은 필수 기능을 포함한다.</p><p><br></p><ul><li>상태 read</li><li>상태 write</li><li>상태 기반의 렌더링</li><li>리렌더링 최적화</li><li>다른 시스템과의 상호작용</li><li>비동기 지원</li><li>파생 상태</li><li>간단한 문법</li></ul><p><br></p><p><br></p><h3>지역상태</h3><p><br></p><p>효과적인 상태 관리를 위해 상태를 '지역 상태’와 '전역 상태’로 구분한다.</p><p><br></p><p><strong>리액트에서 지역 상태란</strong></p><p><br></p><ul><li>컴포넌트 내부에서만 사용되는 상태. (=컴포넌트에 격리된 상태, 하나의 컴포넌트에 속하고 캡슐화된 상태)</li><li>리액트 상태는 컴포넌트 모델을 따른다. 순수함수와 같이 작동(같은 입력에 항상 같은 출력). 재사용에 용이.</li><li>컴포넌트에서는 '지역성’이 중요. 컴포넌트(의 상태)가 격리되고 여러번 재사용될 수 있어야함.</li><li>컴포넌트는 단방향 데이터 흐름 (props를 통한 전달)과 트리 구조를 기반함</li><li>useState, useReducer 훅을 사용. 상태 로직을 추출하여 커스텀 훅을 사용하기 용이함.</li><li>전역 상태에 의존하는 컴포넌트는 컴포넌트 모델에 적합하지 않을 수 있다.</li><li class="ql-indent-1">외부 상태에 의존하게될 시 컴포넌트 독립성이 사라질 수 있음</li><li class="ql-indent-1">외부 상태에 대한 의존성이 동작이 일관되지 않을 수 있음</li></ul><p><br></p><p>지역상태를 위해 useState가 사용된다. 혹은 지난 글에서 살펴봤듯이, 상태가 크거나 상태 변경의 로직이 늘어날 때 useReducer를 사용할 수 있다. 두 훅과 커스텀 훅은 이전 글에서 충분히 다루었으니, 지역 상태 훅들의 다음과 같은 공통점을 살펴보자.</p><p><br></p><p><strong>지역 상태를 사용할 때</strong></p><p><br></p><p>상태가 컴포넌트 단위로 독립되어 있어 상태 변경이 일어난 컴포넌트에서만 리렌더링을 한다. (리액트의 주요 설계 목적과도 부합한다.) 독립된 컴포넌트 내의 상태 변경은 다른 컴포넌트에 영향을 미치지 않는다. 이를 이용하여 상태를 효과적으로 관리하고 성능을 최적화할 수 있다.</p><p><br></p><ul><li>특정 컴포넌트에서만 사용되는 상태를 관리할 때</li><li>ex) 키보드 인풋 입력 시 버튼 컴포넌트가 리렌더링될 필요는 없다.</li><li>컴포넌트를 재사용할 때</li><li>ex) 인풋 리스트 아이템은 인풋이 입력될 때 리스트 전체를 리렌더링하지 않게 한다.</li></ul><p><br></p><p><strong>지역 상태 훅의 특성</strong></p><p><br></p><p><strong>1 초기화 (지연 초기화)</strong></p><ul><li>상태의 초기값으로 원시값, 참조값을 넣을 수 있다.</li><li>훅의 초기값으로 함수를 넣으면 '지연 초기화’가 일어난다.</li><li>첫번째 렌더링(첫번째 마운트)에서만 평가된다. 훅이 호출되기 전까지 함수는 호출되지 않는다.</li><li>크고 복잡한 상태라면 초기값에 함수를 넣어 관리할 수 있다.</li></ul><p><br></p><p><strong>2 베일아웃 (bailout)</strong></p><ul><li>상태의 변경이 없을 때 리렌더링은 생략된다.</li></ul><p><br></p><p>useReducer의 초기화, bailout 예시</p><pre class="ql-syntax" spellcheck="false">/* init은 초기화를 위한 함수 */
+const init = (count:number):State =&gt; ({ count, text:'' })
+
+const reducer = (state:State, action:Action)=&gt; {
+	switch(action.type) {
+		case 'INCREMENT':
+		return { ...state, count: state.count + 1 }
+		case 'DECREMENT':
+		return { ...state, count: state.count -1 }
+		case 'TEXT':
+		if(!action.text){
+		/* 1 - bailout */*
+		return state
+		}
+		return { ...state, text: action.text }
+		default:
+		throw new Error("unknown action type")
+	}
+}
+
+// Component.tsx
+const Component = () =&gt; {
+	/* 2 - 지연 초기화 */*
+	const [state, dispatch] = useReducer(reducer, 0, init)
+	return (
+	&lt;div&gt;
+		&lt;p&gt;count: {state.count}&lt;/p&gt;
+		&lt;button onClick={() =&gt; dispatch({type: 'INCREMENT'})}&gt;
+			PLUS
+		&lt;/button&gt;
+		&lt;button onClick={() =&gt; dispatch({type: 'DECREMENT'})}&gt;
+			MINUS
+		&lt;/button&gt;
+		&lt;input 
+		onChange={(e) =&gt; dispatch({ type:'TEXT', text: e.target.value })} /&gt;
+	&lt;/div&gt;
+	)
+}
+
+</pre><p>1. Bailout</p><ul><li>state를 그대로 돌려주어야 이전 상태가 반환되어 bailout이 된다.</li><li>{…state}를 반환하게 되면 새로운 객체가 생성되어 리렌더링이 일어난다.</li></ul><p><br></p><p>2. 지연 초기화</p><ul><li>useReducer의 3번째 매개변수(init 함수)는 2번째 매개변수를 인자로 반환한 값을 상태의 초기값으로 사용한다.</li><li>init 함수는 useReducer가 호출될 시(즉 컴포넌트가마운트 되어 처음 렌더링될 시)에 평가, 실행된다</li></ul><p><br></p><p><br></p><p><strong>리액트 지역 상태를 사용하기</strong></p><p><br></p><p><strong>상태 끌어올리기</strong></p><ul><li>동일한 형태의 상태를 사용하는 두 컴포넌트라면, 부모 컴포넌트를 만들어 하나의 상태로 두 컴포넌트에 props를 내려줄 수 있다.</li><li>이 방법을 더욱 추상화하여 부모 컴포넌트에서 자식 컴포넌트로 의존성(props)을 주입하는 여러 컴포넌트 설계 패턴들(props getter, state reducer 등)이 있다. (이 패턴들은 역전된 제어Inversion of Control라고 불린다.)</li></ul><p><br></p><p><strong>내용 끌어올리기</strong></p><ul><li>상위 컴포넌트의 상태 변경에 영향 받지 않는 컴포넌트나 컴포넌트의 일부분을 분리하여 상태 변경이 일어나는 컴포넌트 상위로 끌어올리는 방법.</li><li>HOC, render props와 같은 패턴과 함께 활용할 수 있다.</li></ul><p><br></p><p><strong><em>참고: 리렌더링이 일어나는 4가지 경우</em></strong></p><ul><li>상태의 변경</li><li>props의 변경</li><li>부모 상태의 변경 (리렌더링)</li><li>Context(전역 상태)의 변경</li></ul><p><br></p><p><strong>예시</strong></p><p><strong>상태 끌어올리기</strong></p><pre class="ql-syntax" spellcheck="false">// Parent 컴포넌트
+function Parent() {
+  const [sharedState, setSharedState] = React.useState("");
+
+  return (
+    &lt;div&gt;
+      &lt;ChildA sharedState={sharedState} setSharedState={setSharedState} /&gt;
+      &lt;ChildB sharedState={sharedState} /&gt;
+    &lt;/div&gt;
+  );
+}
+
+// ChildA 컴포넌트
+function ChildA({ sharedState, setSharedState }) {
+  return &lt;input value={sharedState} onChange={(e) =&gt; setSharedState(e.target.value)} /&gt;;
+}
+
+// ChildB 컴포넌트
+function ChildB({ sharedState }) {
+  return &lt;div&gt;Current Value: {sharedState}&lt;/div&gt;;
+}
+
+</pre><p><strong>내용 끌어올리기</strong></p><pre class="ql-syntax" spellcheck="false">// 상태가 있는 컴포넌트
+function StatefulComponent() {
+  const [counter, setCounter] = React.useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;button onClick={() =&gt; setCounter(counter + 1)}&gt;Increment&lt;/button&gt;
+      &lt;div&gt;Counter: {counter}&lt;/div&gt;
+	  &lt;div&gt;This is static content that does not change.&lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+
+// 상태 변경에 영향을 받지 않는 정적 컴포넌트
+function StaticContent() {
+  return &lt;div&gt;This is static content that does not change.&lt;/div&gt;;
+}
+
+
+function ContentLiftedComponent() {
+	&lt;&gt;
+	  &lt;StatefulComponent/&gt;
+	  &lt;StaticContent/&gt;
+	  {/* 혹은 StatefulComponent에 children props를 추가하여 수정할 수 있다.*/}
+	  &lt;StatefulComponent&gt;
+		  &lt;StaticContent/&gt;
+	  &lt;/StatefulComponent&gt;
+	&lt;/&gt;
+}
+
+</pre><p><br></p><p><br></p><h3>전역상태</h3><p><br></p><p>모든 컴포넌트가 하나의 상태에 의존하면(ex:최상단의 상태가 앱 전체의 컴포넌트에 상태를 props로 내려줌), 지역상태와 전역상태를 명확히 구분할 수 없다. 일반적으로 리액트에서 '전역상태’란 떨어진 컴포넌트에서 '공유된 상태shared state’이다.</p><p><br></p><p><strong>전역상태의 두가지 측면</strong></p><ul><li>싱글톤. 특정 컨텍스트에서 상태가 하나의 값을 갖는다. 모듈 파일로 분리된 전역 상태를 사용하면 싱글톤과 유사하게 사용할 수 있다.</li><li>공유 상태. 상태 값이 다른 컴포넌트에 공유되지만, 메모리상에서 단일 값일 필요는 없다. 대표적으로 리액트 컨텍스트 API는 싱글톤이 아닌 공유 상태이다.</li></ul><p><br></p><h4>언제 사용할까?</h4><ul><li>porp을 전달하는 것이 적절하지 않을 때</li><li class="ql-indent-1">익히 알려진 상태 공유가 props 드릴링을 유발하는 경우. 상태를 공유하려는 컴포넌트가 멀리 떨어질 수록 컴포넌트의 구조와 코드는 더욱 복잡해진다.</li><li>이미 리액트 외부에 상태가 있을 때</li><li class="ql-indent-1">ex) 리액트 없이 획득한 사용자 인증 정보(OAuth 등으로 획득한 사용자 토큰)가 페이지 전체에 공유되어 특정 컴포넌트의 기능을 막거나 작동하게 해야한다.</li></ul><h4><br></h4><h4><br></h4><h4><strong>Context API</strong></h4><p><br></p><p>리액트는 16.3부터 context api를 제공한다. Context Provider, useContext 훅을 사용하여 간단하게 전역상태를 사용할 수 있게 되었다. 책에서는 컨텍스트 api의 기본적인 사용법과 함께, 근본적인 문제와 한계, 모범사례를 살펴본다. 이 챕터에서 중요한 부분은 컨텍스트의 한계이다. 여기서 소개되는 문제의식과 해결법은 뒷장에서 소개하는 전역상태 라이브러리들이 같은 문제를 해결하기 위해 어떤 접근법을 취하고 있는지 이해하는데 도움이 된다. 이 챕터에서 설명하는 store, subscribe, selector같은 개념은 여러 라이브러리에서 유사한 개념과 기능을 공유하기 때문에 숙지하는 것이 좋다.</p><p><br></p><p><br></p><h4>기본적인 사용법</h4><p><br></p><p>useState를 사용하거나 정적인 값을 사용하여 컨텍스트를 생성할 수 있다. 상태를 공유하는 컴포넌트를 provider로 묶어주어야 한다. context provider에는 정적인 값이나 useState, useReducer의 상태를 넣어줄 수 있다.&nbsp;<strong>Provider value prop에 정적인 값이 들어간다면 전역상태를 변경할 수 없게 된다.</strong>&nbsp;(정확히는 업데이트할 방법이 없어진다.)</p><p><br></p><pre class="ql-syntax" spellcheck="false">// 컨텍스트를 정적인 값으로 사용하는 경우
+const SampleContext = createContext('black')
+const SampleContext =  createContext({color: 'black', count: 0, setColor:(param:string) =&gt; void })
+
+
+const Root = () =&gt; {
+const [color, setColor] = useState('black') // state 훅
+
+return (
+	&lt;&gt;
+		&lt;SampleContext.Provider value={{ color, setColor, count:0 }}&gt;
+		&lt;SampleContext.Provider value={color}&gt; // 정적인 값 사용 시 
+			&lt;ColorComponent /&gt;
+			&lt;MemoColorComponent /&gt;
+			&lt;CountComponent /&gt;
+			&lt;MemoCountComponent /&gt;
+			&lt;DummyComponent /&gt;
+			&lt;MemoDummyComponent /&gt;
+		&lt;/ColorContext.Provider&gt;
+	&lt;/&gt;	
+	
+)
+}
+
+const ColorComponent = () =&gt; {
+	const color = useContext(SampleContext) // 정적
+	const {color, setColor} = useContext(SampleContext) // state 훅
+
+	return (
+		&lt;div&gt;
+			&lt;p&gt;current color : {color}&lt;/p&gt;
+			&lt;input onChange={(e) =&gt; setColor(e.target.value)} /&gt;
+		&lt;/div&gt;	
+	)
+}
+
+const CountComponent = () =&gt;{
+	const {count} = useContext(SampleContext)
+	return &lt;&gt;{count}&lt;/&gt;
+}
+
+const DummyComponent = () =&gt; (&lt;&gt;dummy&lt;/&gt;)
+
+const MemoColorComponent = memo(ColorComponent)
+const MemoCountComponent = memo(CountComponent)
+const MemoDummyComponent = memo(DummyComponent
+
+
+</pre><h4><br></h4><h4><strong>컨텍스트의 전파</strong></h4><p><br></p><p>컨텍스트 provider와 상태훅을 사용해 컨텍스트를 업데이트할 수 있다. 이 때 프로바이더 내부의 모든 컴포넌트가 리렌더링된다. 이 경우 상태 변경이 이루어지지 않는 컴포넌트까지 불필요하게 리렌더링이 일어난다. 이를 방지하기 위해 앞서 살필 '내용 끌어올리기’나 혹은 memo훅을 사용할 수 있다.</p><p><br></p><p>인풋 태그에 텍스트를 입력하여 컨텍스트를 업데이트 시 다음과 같은 컨텍스트 전파가 일어난다.</p><p><br></p><ol><li>처음에 모든 컴포넌트가 렌더링</li><li>텍스트 입력 시 Root의 상태가 바뀌며 Root 컴포넌트가 리렌더링</li><li>SampleContext.Provider가 새로운 value를 받는 동시에 내부 컴포넌트 리렌더링</li><li>MemoCount를 제외한 모든 컴포넌트가 리렌더링됨</li><li>MemoColorComponent 또한 리렌더링된다. 부모 컴포넌트의 상태가 변화하고 컨텍스트가 변경되었기 때문이다.</li></ol><p><br></p><p>간단한 방법은 Provider 나누는 것이다. 컨텍스트는 프로바이더를 경계로 공유되기 때문에, 공유하려는 상태가 아닌 컴포넌트는 Provider 경계 밖으로 분리할 수도 있다. 하지만 요구사항에 따라 혹은 이미 개발된 컴포넌트의 설계에 따라 그럴 수 없는 경우 또한 자주 있을 수 있다.</p><p><br></p><p><br></p><h4>컨텍스트의 한계</h4><ol><li>컨텍스트가 업데이트될 때 불필요한 리렌더링이 늘어난다.</li><li>컨텍스트가 객체 형태일 때 이와 같은 리렌더링이 더욱 늘어난다.</li><li>불필요한 리렌더링을 방지하기 위한 코드의 양이 증가한다.</li></ol><p><br></p><p>1, 2번은 위의 예제를 통해 설명된다. setColor를 통해 바뀐 상태는 color 밖에 없음에도, CountComponent와 React.memo로 감싸진 MemoCountComponent가 리렌더링된다. 또한 DummyComponent도 Provider에 제공된 값이 바뀌면서 리렌더링된다. 컨텍스트에 의존하는 컴포넌트가 많고, 상태 변경이 자주 이루어진다면 불필요한 리렌더링이 페이지 단위로 불필요한 리렌더링이 무분별하게 실행될 것이다.</p><p><br></p><p><br></p><h4>해결 방법과 모범 사례</h4><p><br></p><p>앞선 객체의 일부 컨텍스트를 사용할 시 리렌더링되는 문제를 해결하기 위해서 컨텍스트를 작게 쪼게는 방법이 있다.</p><pre class="ql-syntax" spellcheck="false">const ColorContext = createContext(...)
+const CountContext = createContext(0)
+
+const Root = () =&gt; {
+.... 위와 동일
+
+	&lt;ColorContext.Provider value={{color, setColor}}&gt;
+		&lt;CountContext.Provider value={0}&gt;
+		...
+
+}
+
+const ColorComponent = () =&gt; {
+	const {color , setColor } = useContext(ColorContext)
+	...
+}
+
+const CountComponent = () =&gt; {
+	const count = useContext(CountContext)
+	....
+}
+
+
+</pre><p>프로바이더는 중복하여 사용이 가능하며, ColorContext가 업데이트될 시 CountContext를 사용하는 컴포넌트는 memo를 사용한다면 리렌더링되지 않는다. 물론 이 방법으로 컨텍스트를 작게 쪼게다보면 Provider의 수가 증가하는 단점은 있다. 프로바이더가 너무 많아 value prop으로 내려주어야 할 값을 관리하기 어려울 수 있다.</p><p><br></p><p>이같은 문제를 해결하기 위해 저자는 세가지 해결방법을 제시한다.</p><p><br></p><ul><li>커스텀 훅과 Provider 컴포넌트</li><li>커스텀 훅과 팩토리 패턴</li><li>reducerRight를 활용한 Provider 중첩 개선</li></ul><p><br></p><p><strong>커스텀 훅과 Provider 컴포넌트</strong></p><p><br></p><p>Provider와 useContext를 사용하려는 컨텍스트 별로 커스터마이징하여 사용하는 방법이다. 위에서 작게 나눈 컨텍스트를 기반으로 작성한다.</p><pre class="ql-syntax" spellcheck="false">type ColorContextType = [string, Dispatch&lt;SetStateAction&lt;string&gt;&gt;] | null
+
+const ColorContext= createContext(null)
+
+export const ColorProvider = ({children}:...) =&gt; {
+	const [color, setColor] = useState('black')
+	return (
+	// ColorProvider에서 ColorContext의 초기값을 주입한다
+		&lt;ColorContext.Provider value={{ color, setColor }}&gt;
+			{children}
+		&lt;/ColorContext.Provider&gt;
+	)
+}
+
+export const useColorContext = () =&gt; {
+	const {color, setColor} = useContext(ColorContext)
+	// 이 훅이 ColorProvider 밖에서 사용되면 컨텍스트는 null일 것이다.
+	if(color === null) {
+		throw new Error('Provider is missing')
+	}
+}
+
+
+
+const ColorComponent = () {
+	const { color, setColor } = useColorContext();
+	....
+}
+
+// 같은 방식으로 CountContext 커스텀 훅과 프로바이더 컴포넌트를 작성
+
+const Root = () =&gt; {
+	&lt;ColorProvider&gt;
+		&lt;CountProvider&gt;
+			&lt;ColorComponent /&gt;
+			&lt;CountComponent /&gt;
+			.....
+}
+
+</pre><p>ColorProvider를 분리하여 Root에 선언된 상태를 커스텀 프로바이더 내부로 옮기고, useColorContext 훅으로 컨텍스트의 상태를 불러오거나 업데이트할 수 있게 되었다. 앞선 코드에서 반복된 컨텍스트 import를 없애고, 상태와 상태 변경 로직을 커스텀 훅으로 추상화할 수 있었다.</p><p><br></p><p><br></p><p><strong>커스텀 훅과 팩토리 패턴</strong></p><p><br></p><p>작게 쪼개진 상태에 매번 커스텀 훅과 컴포넌트를 추가하는 것 또한 반복적이다. 이를 한번 더 추상화할 수 있다. ColorContext, CountContext 등 어떤 형태의 컨텍스트라도 커스텀 Provider와 커스텀 useContext훅을 튜플 형태로 반환하는 커스텀 훅을 활용할 수 있다.</p><pre class="ql-syntax" spellcheck="false">const createCustomContext = &lt;T, P&gt;(useValue: (init:T) =&gt; P) =&gt; {
+	const StateContext = createContext(null)
+	const StateProvider = ({initialValue, children}:{...}) =&gt; (
+		&lt;StateContext.Provider value={useValue(initialValue)}&gt;
+			{children}
+		&lt;/StateContext.Provider&gt;
+	)
+
+	const useContextState = () =&gt; {
+		const value = useContext(StateContext)
+		if(value === null) {
+			throw new Error("Provider missing")
+		}
+		return value
+	}
+
+	return [StateProvider, useContextState] as const
+}
+...
+
+const useInitState = &lt;T&gt;(init:T) =&gt; useState(init)
+
+const colorInit = useInitState('black')
+const [ColorProvider,  useColor] = createCustomContext(colorInit)
+// 컴포넌트를 만들지 않고 이 커스텀 훅을 재사용할 수 있다.
+....
+
+
+const ColorComponent = () =&gt; {
+	const {color, setColor} = useColor();
+...
+}
+
+
+</pre><p>createCustomContext 팩토리 패턴을 사용하여 매번 컴포넌트를 만들지 않고 함수로 작성하였다. 이 useState 대신 reducer를 활용하여 상태 업데이트 로직을 함수 단위로 나눌 수 있다.</p><p><br></p><p><br></p><p><strong>reducerRight를 활용한 Provider 중첩 개선</strong></p><p>상태가 잘게 나누어져 위의 훅을 여러번 사용하고 Provider 또한 깊게 네스팅된다면 reducerRight을 사용할 수 있다.</p><pre class="ql-syntax" spellcheck="false">const App = () =&gt; {
+	
+	const providers = [
+	[Provider1, {init: 'black'}],
+	[Provider2, {init: 'white'}],
+	[Provider3, {init: 'yellow'}],
+	[Provider4, {init: 'red'}],
+	[Provider5, {init: 'blue'}],
+	]
+
+	return providers.reduceRight(
+		(children, [Provider, props]) =&gt; 
+			createElement(Provider, props, children),
+			&lt;Root /&gt;
+	)
+}
+</pre><p>HOC와 함께 사용할 수 있다. 사실 Context.Provider가 깊게 네스팅되는 것은 기본 문법이기에 큰 문제가 있는 것은 아니다.</p><p><br></p><p>사실 이 부분까지 읽으면서, 저자가 컨텍스트 API 챕터 도입부에 언급한 "처음부터 컨텍스트 API는 전역상태를 위해 설계된 것이 아니다"라는 언급이 떠올랐다. 비교적 작은 컴포넌트 단위 사이에서 상태를 공유한다면 컨텍스트가 적절할 수 있으나, 컴포넌트가 크고 복잡할 때 너무 많은 훅과 프로바이더가 추가되는 것은 피할 수 없어 보인다. 만약 <strong>이 정도로 코드가 추가</strong>되어야 한다면, 추후 소개할 상<strong>태관리 라이브러리를 사용하는 게 더 적절</strong>할 것이다.</p><p><br></p><p>다른 상태 라이브러리를 살피기 앞서 다음 개념들을 숙지해보자.</p><p><br></p><p><br></p><h3>모듈 상태, 스토어, 구독, 셀렉터</h3><p><br></p><p>이어지는 장에서 module.ts로 분리한 파일에 let count = 0; 변수를 할당하고, 리액트 컴포넌트에서 이 변수를 전역상태로 사용하는 방법을 설명한다. 모듈 파일에 선언된 변수를 전역상태로 사용하기 위해 store를 만들고, store 내부에 메서드를 추가해야한다. 리액트는 useSyncExternalStore 훅을 제공하여 모듈 파일에 store를 구독하여 전역 상태의 변경을 감지할 수 있다. 모듈, 스토어, 구독, 셀렉터는 일반적인 상태 관리 라이브러리에서 공유되는 개념이기에 숙지하는 것이 도움이 된다. 예제 코드는 생략하고 중요 개념을 살펴보자.</p><p><br></p><p><strong>모듈 상태</strong></p><ul><li>모듈로 분리된 전역 상태. 상태 라이브러리 사용 시 보통 atom.ts처럼 파일로 분리된 전역 상태들을 import하여 사용하게 된다.</li><li>모듈에서 할당된 전역 상태 변수를 import하여 사용하는 것은, 여러 컴포넌트에서 동일한 메모리 주소를 사용하여 싱글톤과 유사한 효과를 낼 수 있다.</li></ul><p><br></p><p><strong>스토어</strong></p><ul><li>중앙 집중된 저장소. 하나 혹은 여러 상태를 스토어에 저장할 수 있다.</li><li>리액트에서는 Redux나 Zustand의&nbsp;<span style="background-color: rgba(0, 0, 0, 0.05);">createStore</span>&nbsp;함수를 사용하여 생성할 수 있다. 스토어는 전역 상태의 일관성을 유지하고, 상태 접근 및 업데이트의 중심 지점 역할을 한다.</li></ul><p><br></p><p><strong>구독</strong></p><ul><li>스토어의 특정 상태 변화를 감지하는 메서드. 이에 반응하여 필요한 동작(UI 업데이트)을 실행한다.</li><li>리액트에는 useSyncExternalStore라는 리액트 내장 API를 제공한다. 모듈 파일에 store 변수를 만들어 이 변수를 구독하게 만들 수 있다. (<a href="https://react-ko.dev/reference/react/useSyncExternalStore" rel="noopener noreferrer" target="_blank" style="color: rgb(12, 147, 228);">참조</a>)</li><li>Redux, Zustand, jotai 등 다양한 상태 라이브러리에서는&nbsp;<span style="background-color: rgba(0, 0, 0, 0.05);">subscribe</span>&nbsp;메서드를 통해 스토어의 상태 변화를 구독하는 기능을 제공한다. 컨텍스트 API에서는&nbsp;<span style="background-color: rgba(0, 0, 0, 0.05);">useContext</span>&nbsp;훅을 사용하여 자동으로 변화를 구독한다. 구독을 통해 상태 변화에 즉각적으로 반응할 수 있다.</li></ul><p><br></p><p><strong>셀렉터 (선택자 함수)</strong></p><ul><li>스토어의 상태 중 필요한 부분만을 선택적으로 추출하는 함수. 특히 객체 형태의 상태에서 일부를 가져올 때 사용한다.</li><li>셀렉터는 상태의 특정 부분에 대한 접근을 추상화하고, 계산된 상태를 도출하는 데 유용하다.</li><li>셀렉터로 전역 상태의 일부 혹은 가공하여 가져온 것을 "<strong>파생 상태 derived state</strong>"라고 부른다. 많은 라이브러리에서 공통적으로 파생 상태를 얻기 위한 기능을 제공한다.</li><li>셀렉터는 컴포넌트의 재렌더링을 최적화하는 데 중요한 역할을 한다.</li></ul><h3><br></h3><h3><br></h3><h3>상태 관리 라이브러리</h3><p><br></p><p><em>리액트는 컴포넌트를 중심으로 설계되었다. 컴포넌트는 모든 것이 재사용 가능한 것으로 여겨진다. 하지만 전역 상태는 컴포넌트 외부에 존재한다. 컴포넌트에 대한 추가적인 의존성이 필요하기 때문에 전역 상태 사용을 피하는 것이 좋지만, 전역 상태를 사용하는 것은 편리하며 생산성을 높일 수 있다. 그리고 요구사항에 따라 전역 상태가 필요할 수 있다.</em></p><p><br></p><p><strong>전역 상태를 설계할 때 일반적인 문제점</strong></p><ol><li>전역 상태를 읽는 방법 (read)</li><li>*전역 상태는 여러 값을 가질 수 있고, 전역 상태를 사용하는 컴포넌트는 전역 상태의 모든 값이 필요하지 않은 경우가 있다. 전역 상태가 바뀌면 리렌더링이 발생하는데, 변경된 값이 컴포넌트와 관련 없는 경우에도 리렌더링이 발생한다. 이는 바람직하지 않으며, 전역 상태 라이브러리는 이에 대한 해결책을 제공할 필요가 있다.</li><li>전역 상태에 값을 넣거나 갱신하는 방법 (write)</li><li><em>전역 상태는 여러 값을 가질 수 있으며, 그증 일부는 중첩된 객체일 수 있다. 이럴 때 하나의 전역 변수를 가지고 개발자가 직접 값을 변경하는 것은 좋은 방법이 아닐 수 있다… 객체의 값을 직접 변경시 리액트 컴포넌트의 리렌더링을 트리거할 방법이 없기 때문이다.</em></li></ol><p><br></p><p>앞서 살핀 문제와 해결법을 모두 압축하고 있다. 컨텍스트 API에서 이 문제를 해결하기 위한 코드 예시를 살펴봤다. 불필요한 리렌더링을 방지하기 위해 컨텍스트를 작게 나누었고, 전역 상태의 값을 직접 바꾸는 대신 useState 훅의 dispatch나 useReducer의 action 함수를 사용했다. 또한 이 해결방법의 한계에 대해서도 살펴보았다.</p><p><br></p><p>들어가기에 앞서 전역 상태의 두가지 접근법을 간단히 알아본다.</p><p><br></p><p><br></p><p><strong>데이터 중심 접근 방식 vs 컴포넌트 중심 접근 방식</strong></p><p><br></p><p>전역 상태는 데이터와 컴포넌트 중심으로 유형을 나눌 수 있다.</p><p><br></p><p><strong>데이터 중심</strong></p><ul><li>전역 상태의 데이터 모델은 싱글톤으로 갖을 수 있다.</li><li>처리할 데이터가 이미 있을 수 있고, 컴포넌트를 정의한 후 상태와 연결한다. 이 상태는 라이브러리, 서버 등 외부에서 변경할 수 있다.</li><li>데이터 중심 접근 방식인 경우 모듈 상태가 리액트 외부의 자바스크립트 메모리에 있기 때문에 모듈 상태를 사용하는 것이 더 적합하다.</li><li>모듈 상태는 렌더링을 시작하기 전이나 컴포넌트가 마운트 해제된 후에도 존재할 수 있다.</li><li>모듈 상태는 보통 store와 상태에 접근하고 상태를 업데이트하는 store의 메서드를 제공한다.</li></ul><p><br></p><p><strong>컴포넌트 중심</strong></p><ul><li>데이터 중심과 달리 컴포넌트를 먼저 설계하고, 이를 기반으로 필요한 상태를 설계할 수 있다.</li><li>컴포넌트의 생명주기나 사용자 인터렉션에 맞추어 전역 상태에 접근하여 필요한 데이터에 접근하거나 업데이트할 수있다.</li></ul><p><br></p><p><strong>리렌더링 최적화</strong></p><p><br></p><p>보통 상태 라이브러리는 세가지 패턴으로 리렌더링을 최적화한다.</p><p><br></p><p><strong>셀렉터 사용</strong></p><ul><li>셀렉터는 상태를 받아 상태의 일부를 반환한다. 객체의 일부를 사용하거나 전역 상태에서 파생된 값을 사용할 때 유용하며, 전역 상태 변경에 불필요한 리렌더링을 막을 수 있다. 셀레터는 상태의 어느 부분을 사용할 지 명시적으로 지정하는 방법으로 수동 최적화라고 한다.</li></ul><p><br></p><p><strong>속성 접근 감지</strong></p><ul><li>속성 접근을 감지하여 렌더링을 최적화하는 상태 사용 추적이라는 패턴도 있다. 셀렉터보다 간단한 문법을 사용하며, 자동으로 렌더링을 최적화할 수 있다. 하지만 셀렉터가 최적화에 더 유리한 경우도 있다.</li></ul><pre class="ql-syntax" spellcheck="false">const Component = () =&gt; {
+	const trackedState = useTrackedState();
+	/* selector */
+	// const {a} = useSelector((state) =&gt; state.b)
+	// const {c} = useSelector((state) =&gt; state.e)
+	/* selector가 최적화가 잘되는 경우*/
+	const isSmallA = useSelector((state) =&gt; state.a &lt; 10)
+	const isSmallA = useTrackedState().a &lt; 10
+	/*useTrackedState().a는 상태 a가 바뀔 때마다 리렌더링되지만, useSelector는 state.a &lt; 10 true/false가 바뀌기 전까지 리렌더링되지 않는다./
+	return (
+	&lt;&gt;
+	{tracked.b.a}
+	{tracked.e.c}
+	{isSmall ? "smaller" : "bigger"}
+	&lt;/&gt;
+	
+
+	)
+
+}
+</pre><p><strong>아톰 사용</strong></p><ul><li>아톰은 리렌더링을 발생시키는 최소한의 단위다. 전역 상태를 구독하여 리렌더링을 피하는 대신, 아톰으로 세분화하여 구독한다. 마치 컨텍스트에서 createContext를 잘게 나누는 것과 유사하지만, 아톰은 작게 나눈 상태를 조합하여 하나의 큰 전역상태로 만들 수 있다.</li></ul><pre class="ql-syntax" spellcheck="false">const globalState = {
+	a: atom(1),
+	b: atom(2),
+	c: atom(3)
+}
+
+const Component = () =&gt; {
+ const value = useAtom(globalState.a)
+ return &lt;&gt;{value}&lt;/&gt;
+}
+
+const sum = globalState.a + globalState.b + globalState.c
+
+</pre><p>아톰으로 파생값 또한 만들 수 있다. 이를 수행하기 위해서 의존성을 추적하여 아톰이 갱신될 때마다 파생값을 다시 평가한다. 이처럼 아톰을 사용하는 방식은 수동 최적화와 자동 최적화의 중간 정도이다. 아톰과 파생값의 정의는 명시적이지만, 의존성 추적은 자동으로 된다.</p><p><br></p><p>이상 상태 라이브러리가 해결하려는 문제와 접근 방식, 해결 패턴에 대해 알아보았다. 마지막으로 각 라이브러리를 간략히 살펴보자.</p><p><br></p><h3>Zustand</h3><p><br></p><p><strong>특징</strong></p><ul><li>모듈 상태를 구현하는데 사용하도록 설계되었다.</li><li>store 생성자 인터페이스를 사용한다.</li><li>크기가 작고 데이터 흐름이나 파일 디렉터리를 강제하지 않는다. 최소한으로 설계 되었다.</li><li>상태 객체에 새 값을 할당하여 직접 수정할 수 없고 항상 상태를 새로 만드는 불변 갱신 모델을 사용한다.</li><li>객체의 참조가 동등성을 확인하여 변경 여부를 확인한다.</li><li>렌더링 최적화는 셀렉터를 사용해 수동으로 한다.</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax" spellcheck="false">// store.ts
+import create from 'zustand'
+
+export const store = create(() =&gt; ({ count: 0 }))
+
+
+// Component.tsx
+import store from '@/libs/store'
+
+const Component = () =&gt; {
+	const selector = (state) =&gt; state.count &lt; 10
+	const isSmall = store(selector)
+
+	 return (
+	 &lt;&gt;
+	 &lt;p&gt;{isSmall ? "small" : "big"}&lt;/p&gt;
+	 &lt;p&gt;{store.getState()}&lt;/p&gt;
+	 &lt;button onClick={() =&gt; 
+	 {store.setState((prev) =&gt; ({count: prev.count + 1}))}}
+	 &gt;INC&lt;/button&gt;
+	 &lt;/&gt;
+	 )
+
+}
+</pre><p>모듈 상태 기반으로 작성되어 store.ts에서 store를 정의하고 export하여 사용한다. 상태를 업데이트하기 위해선 새로운 객체를 반환하는 함수를 사용해야한다. 이 방식은 useState의 setter를 통해 상태를 업데이트하는 것과 일치한다. 셀렉터 함수를 사용하여 state.count &lt; 10이 변경될 때만 리렌더링이 일어난다.</p><p><br></p><ul><li>읽기 상태 : 리렌더링을 최적화하기 위해 셀렉터를 사용</li><li>쓰기 상태: 불변 상태 모델을 기반</li><li><em>객체 불변성의 법칙</em></li><li>Zustand와 useState 훅은 상태가 객체일 때 새로운 객체를 생성해야한다. 객체 불변성을 지키기 위해서다. 이는 객체의 데이터가 한 번 생성된 후에는 그 내용을 변경할 수 없다는 원칙이다. 객체의 상태를 변경해야 할 때는 객체의 복사본을 생성하고, 복사본에 변경사항을 적용한 후, 해당 복사본을 새로운 상태로 사용한다. 자바스크립트에선 Object.assign이나 spread를 사용해 간단히 구현할 수 있다.</li></ul><pre class="ql-syntax" spellcheck="false">const originalObject = { a: 1, b: 2 };
+
+
+const updatedObject = { ...originalObject, b: 3 };
+const updated = Object.assign({}, originalObject, { b: 3, c: 4 });
+</pre><p>Zustand 역시 객체 불변성을 기반으로 한다. 셀렉터가 참조적으로 동일한 객체(나 값)를 반환하면 객체가 변경되지 않은 것으로 간주하고 리렌더링을 하지 않는다.</p><p><br></p><p><strong>장점</strong></p><ul><li>셀렉터를 사용하여 리렌더링을 최적화할 수 있다.</li><li>리액트와 동일한 사용하기에 단순하고 번들 크기가 작다</li></ul><p><br></p><p><strong>단점</strong></p><ul><li>셀렉터를 위해 보일러플레이트 코드를 많이 작성해야 할 수 있다.</li></ul><p><br></p><h3>Jotai</h3><p><br></p><p><strong>특징</strong></p><ul><li>Zustand와 마찬가지로 불변 상태 모델</li><li>앞서 살펴본 작은 상태 조각인 atom을 기반으로 사용</li><li>컨텍스트와 구독을 사용한 패턴을 기반으로 하며 이를 atom으로 구현한다.</li><li>atom이 바뀔 때 리렌더링이 일어난다.</li><li>Provider를 선택적으로 사용할 수 있다.</li><li>배열 구조로 리렌더링을 최적화하는 Atoms-in-atom을 활용할 수 있음</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax" spellcheck="false">// atoms.ts
+import {atom} from 'jotai'
+
+export const count1 = atom(0)
+export const count2 = atom(0)
+export const sumAtom = atom((get) =&gt; (get(count1) + get(count2)))
+export const isSmallAtom = atom((get) =&gt; (get(count1) &lt; get(count2)))
+
+// Component.tsx
+import store from '@/libs/store'
+
+const Component = ({counterAtom}) =&gt; {
+	const [count, setCount] = useAtom(counterAtom)
+	const isSmall = useAtom(isSmallAtom)
+
+	 return (
+	 &lt;&gt;
+
+	 &lt;p&gt;{count}&lt;/p&gt;
+	 &lt;button onClick={() =&gt; 
+	 {setCount((prev) =&gt; (prev + 1))}}
+	 &gt;INC&lt;/button&gt;
+	 &lt;/&gt;
+	 )
+}
+
+const Sum = () =&gt; {
+	const sum = useAtom(sumAtom)
+	return 	&lt;p&gt;{sum}&lt;/p&gt;
+}
+
+const IsSmall = () =&gt; {
+	const isSmall = useAtom(isSmallAtom)
+	return 	&lt;p&gt;{isSmall ? 'count 1 is smaller' : 'count1 is bigger'}&lt;/p&gt;
+}
+
+const App = () =&gt; {
+
+	return (
+		&lt;div&gt;
+			&lt;Sum /&gt;
+			&lt;IsSmall /&gt;
+			&lt;Component counterAtom={count1} /&gt;
+			&lt;Component counterAtom={count2} /&gt;
+		&lt;/div&gt;
+	)
+
+}
+</pre><p>atom을 기반으로 상태를 작게 나누어 조합할 수 있다. 이는 셀렉터를 대신하여 유사한 효과를 낼 수 있다. Jotai의 구독은 atom 기반으로 useAtom훅은 스토어에 있는 특정 atom을 구독한다. 이 예시에서 각 컴포넌트는 count1, count2가 바뀔 때 해당 컴포넌트만 리렌더링되며, 파생 아톰인 sum, IsSmall은 파생 상태가 바뀔 때만 리렌더링된다.</p><p><br></p><p>Jotai의 스토어는 아톰 구성 객체와 아톰 값으로 구성된 WeakMap 객체다.</p><p><br></p><ul><li>아톰 구성 객체: atom 함수로 생성</li><li>아톰 값 : useAtom 훅이 반환하는 값</li><li>Jotai의 구독은 아톰 기반이므로 useAtom 훅이 store에 있는 특정 아톰을 구독한다는 의미이다. 아톰 기반 구독을 통해 불필요한 리렌더링을 피할 수 있게 된다. 상태의 갱신을 추적하는 것을 의존성 추적이라하며, jotai는 이를 자동으로 수행한다.</li></ul><p><br></p><p><strong>상향식과 하향식</strong></p><ul><li>하향식top-down: Zustand에선 셀렉터 함수를 통해 객체의 일부를 파생 상태로 만들었다. 이미 존재하는 큰 상태에서 작은 상태로 나누어가는 방식을 상향식이라 한다.</li><li>상향식bottom-up: Jotai에서는 아톰을 작게 나누고, 이를 합성하여 더 큰 상태를 만들었다. (counterAtom 예시) 이를 상향식이라고 한다.</li></ul><p><br></p><p><strong>동적 아톰 생성과 Atoms-in-atom 패턴</strong></p><p><br></p><p>리액트 컴포넌트의 생명 주기에 따라 생성되고 소멸되는 <strong>동적인 아톰을 사용</strong>할 수 있다. 컨텍스트 API에서 새로운 상태를 추가하는 것은 새로운 Provider 컴포넌트를 추가해 하위 트리를 전부 묶는 것이기 때문에 모든 하위 컴포넌트가 리렌더링된다. 이때 리액트 생성 주기와 무관하게 상태는 지속된다. 하지만 jotai의 동적 아톰 생성을 통해 컴<strong>포넌트의 생애주기에 맞춰 전역 상태를 변경</strong>할 수 있다. 일견 그럴 필요 있을까 싶지만, 매우 유용한 순간이 있다. 바로 <strong>전역 상태가 배열</strong>일 때이다. 사용자의 수정, 삭제의 이벤트에 따라 전역상태가 업데이트되는 <strong>리스트 컴포넌트</strong>를 떠올릴 수 있다. 이 때 효과적으로 전역상태를 관리할 수 있다.</p><pre class="ql-syntax" spellcheck="false">// 동적 상태를 이용한 투두 리스트 예시
+// id를 갖고 있지 않다
+// atoms.ts
+type Todo = {
+	title: string;
+	done: boolean;
+}
+
+type TodoAtom = PrimitiveAtom&lt;Todo&gt;
+const todoAtomsAtom = atom&lt;TodoAtom[]&gt;([])
+
+// TodoItem.tsx
+const TodoItem = ({todoAtom, remove} 
+: {todoAtom:TodoAtom; remove:(todoAtom:TodoAtom) =&gt; void }) =&gt; {
+	const [todo, setTodo] = useAtom(todoAtom)
+	return (
+		&lt;div&gt;
+			&lt;input 
+				type="checkbox" 
+				checked={todo.done}
+				onChange={() =&gt; setTodo((prev) =&gt; 
+				({...prev, done:!prev.done}))}
+			/&gt;
+			&lt;span 
+				style={{textDecoration: todo.done? "line-trough" : "none"}}
+			&gt;{todo.title}&lt;/span&gt;
+			&lt;input 
+				type="text" 
+				onChange={(e) =&gt; 
+				setTodo((prev) =&gt; ({...prev, title: e.target.value}))}
+			&lt;button
+				onClick={() =&gt; remove(todoItem)}
+			&gt;
+				Delete
+			&lt;/button&gt;
+		&lt;/div&gt;
+	)
+}
+
+export default memo(TodoItem)
+
+// NewTodo.tsx
+const NewTodo = () =&gt; {
+	const setTodoAtoms = useSetAtom(todoAtomsAtom)
+	const [text, setText] = useState('')
+	const onClick = {
+		setTodoAtoms((prev) =&gt; 
+		([...prev, atom&lt;Todo&gt;({title: text, done:false})]))
+		setText('');
+	}
+	
+	return (
+		&lt;div&gt;
+			&lt;input onChange={(e) =&gt; setText(e.target.value)} /&gt;
+			&lt;button onClick={onClick}&gt;Add&lt;/button&gt;
+		&lt;/div&gt;
+	)
+}
+
+
+// TodoList.tsx
+const TodoList = () =&gt; {
+	const [todoItems, setTodoItems] = useAtom(todoAtomsAtom)
+	const remove = useCallback(
+		(todoAtom: TodoAtom) =&gt; setTodoAtoms(
+			(prev) =&gt; prev.filter((item) =&gt; item !== todoAtom)
+		),
+		[setTodoAtoms]
+	)
+
+	return (
+		&lt;div&gt;
+		&lt;NewTodo /&gt;
+		{todoAtoms.map((todoAtom) =&gt; (
+			&lt;TodoItem
+				// atom은 문자열로 평가될 때 UID를 반환한다.
+				key={`${todoAtom}`}
+				todoAtom={todoAtom}
+				remove={remove}
+			/&gt;
+		))}
+		&lt;/div&gt;
+	)
+}
+</pre><ol><li>아톰을 동적으로 생성하기 위해 todo 아톰과 아톰 리스트(todoAtomsAtom)의 상태로 분리한다. 하지만 실제로 atoms.ts에 작성된 전역 상태는 리스트 상태 하나이며, 개별 todo 상태는 컴포넌트에서 생성된다.</li><li>이 코드에서 "동적으로 아톰을 생성"하는 컴포넌트는 NewTodo의 onClick 함수, setTodoAtoms이다. 타이핑 입력 후, 버튼을 클릭하면 리스트 아톰에 아톰이 추가된다. setTodoAtoms((prev) =&gt; ([…prev, atom({ title: “여기서 새로운 아톰을 추가”, done:false})]))</li><li>리스트 상태에서 요소 삭제는 TodoList의 remove 함수의 필터링으로 구현된다. 이를 props로 받은 TodoItem의 버튼 이벤트로 리스트 전역 상태가 업데이트된다.</li><li>마지막으로 TodoItem.tsx를 memo로 감싸고, remove에 useCallback을 사용하여 리렌더링을 최소화한다.</li></ol><p><br></p><p>이같은 패턴을 Atoms-in-Atom이라고 부른다. 예시 코드에서 다음과 같은 이점이 생긴다.</p><p><br></p><p>0. 리렌더링의 이점. TodoItem은 개별적인 아톰(상태)를 갖는다. TodoItem에서 done, title의 상태가 변경되어도, 리스트 상태를 업데이트 하는 것이 아니기 때문에 TodoList 전체의 리렌더링은 일어나지 않는다.</p><p><br></p><p>1. 리스트 아이템을 렌더링할 때 uuid같은 외부 라이브러리를 사용할 필요가 없다! atom이 문자열일 때 UID로 평가되어 별도의 라이브러리로 ID를 생성할 필요가 없어진다.</p><p><br></p><p>2. 리스트를 업데이트하기 위한 필터링 로직 또한 간단해진다. 아톰 리스트 상태에서 아톰끼리 비교가 가능하다. setTodoAtoms((prev) =&gt; prev.filter((item) =&gt; item !== todoAtom) 단순한 로직으로 아톰의 비교가 가능하다.</p><p><br></p><p>추가적인 라이브러리 없이 로직을 단순화하면서 성능 상의 이점을 챙길 수 있어 매우 유용하다.</p><p><br></p><p><strong>추가적인 내용</strong></p><ul><li>atom 함수에 첫번째 매개변수로 콜백함수만을 추가하면 read 아톰이 되며, 매개변수로 두개를 넣을 시 첫번째는 read 함수, 두번째는 write 함수가 된다. read only 아톰과 readAndWrite 아톰으로 구분할 수 있다. 파생상태를 변경할 일이 없다면 read only 아톰을 활용할 수 있다.</li><li>반대로 atom의 첫번째 인자가 null이고 두번째 write 함수만 있는 경우 “액션 아톰” 혹은 write-only 아톰이라고 한다.</li><li>atom은 onMount, onUnmount 메서드를 제공한다. 아톰 변경함수를 인자로 받으며 사용 시작과 종료 시 로직을 추가할 수 있다.</li><li>jotai/utils는 많은 atom관련 훅을 제공한다. atomWithStorage, atomWithReducer는 아톰을 로컬 스토리지에 저장하거나 리듀서를 활용해 관리할 수 있게 해준다.</li></ul><p><br></p><p><strong>장점</strong></p><ul><li>구문이 단순하며 리액트의 상태훅과 동일한 형태로 사용할 수 있다.</li><li>아톰을 나누어 상태관리를 세분화할 수 있다.</li><li>리렌더링을 최적화할 수 있다. 앞서 살핀 atoms-in-atom을 활용하여 상태를 세분화하고 리렌더링 효과를 동시에 볼 수 있다.</li></ul><p><strong>단점</strong></p><ul><li>제공하는 기능이 많기 때문에 코드 복잡성이 늘어날 수 있다.</li><li>리렌더링을 최적화하기 위해 추가되는 코드가 많이 늘어날 수 있다.</li><li>상태를 효율적으로 사용하는데 학습 곡선이 있을 수 있다.</li></ul><h4><br></h4><h3>Valtio</h3><p><br></p><p><strong>특징</strong></p><ul><li>Zustand와 같이 주로 모듈 상태용으로 사용된다.</li><li>리액트와의 통합을 위해 자바스크립트 Proxy 객체를 사용해 변경 불가능한 스냅숏을 가져온다.</li><li>Proxy를 사용해 리렌더링을 자동으로 최적화한다. 상태 사용 추적이라는 기법을 사용한다.</li><li>프록시를 사용해 변경 가능한 객체에서 변경 불가능한 객체를 생성한다. 이를 스냅샷이라고 한다.</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax" spellcheck="false">// 변경 가능한 객체는 proxy를 사용한다
+const state = proxy({count:0, obj:{title:"hi"}})
+
+// state의 count를 1 증가 시킨다.
+state.count += 1
+
+// 불변 객체를 생성하기 위해선 snapshot을 사용한다.
+const snap = snapshot(state)
+const snap2 = snapshot(state)
+
+state.count += 1
+const snap3 = snapshot(state)
+
+// snap은 Object.freeze로 동결되어 위와 같이 값을 변경할 수 없게 된다.
+// snap과 state는 동일한 값을 갖지만 서로 다른 참조를 갖는다.
+
+const Component = () =&gt; {
+	const snap = useSnapshot(state)
+	const inc = () =&gt; ++state.count1
+	return (
+	&lt;&gt;
+	&lt;span&gt;{snap.count}&lt;/span&gt;
+	&lt;button onClick={inc}&gt;Add&lt;/button&gt;
+	&lt;/&gt;
+	)
+
+}
+</pre><p>스냅샷을 read-only가 가능한 상태(불변 객체)로, proxy를 write가 가능한 상태로 파악하면 쉽다. 리렌더링은 스냅샷에서 변화가 생길 때 트리거된다. 객체 상태의 불변성을 지키기 위해 복잡한 함수와 추가적인 코드가 필요하지 않다. 또한 스냅샷을 통해 자동 리렌더링 최적화가 되기 때문에 셀렉터를 구성하는 추가적인 코드가 필요하지 않다.</p><p><br></p><p>Valtio는 불변 객체를 생성하기 위해 snapshot 함수를 사용한다. 예제에서 state와 snap, snap2는 {count:1, …}라는 동일한 값을 갖지만, 다른 참조를 갖는다. 반면 snap, snap2는 snap3과 다른 count를 갖는다. 하지만 snap3.obj는 변경되지 않았기 때문에 snap, snap2.obj는 동일하여 snap.obj === snap3.obj가 유지된다. 참조가 동일하다는 것은 메모리를 공유한다는 것이다. Valtio는 필요한 경우에만 스냅샷을 생성하여 메모리 사용량을 최적화한다. 다른 라이브러리에서처럼 파생 상태로 분리하고, 이 상태의 변경을 감지하기 위한 셀렉터 함수가 불필요하다. Valtio는 라이브러리 내부에서 최적화를 실행한다. 스냅샷은 프록시 기반으로, 상태가 실제로 변화되었을 때만 리렌더링을 일으킨다.</p><p><br></p><p>Todo 리스트 예시 (Jotai의 atoms-in-atom과 동일한 결과물이다)</p><pre class="ql-syntax" spellcheck="false">// proxy.ts
+type Todo = {
+	id: string;
+	title: string;
+	done: boolean
+}
+
+const state = proxy&lt;{todos:Todo[]}&gt;({todos: []})
+
+const createTodo = (title:string) =&gt; {
+	state.todos.push({
+		id: nanoid(),
+		title,
+		done:false
+	})
+}
+
+const editTodo = (id:string, title:string) =&gt; {
+	const index = state.todos.findIndex((item) =&gt; 
+	(item.id === id))
+	state.todos[index].title = title
+}
+
+const removeTodo = (id:string) =&gt; {
+	const index = state.todos.findIndex((item) =&gt; 
+	(item.id === id))
+	state.todos.splice(index, i)
+}
+
+const toggleTodo = (id:string) =&gt; {
+	const index = state.todos.findIndex((item) =&gt; 
+	(item.id === id))
+	state.todos[index].done = !state.todos[index].done
+}
+
+// state의 상태를 직접 변경할 수 있기에 다른 라이브러리와 로직의 차이가 있다.
+
+// TodoItem.tsx
+const TodoItem = ({id}:{id:string}) =&gt; {
+	const todoState = state.todos.find((item) =&gt; item.id === id)
+
+	if(!todoState) {
+		throw new Error("invalid todo id")
+	}
+	
+	const { done, title } = useSnapshot(todoState);
+	return (
+		&lt;div&gt;
+			&lt;input 
+				type="checkbox" 
+				checked={done}
+				onChange={() =&gt; removeTodo(id)}
+			/&gt;
+			&lt;span 
+				style={{textDecoration: done ? "line-trough" : "none"}}
+			&gt;{title}&lt;/span&gt;
+			&lt;input 
+				type="text" 
+				onChange={(e) =&gt; 
+				editTodo(id, e.target.value})}
+			&lt;button
+				onClick={() =&gt; removeTodo(id)}
+			&gt;
+				Delete
+			&lt;/button&gt;
+		&lt;/div&gt;
+	)
+}
+
+export default memo(TodoItem)
+
+// NewTodo.tsx
+const NewTodo = () =&gt; {
+	const [text, setText] = useState('')
+	const onClick = () =&gt; {
+		createTodo(text)
+	}
+	
+	return (
+		&lt;div&gt;
+			&lt;input onChange={(e) =&gt; setText(e.target.value)} /&gt;
+			&lt;button onClick={onClick}&gt;Add&lt;/button&gt;
+		&lt;/div&gt;
+	)
+}
+
+
+// TodoList.tsx
+const TodoList = () =&gt; {
+	const { todos } = useSnapshot(state)
+
+	return (
+		&lt;div&gt;
+		&lt;NewTodo /&gt;
+		{todos.map((todo) =&gt; (
+			&lt;TodoItem
+				key={todo.id}
+				id={todo.id}
+			/&gt;
+		))}
+		&lt;/div&gt;
+	)
+}
+
+</pre><ol><li>snapshot은 TodoList와 TodoItem에서 사용되었다. TodoItem 내부의 done, title이 변경되어도 전체 리스트 상태는 변경되지 않는다.</li><li>라이브러리가 객체 불변성을 지키면서(proxy함수) 직접 객체의 값을 변경할 수 있게 하고, 상태 변경을 감지하여 자동으로 리렌더링을 최적화한다 (useSnapshot)</li></ol><p><br></p><p>앞서 살펴본 코드와 비교해보면<strong> 코드량이 상당히 줄어든 것을 확인할 수 있다</strong>. 특히 리렌더링을 위해 모든 셀렉터를 수동으로 작성해야 하는 zustand와 비교했을 때 코드의 양이 확연히 줄어든다. 또한 객체 불변성을 유지하면서 상태 업데이트를 위해 그저 선언된 상태 proxy에 값을 할당하는 것 zustand, jotai와도 확연히 다르다. proxy는 객체의 deps가 아무리 깊어도 snapshot을 통해 그 변화를 감지할 수 있다.&nbsp;<a href="http://state.user.info.name/" rel="noopener noreferrer" target="_blank" style="color: rgb(12, 147, 228);">state.user.info.name</a>&nbsp;= “new value” 처럼 깊은 프로퍼티의 변경도 스냡샷은 감지할 수 있다.</p><p><br></p><p><strong>장점</strong></p><ul><li>proxy를 writable state, snapshot을 read-only 상태로 활용해 직관적인 상태 관리 로직을 작성할 수 있다.</li><li>proxy를 사용해 객체에 새로운 값을 할당하는 자바스크립트 문법을 사용하면서 상태의 불변성을 지킬 수 있다.</li><li>snapshot의 변경으로 리렌더링이 트리거되며, 리렌더링 최적화를 위한 추가적인 코드가 많이 필요하지 않다.</li></ul><p><br></p><p><strong>단점</strong></p><ul><li>렌더링 최적화를 내부적으로 처리하기 때문에 디버깅이 어려울 수 있다.</li><li>Valtio가 snapshot을 내부적으로 처리하기 때문에 상태가 크고 복잡해질수록, 객체 내부의 상태변화를 추적하고 디버깅하는 것이 어려워질 수 있다.</li></ul><p><br></p><p><br></p><p>이번 글을 통해 차세대 상태 관리 라이브러리들의 차이점과 장단점을 숙지하고, 세 라이브러리가 어떠한 문제의식을 공유하고 어떤 식으로 문제를 해결했는지 알 수 있었다.</p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"훅을 활용하여 마이크로 상태 관리하기"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2024/03/10"}],["$","p",null,{"children":"n°52"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+25:T134da,<p><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1710074466/uj4qgf2owzymdjv4tcj9.jpg"></p><p><br></p><p>Jotai의 개발자 Daishi Kato가 쓴 ‘리액트 훅을 활용한 마이크로 상태관리’ 를 읽고 정리한 내용이다. code snippet을 직접 작성하고, 기억할만한 내용을 선별하고, 글의 순서를 편집해 작성하였다. 지역상태/전역 상태의 구분, context api, 전역 상태가 어떤 문제를 공유하고 각각 어떻게 해결해가는지를 중점으로 작성했다. 이 글을 통해 복잡할 수 있는 전역 상태의 관리를 효과적으로 실천할 수 있기를 바라며…</p><p><br></p><h3 id="">마이크로 상태 관리란 ?</h3><p><br></p><p>저자가 제안하는 상태 관리를 위한 방법론이다. 목적 지향형인 리액트 훅과 Redux와 같은 중앙 집중형 상태 관리의 한계를 개선하기 위한 방법을 제시한다.</p><p><br></p><ul><li>리액트 훅: 폼 상태, 서버 캐시, 라우팅 기반의 상태 관리 등 각 목적에 맞는 상태를 관리. 목적 지향적인 방법으로 처리할 수 없는 상태도 있어 한계가 있다.</li><li>중앙 집중형 상태 관리: 단 하나의 집중된 상태로 관리. 중앙 집중형 라이브러리는 사용되지 않는 기능까지 추가되거나, 사용법이 지나치게 복잡한 경향이 있다.</li></ul><p><br></p><p>저자는 대안으로 <em>범용적인 상태관리</em>를 제시한다. 1) 가벼운 상태 관리 2) 개발자가 요구사항에 맞는 적절한 상태 관리법을 선택할 수 있도록 한다. 범용적인 상태관리는 다음과 같은 필수 기능을 포함한다.</p><p><br></p><ul><li>상태 read</li><li>상태 write</li><li>상태 기반의 렌더링</li><li>리렌더링 최적화</li><li>다른 시스템과의 상호작용</li><li>비동기 지원</li><li>파생 상태</li><li>간단한 문법</li></ul><p><br></p><p><br></p><h3 id="-1">지역상태</h3><p><br></p><p>효과적인 상태 관리를 위해 상태를 '지역 상태’와 '전역 상태’로 구분한다.</p><p><br></p><p><strong>리액트에서 지역 상태란</strong></p><p><br></p><ul><li>컴포넌트 내부에서만 사용되는 상태. (=컴포넌트에 격리된 상태, 하나의 컴포넌트에 속하고 캡슐화된 상태)</li><li>리액트 상태는 컴포넌트 모델을 따른다. 순수함수와 같이 작동(같은 입력에 항상 같은 출력). 재사용에 용이.</li><li>컴포넌트에서는 '지역성’이 중요. 컴포넌트(의 상태)가 격리되고 여러번 재사용될 수 있어야함.</li><li>컴포넌트는 단방향 데이터 흐름 (props를 통한 전달)과 트리 구조를 기반함</li><li>useState, useReducer 훅을 사용. 상태 로직을 추출하여 커스텀 훅을 사용하기 용이함.</li><li>전역 상태에 의존하는 컴포넌트는 컴포넌트 모델에 적합하지 않을 수 있다.</li><li class="ql-indent-1">외부 상태에 의존하게될 시 컴포넌트 독립성이 사라질 수 있음</li><li class="ql-indent-1">외부 상태에 대한 의존성이 동작이 일관되지 않을 수 있음</li></ul><p><br></p><p>지역상태를 위해 useState가 사용된다. 혹은 지난 글에서 살펴봤듯이, 상태가 크거나 상태 변경의 로직이 늘어날 때 useReducer를 사용할 수 있다. 두 훅과 커스텀 훅은 이전 글에서 충분히 다루었으니, 지역 상태 훅들의 다음과 같은 공통점을 살펴보자.</p><p><br></p><p><strong>지역 상태를 사용할 때</strong></p><p><br></p><p>상태가 컴포넌트 단위로 독립되어 있어 상태 변경이 일어난 컴포넌트에서만 리렌더링을 한다. (리액트의 주요 설계 목적과도 부합한다.) 독립된 컴포넌트 내의 상태 변경은 다른 컴포넌트에 영향을 미치지 않는다. 이를 이용하여 상태를 효과적으로 관리하고 성능을 최적화할 수 있다.</p><p><br></p><ul><li>특정 컴포넌트에서만 사용되는 상태를 관리할 때</li><li>ex) 키보드 인풋 입력 시 버튼 컴포넌트가 리렌더링될 필요는 없다.</li><li>컴포넌트를 재사용할 때</li><li>ex) 인풋 리스트 아이템은 인풋이 입력될 때 리스트 전체를 리렌더링하지 않게 한다.</li></ul><p><br></p><p><strong>지역 상태 훅의 특성</strong></p><p><br></p><p><strong>1 초기화 (지연 초기화)</strong></p><ul><li>상태의 초기값으로 원시값, 참조값을 넣을 수 있다.</li><li>훅의 초기값으로 함수를 넣으면 '지연 초기화’가 일어난다.</li><li>첫번째 렌더링(첫번째 마운트)에서만 평가된다. 훅이 호출되기 전까지 함수는 호출되지 않는다.</li><li>크고 복잡한 상태라면 초기값에 함수를 넣어 관리할 수 있다.</li></ul><p><br></p><p><strong>2 베일아웃 (bailout)</strong></p><ul><li>상태의 변경이 없을 때 리렌더링은 생략된다.</li></ul><p><br></p><p>useReducer의 초기화, bailout 예시</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-comment">/* init은 초기화를 위한 함수 */</span>
+<span class="hljs-keyword">const</span> init = (<span class="hljs-attr">count</span>:<span class="hljs-built_in">number</span>):<span class="hljs-function"><span class="hljs-params">State</span> =></span> ({ count, <span class="hljs-attr">text</span>:<span class="hljs-string">''</span> })
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">reducer</span> = (<span class="hljs-params"><span class="hljs-attr">state</span>:<span class="hljs-title class_">State</span>, <span class="hljs-attr">action</span>:<span class="hljs-title class_">Action</span></span>)=> {
+	<span class="hljs-keyword">switch</span>(action.<span class="hljs-property">type</span>) {
+		<span class="hljs-keyword">case</span> <span class="hljs-string">'INCREMENT'</span>:
+		<span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> + <span class="hljs-number">1</span> }
+		<span class="hljs-keyword">case</span> <span class="hljs-string">'DECREMENT'</span>:
+		<span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> -<span class="hljs-number">1</span> }
+		<span class="hljs-keyword">case</span> <span class="hljs-string">'TEXT'</span>:
+		<span class="hljs-keyword">if</span>(!action.<span class="hljs-property">text</span>){
+		<span class="hljs-comment">/* 1 - bailout */</span>*
+		<span class="hljs-keyword">return</span> state
+		}
+		<span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">text</span>: action.<span class="hljs-property">text</span> }
+		<span class="hljs-attr">default</span>:
+		<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">"unknown action type"</span>)
+	}
+}
+
+<span class="hljs-comment">// Component.tsx</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Component</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-comment">/* 2 - 지연 초기화 */</span>*
+	<span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(reducer, <span class="hljs-number">0</span>, init)
+	<span class="hljs-keyword">return</span> (
+	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>count: {state.count}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({type: 'INCREMENT'})}>
+			PLUS
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> dispatch({type: 'DECREMENT'})}>
+			MINUS
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> 
+		<span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =></span> dispatch({ type:'TEXT', text: e.target.value })} />
+	<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+	)
+}
+
+</code></pre><p>1. Bailout</p><ul><li>state를 그대로 돌려주어야 이전 상태가 반환되어 bailout이 된다.</li><li>{…state}를 반환하게 되면 새로운 객체가 생성되어 리렌더링이 일어난다.</li></ul><p><br></p><p>2. 지연 초기화</p><ul><li>useReducer의 3번째 매개변수(init 함수)는 2번째 매개변수를 인자로 반환한 값을 상태의 초기값으로 사용한다.</li><li>init 함수는 useReducer가 호출될 시(즉 컴포넌트가마운트 되어 처음 렌더링될 시)에 평가, 실행된다</li></ul><p><br></p><p><br></p><p><strong>리액트 지역 상태를 사용하기</strong></p><p><br></p><p><strong>상태 끌어올리기</strong></p><ul><li>동일한 형태의 상태를 사용하는 두 컴포넌트라면, 부모 컴포넌트를 만들어 하나의 상태로 두 컴포넌트에 props를 내려줄 수 있다.</li><li>이 방법을 더욱 추상화하여 부모 컴포넌트에서 자식 컴포넌트로 의존성(props)을 주입하는 여러 컴포넌트 설계 패턴들(props getter, state reducer 등)이 있다. (이 패턴들은 역전된 제어Inversion of Control라고 불린다.)</li></ul><p><br></p><p><strong>내용 끌어올리기</strong></p><ul><li>상위 컴포넌트의 상태 변경에 영향 받지 않는 컴포넌트나 컴포넌트의 일부분을 분리하여 상태 변경이 일어나는 컴포넌트 상위로 끌어올리는 방법.</li><li>HOC, render props와 같은 패턴과 함께 활용할 수 있다.</li></ul><p><br></p><p><strong><em>참고: 리렌더링이 일어나는 4가지 경우</em></strong></p><ul><li>상태의 변경</li><li>props의 변경</li><li>부모 상태의 변경 (리렌더링)</li><li>Context(전역 상태)의 변경</li></ul><p><br></p><p><strong>예시</strong></p><p><strong>상태 끌어올리기</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// Parent 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [sharedState, setSharedState] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-string">""</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">ChildA</span> <span class="hljs-attr">sharedState</span>=<span class="hljs-string">{sharedState}</span> <span class="hljs-attr">setSharedState</span>=<span class="hljs-string">{setSharedState}</span> /></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">ChildB</span> <span class="hljs-attr">sharedState</span>=<span class="hljs-string">{sharedState}</span> /></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// ChildA 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ChildA</span>(<span class="hljs-params">{ sharedState, setSharedState }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{sharedState}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =></span> setSharedState(e.target.value)} /></span>;
+}
+
+<span class="hljs-comment">// ChildB 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ChildB</span>(<span class="hljs-params">{ sharedState }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Current Value: {sharedState}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+</code></pre><p><strong>내용 끌어올리기</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// 상태가 있는 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">StatefulComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [counter, setCounter] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> setCounter(counter + 1)}>Increment<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>Counter: {counter}<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>This is static content that does not change.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+<span class="hljs-comment">// 상태 변경에 영향을 받지 않는 정적 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">StaticContent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>This is static content that does not change.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+}
+
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ContentLiftedComponent</span>(<span class="hljs-params"></span>) {
+	<span class="xml"><span class="hljs-tag">&#x3C;></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">StatefulComponent</span>/></span>
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">StaticContent</span>/></span>
+	  {/* 혹은 StatefulComponent에 children props를 추가하여 수정할 수 있다.*/}
+	  <span class="hljs-tag">&#x3C;<span class="hljs-name">StatefulComponent</span>></span>
+		  <span class="hljs-tag">&#x3C;<span class="hljs-name">StaticContent</span>/></span>
+	  <span class="hljs-tag">&#x3C;/<span class="hljs-name">StatefulComponent</span>></span>
+	<span class="hljs-tag">&#x3C;/></span></span>
+}
+
+</code></pre><p><br></p><p><br></p><h3 id="-2">전역상태</h3><p><br></p><p>모든 컴포넌트가 하나의 상태에 의존하면(ex:최상단의 상태가 앱 전체의 컴포넌트에 상태를 props로 내려줌), 지역상태와 전역상태를 명확히 구분할 수 없다. 일반적으로 리액트에서 '전역상태’란 떨어진 컴포넌트에서 '공유된 상태shared state’이다.</p><p><br></p><p><strong>전역상태의 두가지 측면</strong></p><ul><li>싱글톤. 특정 컨텍스트에서 상태가 하나의 값을 갖는다. 모듈 파일로 분리된 전역 상태를 사용하면 싱글톤과 유사하게 사용할 수 있다.</li><li>공유 상태. 상태 값이 다른 컴포넌트에 공유되지만, 메모리상에서 단일 값일 필요는 없다. 대표적으로 리액트 컨텍스트 API는 싱글톤이 아닌 공유 상태이다.</li></ul><p><br></p><h4>언제 사용할까?</h4><ul><li>porp을 전달하는 것이 적절하지 않을 때</li><li class="ql-indent-1">익히 알려진 상태 공유가 props 드릴링을 유발하는 경우. 상태를 공유하려는 컴포넌트가 멀리 떨어질 수록 컴포넌트의 구조와 코드는 더욱 복잡해진다.</li><li>이미 리액트 외부에 상태가 있을 때</li><li class="ql-indent-1">ex) 리액트 없이 획득한 사용자 인증 정보(OAuth 등으로 획득한 사용자 토큰)가 페이지 전체에 공유되어 특정 컴포넌트의 기능을 막거나 작동하게 해야한다.</li></ul><h4><br></h4><h4><br></h4><h4><strong>Context API</strong></h4><p><br></p><p>리액트는 16.3부터 context api를 제공한다. Context Provider, useContext 훅을 사용하여 간단하게 전역상태를 사용할 수 있게 되었다. 책에서는 컨텍스트 api의 기본적인 사용법과 함께, 근본적인 문제와 한계, 모범사례를 살펴본다. 이 챕터에서 중요한 부분은 컨텍스트의 한계이다. 여기서 소개되는 문제의식과 해결법은 뒷장에서 소개하는 전역상태 라이브러리들이 같은 문제를 해결하기 위해 어떤 접근법을 취하고 있는지 이해하는데 도움이 된다. 이 챕터에서 설명하는 store, subscribe, selector같은 개념은 여러 라이브러리에서 유사한 개념과 기능을 공유하기 때문에 숙지하는 것이 좋다.</p><p><br></p><p><br></p><h4>기본적인 사용법</h4><p><br></p><p>useState를 사용하거나 정적인 값을 사용하여 컨텍스트를 생성할 수 있다. 상태를 공유하는 컴포넌트를 provider로 묶어주어야 한다. context provider에는 정적인 값이나 useState, useReducer의 상태를 넣어줄 수 있다. <strong>Provider value prop에 정적인 값이 들어간다면 전역상태를 변경할 수 없게 된다.</strong> (정확히는 업데이트할 방법이 없어진다.)</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-comment">// 컨텍스트를 정적인 값으로 사용하는 경우</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">SampleContext</span> = <span class="hljs-title function_">createContext</span>(<span class="hljs-string">'black'</span>)
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">SampleContext</span> =  <span class="hljs-title function_">createContext</span>({<span class="hljs-attr">color</span>: <span class="hljs-string">'black'</span>, <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">setColor</span>:<span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">param</span>:<span class="hljs-built_in">string</span></span>) =></span> <span class="hljs-built_in">void</span> })
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Root</span> = (<span class="hljs-params"></span>) => {
+<span class="hljs-keyword">const</span> [color, setColor] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">'black'</span>) <span class="hljs-comment">// state 훅</span>
+
+<span class="hljs-keyword">return</span> (
+	<span class="xml"><span class="hljs-tag">&#x3C;></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">SampleContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color</span>, <span class="hljs-attr">setColor</span>, <span class="hljs-attr">count:0</span> }}></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">SampleContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{color}</span>></span> // 정적인 값 사용 시 
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">ColorComponent</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">MemoColorComponent</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">CountComponent</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">MemoCountComponent</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">DummyComponent</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">MemoDummyComponent</span> /></span>
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">ColorContext.Provider</span>></span>
+	<span class="hljs-tag">&#x3C;/></span>	
+	
+)
+}
+
+const ColorComponent = () => {
+	const color = useContext(SampleContext) // 정적
+	const {color, setColor} = useContext(SampleContext) // state 훅
+
+	return (
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>current color : {color}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =></span> setColor(e.target.value)} />
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>	
+	)
+}
+
+const CountComponent = () =>{
+	const {count} = useContext(SampleContext)
+	return <span class="hljs-tag">&#x3C;></span>{count}<span class="hljs-tag">&#x3C;/></span></span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">DummyComponent</span> = (<span class="hljs-params"></span>) => (<span class="xml"><span class="hljs-tag">&#x3C;></span>dummy<span class="hljs-tag">&#x3C;/></span></span>)
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MemoColorComponent</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-title class_">ColorComponent</span>)
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MemoCountComponent</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-title class_">CountComponent</span>)
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MemoDummyComponent</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-title class_">DummyComponent</span>
+
+
+</code></pre><h4><br></h4><h4><strong>컨텍스트의 전파</strong></h4><p><br></p><p>컨텍스트 provider와 상태훅을 사용해 컨텍스트를 업데이트할 수 있다. 이 때 프로바이더 내부의 모든 컴포넌트가 리렌더링된다. 이 경우 상태 변경이 이루어지지 않는 컴포넌트까지 불필요하게 리렌더링이 일어난다. 이를 방지하기 위해 앞서 살필 '내용 끌어올리기’나 혹은 memo훅을 사용할 수 있다.</p><p><br></p><p>인풋 태그에 텍스트를 입력하여 컨텍스트를 업데이트 시 다음과 같은 컨텍스트 전파가 일어난다.</p><p><br></p><ol><li>처음에 모든 컴포넌트가 렌더링</li><li>텍스트 입력 시 Root의 상태가 바뀌며 Root 컴포넌트가 리렌더링</li><li>SampleContext.Provider가 새로운 value를 받는 동시에 내부 컴포넌트 리렌더링</li><li>MemoCount를 제외한 모든 컴포넌트가 리렌더링됨</li><li>MemoColorComponent 또한 리렌더링된다. 부모 컴포넌트의 상태가 변화하고 컨텍스트가 변경되었기 때문이다.</li></ol><p><br></p><p>간단한 방법은 Provider 나누는 것이다. 컨텍스트는 프로바이더를 경계로 공유되기 때문에, 공유하려는 상태가 아닌 컴포넌트는 Provider 경계 밖으로 분리할 수도 있다. 하지만 요구사항에 따라 혹은 이미 개발된 컴포넌트의 설계에 따라 그럴 수 없는 경우 또한 자주 있을 수 있다.</p><p><br></p><p><br></p><h4>컨텍스트의 한계</h4><ol><li>컨텍스트가 업데이트될 때 불필요한 리렌더링이 늘어난다.</li><li>컨텍스트가 객체 형태일 때 이와 같은 리렌더링이 더욱 늘어난다.</li><li>불필요한 리렌더링을 방지하기 위한 코드의 양이 증가한다.</li></ol><p><br></p><p>1, 2번은 위의 예제를 통해 설명된다. setColor를 통해 바뀐 상태는 color 밖에 없음에도, CountComponent와 React.memo로 감싸진 MemoCountComponent가 리렌더링된다. 또한 DummyComponent도 Provider에 제공된 값이 바뀌면서 리렌더링된다. 컨텍스트에 의존하는 컴포넌트가 많고, 상태 변경이 자주 이루어진다면 불필요한 리렌더링이 페이지 단위로 불필요한 리렌더링이 무분별하게 실행될 것이다.</p><p><br></p><p><br></p><h4>해결 방법과 모범 사례</h4><p><br></p><p>앞선 객체의 일부 컨텍스트를 사용할 시 리렌더링되는 문제를 해결하기 위해서 컨텍스트를 작게 쪼게는 방법이 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">const <span class="hljs-attr">ColorContext</span> = createContext(...)
+const <span class="hljs-attr">CountContext</span> = createContext(<span class="hljs-number">0</span>)
+
+const <span class="hljs-attr">Root</span> = () => {
+.... 위와 동일
+
+	&#x3C;ColorContext.Provider <span class="hljs-attr">value</span>={{color, setColor}}>
+		&#x3C;CountContext.Provider <span class="hljs-attr">value</span>={<span class="hljs-number">0</span>}>
+		...
+
+}
+
+const <span class="hljs-attr">ColorComponent</span> = () => {
+	const {color , setColor } = useContext(ColorContext)
+	...
+}
+
+const <span class="hljs-attr">CountComponent</span> = () => {
+	const <span class="hljs-attr">count</span> = useContext(CountContext)
+	....
+}
+
+
+</code></pre><p>프로바이더는 중복하여 사용이 가능하며, ColorContext가 업데이트될 시 CountContext를 사용하는 컴포넌트는 memo를 사용한다면 리렌더링되지 않는다. 물론 이 방법으로 컨텍스트를 작게 쪼게다보면 Provider의 수가 증가하는 단점은 있다. 프로바이더가 너무 많아 value prop으로 내려주어야 할 값을 관리하기 어려울 수 있다.</p><p><br></p><p>이같은 문제를 해결하기 위해 저자는 세가지 해결방법을 제시한다.</p><p><br></p><ul><li>커스텀 훅과 Provider 컴포넌트</li><li>커스텀 훅과 팩토리 패턴</li><li>reducerRight를 활용한 Provider 중첩 개선</li></ul><p><br></p><p><strong>커스텀 훅과 Provider 컴포넌트</strong></p><p><br></p><p>Provider와 useContext를 사용하려는 컨텍스트 별로 커스터마이징하여 사용하는 방법이다. 위에서 작게 나눈 컨텍스트를 기반으로 작성한다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">ColorContextType</span> = [<span class="hljs-built_in">string</span>, <span class="hljs-title class_">Dispatch</span>&#x3C;<span class="hljs-title class_">SetStateAction</span>&#x3C;<span class="hljs-built_in">string</span>>>] | <span class="hljs-literal">null</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ColorContext</span>= <span class="hljs-title function_">createContext</span>(<span class="hljs-literal">null</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">ColorProvider</span> = (<span class="hljs-params">{children}:...</span>) => {
+	<span class="hljs-keyword">const</span> [color, setColor] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">'black'</span>)
+	<span class="hljs-keyword">return</span> (
+	<span class="hljs-comment">// ColorProvider에서 ColorContext의 초기값을 주입한다</span>
+		<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ColorContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color</span>, <span class="hljs-attr">setColor</span> }}></span>
+			{children}
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">ColorContext.Provider</span>></span></span>
+	)
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">useColorContext</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> {color, setColor} = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">ColorContext</span>)
+	<span class="hljs-comment">// 이 훅이 ColorProvider 밖에서 사용되면 컨텍스트는 null일 것이다.</span>
+	<span class="hljs-keyword">if</span>(color === <span class="hljs-literal">null</span>) {
+		<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">'Provider is missing'</span>)
+	}
+}
+
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ColorComponent</span> = () {
+	<span class="hljs-keyword">const</span> { color, setColor } = <span class="hljs-title function_">useColorContext</span>();
+	....
+}
+
+<span class="hljs-comment">// 같은 방식으로 CountContext 커스텀 훅과 프로바이더 컴포넌트를 작성</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Root</span> = (<span class="hljs-params"></span>) => {
+	&#x3C;<span class="hljs-title class_">ColorProvider</span>>
+		&#x3C;<span class="hljs-title class_">CountProvider</span>>
+			<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ColorComponent</span> /></span></span>
+			<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">CountComponent</span> /></span></span>
+			.....
+}
+
+</code></pre><p>ColorProvider를 분리하여 Root에 선언된 상태를 커스텀 프로바이더 내부로 옮기고, useColorContext 훅으로 컨텍스트의 상태를 불러오거나 업데이트할 수 있게 되었다. 앞선 코드에서 반복된 컨텍스트 import를 없애고, 상태와 상태 변경 로직을 커스텀 훅으로 추상화할 수 있었다.</p><p><br></p><p><br></p><p><strong>커스텀 훅과 팩토리 패턴</strong></p><p><br></p><p>작게 쪼개진 상태에 매번 커스텀 훅과 컴포넌트를 추가하는 것 또한 반복적이다. 이를 한번 더 추상화할 수 있다. ColorContext, CountContext 등 어떤 형태의 컨텍스트라도 커스텀 Provider와 커스텀 useContext훅을 튜플 형태로 반환하는 커스텀 훅을 활용할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> createCustomContext = &#x3C;T, P><span class="hljs-function">(<span class="hljs-params">useValue: (init:T) => P</span>) =></span> {
+	<span class="hljs-keyword">const</span> <span class="hljs-title class_">StateContext</span> = <span class="hljs-title function_">createContext</span>(<span class="hljs-literal">null</span>)
+	<span class="hljs-keyword">const</span> <span class="hljs-title function_">StateProvider</span> = (<span class="hljs-params">{initialValue, children}:{...}</span>) => (
+		<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">StateContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{useValue(initialValue)}</span>></span>
+			{children}
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">StateContext.Provider</span>></span></span>
+	)
+
+	<span class="hljs-keyword">const</span> <span class="hljs-title function_">useContextState</span> = (<span class="hljs-params"></span>) => {
+		<span class="hljs-keyword">const</span> value = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">StateContext</span>)
+		<span class="hljs-keyword">if</span>(value === <span class="hljs-literal">null</span>) {
+			<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">"Provider missing"</span>)
+		}
+		<span class="hljs-keyword">return</span> value
+	}
+
+	<span class="hljs-keyword">return</span> [<span class="hljs-title class_">StateProvider</span>, useContextState] <span class="hljs-keyword">as</span> <span class="hljs-keyword">const</span>
+}
+...
+
+<span class="hljs-keyword">const</span> useInitState = &#x3C;T><span class="hljs-function">(<span class="hljs-params">init:T</span>) =></span> <span class="hljs-title function_">useState</span>(init)
+
+<span class="hljs-keyword">const</span> colorInit = <span class="hljs-title function_">useInitState</span>(<span class="hljs-string">'black'</span>)
+<span class="hljs-keyword">const</span> [<span class="hljs-title class_">ColorProvider</span>,  useColor] = <span class="hljs-title function_">createCustomContext</span>(colorInit)
+<span class="hljs-comment">// 컴포넌트를 만들지 않고 이 커스텀 훅을 재사용할 수 있다.</span>
+....
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">ColorComponent</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> {color, setColor} = <span class="hljs-title function_">useColor</span>();
+...
+}
+
+
+</code></pre><p>createCustomContext 팩토리 패턴을 사용하여 매번 컴포넌트를 만들지 않고 함수로 작성하였다. 이 useState 대신 reducer를 활용하여 상태 업데이트 로직을 함수 단위로 나눌 수 있다.</p><p><br></p><p><br></p><p><strong>reducerRight를 활용한 Provider 중첩 개선</strong></p><p>상태가 잘게 나누어져 위의 훅을 여러번 사용하고 Provider 또한 깊게 네스팅된다면 reducerRight을 사용할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-kotlin"><span class="hljs-keyword">const</span> App = () => {
+	
+	<span class="hljs-keyword">const</span> providers = [
+	[Provider1, {<span class="hljs-keyword">init</span>: <span class="hljs-string">'black'</span>}],
+	[Provider2, {<span class="hljs-keyword">init</span>: <span class="hljs-string">'white'</span>}],
+	[Provider3, {<span class="hljs-keyword">init</span>: <span class="hljs-string">'yellow'</span>}],
+	[Provider4, {<span class="hljs-keyword">init</span>: <span class="hljs-string">'red'</span>}],
+	[Provider5, {<span class="hljs-keyword">init</span>: <span class="hljs-string">'blue'</span>}],
+	]
+
+	<span class="hljs-keyword">return</span> providers.reduceRight(
+		(children, [Provider, props]) => 
+			createElement(Provider, props, children),
+			&#x3C;Root />
+	)
+}
+</code></pre><p>HOC와 함께 사용할 수 있다. 사실 Context.Provider가 깊게 네스팅되는 것은 기본 문법이기에 큰 문제가 있는 것은 아니다.</p><p><br></p><p>사실 이 부분까지 읽으면서, 저자가 컨텍스트 API 챕터 도입부에 언급한 "처음부터 컨텍스트 API는 전역상태를 위해 설계된 것이 아니다"라는 언급이 떠올랐다. 비교적 작은 컴포넌트 단위 사이에서 상태를 공유한다면 컨텍스트가 적절할 수 있으나, 컴포넌트가 크고 복잡할 때 너무 많은 훅과 프로바이더가 추가되는 것은 피할 수 없어 보인다. 만약 <strong>이 정도로 코드가 추가</strong>되어야 한다면, 추후 소개할 상<strong>태관리 라이브러리를 사용하는 게 더 적절</strong>할 것이다.</p><p><br></p><p>다른 상태 라이브러리를 살피기 앞서 다음 개념들을 숙지해보자.</p><p><br></p><p><br></p><h3 id="-3">모듈 상태, 스토어, 구독, 셀렉터</h3><p><br></p><p>이어지는 장에서 module.ts로 분리한 파일에 let count = 0; 변수를 할당하고, 리액트 컴포넌트에서 이 변수를 전역상태로 사용하는 방법을 설명한다. 모듈 파일에 선언된 변수를 전역상태로 사용하기 위해 store를 만들고, store 내부에 메서드를 추가해야한다. 리액트는 useSyncExternalStore 훅을 제공하여 모듈 파일에 store를 구독하여 전역 상태의 변경을 감지할 수 있다. 모듈, 스토어, 구독, 셀렉터는 일반적인 상태 관리 라이브러리에서 공유되는 개념이기에 숙지하는 것이 도움이 된다. 예제 코드는 생략하고 중요 개념을 살펴보자.</p><p><br></p><p><strong>모듈 상태</strong></p><ul><li>모듈로 분리된 전역 상태. 상태 라이브러리 사용 시 보통 atom.ts처럼 파일로 분리된 전역 상태들을 import하여 사용하게 된다.</li><li>모듈에서 할당된 전역 상태 변수를 import하여 사용하는 것은, 여러 컴포넌트에서 동일한 메모리 주소를 사용하여 싱글톤과 유사한 효과를 낼 수 있다.</li></ul><p><br></p><p><strong>스토어</strong></p><ul><li>중앙 집중된 저장소. 하나 혹은 여러 상태를 스토어에 저장할 수 있다.</li><li>리액트에서는 Redux나 Zustand의 <span style="background-color: rgba(0, 0, 0, 0.05);">createStore</span> 함수를 사용하여 생성할 수 있다. 스토어는 전역 상태의 일관성을 유지하고, 상태 접근 및 업데이트의 중심 지점 역할을 한다.</li></ul><p><br></p><p><strong>구독</strong></p><ul><li>스토어의 특정 상태 변화를 감지하는 메서드. 이에 반응하여 필요한 동작(UI 업데이트)을 실행한다.</li><li>리액트에는 useSyncExternalStore라는 리액트 내장 API를 제공한다. 모듈 파일에 store 변수를 만들어 이 변수를 구독하게 만들 수 있다. (<a href="https://react-ko.dev/reference/react/useSyncExternalStore" rel="noopener noreferrer" style="color: rgb(12, 147, 228);">참조</a>)</li><li>Redux, Zustand, jotai 등 다양한 상태 라이브러리에서는 <span style="background-color: rgba(0, 0, 0, 0.05);">subscribe</span> 메서드를 통해 스토어의 상태 변화를 구독하는 기능을 제공한다. 컨텍스트 API에서는 <span style="background-color: rgba(0, 0, 0, 0.05);">useContext</span> 훅을 사용하여 자동으로 변화를 구독한다. 구독을 통해 상태 변화에 즉각적으로 반응할 수 있다.</li></ul><p><br></p><p><strong>셀렉터 (선택자 함수)</strong></p><ul><li>스토어의 상태 중 필요한 부분만을 선택적으로 추출하는 함수. 특히 객체 형태의 상태에서 일부를 가져올 때 사용한다.</li><li>셀렉터는 상태의 특정 부분에 대한 접근을 추상화하고, 계산된 상태를 도출하는 데 유용하다.</li><li>셀렉터로 전역 상태의 일부 혹은 가공하여 가져온 것을 "<strong>파생 상태 derived state</strong>"라고 부른다. 많은 라이브러리에서 공통적으로 파생 상태를 얻기 위한 기능을 제공한다.</li><li>셀렉터는 컴포넌트의 재렌더링을 최적화하는 데 중요한 역할을 한다.</li></ul><h3 id="-4"><br></h3><h3 id="-5"><br></h3><h3 id="-6">상태 관리 라이브러리</h3><p><br></p><p><em>리액트는 컴포넌트를 중심으로 설계되었다. 컴포넌트는 모든 것이 재사용 가능한 것으로 여겨진다. 하지만 전역 상태는 컴포넌트 외부에 존재한다. 컴포넌트에 대한 추가적인 의존성이 필요하기 때문에 전역 상태 사용을 피하는 것이 좋지만, 전역 상태를 사용하는 것은 편리하며 생산성을 높일 수 있다. 그리고 요구사항에 따라 전역 상태가 필요할 수 있다.</em></p><p><br></p><p><strong>전역 상태를 설계할 때 일반적인 문제점</strong></p><ol><li>전역 상태를 읽는 방법 (read)</li><li>*전역 상태는 여러 값을 가질 수 있고, 전역 상태를 사용하는 컴포넌트는 전역 상태의 모든 값이 필요하지 않은 경우가 있다. 전역 상태가 바뀌면 리렌더링이 발생하는데, 변경된 값이 컴포넌트와 관련 없는 경우에도 리렌더링이 발생한다. 이는 바람직하지 않으며, 전역 상태 라이브러리는 이에 대한 해결책을 제공할 필요가 있다.</li><li>전역 상태에 값을 넣거나 갱신하는 방법 (write)</li><li><em>전역 상태는 여러 값을 가질 수 있으며, 그증 일부는 중첩된 객체일 수 있다. 이럴 때 하나의 전역 변수를 가지고 개발자가 직접 값을 변경하는 것은 좋은 방법이 아닐 수 있다… 객체의 값을 직접 변경시 리액트 컴포넌트의 리렌더링을 트리거할 방법이 없기 때문이다.</em></li></ol><p><br></p><p>앞서 살핀 문제와 해결법을 모두 압축하고 있다. 컨텍스트 API에서 이 문제를 해결하기 위한 코드 예시를 살펴봤다. 불필요한 리렌더링을 방지하기 위해 컨텍스트를 작게 나누었고, 전역 상태의 값을 직접 바꾸는 대신 useState 훅의 dispatch나 useReducer의 action 함수를 사용했다. 또한 이 해결방법의 한계에 대해서도 살펴보았다.</p><p><br></p><p>들어가기에 앞서 전역 상태의 두가지 접근법을 간단히 알아본다.</p><p><br></p><p><br></p><p><strong>데이터 중심 접근 방식 vs 컴포넌트 중심 접근 방식</strong></p><p><br></p><p>전역 상태는 데이터와 컴포넌트 중심으로 유형을 나눌 수 있다.</p><p><br></p><p><strong>데이터 중심</strong></p><ul><li>전역 상태의 데이터 모델은 싱글톤으로 갖을 수 있다.</li><li>처리할 데이터가 이미 있을 수 있고, 컴포넌트를 정의한 후 상태와 연결한다. 이 상태는 라이브러리, 서버 등 외부에서 변경할 수 있다.</li><li>데이터 중심 접근 방식인 경우 모듈 상태가 리액트 외부의 자바스크립트 메모리에 있기 때문에 모듈 상태를 사용하는 것이 더 적합하다.</li><li>모듈 상태는 렌더링을 시작하기 전이나 컴포넌트가 마운트 해제된 후에도 존재할 수 있다.</li><li>모듈 상태는 보통 store와 상태에 접근하고 상태를 업데이트하는 store의 메서드를 제공한다.</li></ul><p><br></p><p><strong>컴포넌트 중심</strong></p><ul><li>데이터 중심과 달리 컴포넌트를 먼저 설계하고, 이를 기반으로 필요한 상태를 설계할 수 있다.</li><li>컴포넌트의 생명주기나 사용자 인터렉션에 맞추어 전역 상태에 접근하여 필요한 데이터에 접근하거나 업데이트할 수있다.</li></ul><p><br></p><p><strong>리렌더링 최적화</strong></p><p><br></p><p>보통 상태 라이브러리는 세가지 패턴으로 리렌더링을 최적화한다.</p><p><br></p><p><strong>셀렉터 사용</strong></p><ul><li>셀렉터는 상태를 받아 상태의 일부를 반환한다. 객체의 일부를 사용하거나 전역 상태에서 파생된 값을 사용할 때 유용하며, 전역 상태 변경에 불필요한 리렌더링을 막을 수 있다. 셀레터는 상태의 어느 부분을 사용할 지 명시적으로 지정하는 방법으로 수동 최적화라고 한다.</li></ul><p><br></p><p><strong>속성 접근 감지</strong></p><ul><li>속성 접근을 감지하여 렌더링을 최적화하는 상태 사용 추적이라는 패턴도 있다. 셀렉터보다 간단한 문법을 사용하며, 자동으로 렌더링을 최적화할 수 있다. 하지만 셀렉터가 최적화에 더 유리한 경우도 있다.</li></ul><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">Component</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> trackedState = <span class="hljs-title function_">useTrackedState</span>();
+	<span class="hljs-comment">/* selector */</span>
+	<span class="hljs-comment">// const {a} = useSelector((state) => state.b)</span>
+	<span class="hljs-comment">// const {c} = useSelector((state) => state.e)</span>
+	<span class="hljs-comment">/* selector가 최적화가 잘되는 경우*/</span>
+	<span class="hljs-keyword">const</span> isSmallA = <span class="hljs-title function_">useSelector</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =></span> state.<span class="hljs-property">a</span> &#x3C; <span class="hljs-number">10</span>)
+	<span class="hljs-keyword">const</span> isSmallA = <span class="hljs-title function_">useTrackedState</span>().<span class="hljs-property">a</span> &#x3C; <span class="hljs-number">10</span>
+	<span class="hljs-comment">/*useTrackedState().a는 상태 a가 바뀔 때마다 리렌더링되지만, useSelector는 state.a &#x3C; 10 true/false가 바뀌기 전까지 리렌더링되지 않는다./
+	return (
+	&#x3C;>
+	{tracked.b.a}
+	{tracked.e.c}
+	{isSmall ? "smaller" : "bigger"}
+	&#x3C;/>
+	
+
+	)
+
+}
+</span></code></pre><p><strong>아톰 사용</strong></p><ul><li>아톰은 리렌더링을 발생시키는 최소한의 단위다. 전역 상태를 구독하여 리렌더링을 피하는 대신, 아톰으로 세분화하여 구독한다. 마치 컨텍스트에서 createContext를 잘게 나누는 것과 유사하지만, 아톰은 작게 나눈 상태를 조합하여 하나의 큰 전역상태로 만들 수 있다.</li></ul><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">const <span class="hljs-attr">globalState</span> = {
+	a: atom(1),
+	b: atom(2),
+	c: atom(3)
+}
+
+const <span class="hljs-attr">Component</span> = () => {
+ const <span class="hljs-attr">value</span> = useAtom(globalState.a)
+ return &#x3C;>{value}&#x3C;/>
+}
+
+const <span class="hljs-attr">sum</span> = globalState.a + globalState.b + globalState.c
+
+</code></pre><p>아톰으로 파생값 또한 만들 수 있다. 이를 수행하기 위해서 의존성을 추적하여 아톰이 갱신될 때마다 파생값을 다시 평가한다. 이처럼 아톰을 사용하는 방식은 수동 최적화와 자동 최적화의 중간 정도이다. 아톰과 파생값의 정의는 명시적이지만, 의존성 추적은 자동으로 된다.</p><p><br></p><p>이상 상태 라이브러리가 해결하려는 문제와 접근 방식, 해결 패턴에 대해 알아보았다. 마지막으로 각 라이브러리를 간략히 살펴보자.</p><p><br></p><h3 id="zustand">Zustand</h3><p><br></p><p><strong>특징</strong></p><ul><li>모듈 상태를 구현하는데 사용하도록 설계되었다.</li><li>store 생성자 인터페이스를 사용한다.</li><li>크기가 작고 데이터 흐름이나 파일 디렉터리를 강제하지 않는다. 최소한으로 설계 되었다.</li><li>상태 객체에 새 값을 할당하여 직접 수정할 수 없고 항상 상태를 새로 만드는 불변 갱신 모델을 사용한다.</li><li>객체의 참조가 동등성을 확인하여 변경 여부를 확인한다.</li><li>렌더링 최적화는 셀렉터를 사용해 수동으로 한다.</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// store.ts</span>
+<span class="hljs-keyword">import</span> create <span class="hljs-keyword">from</span> <span class="hljs-string">'zustand'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> store = <span class="hljs-title function_">create</span>(<span class="hljs-function">() =></span> ({ <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> }))
+
+
+<span class="hljs-comment">// Component.tsx</span>
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">'@/libs/store'</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Component</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> <span class="hljs-title function_">selector</span> = (<span class="hljs-params">state</span>) => state.<span class="hljs-property">count</span> &#x3C; <span class="hljs-number">10</span>
+	<span class="hljs-keyword">const</span> isSmall = <span class="hljs-title function_">store</span>(selector)
+
+	 <span class="hljs-keyword">return</span> (
+	 <span class="xml"><span class="hljs-tag">&#x3C;></span>
+	 <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{isSmall ? "small" : "big"}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+	 <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{store.getState()}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+	 <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> 
+	 {store.setState((prev) => ({count: prev.count + 1}))}}
+	 >INC<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+	 <span class="hljs-tag">&#x3C;/></span></span>
+	 )
+
+}
+</code></pre><p>모듈 상태 기반으로 작성되어 store.ts에서 store를 정의하고 export하여 사용한다. 상태를 업데이트하기 위해선 새로운 객체를 반환하는 함수를 사용해야한다. 이 방식은 useState의 setter를 통해 상태를 업데이트하는 것과 일치한다. 셀렉터 함수를 사용하여 state.count &#x3C; 10이 변경될 때만 리렌더링이 일어난다.</p><p><br></p><ul><li>읽기 상태 : 리렌더링을 최적화하기 위해 셀렉터를 사용</li><li>쓰기 상태: 불변 상태 모델을 기반</li><li><em>객체 불변성의 법칙</em></li><li>Zustand와 useState 훅은 상태가 객체일 때 새로운 객체를 생성해야한다. 객체 불변성을 지키기 위해서다. 이는 객체의 데이터가 한 번 생성된 후에는 그 내용을 변경할 수 없다는 원칙이다. 객체의 상태를 변경해야 할 때는 객체의 복사본을 생성하고, 복사본에 변경사항을 적용한 후, 해당 복사본을 새로운 상태로 사용한다. 자바스크립트에선 Object.assign이나 spread를 사용해 간단히 구현할 수 있다.</li></ul><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">const <span class="hljs-attr">originalObject</span> = { a: <span class="hljs-number">1</span>, b: <span class="hljs-number">2</span> }<span class="hljs-comment">;</span>
+
+
+const <span class="hljs-attr">updatedObject</span> = { ...originalObject, b: <span class="hljs-number">3</span> }<span class="hljs-comment">;</span>
+const <span class="hljs-attr">updated</span> = Object.assign({}, originalObject, { b: <span class="hljs-number">3</span>, c: <span class="hljs-number">4</span> })<span class="hljs-comment">;</span>
+</code></pre><p>Zustand 역시 객체 불변성을 기반으로 한다. 셀렉터가 참조적으로 동일한 객체(나 값)를 반환하면 객체가 변경되지 않은 것으로 간주하고 리렌더링을 하지 않는다.</p><p><br></p><p><strong>장점</strong></p><ul><li>셀렉터를 사용하여 리렌더링을 최적화할 수 있다.</li><li>리액트와 동일한 사용하기에 단순하고 번들 크기가 작다</li></ul><p><br></p><p><strong>단점</strong></p><ul><li>셀렉터를 위해 보일러플레이트 코드를 많이 작성해야 할 수 있다.</li></ul><p><br></p><h3 id="jotai">Jotai</h3><p><br></p><p><strong>특징</strong></p><ul><li>Zustand와 마찬가지로 불변 상태 모델</li><li>앞서 살펴본 작은 상태 조각인 atom을 기반으로 사용</li><li>컨텍스트와 구독을 사용한 패턴을 기반으로 하며 이를 atom으로 구현한다.</li><li>atom이 바뀔 때 리렌더링이 일어난다.</li><li>Provider를 선택적으로 사용할 수 있다.</li><li>배열 구조로 리렌더링을 최적화하는 Atoms-in-atom을 활용할 수 있음</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// atoms.ts</span>
+<span class="hljs-keyword">import</span> {atom} <span class="hljs-keyword">from</span> <span class="hljs-string">'jotai'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> count1 = <span class="hljs-title function_">atom</span>(<span class="hljs-number">0</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> count2 = <span class="hljs-title function_">atom</span>(<span class="hljs-number">0</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> sumAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-function">(<span class="hljs-params">get</span>) =></span> (<span class="hljs-title function_">get</span>(count1) + <span class="hljs-title function_">get</span>(count2)))
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> isSmallAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-function">(<span class="hljs-params">get</span>) =></span> (<span class="hljs-title function_">get</span>(count1) &#x3C; <span class="hljs-title function_">get</span>(count2)))
+
+<span class="hljs-comment">// Component.tsx</span>
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">'@/libs/store'</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Component</span> = (<span class="hljs-params">{counterAtom}</span>) => {
+	<span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useAtom</span>(counterAtom)
+	<span class="hljs-keyword">const</span> isSmall = <span class="hljs-title function_">useAtom</span>(isSmallAtom)
+
+	 <span class="hljs-keyword">return</span> (
+	 <span class="xml"><span class="hljs-tag">&#x3C;></span>
+
+	 <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{count}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+	 <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> 
+	 {setCount((prev) => (prev + 1))}}
+	 >INC<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+	 <span class="hljs-tag">&#x3C;/></span></span>
+	 )
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Sum</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> sum = <span class="hljs-title function_">useAtom</span>(sumAtom)
+	<span class="hljs-keyword">return</span> 	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{sum}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">IsSmall</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> isSmall = <span class="hljs-title function_">useAtom</span>(isSmallAtom)
+	<span class="hljs-keyword">return</span> 	<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{isSmall ? 'count 1 is smaller' : 'count1 is bigger'}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">App</span> = (<span class="hljs-params"></span>) => {
+
+	<span class="hljs-keyword">return</span> (
+		<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">Sum</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">IsSmall</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">Component</span> <span class="hljs-attr">counterAtom</span>=<span class="hljs-string">{count1}</span> /></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">Component</span> <span class="hljs-attr">counterAtom</span>=<span class="hljs-string">{count2}</span> /></span>
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+	)
+
+}
+</code></pre><p>atom을 기반으로 상태를 작게 나누어 조합할 수 있다. 이는 셀렉터를 대신하여 유사한 효과를 낼 수 있다. Jotai의 구독은 atom 기반으로 useAtom훅은 스토어에 있는 특정 atom을 구독한다. 이 예시에서 각 컴포넌트는 count1, count2가 바뀔 때 해당 컴포넌트만 리렌더링되며, 파생 아톰인 sum, IsSmall은 파생 상태가 바뀔 때만 리렌더링된다.</p><p><br></p><p>Jotai의 스토어는 아톰 구성 객체와 아톰 값으로 구성된 WeakMap 객체다.</p><p><br></p><ul><li>아톰 구성 객체: atom 함수로 생성</li><li>아톰 값 : useAtom 훅이 반환하는 값</li><li>Jotai의 구독은 아톰 기반이므로 useAtom 훅이 store에 있는 특정 아톰을 구독한다는 의미이다. 아톰 기반 구독을 통해 불필요한 리렌더링을 피할 수 있게 된다. 상태의 갱신을 추적하는 것을 의존성 추적이라하며, jotai는 이를 자동으로 수행한다.</li></ul><p><br></p><p><strong>상향식과 하향식</strong></p><ul><li>하향식top-down: Zustand에선 셀렉터 함수를 통해 객체의 일부를 파생 상태로 만들었다. 이미 존재하는 큰 상태에서 작은 상태로 나누어가는 방식을 상향식이라 한다.</li><li>상향식bottom-up: Jotai에서는 아톰을 작게 나누고, 이를 합성하여 더 큰 상태를 만들었다. (counterAtom 예시) 이를 상향식이라고 한다.</li></ul><p><br></p><p><strong>동적 아톰 생성과 Atoms-in-atom 패턴</strong></p><p><br></p><p>리액트 컴포넌트의 생명 주기에 따라 생성되고 소멸되는 <strong>동적인 아톰을 사용</strong>할 수 있다. 컨텍스트 API에서 새로운 상태를 추가하는 것은 새로운 Provider 컴포넌트를 추가해 하위 트리를 전부 묶는 것이기 때문에 모든 하위 컴포넌트가 리렌더링된다. 이때 리액트 생성 주기와 무관하게 상태는 지속된다. 하지만 jotai의 동적 아톰 생성을 통해 컴<strong>포넌트의 생애주기에 맞춰 전역 상태를 변경</strong>할 수 있다. 일견 그럴 필요 있을까 싶지만, 매우 유용한 순간이 있다. 바로 <strong>전역 상태가 배열</strong>일 때이다. 사용자의 수정, 삭제의 이벤트에 따라 전역상태가 업데이트되는 <strong>리스트 컴포넌트</strong>를 떠올릴 수 있다. 이 때 효과적으로 전역상태를 관리할 수 있다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">// 동적 상태를 이용한 투두 리스트 예시
+// id를 갖고 있지 않다
+// atoms.ts
+type <span class="hljs-attr">Todo</span> = {
+	title: string<span class="hljs-comment">;</span>
+	done: boolean<span class="hljs-comment">;</span>
+}
+
+type <span class="hljs-attr">TodoAtom</span> = PrimitiveAtom&#x3C;Todo>
+const <span class="hljs-attr">todoAtomsAtom</span> = atom&#x3C;TodoAtom[]>([])
+
+// TodoItem.tsx
+const <span class="hljs-attr">TodoItem</span> = ({todoAtom, remove} 
+: {todoAtom:TodoAtom<span class="hljs-comment">; remove:(todoAtom:TodoAtom) => void }) => {</span>
+	const <span class="hljs-section">[todo, setTodo]</span> = useAtom(todoAtom)
+	return (
+		&#x3C;div>
+			&#x3C;input 
+				<span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> 
+				<span class="hljs-attr">checked</span>={todo.done}
+				<span class="hljs-attr">onChange</span>={() => setTodo((prev) => 
+				({...prev, done:!prev.done}))}
+			/>
+			&#x3C;span 
+				<span class="hljs-attr">style</span>={{textDecoration: todo.done? <span class="hljs-string">"line-trough"</span> : <span class="hljs-string">"none"</span>}}
+			>{todo.title}&#x3C;/span>
+			&#x3C;input 
+				<span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> 
+				<span class="hljs-attr">onChange</span>={(e) => 
+				setTodo((prev) => ({...prev, title: e.target.value}))}
+			&#x3C;button
+				<span class="hljs-attr">onClick</span>={() => remove(todoItem)}
+			>
+				Delete
+			&#x3C;/button>
+		&#x3C;/div>
+	)
+}
+
+export default memo(TodoItem)
+
+// NewTodo.tsx
+const <span class="hljs-attr">NewTodo</span> = () => {
+	const <span class="hljs-attr">setTodoAtoms</span> = useSetAtom(todoAtomsAtom)
+	const <span class="hljs-section">[text, setText]</span> = useState('')
+	const <span class="hljs-attr">onClick</span> = {
+		setTodoAtoms((prev) => 
+		(<span class="hljs-section">[...prev, atom&#x3C;Todo>({title: text, done:false})]</span>))
+		setText('')<span class="hljs-comment">;</span>
+	}
+	
+	return (
+		&#x3C;div>
+			&#x3C;input <span class="hljs-attr">onChange</span>={(e) => setText(e.target.value)} />
+			&#x3C;button <span class="hljs-attr">onClick</span>={<span class="hljs-literal">on</span>Click}>Add&#x3C;/button>
+		&#x3C;/div>
+	)
+}
+
+
+// TodoList.tsx
+const <span class="hljs-attr">TodoList</span> = () => {
+	const <span class="hljs-section">[todoItems, setTodoItems]</span> = useAtom(todoAtomsAtom)
+	const <span class="hljs-attr">remove</span> = useCallback(
+		(todoAtom: TodoAtom) => setTodoAtoms(
+			(prev) => prev.filter((item) => item !== todoAtom)
+		),
+		<span class="hljs-section">[setTodoAtoms]</span>
+	)
+
+	return (
+		&#x3C;div>
+		&#x3C;NewTodo />
+		{todoAtoms.map((todoAtom) => (
+			&#x3C;TodoItem
+				// atom은 문자열로 평가될 때 UID를 반환한다.
+				<span class="hljs-attr">key</span>={`<span class="hljs-variable">${todoAtom}</span>`}
+				<span class="hljs-attr">todoAtom</span>={todoAtom}
+				<span class="hljs-attr">remove</span>={remove}
+			/>
+		))}
+		&#x3C;/div>
+	)
+}
+</code></pre><ol><li>아톰을 동적으로 생성하기 위해 todo 아톰과 아톰 리스트(todoAtomsAtom)의 상태로 분리한다. 하지만 실제로 atoms.ts에 작성된 전역 상태는 리스트 상태 하나이며, 개별 todo 상태는 컴포넌트에서 생성된다.</li><li>이 코드에서 "동적으로 아톰을 생성"하는 컴포넌트는 NewTodo의 onClick 함수, setTodoAtoms이다. 타이핑 입력 후, 버튼을 클릭하면 리스트 아톰에 아톰이 추가된다. setTodoAtoms((prev) => ([…prev, atom({ title: “여기서 새로운 아톰을 추가”, done:false})]))</li><li>리스트 상태에서 요소 삭제는 TodoList의 remove 함수의 필터링으로 구현된다. 이를 props로 받은 TodoItem의 버튼 이벤트로 리스트 전역 상태가 업데이트된다.</li><li>마지막으로 TodoItem.tsx를 memo로 감싸고, remove에 useCallback을 사용하여 리렌더링을 최소화한다.</li></ol><p><br></p><p>이같은 패턴을 Atoms-in-Atom이라고 부른다. 예시 코드에서 다음과 같은 이점이 생긴다.</p><p><br></p><p>0. 리렌더링의 이점. TodoItem은 개별적인 아톰(상태)를 갖는다. TodoItem에서 done, title의 상태가 변경되어도, 리스트 상태를 업데이트 하는 것이 아니기 때문에 TodoList 전체의 리렌더링은 일어나지 않는다.</p><p><br></p><p>1. 리스트 아이템을 렌더링할 때 uuid같은 외부 라이브러리를 사용할 필요가 없다! atom이 문자열일 때 UID로 평가되어 별도의 라이브러리로 ID를 생성할 필요가 없어진다.</p><p><br></p><p>2. 리스트를 업데이트하기 위한 필터링 로직 또한 간단해진다. 아톰 리스트 상태에서 아톰끼리 비교가 가능하다. setTodoAtoms((prev) => prev.filter((item) => item !== todoAtom) 단순한 로직으로 아톰의 비교가 가능하다.</p><p><br></p><p>추가적인 라이브러리 없이 로직을 단순화하면서 성능 상의 이점을 챙길 수 있어 매우 유용하다.</p><p><br></p><p><strong>추가적인 내용</strong></p><ul><li>atom 함수에 첫번째 매개변수로 콜백함수만을 추가하면 read 아톰이 되며, 매개변수로 두개를 넣을 시 첫번째는 read 함수, 두번째는 write 함수가 된다. read only 아톰과 readAndWrite 아톰으로 구분할 수 있다. 파생상태를 변경할 일이 없다면 read only 아톰을 활용할 수 있다.</li><li>반대로 atom의 첫번째 인자가 null이고 두번째 write 함수만 있는 경우 “액션 아톰” 혹은 write-only 아톰이라고 한다.</li><li>atom은 onMount, onUnmount 메서드를 제공한다. 아톰 변경함수를 인자로 받으며 사용 시작과 종료 시 로직을 추가할 수 있다.</li><li>jotai/utils는 많은 atom관련 훅을 제공한다. atomWithStorage, atomWithReducer는 아톰을 로컬 스토리지에 저장하거나 리듀서를 활용해 관리할 수 있게 해준다.</li></ul><p><br></p><p><strong>장점</strong></p><ul><li>구문이 단순하며 리액트의 상태훅과 동일한 형태로 사용할 수 있다.</li><li>아톰을 나누어 상태관리를 세분화할 수 있다.</li><li>리렌더링을 최적화할 수 있다. 앞서 살핀 atoms-in-atom을 활용하여 상태를 세분화하고 리렌더링 효과를 동시에 볼 수 있다.</li></ul><p><strong>단점</strong></p><ul><li>제공하는 기능이 많기 때문에 코드 복잡성이 늘어날 수 있다.</li><li>리렌더링을 최적화하기 위해 추가되는 코드가 많이 늘어날 수 있다.</li><li>상태를 효율적으로 사용하는데 학습 곡선이 있을 수 있다.</li></ul><h4><br></h4><h3 id="valtio">Valtio</h3><p><br></p><p><strong>특징</strong></p><ul><li>Zustand와 같이 주로 모듈 상태용으로 사용된다.</li><li>리액트와의 통합을 위해 자바스크립트 Proxy 객체를 사용해 변경 불가능한 스냅숏을 가져온다.</li><li>Proxy를 사용해 리렌더링을 자동으로 최적화한다. 상태 사용 추적이라는 기법을 사용한다.</li><li>프록시를 사용해 변경 가능한 객체에서 변경 불가능한 객체를 생성한다. 이를 스냅샷이라고 한다.</li></ul><p><br></p><p><strong>사용방법</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// 변경 가능한 객체는 proxy를 사용한다</span>
+<span class="hljs-keyword">const</span> state = <span class="hljs-title function_">proxy</span>({<span class="hljs-attr">count</span>:<span class="hljs-number">0</span>, <span class="hljs-attr">obj</span>:{<span class="hljs-attr">title</span>:<span class="hljs-string">"hi"</span>}})
+
+<span class="hljs-comment">// state의 count를 1 증가 시킨다.</span>
+state.<span class="hljs-property">count</span> += <span class="hljs-number">1</span>
+
+<span class="hljs-comment">// 불변 객체를 생성하기 위해선 snapshot을 사용한다.</span>
+<span class="hljs-keyword">const</span> snap = <span class="hljs-title function_">snapshot</span>(state)
+<span class="hljs-keyword">const</span> snap2 = <span class="hljs-title function_">snapshot</span>(state)
+
+state.count += <span class="hljs-number">1</span>
+<span class="hljs-keyword">const</span> snap3 = <span class="hljs-title function_">snapshot</span>(state)
+
+<span class="hljs-comment">// snap은 Object.freeze로 동결되어 위와 같이 값을 변경할 수 없게 된다.</span>
+<span class="hljs-comment">// snap과 state는 동일한 값을 갖지만 서로 다른 참조를 갖는다.</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Component</span> = (<span class="hljs-params"></span>) => {
+	<span class="hljs-keyword">const</span> snap = <span class="hljs-title function_">useSnapshot</span>(state)
+	<span class="hljs-keyword">const</span> <span class="hljs-title function_">inc</span> = (<span class="hljs-params"></span>) => ++state.<span class="hljs-property">count1</span>
+	<span class="hljs-keyword">return</span> (
+	<span class="xml"><span class="hljs-tag">&#x3C;></span>
+	<span class="hljs-tag">&#x3C;<span class="hljs-name">span</span>></span>{snap.count}<span class="hljs-tag">&#x3C;/<span class="hljs-name">span</span>></span>
+	<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{inc}</span>></span>Add<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+	<span class="hljs-tag">&#x3C;/></span></span>
+	)
+
+}
+</code></pre><p>스냅샷을 read-only가 가능한 상태(불변 객체)로, proxy를 write가 가능한 상태로 파악하면 쉽다. 리렌더링은 스냅샷에서 변화가 생길 때 트리거된다. 객체 상태의 불변성을 지키기 위해 복잡한 함수와 추가적인 코드가 필요하지 않다. 또한 스냅샷을 통해 자동 리렌더링 최적화가 되기 때문에 셀렉터를 구성하는 추가적인 코드가 필요하지 않다.</p><p><br></p><p>Valtio는 불변 객체를 생성하기 위해 snapshot 함수를 사용한다. 예제에서 state와 snap, snap2는 {count:1, …}라는 동일한 값을 갖지만, 다른 참조를 갖는다. 반면 snap, snap2는 snap3과 다른 count를 갖는다. 하지만 snap3.obj는 변경되지 않았기 때문에 snap, snap2.obj는 동일하여 snap.obj === snap3.obj가 유지된다. 참조가 동일하다는 것은 메모리를 공유한다는 것이다. Valtio는 필요한 경우에만 스냅샷을 생성하여 메모리 사용량을 최적화한다. 다른 라이브러리에서처럼 파생 상태로 분리하고, 이 상태의 변경을 감지하기 위한 셀렉터 함수가 불필요하다. Valtio는 라이브러리 내부에서 최적화를 실행한다. 스냅샷은 프록시 기반으로, 상태가 실제로 변화되었을 때만 리렌더링을 일으킨다.</p><p><br></p><p>Todo 리스트 예시 (Jotai의 atoms-in-atom과 동일한 결과물이다)</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-comment">// proxy.ts</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Todo</span> = {
+	<span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span>;
+	<span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span>;
+	<span class="hljs-attr">done</span>: <span class="hljs-built_in">boolean</span>
+}
+
+<span class="hljs-keyword">const</span> state = proxy&#x3C;{<span class="hljs-attr">todos</span>:<span class="hljs-title class_">Todo</span>[]}>({<span class="hljs-attr">todos</span>: []})
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">createTodo</span> = (<span class="hljs-params"><span class="hljs-attr">title</span>:<span class="hljs-built_in">string</span></span>) => {
+	state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">push</span>({
+		<span class="hljs-attr">id</span>: <span class="hljs-title function_">nanoid</span>(),
+		title,
+		<span class="hljs-attr">done</span>:<span class="hljs-literal">false</span>
+	})
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">editTodo</span> = (<span class="hljs-params"><span class="hljs-attr">id</span>:<span class="hljs-built_in">string</span>, <span class="hljs-attr">title</span>:<span class="hljs-built_in">string</span></span>) => {
+	<span class="hljs-keyword">const</span> index = state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">findIndex</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> 
+	(item.<span class="hljs-property">id</span> === id))
+	state.<span class="hljs-property">todos</span>[index].<span class="hljs-property">title</span> = title
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">removeTodo</span> = (<span class="hljs-params"><span class="hljs-attr">id</span>:<span class="hljs-built_in">string</span></span>) => {
+	<span class="hljs-keyword">const</span> index = state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">findIndex</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> 
+	(item.<span class="hljs-property">id</span> === id))
+	state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">splice</span>(index, i)
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">toggleTodo</span> = (<span class="hljs-params"><span class="hljs-attr">id</span>:<span class="hljs-built_in">string</span></span>) => {
+	<span class="hljs-keyword">const</span> index = state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">findIndex</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> 
+	(item.<span class="hljs-property">id</span> === id))
+	state.<span class="hljs-property">todos</span>[index].<span class="hljs-property">done</span> = !state.<span class="hljs-property">todos</span>[index].<span class="hljs-property">done</span>
+}
+
+<span class="hljs-comment">// state의 상태를 직접 변경할 수 있기에 다른 라이브러리와 로직의 차이가 있다.</span>
+
+<span class="hljs-comment">// TodoItem.tsx</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">TodoItem</span> = (<span class="hljs-params">{id}:{id:<span class="hljs-built_in">string</span>}</span>) => {
+	<span class="hljs-keyword">const</span> todoState = state.<span class="hljs-property">todos</span>.<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =></span> item.<span class="hljs-property">id</span> === id)
+
+	<span class="hljs-keyword">if</span>(!todoState) {
+		<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">"invalid todo id"</span>)
+	}
+	
+	<span class="hljs-keyword">const</span> { done, title } = <span class="hljs-title function_">useSnapshot</span>(todoState);
+	<span class="hljs-keyword">return</span> (
+		<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> 
+				<span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> 
+				<span class="hljs-attr">checked</span>=<span class="hljs-string">{done}</span>
+				<span class="hljs-attr">onChange</span>=<span class="hljs-string">{()</span> =></span> removeTodo(id)}
+			/>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">span</span> 
+				<span class="hljs-attr">style</span>=<span class="hljs-string">{{textDecoration:</span> <span class="hljs-attr">done</span> ? "<span class="hljs-attr">line-trough</span>" <span class="hljs-attr">:</span> "<span class="hljs-attr">none</span>"}}
+			></span>{title}<span class="hljs-tag">&#x3C;/<span class="hljs-name">span</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> 
+				<span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> 
+				<span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =></span> 
+				editTodo(id, e.target.value})}
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span>
+				<span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =></span> removeTodo(id)}
+			>
+				Delete
+			<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+	)
+}
+
+export default memo(TodoItem)
+
+// NewTodo.tsx
+const NewTodo = () => {
+	const [text, setText] = useState('')
+	const onClick = () => {
+		createTodo(text)
+	}
+	
+	return (
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =></span> setText(e.target.value)} />
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onClick}</span>></span>Add<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+	)
+}
+
+
+// TodoList.tsx
+const TodoList = () => {
+	const { todos } = useSnapshot(state)
+
+	return (
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+		<span class="hljs-tag">&#x3C;<span class="hljs-name">NewTodo</span> /></span>
+		{todos.map((todo) => (
+			<span class="hljs-tag">&#x3C;<span class="hljs-name">TodoItem</span>
+				<span class="hljs-attr">key</span>=<span class="hljs-string">{todo.id}</span>
+				<span class="hljs-attr">id</span>=<span class="hljs-string">{todo.id}</span>
+			/></span>
+		))}
+		<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+	)
+}
+
+</span></code></pre><ol><li>snapshot은 TodoList와 TodoItem에서 사용되었다. TodoItem 내부의 done, title이 변경되어도 전체 리스트 상태는 변경되지 않는다.</li><li>라이브러리가 객체 불변성을 지키면서(proxy함수) 직접 객체의 값을 변경할 수 있게 하고, 상태 변경을 감지하여 자동으로 리렌더링을 최적화한다 (useSnapshot)</li></ol><p><br></p><p>앞서 살펴본 코드와 비교해보면<strong> 코드량이 상당히 줄어든 것을 확인할 수 있다</strong>. 특히 리렌더링을 위해 모든 셀렉터를 수동으로 작성해야 하는 zustand와 비교했을 때 코드의 양이 확연히 줄어든다. 또한 객체 불변성을 유지하면서 상태 업데이트를 위해 그저 선언된 상태 proxy에 값을 할당하는 것 zustand, jotai와도 확연히 다르다. proxy는 객체의 deps가 아무리 깊어도 snapshot을 통해 그 변화를 감지할 수 있다. <a href="http://state.user.info.name/" rel="noopener noreferrer" style="color: rgb(12, 147, 228);">state.user.info.name</a> = “new value” 처럼 깊은 프로퍼티의 변경도 스냡샷은 감지할 수 있다.</p><p><br></p><p><strong>장점</strong></p><ul><li>proxy를 writable state, snapshot을 read-only 상태로 활용해 직관적인 상태 관리 로직을 작성할 수 있다.</li><li>proxy를 사용해 객체에 새로운 값을 할당하는 자바스크립트 문법을 사용하면서 상태의 불변성을 지킬 수 있다.</li><li>snapshot의 변경으로 리렌더링이 트리거되며, 리렌더링 최적화를 위한 추가적인 코드가 많이 필요하지 않다.</li></ul><p><br></p><p><strong>단점</strong></p><ul><li>렌더링 최적화를 내부적으로 처리하기 때문에 디버깅이 어려울 수 있다.</li><li>Valtio가 snapshot을 내부적으로 처리하기 때문에 상태가 크고 복잡해질수록, 객체 내부의 상태변화를 추적하고 디버깅하는 것이 어려워질 수 있다.</li></ul><p><br></p><p><br></p><p>이번 글을 통해 차세대 상태 관리 라이브러리들의 차이점과 장단점을 숙지하고, 세 라이브러리가 어떠한 문제의식을 공유하고 어떤 식으로 문제를 해결했는지 알 수 있었다.</p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"훅을 활용하여 마이크로 상태 관리하기 - teklog"}],["$","meta","1",{"name":"description","content":"Jotai의 개발자 Daishi Kato가 쓴 ‘리액트 훅을 활용한 마이크로 상태관리’ 를 읽고 정리한 내용이다. code snippet을 직접 작성하고, 기억할만한 내용을 선별하고, 글의 순서를 편집해 작성하였다. 지역상태/전역 상태의 구분, context api, 전역 상태가 어떤 문제를 공유하고 각각 어떻게 해결해가는지를 중점으로 작성했다. 이 글을 "}],["$","meta","2",{"property":"og:title","content":"훅을 활용하여 마이크로 상태 관리하기 - teklog"}],["$","meta","3",{"property":"og:description","content":"Jotai의 개발자 Daishi Kato가 쓴 ‘리액트 훅을 활용한 마이크로 상태관리’ 를 읽고 정리한 내용이다. code snippet을 직접 작성하고, 기억할만한 내용을 선별하고, 글의 순서를 편집해 작성하였다. 지역상태/전역 상태의 구분, context api, 전역 상태가 어떤 문제를 공유하고 각각 어떻게 해결해가는지를 중점으로 작성했다. 이 글을 "}],["$","meta","4",{"property":"og:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1710074466/uj4qgf2owzymdjv4tcj9.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"훅을 활용하여 마이크로 상태 관리하기 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"Jotai의 개발자 Daishi Kato가 쓴 ‘리액트 훅을 활용한 마이크로 상태관리’ 를 읽고 정리한 내용이다. code snippet을 직접 작성하고, 기억할만한 내용을 선별하고, 글의 순서를 편집해 작성하였다. 지역상태/전역 상태의 구분, context api, 전역 상태가 어떤 문제를 공유하고 각각 어떻게 해결해가는지를 중점으로 작성했다. 이 글을 "}],["$","meta","8",{"name":"twitter:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1710074466/uj4qgf2owzymdjv4tcj9.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/53","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"HTTP 완벽 가이드 - 3 HTTP 메시지"}],["$","p",null,{"className":"text-sm","children":"2024-03-11"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/51","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"HTTP 완벽 가이드 - 2 URL과 리소스"}],["$","p",null,{"className":"text-sm","children":"2024-03-07"}]]}]]}]]}]}]

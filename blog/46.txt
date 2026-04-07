@@ -1,0 +1,429 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","46"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","46","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","46","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T3218,<p><br></p><p><a href="https://www.teklog.site/blog/45" rel="noopener noreferrer" target="_blank">지난 글</a>에 이어서, Fluent React에서 다루는 컴포넌트 설계 패턴. 이번에는 HOC 패턴을 다뤄본다.</p><p><br></p><h3>High Order Component (HOC) 고차 컴포넌트</h3><p><br></p><blockquote>고차 컴포넌트(HOC)는 다른 컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 컴포넌트입니다. HOC는 여러 컴포넌트 간에 공통적으로 사용되는 동작을 반복하지 않고도 공유할 경우에 유용합니다.</blockquote><p><br></p><pre class="ql-syntax" spellcheck="false">function withExample(WrappedComponent) { 
+  return function(props) { 
+  // 여기에서 컴포넌트 공용으로 적용될 추가적인 로직 구현
+  return &lt;WrappedComponent {...props} /&gt;; 
+  }; 
+}
+</pre><p><br></p><p>HOC는 다른 컴포넌트를 함수의 매개변수로 받는 점이 props를 통한 상속과는 다르다. 이를 사용해 여러 컴포넌트가 렌더링되기 이전에 특정한 로직을 실행하도록 할 수 있다. 다른 패턴들과 마찬가지로 클래스형 컴포넌트에서 자주 쓰였던 로직이지만, <strong>React.memo, forwardRef</strong>처럼 리액트의 기능에서도 여전히 사용되고 있다.</p><p><br></p><p>여러 컴포넌트에 공용된 로직을 적용하는 방법은 커스텀 훅이나 전역 상태를 사용할 수도 있기 때문에, HOC만의 장점이라고 보긴 어려울 수 있다. 이래도 되고, 저래도 된다면 굳이 사용할 필요가 있을까? 하지만 HOC는 공유하려는 로직을 <strong>컴포넌트 단위로 공용화</strong>하여 로직을 분리한다는 점은 커스텀 훅이나 전역상태의 사용과 구분된다. 즉 컴포넌트의 구조적인 접근으로 해결하는 점에서 유용할 수 있다.</p><p><br></p><h3>Use Case &amp; Code Snippet</h3><p>그렇다면 HOC가 유용한 케이스를 코드와 함께 살펴보자.</p><p><br></p><p><strong>적용 이전</strong></p><pre class="ql-syntax" spellcheck="false">const AdminPage = (props) ⇒ {
+  const isSignIn = useRecoilValue(isSignInState)
+  const navigate = useNavigation()
+  const [input, setInput] = useState('')  
+
+  if(!isSignIn) {
+  return &lt;FallbackComponent /&gt;
+  }
+  
+  const handleInput = (e) =&gt; ...
+
+  return …
+}
+
+const MySettings = (props) ⇒ {
+  const isSignIn = useRecoilValue(isSignInState)
+  const navigate = useNavigation()
+  const param = useParam();
+
+  if(!isSignIn) {
+  return &lt;FallbackComponent /&gt;
+  }
+
+  useEffect(() =&gt; {
+   if(!param) {
+    .... 
+   }
+  } , [param]) 
+
+  return …
+}
+</pre><p><strong>HOC 패턴 적용</strong></p><pre class="ql-syntax" spellcheck="false">function withAuthorization(WrappedComponent,FallbackComponent,checkAuthorization) 
+{
+  return function(props) {
+  if (checkAuthorization()) {
+ 
+  // 권한이 있는 경우 원래 컴포넌트 렌더링 
+  return &lt;WrappedComponent {...props} /&gt;; } 
+   else { 
+   // 권한이 없는 경우 대체 컴포넌트 렌더링 
+   return &lt;FallbackComponent /&gt;; 
+    } 
+  }; 
+}
+
+
+// 사용 예시 
+ const Unauthorized = () =&gt; &lt;div&gt;접근 권한이 없습니다.&lt;/div&gt;;
+
+// 권한 확인 로직(실제로는 더 복잡할 수 있음) 
+function checkUserIsAdmin() {
+
+  /* 로그인 여부를 전역상태로 확인하는 경우 */
+  const isSIgnIn = useRecoilValue(isSignInState)
+
+  /* 로그인 여부를 localStorage로 확인하는 경우 */
+  const localStorageIsSignIn = localStorage.getItem(’isSignIn’)
+  const isSIgnIn = JSON.parse(localStorageIsSignIn)
+  
+return isSignIn 
+}
+
+
+const AdminPageWithAuthorization = withAuthorization(AdminPage, Unauthorized, checkUserIsAdmin);
+
+const MySettingsWithAuthorization = withAuthorization(MySettings, Unauthorized, checkUserIsAdmin);
+</pre><p>유저의 인증이 필요한 페이지에 HOC를 적용하는 snippet이다. 인증 로직을 컴포넌트 단위로 분리하여 생긴 장점을 확인할 수 있다. 기존 AdminPage와 MySettings에는 인증을 확인하기 위해 recoil의 전역 상태를 사용해도 여전히 중복된 코드가 추가된다.  인증되지 않은 상태에서 fallback을 보여주는 처리를 HOC가 담당하게 하여 중복되는 로직을 한곳으로 모으고, 각 컴포넌트에서는 각자의 로직을 담당한다.</p><p><br></p><p>간단한 예시여서 장점이 부각되지 않아 보일 수 있다. 이런 상황을 가정해보자. 각 컴포넌트의 내부에서 로직이 길고 복잡해지거나, isSignIn 상태를 사용하는 서로 다른 함수가 추가된다면, 코드의 가독성과 더욱 복잡해질 수 있다. 이러한 경우에 HOC의 장점이 더욱 보일 수 있을 것이다. 다음 예시를 보자.</p><p><br></p><p><strong>HOC 고차 컴포넌트 적용 이전</strong></p><pre class="ql-syntax" spellcheck="false">function ComponentA() {
+  const router = useRouter();
+  const { id } = router.query;
+
+
+  const handleClick = async () =&gt; {
+    const response = await fetch(`/api/posts/${id}`, { method: 'POST' });
+    // POST 요청에 대한 처리
+  };
+
+  // id를 다른 방식으로 가공하는 로직
+  const processedId = `PostID-${id}`;
+
+  useEffect(() =&gt; {
+    if (!id) {
+      router.push('/some-other-page'); // id가 nullish인 경우 리디렉션
+    }
+  }, [id, router]);
+
+  return (
+    &lt;div&gt;
+      &lt;button onClick={handleClick}&gt;Send Post Request with ID&lt;/button&gt;
+      &lt;p&gt;Processed ID: {processedId}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}
+
+function ComponentB() {
+  const router = useRouter();
+  const { id } = router.query;
+  const [data, setData] = useState(null);
+
+
+  // 받아온 데이터를 가공하는 로직
+  const processedData = data ? `Data for ID ${id}:    ${JSON.stringify(data)}` : 'Loading...';
+
+  // id를 다른 방식으로 가공하는 로직
+  const processedId = `DataID-${id}`;
+
+   useEffect(() =&gt; {
+    if (!id) {
+      router.push('/some-other-page'); // id가 nullish인 경우 리디렉션
+    } else {
+      const fetchData = async () =&gt; {
+        const response = await fetch(`/api/data/${id}`);
+        const jsonData = await response.json();
+        setData(jsonData); // GET 요청으로 받은 데이터 저장
+      };
+  
+      fetchData();
+    }
+  }, [id, router]);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;{processedData}&lt;/p&gt;
+      &lt;p&gt;Processed ID: {processedId}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}
+</pre><p><strong>HOC 고차 컴포넌트 적용 </strong></p><pre class="ql-syntax" spellcheck="false">function withIdFromQuery(WrappedComponent) {
+  return function(props) {
+    const router = useRouter();
+    const { id } = router.query;
+
+    useEffect(() =&gt; {
+      if (!id) {
+        router.push('/some-other-page'); // id가 nullish인 경우 리디렉션
+      }
+    }, [id, router]);
+
+    // id가 있는 경우, WrappedComponent에 id와 나머지 props를 전달
+    return &lt;WrappedComponent {...props} id={id} /&gt;;
+  };
+}
+
+function ComponentA({ id }) {
+
+&nbsp; const handleClick = async () =&gt; {
+&nbsp; &nbsp; const response = await fetch(`/api/posts/${id}`, { method: 'POST' });
+&nbsp; &nbsp; // POST 요청에 대한 처리
+&nbsp; };
+
+
+&nbsp; // id를 다른 방식으로 가공하는 로직
+&nbsp; const processedId = `PostID-${id}`;
+
+
+&nbsp; return (
+&nbsp; &nbsp; &lt;div&gt;
+&nbsp; &nbsp; &nbsp; &lt;button onClick={handleClick}&gt;Send Post Request with ID&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &lt;p&gt;Processed ID: {processedId}&lt;/p&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; );
+}
+
+
+export default withIdFromQuery(ComponentA);
+
+
+function ComponentB({ id }) {
+  const [data, setData] = useState(null);
+
+
+  // 받아온 데이터를 가공하는 로직
+  const processedData = ...
+
+  // id를 다른 방식으로 가공하는 로직
+  const processedId = `DataID-${id}`;
+
+  useEffect(() =&gt; {
+    const fetchData = async () =&gt; {...};
+    fetchData();
+  }, [id]);
+
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;{processedData}&lt;/p&gt;
+      &lt;p&gt;Processed ID: {processedId}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}
+</pre><p><br></p><p>이 예시에선 url의 query parameter id가 null일 경우 페이지를 이동하고, 이 id에 따라 컴포넌트 A,B에서는 각기 다른 로직을 구성한다. !id 라우팅 이동 동작은 A, B에서 동일하나, 각자의 컴포넌트에선 id를 사용하여 JSX 렌더링과 이벤트, 데이터 fetch 등 각기 다른 로직을 포함한다. </p><p><br></p><p>같은 동작을 위해 import, useEffect, router.push 같은 중복된 코드가 추가되는 것도 문제다. 그러나 더 큰 문제는 같은 동작을 하는 <strong>코드가 산재</strong>하게 되는 것이다. id가 nullish일 시 라우팅 동작에 에러가 생긴다면 컴포넌트 A, B에서 id를 사용하는 로직에서 모두 문제를 살펴봐야 한다. 반대도 마찬가지다. 에러를 찾을 때까지 컴포넌트 A의 라우팅 동작, A의 핸들러, B의 라우팅 동작, B의 데이터 fetching, A,B의 렌더링까지 모두 살펴봐야한다. 보통 웹 서비스에서 컴포넌트는 이보다 더욱 복잡할 것이기에, 문제를 찾는 것이 무척 까다로워진다. 또한 코드가 작성된 이후 몇개월만 지나도 유지보수도 매우 까다로워질 것이다.</p><p><br></p><p>이를 통해 HOC 패턴의 장점은 어느정도 분명히 알게 되었다.</p><ul><li>여러 컴포넌트가 동일한 상태, 로직을 공유하여 같은 동작을 할 때 적용</li><li>각 컴포넌트에서 공통된 동작과 내부의 로직을 분리하여 가독성, 테스팅, 디버깅 등의 이점이 생긴다</li><li>이를 컴포넌트 구조적인 접근으로 해결하는 방법</li></ul><p><br></p><p>Fluent React에서는 HOC와 hook 패턴의 비교를 논의하는데, 이 또한 유익해보인다.</p><p><br></p><p><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1708864841/r7m59bwruixq4vld2cqg.png"></p><blockquote>이 표에서 우리는 HOCs(고차 컴포넌트)와 후크가 컴포넌트 간에 로직을 공유하는 데 있어 React에서 핵심적인 역할을 한다는 것을 관찰할 수 있으며, 이들은 약간 다른 사용 사례에 적합합니다. HOCs는 여러 컴포넌트 간에 로직을 공유하는 데 뛰어나며, 특히 <strong>감싸진 컴포넌트의 렌더링을 제어하고 속성을 조작</strong>하여 컴포넌트에 <strong>추가 데이터나 함수를 제공</strong>하는 데 능숙합니다. 이들은 감싸진 컴포넌트 외부에서 상태를 관리하고<strong> 감싸진 컴포넌트와 관련된 생명주기 로직을 캡슐화</strong>할 수 있습니다. 그러나, 특히 많은 HOCs가 함께 중첩될 때 잘 관리되지 않으면 "래퍼 지옥"으로 이어질 수 있습니다. 이러한 중첩은 테스팅을 더 복잡하게 만들 수 있으며, <u>특히 깊게 중첩된 HOCs와 함께할 때 TypeScript로 타입 안전성을 확보하는 것이 까다로울 수 있습니다</u>.</blockquote><blockquote>반면에, 훅Hook은 컴포넌트 내부나 유사한 컴포넌트 간에 로직을 추출하고 공유하는 데 이상적이며, 추가적인 컴포넌트 계층을 추가하지 않아 "래퍼 지옥" 시나리오를 피할 수 있습니다. HOCs와 달리, 훅은 직접적으로 렌더링에 영향을 주지 않으며 <strong>속성을 직접 주입하거나 조작할 수 없습니다</strong>. <strong>훅은 함수형 컴포넌트 내부의 로컬 상태를 관리</strong>하고 useEffect 훅을 포함한 다른 훅을 사용하여 생명주기 이벤트를 처리하도록 설계되었습니다. 훅은 구성의 용이성을 촉진하며 HOCs보다 격리하기 쉬워 <strong>일반적으로 테스트하기 더 쉽습니다</strong>. 또한, TypeScript와 함께 사용될 때, 훅은 더 나은 타입 추론을 제공하고 타입을 지정하기 쉬워 타입 오류와 관련된 버그를 줄일 수 있습니다.</blockquote><blockquote>HOCs와 훅Hook 모두 로직 재사용 메커니즘을 제공하지만, 훅은 함수형 컴포넌트 내에서 상태, 생명주기 이벤트 및 기타 React 기능을 관리하는 데 더 직접적이고 덜 복잡한 접근 방식을 제공합니다. 반면에, HOCs는 컴포넌트에 행동을 주입하는 더 구조화된 방식을 제공하는데, <strong>이는 더 큰 코드베이스나 아직 훅을 채택하지 않은 코드베이스에서 유용</strong>할 수 있습니다. 각각은 자신만의 장점 세트를 가지고 있으며, HOCs 또는 훅을 사용할지의 선택은 대부분 프로젝트의 특정 요구 사항과 팀의 이러한 패턴에 대한 익숙함에 크게 의존할 것입니다.</blockquote><p><br></p><p><br></p>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC)"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2024/02/25"}],["$","p",null,{"children":"n°46"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:T578e,<p><br></p><p><a href="https://www.teklog.site/blog/45" rel="noopener noreferrer">지난 글</a>에 이어서, Fluent React에서 다루는 컴포넌트 설계 패턴. 이번에는 HOC 패턴을 다뤄본다.</p><p><br></p><h3 id="high-order-component-hoc">High Order Component (HOC) 고차 컴포넌트</h3><p><br></p><blockquote>고차 컴포넌트(HOC)는 다른 컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 컴포넌트입니다. HOC는 여러 컴포넌트 간에 공통적으로 사용되는 동작을 반복하지 않고도 공유할 경우에 유용합니다.</blockquote><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">withExample</span>(<span class="hljs-params">WrappedComponent</span>) { 
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">props</span>) { 
+  <span class="hljs-comment">// 여기에서 컴포넌트 공용으로 적용될 추가적인 로직 구현</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...props</span>} /></span></span>; 
+  }; 
+}
+</code></pre><p><br></p><p>HOC는 다른 컴포넌트를 함수의 매개변수로 받는 점이 props를 통한 상속과는 다르다. 이를 사용해 여러 컴포넌트가 렌더링되기 이전에 특정한 로직을 실행하도록 할 수 있다. 다른 패턴들과 마찬가지로 클래스형 컴포넌트에서 자주 쓰였던 로직이지만, <strong>React.memo, forwardRef</strong>처럼 리액트의 기능에서도 여전히 사용되고 있다.</p><p><br></p><p>여러 컴포넌트에 공용된 로직을 적용하는 방법은 커스텀 훅이나 전역 상태를 사용할 수도 있기 때문에, HOC만의 장점이라고 보긴 어려울 수 있다. 이래도 되고, 저래도 된다면 굳이 사용할 필요가 있을까? 하지만 HOC는 공유하려는 로직을 <strong>컴포넌트 단위로 공용화</strong>하여 로직을 분리한다는 점은 커스텀 훅이나 전역상태의 사용과 구분된다. 즉 컴포넌트의 구조적인 접근으로 해결하는 점에서 유용할 수 있다.</p><p><br></p><h3 id="use-case-code-snippet">Use Case &#x26; Code Snippet</h3><p>그렇다면 HOC가 유용한 케이스를 코드와 함께 살펴보자.</p><p><br></p><p><strong>적용 이전</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const AdminPage = (props) ⇒ {
+  const isSignIn = <span class="hljs-built_in">useRecoilValue</span>(isSignInState)
+  const navigate = <span class="hljs-built_in">useNavigation</span>()
+  const <span class="hljs-selector-attr">[input, setInput]</span> = <span class="hljs-built_in">useState</span>('')  
+
+  <span class="hljs-built_in">if</span>(!isSignIn) {
+  return &#x3C;FallbackComponent />
+  }
+  
+  const handleInput = (e) => ...
+
+  return …
+}
+
+const MySettings = (props) ⇒ {
+  const isSignIn = <span class="hljs-built_in">useRecoilValue</span>(isSignInState)
+  const navigate = <span class="hljs-built_in">useNavigation</span>()
+  const param = <span class="hljs-built_in">useParam</span>();
+
+  <span class="hljs-built_in">if</span>(!isSignIn) {
+  return &#x3C;FallbackComponent />
+  }
+
+  <span class="hljs-built_in">useEffect</span>(() => {
+   <span class="hljs-built_in">if</span>(!param) {
+    .... 
+   }
+  } , <span class="hljs-selector-attr">[param]</span>) 
+
+  return …
+}
+</code></pre><p><strong>HOC 패턴 적용</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">withAuthorization</span>(<span class="hljs-params">WrappedComponent,FallbackComponent,checkAuthorization</span>) 
+{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">props</span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-title function_">checkAuthorization</span>()) {
+ 
+  <span class="hljs-comment">// 권한이 있는 경우 원래 컴포넌트 렌더링 </span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...props</span>} /></span></span>; } 
+   <span class="hljs-keyword">else</span> { 
+   <span class="hljs-comment">// 권한이 없는 경우 대체 컴포넌트 렌더링 </span>
+   <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">FallbackComponent</span> /></span></span>; 
+    } 
+  }; 
+}
+
+
+<span class="hljs-comment">// 사용 예시 </span>
+ <span class="hljs-keyword">const</span> <span class="hljs-title function_">Unauthorized</span> = (<span class="hljs-params"></span>) => <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>접근 권한이 없습니다.<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>;
+
+<span class="hljs-comment">// 권한 확인 로직(실제로는 더 복잡할 수 있음) </span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">checkUserIsAdmin</span>(<span class="hljs-params"></span>) {
+
+  <span class="hljs-comment">/* 로그인 여부를 전역상태로 확인하는 경우 */</span>
+  <span class="hljs-keyword">const</span> isSIgnIn = <span class="hljs-title function_">useRecoilValue</span>(isSignInState)
+
+  <span class="hljs-comment">/* 로그인 여부를 localStorage로 확인하는 경우 */</span>
+  <span class="hljs-keyword">const</span> localStorageIsSignIn = <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(’isSignIn’)
+  <span class="hljs-keyword">const</span> isSIgnIn = <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(localStorageIsSignIn)
+  
+<span class="hljs-keyword">return</span> isSignIn 
+}
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AdminPageWithAuthorization</span> = <span class="hljs-title function_">withAuthorization</span>(<span class="hljs-title class_">AdminPage</span>, <span class="hljs-title class_">Unauthorized</span>, checkUserIsAdmin);
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">MySettingsWithAuthorization</span> = <span class="hljs-title function_">withAuthorization</span>(<span class="hljs-title class_">MySettings</span>, <span class="hljs-title class_">Unauthorized</span>, checkUserIsAdmin);
+</code></pre><p>유저의 인증이 필요한 페이지에 HOC를 적용하는 snippet이다. 인증 로직을 컴포넌트 단위로 분리하여 생긴 장점을 확인할 수 있다. 기존 AdminPage와 MySettings에는 인증을 확인하기 위해 recoil의 전역 상태를 사용해도 여전히 중복된 코드가 추가된다.  인증되지 않은 상태에서 fallback을 보여주는 처리를 HOC가 담당하게 하여 중복되는 로직을 한곳으로 모으고, 각 컴포넌트에서는 각자의 로직을 담당한다.</p><p><br></p><p>간단한 예시여서 장점이 부각되지 않아 보일 수 있다. 이런 상황을 가정해보자. 각 컴포넌트의 내부에서 로직이 길고 복잡해지거나, isSignIn 상태를 사용하는 서로 다른 함수가 추가된다면, 코드의 가독성과 더욱 복잡해질 수 있다. 이러한 경우에 HOC의 장점이 더욱 보일 수 있을 것이다. 다음 예시를 보자.</p><p><br></p><p><strong>HOC 고차 컴포넌트 적용 이전</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">ComponentA</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> router = <span class="hljs-title function_">useRouter</span>();
+  <span class="hljs-keyword">const</span> { id } = router.<span class="hljs-property">query</span>;
+
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleClick</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/posts/<span class="hljs-subst">${id}</span>`</span>, { <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span> });
+    <span class="hljs-comment">// POST 요청에 대한 처리</span>
+  };
+
+  <span class="hljs-comment">// id를 다른 방식으로 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedId = <span class="hljs-string">`PostID-<span class="hljs-subst">${id}</span>`</span>;
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">if</span> (!id) {
+      router.<span class="hljs-title function_">push</span>(<span class="hljs-string">'/some-other-page'</span>); <span class="hljs-comment">// id가 nullish인 경우 리디렉션</span>
+    }
+  }, [id, router]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>></span>Send Post Request with ID<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Processed ID: {processedId}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ComponentB</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> router = <span class="hljs-title function_">useRouter</span>();
+  <span class="hljs-keyword">const</span> { id } = router.<span class="hljs-property">query</span>;
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+
+  <span class="hljs-comment">// 받아온 데이터를 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedData = data ? <span class="hljs-string">`Data for ID <span class="hljs-subst">${id}</span>:    <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(data)}</span>`</span> : <span class="hljs-string">'Loading...'</span>;
+
+  <span class="hljs-comment">// id를 다른 방식으로 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedId = <span class="hljs-string">`DataID-<span class="hljs-subst">${id}</span>`</span>;
+
+   <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">if</span> (!id) {
+      router.<span class="hljs-title function_">push</span>(<span class="hljs-string">'/some-other-page'</span>); <span class="hljs-comment">// id가 nullish인 경우 리디렉션</span>
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchData</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/data/<span class="hljs-subst">${id}</span>`</span>);
+        <span class="hljs-keyword">const</span> jsonData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-title function_">setData</span>(jsonData); <span class="hljs-comment">// GET 요청으로 받은 데이터 저장</span>
+      };
+  
+      <span class="hljs-title function_">fetchData</span>();
+    }
+  }, [id, router]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{processedData}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Processed ID: {processedId}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+</code></pre><p><strong>HOC 고차 컴포넌트 적용 </strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">withIdFromQuery</span>(<span class="hljs-params">WrappedComponent</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params">props</span>) {
+    <span class="hljs-keyword">const</span> router = <span class="hljs-title function_">useRouter</span>();
+    <span class="hljs-keyword">const</span> { id } = router.<span class="hljs-property">query</span>;
+
+    <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+      <span class="hljs-keyword">if</span> (!id) {
+        router.<span class="hljs-title function_">push</span>(<span class="hljs-string">'/some-other-page'</span>); <span class="hljs-comment">// id가 nullish인 경우 리디렉션</span>
+      }
+    }, [id, router]);
+
+    <span class="hljs-comment">// id가 있는 경우, WrappedComponent에 id와 나머지 props를 전달</span>
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">WrappedComponent</span> {<span class="hljs-attr">...props</span>} <span class="hljs-attr">id</span>=<span class="hljs-string">{id}</span> /></span></span>;
+  };
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ComponentA</span>(<span class="hljs-params">{ id }</span>) {
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleClick</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/posts/<span class="hljs-subst">${id}</span>`</span>, { <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span> });
+    <span class="hljs-comment">// POST 요청에 대한 처리</span>
+  };
+
+
+  <span class="hljs-comment">// id를 다른 방식으로 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedId = <span class="hljs-string">`PostID-<span class="hljs-subst">${id}</span>`</span>;
+
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span>></span>Send Post Request with ID<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Processed ID: {processedId}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title function_">withIdFromQuery</span>(<span class="hljs-title class_">ComponentA</span>);
+
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ComponentB</span>(<span class="hljs-params">{ id }</span>) {
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+
+  <span class="hljs-comment">// 받아온 데이터를 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedData = ...
+
+  <span class="hljs-comment">// id를 다른 방식으로 가공하는 로직</span>
+  <span class="hljs-keyword">const</span> processedId = <span class="hljs-string">`DataID-<span class="hljs-subst">${id}</span>`</span>;
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchData</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) => {...};
+    <span class="hljs-title function_">fetchData</span>();
+  }, [id]);
+
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{processedData}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+      <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Processed ID: {processedId}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+  );
+}
+</code></pre><p><br></p><p>이 예시에선 url의 query parameter id가 null일 경우 페이지를 이동하고, 이 id에 따라 컴포넌트 A,B에서는 각기 다른 로직을 구성한다. !id 라우팅 이동 동작은 A, B에서 동일하나, 각자의 컴포넌트에선 id를 사용하여 JSX 렌더링과 이벤트, 데이터 fetch 등 각기 다른 로직을 포함한다. </p><p><br></p><p>같은 동작을 위해 import, useEffect, router.push 같은 중복된 코드가 추가되는 것도 문제다. 그러나 더 큰 문제는 같은 동작을 하는 <strong>코드가 산재</strong>하게 되는 것이다. id가 nullish일 시 라우팅 동작에 에러가 생긴다면 컴포넌트 A, B에서 id를 사용하는 로직에서 모두 문제를 살펴봐야 한다. 반대도 마찬가지다. 에러를 찾을 때까지 컴포넌트 A의 라우팅 동작, A의 핸들러, B의 라우팅 동작, B의 데이터 fetching, A,B의 렌더링까지 모두 살펴봐야한다. 보통 웹 서비스에서 컴포넌트는 이보다 더욱 복잡할 것이기에, 문제를 찾는 것이 무척 까다로워진다. 또한 코드가 작성된 이후 몇개월만 지나도 유지보수도 매우 까다로워질 것이다.</p><p><br></p><p>이를 통해 HOC 패턴의 장점은 어느정도 분명히 알게 되었다.</p><ul><li>여러 컴포넌트가 동일한 상태, 로직을 공유하여 같은 동작을 할 때 적용</li><li>각 컴포넌트에서 공통된 동작과 내부의 로직을 분리하여 가독성, 테스팅, 디버깅 등의 이점이 생긴다</li><li>이를 컴포넌트 구조적인 접근으로 해결하는 방법</li></ul><p><br></p><p>Fluent React에서는 HOC와 hook 패턴의 비교를 논의하는데, 이 또한 유익해보인다.</p><p><br></p><p><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1708864841/r7m59bwruixq4vld2cqg.png"></p><blockquote>이 표에서 우리는 HOCs(고차 컴포넌트)와 후크가 컴포넌트 간에 로직을 공유하는 데 있어 React에서 핵심적인 역할을 한다는 것을 관찰할 수 있으며, 이들은 약간 다른 사용 사례에 적합합니다. HOCs는 여러 컴포넌트 간에 로직을 공유하는 데 뛰어나며, 특히 <strong>감싸진 컴포넌트의 렌더링을 제어하고 속성을 조작</strong>하여 컴포넌트에 <strong>추가 데이터나 함수를 제공</strong>하는 데 능숙합니다. 이들은 감싸진 컴포넌트 외부에서 상태를 관리하고<strong> 감싸진 컴포넌트와 관련된 생명주기 로직을 캡슐화</strong>할 수 있습니다. 그러나, 특히 많은 HOCs가 함께 중첩될 때 잘 관리되지 않으면 "래퍼 지옥"으로 이어질 수 있습니다. 이러한 중첩은 테스팅을 더 복잡하게 만들 수 있으며, <u>특히 깊게 중첩된 HOCs와 함께할 때 TypeScript로 타입 안전성을 확보하는 것이 까다로울 수 있습니다</u>.</blockquote><blockquote>반면에, 훅Hook은 컴포넌트 내부나 유사한 컴포넌트 간에 로직을 추출하고 공유하는 데 이상적이며, 추가적인 컴포넌트 계층을 추가하지 않아 "래퍼 지옥" 시나리오를 피할 수 있습니다. HOCs와 달리, 훅은 직접적으로 렌더링에 영향을 주지 않으며 <strong>속성을 직접 주입하거나 조작할 수 없습니다</strong>. <strong>훅은 함수형 컴포넌트 내부의 로컬 상태를 관리</strong>하고 useEffect 훅을 포함한 다른 훅을 사용하여 생명주기 이벤트를 처리하도록 설계되었습니다. 훅은 구성의 용이성을 촉진하며 HOCs보다 격리하기 쉬워 <strong>일반적으로 테스트하기 더 쉽습니다</strong>. 또한, TypeScript와 함께 사용될 때, 훅은 더 나은 타입 추론을 제공하고 타입을 지정하기 쉬워 타입 오류와 관련된 버그를 줄일 수 있습니다.</blockquote><blockquote>HOCs와 훅Hook 모두 로직 재사용 메커니즘을 제공하지만, 훅은 함수형 컴포넌트 내에서 상태, 생명주기 이벤트 및 기타 React 기능을 관리하는 데 더 직접적이고 덜 복잡한 접근 방식을 제공합니다. 반면에, HOCs는 컴포넌트에 행동을 주입하는 더 구조화된 방식을 제공하는데, <strong>이는 더 큰 코드베이스나 아직 훅을 채택하지 않은 코드베이스에서 유용</strong>할 수 있습니다. 각각은 자신만의 장점 세트를 가지고 있으며, HOCs 또는 훅을 사용할지의 선택은 대부분 프로젝트의 특정 요구 사항과 팀의 이러한 패턴에 대한 익숙함에 크게 의존할 것입니다.</blockquote><p><br></p><p><br></p>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/47","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 4 - 컴포넌트 설계 패턴 (Compound)"}],["$","p",null,{"className":"text-sm","children":"2024-02-26"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/45","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 2 - 컴포넌트 설계 패턴 (presentational/container)"}],["$","p",null,{"className":"text-sm","children":"2024-02-22"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC) - teklog"}],["$","meta","1",{"name":"description","content":"지난 글에 이어서, Fluent React에서 다루는 컴포넌트 설계 패턴. 이번에는 HOC 패턴을 다뤄본다.High Order Component (HOC) 고차 컴포넌트고차 컴포넌트(HOC)는 다른 컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 컴포넌트입니다. HOC는 여러 컴포넌트 간에 공통적으로 사용되는 동작을 반복하지 않고도 공유할 경우에 유용합니"}],["$","meta","2",{"property":"og:title","content":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC) - teklog"}],["$","meta","3",{"property":"og:description","content":"지난 글에 이어서, Fluent React에서 다루는 컴포넌트 설계 패턴. 이번에는 HOC 패턴을 다뤄본다.High Order Component (HOC) 고차 컴포넌트고차 컴포넌트(HOC)는 다른 컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 컴포넌트입니다. HOC는 여러 컴포넌트 간에 공통적으로 사용되는 동작을 반복하지 않고도 공유할 경우에 유용합니"}],["$","meta","4",{"property":"og:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1708864841/r7m59bwruixq4vld2cqg.png"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC) - teklog"}],["$","meta","7",{"name":"twitter:description","content":"지난 글에 이어서, Fluent React에서 다루는 컴포넌트 설계 패턴. 이번에는 HOC 패턴을 다뤄본다.High Order Component (HOC) 고차 컴포넌트고차 컴포넌트(HOC)는 다른 컴포넌트를 인자로 받아 새로운 컴포넌트를 반환하는 컴포넌트입니다. HOC는 여러 컴포넌트 간에 공통적으로 사용되는 동작을 반복하지 않고도 공유할 경우에 유용합니"}],["$","meta","8",{"name":"twitter:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1708864841/r7m59bwruixq4vld2cqg.png"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

@@ -1,0 +1,225 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","26"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","26","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","26","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T3073,<p>학습 목적을 위해 Next.js의 <a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration" rel="noopener noreferrer" target="_blank">Incremental Static Regeneration (ISR) 공식문서</a>를 번역했습니다. 오타, 의역이 있을 수 있습니다. leetekwoo@gmail.com으로 피드백 주시면 감사하겠습니다.</p><p><br></p><p>---</p><h1>Incremental Static Regeneration</h1><p><br></p><p>Next.js는 웹사이트의 빌드 이후에 정적 페이지를 생성하거나 업데이트할 수 있게 해줍니다. Incremental Static Regeneration(ISR)은 사이트 전체를 리빌드할 필요없이 페이지 단위로 정적 생성을 사용할 수 있습니다. ISR을 이용하여 수백만의 페이지로 확장하면서 정적 생성의 이점을 유지할 수 있습니다.</p><p><br></p><p>ISR을 사용하기 위해서 getStaticProps의 props에 revalidate를 추가합니다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">function Blog({ posts }) {
+  return (
+    &lt;ul&gt;
+      {posts.map((post) =&gt; (
+        &lt;li key={post.id}&gt;{post.title}&lt;/li&gt;))}
+    &lt;/ul&gt;)
+}
+
+/* 이 함수는 서버사이드에서 빌드 타임에 호출됩니다. 만일 revalidation이 가능하고, 새로운 요청이 들어온다면 서버리스 함수에서 다시 호출될 수 있습니다*/
+
+export async function getStaticProps() {
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+  return {
+    props: {
+      posts,
+    },
+
+/* Next.js는 페이지 재생성을 시도할 것입니다.
+ - 요청이 들어오면 
+ - 최대 10초마다 1회씩 */
+    revalidate: 10, // 초마다
+  }
+}
+
+/* 이 함수는 서버사이드에서 빌드 타임에 호출됩니다. 만일 경로가 생성되지 않았다면, 서버리스 함수에서 다시 호출될 수 있습니다.*/
+export async function getStaticPaths() {
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+// posts 기반으로 프리 렌더링하고자 하는 경로들을 얻습니다.
+  const paths = posts.map((post) =&gt; ({
+    params: { id: post.id },
+  }))
+
+/* 오직 이 경로들만 빌드 타임에 프리렌더 할 것입니다.
+{ fallback: blocking }은 경로가 존재하지 않는다면 온디멘드 방식으로 페이지를 서버-렌더링 할 것입니다. */
+  return { paths, fallback: 'blocking' }
+}
+
+export default Blog
+</pre><p>빌드 타임에 프리 렌더링된 페이지의 요청이 이루어지면 초기에는 캐싱된 페이지를 보여줄 것입니다.</p><p><br></p><ul><li>최초 요청 이후 10초 전까지 페이지에 대한 모든 요청은 즉시 캐시됩니다.</li><li>10초 후 다음 요청 시 캐시된(stale) 페이지가 계속 표시됩니다.</li><li>Next.js는 그 페이지의 재생성을 백그라운드에서 트리거합니다.</li><li>페이지가 성공적으로 생성되면 Next.js는 캐시를 무효화하고 업데이트된 페이지를 보여줍니다. 백그라운드에서 재생성에 실패한다면 오래된 페이지는 여전히 변하지 않고 남아있습니다.</li></ul><p><br></p><p>생성되지 않은 경로로 요청이 이루어질 때 Next.js는 첫 요청에 그 페이지를 서버-렌더링 할 것입니다. 이후의 요청들은 캐시로부터 정적 파일을 서빙할 것입니다. Vercel의 ISR은 캐시를 전역으로 유지하고 롤백을 처리합니다.</p><p><br></p><p>Note: 업스트림 데이터 공급자의 캐싱이 기본적으로 활성되었는지 확인하십시오. 비활성화로 설정해야 사용할 수 있습니다. (예시: useCdn: false) 그렇지 않다면 revalidation은 ISR 캐시로 새로운 데이터를 업데이트 할 수 없게 됩니다. Cache-control 헤더가 반환될 때 CDN (엔드포인트가 요청될 시)에서 캐싱이 발생할 수 있습니다.</p><p><br></p><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#on-demand-revalidation" rel="noopener noreferrer" target="_blank"><strong>On-demand Revalidation</strong></a></h2><p>온디멘드 Revalidation</p><p><br></p><p>revalidate의 시간을 60으로 설정하면 모든 방문자들은 1분 동안 동일한 사이트를 보게될 것입니다. 캐시를 무효화시키는 유일한 방법은 누군가 그 페이지를 1분이 지난 후에 방문하는 것입니다.</p><p><br></p><p>v12.2.0 버전에서부터 Next.js는 수동으로 특정한 페이지의 캐시를 삭제하기 위해 온디멘드 ISR을 제공합니다. 이는 다음과 같은 상황에서웹사이트의 업데이트를 더 쉽게 만듭니다.</p><p><br></p><ul><li>headless CMS에서 생성된 컨텐츠가 생성되거나 업데이트될 때</li><li>E-커머스 메타데이터가 변경될 때 (가격, 설명, 카테고리, 리뷰, etc.)</li></ul><p><br></p><p>온디멘디 revalidation을 사용하기 위해 getStaticProps 내부에서 revalidate를 특정지을 필요는 없습니다. revalidate가 없다면, Next.js는 기본 값인 false (revalidation 없음) 을 사용하고, revalidate()가 호출될 때만 페이지를 온디멘드 방식으로 revalidate할 것입니다.</p><p><br></p><p>Note: 미들웨어<a href="https://nextjs.org/docs/advanced-features/middleware" rel="noopener noreferrer" target="_blank">Middleware</a>는 온디멘드 ISR 요청에서 실행되지 않습니다. 그 대신 revalidate하려는 동일한 경로에서 revalidate()를 호출할 것입니다. 예를 들어, pages/blog/[sug].js에서 /post-1을 /blog/post-1로 덮어쓴다면 res.revalidate(’/blog/post-1’)를 호출해야합니다.</p><p><br></p><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#using-on-demand-revalidation" rel="noopener noreferrer" target="_blank"><strong>Using On-Demand Revalidation</strong></a></h2><p>온디멘드 Revalidation 사용하기</p><p><br></p><p>첫째로, 당신의 Next.js 앱에서만 알 수 있는 비밀 토큰을 만드세요. 이 토큰은 revalidation API Route에 권한 없이 접근하는 것을 막아줍니다. 다음 URL structure를 따라 (수동이나 웹훅을 사용하여) 그 경로에 접근할 수 있습니다.</p><p>https://&lt;your-site.com&gt;/api/revalidate?secret=&lt;token&gt;</p><p>그 다음, 어플리케이션의 환경변수<a href="https://nextjs.org/docs/basic-features/environment-variables" rel="noopener noreferrer" target="_blank">Environment Variable</a>에 그 토큰을 더하시오. 마지막으로 revalidation API 경로를 만드세요.</p><p><br></p><pre class="ql-syntax" spellcheck="false">// pages/api/revalidate.js
+
+export default async function handler(req, res) {
+  // 암호가 유효한 요청인지 확인하십시오. 
+  if (req.query.secret !== process.env.MY_SECRET_TOKEN) {
+    return res.status(401).json({ message: 'Invalid token' })
+  }
+
+  try {
+    // 이것은 덮여쓰여진 경로가 아닌 실제 경로가 되어야합니다.
+    // 예시 :  "/blog/[slug]"라면 경로는"/blog/post-1"가 되어야 합니다.
+    await res.revalidate('/path-to-revalidate')
+    return res.json({ revalidated: true })
+  } catch (err) {
+    // If there was an error, Next.js will continue
+		/* 에러가 발생한다면 Next.js는 마지막에 성공적으로 생성한 페이지를 계속 보여줍니다. */
+    return res.status(500).send('Error revalidating')
+  }
+}
+</pre><p><a href="https://on-demand-isr.vercel.app/" rel="noopener noreferrer" target="_blank">데모</a>를 확인하여 온디멘드 revalidation을 확인하고 피드백을 남겨주세요.</p><p><br></p><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#testing-on-demand-isr-during-development" rel="noopener noreferrer" target="_blank"><strong>Testing on-Demand ISR during development</strong></a></h2><p>온디멘드 ISR을 개발 중에 테스트하기</p><p><br></p><p>로컬에서 next dev를 실행하면 getStaticProps는 모든 요청에 호출됩니다. 온디멘드 ISR 설정이 정확한지 확인하려면 프로덕션 빌드를 생성하고 프로덕션 서버를 실행해야 합니다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">$ next build
+$ next start
+
+</pre><p>이후 정적 페이지들이 성공적으로 revalidate되었는지 확인할 수 있습니다.</p><p><br></p><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#error-handling-and-revalidation" rel="noopener noreferrer" target="_blank"><strong>Error handling and revalidation</strong></a></h2><p>에러 핸들링과 revalidation</p><p><br></p><p>백그라운드 재생성을 처리하면서 getStaticProps 내부에 에러가 발생하거나 수동으로 에러를 throw한다면, 마지막에 성공적으로 생성된 페이지가 여전히 보일 것입니다. 이어진 다음 요청에서 Next.js는 getStaticProps의 재호출을 시도할 것입니다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">export async function getStaticProps() {
+ /* 이 요청이 예외처리되지 못한 에러를 throw한다면, Next.js는 현재 보여지는 페이지를 무효화 시키지 않고 getStaticProps를 다음 요청에 재시도할 것입니다. */
+
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+  if (!res.ok) {
+    // If there is a server error, you might want to
+    // throw an error instead of returning so that the cache is not updated
+    // until the next successful request.
+/* 서버 에러가 발생한다면 캐시가 업데이트 되지 않도록 반환 대신 에러를 throw 하는 것이 좋습니다. */
+    throw new Error(`Failed to fetch posts, received status ${res.status}`)
+  }
+
+// 요청이 성공된다면 posts를 반환하고 10초마다 revalidate합니다.
+  return {
+    props: {
+      posts,
+    },
+    revalidate: 10,
+  }
+}
+</pre><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#self-hosting-isr" rel="noopener noreferrer" target="_blank"><strong>Self-hosting ISR</strong></a></h2><p>자체 호스팅 ISR</p><p><br></p><p>ISR은 next start를 사용할 시 자체-호스팅되는 Next.js 사이트에서 즉시 작동합니다. 이 접근을 <a href="https://kubernetes.io/" rel="noopener noreferrer" target="_blank">Kubernetes</a>나&nbsp;<a href="https://www.nomadproject.io/" rel="noopener noreferrer" target="_blank">HashiCorp Nomad</a> 같은 컨테이너 오케스트레이터에 배포할 때 사용할 수 있습니다. 생성된 asset은 각 포드의 메모리에 저장됩니다. 즉 각 포드는 정적 파일의 사본을 가집니다. 오래된(stale) 데이터는 특정한 포드가 요청을 받을 때까지 보여질 것입니다.</p><p><br></p><p>모든 포드에 일관성을 유지하기 위해 인메모리 캐싱을 비활성화 해야합니다. 이는 Next.js 서버가 파일 시스템에서 ISR에 의해 생성된 asset만 활용하도록 알릴 것입니다.</p><p><br></p><p>Kubernetes 포드(또는 유사한 설정)의 공유 네트워크 마운트를 사용하여 다른 컨테이너 사이의 동일한 파일 시스템 캐시를 재사용할 수 있습니다. 같은 마운트를 공유하여, next/image 캐시를 담고있는 .next 폴더는 공유되고 재사용될 수 있습니다.</p><p>인메모리 캐싱을 비활성화하려면, next.config.js 파일의 isrMemoryCacheSize를 0으로 설정하십시오.</p><p><br></p><pre class="ql-syntax" spellcheck="false">module.exports = {
+  experimental: {
+    // 기본값은 50MB입니다.
+    isrMemoryCacheSize: 0,
+  },
+}
+</pre><p><strong>Note</strong>: 공유 마운트가 구성된 방식에 따라 캐시를 동시에 업데이트하려는 여러 포드 간의 경합 조건을 고려해야 할 수 있습니다. (쿠버네티스 지식이 전무하여 이해 불가)</p><p><br></p><h2><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#related" rel="noopener noreferrer" target="_blank"><strong>Related</strong></a></h2><p>관련 문서</p><p>더 많은 정보를 위해 다음 섹션을 확인해보세요.</p><p><br></p><p><a href="https://nextjs.org/docs/basic-features/data-fetching/get-static-paths" rel="noopener noreferrer" target="_blank">Data Fetching: getStaticPaths | Next.js</a></p>...
+1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Next.js - ISR 공식문서 번역"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2022/11/09"}],["$","p",null,{"children":"n°26"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","Next.js"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+25:T432e,<p>학습 목적을 위해 Next.js의 <a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration" rel="noopener noreferrer">Incremental Static Regeneration (ISR) 공식문서</a>를 번역했습니다. 오타, 의역이 있을 수 있습니다. leetekwoo@gmail.com으로 피드백 주시면 감사하겠습니다.</p><p><br></p><p>---</p><h1 id="incremental-static-regeneration">Incremental Static Regeneration</h1><p><br></p><p>Next.js는 웹사이트의 빌드 이후에 정적 페이지를 생성하거나 업데이트할 수 있게 해줍니다. Incremental Static Regeneration(ISR)은 사이트 전체를 리빌드할 필요없이 페이지 단위로 정적 생성을 사용할 수 있습니다. ISR을 이용하여 수백만의 페이지로 확장하면서 정적 생성의 이점을 유지할 수 있습니다.</p><p><br></p><p>ISR을 사용하기 위해서 getStaticProps의 props에 revalidate를 추가합니다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Blog</span>(<span class="hljs-params">{ posts }</span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">ul</span>></span>
+      {posts.map((post) => (
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{post.id}</span>></span>{post.title}<span class="hljs-tag">&#x3C;/<span class="hljs-name">li</span>></span>))}
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">ul</span>></span></span>)
+}
+
+<span class="hljs-comment">/* 이 함수는 서버사이드에서 빌드 타임에 호출됩니다. 만일 revalidation이 가능하고, 새로운 요청이 들어온다면 서버리스 함수에서 다시 호출될 수 있습니다*/</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getStaticProps</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://.../posts'</span>)
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> res.<span class="hljs-title function_">json</span>()
+
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">props</span>: {
+      posts,
+    },
+
+<span class="hljs-comment">/* Next.js는 페이지 재생성을 시도할 것입니다.
+ - 요청이 들어오면 
+ - 최대 10초마다 1회씩 */</span>
+    <span class="hljs-attr">revalidate</span>: <span class="hljs-number">10</span>, <span class="hljs-comment">// 초마다</span>
+  }
+}
+
+<span class="hljs-comment">/* 이 함수는 서버사이드에서 빌드 타임에 호출됩니다. 만일 경로가 생성되지 않았다면, 서버리스 함수에서 다시 호출될 수 있습니다.*/</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getStaticPaths</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://.../posts'</span>)
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> res.<span class="hljs-title function_">json</span>()
+
+<span class="hljs-comment">// posts 기반으로 프리 렌더링하고자 하는 경로들을 얻습니다.</span>
+  <span class="hljs-keyword">const</span> paths = posts.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">post</span>) =></span> ({
+    <span class="hljs-attr">params</span>: { <span class="hljs-attr">id</span>: post.<span class="hljs-property">id</span> },
+  }))
+
+<span class="hljs-comment">/* 오직 이 경로들만 빌드 타임에 프리렌더 할 것입니다.
+{ fallback: blocking }은 경로가 존재하지 않는다면 온디멘드 방식으로 페이지를 서버-렌더링 할 것입니다. */</span>
+  <span class="hljs-keyword">return</span> { paths, <span class="hljs-attr">fallback</span>: <span class="hljs-string">'blocking'</span> }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">Blog</span>
+</code></pre><p>빌드 타임에 프리 렌더링된 페이지의 요청이 이루어지면 초기에는 캐싱된 페이지를 보여줄 것입니다.</p><p><br></p><ul><li>최초 요청 이후 10초 전까지 페이지에 대한 모든 요청은 즉시 캐시됩니다.</li><li>10초 후 다음 요청 시 캐시된(stale) 페이지가 계속 표시됩니다.</li><li>Next.js는 그 페이지의 재생성을 백그라운드에서 트리거합니다.</li><li>페이지가 성공적으로 생성되면 Next.js는 캐시를 무효화하고 업데이트된 페이지를 보여줍니다. 백그라운드에서 재생성에 실패한다면 오래된 페이지는 여전히 변하지 않고 남아있습니다.</li></ul><p><br></p><p>생성되지 않은 경로로 요청이 이루어질 때 Next.js는 첫 요청에 그 페이지를 서버-렌더링 할 것입니다. 이후의 요청들은 캐시로부터 정적 파일을 서빙할 것입니다. Vercel의 ISR은 캐시를 전역으로 유지하고 롤백을 처리합니다.</p><p><br></p><p>Note: 업스트림 데이터 공급자의 캐싱이 기본적으로 활성되었는지 확인하십시오. 비활성화로 설정해야 사용할 수 있습니다. (예시: useCdn: false) 그렇지 않다면 revalidation은 ISR 캐시로 새로운 데이터를 업데이트 할 수 없게 됩니다. Cache-control 헤더가 반환될 때 CDN (엔드포인트가 요청될 시)에서 캐싱이 발생할 수 있습니다.</p><p><br></p><h2 id=""><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#on-demand-revalidation" rel="noopener noreferrer"><strong>On-demand Revalidation</strong></a></h2><p>온디멘드 Revalidation</p><p><br></p><p>revalidate의 시간을 60으로 설정하면 모든 방문자들은 1분 동안 동일한 사이트를 보게될 것입니다. 캐시를 무효화시키는 유일한 방법은 누군가 그 페이지를 1분이 지난 후에 방문하는 것입니다.</p><p><br></p><p>v12.2.0 버전에서부터 Next.js는 수동으로 특정한 페이지의 캐시를 삭제하기 위해 온디멘드 ISR을 제공합니다. 이는 다음과 같은 상황에서웹사이트의 업데이트를 더 쉽게 만듭니다.</p><p><br></p><ul><li>headless CMS에서 생성된 컨텐츠가 생성되거나 업데이트될 때</li><li>E-커머스 메타데이터가 변경될 때 (가격, 설명, 카테고리, 리뷰, etc.)</li></ul><p><br></p><p>온디멘디 revalidation을 사용하기 위해 getStaticProps 내부에서 revalidate를 특정지을 필요는 없습니다. revalidate가 없다면, Next.js는 기본 값인 false (revalidation 없음) 을 사용하고, revalidate()가 호출될 때만 페이지를 온디멘드 방식으로 revalidate할 것입니다.</p><p><br></p><p>Note: 미들웨어<a href="https://nextjs.org/docs/advanced-features/middleware" rel="noopener noreferrer">Middleware</a>는 온디멘드 ISR 요청에서 실행되지 않습니다. 그 대신 revalidate하려는 동일한 경로에서 revalidate()를 호출할 것입니다. 예를 들어, pages/blog/[sug].js에서 /post-1을 /blog/post-1로 덮어쓴다면 res.revalidate(’/blog/post-1’)를 호출해야합니다.</p><p><br></p><h2 id="-1"><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#using-on-demand-revalidation" rel="noopener noreferrer"><strong>Using On-Demand Revalidation</strong></a></h2><p>온디멘드 Revalidation 사용하기</p><p><br></p><p>첫째로, 당신의 Next.js 앱에서만 알 수 있는 비밀 토큰을 만드세요. 이 토큰은 revalidation API Route에 권한 없이 접근하는 것을 막아줍니다. 다음 URL structure를 따라 (수동이나 웹훅을 사용하여) 그 경로에 접근할 수 있습니다.</p><p>https://&#x3C;your-site.com>/api/revalidate?secret=&#x3C;token></p><p>그 다음, 어플리케이션의 환경변수<a href="https://nextjs.org/docs/basic-features/environment-variables" rel="noopener noreferrer">Environment Variable</a>에 그 토큰을 더하시오. 마지막으로 revalidation API 경로를 만드세요.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-comment">// pages/api/revalidate.js</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">handler</span>(<span class="hljs-params">req, res</span>) {
+  <span class="hljs-comment">// 암호가 유효한 요청인지 확인하십시오. </span>
+  <span class="hljs-keyword">if</span> (req.<span class="hljs-property">query</span>.<span class="hljs-property">secret</span> !== process.<span class="hljs-property">env</span>.<span class="hljs-property">MY_SECRET_TOKEN</span>) {
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">401</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">message</span>: <span class="hljs-string">'Invalid token'</span> })
+  }
+
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// 이것은 덮여쓰여진 경로가 아닌 실제 경로가 되어야합니다.</span>
+    <span class="hljs-comment">// 예시 :  "/blog/[slug]"라면 경로는"/blog/post-1"가 되어야 합니다.</span>
+    <span class="hljs-keyword">await</span> res.<span class="hljs-title function_">revalidate</span>(<span class="hljs-string">'/path-to-revalidate'</span>)
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">json</span>({ <span class="hljs-attr">revalidated</span>: <span class="hljs-literal">true</span> })
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-comment">// If there was an error, Next.js will continue</span>
+		<span class="hljs-comment">/* 에러가 발생한다면 Next.js는 마지막에 성공적으로 생성한 페이지를 계속 보여줍니다. */</span>
+    <span class="hljs-keyword">return</span> res.<span class="hljs-title function_">status</span>(<span class="hljs-number">500</span>).<span class="hljs-title function_">send</span>(<span class="hljs-string">'Error revalidating'</span>)
+  }
+}
+</code></pre><p><a href="https://on-demand-isr.vercel.app/" rel="noopener noreferrer">데모</a>를 확인하여 온디멘드 revalidation을 확인하고 피드백을 남겨주세요.</p><p><br></p><h2 id="-2"><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#testing-on-demand-isr-during-development" rel="noopener noreferrer"><strong>Testing on-Demand ISR during development</strong></a></h2><p>온디멘드 ISR을 개발 중에 테스트하기</p><p><br></p><p>로컬에서 next dev를 실행하면 getStaticProps는 모든 요청에 호출됩니다. 온디멘드 ISR 설정이 정확한지 확인하려면 프로덕션 빌드를 생성하고 프로덕션 서버를 실행해야 합니다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ruby"><span class="hljs-variable">$ </span><span class="hljs-keyword">next</span> build
+<span class="hljs-variable">$ </span><span class="hljs-keyword">next</span> start
+
+</code></pre><p>이후 정적 페이지들이 성공적으로 revalidate되었는지 확인할 수 있습니다.</p><p><br></p><h2 id="-3"><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#error-handling-and-revalidation" rel="noopener noreferrer"><strong>Error handling and revalidation</strong></a></h2><p>에러 핸들링과 revalidation</p><p><br></p><p>백그라운드 재생성을 처리하면서 getStaticProps 내부에 에러가 발생하거나 수동으로 에러를 throw한다면, 마지막에 성공적으로 생성된 페이지가 여전히 보일 것입니다. 이어진 다음 요청에서 Next.js는 getStaticProps의 재호출을 시도할 것입니다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getStaticProps</span>(<span class="hljs-params"></span>) {
+ <span class="hljs-comment">/* 이 요청이 예외처리되지 못한 에러를 throw한다면, Next.js는 현재 보여지는 페이지를 무효화 시키지 않고 getStaticProps를 다음 요청에 재시도할 것입니다. */</span>
+
+  <span class="hljs-keyword">const</span> res = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'https://.../posts'</span>)
+  <span class="hljs-keyword">const</span> posts = <span class="hljs-keyword">await</span> res.<span class="hljs-title function_">json</span>()
+
+  <span class="hljs-keyword">if</span> (!res.<span class="hljs-property">ok</span>) {
+    <span class="hljs-comment">// If there is a server error, you might want to</span>
+    <span class="hljs-comment">// throw an error instead of returning so that the cache is not updated</span>
+    <span class="hljs-comment">// until the next successful request.</span>
+<span class="hljs-comment">/* 서버 에러가 발생한다면 캐시가 업데이트 되지 않도록 반환 대신 에러를 throw 하는 것이 좋습니다. */</span>
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`Failed to fetch posts, received status <span class="hljs-subst">${res.status}</span>`</span>)
+  }
+
+<span class="hljs-comment">// 요청이 성공된다면 posts를 반환하고 10초마다 revalidate합니다.</span>
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">props</span>: {
+      posts,
+    },
+    <span class="hljs-attr">revalidate</span>: <span class="hljs-number">10</span>,
+  }
+}
+</code></pre><h2 id="-4"><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#self-hosting-isr" rel="noopener noreferrer"><strong>Self-hosting ISR</strong></a></h2><p>자체 호스팅 ISR</p><p><br></p><p>ISR은 next start를 사용할 시 자체-호스팅되는 Next.js 사이트에서 즉시 작동합니다. 이 접근을 <a href="https://kubernetes.io/" rel="noopener noreferrer">Kubernetes</a>나 <a href="https://www.nomadproject.io/" rel="noopener noreferrer">HashiCorp Nomad</a> 같은 컨테이너 오케스트레이터에 배포할 때 사용할 수 있습니다. 생성된 asset은 각 포드의 메모리에 저장됩니다. 즉 각 포드는 정적 파일의 사본을 가집니다. 오래된(stale) 데이터는 특정한 포드가 요청을 받을 때까지 보여질 것입니다.</p><p><br></p><p>모든 포드에 일관성을 유지하기 위해 인메모리 캐싱을 비활성화 해야합니다. 이는 Next.js 서버가 파일 시스템에서 ISR에 의해 생성된 asset만 활용하도록 알릴 것입니다.</p><p><br></p><p>Kubernetes 포드(또는 유사한 설정)의 공유 네트워크 마운트를 사용하여 다른 컨테이너 사이의 동일한 파일 시스템 캐시를 재사용할 수 있습니다. 같은 마운트를 공유하여, next/image 캐시를 담고있는 .next 폴더는 공유되고 재사용될 수 있습니다.</p><p>인메모리 캐싱을 비활성화하려면, next.config.js 파일의 isrMemoryCacheSize를 0으로 설정하십시오.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-java"><span class="hljs-keyword">module</span>.<span class="hljs-keyword">exports</span> = {
+  experimental: {
+    <span class="hljs-comment">// 기본값은 50MB입니다.</span>
+    isrMemoryCacheSize: <span class="hljs-number">0</span>,
+  },
+}
+</code></pre><p><strong>Note</strong>: 공유 마운트가 구성된 방식에 따라 캐시를 동시에 업데이트하려는 여러 포드 간의 경합 조건을 고려해야 할 수 있습니다. (쿠버네티스 지식이 전무하여 이해 불가)</p><p><br></p><h2 id="-5"><a href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#related" rel="noopener noreferrer"><strong>Related</strong></a></h2><p>관련 문서</p><p>더 많은 정보를 위해 다음 섹션을 확인해보세요.</p><p><br></p><p><a href="https://nextjs.org/docs/basic-features/data-fetching/get-static-paths" rel="noopener noreferrer">Data Fetching: getStaticPaths | Next.js</a></p>...
+22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Next.js - ISR 공식문서 번역 - teklog"}],["$","meta","1",{"name":"description","content":"학습 목적을 위해 Next.js의 Incremental Static Regeneration (ISR) 공식문서를 번역했습니다. 오타, 의역이 있을 수 있습니다. leetekwoo@gmail.com으로 피드백 주시면 감사하겠습니다.---Incremental Static RegenerationNext.js는 웹사이트의 빌드 이후에 정적 페이지를 생성하거나 업데"}],["$","meta","2",{"property":"og:title","content":"Next.js - ISR 공식문서 번역 - teklog"}],["$","meta","3",{"property":"og:description","content":"학습 목적을 위해 Next.js의 Incremental Static Regeneration (ISR) 공식문서를 번역했습니다. 오타, 의역이 있을 수 있습니다. leetekwoo@gmail.com으로 피드백 주시면 감사하겠습니다.---Incremental Static RegenerationNext.js는 웹사이트의 빌드 이후에 정적 페이지를 생성하거나 업데"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Next.js - ISR 공식문서 번역 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"학습 목적을 위해 Next.js의 Incremental Static Regeneration (ISR) 공식문서를 번역했습니다. 오타, 의역이 있을 수 있습니다. leetekwoo@gmail.com으로 피드백 주시면 감사하겠습니다.---Incremental Static RegenerationNext.js는 웹사이트의 빌드 이후에 정적 페이지를 생성하거나 업데"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/28","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Next.js는 왜 쓸까?"}],["$","p",null,{"className":"text-sm","children":"2022-12-10"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/25","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Next.js - getServerSideProps 공식문서 번역"}],["$","p",null,{"className":"text-sm","children":"2022-11-09"}]]}]]}]]}]}]

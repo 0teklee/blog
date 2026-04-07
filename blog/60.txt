@@ -1,0 +1,693 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","60"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","60","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","60","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T9618,<h1 class="mt-5 mb-3">TLDR</h1><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>HTML는 정적 트리이고 DOM api는 동적 트리이다.</p></li><li><p>문제는 구조에서 오는 복잡성 : 참조 무결성, 실행 순서</p></li><li><p>해결은 복잡성을 줄이기 위한 전략</p></li></ol><hr class="my-5"><h1 class="mt-5 mb-3">전제</h1><blockquote><p>리액트와 같은 프론트엔드 라이브러리나 프레임워크는 왜 사용하나요?</p></blockquote><p>면접에서 이런 질문을 받았다. 난감한 기분이 드는 걸 보니, 그동안 너무 당연하게만 생각했던 것 같다. 현대 웹 애플리케이션의 복잡한 UX를 구현하는데에 기존 DOM api가 적합하지 않기 때문이라고 답했다. 성능 최적화, 코드 복잡성 등을 얘기했지만 핵심을 놓쳤다는 느낌이었다.</p><p></p><p><strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">DOM API는 왜 복잡성을 증가시키는가?</mark></strong></p><p></p><p>최근 (다시) 공부 중인 <strong>자료 구조</strong>를 기반으로 HTML, DOM api를 이해하고, 그 질문에 다시 답해본다.</p><hr class="my-5"><h1 class="mt-5 mb-3">HTML 트리와 DOM API 탐색/조작</h1><h2 class="mt-5 mb-3">HTML</h2><p>HTML의 특징은 다음과 같다.</p><ul class="tight" data-tight="true"><li><p><strong>HTML 자료 구조</strong>:  그래프 &gt; 비순환 방향 그래프 (DAG) 방향 (루트에서 노드로) &gt; 트리 &gt; 계층적 정적 트리</p></li><li><p>서버에서 전달된 HTML가 로드되면 브라우저가 이를 읽고 해석한다.</p></li><li><p>브라우저에서는 HTML를 바탕으로 DOM 트리, CSSOM 트리를 구성한다.</p></li><li><p>이렇게 구성된 두 트리를 결합하여 <strong>리플로우와 리페인팅</strong>으로 HTML <strong>렌더링</strong>이 이루어진다.</p></li><li><p>그러나 HTML 자체는 변경이 없다. DOM 조작이 일어나지 않는 한.</p></li><li><p>서버가 전송한 HTML은 노드 관계를 정의한 <strong>그래프(트리)</strong>이다.</p></li><li><p>이 트리는 계층적으로 구성되며, <strong>루트 노드</strong>는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&lt;html&gt;</code>이다.</p></li><li><p>서버에 저장된 원본 html의 트리는 루트와 리프까지 계층 관계는 변하지 않는다. 즉 정적이다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-html">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;DOM 조작 예제&lt;/title&gt;
+    &lt;script defer src="./script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="container"&gt;
+    &lt;button id="changeText"&gt;텍스트 변경&lt;/button&gt;
+    &lt;p class="text"&gt;기본 텍스트&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><h2 class="mt-5 mb-3">DOM API</h2><p>DOM 트리는 브라우저가 구성한다. <strong>JS는 DOM 트리에 접근하여 변경할 수 있는 인터페이스인 DOM api를 제공한다.</strong> <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 일급 객체를 통해.</p><p>DOM 트리 : 브라우저가 HTML을 파싱하여 구성한 노드의 트리 구조</p><p>DOM api (document) : 브라우저가 구성한 DOM 트리를 조회 및 변경하기 위한 인터페이스</p><ul class="tight" data-tight="true"><li><p><strong>DOM 객체 자료 구조</strong>: 그래프 &gt; 양방향 그래프 &gt; 동적 트리 &gt; 계층적 동적 트리</p></li><li><p>JS로 HTML을 조회하고, 조작하기 위한 Web API이다.</p></li><li><p>서버에서 HTML이 브라우저로 전달되면 이를 바탕으로 document 전역객체를 만든다.</p></li><li><p>document는 HTML 노드(태그)의 계층 그래프를 객체 형태로 표현한다.</p></li><li><p>**HTML과 달리, DOM api에서 루트 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>이다.</p></li><li><p>서버에 저장된 <strong>원본 HTML과 브라우저의 DOM 트리는 DOM 트리 변경 시 일치하지 않는다.</strong></p></li></ul><p>브라우저에서 실행된 스크립트로 브라우저가 구성한 DOM 트리가 변경된 것이니, 어떻게 보면 당연하다. 하지만 서버사이드 렌더링, 서버 컴포넌트 분리 등 서버와 브라우저의 분리된 실행 환경을 고려하지 않을 수 없다.</p><ul class="tight" data-tight="true"><li><p>DOM 트리 생성 과정은 다음과 같다. </p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>브라우저는 HTML의 문자를 파싱한다</p></li><li><p>토큰으로 만든다 (토크나이즈)</p></li><li><p>토큰으로 document 객체를 생성</p></li><li><p>브라우저에서 실행되는 JS 스크립트는 브라우저가 생성한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체에 접근할 수 있다.</p></li></ol></li><li><p>DOM 탐색: dom은 HTML 노드를 탐색 및 조회할 수 있는 기능을 제공한다.</p></li><li><p>DOM 조작: 탐색으로 가져온 노드의 HTML attribute을 재할당하여 HTML을 변경한다.</p></li><li><p>document는 전역 객체이므로, 자식 노드에서 부모 노드에 접근할 수 있고, 변경할 수 있다.</p></li><li><p>DOM에서 루트 노드는 document이며, html 태그는 그 하위 요소이다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 버튼 클릭 시 텍스트 변경 
+const button = document.getElementById("changeText");
+
+button.addEventListener("click", () =&gt; {
+    const text = document.querySelector(".text");
+    text.textContent = "텍스트가 변경되었습니다!";
+});</code></pre><hr class="my-5"><h1 class="mt-5 mb-3">DOM 인터페이스의 원리</h1><h2 class="mt-5 mb-3">노드 조회와 변경</h2><ul class="tight" data-tight="true"><li><p>document 객체를 통해 HTML 요소를 탐색하고 조작할 수 있다.</p></li><li><p>document의 메서드로 html에 접근할 수 있다. (<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementById</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementById</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">querySelector</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">querySelectorAll</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementsByClassName</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementsByTagName</code> 등)</p></li><li><p>탐색한 html 태그에 새로운 데이터를 <strong>재할당</strong>하여 DOM 트리를 변경할 수 있다.</p></li><li><p>속성이나 내용이 변경되면, <strong>브라우저는 즉시 이를 감지한다</strong>.</p></li><li><p><strong>브라우저</strong>는 이를 바탕으로 DOM 트리를 재구성하고 CSSOM과 결합하여 렌더링 과정(리플로우, 리페인트)을 수행한다.</p></li><li><p>DOM 트리가 변경되는 시점은 <strong>함수 실행 시점에 따라 다를 수 있다</strong>. </p><ul class="tight" data-tight="true"><li><p>초기 스크립트 실행, 이벤트, api 요청, 타이머 등 다른 시점에 DOM 트리가 변경될 수 있다.</p></li></ul></li></ul><p>여기서 든 의문은 두가지이다.</p><ul class="tight" data-tight="true"><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체의 루트 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체 자체인데, HTML의 루트는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&lt;html&gt;</code>이다. 그럼 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>와 HTML는 <strong>다른 구조의 트리가 아닌가</strong>?</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>로 DOM 트리로 변경되면 변경 이전에 데이터는 어떻게 되지?</p></li></ul><h2 class="mt-5 mb-3">복잡성 증가의 원인</h2><p>결론: HTML 트리는 계층적 정적 트리로 부모-자식 관계가 고정되지만, DOM API는 이를 변경 가능한 그래프로 다룬다. 이로 인해 코드 복잡성이 증가한다. 문제는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>의 구조와 사용법에서 온다.</p><h3 class="mt-5 mb-3"><strong>1. 참조 무결성</strong></h3><ul class="tight" data-tight="true"><li><p>첫 번째 원인은 DOM api는 HTML의 정적 트리를 <strong>변경 가능한(mutable) 그래프</strong>로 구성하기 때문이다.</p></li><li><p>DOM 트리는 트리 구조를 가지지만, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>api는  <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">양방향 그래프이며 부모와 자식이 서로 참조할 수 있다. </mark></p><ul class="tight" data-tight="true"><li><p>예를 들어, 자식 노드에서 일어나는 변경이 부모 노드에도 영향을 줄 수 있다.</p></li></ul></li><li><p>DOM 트리가 변경되면, 그동안의 변경사항이 기록되지 않아 제거된 노드의 정보가 손실될 수 있다.</p></li><li><p>제거된 노드를 복원하는 것이 어렵고, 삭제된 HTML이 포함한 정보를 보존하기 어렵다.</p></li><li><p>이러한 문제를 <strong>참조 무결성</strong>이라고 한다.</p></li><li><p><strong>참조 무결성을 지키려면 코드 복잡성이 증가한다.</strong></p></li></ul><h3 class="mt-5 mb-3"><strong>2. 함수 실행 시점</strong></h3><ul class="tight" data-tight="true"><li><p>코드 복잡성 증가의 두번째 원인은 <strong>함수 실행 시점의 관리</strong>이다.</p></li><li><p>특히 함수가 실행이 완료된 이후에 <strong>DOM 조작으로 발생하는 부수효과</strong>가 코드 복잡성을 높인다. </p><ul class="tight" data-tight="true"><li><p>생명주기가 끝난 함수 내부 데이터가 필요해지는 경우가 많아 추가적인 로직이 필요해진다.</p></li></ul></li><li><p>DOM 조작은 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">트리 계층에 영향을 미쳐, 부모 노드의 변경이 모든 자식 노드에 영향을 미칠 수 있다. </mark></p><ul class="tight" data-tight="true"><li><p>앞선 문제인 참조 무결성을 지키는 추가적인 로직이 필요하다.</p></li></ul></li><li><p>이러한 문제들은 HTML을 DOM으로 변환하여 조작할 때 발생하기 쉬운 문제들이다.</p></li><li><p><strong>코드가 증가할 수록 함수 실행 시점의 관리 복잡성이 증가한다.</strong></p></li></ul><p><strong>근본적 원인은 DOM API와 HTML 구조에 일관성이 부족하기 때문이다.</strong> 이에 대한 해결은 1) HTML 계층을 불필요하게 변경하지 않으면서 2) DOM 조작 실행 타이밍을 일관되게 관리할 로직이 필요하다.</p><ul class="tight" data-tight="true"><li><p><strong>노드 격리화</strong>: 부모-자식 노드 간 영향이 제한되도록 설계.</p></li><li><p><strong>함수 생명주기 관리</strong>: DOM 조작 이후에도 유지해야 할 데이터를 관리하도록 한다. </p><ul class="tight" data-tight="true"><li><p>HTML 계층에 영향을 주지 않으면서, DOM 조작이 가져오는 부수효과를 관리하기 위한 함수와 저장 데이터의 로직을 구성한다.</p></li></ul></li></ul><hr class="my-5"><h1 class="mt-5 mb-3">HTML 트리 효율적으로 관리하기</h1><p>이러한 문제를 염두한 DOM 조작 JS 스크립트를 작성해보자.</p><h2 class="mt-5 mb-3">격리화</h2><ul class="tight" data-tight="true"><li><p>각 노드 계층을 분명하게 격리하고, <strong>노드 단위로 DOM 조작을 관리</strong>한다.</p></li><li><p>DOM 조작의 <strong>영향을 부모나 형제 노드에 전달하지 않고, 자식 노드만 변경</strong>하도록 설계한다.</p></li><li><p>(리)렌더링이 각 노드에서 일관되게 작동하도록 추상화한다.</p></li></ul><p>DOM api가 일으킬 문제를 방지하기 위해 이러한 전략을 사용할 수 있다. 하지만 한계도 분명하다. 무엇보다 문제 해결에 여전히 많은 코드가 필요하고, <strong>결국엔 복잡성이 증가한다.</strong></p><h2 class="mt-5 mb-3">한계</h2><blockquote><p>결론: 구조적 문제를 해결하려 할수록, <strong>프레임워크나 라이브러리 수준의 추가적인 로직</strong>이 필요하게 된다.</p></blockquote><p></p><p>DOM api의 구조적 문제는 여전히 많은 작업을 수반한다. 그리고 이는 DOM 직접 조작이 일으키는 성능 최적화와 <strong>별개의 문제</strong>이다. (실제로는 이미 여러 프레임워크에서 <strong>DOM 트리를 직접 조작</strong>하여 성능 최적화를 달성하고 있다.)</p><ul class="tight" data-tight="true"><li><p>JS 파일을 단위별로 분리하면 의존성 그래프가 추가되어 복잡성이 증가한다. </p><ul class="tight" data-tight="true"><li><p>JS 스크립트에 루트 노드 없이 개별 스크립트를 병렬적으로 로드하면 복잡성이 늘어난다.</p></li><li><p>루트 노드를 설정하여 트리를 구성하여도 추가적인 코드가 필요하다. </p><ul class="tight" data-tight="true"><li><p>노드 간의 의존성이 생기면, 노드 간의 데이터 교환을 위해 추가적인 로직이 필요하다.</p></li></ul></li><li><p>DOM 노드를 개별 JS 스크립트에서 다룰수록 코드가 분산되어 유지보수가 어려워진다(=<strong>응집도가 떨어진다</strong>).</p></li></ul></li><li><p>루트 JS 파일이 전체적으로 다시 실행되므로 변경된 노드만 업데이트되지 않는다.</p></li><li><p>계층적으로 분리된 구조에서는 렌더링 로직의 추상화가 필요하다.</p></li><li><p>초기 렌더링 이후 리렌더링을 트리거하기 위한 일관된 로직이 필요하다.</p></li><li><p>실행 시점 관리가 완전히 해결되지 않을 수 있다. (부수효과) </p><ul class="tight" data-tight="true"><li><p>이벤트 핸들링 및 API 호출과 같은 부수효과를 최소화하기 어렵다.</p></li></ul></li></ul><hr class="my-5"><h1 class="mt-5 mb-3">구현하기</h1><h2 class="mt-5 mb-3">추상 구현체</h2><p>한계에도 불구하고, 조금 더 깊은 학습을 위해 구현해보자. DOM 트리 구조로 인해 발생하는 문제를 해결하는 핵심 로직을 만들어보자. 코드 작성에 앞서 추상적인 로직을 정의했다.</p><p>DOM API 렌더링 로직: JS 실행 → DOM 변경 → 브라우저에서 HTML 트리 변경 → 리플로우 및 리페인트.</p><p></p><p><strong>구현 목표</strong></p><ul class="tight" data-tight="true"><li><p>노드 영향 최소화: HTML 계층을 따라 각 노드를 분리 및 격리하여 불필요한 변경 전파를 차단.</p></li><li><p>최적화된 렌더링: 특정 노드가 변경될 때, 해당 노드만 리페인트·리플로우되도록 렌더링 로직을 추상화하여 성능을 개선.</p></li></ul><p></p><p><strong>추상 구현체</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-mermaid">graph TD 
+A[초기 스크립트 실행] --&gt;|JS 실행| B[DOM API 호출]  
+B --&gt;|노드 찾기| C[타겟 노드 식별]  
+C --&gt;|변경할 노드 격리| D[독립적 DOM 업데이트]  
+D --&gt;|부모 및 형제 노드 영향 없음| E[변경된 노드만 리렌더링]  
+E --&gt;|렌더링 엔진 요청| F[리플로우 발생]  
+F --&gt;|스타일 &amp; 레이아웃 계산| G[리페인트 수행]  
+G --&gt;|화면 갱신| H[최종 렌더링 완료]  
+  
+D --&gt;|최적화 적용| I[필요한 노드만 업데이트]  
+I --&gt;|불필요한 렌더링 방지| H</code></pre><h2 class="mt-5 mb-3">바닐라 JS로 구현하기</h2><h3 class="mt-5 mb-3">1. 렌더링 로직 추상화</h3><blockquote><p><strong><em>목적:</em></strong><em> </em><strong><em>참조 무결성</em></strong><em> 유지</em></p></blockquote><p>자식이 부모 노드에 영향을 주지 않도록, 각 계층을 격리화하고 필요한 범위에만 영향이 가도록 DOM 조작 로직을 작성해보았다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 특정 노드의 내용만 변경하거나 추가 및 제거하면서 트리 계층을 관리하는 렌더링 함수
+function updateDOM(targetNode, actionCallback) {
+  if (!targetNode || typeof actionCallback !== 'function') return;
+
+  const parentNode = targetNode.parentNode;
+  if (!parentNode) return;
+
+  const newNode = targetNode.cloneNode(true);
+  actionCallback(newNode);
+
+  // 부모 내에서 대상 노드를 추가
+  if (!parentNode.contains(targetNode)) {
+    parentNode.appendChild(newNode);
+    return;
+  }
+  // 부모 내에서 대상 노드를 교체 또는 제거
+  if (newNode) {
+    parentNode.replaceChild(newNode, targetNode);
+  } else {
+    parentNode.removeChild(targetNode);
+  }
+}
+
+// 예제 사용처 : Before
+const container = document.getElementById("app");
+const newElement = document.createElement("p");
+newElement.textContent = "기존 내용";
+container.appendChild(newElement);
+
+// 적용 이후 : After
+updateDOM(newElement, (node) =&gt; {
+  node.textContent = "새로운 콘텐츠 추가됨";
+});
+
+// 새로운 노드 추가
+updateDOM(document.createElement("span"), (node) =&gt; {
+  node.textContent = "새로운 요소 추가";
+});
+
+// 노드 제거
+updateDOM(newElement, () =&gt; null);</code></pre><p>DOM 조작이 부모-형제 노드의 변경을 방지하는 추상화된 DOM 변경 로직을 작성하였다. 그러나 DOM 조작은 최초 DOM 업데이트 이후에 필요할 때가 많다. 많은 경우 이벤트, API 호출 등으로 노드 내부의 데이터가 변경되면 <strong>다시 DOM을 업데이트를 해야한다</strong>. 바닐라 JS에서는 노드 데이터의 변경을 감지하고, 변경된 데이터 기반으로 updateDOM을 트리거할 필요가 생긴다. 노드 변경의 격리화를 유지하면서, 이를 추상화한 "상태"를 만들어보자.</p><p></p><p>(DOM 업데이트: "리렌더링"이라고 익숙하게 여길 수 있지만, 사실 이 개념은 바닐라 JS와 프레임워크에서 약간 다르다. 일반적인 바닐라 JS에서 "리렌더링"은 DOM 트리를 처음부터 재구성하기 때문에, 가상 DOM 트리의 "리렌더링"과 메커니즘이 다르기 때문이다.)</p><h3 class="mt-5 mb-3">2. 상태 로직 추상화</h3><blockquote><p>목적 :  렌더링 실행 시점 관리</p></blockquote><p>상태는 DOM 조작의 실행의 시점을 관리하기 위해 사용한다. 즉 DOM 업데이트를 트리거하는 "변경된 데이터"를 관리하는 로직이다. DOM 업데이트는 보통 <strong>새로운 데이터를 기반</strong>으로 실행된다.<strong> 기존 변수에서 변경이 발생하는 시점을 트리거로 삼을 수 있다</strong>. 값에 변경이 생기면, 렌더링(DOM 조작)을 트리거한다. 즉, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#f8b200" style="background-color: #f8b200; color: inherit">상태는 렌더링의 기반이 되는 변수이고, 이 값이 변경되는 시점에 새로운 값으로 "리렌더링"이 필요하다</mark>.</p><h3 class="mt-5 mb-3">클래스 : 구독형 상태 관리</h3><p>JS 클래스를 사용해 구독형으로 상태를 관리하고, <strong>노드 변경 시 해당 노드만 업데이트 하도록</strong> 구현한다. GPT의 도움을 받았으나, 이해가지 않는 부분이 꽤 있어 직접 수정과 주석을 남겼다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// 상태 관리 클래스: 개별 인스턴스별로 상태를 관리하며, 노드별 상태 분리
+// 상태 변경 시 해당 인스턴스에 등록된 노드만 업데이트됨
+class StateManager {
+  constructor() {
+    this.nodeStates = new Map(); // 개별 노드 상태 관리
+    this.listeners = new Map(); // 노드별 구독 목록 관리
+  }
+
+  // 특정 노드의 상태를 초기화하고, 렌더링 함수 등록
+  subscribe(targetNode, initialState, renderCallback) {
+    if (!targetNode || typeof renderCallback !== 'function') return;
+    this.nodeStates.set(targetNode, initialState);
+    this.listeners.set(targetNode, renderCallback);
+    this.updateNode(targetNode, initialState); // 초기 상태로 초기 렌더링 실행
+  }
+
+  // 특정 노드의 상태 변경 
+  setState(targetNode, newState) {
+  // 현재 노드 상태에 targetNode가 없다면 DOM 조작을 막음
+    if (!this.nodeStates.has(targetNode)) return; 
+    const prevState = this.nodeStates.get(targetNode);
+    
+    const updatedState = { ...prevState, ...newState };
+    // 노드의 상태 업데이트
+    this.nodeStates.set(targetNode, updatedState);
+    // 변경된 상태로 리렌더링
+    this.updateNode(targetNode, updatedState);
+  }
+
+  // 상태 변경 시 updateDOM을 호출하여 해당 노드만 업데이트
+  updateNode(targetNode, state) {
+	// 1번째 인자: 렌더링 함수 updateDOM에서 클론할 targetNode
+	// 2번째 인자: actionCallback. 클론된 newNode를 인자로 받아 실행할 함수
+    updateDOM(targetNode, (node // = 클론된 newNode) =&gt; {
+      if (this.listeners.has(targetNode)) {
+		  // 구독된 상태에 타겟 노드가 있을 때만, 상태를 기반으로 렌더링 수행
+        this.listeners.get(targetNode)(node, state);
+      }
+    });
+  }
+
+  // 특정 노드의 구독 해제
+  unsubscribe(targetNode) {
+    this.nodeStates.delete(targetNode);
+    this.listeners.delete(targetNode);
+  }
+}
+
+
+// Before
+// 버튼 클릭 시 DOM 직접 접근하여 텍스트 변경 
+const button = document.getElementById("changeText");
+
+button.addEventListener("click", () =&gt; {
+    const text = document.querySelector(".text");
+    text.textContent = "텍스트가 변경되었습니다!";
+});
+
+// After
+// StateManager 인스턴스 생성
+const stateManager = new StateManager();
+
+// 텍스트 요소 구독 및 초기 상태 설정
+// 사실 함수 조차 넘길 필요 없게 추상화할 수 있다.
+const textElement = document.querySelector(".text");
+stateManager.subscribe(textElement, { content: textElement.textContent }, (node, state) =&gt; {
+  node.textContent = state.content;
+});
+
+// 버튼 클릭 시 상태 변경
+const button = document.getElementById("changeText");
+button.addEventListener("click", () =&gt; {
+  stateManager.setState(textElement, { content: "텍스트가 변경되었습니다!" });
+});</code></pre><p>다음은 StateManager를 HTML에서 사용하는 예시이다.</p><p></p><p>HTML</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-html">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;StateManager 예제&lt;/title&gt;
+    &lt;script defer src="./script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="container"&gt;
+        &lt;input type="text" id="textInput" placeholder="텍스트 입력..."&gt;
+        &lt;button id="updateText"&gt;입력 반영&lt;/button&gt;
+        &lt;p class="text"&gt;기본 텍스트&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p>JS 스크립트</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// ./script.js 
+// StateManager 인스턴스 생성 
+const stateManager = new StateManager(); 
+
+// 요소 가져오기
+const textElement = document.querySelector(".text");
+const textInput = document.getElementById("textInput");
+const updateButton = document.getElementById("updateText");
+
+// 
+
+ 태그의 상태를 구독 및 초기화
+stateManager.subscribe(textElement, { content: textElement.textContent }, (node, state) =&gt; {
+node.textContent = state.content;
+});
+
+// 버튼 클릭 시 입력값을 반영하여 상태 업데이트
+updateButton.addEventListener("click", () =&gt; {
+const userInput = textInput.value.trim();
+if (userInput) {
+stateManager.setState(textElement, { content: userInput });
+}
+});</code></pre><p></p><h3 class="mt-5 mb-3">함수</h3><p>함수로도 상태 관리를 구현할 수 있다. 클래스보다 간단하게 구현할 수 있지만, 상태 관리가 복잡해질수록 클래스로 구현하는 것이 유리하다. 위에 살펴본 방식을 구독형이라 한다면, pull 방식으로 간단하게 작성할 수도 있다.</p><p></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">function useState(initialState, targetNode) {
+  if (!targetNode) throw new Error("useState: targetNode가 필요합니다.");
+
+  let state = initialState; // 내부 상태 (클로저로 유지)
+
+  
+
+  function setState(newState) {
+ 
+    if (typeof state === "object" &amp;&amp; state !== null) {
+      Object.assign(state, newState);
+    } else {
+      state = newState;
+    }
+
+    // ✅ 상태 변경 시 자동으로 updateDOM 실행
+    updateDOM((node) =&gt; {
+      if (typeof state === "object" &amp;&amp; state.content !== undefined) {
+        node.textContent = state.content;
+      } else {
+        node.textContent = String(state);
+      }
+    });
+  }
+
+  // ✅ 클로저를 활용하여 상태 값을 변수처럼 반환
+  return [() =&gt; state, setState];
+}
+
+// After 적용 예시
+// 요소 가져오기
+const textElement = document.querySelector(".text");
+const textInput = document.getElementById("textInput");
+const updateButton = document.getElementById("updateText");
+
+// ✅ useState 호출 (상태 변수처럼 사용)
+const [textState, setTextState] = useState({ content: "기본 텍스트" }, textElement);
+
+// 버튼 클릭 시 상태 변경 (자동 리렌더링)
+updateButton.addEventListener("click", () =&gt; {
+  const userInput = textInput.value.trim();
+  if (userInput) {
+    setTextState({ content: userInput });
+
+    // ✅ 함수 호출 없이 변경된 상태 직접 접근
+    console.log("변경된 상태:", textState().content);
+  }
+});</code></pre><p></p><h3 class="mt-5 mb-3">Proxy, MutationObserver</h3><p>Immer, Valtio와 같은 여러 상태 라이브러리는 재할당으로 상태를 변경하는 문법을 제공한다. 그럼에도 "상태의 불변성"이 지켜지는 이유는 <strong>JS 일급 객체를 기반으로 작동하기 때문</strong>이다. 이 객체들을 사용하여 상태를 구현할 수 있다. 이를 기반으로 상태 기능 뿐만 아니라 프론트엔드 프레임워크까지 구성한다. </p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">function createReactiveState(initialState, onUpdate) {
+    return new Proxy(initialState, {
+        set(target, key, value) {
+            target[key] = value;
+            onUpdate(target);
+            return true;
+        }
+    });
+}
+
+const state = createReactiveState({ content: "기본 텍스트" }, (updatedState) =&gt; {
+    updateDOM(document.querySelector(".text"), (node) =&gt; {
+        node.textContent = updatedState.content;
+    });
+});
+
+// 상태 변경 시 자동으로 updateDOM 실행
+setTimeout(() =&gt; {
+    state.content = "Proxy를 사용한 자동 업데이트";
+}, 2000);
+
+
+const observer = new MutationObserver((mutations) =&gt; {
+  mutations.forEach(mutation =&gt; {
+    if (mutation.type === "childList" || mutation.type === "characterData") {
+      console.log("DOM 변경 감지:", mutation);
+    }
+  });
+});
+
+const targetNode = document.querySelector(".text");
+observer.observe(targetNode, { childList: true, characterData: true, subtree: true });
+
+// 2초 후 강제 변경하여 MutationObserver가 감지하도록 함
+setTimeout(() =&gt; {
+  targetNode.textContent = "MutationObserver 감지됨";
+}, 2000);
+</code></pre><hr class="my-5"><h1 class="mt-5 mb-3">프레임워크의 접근법</h1><p>일반적인 프론트엔드 라이브러리와 프레임워크는 DOM에서 파생되는 복잡성 문제를 해결하는데 집중한다. 이들이 각각 어떤 프레임으로 문제 해결에 접근하는 지 간략하게 알아보고, 이번 글을 마무리한다.</p><h2 class="mt-5 mb-3">React</h2><h3 class="mt-5 mb-3">개념 모델</h3><ul class="tight" data-tight="true"><li><p>리액트는 <strong>선언적인</strong> UI 관리를 지향한다.</p></li><li><p>리액트에 맡겨라: 앞서 작성한 렌더링, 상태 추상화 로직은 이미 리액트가 제공한다. </p><ul class="tight" data-tight="true"><li><p>개발자는 JSX와 컴포넌트 기반 아키텍처에 집중하고, 상태 관리와 DOM 조작의 최적화까지 리액트 엔진이 담당한다.</p></li><li><p>개발자는 리액트 앨리먼트 JSX와 로직 작성, 컴포넌트 구성에만 신경쓰면 된다.</p></li></ul></li><li><p><strong>데이터 흐름은 루트에서 리프 노드까지 단방향으로 전달된다.</strong></p><ul class="tight" data-tight="true"><li><p>컴포넌트 단위로 트리 계층에 따라 노드를 격리하고, 의존성을 최소화한다.</p></li><li><p>형제 및 부모-자식 간의 의존성을 최소화하여 컴포넌트 독립성을 지킨다.</p></li></ul></li><li><p>변경 사항이 발생하면 가상 DOM(vDOM)을 사용해 최소한의 업데이트만 반영한다.</p></li><li><p>예전에는 vDOM을 깊이 우선 탐색(DFS) 방식으로 변경 사항을 찾았지만, 현재는 Fiber 구조를 사용하여 <strong>작업 우선순위를 조정하며 최적화</strong>한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// React의 useState 내부 구현 (간략화된 버전)
+
+// React의 상태 관리 방식 요약:
+// 1. useState는 Fiber 노드와 연동된 개별 훅 객체를 관리.
+// 2. setState 호출 시, 변경 사항을 감지하고 Fiber 트리의 업데이트를 예약.
+// 3. Reconciliation (조정) 과정을 통해 vDOM을 비교하고, 변경된 부분만 DOM에 반영.```
+
+function useState(initialState) {
+  let hook = resolveCurrentHook(); // 현재 실행 중인 훅을 참조한다 (Fiber Tree에서 관리)
+
+  if (!hook) {
+    hook = {
+      state: initialState,
+      queue: [], // 동일한 setState 상태 변경을 batch할 때 사용한다
+      setState: (action) =&gt; {
+        hook.state = typeof action === 'function' ? action(hook.state) : action;
+        scheduleUpdateOnFiber(); // 변경 감지 후 컴포넌트 업데이트 트리거
+      },
+    };
+    mountHook(hook); // 새로운 훅을 Fiber 트리에 추가한다
+  }
+
+  return [hook.state, hook.setState];
+}
+
+// Fiber Tree의 관리 시스템 (간략화)
+function resolveCurrentHook() {
+  return currentFiber?.hook || null; // 현재 Fiber 노드에서 훅 참조
+}
+
+function scheduleUpdateOnFiber() {
+  // 현재 Fiber의 변경을 감지하고, 최적화된 렌더링을 스케줄링
+  requestIdleCallback(() =&gt; performWorkOnFiber());
+}
+
+function performWorkOnFiber() {
+  console.log("Fiber Reconciliation 실행 및 필요한 노드만 업데이트");
+  // vDOM 비교 및 필요한 변경 사항 적용 (Reconciliation 과정)
+}</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">scheduleUpdateOnFiber</code> 등 리액트 내부의 자세한 내용은 이전에 작성한 바가 있다.</p><p></p><h2 class="mt-5 mb-3">Vue</h2><h3 class="mt-5 mb-3">개념 모델</h3><ul class="tight" data-tight="true"><li><p>Vue는 <strong>반응형(Reactive) 데이터 바인딩</strong>을 핵심으로 한다.</p></li><li><p>data 객체를 선언하면 Vue는 이를 <strong>Proxy로 감싸서 반응형</strong>으로 만든다.</p></li><li><p>변경 사항이 감지되면 자동으로 UI를 업데이트한다.</p></li><li><p>템플릿 기반 선언적 렌더링을 제공하여 HTML 구조와 로직을 자연스럽게 결합한다.</p></li><li><p>컴포넌트 기반 아키텍처를 활용하여 재사용성과 유지보수성을 극대화한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// Vue의 반응형 데이터 시스템 개요
+
+const { reactive, effect } = Vue;
+
+const state = reactive({ count: 0 }); // 반응형 상태 선언
+
+effect(() =&gt; {
+  console.log(`현재 카운트: ${state.count}`); // 상태 변화 감지 후 실행
+});
+
+state.count++; // count가 변경되면 effect 내부 코드가 자동 실행됨</code></pre><hr class="my-5"><h2 class="mt-5 mb-3">Svelt</h2><h3 class="mt-5 mb-3">개념 모델</h3><ul class="tight" data-tight="true"><li><p><strong>Svelte는 컴파일 단계에서 상태 관리를 최적화하는 접근 방식</strong>을 취한다.</p></li><li><p>let 변수를 선언하면 Svelte는 이를 내부적으로 반응형 상태로 관리한다.</p></li><li><p><strong>구독 기반 반응형 시스템</strong>을 사용하여, 상태가 변경되면 관련된 DOM만 갱신한다.</p></li><li><p>컴포넌트의 상태가 변경될 때 별도의 가상 DOM을 사용하지 않고 직접 DOM을 업데이트한다.</p></li><li><p>스토어(Store) 시스템을 제공하여 글로벌 상태 관리가 가능하다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-js">// Svelte의 반응형 변수와 스토어 예제
+  import { writable } from 'svelte/store';
+
+  let count = 0; // 반응형 변수
+  const storeCount = writable(0); // 구독형 상태
+
+  function increment() {
+  count += 1 // 자동 UI 업데이트
+  storeCount.update(n =&gt; n + 1); // 스토어 업데이트
+}</code></pre><p></p><hr class="my-5"><h2 class="mt-5 mb-3">HTMX</h2><h3 class="mt-5 mb-3">개념 모델</h3><ul class="tight" data-tight="true"><li><p>HTMX는 HTML을 확장하여 서버와의 상호작용을 단순화하는 접근 방식을 취한다.</p></li><li><p>HTMX는 요청을 통해 <strong>서버에서 새 HTML을 받아와 해당 요소를 교체하며 UI를 갱신한다</strong>.</p></li><li><p>이로써 별도의 클라이언트 상태 관리 없이, <strong>서버에서 HTML을 렌더링하여 동적으로 갱신한다</strong>.</p></li><li><p>클라이언트 상태 관리가 필요 없는 서버 중심 렌더링 방식에 적합하다.</p></li><li><p>hx-get, hx-post 등의 속성을 활용하여 AJAX 요청을 간편하게 처리한다.</p></li><li><p>가상 DOM을 사용하지 않고, 직접적인 DOM 조작을 수행하여 성능을 최적화한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="language-html">&lt;!-- HTMX의 간단한 버튼 예제 --&gt;
+&lt;button hx-get="/clicked" hx-target="#result" hx-swap="outerHTML"&gt;
+  클릭
+&lt;/button&gt;
+&lt;div id="result"&gt;&lt;/div&gt;
+
+&lt;!-- 입력 필드 값이 변경될 때마다 서버에서 새 데이터 가져오기 --&gt;
+&lt;input type="text" hx-get="/search" hx-trigger="keyup changed" hx-target="#search-results" /&gt;
+&lt;div id="search-results"&gt;&lt;/div&gt;</code></pre><p>브라우저에서의 상태 관리를 완전히 배제하고, 서버 데이터와 동일한 HTML을 구성하는 방식으로 이해했다. 일면으로 서버 중심으로 발전하는 리액트가 떠오른다. 더 단순하고 직관적인 방식으로 브라우저와 서버에 분리된 상태 관리를 일관화하는 방식이 아닐까 싶었다. 깊게 사용해보지 않아서, 그 한계에 대해서도 궁금하다.</p><p></p><p>HTMX의 주요 메서드는 다음과 같다:</p><ul class="tight" data-tight="true"><li><p>hx-get: 지정된 URL로 GET 요청을 보내고, 응답을 받아서 갱신함.</p></li><li><p>hx-post: 지정된 URL로 POST 요청을 보냄.</p></li><li><p>hx-put: 데이터를 갱신하는 PUT 요청을 보냄.</p></li><li><p>hx-delete: 지정된 리소스를 삭제하는 DELETE 요청을 수행함.</p></li><li><p>hx-target: 응답으로 받은 HTML을 삽입할 대상 요소 지정.</p></li><li><p>hx-swap: 응답을 기존 요소와 어떻게 교체할지 정의 (outerHTML, innerHTML, beforebegin 등 지원).</p></li><li><p>hx-trigger: 특정 이벤트(click, change 등) 발생 시 요청 실행.</p></li></ul>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"HTML 트리와 DOM api"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2025/02/25"}],["$","p",null,{"children":"n°60"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","JavaScript"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:Te811,<h1 class="mt-5 mb-3" id="tldr">TLDR</h1><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>HTML는 정적 트리이고 DOM api는 동적 트리이다.</p></li><li><p>문제는 구조에서 오는 복잡성 : 참조 무결성, 실행 순서</p></li><li><p>해결은 복잡성을 줄이기 위한 전략</p></li></ol><hr class="my-5"><h1 class="mt-5 mb-3" id="">전제</h1><blockquote><p>리액트와 같은 프론트엔드 라이브러리나 프레임워크는 왜 사용하나요?</p></blockquote><p>면접에서 이런 질문을 받았다. 난감한 기분이 드는 걸 보니, 그동안 너무 당연하게만 생각했던 것 같다. 현대 웹 애플리케이션의 복잡한 UX를 구현하는데에 기존 DOM api가 적합하지 않기 때문이라고 답했다. 성능 최적화, 코드 복잡성 등을 얘기했지만 핵심을 놓쳤다는 느낌이었다.</p><p></p><p><strong><mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#108f3e" style="background-color: #108f3e; color: inherit">DOM API는 왜 복잡성을 증가시키는가?</mark></strong></p><p></p><p>최근 (다시) 공부 중인 <strong>자료 구조</strong>를 기반으로 HTML, DOM api를 이해하고, 그 질문에 다시 답해본다.</p><hr class="my-5"><h1 class="mt-5 mb-3" id="html-dom-api">HTML 트리와 DOM API 탐색/조작</h1><h2 class="mt-5 mb-3" id="html">HTML</h2><p>HTML의 특징은 다음과 같다.</p><ul class="tight" data-tight="true"><li><p><strong>HTML 자료 구조</strong>:  그래프 > 비순환 방향 그래프 (DAG) 방향 (루트에서 노드로) > 트리 > 계층적 정적 트리</p></li><li><p>서버에서 전달된 HTML가 로드되면 브라우저가 이를 읽고 해석한다.</p></li><li><p>브라우저에서는 HTML를 바탕으로 DOM 트리, CSSOM 트리를 구성한다.</p></li><li><p>이렇게 구성된 두 트리를 결합하여 <strong>리플로우와 리페인팅</strong>으로 HTML <strong>렌더링</strong>이 이루어진다.</p></li><li><p>그러나 HTML 자체는 변경이 없다. DOM 조작이 일어나지 않는 한.</p></li><li><p>서버가 전송한 HTML은 노드 관계를 정의한 <strong>그래프(트리)</strong>이다.</p></li><li><p>이 트리는 계층적으로 구성되며, <strong>루트 노드</strong>는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&#x3C;html></code>이다.</p></li><li><p>서버에 저장된 원본 html의 트리는 루트와 리프까지 계층 관계는 변하지 않는다. 즉 정적이다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>DOM 조작 예제<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">defer</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./script.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"changeText"</span>></span>텍스트 변경<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>></span>기본 텍스트<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span></code></pre><h2 class="mt-5 mb-3" id="dom-api">DOM API</h2><p>DOM 트리는 브라우저가 구성한다. <strong>JS는 DOM 트리에 접근하여 변경할 수 있는 인터페이스인 DOM api를 제공한다.</strong> <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 일급 객체를 통해.</p><p>DOM 트리 : 브라우저가 HTML을 파싱하여 구성한 노드의 트리 구조</p><p>DOM api (document) : 브라우저가 구성한 DOM 트리를 조회 및 변경하기 위한 인터페이스</p><ul class="tight" data-tight="true"><li><p><strong>DOM 객체 자료 구조</strong>: 그래프 > 양방향 그래프 > 동적 트리 > 계층적 동적 트리</p></li><li><p>JS로 HTML을 조회하고, 조작하기 위한 Web API이다.</p></li><li><p>서버에서 HTML이 브라우저로 전달되면 이를 바탕으로 document 전역객체를 만든다.</p></li><li><p>document는 HTML 노드(태그)의 계층 그래프를 객체 형태로 표현한다.</p></li><li><p>**HTML과 달리, DOM api에서 루트 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>이다.</p></li><li><p>서버에 저장된 <strong>원본 HTML과 브라우저의 DOM 트리는 DOM 트리 변경 시 일치하지 않는다.</strong></p></li></ul><p>브라우저에서 실행된 스크립트로 브라우저가 구성한 DOM 트리가 변경된 것이니, 어떻게 보면 당연하다. 하지만 서버사이드 렌더링, 서버 컴포넌트 분리 등 서버와 브라우저의 분리된 실행 환경을 고려하지 않을 수 없다.</p><ul class="tight" data-tight="true"><li><p>DOM 트리 생성 과정은 다음과 같다. </p><ol class="my-3 px-1 py-3 text-sm leading-6 bg-muted/30 border border-secondary rounded list-decimal tight" data-tight="true"><li><p>브라우저는 HTML의 문자를 파싱한다</p></li><li><p>토큰으로 만든다 (토크나이즈)</p></li><li><p>토큰으로 document 객체를 생성</p></li><li><p>브라우저에서 실행되는 JS 스크립트는 브라우저가 생성한 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체에 접근할 수 있다.</p></li></ol></li><li><p>DOM 탐색: dom은 HTML 노드를 탐색 및 조회할 수 있는 기능을 제공한다.</p></li><li><p>DOM 조작: 탐색으로 가져온 노드의 HTML attribute을 재할당하여 HTML을 변경한다.</p></li><li><p>document는 전역 객체이므로, 자식 노드에서 부모 노드에 접근할 수 있고, 변경할 수 있다.</p></li><li><p>DOM에서 루트 노드는 document이며, html 태그는 그 하위 요소이다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 버튼 클릭 시 텍스트 변경 </span>
+<span class="hljs-keyword">const</span> button = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"changeText"</span>);
+
+button.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, <span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> text = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".text"</span>);
+    text.<span class="hljs-property">textContent</span> = <span class="hljs-string">"텍스트가 변경되었습니다!"</span>;
+});</code></pre><hr class="my-5"><h1 class="mt-5 mb-3" id="dom">DOM 인터페이스의 원리</h1><h2 class="mt-5 mb-3" id="-1">노드 조회와 변경</h2><ul class="tight" data-tight="true"><li><p>document 객체를 통해 HTML 요소를 탐색하고 조작할 수 있다.</p></li><li><p>document의 메서드로 html에 접근할 수 있다. (<code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementById</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementById</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">querySelector</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">querySelectorAll</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementsByClassName</code>, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">getElementsByTagName</code> 등)</p></li><li><p>탐색한 html 태그에 새로운 데이터를 <strong>재할당</strong>하여 DOM 트리를 변경할 수 있다.</p></li><li><p>속성이나 내용이 변경되면, <strong>브라우저는 즉시 이를 감지한다</strong>.</p></li><li><p><strong>브라우저</strong>는 이를 바탕으로 DOM 트리를 재구성하고 CSSOM과 결합하여 렌더링 과정(리플로우, 리페인트)을 수행한다.</p></li><li><p>DOM 트리가 변경되는 시점은 <strong>함수 실행 시점에 따라 다를 수 있다</strong>. </p><ul class="tight" data-tight="true"><li><p>초기 스크립트 실행, 이벤트, api 요청, 타이머 등 다른 시점에 DOM 트리가 변경될 수 있다.</p></li></ul></li></ul><p>여기서 든 의문은 두가지이다.</p><ul class="tight" data-tight="true"><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체의 루트 노드는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code> 객체 자체인데, HTML의 루트는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">&#x3C;html></code>이다. 그럼 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>와 HTML는 <strong>다른 구조의 트리가 아닌가</strong>?</p></li><li><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>로 DOM 트리로 변경되면 변경 이전에 데이터는 어떻게 되지?</p></li></ul><h2 class="mt-5 mb-3" id="-2">복잡성 증가의 원인</h2><p>결론: HTML 트리는 계층적 정적 트리로 부모-자식 관계가 고정되지만, DOM API는 이를 변경 가능한 그래프로 다룬다. 이로 인해 코드 복잡성이 증가한다. 문제는 <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>의 구조와 사용법에서 온다.</p><h3 class="mt-5 mb-3" id="-3"><strong>1. 참조 무결성</strong></h3><ul class="tight" data-tight="true"><li><p>첫 번째 원인은 DOM api는 HTML의 정적 트리를 <strong>변경 가능한(mutable) 그래프</strong>로 구성하기 때문이다.</p></li><li><p>DOM 트리는 트리 구조를 가지지만, <code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">document</code>api는  <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">양방향 그래프이며 부모와 자식이 서로 참조할 수 있다. </mark></p><ul class="tight" data-tight="true"><li><p>예를 들어, 자식 노드에서 일어나는 변경이 부모 노드에도 영향을 줄 수 있다.</p></li></ul></li><li><p>DOM 트리가 변경되면, 그동안의 변경사항이 기록되지 않아 제거된 노드의 정보가 손실될 수 있다.</p></li><li><p>제거된 노드를 복원하는 것이 어렵고, 삭제된 HTML이 포함한 정보를 보존하기 어렵다.</p></li><li><p>이러한 문제를 <strong>참조 무결성</strong>이라고 한다.</p></li><li><p><strong>참조 무결성을 지키려면 코드 복잡성이 증가한다.</strong></p></li></ul><h3 class="mt-5 mb-3" id="-4"><strong>2. 함수 실행 시점</strong></h3><ul class="tight" data-tight="true"><li><p>코드 복잡성 증가의 두번째 원인은 <strong>함수 실행 시점의 관리</strong>이다.</p></li><li><p>특히 함수가 실행이 완료된 이후에 <strong>DOM 조작으로 발생하는 부수효과</strong>가 코드 복잡성을 높인다. </p><ul class="tight" data-tight="true"><li><p>생명주기가 끝난 함수 내부 데이터가 필요해지는 경우가 많아 추가적인 로직이 필요해진다.</p></li></ul></li><li><p>DOM 조작은 <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#aa3131" style="background-color: #aa3131; color: inherit">트리 계층에 영향을 미쳐, 부모 노드의 변경이 모든 자식 노드에 영향을 미칠 수 있다. </mark></p><ul class="tight" data-tight="true"><li><p>앞선 문제인 참조 무결성을 지키는 추가적인 로직이 필요하다.</p></li></ul></li><li><p>이러한 문제들은 HTML을 DOM으로 변환하여 조작할 때 발생하기 쉬운 문제들이다.</p></li><li><p><strong>코드가 증가할 수록 함수 실행 시점의 관리 복잡성이 증가한다.</strong></p></li></ul><p><strong>근본적 원인은 DOM API와 HTML 구조에 일관성이 부족하기 때문이다.</strong> 이에 대한 해결은 1) HTML 계층을 불필요하게 변경하지 않으면서 2) DOM 조작 실행 타이밍을 일관되게 관리할 로직이 필요하다.</p><ul class="tight" data-tight="true"><li><p><strong>노드 격리화</strong>: 부모-자식 노드 간 영향이 제한되도록 설계.</p></li><li><p><strong>함수 생명주기 관리</strong>: DOM 조작 이후에도 유지해야 할 데이터를 관리하도록 한다. </p><ul class="tight" data-tight="true"><li><p>HTML 계층에 영향을 주지 않으면서, DOM 조작이 가져오는 부수효과를 관리하기 위한 함수와 저장 데이터의 로직을 구성한다.</p></li></ul></li></ul><hr class="my-5"><h1 class="mt-5 mb-3" id="html-1">HTML 트리 효율적으로 관리하기</h1><p>이러한 문제를 염두한 DOM 조작 JS 스크립트를 작성해보자.</p><h2 class="mt-5 mb-3" id="-5">격리화</h2><ul class="tight" data-tight="true"><li><p>각 노드 계층을 분명하게 격리하고, <strong>노드 단위로 DOM 조작을 관리</strong>한다.</p></li><li><p>DOM 조작의 <strong>영향을 부모나 형제 노드에 전달하지 않고, 자식 노드만 변경</strong>하도록 설계한다.</p></li><li><p>(리)렌더링이 각 노드에서 일관되게 작동하도록 추상화한다.</p></li></ul><p>DOM api가 일으킬 문제를 방지하기 위해 이러한 전략을 사용할 수 있다. 하지만 한계도 분명하다. 무엇보다 문제 해결에 여전히 많은 코드가 필요하고, <strong>결국엔 복잡성이 증가한다.</strong></p><h2 class="mt-5 mb-3" id="-6">한계</h2><blockquote><p>결론: 구조적 문제를 해결하려 할수록, <strong>프레임워크나 라이브러리 수준의 추가적인 로직</strong>이 필요하게 된다.</p></blockquote><p></p><p>DOM api의 구조적 문제는 여전히 많은 작업을 수반한다. 그리고 이는 DOM 직접 조작이 일으키는 성능 최적화와 <strong>별개의 문제</strong>이다. (실제로는 이미 여러 프레임워크에서 <strong>DOM 트리를 직접 조작</strong>하여 성능 최적화를 달성하고 있다.)</p><ul class="tight" data-tight="true"><li><p>JS 파일을 단위별로 분리하면 의존성 그래프가 추가되어 복잡성이 증가한다. </p><ul class="tight" data-tight="true"><li><p>JS 스크립트에 루트 노드 없이 개별 스크립트를 병렬적으로 로드하면 복잡성이 늘어난다.</p></li><li><p>루트 노드를 설정하여 트리를 구성하여도 추가적인 코드가 필요하다. </p><ul class="tight" data-tight="true"><li><p>노드 간의 의존성이 생기면, 노드 간의 데이터 교환을 위해 추가적인 로직이 필요하다.</p></li></ul></li><li><p>DOM 노드를 개별 JS 스크립트에서 다룰수록 코드가 분산되어 유지보수가 어려워진다(=<strong>응집도가 떨어진다</strong>).</p></li></ul></li><li><p>루트 JS 파일이 전체적으로 다시 실행되므로 변경된 노드만 업데이트되지 않는다.</p></li><li><p>계층적으로 분리된 구조에서는 렌더링 로직의 추상화가 필요하다.</p></li><li><p>초기 렌더링 이후 리렌더링을 트리거하기 위한 일관된 로직이 필요하다.</p></li><li><p>실행 시점 관리가 완전히 해결되지 않을 수 있다. (부수효과) </p><ul class="tight" data-tight="true"><li><p>이벤트 핸들링 및 API 호출과 같은 부수효과를 최소화하기 어렵다.</p></li></ul></li></ul><hr class="my-5"><h1 class="mt-5 mb-3" id="-7">구현하기</h1><h2 class="mt-5 mb-3" id="-8">추상 구현체</h2><p>한계에도 불구하고, 조금 더 깊은 학습을 위해 구현해보자. DOM 트리 구조로 인해 발생하는 문제를 해결하는 핵심 로직을 만들어보자. 코드 작성에 앞서 추상적인 로직을 정의했다.</p><p>DOM API 렌더링 로직: JS 실행 → DOM 변경 → 브라우저에서 HTML 트리 변경 → 리플로우 및 리페인트.</p><p></p><p><strong>구현 목표</strong></p><ul class="tight" data-tight="true"><li><p>노드 영향 최소화: HTML 계층을 따라 각 노드를 분리 및 격리하여 불필요한 변경 전파를 차단.</p></li><li><p>최적화된 렌더링: 특정 노드가 변경될 때, 해당 노드만 리페인트·리플로우되도록 렌더링 로직을 추상화하여 성능을 개선.</p></li></ul><p></p><p><strong>추상 구현체</strong></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-mermaid">graph TD 
+A[초기 스크립트 실행] -->|JS 실행| B[DOM API 호출]  
+B -->|노드 찾기| C[타겟 노드 식별]  
+C -->|변경할 노드 격리| D[독립적 DOM 업데이트]  
+D -->|부모 및 형제 노드 영향 없음| E[변경된 노드만 리렌더링]  
+E -->|렌더링 엔진 요청| F[리플로우 발생]  
+F -->|스타일 &#x26; 레이아웃 계산| G[리페인트 수행]  
+G -->|화면 갱신| H[최종 렌더링 완료]  
+  
+D -->|최적화 적용| I[필요한 노드만 업데이트]  
+I -->|불필요한 렌더링 방지| H</code></pre><h2 class="mt-5 mb-3" id="js">바닐라 JS로 구현하기</h2><h3 class="mt-5 mb-3" id="1">1. 렌더링 로직 추상화</h3><blockquote><p><strong><em>목적:</em></strong><em> </em><strong><em>참조 무결성</em></strong><em> 유지</em></p></blockquote><p>자식이 부모 노드에 영향을 주지 않도록, 각 계층을 격리화하고 필요한 범위에만 영향이 가도록 DOM 조작 로직을 작성해보았다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 특정 노드의 내용만 변경하거나 추가 및 제거하면서 트리 계층을 관리하는 렌더링 함수</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">updateDOM</span>(<span class="hljs-params">targetNode, actionCallback</span>) {
+  <span class="hljs-keyword">if</span> (!targetNode || <span class="hljs-keyword">typeof</span> actionCallback !== <span class="hljs-string">'function'</span>) <span class="hljs-keyword">return</span>;
+
+  <span class="hljs-keyword">const</span> parentNode = targetNode.<span class="hljs-property">parentNode</span>;
+  <span class="hljs-keyword">if</span> (!parentNode) <span class="hljs-keyword">return</span>;
+
+  <span class="hljs-keyword">const</span> newNode = targetNode.<span class="hljs-title function_">cloneNode</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-title function_">actionCallback</span>(newNode);
+
+  <span class="hljs-comment">// 부모 내에서 대상 노드를 추가</span>
+  <span class="hljs-keyword">if</span> (!parentNode.<span class="hljs-title function_">contains</span>(targetNode)) {
+    parentNode.<span class="hljs-title function_">appendChild</span>(newNode);
+    <span class="hljs-keyword">return</span>;
+  }
+  <span class="hljs-comment">// 부모 내에서 대상 노드를 교체 또는 제거</span>
+  <span class="hljs-keyword">if</span> (newNode) {
+    parentNode.<span class="hljs-title function_">replaceChild</span>(newNode, targetNode);
+  } <span class="hljs-keyword">else</span> {
+    parentNode.<span class="hljs-title function_">removeChild</span>(targetNode);
+  }
+}
+
+<span class="hljs-comment">// 예제 사용처 : Before</span>
+<span class="hljs-keyword">const</span> container = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"app"</span>);
+<span class="hljs-keyword">const</span> newElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"p"</span>);
+newElement.<span class="hljs-property">textContent</span> = <span class="hljs-string">"기존 내용"</span>;
+container.<span class="hljs-title function_">appendChild</span>(newElement);
+
+<span class="hljs-comment">// 적용 이후 : After</span>
+<span class="hljs-title function_">updateDOM</span>(newElement, <span class="hljs-function">(<span class="hljs-params">node</span>) =></span> {
+  node.<span class="hljs-property">textContent</span> = <span class="hljs-string">"새로운 콘텐츠 추가됨"</span>;
+});
+
+<span class="hljs-comment">// 새로운 노드 추가</span>
+<span class="hljs-title function_">updateDOM</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">"span"</span>), <span class="hljs-function">(<span class="hljs-params">node</span>) =></span> {
+  node.<span class="hljs-property">textContent</span> = <span class="hljs-string">"새로운 요소 추가"</span>;
+});
+
+<span class="hljs-comment">// 노드 제거</span>
+<span class="hljs-title function_">updateDOM</span>(newElement, <span class="hljs-function">() =></span> <span class="hljs-literal">null</span>);</code></pre><p>DOM 조작이 부모-형제 노드의 변경을 방지하는 추상화된 DOM 변경 로직을 작성하였다. 그러나 DOM 조작은 최초 DOM 업데이트 이후에 필요할 때가 많다. 많은 경우 이벤트, API 호출 등으로 노드 내부의 데이터가 변경되면 <strong>다시 DOM을 업데이트를 해야한다</strong>. 바닐라 JS에서는 노드 데이터의 변경을 감지하고, 변경된 데이터 기반으로 updateDOM을 트리거할 필요가 생긴다. 노드 변경의 격리화를 유지하면서, 이를 추상화한 "상태"를 만들어보자.</p><p></p><p>(DOM 업데이트: "리렌더링"이라고 익숙하게 여길 수 있지만, 사실 이 개념은 바닐라 JS와 프레임워크에서 약간 다르다. 일반적인 바닐라 JS에서 "리렌더링"은 DOM 트리를 처음부터 재구성하기 때문에, 가상 DOM 트리의 "리렌더링"과 메커니즘이 다르기 때문이다.)</p><h3 class="mt-5 mb-3" id="2">2. 상태 로직 추상화</h3><blockquote><p>목적 :  렌더링 실행 시점 관리</p></blockquote><p>상태는 DOM 조작의 실행의 시점을 관리하기 위해 사용한다. 즉 DOM 업데이트를 트리거하는 "변경된 데이터"를 관리하는 로직이다. DOM 업데이트는 보통 <strong>새로운 데이터를 기반</strong>으로 실행된다.<strong> 기존 변수에서 변경이 발생하는 시점을 트리거로 삼을 수 있다</strong>. 값에 변경이 생기면, 렌더링(DOM 조작)을 트리거한다. 즉, <mark class="px-0.5 py-0.5/2 rounded text-white font-medium hover:animate-pulse" data-color="#f8b200" style="background-color: #f8b200; color: inherit">상태는 렌더링의 기반이 되는 변수이고, 이 값이 변경되는 시점에 새로운 값으로 "리렌더링"이 필요하다</mark>.</p><h3 class="mt-5 mb-3" id="-9">클래스 : 구독형 상태 관리</h3><p>JS 클래스를 사용해 구독형으로 상태를 관리하고, <strong>노드 변경 시 해당 노드만 업데이트 하도록</strong> 구현한다. GPT의 도움을 받았으나, 이해가지 않는 부분이 꽤 있어 직접 수정과 주석을 남겼다.</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// 상태 관리 클래스: 개별 인스턴스별로 상태를 관리하며, 노드별 상태 분리</span>
+<span class="hljs-comment">// 상태 변경 시 해당 인스턴스에 등록된 노드만 업데이트됨</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">StateManager</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nodeStates</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); <span class="hljs-comment">// 개별 노드 상태 관리</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">listeners</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>(); <span class="hljs-comment">// 노드별 구독 목록 관리</span>
+  }
+
+  <span class="hljs-comment">// 특정 노드의 상태를 초기화하고, 렌더링 함수 등록</span>
+  <span class="hljs-title function_">subscribe</span>(<span class="hljs-params">targetNode, initialState, renderCallback</span>) {
+    <span class="hljs-keyword">if</span> (!targetNode || <span class="hljs-keyword">typeof</span> renderCallback !== <span class="hljs-string">'function'</span>) <span class="hljs-keyword">return</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nodeStates</span>.<span class="hljs-title function_">set</span>(targetNode, initialState);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">listeners</span>.<span class="hljs-title function_">set</span>(targetNode, renderCallback);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">updateNode</span>(targetNode, initialState); <span class="hljs-comment">// 초기 상태로 초기 렌더링 실행</span>
+  }
+
+  <span class="hljs-comment">// 특정 노드의 상태 변경 </span>
+  <span class="hljs-title function_">setState</span>(<span class="hljs-params">targetNode, newState</span>) {
+  <span class="hljs-comment">// 현재 노드 상태에 targetNode가 없다면 DOM 조작을 막음</span>
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">nodeStates</span>.<span class="hljs-title function_">has</span>(targetNode)) <span class="hljs-keyword">return</span>; 
+    <span class="hljs-keyword">const</span> prevState = <span class="hljs-variable language_">this</span>.<span class="hljs-property">nodeStates</span>.<span class="hljs-title function_">get</span>(targetNode);
+    
+    <span class="hljs-keyword">const</span> updatedState = { ...prevState, ...newState };
+    <span class="hljs-comment">// 노드의 상태 업데이트</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">nodeStates</span>.<span class="hljs-title function_">set</span>(targetNode, updatedState);
+    <span class="hljs-comment">// 변경된 상태로 리렌더링</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">updateNode</span>(targetNode, updatedState);
+  }
+
+  <span class="hljs-comment">// 상태 변경 시 updateDOM을 호출하여 해당 노드만 업데이트</span>
+  <span class="hljs-title function_">updateNode</span>(<span class="hljs-params">targetNode, state</span>) {
+	<span class="hljs-comment">// 1번째 인자: 렌더링 함수 updateDOM에서 클론할 targetNode</span>
+	<span class="hljs-comment">// 2번째 인자: actionCallback. 클론된 newNode를 인자로 받아 실행할 함수</span>
+    <span class="hljs-title function_">updateDOM</span>(targetNode, <span class="hljs-function">(<span class="hljs-params">node <span class="hljs-comment">// = 클론된 newNode) => {</span>
+      <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.listeners.has(targetNode)) {
+		  // 구독된 상태에 타겟 노드가 있을 때만, 상태를 기반으로 렌더링 수행
+        <span class="hljs-variable language_">this</span>.listeners.get(targetNode)(node, state);
+      }
+    }</span>);
+  }
+
+  // 특정 노드의 구독 해제
+  <span class="hljs-params">unsubscribe</span>(<span class="hljs-params">targetNode</span>) {
+    <span class="hljs-params">this</span>.<span class="hljs-params">nodeStates</span>.<span class="hljs-params">delete</span>(<span class="hljs-params">targetNode</span>);
+    <span class="hljs-params">this</span>.<span class="hljs-params">listeners</span>.<span class="hljs-params">delete</span>(<span class="hljs-params">targetNode</span>);
+  }
+}
+
+
+// <span class="hljs-params">Before</span>
+// 버튼 클릭 시 <span class="hljs-params">DOM</span> 직접 접근하여 텍스트 변경 
+<span class="hljs-params">const</span> <span class="hljs-params">button</span> = <span class="hljs-params">document</span>.<span class="hljs-params">getElementById</span>(<span class="hljs-params"><span class="hljs-string">"changeText"</span></span>);
+
+<span class="hljs-params">button</span>.<span class="hljs-params">addEventListener</span>(<span class="hljs-params"><span class="hljs-string">"click"</span>, () => {
+    <span class="hljs-keyword">const</span> text = <span class="hljs-variable language_">document</span>.querySelector(<span class="hljs-string">".text"</span>);
+    text.textContent = <span class="hljs-string">"텍스트가 변경되었습니다!"</span>;
+}</span>);
+
+// <span class="hljs-params">After</span>
+// <span class="hljs-params">StateManager</span> 인스턴스 생성
+<span class="hljs-params">const</span> <span class="hljs-params">stateManager</span> = <span class="hljs-params">new</span> <span class="hljs-params">StateManager</span>();
+
+// 텍스트 요소 구독 및 초기 상태 설정
+// 사실 함수 조차 넘길 필요 없게 추상화할 수 있다.
+<span class="hljs-params">const</span> <span class="hljs-params">textElement</span> = <span class="hljs-params">document</span>.<span class="hljs-params">querySelector</span>(<span class="hljs-params"><span class="hljs-string">".text"</span></span>);
+<span class="hljs-params">stateManager</span>.<span class="hljs-params">subscribe</span>(<span class="hljs-params">textElement, { content: textElement.textContent }, (node, state) => {
+  node.textContent = state.content;
+}</span>);
+
+// 버튼 클릭 시 상태 변경
+<span class="hljs-params">const</span> <span class="hljs-params">button</span> = <span class="hljs-params">document</span>.<span class="hljs-params">getElementById</span>(<span class="hljs-params"><span class="hljs-string">"changeText"</span></span>);
+<span class="hljs-params">button</span>.<span class="hljs-params">addEventListener</span>(<span class="hljs-params"><span class="hljs-string">"click"</span>, () => {
+  stateManager.setState(textElement, { content: <span class="hljs-string">"텍스트가 변경되었습니다!"</span> });
+}</span>);</span></code></pre><p>다음은 StateManager를 HTML에서 사용하는 예시이다.</p><p></p><p>HTML</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-html"><span class="hljs-tag">&#x3C;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">head</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">title</span>></span>StateManager 예제<span class="hljs-tag">&#x3C;/<span class="hljs-name">title</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">script</span> <span class="hljs-attr">defer</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./script.js"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">script</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">head</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">body</span>></span>
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"container"</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"textInput"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"텍스트 입력..."</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"updateText"</span>></span>입력 반영<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+        <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text"</span>></span>기본 텍스트<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">body</span>></span>
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">html</span>></span></code></pre><p>JS 스크립트</p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// ./script.js </span>
+<span class="hljs-comment">// StateManager 인스턴스 생성 </span>
+<span class="hljs-keyword">const</span> stateManager = <span class="hljs-keyword">new</span> <span class="hljs-title class_">StateManager</span>(); 
+
+<span class="hljs-comment">// 요소 가져오기</span>
+<span class="hljs-keyword">const</span> textElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".text"</span>);
+<span class="hljs-keyword">const</span> textInput = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"textInput"</span>);
+<span class="hljs-keyword">const</span> updateButton = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"updateText"</span>);
+
+<span class="hljs-comment">// </span>
+
+ 태그의 상태를 구독 및 초기화
+stateManager.<span class="hljs-title function_">subscribe</span>(textElement, { <span class="hljs-attr">content</span>: textElement.<span class="hljs-property">textContent</span> }, <span class="hljs-function">(<span class="hljs-params">node, state</span>) =></span> {
+node.<span class="hljs-property">textContent</span> = state.<span class="hljs-property">content</span>;
+});
+
+<span class="hljs-comment">// 버튼 클릭 시 입력값을 반영하여 상태 업데이트</span>
+updateButton.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, <span class="hljs-function">() =></span> {
+<span class="hljs-keyword">const</span> userInput = textInput.<span class="hljs-property">value</span>.<span class="hljs-title function_">trim</span>();
+<span class="hljs-keyword">if</span> (userInput) {
+stateManager.<span class="hljs-title function_">setState</span>(textElement, { <span class="hljs-attr">content</span>: userInput });
+}
+});</code></pre><p></p><h3 class="mt-5 mb-3" id="-10">함수</h3><p>함수로도 상태 관리를 구현할 수 있다. 클래스보다 간단하게 구현할 수 있지만, 상태 관리가 복잡해질수록 클래스로 구현하는 것이 유리하다. 위에 살펴본 방식을 구독형이라 한다면, pull 방식으로 간단하게 작성할 수도 있다.</p><p></p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useState</span>(<span class="hljs-params">initialState, targetNode</span>) {
+  <span class="hljs-keyword">if</span> (!targetNode) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">"useState: targetNode가 필요합니다."</span>);
+
+  <span class="hljs-keyword">let</span> state = initialState; <span class="hljs-comment">// 내부 상태 (클로저로 유지)</span>
+
+  
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">setState</span>(<span class="hljs-params">newState</span>) {
+ 
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> state === <span class="hljs-string">"object"</span> &#x26;&#x26; state !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>(state, newState);
+    } <span class="hljs-keyword">else</span> {
+      state = newState;
+    }
+
+    <span class="hljs-comment">// ✅ 상태 변경 시 자동으로 updateDOM 실행</span>
+    <span class="hljs-title function_">updateDOM</span>(<span class="hljs-function">(<span class="hljs-params">node</span>) =></span> {
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> state === <span class="hljs-string">"object"</span> &#x26;&#x26; state.<span class="hljs-property">content</span> !== <span class="hljs-literal">undefined</span>) {
+        node.<span class="hljs-property">textContent</span> = state.<span class="hljs-property">content</span>;
+      } <span class="hljs-keyword">else</span> {
+        node.<span class="hljs-property">textContent</span> = <span class="hljs-title class_">String</span>(state);
+      }
+    });
+  }
+
+  <span class="hljs-comment">// ✅ 클로저를 활용하여 상태 값을 변수처럼 반환</span>
+  <span class="hljs-keyword">return</span> [<span class="hljs-function">() =></span> state, setState];
+}
+
+<span class="hljs-comment">// After 적용 예시</span>
+<span class="hljs-comment">// 요소 가져오기</span>
+<span class="hljs-keyword">const</span> textElement = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".text"</span>);
+<span class="hljs-keyword">const</span> textInput = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"textInput"</span>);
+<span class="hljs-keyword">const</span> updateButton = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">"updateText"</span>);
+
+<span class="hljs-comment">// ✅ useState 호출 (상태 변수처럼 사용)</span>
+<span class="hljs-keyword">const</span> [textState, setTextState] = <span class="hljs-title function_">useState</span>({ <span class="hljs-attr">content</span>: <span class="hljs-string">"기본 텍스트"</span> }, textElement);
+
+<span class="hljs-comment">// 버튼 클릭 시 상태 변경 (자동 리렌더링)</span>
+updateButton.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">"click"</span>, <span class="hljs-function">() =></span> {
+  <span class="hljs-keyword">const</span> userInput = textInput.<span class="hljs-property">value</span>.<span class="hljs-title function_">trim</span>();
+  <span class="hljs-keyword">if</span> (userInput) {
+    <span class="hljs-title function_">setTextState</span>({ <span class="hljs-attr">content</span>: userInput });
+
+    <span class="hljs-comment">// ✅ 함수 호출 없이 변경된 상태 직접 접근</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"변경된 상태:"</span>, <span class="hljs-title function_">textState</span>().<span class="hljs-property">content</span>);
+  }
+});</code></pre><p></p><h3 class="mt-5 mb-3" id="proxy-mutationobserver">Proxy, MutationObserver</h3><p>Immer, Valtio와 같은 여러 상태 라이브러리는 재할당으로 상태를 변경하는 문법을 제공한다. 그럼에도 "상태의 불변성"이 지켜지는 이유는 <strong>JS 일급 객체를 기반으로 작동하기 때문</strong>이다. 이 객체들을 사용하여 상태를 구현할 수 있다. 이를 기반으로 상태 기능 뿐만 아니라 프론트엔드 프레임워크까지 구성한다. </p><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createReactiveState</span>(<span class="hljs-params">initialState, onUpdate</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Proxy</span>(initialState, {
+        <span class="hljs-title function_">set</span>(<span class="hljs-params">target, key, value</span>) {
+            target[key] = value;
+            <span class="hljs-title function_">onUpdate</span>(target);
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        }
+    });
+}
+
+<span class="hljs-keyword">const</span> state = <span class="hljs-title function_">createReactiveState</span>({ <span class="hljs-attr">content</span>: <span class="hljs-string">"기본 텍스트"</span> }, <span class="hljs-function">(<span class="hljs-params">updatedState</span>) =></span> {
+    <span class="hljs-title function_">updateDOM</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".text"</span>), <span class="hljs-function">(<span class="hljs-params">node</span>) =></span> {
+        node.<span class="hljs-property">textContent</span> = updatedState.<span class="hljs-property">content</span>;
+    });
+});
+
+<span class="hljs-comment">// 상태 변경 시 자동으로 updateDOM 실행</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+    state.<span class="hljs-property">content</span> = <span class="hljs-string">"Proxy를 사용한 자동 업데이트"</span>;
+}, <span class="hljs-number">2000</span>);
+
+
+<span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MutationObserver</span>(<span class="hljs-function">(<span class="hljs-params">mutations</span>) =></span> {
+  mutations.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">mutation</span> =></span> {
+    <span class="hljs-keyword">if</span> (mutation.<span class="hljs-property">type</span> === <span class="hljs-string">"childList"</span> || mutation.<span class="hljs-property">type</span> === <span class="hljs-string">"characterData"</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"DOM 변경 감지:"</span>, mutation);
+    }
+  });
+});
+
+<span class="hljs-keyword">const</span> targetNode = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">".text"</span>);
+observer.<span class="hljs-title function_">observe</span>(targetNode, { <span class="hljs-attr">childList</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">characterData</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">subtree</span>: <span class="hljs-literal">true</span> });
+
+<span class="hljs-comment">// 2초 후 강제 변경하여 MutationObserver가 감지하도록 함</span>
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> {
+  targetNode.<span class="hljs-property">textContent</span> = <span class="hljs-string">"MutationObserver 감지됨"</span>;
+}, <span class="hljs-number">2000</span>);
+</code></pre><hr class="my-5"><h1 class="mt-5 mb-3" id="-11">프레임워크의 접근법</h1><p>일반적인 프론트엔드 라이브러리와 프레임워크는 DOM에서 파생되는 복잡성 문제를 해결하는데 집중한다. 이들이 각각 어떤 프레임으로 문제 해결에 접근하는 지 간략하게 알아보고, 이번 글을 마무리한다.</p><h2 class="mt-5 mb-3" id="react">React</h2><h3 class="mt-5 mb-3" id="-12">개념 모델</h3><ul class="tight" data-tight="true"><li><p>리액트는 <strong>선언적인</strong> UI 관리를 지향한다.</p></li><li><p>리액트에 맡겨라: 앞서 작성한 렌더링, 상태 추상화 로직은 이미 리액트가 제공한다. </p><ul class="tight" data-tight="true"><li><p>개발자는 JSX와 컴포넌트 기반 아키텍처에 집중하고, 상태 관리와 DOM 조작의 최적화까지 리액트 엔진이 담당한다.</p></li><li><p>개발자는 리액트 앨리먼트 JSX와 로직 작성, 컴포넌트 구성에만 신경쓰면 된다.</p></li></ul></li><li><p><strong>데이터 흐름은 루트에서 리프 노드까지 단방향으로 전달된다.</strong></p><ul class="tight" data-tight="true"><li><p>컴포넌트 단위로 트리 계층에 따라 노드를 격리하고, 의존성을 최소화한다.</p></li><li><p>형제 및 부모-자식 간의 의존성을 최소화하여 컴포넌트 독립성을 지킨다.</p></li></ul></li><li><p>변경 사항이 발생하면 가상 DOM(vDOM)을 사용해 최소한의 업데이트만 반영한다.</p></li><li><p>예전에는 vDOM을 깊이 우선 탐색(DFS) 방식으로 변경 사항을 찾았지만, 현재는 Fiber 구조를 사용하여 <strong>작업 우선순위를 조정하며 최적화</strong>한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// React의 useState 내부 구현 (간략화된 버전)</span>
+
+<span class="hljs-comment">// React의 상태 관리 방식 요약:</span>
+<span class="hljs-comment">// 1. useState는 Fiber 노드와 연동된 개별 훅 객체를 관리.</span>
+<span class="hljs-comment">// 2. setState 호출 시, 변경 사항을 감지하고 Fiber 트리의 업데이트를 예약.</span>
+<span class="hljs-comment">// 3. Reconciliation (조정) 과정을 통해 vDOM을 비교하고, 변경된 부분만 DOM에 반영.```</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useState</span>(<span class="hljs-params">initialState</span>) {
+  <span class="hljs-keyword">let</span> hook = <span class="hljs-title function_">resolveCurrentHook</span>(); <span class="hljs-comment">// 현재 실행 중인 훅을 참조한다 (Fiber Tree에서 관리)</span>
+
+  <span class="hljs-keyword">if</span> (!hook) {
+    hook = {
+      <span class="hljs-attr">state</span>: initialState,
+      <span class="hljs-attr">queue</span>: [], <span class="hljs-comment">// 동일한 setState 상태 변경을 batch할 때 사용한다</span>
+      <span class="hljs-attr">setState</span>: <span class="hljs-function">(<span class="hljs-params">action</span>) =></span> {
+        hook.<span class="hljs-property">state</span> = <span class="hljs-keyword">typeof</span> action === <span class="hljs-string">'function'</span> ? <span class="hljs-title function_">action</span>(hook.<span class="hljs-property">state</span>) : action;
+        <span class="hljs-title function_">scheduleUpdateOnFiber</span>(); <span class="hljs-comment">// 변경 감지 후 컴포넌트 업데이트 트리거</span>
+      },
+    };
+    <span class="hljs-title function_">mountHook</span>(hook); <span class="hljs-comment">// 새로운 훅을 Fiber 트리에 추가한다</span>
+  }
+
+  <span class="hljs-keyword">return</span> [hook.<span class="hljs-property">state</span>, hook.<span class="hljs-property">setState</span>];
+}
+
+<span class="hljs-comment">// Fiber Tree의 관리 시스템 (간략화)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">resolveCurrentHook</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> currentFiber?.<span class="hljs-property">hook</span> || <span class="hljs-literal">null</span>; <span class="hljs-comment">// 현재 Fiber 노드에서 훅 참조</span>
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">scheduleUpdateOnFiber</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 현재 Fiber의 변경을 감지하고, 최적화된 렌더링을 스케줄링</span>
+  <span class="hljs-title function_">requestIdleCallback</span>(<span class="hljs-function">() =></span> <span class="hljs-title function_">performWorkOnFiber</span>());
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">performWorkOnFiber</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Fiber Reconciliation 실행 및 필요한 노드만 업데이트"</span>);
+  <span class="hljs-comment">// vDOM 비교 및 필요한 변경 사항 적용 (Reconciliation 과정)</span>
+}</code></pre><p><code class="mx-1 px-1 bg-muted dark:bg-muted-foreground rounded text-orange-700 dark:text-theme italic font-mono transition-colors duration-300">scheduleUpdateOnFiber</code> 등 리액트 내부의 자세한 내용은 이전에 작성한 바가 있다.</p><p></p><h2 class="mt-5 mb-3" id="vue">Vue</h2><h3 class="mt-5 mb-3" id="-13">개념 모델</h3><ul class="tight" data-tight="true"><li><p>Vue는 <strong>반응형(Reactive) 데이터 바인딩</strong>을 핵심으로 한다.</p></li><li><p>data 객체를 선언하면 Vue는 이를 <strong>Proxy로 감싸서 반응형</strong>으로 만든다.</p></li><li><p>변경 사항이 감지되면 자동으로 UI를 업데이트한다.</p></li><li><p>템플릿 기반 선언적 렌더링을 제공하여 HTML 구조와 로직을 자연스럽게 결합한다.</p></li><li><p>컴포넌트 기반 아키텍처를 활용하여 재사용성과 유지보수성을 극대화한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// Vue의 반응형 데이터 시스템 개요</span>
+
+<span class="hljs-keyword">const</span> { reactive, effect } = <span class="hljs-title class_">Vue</span>;
+
+<span class="hljs-keyword">const</span> state = <span class="hljs-title function_">reactive</span>({ <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> }); <span class="hljs-comment">// 반응형 상태 선언</span>
+
+<span class="hljs-title function_">effect</span>(<span class="hljs-function">() =></span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`현재 카운트: <span class="hljs-subst">${state.count}</span>`</span>); <span class="hljs-comment">// 상태 변화 감지 후 실행</span>
+});
+
+state.<span class="hljs-property">count</span>++; <span class="hljs-comment">// count가 변경되면 effect 내부 코드가 자동 실행됨</span></code></pre><hr class="my-5"><h2 class="mt-5 mb-3" id="svelt">Svelt</h2><h3 class="mt-5 mb-3" id="-14">개념 모델</h3><ul class="tight" data-tight="true"><li><p><strong>Svelte는 컴파일 단계에서 상태 관리를 최적화하는 접근 방식</strong>을 취한다.</p></li><li><p>let 변수를 선언하면 Svelte는 이를 내부적으로 반응형 상태로 관리한다.</p></li><li><p><strong>구독 기반 반응형 시스템</strong>을 사용하여, 상태가 변경되면 관련된 DOM만 갱신한다.</p></li><li><p>컴포넌트의 상태가 변경될 때 별도의 가상 DOM을 사용하지 않고 직접 DOM을 업데이트한다.</p></li><li><p>스토어(Store) 시스템을 제공하여 글로벌 상태 관리가 가능하다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-js"><span class="hljs-comment">// Svelte의 반응형 변수와 스토어 예제</span>
+  <span class="hljs-keyword">import</span> { writable } <span class="hljs-keyword">from</span> <span class="hljs-string">'svelte/store'</span>;
+
+  <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>; <span class="hljs-comment">// 반응형 변수</span>
+  <span class="hljs-keyword">const</span> storeCount = <span class="hljs-title function_">writable</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// 구독형 상태</span>
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">increment</span>(<span class="hljs-params"></span>) {
+  count += <span class="hljs-number">1</span> <span class="hljs-comment">// 자동 UI 업데이트</span>
+  storeCount.<span class="hljs-title function_">update</span>(<span class="hljs-function"><span class="hljs-params">n</span> =></span> n + <span class="hljs-number">1</span>); <span class="hljs-comment">// 스토어 업데이트</span>
+}</code></pre><p></p><hr class="my-5"><h2 class="mt-5 mb-3" id="htmx">HTMX</h2><h3 class="mt-5 mb-3" id="-15">개념 모델</h3><ul class="tight" data-tight="true"><li><p>HTMX는 HTML을 확장하여 서버와의 상호작용을 단순화하는 접근 방식을 취한다.</p></li><li><p>HTMX는 요청을 통해 <strong>서버에서 새 HTML을 받아와 해당 요소를 교체하며 UI를 갱신한다</strong>.</p></li><li><p>이로써 별도의 클라이언트 상태 관리 없이, <strong>서버에서 HTML을 렌더링하여 동적으로 갱신한다</strong>.</p></li><li><p>클라이언트 상태 관리가 필요 없는 서버 중심 렌더링 방식에 적합하다.</p></li><li><p>hx-get, hx-post 등의 속성을 활용하여 AJAX 요청을 간편하게 처리한다.</p></li><li><p>가상 DOM을 사용하지 않고, 직접적인 DOM 조작을 수행하여 성능을 최적화한다.</p></li></ul><pre class="ql-syntax hljs rounded-md p-4 my-2 text-sm"><code class="hljs language-html"><span class="hljs-comment">&#x3C;!-- HTMX의 간단한 버튼 예제 --></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">hx-get</span>=<span class="hljs-string">"/clicked"</span> <span class="hljs-attr">hx-target</span>=<span class="hljs-string">"#result"</span> <span class="hljs-attr">hx-swap</span>=<span class="hljs-string">"outerHTML"</span>></span>
+  클릭
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"result"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+
+<span class="hljs-comment">&#x3C;!-- 입력 필드 값이 변경될 때마다 서버에서 새 데이터 가져오기 --></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">hx-get</span>=<span class="hljs-string">"/search"</span> <span class="hljs-attr">hx-trigger</span>=<span class="hljs-string">"keyup changed"</span> <span class="hljs-attr">hx-target</span>=<span class="hljs-string">"#search-results"</span> /></span>
+<span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"search-results"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></code></pre><p>브라우저에서의 상태 관리를 완전히 배제하고, 서버 데이터와 동일한 HTML을 구성하는 방식으로 이해했다. 일면으로 서버 중심으로 발전하는 리액트가 떠오른다. 더 단순하고 직관적인 방식으로 브라우저와 서버에 분리된 상태 관리를 일관화하는 방식이 아닐까 싶었다. 깊게 사용해보지 않아서, 그 한계에 대해서도 궁금하다.</p><p></p><p>HTMX의 주요 메서드는 다음과 같다:</p><ul class="tight" data-tight="true"><li><p>hx-get: 지정된 URL로 GET 요청을 보내고, 응답을 받아서 갱신함.</p></li><li><p>hx-post: 지정된 URL로 POST 요청을 보냄.</p></li><li><p>hx-put: 데이터를 갱신하는 PUT 요청을 보냄.</p></li><li><p>hx-delete: 지정된 리소스를 삭제하는 DELETE 요청을 수행함.</p></li><li><p>hx-target: 응답으로 받은 HTML을 삽입할 대상 요소 지정.</p></li><li><p>hx-swap: 응답을 기존 요소와 어떻게 교체할지 정의 (outerHTML, innerHTML, beforebegin 등 지원).</p></li><li><p>hx-trigger: 특정 이벤트(click, change 등) 발생 시 요청 실행.</p></li></ul>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/61","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Graph 1 - 기본 구조와 개념"}],["$","p",null,{"className":"text-sm","children":"2025-02-25"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/59","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Hash 2 - 적용과 응용"}],["$","p",null,{"className":"text-sm","children":"2025-02-25"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"HTML 트리와 DOM api - teklog"}],["$","meta","1",{"name":"description","content":"TLDRHTML는 정적 트리이고 DOM api는 동적 트리이다.문제는 구조에서 오는 복잡성 : 참조 무결성, 실행 순서해결은 복잡성을 줄이기 위한 전략전제리액트와 같은 프론트엔드 라이브러리나 프레임워크는 왜 사용하나요?면접에서 이런 질문을 받았다. 난감한 기분이 드는 걸 보니, 그동안 너무 당연하게만 생각했던 것 같다. 현대 웹 애플리케이션의 복잡한 UX를"}],["$","meta","2",{"property":"og:title","content":"HTML 트리와 DOM api - teklog"}],["$","meta","3",{"property":"og:description","content":"TLDRHTML는 정적 트리이고 DOM api는 동적 트리이다.문제는 구조에서 오는 복잡성 : 참조 무결성, 실행 순서해결은 복잡성을 줄이기 위한 전략전제리액트와 같은 프론트엔드 라이브러리나 프레임워크는 왜 사용하나요?면접에서 이런 질문을 받았다. 난감한 기분이 드는 걸 보니, 그동안 너무 당연하게만 생각했던 것 같다. 현대 웹 애플리케이션의 복잡한 UX를"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"HTML 트리와 DOM api - teklog"}],["$","meta","7",{"name":"twitter:description","content":"TLDRHTML는 정적 트리이고 DOM api는 동적 트리이다.문제는 구조에서 오는 복잡성 : 참조 무결성, 실행 순서해결은 복잡성을 줄이기 위한 전략전제리액트와 같은 프론트엔드 라이브러리나 프레임워크는 왜 사용하나요?면접에서 이런 질문을 받았다. 난감한 기분이 드는 걸 보니, 그동안 너무 당연하게만 생각했던 것 같다. 현대 웹 애플리케이션의 복잡한 UX를"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

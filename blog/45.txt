@@ -1,0 +1,347 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","45"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","45","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","45","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T3e9e,<p><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1708752225/vnhnngpqv4nnmmfl10lp.png"></p><p><br></p><p><a href="https://www.teklog.site/blog/44" rel="noopener noreferrer" target="_blank">지난 글</a>에서 최적화를 위해 사용되는 훅과 React.memo의 적절한 사용법에 대해 깊이 살펴보았다. 이어지는 내용은 리액트 컴포넌트의 일반적인 설계 패턴이다. 필요한 만큼이나 알고자 하는 갈증이 깊었고, 또 중요한 내용이기에 책에서 이해한 내용과 함께 직접 고민한 생각을 정리해본다. 컴포넌트 설계에 관한 내용들은 여러차례 나누어 작성할 예정이다.</p><p><br></p><p>들어가기에 앞서, 많은 컴포넌트 설계 패턴들이 리액트 훅 이전, Class 컴포넌트를 전제로 고안된 것이 많다. 그러므로, 이 글에선 간단한 패턴의 소개와 react 18에 더 적합한 방법을 함께 고민해보기로 한다.</p><p><br></p><h3><strong><em>1. Presentational/Container Components</em></strong></h3><p><br></p><p>Presentational/Container 패턴은 일반적인 리액트 컴포넌트 구성 패턴이다. Presentational 컴포넌트는 UI를 렌더링하고, Container 컴포넌트는 UI의 상태state를 관리한다. 즉 UI와 State를 분리하여 컴포넌트를 구성한다.</p><pre class="ql-syntax" spellcheck="false">const UserProfile = ({ user, onLogout }) =&gt; (
+&lt;div&gt; 
+    &lt;h1&gt;User Profile&lt;/h1&gt; 
+    &lt;p&gt;Name: {user.name}&lt;/p&gt; 
+    &lt;p&gt;Email: {user.email}&lt;/p&gt; 
+    &lt;button onClick={onLogout}&gt;Logout&lt;/button&gt;  
+&lt;/div&gt; 
+);
+    
+const UserProfileContainer = () =&gt; { 
+  const [user, setUser] = useState({ 
+  name: 'John Doe', email:'john.doe@example.com',});
+  
+  const handleLogout = () =&gt; { 
+  console.log('User logged out'); // Handle logout logic here 
+  };
+
+ return ( &lt;UserProfile user={user} onLogout={handleLogout} /&gt;); 
+};
+</pre><p><br></p><p>여기서 상태와 핸들러를 props로 넘기는 UserProfileContainer가 Container이며, UserProfile는 모든 것을 props로 받는 Presentation이다. 이를 통해 UI 컴포넌트와 상태의 로직을 완전히 분리하였다.</p><p><br></p><p>이 패턴을 사용하면 다음과 같은 이점이 있다(고 한다).</p><p><br></p><ul><li>단순성, 가독성 : 코드 몇줄 뿐만 아니라, 컴포넌트 단위의 코드 파악이 빨라진다. 그러므로 유지/보수에 용이하다</li><li>관심사의 분리 : 컴포넌트 분리의 원칙이 분명하다</li><li>테스트 용이성 : 상태 로직과 ui를 분리하여 테스트하기 쉽다</li><li>재사용성 : Presentational 컴포넌트를 재사용할 수 있도록 설계하여 특정 로직에 구속되지 않게 할 수 있다. 예를 들어 UI는 Presentational 컴포넌트의 조합으로 구성하고, 각 페이지의 이벤트 처리와 비동기 요청은 Container에서 처리할 수 있다.</li></ul><p><br></p><p>하지만 거의 모든 기술이 그러하듯, 트레이드 오프가 있다.</p><p><br></p><ul><li><strong>대규모 앱에서 복잡성</strong></li></ul><p class="ql-indent-1">- 크고 복잡한 앱에서 Container/Presentational 컴포넌트 사이의 구분이 불필요한 코드 스플릿으로 복잡성이 더해질 수 있다.</p><p class="ql-indent-1">- 특히 UI 상태 업데이트가 잦은 이벤트 핸들러의 경우, 일부 컴포넌트에서 로직과 UI의 구분이 모호해지는 경우가 있다.이 패턴을 고수하면서 Props drilling이 발생하기 쉽다.</p><p class="ql-indent-1">- 넘겨줘야할 Props가 끝없이 증가할 수 있다. 코드 복잡성 증가로 이어진다</p><p class="ql-indent-1"><br></p><ul><li><strong>상태 관리의 오버헤드</strong></li></ul><p>              - 복잡한 상태 로직을 다루는 시나리오에서 컨테이너 컴포넌트 내의 훅만을 사용하는 것만으로는 충분하지 않을 수 있다.</p><p><br></p><ul><li><strong>프롭 드릴링의 오버헤드</strong></li></ul><p class="ql-indent-1">- 컨테이너 컴포넌트가 여러 계층의 컴포넌트에 걸쳐 프롭을 전달해야 할 수 있다</p><p class="ql-indent-1">- 간단한 컴포넌트 임에도 ui를 분리하면서 deps가 계속 깊어질 수 있다.</p><p class="ql-indent-1">- 상태 관리 라이브러리(Redux, Context API)를 사용해야 하는 경우에 이 패턴을 고수한다면 컴포넌트의 deps가 매우 깊어질 것이다.</p><p><br></p><ul><li><strong>성능 문제</strong></li></ul><p class="ql-indent-1">- UI 컴포넌트가 모든 상태를 Props로 받기 때문에 리렌더링 이슈가 생길 수 있다.</p><p class="ql-indent-1">- 특히 useState와 useEffect 훅의 잘못된 사용이 성능 문제로 이어질 수 있다.</p><p class="ql-indent-1">- 부모 컴포넌트에서 props로 상태를 넘겨받기 때문에 하나의 Container가 수많은 Presentational 컴포넌트를 갖고있다면, 모든 리렌더링의 비용이 높아진다.</p><p class="ql-indent-1">- 제대로 최적화되지 않은 경우(예: memo, useCallback, useMemo 사용 안 함, useEffect 잘못된 의존성 배열) 필요 이상으로 리렌더링 될 수 있다.</p><p class="ql-indent-1"><br></p><ul><li><strong>테스팅의 복잡성</strong></li></ul><p class="ql-indent-1">- 단위 테스팅은 쉬워질 수 있으나, 테스팅의 오버헤드가 증가할 수도 있다.</p><p class="ql-indent-1">- Props와 훅을 Mocking 해야할 양이 더 늘어 테스트의 복잡성이 증가할 수 있다.</p><p><br></p><p>면도날처럼 단순 명료하다. 하지만 실제 개발에선 오히려 복잡성을 높이기 쉽다. 경험 상으로도 프로젝트 후반에 이르러 헤아리기 어려울 지경으로 자라난 코드 베이스를 마주한 적이 있었다. 그러므로 적용에 앞서<strong> 1) UI 상태 변화 플로우 2) 전체 컴포넌트 구성 3) 컴포넌트 적용 범위</strong>에 대한 고려가 필요하다.</p><p><br></p><h3>Snippet</h3><p>hook과 함께 사용 시 적절한 방식을 고민해보며 code snippet을 작성했다.</p><pre class="ql-syntax" spellcheck="false">const ReusableButton:React.FC&lt;PropsWithChildren&lt;ButtonHTMLAttributes&lt;HTMLButtonElement&gt;&gt;&gt;
+    = memo(({ children, ...props}) =&gt; {
+    console.log('rerender ReusableText : ',  children);
+    return &lt;button {...props}&gt;{children}&lt;/button&gt;;
+})
+
+const ReusableInput:React.FC&lt;HTMLProps&lt;HTMLInputElement&gt;&gt;
+    = memo((props) =&gt; {
+    console.log('rerender ReusableInput');
+    return &lt;input {...props}/&gt;;
+})
+
+const ReusableText:React.FC&lt;{text: string}&gt;
+    = memo(({ text}) =&gt; {
+        console.log('rerender ReusableText : ',  text);
+    return &lt;p&gt;{text}&lt;/p&gt;;
+})
+
+
+const ContainerComponent = () =&gt; {
+    const [count, setCount] = useState(0);
+    const [text, setText] = useState('');
+
+    const handlePlusButtonClick = useCallback(() =&gt; {
+        setCount((prev) =&gt; prev  + 1);
+    }, []);
+
+    const handleMinusButtonClick = useCallback(() =&gt; {
+        setCount((prev) =&gt; prev  - 1);
+    }, []);
+
+    const handleInputChange = useCallback((e: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; {
+        setText(e.target.value);
+    },  []);
+
+    return (
+        &lt;div&gt;
+            &lt;ReusableText text={`count : ${count}`}/&gt;
+            &lt;ReusableText text={`text : ${text}`}/&gt;
+            &lt;div&gt;
+                &lt;ReusableButton onClick={handlePlusButtonClick}&gt;+&lt;/ReusableButton&gt;
+                &lt;ReusableButton onClick={handleMinusButtonClick}&gt;-&lt;/ReusableButton&gt;
+                &lt;ReusableInput type="text" placeholder="Type Here" value={text} onInput={handleInputChange}/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    );
+}
+
+</pre><p><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1708614892/xvs6gox3yoejseajclgu.gif"><img src="http://res.cloudinary.com/dolziw8fv/image/upload/v1708614800/xwvjyh1d7vrdxprf661m.png"></p><p><br></p><p>코드의 의도 :</p><p>1 - Container에서 발생하는 state 업데이트가 모든 UI 컴포넌트를 리렌더링한다.</p><ul><li>이를 방지하기 위해 useCallback을 사용한다.</li></ul><p><br></p><p>2 - Presentation 컴포넌트의 재사용성을 높인다.</p><ul><li>리렌더링 이슈를 막기 위해 React.memo를 활용한다</li><li>각 엘리먼트 ui 디자인에 variation이 많지 않고, 일관성이 있다면 style에 관한 props로 쉽게 관리할 수 있다</li></ul><p><br></p><p>3 - useCallback의 deps가 비어있다.</p><ul><li>+, - 버튼 핸들러 콜백훅에 count가 deps로 추가된다면 양쪽 버튼이 모두 리렌더링된다</li><li>그러나 같은 동작으로 setter에 콜백함수를 사용하면 이를 막을 수 있다.</li><li>input 핸들로 또한 event.target의 값이 들어가기 때문에 deps가 비어도 작동된다.</li></ul><p><br></p><p>재사용성, 렌더링 최적화에만 초점을 둔 snippet이기 때문에, 실제 개발이라면 한계가 있다. 이상적인 케이스 대로 구현사항과 컴포넌트 구조가 패턴대로 명확히 구분되지 않을 가능성이 크기 때문이다. 또한 이러한 필연적인 단점도 떠오른다. memo, callback을 써서 Presentation의 리렌더링은 막아도, 여전히 Container의 리렌더링은 막을 수 없다.. 당연한 얘기다. 위의 gif에서 버튼 이벤트, 텍스트 이벤트 각각의 상태 변화가 생길 때마다 UI 자식 컴포넌트와 함께 매번 Container도 리렌더링된다. 매번 모든 자식 컴포넌트에 콜백, 메모 훅 등을 사용하는 것 또한 적절하지 않다. 이 훅들을 "비용이 높은 컴포넌트"에 적용하지 않는 이상, 결국 오버헤드이기 때문이다.</p><p><br></p><p>조금 더 복잡한 상태 관리가 필요한 경우는 어떨까?</p><p><br></p><p><strong>Presntational/Container 패턴</strong></p><pre class="ql-syntax" spellcheck="false">// Container
+
+const FormContainer = () =&gt; {
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () =&gt; {
+    const newErrors = {};
+    if (!formData.email.includes('@')) newErrors.email = 'Email is invalid';
+    if (formData.password.length &lt; 8) newErrors.password = 'Password must be at      least 8 characters';
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) =&gt; {
+    e.preventDefault();
+    if (!validateForm()) return;
+    console.log('Form data:', formData);
+  };
+
+  return &lt;FormPresentation formData={formData} setFormData={setFormData} errors={errors} handleSubmit={handleSubmit} /&gt;;
+};
+
+// Presentational
+
+const FormPresentation = ({ formData, setFormData, errors, handleSubmit }) =&gt; {
+  return (
+    &lt;form onSubmit={handleSubmit}&gt;
+      &lt;input
+        type="email"
+        value={formData.email}
+        onChange={(e) =&gt; setFormData({ ...formData, email: e.target.value })}
+        placeholder="Email"
+      /&gt;
+      {errors.email &amp;&amp; &lt;p&gt;{errors.email}&lt;/p&gt;}
+      &lt;input
+        type="password"
+        value={formData.password}
+        onChange={(e) =&gt; setFormData({ ...formData, password: e.target.value })}
+        placeholder="Password"
+      /&gt;
+      {errors.password &amp;&amp; &lt;p&gt;{errors.password}&lt;/p&gt;}
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  );
+};
+</pre><p>유저의 입력과 validation에 따라 ui의 업데이트가 발생하는 일반적인 form 컴포넌트이다. 여기서 이 패턴의 비효율성이 드러난다. 일반적인 form 컴포넌트라면, 아마 하나의 컴포넌트로 작성되었을 코드이기 때문이다. 첫째로 컴포넌트에 불필요한 nesting이 생긴다. 이 컴포넌트는 분리되지 않아도 애초에 render(return) 상단에는 상태 관리와 연관된 코드만 포함한다. 둘째로 이로 인해 늘어나는 코드의 양이다. 파일이 추가되고, props로 넘겨야할 양이 증가한다. 타입스크립트를 사용한다면, props의 타입을 지정하면서 더 많은 코드가 늘어났을 것이다. 이와 같은 경우엔 패턴의 순기능은 딱히 찾기 어려우며, 오히려 비용이 늘어나는 걸로 보인다.</p><p><br></p><p><strong>커스텀 훅 useForm</strong></p><pre class="ql-syntax" spellcheck="false">const useForm = (initialValues) =&gt; {
+  const [values, setValues] = useState(initialValues);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) =&gt; {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
+  const validate = () =&gt; {
+    const newErrors = {};
+    if (!values.email.includes('@')) newErrors.email = 'Email is invalid';
+    if (values.password.length &lt; 8) newErrors.password = 'Password must be at least     8 characters';
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  return { values, handleChange, errors, validate };
+};
+
+const Form = () =&gt; {
+  const { values, handleChange, errors, validate } = useForm({ email: '', password: '' });
+
+  const handleSubmit = (e) =&gt; {
+    e.preventDefault();
+    if (!validate()) return;
+    console.log('Form data:', values);
+  };
+
+  return (
+    &lt;form onSubmit={handleSubmit}&gt;
+      &lt;input name="email" type="email" value={values.email} onChange={handleChange} placeholder="Email" /&gt;
+      {errors.email &amp;&amp; &lt;p&gt;{errors.email}&lt;/p&gt;}
+      &lt;input name="password" type="password" value={values.password} onChange={handleChange} placeholder="Password" /&gt;
+      {errors.password &amp;&amp; &lt;p&gt;{errors.password}&lt;/p&gt;}
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  );
+};
+</pre><p><br></p><p>상태 변경 로직의 추상화가 필요하다면, 차라리 이같은 커스텀 훅으로 분리하는 것이 더 효율적으로 보인다. 불필요한 컴포넌트 네스팅 없이, 커스텀 훅 안에서 상태와 상태 로직만을 분리하기 때문에, "로직 분리"의 이점과 불필요한 코드 추가를 막는 이점을 동시에 챙길 수 있다.</p><p><br></p><p><br></p><h3>Conclusion &amp; Use Cases</h3><p><br></p><p>"UI와 상태를 분리한다"는 패턴이 주는 명쾌함이 있지만, 이 패턴을 코드베이스 전체에 적용하는 것은 무리가 있어보인다. 모든 경우에 이 패턴을 강제한다면, 오히려 단점만 더 커지기 쉽상이다. 따라서 이 패턴을 적용하기 위해선 이러한 전제조건이 필요하겠다.</p><p><br></p><ul><li>레이아웃, 템플릿처럼 큰 단위가 아닌 작은 단위의 컴포넌트</li><li>상태 업데이트를 트리거하는 이벤트 핸들링이 많지 않은 경우</li></ul><p><br></p><p>이 두가지를 염두하면 구체적으로 다음과 같은 유즈 케이스가 떠오른다.</p><p><br></p><ul><li>리스트의 아이템 컴포넌트처럼 UI와 상태 분리가 명확하고, 아이템 컴포넌트에서 복잡한 상태 로직이 없는 경우</li><li>여러 컴포넌트에서 재사용되는 UI 컴포넌트 (아토믹 패턴의 atom처럼 작은 단위로 여러 군데에서 재사용되는 컴포넌트)</li></ul><p><br></p><p>(사실 두번째의 경우에는 일반적인 atomic 패턴의 ui 컴포넌트와 다를 바 없어보이긴 하다.)</p><p><br></p><p>결론을 요약하면 다음과 같다.</p><p><br></p><ol><li>모든 컴포넌트에 패턴을 강제하지 않고, 적절한 케이스에 사용한다</li><li>패턴의 간결함이 코드의 간결함으로 이어지지는 않는다. (props가 방대해지고, 불필요한 코드량이 늘 수 있다)</li><li>함수 컴포넌트에서 복잡한 상태관리는 커스텀 훅으로 관리하는 것이 효율적인 대안이 될 수 있다.</li></ol>1e:[["$","$L1f",null,{"content":"$20"}],"$L21"]
+23:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"Fluent React 2 - 컴포넌트 설계 패턴 (presentational/container)"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2024/02/22"}],["$","p",null,{"children":"n°45"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ","React"]}]}]]}],["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L22",["$","$L23",null,{}]]}]}],["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L24"}]]}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+25:T63bb,<p><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1708752225/vnhnngpqv4nnmmfl10lp.png"></p><p><br></p><p><a href="https://www.teklog.site/blog/44" rel="noopener noreferrer">지난 글</a>에서 최적화를 위해 사용되는 훅과 React.memo의 적절한 사용법에 대해 깊이 살펴보았다. 이어지는 내용은 리액트 컴포넌트의 일반적인 설계 패턴이다. 필요한 만큼이나 알고자 하는 갈증이 깊었고, 또 중요한 내용이기에 책에서 이해한 내용과 함께 직접 고민한 생각을 정리해본다. 컴포넌트 설계에 관한 내용들은 여러차례 나누어 작성할 예정이다.</p><p><br></p><p>들어가기에 앞서, 많은 컴포넌트 설계 패턴들이 리액트 훅 이전, Class 컴포넌트를 전제로 고안된 것이 많다. 그러므로, 이 글에선 간단한 패턴의 소개와 react 18에 더 적합한 방법을 함께 고민해보기로 한다.</p><p><br></p><h3 id=""><strong><em>1. Presentational/Container Components</em></strong></h3><p><br></p><p>Presentational/Container 패턴은 일반적인 리액트 컴포넌트 구성 패턴이다. Presentational 컴포넌트는 UI를 렌더링하고, Container 컴포넌트는 UI의 상태state를 관리한다. 즉 UI와 State를 분리하여 컴포넌트를 구성한다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">UserProfile</span> = (<span class="hljs-params">{ user, onLogout }</span>) => (
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span> 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">h1</span>></span>User Profile<span class="hljs-tag">&#x3C;/<span class="hljs-name">h1</span>></span> 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Name: {user.name}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span> 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>Email: {user.email}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span> 
+    <span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onLogout}</span>></span>Logout<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span>  
+<span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span> 
+);
+    
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">UserProfileContainer</span> = (<span class="hljs-params"></span>) => { 
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>({ 
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'John Doe'</span>, <span class="hljs-attr">email</span>:<span class="hljs-string">'john.doe@example.com'</span>,});
+  
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleLogout</span> = (<span class="hljs-params"></span>) => { 
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'User logged out'</span>); <span class="hljs-comment">// Handle logout logic here </span>
+  };
+
+ <span class="hljs-keyword">return</span> ( <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">UserProfile</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span> <span class="hljs-attr">onLogout</span>=<span class="hljs-string">{handleLogout}</span> /></span></span>); 
+};
+</code></pre><p><br></p><p>여기서 상태와 핸들러를 props로 넘기는 UserProfileContainer가 Container이며, UserProfile는 모든 것을 props로 받는 Presentation이다. 이를 통해 UI 컴포넌트와 상태의 로직을 완전히 분리하였다.</p><p><br></p><p>이 패턴을 사용하면 다음과 같은 이점이 있다(고 한다).</p><p><br></p><ul><li>단순성, 가독성 : 코드 몇줄 뿐만 아니라, 컴포넌트 단위의 코드 파악이 빨라진다. 그러므로 유지/보수에 용이하다</li><li>관심사의 분리 : 컴포넌트 분리의 원칙이 분명하다</li><li>테스트 용이성 : 상태 로직과 ui를 분리하여 테스트하기 쉽다</li><li>재사용성 : Presentational 컴포넌트를 재사용할 수 있도록 설계하여 특정 로직에 구속되지 않게 할 수 있다. 예를 들어 UI는 Presentational 컴포넌트의 조합으로 구성하고, 각 페이지의 이벤트 처리와 비동기 요청은 Container에서 처리할 수 있다.</li></ul><p><br></p><p>하지만 거의 모든 기술이 그러하듯, 트레이드 오프가 있다.</p><p><br></p><ul><li><strong>대규모 앱에서 복잡성</strong></li></ul><p class="ql-indent-1">- 크고 복잡한 앱에서 Container/Presentational 컴포넌트 사이의 구분이 불필요한 코드 스플릿으로 복잡성이 더해질 수 있다.</p><p class="ql-indent-1">- 특히 UI 상태 업데이트가 잦은 이벤트 핸들러의 경우, 일부 컴포넌트에서 로직과 UI의 구분이 모호해지는 경우가 있다.이 패턴을 고수하면서 Props drilling이 발생하기 쉽다.</p><p class="ql-indent-1">- 넘겨줘야할 Props가 끝없이 증가할 수 있다. 코드 복잡성 증가로 이어진다</p><p class="ql-indent-1"><br></p><ul><li><strong>상태 관리의 오버헤드</strong></li></ul><p>              - 복잡한 상태 로직을 다루는 시나리오에서 컨테이너 컴포넌트 내의 훅만을 사용하는 것만으로는 충분하지 않을 수 있다.</p><p><br></p><ul><li><strong>프롭 드릴링의 오버헤드</strong></li></ul><p class="ql-indent-1">- 컨테이너 컴포넌트가 여러 계층의 컴포넌트에 걸쳐 프롭을 전달해야 할 수 있다</p><p class="ql-indent-1">- 간단한 컴포넌트 임에도 ui를 분리하면서 deps가 계속 깊어질 수 있다.</p><p class="ql-indent-1">- 상태 관리 라이브러리(Redux, Context API)를 사용해야 하는 경우에 이 패턴을 고수한다면 컴포넌트의 deps가 매우 깊어질 것이다.</p><p><br></p><ul><li><strong>성능 문제</strong></li></ul><p class="ql-indent-1">- UI 컴포넌트가 모든 상태를 Props로 받기 때문에 리렌더링 이슈가 생길 수 있다.</p><p class="ql-indent-1">- 특히 useState와 useEffect 훅의 잘못된 사용이 성능 문제로 이어질 수 있다.</p><p class="ql-indent-1">- 부모 컴포넌트에서 props로 상태를 넘겨받기 때문에 하나의 Container가 수많은 Presentational 컴포넌트를 갖고있다면, 모든 리렌더링의 비용이 높아진다.</p><p class="ql-indent-1">- 제대로 최적화되지 않은 경우(예: memo, useCallback, useMemo 사용 안 함, useEffect 잘못된 의존성 배열) 필요 이상으로 리렌더링 될 수 있다.</p><p class="ql-indent-1"><br></p><ul><li><strong>테스팅의 복잡성</strong></li></ul><p class="ql-indent-1">- 단위 테스팅은 쉬워질 수 있으나, 테스팅의 오버헤드가 증가할 수도 있다.</p><p class="ql-indent-1">- Props와 훅을 Mocking 해야할 양이 더 늘어 테스트의 복잡성이 증가할 수 있다.</p><p><br></p><p>면도날처럼 단순 명료하다. 하지만 실제 개발에선 오히려 복잡성을 높이기 쉽다. 경험 상으로도 프로젝트 후반에 이르러 헤아리기 어려울 지경으로 자라난 코드 베이스를 마주한 적이 있었다. 그러므로 적용에 앞서<strong> 1) UI 상태 변화 플로우 2) 전체 컴포넌트 구성 3) 컴포넌트 적용 범위</strong>에 대한 고려가 필요하다.</p><p><br></p><h3 id="snippet">Snippet</h3><p>hook과 함께 사용 시 적절한 방식을 고민해보며 code snippet을 작성했다.</p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">ReusableButton</span>:<span class="hljs-title class_">React</span>.<span class="hljs-property">FC</span>&#x3C;<span class="hljs-title class_">PropsWithChildren</span>&#x3C;<span class="hljs-title class_">ButtonHTMLAttributes</span>&#x3C;<span class="hljs-title class_">HTMLButtonElement</span>>>>
+    = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ children, ...props}</span>) =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'rerender ReusableText : '</span>,  children);
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> {<span class="hljs-attr">...props</span>}></span>{children}<span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span></span>;
+})
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ReusableInput</span>:<span class="hljs-title class_">React</span>.<span class="hljs-property">FC</span>&#x3C;<span class="hljs-title class_">HTMLProps</span>&#x3C;<span class="hljs-title class_">HTMLInputElement</span>>>
+    = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">props</span>) =></span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'rerender ReusableInput'</span>);
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">input</span> {<span class="hljs-attr">...props</span>}/></span></span>;
+})
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ReusableText</span>:<span class="hljs-title class_">React</span>.<span class="hljs-property">FC</span>&#x3C;{<span class="hljs-attr">text</span>: <span class="hljs-built_in">string</span>}>
+    = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ text}</span>) =></span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'rerender ReusableText : '</span>,  text);
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">p</span>></span>{text}<span class="hljs-tag">&#x3C;/<span class="hljs-name">p</span>></span></span>;
+})
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">ContainerComponent</span> = (<span class="hljs-params"></span>) => {
+    <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">const</span> [text, setText] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">''</span>);
+
+    <span class="hljs-keyword">const</span> handlePlusButtonClick = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =></span> {
+        <span class="hljs-title function_">setCount</span>(<span class="hljs-function">(<span class="hljs-params">prev</span>) =></span> prev  + <span class="hljs-number">1</span>);
+    }, []);
+
+    <span class="hljs-keyword">const</span> handleMinusButtonClick = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =></span> {
+        <span class="hljs-title function_">setCount</span>(<span class="hljs-function">(<span class="hljs-params">prev</span>) =></span> prev  - <span class="hljs-number">1</span>);
+    }, []);
+
+    <span class="hljs-keyword">const</span> handleInputChange = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">ChangeEvent</span>&#x3C;<span class="hljs-title class_">HTMLInputElement</span>></span>) =></span> {
+        <span class="hljs-title function_">setText</span>(e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>);
+    },  []);
+
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">ReusableText</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">count</span> <span class="hljs-attr">:</span> ${<span class="hljs-attr">count</span>}`}/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">ReusableText</span> <span class="hljs-attr">text</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">text</span> <span class="hljs-attr">:</span> ${<span class="hljs-attr">text</span>}`}/></span>
+            <span class="hljs-tag">&#x3C;<span class="hljs-name">div</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">ReusableButton</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handlePlusButtonClick}</span>></span>+<span class="hljs-tag">&#x3C;/<span class="hljs-name">ReusableButton</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">ReusableButton</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleMinusButtonClick}</span>></span>-<span class="hljs-tag">&#x3C;/<span class="hljs-name">ReusableButton</span>></span>
+                <span class="hljs-tag">&#x3C;<span class="hljs-name">ReusableInput</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Type Here"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{text}</span> <span class="hljs-attr">onInput</span>=<span class="hljs-string">{handleInputChange}/</span>></span>
+            <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span>
+        <span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+    );
+}
+
+</code></pre><p><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1708614892/xvs6gox3yoejseajclgu.gif"><img alt="img" width="100%" height="100%" src="https://res.cloudinary.com/dolziw8fv/image/upload/v1708614800/xwvjyh1d7vrdxprf661m.png"></p><p><br></p><p>코드의 의도 :</p><p>1 - Container에서 발생하는 state 업데이트가 모든 UI 컴포넌트를 리렌더링한다.</p><ul><li>이를 방지하기 위해 useCallback을 사용한다.</li></ul><p><br></p><p>2 - Presentation 컴포넌트의 재사용성을 높인다.</p><ul><li>리렌더링 이슈를 막기 위해 React.memo를 활용한다</li><li>각 엘리먼트 ui 디자인에 variation이 많지 않고, 일관성이 있다면 style에 관한 props로 쉽게 관리할 수 있다</li></ul><p><br></p><p>3 - useCallback의 deps가 비어있다.</p><ul><li>+, - 버튼 핸들러 콜백훅에 count가 deps로 추가된다면 양쪽 버튼이 모두 리렌더링된다</li><li>그러나 같은 동작으로 setter에 콜백함수를 사용하면 이를 막을 수 있다.</li><li>input 핸들로 또한 event.target의 값이 들어가기 때문에 deps가 비어도 작동된다.</li></ul><p><br></p><p>재사용성, 렌더링 최적화에만 초점을 둔 snippet이기 때문에, 실제 개발이라면 한계가 있다. 이상적인 케이스 대로 구현사항과 컴포넌트 구조가 패턴대로 명확히 구분되지 않을 가능성이 크기 때문이다. 또한 이러한 필연적인 단점도 떠오른다. memo, callback을 써서 Presentation의 리렌더링은 막아도, 여전히 Container의 리렌더링은 막을 수 없다.. 당연한 얘기다. 위의 gif에서 버튼 이벤트, 텍스트 이벤트 각각의 상태 변화가 생길 때마다 UI 자식 컴포넌트와 함께 매번 Container도 리렌더링된다. 매번 모든 자식 컴포넌트에 콜백, 메모 훅 등을 사용하는 것 또한 적절하지 않다. 이 훅들을 "비용이 높은 컴포넌트"에 적용하지 않는 이상, 결국 오버헤드이기 때문이다.</p><p><br></p><p>조금 더 복잡한 상태 관리가 필요한 경우는 어떨까?</p><p><br></p><p><strong>Presntational/Container 패턴</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">// Container
+
+const <span class="hljs-attr">FormContainer</span> = () => {
+  const <span class="hljs-section">[formData, setFormData]</span> = useState({ email: '', password: '' })<span class="hljs-comment">;</span>
+  const <span class="hljs-section">[errors, setErrors]</span> = useState({})<span class="hljs-comment">;</span>
+
+  const <span class="hljs-attr">validateForm</span> = () => {
+    const <span class="hljs-attr">newErrors</span> = {}<span class="hljs-comment">;</span>
+    if (!formData.email.includes('@')) <span class="hljs-attr">newErrors.email</span> = <span class="hljs-string">'Email is invalid'</span><span class="hljs-comment">;</span>
+    if (formData.password.length &#x3C; 8) <span class="hljs-attr">newErrors.password</span> = <span class="hljs-string">'Password must be at      least 8 characters'</span><span class="hljs-comment">;</span>
+    setErrors(newErrors)<span class="hljs-comment">;</span>
+
+    return Object.keys(newErrors).<span class="hljs-attr">length</span> === <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  const <span class="hljs-attr">handleSubmit</span> = (e) => {
+    e.preventDefault()<span class="hljs-comment">;</span>
+    if (!validateForm()) return<span class="hljs-comment">;</span>
+    console.log('Form data:', formData)<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  return &#x3C;FormPresentation <span class="hljs-attr">formData</span>={formData} setFormData={setFormData} errors={errors} handleSubmit={handleSubmit} /><span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+// Presentational
+
+const <span class="hljs-attr">FormPresentation</span> = ({ formData, setFormData, errors, handleSubmit }) => {
+  return (
+    &#x3C;form <span class="hljs-attr">onSubmit</span>={handleSubmit}>
+      &#x3C;input
+        <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span>
+        <span class="hljs-attr">value</span>={formData.email}
+        <span class="hljs-attr">onChange</span>={(e) => setFormData({ ...formData, email: e.target.value })}
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Email"</span>
+      />
+      {errors.email &#x26;&#x26; &#x3C;p>{errors.email}&#x3C;/p>}
+      &#x3C;input
+        <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span>
+        <span class="hljs-attr">value</span>={formData.password}
+        <span class="hljs-attr">onChange</span>={(e) => setFormData({ ...formData, password: e.target.value })}
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Password"</span>
+      />
+      {errors.password &#x26;&#x26; &#x3C;p>{errors.password}&#x3C;/p>}
+      &#x3C;button <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>>Submit&#x3C;/button>
+    &#x3C;/form>
+  )<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+</code></pre><p>유저의 입력과 validation에 따라 ui의 업데이트가 발생하는 일반적인 form 컴포넌트이다. 여기서 이 패턴의 비효율성이 드러난다. 일반적인 form 컴포넌트라면, 아마 하나의 컴포넌트로 작성되었을 코드이기 때문이다. 첫째로 컴포넌트에 불필요한 nesting이 생긴다. 이 컴포넌트는 분리되지 않아도 애초에 render(return) 상단에는 상태 관리와 연관된 코드만 포함한다. 둘째로 이로 인해 늘어나는 코드의 양이다. 파일이 추가되고, props로 넘겨야할 양이 증가한다. 타입스크립트를 사용한다면, props의 타입을 지정하면서 더 많은 코드가 늘어났을 것이다. 이와 같은 경우엔 패턴의 순기능은 딱히 찾기 어려우며, 오히려 비용이 늘어나는 걸로 보인다.</p><p><br></p><p><strong>커스텀 훅 useForm</strong></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-ini">const <span class="hljs-attr">useForm</span> = (initialValues) => {
+  const <span class="hljs-section">[values, setValues]</span> = useState(initialValues)<span class="hljs-comment">;</span>
+  const <span class="hljs-section">[errors, setErrors]</span> = useState({})<span class="hljs-comment">;</span>
+
+  const <span class="hljs-attr">handleChange</span> = (e) => {
+    const { name, value } = e.target<span class="hljs-comment">;</span>
+    setValues({ ...values, <span class="hljs-section">[name]</span>: value })<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  const <span class="hljs-attr">validate</span> = () => {
+    const <span class="hljs-attr">newErrors</span> = {}<span class="hljs-comment">;</span>
+    if (!values.email.includes('@')) <span class="hljs-attr">newErrors.email</span> = <span class="hljs-string">'Email is invalid'</span><span class="hljs-comment">;</span>
+    if (values.password.length &#x3C; 8) <span class="hljs-attr">newErrors.password</span> = <span class="hljs-string">'Password must be at least     8 characters'</span><span class="hljs-comment">;</span>
+    setErrors(newErrors)<span class="hljs-comment">;</span>
+
+    return Object.keys(newErrors).<span class="hljs-attr">length</span> === <span class="hljs-number">0</span><span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  return { values, handleChange, errors, validate }<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+
+const <span class="hljs-attr">Form</span> = () => {
+  const { values, handleChange, errors, validate } = useForm({ email: '', password: '' })<span class="hljs-comment">;</span>
+
+  const <span class="hljs-attr">handleSubmit</span> = (e) => {
+    e.preventDefault()<span class="hljs-comment">;</span>
+    if (!validate()) return<span class="hljs-comment">;</span>
+    console.log('Form data:', values)<span class="hljs-comment">;</span>
+  }<span class="hljs-comment">;</span>
+
+  return (
+    &#x3C;form <span class="hljs-attr">onSubmit</span>={handleSubmit}>
+      &#x3C;input <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span> type=<span class="hljs-string">"email"</span> value={values.email} <span class="hljs-literal">on</span>Change={handleChange} placeholder=<span class="hljs-string">"Email"</span> />
+      {errors.email &#x26;&#x26; &#x3C;p>{errors.email}&#x3C;/p>}
+      &#x3C;input <span class="hljs-attr">name</span>=<span class="hljs-string">"password"</span> type=<span class="hljs-string">"password"</span> value={values.password} <span class="hljs-literal">on</span>Change={handleChange} placeholder=<span class="hljs-string">"Password"</span> />
+      {errors.password &#x26;&#x26; &#x3C;p>{errors.password}&#x3C;/p>}
+      &#x3C;button <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>>Submit&#x3C;/button>
+    &#x3C;/form>
+  )<span class="hljs-comment">;</span>
+}<span class="hljs-comment">;</span>
+</code></pre><p><br></p><p>상태 변경 로직의 추상화가 필요하다면, 차라리 이같은 커스텀 훅으로 분리하는 것이 더 효율적으로 보인다. 불필요한 컴포넌트 네스팅 없이, 커스텀 훅 안에서 상태와 상태 로직만을 분리하기 때문에, "로직 분리"의 이점과 불필요한 코드 추가를 막는 이점을 동시에 챙길 수 있다.</p><p><br></p><p><br></p><h3 id="conclusion-use-cases">Conclusion &#x26; Use Cases</h3><p><br></p><p>"UI와 상태를 분리한다"는 패턴이 주는 명쾌함이 있지만, 이 패턴을 코드베이스 전체에 적용하는 것은 무리가 있어보인다. 모든 경우에 이 패턴을 강제한다면, 오히려 단점만 더 커지기 쉽상이다. 따라서 이 패턴을 적용하기 위해선 이러한 전제조건이 필요하겠다.</p><p><br></p><ul><li>레이아웃, 템플릿처럼 큰 단위가 아닌 작은 단위의 컴포넌트</li><li>상태 업데이트를 트리거하는 이벤트 핸들링이 많지 않은 경우</li></ul><p><br></p><p>이 두가지를 염두하면 구체적으로 다음과 같은 유즈 케이스가 떠오른다.</p><p><br></p><ul><li>리스트의 아이템 컴포넌트처럼 UI와 상태 분리가 명확하고, 아이템 컴포넌트에서 복잡한 상태 로직이 없는 경우</li><li>여러 컴포넌트에서 재사용되는 UI 컴포넌트 (아토믹 패턴의 atom처럼 작은 단위로 여러 군데에서 재사용되는 컴포넌트)</li></ul><p><br></p><p>(사실 두번째의 경우에는 일반적인 atomic 패턴의 ui 컴포넌트와 다를 바 없어보이긴 하다.)</p><p><br></p><p>결론을 요약하면 다음과 같다.</p><p><br></p><ol><li>모든 컴포넌트에 패턴을 강제하지 않고, 적절한 케이스에 사용한다</li><li>패턴의 간결함이 코드의 간결함으로 이어지지는 않는다. (props가 방대해지고, 불필요한 코드량이 늘 수 있다)</li><li>함수 컴포넌트에서 복잡한 상태관리는 커스텀 훅으로 관리하는 것이 효율적인 대안이 될 수 있다.</li></ol>22:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$25"},"className":"parsed-content"}]
+24:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/46","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 3 - 컴포넌트 설계 패턴 (HOC)"}],["$","p",null,{"className":"text-sm","children":"2024-02-25"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/44","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Fluent React 1 - 컴포넌트 설계 패턴"}],["$","p",null,{"className":"text-sm","children":"2024-02-19"}]]}]]}]]}]}]
+26:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"Fluent React 2 - 컴포넌트 설계 패턴 (presentational/container) - teklog"}],["$","meta","1",{"name":"description","content":"지난 글에서 최적화를 위해 사용되는 훅과 React.memo의 적절한 사용법에 대해 깊이 살펴보았다. 이어지는 내용은 리액트 컴포넌트의 일반적인 설계 패턴이다. 필요한 만큼이나 알고자 하는 갈증이 깊었고, 또 중요한 내용이기에 책에서 이해한 내용과 함께 직접 고민한 생각을 정리해본다. 컴포넌트 설계에 관한 내용들은 여러차례 나누어 작성할 예정이다.들어가기에"}],["$","meta","2",{"property":"og:title","content":"Fluent React 2 - 컴포넌트 설계 패턴 (presentational/container) - teklog"}],["$","meta","3",{"property":"og:description","content":"지난 글에서 최적화를 위해 사용되는 훅과 React.memo의 적절한 사용법에 대해 깊이 살펴보았다. 이어지는 내용은 리액트 컴포넌트의 일반적인 설계 패턴이다. 필요한 만큼이나 알고자 하는 갈증이 깊었고, 또 중요한 내용이기에 책에서 이해한 내용과 함께 직접 고민한 생각을 정리해본다. 컴포넌트 설계에 관한 내용들은 여러차례 나누어 작성할 예정이다.들어가기에"}],["$","meta","4",{"property":"og:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1708752225/vnhnngpqv4nnmmfl10lp.png"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Fluent React 2 - 컴포넌트 설계 패턴 (presentational/container) - teklog"}],["$","meta","7",{"name":"twitter:description","content":"지난 글에서 최적화를 위해 사용되는 훅과 React.memo의 적절한 사용법에 대해 깊이 살펴보았다. 이어지는 내용은 리액트 컴포넌트의 일반적인 설계 패턴이다. 필요한 만큼이나 알고자 하는 갈증이 깊었고, 또 중요한 내용이기에 책에서 이해한 내용과 함께 직접 고민한 생각을 정리해본다. 컴포넌트 설계에 관한 내용들은 여러차례 나누어 작성할 예정이다.들어가기에"}],["$","meta","8",{"name":"twitter:image","content":"https://res.cloudinary.com/dolziw8fv/image/upload/v1708752225/vnhnngpqv4nnmmfl10lp.png"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L26","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"

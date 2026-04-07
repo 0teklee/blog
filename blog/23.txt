@@ -1,0 +1,146 @@
+1:"$Sreact.fragment"
+2:I[41402,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],""]
+3:I[37025,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"Analytics"]
+4:I[43115,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+5:I[52619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],""]
+6:I[45035,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+7:I[9766,[],""]
+8:I[98924,[],""]
+9:I[81356,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","1356","static/chunks/1356-55866624713a517d.js","7351","static/chunks/7351-895483a1a7db5083.js","3831","static/chunks/app/blog/page-acb1352f9b1a93a7.js"],"Image"]
+10:I[57150,[],""]
+:HL["/_next/static/css/65987138af7896bc.css","style"]
+:HL["/_next/static/css/f6784ddcb60f153e.css","style"]
+0:{"P":null,"b":"s_44sEXr177oKpAgQO3Z1","p":"","c":["","blog","23"],"i":false,"f":[[["",{"children":["blog",{"children":[["id","23","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65987138af7896bc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"className":"font-inter","lang":"kr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","title",null,{"children":"teklog"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}],["$","meta",null,{"name":"description","content":"teklog - web dev & etc"}],["$","link","canonical",{"rel":"canonical","href":"https://www.teklog.site"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap","rel":"stylesheet"}],["$","$L2",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=","defer":true}],["$","$L2",null,{"id":"google-analytics","defer":true,"children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){window.dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', '');\n        "}],["$","$L3",null,{}]]}],["$","body",null,{"children":["$","$L4",null,{"children":[["$","header",null,{"className":"fixed top-0  z-40 w-screen mix-blend-difference invert dark:invert-0 font-bold font-cormorant","children":["$","div",null,{"className":" flex items-center justify-between px-4 tablet:px-12 lg:px-20 py-8","children":[["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","info_link",{"aria-label":"info","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/info","children":"info"}]]}],["$","$L5",null,{"className":"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 font-bold hover:text-theme transition-all duration-700 text-6xl","href":"/","children":"teklog"}],["$","div",null,{"className":"flex items-center justify-around gap-6","children":[["$","$L5","blog_link",{"aria-label":"blog","className":"text-lg  font-bold hover:text-theme hover:invert transition duration-700 hidden md:block","href":"/blog?page=1","children":"blog"}]]}]]}]}],["$","$L6",null,{}],["$","div",null,{"className":"w-full px-4 py-24 tablet:px-12 lg:px-20 bg-background text-primary selection:bg-theme selection:text-background font-noto","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"flex flex-col justify-center items-center w-full","children":[["$","div",null,{"className":"flex flex-col items-center justify-center p-8 text-transparent","children":[["$","$L9",null,{"className":"rounded-full","src":"https://asset.leetekwoo.com/blog/default/logo.jpg","alt":"hummingbird","width":200,"height":200}],["$","p",null,{"className":"text-lg font-medium","children":"Loading..."}]]}],["$","h1",null,{"className":"mb-4 text-xl font-bold","children":"Not Found"}],["$","$L5",null,{"className":"underline hover:text-theme","href":"/","children":"Return Home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"fixed bottom-0 w-full px-4 tablet:px-12 lg:px-20 py-8 z-40 mix-blend-difference invert dark:invert-0 text-lg font-cormorant","children":["$","div",null,{"className":"relative flex justify-between items-center","children":[["$","$L5",null,{"href":"/gallery","className":"absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-5 hover:text-theme hover:font-bold transition-all duration-150","children":"𓃠"}],["$","div",null,{"className":"relative","children":["$","$L5",null,{"href":"https://portfolio.leetekwoo.com","target":"_blank","className":"mt-4 cursor-pointer font-normal hover:text-theme hover:font-bold  transition-all duration-150","children":"portfolio"}]}],"$La","$Lb"]}]}]]}]}]]}]]}],{"children":["blog","$Lc",{"children":[["id","23","d"],"$Ld",{"children":["__PAGE__","$Le",{},null,false]},null,false]},null,false]},null,false],"$Lf",false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[69613,["2619","static/chunks/2619-04bc32f026a0d946.js","7177","static/chunks/app/layout-cb7d3f9d1a341f09.js"],"default"]
+14:I[24431,[],"OutletBoundary"]
+16:I[15278,[],"AsyncMetadataOutlet"]
+18:I[24431,[],"ViewportBoundary"]
+1a:I[24431,[],"MetadataBoundary"]
+1b:"$Sreact.suspense"
+a:["$","$L11",null,{"className":"absolute cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2","children":"top"}]
+b:["$","button",null,{"className":"cursor-pointer font-normal hover:text-theme hover:font-bold transition-all duration-150","children":["$","$L5",null,{"href":"https://wiki.leetekwoo.com","target":"_blank","children":"wiki"}]}]
+c:["$","$1","c",{"children":[null,["$","main",null,{"className":"flex flex-col w-full pt-6 lg:pt-12 lg:grid grid-cols-16 lg:gap-x-5 lg:justify-center","children":[["$","section",null,{"className":"flex flex-col items-center w-full lg:col-span-10 lg:max-w-4xl xl:max-w-none xl:col-start-5 xl:col-span-8","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","aside",null,{"id":"left-nav-portal","className":"lg:col-span-3 xl:col-start-14"}]]}]]}]
+d:["$","$1","c",{"children":[null,"$L12"]}]
+e:["$","$1","c",{"children":["$L13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6784ddcb60f153e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L14",null,{"children":["$L15",["$","$L16",null,{"promise":"$@17"}]]}]]}]
+f:["$","$1","h",{"children":[null,[["$","$L18",null,{"children":"$L19"}],null],["$","$L1a",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1b",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
+1d:I[98644,["9875","static/chunks/9875-eb356536ad7d5a96.js","2689","static/chunks/2689-a068ae9ee57bc71d.js","8488","static/chunks/app/blog/%5Bid%5D/layout-17ac0c5ef00ae1d9.js"],"default"]
+12:[["$","$L1d",null,{}],["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]
+13:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":""}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2026/04/07"}],["$","p",null,{"children":"n°"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":["$","p",null,{"children":["category : ",""]}]}]]}],["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}]]}],"children":"$L1e"}]
+1f:I[74777,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+20:T1221,<h3>클로저</h3><p><br></p><blockquote>“A closure is the combination of a function and the lexical environment within which that function was declared.”</blockquote><p>클로저는 함수와 <strong>그 함수가 선언된 렉시컬 환경</strong>과의 조합이다.</p><p>뭔소린가 싶다. 키워드는 **“함수가 선언된 렉시컬 환경”**이란다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">const x = 1;
+
+function outerFunc() {
+	const x = 10;
+	function innterFunc() {
+	console.log(x); // 10
+	}
+ innerFunc();
+}
+</pre><p>innerFunc는 상위 스코프 outerFunc에 있는 변수 x에 접근한다. 만약 innerFunc가 outerFunc의 중첩함수가 아니라면, innerFunc는 outerFunc의 변수 x에 접근할 수 없고, 대신에 전역 변수인 1을 출력할 것이다.</p><p><br></p><pre class="ql-syntax" spellcheck="false">const x = 1;
+
+function outerFunc() {
+	const x = 10;
+ innerFunc();
+}
+
+function innerFunc() {
+	console.log(x); // 1
+}
+
+outerFunc(); // 1
+</pre><p>이같은 현상이 발생하는 이유는 자바스크립트가 <strong>렉시컬 스코프</strong>를 따르는 프로그래밍 언어이기 때문이다.</p><p><em>렉시컬 스코프 : 함수가 정의된 위치/시점에서 상위 스코프가 결정됨</em></p><h3><br></h3><h3>렉시컬 스코프</h3><p><br></p><pre class="ql-syntax" spellcheck="false">
+const x = 1;
+
+function foo() {
+	const x = 10;
+	bar();
+}
+
+function bar() {
+	console.log(x);
+}
+
+foo(); // 1
+bar(); // 1
+
+</pre><p>렉시컬 환경에서는 함수가 정의된 위치에서 상위 스코프가 결정된다. 함수 bar의 상위는 전역이므로, bar함수 내부의 x는 전역 변수 x에 접근하게 된다. <strong>함수를 어디서 호출하는지는</strong> 함수의 <strong>상위 스코프</strong> 결정에 <strong>어떠한 영향도 주지 못한다</strong>. 즉, 함수의 상위 스코프는 <strong>함수를 정의한 위치에 의해 정적으로 결정되고 변하지 않는다.</strong></p><p><br></p><p><strong>스코프의 실체는 실행 컨텍스트의 렉시컬 환경이다</strong>. 이 렉시컬 환경은 자신의 <u>“외부 렉시컬 환경에 대한 참조 Outer Lexical Environment Reference”</u><em style="font-size: 1.1rem;">를 통해 상위 렉시컬 환경과 연결된다.</em> 이것이 바로 <strong style="font-size: 1.1rem;">스코프 체인</strong>이다.</p><p><br></p><p>*<em>실행 컨텍스트의 생성과 식별자 검색 과정 참조</em></p><p><em>따라서 “함수의 상위 스코프를 결정한다”는 “렉시컬 환경의 외부 렉시컬 환경에 대한 참조에 저장할 참조값을 결정한다”는 것과 같다. 렉시컬 환경의 “외부 렉시컬 환경에 대한 참조”에 저장할 참조값이 바로 상위 렉시컬 환경에 대한 참조이며, 이것이 상위 스코프이기 때문이다. 이 개념을 반영해서 다시 한번 렉시컬 스코프를 정의해 보면 다음과 같다.</em>*</p><p><br></p><h3>클로저와 렉시컬 환경</h3><p><br></p><pre class="ql-syntax" spellcheck="false">const x = 1;
+
+//1 
+
+function outer() {
+const x = 10;
+const inner = function () {console.log(x);} // 2
+return inner;
+}
+// outer 함수를 호출하면 중첩 함수 inner를 반환한다.
+// 반환 이후 outer 함수의 실행 컨텍스트는 실행 컨텍스트 스택에서 팝되어 제거된다.
+
+const innerFunc = outer(); // 3
+innerFunc(); // 4  - 10 출력
+
+outer();
+// f console.log(x) 반환
+</pre><p>outer 함수를 호출하면 outer 함수는 중첩 함수 inner를 반환하고, 생명 주기를 마감한다. 즉 outer 함수의 실행이 종료되면 outer 함수의 실행 컨텍스트는 실행 컨텍스트 스택에서 제거된다. 이때 ㅎouter함수의 지역 변수 x와 변수 값 10을 저장하고 있던 outer 함수의 실행 컨텍스트가 제거되었으므로, outer 함수의 변수 x (10) 또한 새염ㅇ 주기를 마감한다. 따라서 outer 함수의 지역 변수 x 는 더이상 유효하지 않게 되어 x 변수에 접근할 수 있는 방법은 달리 없어 보인다. 그러나 위 코드의 결과는 10을 출력한다. <u>이미 생명 주기가 종료되어 실행 컨텍스트 스택에서 제거된 outer 함수의 지역 변수 x가 다시 부활이라도 한 듯이 동작하고 있다.</u></p><p><br></p><p><strong>이처럼 외부 함수(outer)보다 중첩 함수(inner)가 더 오래 유지되는 경우 중첩 함수는 이미 생명 주기가 종료한 외부 함수의 변수(const x=10)를 참조할 수 있다. 이러한 중첩 함수(inner)를 클로저라고 부른다.</strong></p>1e:[["$","$L1f",null,{"content":"$20"}],["$","div",null,{"className":"flex flex-col w-full gap-3 lg:items-center lg:py-5 lg:grow lg:pt-0","children":[["$","div",null,{"className":"w-full","children":[["$","h1",null,{"className":"w-full mb-4 font-sans text-5xl break-all","children":"자바스크립트 클로져와 렉시컬 환경"}],["$","div",null,{"className":"flex justify-between w-full mt-4 font-semibold text-base","children":[["$","p",null,{"children":"2022/10/29"}],["$","p",null,{"children":"n°23"}]]}],["$","div",null,{"className":"flex justify-between w-full mt-12 mb-12 font-semibold text-sm text-gray-500 wrap","children":"$L21"}]]}],"$L22","$L23"]}]]
+25:I[55619,["590","static/chunks/0dbeb660-c36e335de0d55418.js","2619","static/chunks/2619-04bc32f026a0d946.js","9875","static/chunks/9875-eb356536ad7d5a96.js","7351","static/chunks/7351-895483a1a7db5083.js","7567","static/chunks/app/blog/%5Bid%5D/page-f34eb64326fdf0f9.js"],"default"]
+21:["$","p",null,{"children":["category : ","JavaScript"]}]
+22:["$","div",null,{"className":"relative blog-post-content","children":["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":["$L24",["$","$L25",null,{}]]}]}]
+23:["$","$1b",null,{"fallback":["$","div",null,{"className":"flex justify-center items-center w-full","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-loader-circle text-gray-300 animate-spin","children":[["$","path","13zald",{"d":"M21 12a9 9 0 1 1-6.219-8.56"}],"$undefined"]}]}],"children":"$L26"}]
+19:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:null
+27:T1982,<h3 id="">클로저</h3><p><br></p><blockquote>“A closure is the combination of a function and the lexical environment within which that function was declared.”</blockquote><p>클로저는 함수와 <strong>그 함수가 선언된 렉시컬 환경</strong>과의 조합이다.</p><p>뭔소린가 싶다. 키워드는 **“함수가 선언된 렉시컬 환경”**이란다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const <span class="hljs-attribute">x</span> = <span class="hljs-number">1</span>;
+
+function <span class="hljs-built_in">outerFunc</span>() {
+	const <span class="hljs-attribute">x</span> = <span class="hljs-number">10</span>;
+	function <span class="hljs-built_in">innterFunc</span>() {
+	console<span class="hljs-selector-class">.log</span>(x); <span class="hljs-comment">// 10</span>
+	}
+ <span class="hljs-built_in">innerFunc</span>();
+}
+</code></pre><p>innerFunc는 상위 스코프 outerFunc에 있는 변수 x에 접근한다. 만약 innerFunc가 outerFunc의 중첩함수가 아니라면, innerFunc는 outerFunc의 변수 x에 접근할 수 없고, 대신에 전역 변수인 1을 출력할 것이다.</p><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const <span class="hljs-attribute">x</span> = <span class="hljs-number">1</span>;
+
+function <span class="hljs-built_in">outerFunc</span>() {
+	const <span class="hljs-attribute">x</span> = <span class="hljs-number">10</span>;
+ <span class="hljs-built_in">innerFunc</span>();
+}
+
+function <span class="hljs-built_in">innerFunc</span>() {
+	console<span class="hljs-selector-class">.log</span>(x); <span class="hljs-comment">// 1</span>
+}
+
+<span class="hljs-built_in">outerFunc</span>(); <span class="hljs-comment">// 1</span>
+</code></pre><p>이같은 현상이 발생하는 이유는 자바스크립트가 <strong>렉시컬 스코프</strong>를 따르는 프로그래밍 언어이기 때문이다.</p><p><em>렉시컬 스코프 : 함수가 정의된 위치/시점에서 상위 스코프가 결정됨</em></p><h3 id="-1"><br></h3><h3 id="-2">렉시컬 스코프</h3><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const <span class="hljs-attribute">x</span> = <span class="hljs-number">1</span>;
+
+function <span class="hljs-built_in">foo</span>() {
+	const <span class="hljs-attribute">x</span> = <span class="hljs-number">10</span>;
+	<span class="hljs-built_in">bar</span>();
+}
+
+function <span class="hljs-built_in">bar</span>() {
+	console<span class="hljs-selector-class">.log</span>(x);
+}
+
+<span class="hljs-built_in">foo</span>(); <span class="hljs-comment">// 1</span>
+<span class="hljs-built_in">bar</span>(); <span class="hljs-comment">// 1</span>
+
+</code></pre><p>렉시컬 환경에서는 함수가 정의된 위치에서 상위 스코프가 결정된다. 함수 bar의 상위는 전역이므로, bar함수 내부의 x는 전역 변수 x에 접근하게 된다. <strong>함수를 어디서 호출하는지는</strong> 함수의 <strong>상위 스코프</strong> 결정에 <strong>어떠한 영향도 주지 못한다</strong>. 즉, 함수의 상위 스코프는 <strong>함수를 정의한 위치에 의해 정적으로 결정되고 변하지 않는다.</strong></p><p><br></p><p><strong>스코프의 실체는 실행 컨텍스트의 렉시컬 환경이다</strong>. 이 렉시컬 환경은 자신의 <u>“외부 렉시컬 환경에 대한 참조 Outer Lexical Environment Reference”</u><em style="font-size: 1.1rem;">를 통해 상위 렉시컬 환경과 연결된다.</em> 이것이 바로 <strong style="font-size: 1.1rem;">스코프 체인</strong>이다.</p><p><br></p><p>*<em>실행 컨텍스트의 생성과 식별자 검색 과정 참조</em></p><p><em>따라서 “함수의 상위 스코프를 결정한다”는 “렉시컬 환경의 외부 렉시컬 환경에 대한 참조에 저장할 참조값을 결정한다”는 것과 같다. 렉시컬 환경의 “외부 렉시컬 환경에 대한 참조”에 저장할 참조값이 바로 상위 렉시컬 환경에 대한 참조이며, 이것이 상위 스코프이기 때문이다. 이 개념을 반영해서 다시 한번 렉시컬 스코프를 정의해 보면 다음과 같다.</em>*</p><p><br></p><h3 id="-3">클로저와 렉시컬 환경</h3><p><br></p><pre class="ql-syntax pre" spellcheck="false"><code class="hljs language-scss">const <span class="hljs-attribute">x</span> = <span class="hljs-number">1</span>;
+
+<span class="hljs-comment">//1 </span>
+
+function <span class="hljs-built_in">outer</span>() {
+const <span class="hljs-attribute">x</span> = <span class="hljs-number">10</span>;
+const inner = function () {console<span class="hljs-selector-class">.log</span>(x);} <span class="hljs-comment">// 2</span>
+return inner;
+}
+<span class="hljs-comment">// outer 함수를 호출하면 중첩 함수 inner를 반환한다.</span>
+<span class="hljs-comment">// 반환 이후 outer 함수의 실행 컨텍스트는 실행 컨텍스트 스택에서 팝되어 제거된다.</span>
+
+const innerFunc = <span class="hljs-built_in">outer</span>(); <span class="hljs-comment">// 3</span>
+<span class="hljs-built_in">innerFunc</span>(); <span class="hljs-comment">// 4  - 10 출력</span>
+
+<span class="hljs-built_in">outer</span>();
+<span class="hljs-comment">// f console.log(x) 반환</span>
+</code></pre><p>outer 함수를 호출하면 outer 함수는 중첩 함수 inner를 반환하고, 생명 주기를 마감한다. 즉 outer 함수의 실행이 종료되면 outer 함수의 실행 컨텍스트는 실행 컨텍스트 스택에서 제거된다. 이때 ㅎouter함수의 지역 변수 x와 변수 값 10을 저장하고 있던 outer 함수의 실행 컨텍스트가 제거되었으므로, outer 함수의 변수 x (10) 또한 새염ㅇ 주기를 마감한다. 따라서 outer 함수의 지역 변수 x 는 더이상 유효하지 않게 되어 x 변수에 접근할 수 있는 방법은 달리 없어 보인다. 그러나 위 코드의 결과는 10을 출력한다. <u>이미 생명 주기가 종료되어 실행 컨텍스트 스택에서 제거된 outer 함수의 지역 변수 x가 다시 부활이라도 한 듯이 동작하고 있다.</u></p><p><br></p><p><strong>이처럼 외부 함수(outer)보다 중첩 함수(inner)가 더 오래 유지되는 경우 중첩 함수는 이미 생명 주기가 종료한 외부 함수의 변수(const x=10)를 참조할 수 있다. 이러한 중첩 함수(inner)를 클로저라고 부른다.</strong></p>24:["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$27"},"className":"parsed-content"}]
+26:["$","footer",null,{"className":"w-full","children":["$","nav",null,{"className":"relative flex flex-col items-center ","children":[["$","$L5",null,{"className":"unset-cursor mt-12 p-2 font-sans font-light transition-all duration-500 hover:text-theme hover:animate-pulse before:absolute before:left-1/3 before:content-[\"←\"] before:mr-1","href":"/blog","children":"go back to list"}],["$","div",null,{"className":"w-full","children":[["$","$L5","next",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/24","children":[["$","p",null,{"children":"next"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"Next.js - getStaticProps 공식문서 번역"}],["$","p",null,{"className":"text-sm","children":"2022-10-31"}]]}],["$","$L5","prev",{"className":"relative px-2 py-1 flex justify-between w-full cursor-pointer hover:bg-theme hover:text-background transition-all duration-500","href":"/blog/22","children":[["$","p",null,{"children":"prev"}],["$","p",null,{"className":"\n                absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 \n                max-w-50% lg:max-w-30%\n                text-sm line-clamp-1 text-ellipsis","children":"자바스크립트 실행 컨텍스트 - 3"}],["$","p",null,{"className":"text-sm","children":"2022-10-29"}]]}]]}]]}]}]
+28:I[80622,[],"IconMark"]
+17:{"metadata":[["$","title","0",{"children":"자바스크립트 클로져와 렉시컬 환경 - teklog"}],["$","meta","1",{"name":"description","content":"클로저“A closure is the combination of a function and the lexical environment within which that function was declared.”클로저는 함수와 그 함수가 선언된 렉시컬 환경과의 조합이다.뭔소린가 싶다. 키워드는 **“함수가 선언된 렉시컬 환경”**이란다.const x = 1;f"}],["$","meta","2",{"property":"og:title","content":"자바스크립트 클로져와 렉시컬 환경 - teklog"}],["$","meta","3",{"property":"og:description","content":"클로저“A closure is the combination of a function and the lexical environment within which that function was declared.”클로저는 함수와 그 함수가 선언된 렉시컬 환경과의 조합이다.뭔소린가 싶다. 키워드는 **“함수가 선언된 렉시컬 환경”**이란다.const x = 1;f"}],["$","meta","4",{"property":"og:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"자바스크립트 클로져와 렉시컬 환경 - teklog"}],["$","meta","7",{"name":"twitter:description","content":"클로저“A closure is the combination of a function and the lexical environment within which that function was declared.”클로저는 함수와 그 함수가 선언된 렉시컬 환경과의 조합이다.뭔소린가 싶다. 키워드는 **“함수가 선언된 렉시컬 환경”**이란다.const x = 1;f"}],["$","meta","8",{"name":"twitter:image","content":"https://asset.leetekwoo.com/blog/default/main-default.jpg"}],["$","link","9",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L28","10",{}]],"error":null,"digest":"$undefined"}
+1c:"$17:metadata"
